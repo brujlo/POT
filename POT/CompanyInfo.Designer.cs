@@ -42,16 +42,23 @@
             this.label6 = new System.Windows.Forms.Label();
             this.CmpEmail = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.cmpCode = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.CmpMB = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.CmpIBAN = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.CmpSwift = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.button1.Location = new System.Drawing.Point(315, 127);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(123, 41);
@@ -108,6 +115,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label1.Location = new System.Drawing.Point(13, 193);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(120, 20);
@@ -117,6 +125,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label2.Location = new System.Drawing.Point(13, 251);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 20);
@@ -126,6 +135,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label3.Location = new System.Drawing.Point(13, 312);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(40, 20);
@@ -135,6 +145,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label4.Location = new System.Drawing.Point(13, 369);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(42, 20);
@@ -144,6 +155,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label5.Location = new System.Drawing.Point(13, 421);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(55, 20);
@@ -153,6 +165,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label6.Location = new System.Drawing.Point(12, 480);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(48, 20);
@@ -171,19 +184,109 @@
             // button2
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(315, 601);
+            this.button2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button2.Location = new System.Drawing.Point(315, 805);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(123, 41);
-            this.button2.TabIndex = 14;
+            this.button2.TabIndex = 17;
             this.button2.Text = "Save";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label7.Location = new System.Drawing.Point(11, 742);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(115, 20);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "Company code";
+            // 
+            // cmpCode
+            // 
+            this.cmpCode.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmpCode.Location = new System.Drawing.Point(11, 758);
+            this.cmpCode.MaxLength = 2;
+            this.cmpCode.Name = "cmpCode";
+            this.cmpCode.Size = new System.Drawing.Size(271, 26);
+            this.cmpCode.TabIndex = 16;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label8.Location = new System.Drawing.Point(315, 763);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(51, 20);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "label8";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label9.Location = new System.Drawing.Point(12, 542);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(33, 20);
+            this.label9.TabIndex = 19;
+            this.label9.Text = "MB";
+            // 
+            // CmpMB
+            // 
+            this.CmpMB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CmpMB.Location = new System.Drawing.Point(12, 558);
+            this.CmpMB.Name = "CmpMB";
+            this.CmpMB.Size = new System.Drawing.Size(271, 26);
+            this.CmpMB.TabIndex = 13;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label10.Location = new System.Drawing.Point(11, 608);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(47, 20);
+            this.label10.TabIndex = 21;
+            this.label10.Text = "IBAN";
+            // 
+            // CmpIBAN
+            // 
+            this.CmpIBAN.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CmpIBAN.Location = new System.Drawing.Point(11, 624);
+            this.CmpIBAN.Name = "CmpIBAN";
+            this.CmpIBAN.Size = new System.Drawing.Size(271, 26);
+            this.CmpIBAN.TabIndex = 14;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label11.Location = new System.Drawing.Point(11, 674);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(59, 20);
+            this.label11.TabIndex = 23;
+            this.label11.Text = "SWIFT";
+            // 
+            // CmpSwift
+            // 
+            this.CmpSwift.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CmpSwift.Location = new System.Drawing.Point(11, 690);
+            this.CmpSwift.Name = "CmpSwift";
+            this.CmpSwift.Size = new System.Drawing.Size(271, 26);
+            this.CmpSwift.TabIndex = 15;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Image = global::POT.Properties.Resources.DefaultLogoPOT;
+            this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.pictureBox1.Location = new System.Drawing.Point(13, 13);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(271, 155);
@@ -191,38 +294,16 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(11, 538);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(114, 20);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "CompanyCode";
-            // 
-            // cmpCode
-            // 
-            this.cmpCode.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmpCode.Location = new System.Drawing.Point(11, 554);
-            this.cmpCode.MaxLength = 2;
-            this.cmpCode.Name = "cmpCode";
-            this.cmpCode.Size = new System.Drawing.Size(271, 26);
-            this.cmpCode.TabIndex = 13;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(315, 559);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(51, 20);
-            this.label8.TabIndex = 17;
-            this.label8.Text = "label8";
-            // 
             // CompanyInfo
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(460, 654);
+            this.ClientSize = new System.Drawing.Size(460, 864);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.CmpSwift);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.CmpIBAN);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.CmpMB);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.cmpCode);
@@ -243,7 +324,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "CompanyInfo";
             this.ShowIcon = false;
-            this.Text = "CompanyInfo";
+            this.Text = "Company info";
             this.Load += new System.EventHandler(this.CompanyInfo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -271,5 +352,11 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox cmpCode;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox CmpMB;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox CmpIBAN;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox CmpSwift;
     }
 }

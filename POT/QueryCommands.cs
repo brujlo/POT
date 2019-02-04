@@ -938,9 +938,9 @@ namespace POT
             return arr;
         }
 
-        public Boolean PRIMUnesiUredajeDaSuPrimljeniInnner(String Uname, String Pass, List<Part> PartsID, long RegionS, long RegionR, long otpID, String napomena)
+        public String PRIMUnesiUredajeDaSuPrimljeniInnner(String Uname, String Pass, List<Part> PartsID, long RegionS, long RegionR, long otpID, String napomena)
         {
-            Boolean executed = false;
+            String executed = "nok";
             long primCnt = 0;
             SqlConnection cnn = cn.Connect(Uname, Pass);
             query = "select Count(primID) from PRIM where primID LIKE '" + DateTime.Now.ToString("yy") + "%'";
@@ -951,13 +951,13 @@ namespace POT
 
             if (!dataReader.HasRows)
             {
-                executed = false;
+                executed = "nok";
                 dataReader.Close();
             }
             else
             {
                 primCnt = long.Parse(dataReader.GetValue(0).ToString());
-                primCnt = long.Parse(DateTime.Now.ToString("yy") + "000") + (primCnt + 1);
+                primCnt = long.Parse(DateTime.Now.ToString("yy") + string.Format("{0:000}", (primCnt + 1)));
                 Properties.Settings.Default.ShareDocumentName = primCnt.ToString();
 
                 dataReader.Close();
@@ -987,14 +987,14 @@ namespace POT
                     }
 
                     transaction.Commit();
-                    executed = true;
+                    executed = string.Format("{0:00/000}", primCnt);
                 }
                 catch (Exception)
                 {
                     try
                     {
                         transaction.Rollback();
-                        executed = false;
+                        executed = "nok";
                         throw;
                     }
                     catch (Exception)
@@ -1008,9 +1008,9 @@ namespace POT
             return executed;
         }
 
-        public Boolean PRIMUnesiUredajeDaSuPrimljeni(String Uname, String Pass, List<Part> ListOfParts, long RegionIDReciever, long CustomerID, String napomena)
+        public String PRIMUnesiUredajeDaSuPrimljeni(String Uname, String Pass, List<Part> ListOfParts, long RegionIDReciever, long CustomerID, String napomena)
         {
-            Boolean executed = false;
+            String executed = "nok";
             long primCnt = 0;
             SqlConnection cnn = cn.Connect(Uname, Pass);
             query = "select Count(primID) from PRIM where primID LIKE '" + DateTime.Now.ToString("yy") + "%'";
@@ -1021,13 +1021,13 @@ namespace POT
 
             if (!dataReader.HasRows)
             {
-                executed = false;
+                executed = "nok";
                 dataReader.Close();
             }
             else
             {
                 primCnt = long.Parse(dataReader.GetValue(0).ToString());
-                primCnt = long.Parse(DateTime.Now.ToString("yy") + "000") + (primCnt + 1);
+                primCnt = long.Parse(DateTime.Now.ToString("yy") + string.Format("{0:000}", (primCnt + 1)));
                 Properties.Settings.Default.ShareDocumentName = primCnt.ToString();
 
                 dataReader.Close();
@@ -1051,14 +1051,14 @@ namespace POT
                     }
 
                     transaction.Commit();
-                    executed = true;
+                    executed = string.Format("{0:00/000}", primCnt);
                 }
                 catch (Exception)
                 {
                     try
                     {
                         transaction.Rollback();
-                        executed = false;
+                        executed = "nok";
                         throw;
                     }
                     catch (Exception)

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using POT.WorkingClasses;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Resources;
@@ -9,6 +10,7 @@ namespace POT
     public partial class MainFR : Form
     {
         private int loginCNt = 1;
+        Image img = null;
 
         public MainFR()
         {
@@ -84,17 +86,10 @@ namespace POT
             tel.Text = Properties.Settings.Default.CmpPhone;
             infomail.Text = Properties.Settings.Default.CmpEmail;
 
-            try
-            {
-                using (ResXResourceSet resxLoad = new ResXResourceSet(@".\Logo.resx"))
-                {
-                    pictureBox3.Image = (Image)resxLoad.GetObject("LogoPicture", true);
-                }
-            }
-            catch (Exception)
-            {
 
-            }
+            CLogo logoImage = new CLogo();
+            img = logoImage.GetImage();
+            pictureBox3.Image = img;
         }
 
         private void MainFR_Load(object sender, EventArgs e)

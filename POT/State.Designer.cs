@@ -990,6 +990,7 @@
             this.comboBox2.Size = new System.Drawing.Size(67, 33);
             this.comboBox2.TabIndex = 30;
             this.comboBox2.TabStop = false;
+            this.comboBox2.Text = "01";
             // 
             // comboBox3
             // 
@@ -1005,6 +1006,7 @@
             this.comboBox3.Size = new System.Drawing.Size(67, 33);
             this.comboBox3.TabIndex = 31;
             this.comboBox3.TabStop = false;
+            this.comboBox3.Text = "01";
             // 
             // label35
             // 

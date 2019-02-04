@@ -261,8 +261,8 @@ namespace POT
             this.label32.ResetText();
             this.textBox3.ResetText();
             this.comboBox1.ResetText();
-            this.comboBox2.ResetText();
-            this.comboBox3.ResetText();
+            comboBox2.Text = Properties.Settings.Default.MainCompanyCode;
+            comboBox3.Text = Properties.Settings.Default.MainCompanyCode;
 
             textBox4.ResetText();
             textBox5.ResetText();

@@ -50,5 +50,26 @@
     <Setting Name="MainCompanyCode" Type="System.String" Scope="User">
       <Value Profile="(Default)">00</Value>
     </Setting>
+    <Setting Name="CmpMB" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CmpIBAN" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CmpSWIFT" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="partRows" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="pageNbr" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="printingSN" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="LanguageStt" Type="System.String" Scope="User">
+      <Value Profile="(Default)">eng</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

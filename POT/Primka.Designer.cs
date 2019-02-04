@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Primka));
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -58,6 +59,10 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
+            this.printPrewBT = new System.Windows.Forms.Button();
+            this.printDocumentPrim = new System.Drawing.Printing.PrintDocument();
+            this.printPreviewDialogPrim = new System.Windows.Forms.PrintPreviewDialog();
+            this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -72,10 +77,10 @@
             this.comboBox1.Location = new System.Drawing.Point(10, 34);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(495, 24);
+            this.comboBox1.Size = new System.Drawing.Size(495, 33);
             this.comboBox1.TabIndex = 0;
             this.comboBox1.TabStop = false;
-            this.comboBox1.Text = "Search company by name";
+            this.comboBox1.Text = "Search by company name";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label2
@@ -86,7 +91,7 @@
             this.label2.Location = new System.Drawing.Point(559, 17);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(51, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Name";
             // 
@@ -98,7 +103,7 @@
             this.label3.Location = new System.Drawing.Point(559, 40);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 13);
+            this.label3.Size = new System.Drawing.Size(68, 20);
             this.label3.TabIndex = 3;
             this.label3.Text = "Address";
             // 
@@ -110,7 +115,7 @@
             this.label4.Location = new System.Drawing.Point(559, 65);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(25, 13);
+            this.label4.Size = new System.Drawing.Size(37, 20);
             this.label4.TabIndex = 4;
             this.label4.Text = "OIB";
             // 
@@ -122,7 +127,7 @@
             this.label5.Location = new System.Drawing.Point(559, 89);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(23, 13);
+            this.label5.Size = new System.Drawing.Size(32, 20);
             this.label5.TabIndex = 5;
             this.label5.Text = "NR";
             // 
@@ -131,10 +136,10 @@
             this.radioButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.radioButton1.AutoSize = true;
             this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(609, 120);
+            this.radioButton1.Location = new System.Drawing.Point(630, 120);
             this.radioButton1.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(51, 17);
+            this.radioButton1.Size = new System.Drawing.Size(74, 24);
             this.radioButton1.TabIndex = 6;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Good";
@@ -145,12 +150,12 @@
             // 
             this.radioButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(668, 120);
+            this.radioButton2.Location = new System.Drawing.Point(683, 120);
             this.radioButton2.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(69, 17);
+            this.radioButton2.Size = new System.Drawing.Size(98, 24);
             this.radioButton2.TabIndex = 7;
-            this.radioButton2.Text = "Not good";
+            this.radioButton2.Text = "No Good";
             this.radioButton2.UseVisualStyleBackColor = true;
             this.radioButton2.Click += new System.EventHandler(this.radioButton2_Click);
             // 
@@ -162,7 +167,7 @@
             this.textBox1.Location = new System.Drawing.Point(609, 165);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(271, 23);
+            this.textBox1.Size = new System.Drawing.Size(271, 30);
             this.textBox1.TabIndex = 0;
             this.textBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
             // 
@@ -173,7 +178,7 @@
             this.label6.Location = new System.Drawing.Point(606, 148);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(32, 13);
+            this.label6.Size = new System.Drawing.Size(47, 20);
             this.label6.TabIndex = 9;
             this.label6.Text = "Code";
             // 
@@ -184,9 +189,9 @@
             this.label7.Location = new System.Drawing.Point(606, 196);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(71, 13);
+            this.label7.Size = new System.Drawing.Size(31, 20);
             this.label7.TabIndex = 11;
-            this.label7.Text = "Serial number";
+            this.label7.Text = "SN";
             // 
             // textBox2
             // 
@@ -196,7 +201,7 @@
             this.textBox2.Location = new System.Drawing.Point(609, 213);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(271, 23);
+            this.textBox2.Size = new System.Drawing.Size(271, 30);
             this.textBox2.TabIndex = 1;
             this.textBox2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox2_KeyDown);
             // 
@@ -207,9 +212,9 @@
             this.label8.Location = new System.Drawing.Point(606, 248);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(131, 13);
+            this.label8.Size = new System.Drawing.Size(171, 20);
             this.label8.TabIndex = 13;
-            this.label8.Text = "Customer number (RMA...)";
+            this.label8.Text = "Customer nbr. (RMA...)";
             // 
             // textBox3
             // 
@@ -219,7 +224,7 @@
             this.textBox3.Location = new System.Drawing.Point(609, 265);
             this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(271, 23);
+            this.textBox3.Size = new System.Drawing.Size(271, 30);
             this.textBox3.TabIndex = 2;
             this.textBox3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox3_KeyDown);
             // 
@@ -274,7 +279,7 @@
             this.label9.Location = new System.Drawing.Point(606, 297);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(30, 13);
+            this.label9.Size = new System.Drawing.Size(43, 20);
             this.label9.TabIndex = 18;
             this.label9.Text = "Note";
             // 
@@ -303,7 +308,7 @@
             this.label10.Location = new System.Drawing.Point(811, 297);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(51, 13);
+            this.label10.Size = new System.Drawing.Size(70, 20);
             this.label10.TabIndex = 19;
             this.label10.Text = "cnt / 200";
             // 
@@ -313,9 +318,9 @@
             this.label11.Location = new System.Drawing.Point(8, 163);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(46, 13);
+            this.label11.Size = new System.Drawing.Size(67, 20);
             this.label11.TabIndex = 20;
-            this.label11.Text = "Parts list";
+            this.label11.Text = "Part List";
             // 
             // comboBox2
             // 
@@ -330,10 +335,10 @@
             this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox2.MaxDropDownItems = 15;
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(585, 24);
+            this.comboBox2.Size = new System.Drawing.Size(585, 33);
             this.comboBox2.TabIndex = 21;
             this.comboBox2.TabStop = false;
-            this.comboBox2.Text = "Search part by name";
+            this.comboBox2.Text = "Search by company part";
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // label36
@@ -342,7 +347,7 @@
             this.label36.Location = new System.Drawing.Point(90, 71);
             this.label36.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(51, 13);
+            this.label36.Size = new System.Drawing.Size(78, 20);
             this.label36.TabIndex = 37;
             this.label36.Text = "Customer";
             // 
@@ -352,7 +357,7 @@
             this.label35.Location = new System.Drawing.Point(16, 71);
             this.label35.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(38, 13);
+            this.label35.Size = new System.Drawing.Size(55, 20);
             this.label35.TabIndex = 36;
             this.label35.Text = "Owner";
             // 
@@ -366,10 +371,10 @@
             this.comboBox3.Location = new System.Drawing.Point(93, 88);
             this.comboBox3.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(50, 21);
+            this.comboBox3.Size = new System.Drawing.Size(50, 28);
             this.comboBox3.TabIndex = 35;
             this.comboBox3.TabStop = false;
-            this.comboBox3.Text = "03";
+            this.comboBox3.Text = "01";
             this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
             // comboBox4
@@ -382,10 +387,10 @@
             this.comboBox4.Location = new System.Drawing.Point(19, 88);
             this.comboBox4.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(50, 21);
+            this.comboBox4.Size = new System.Drawing.Size(50, 28);
             this.comboBox4.TabIndex = 34;
             this.comboBox4.TabStop = false;
-            this.comboBox4.Text = "03";
+            this.comboBox4.Text = "01";
             this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
             // 
             // button3
@@ -397,7 +402,7 @@
             this.button3.Size = new System.Drawing.Size(100, 50);
             this.button3.TabIndex = 38;
             this.button3.TabStop = false;
-            this.button3.Text = "Remove selected row";
+            this.button3.Text = "Remove selected";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -408,7 +413,7 @@
             this.label13.Location = new System.Drawing.Point(513, 17);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(38, 13);
+            this.label13.Size = new System.Drawing.Size(55, 20);
             this.label13.TabIndex = 39;
             this.label13.Text = "Name:";
             // 
@@ -419,7 +424,7 @@
             this.label14.Location = new System.Drawing.Point(513, 40);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(48, 13);
+            this.label14.Size = new System.Drawing.Size(72, 20);
             this.label14.TabIndex = 40;
             this.label14.Text = "Address:";
             // 
@@ -430,7 +435,7 @@
             this.label15.Location = new System.Drawing.Point(513, 65);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(31, 13);
+            this.label15.Size = new System.Drawing.Size(44, 20);
             this.label15.TabIndex = 41;
             this.label15.Text = "VAT:";
             // 
@@ -441,15 +446,48 @@
             this.label16.Location = new System.Drawing.Point(513, 87);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(26, 13);
+            this.label16.Size = new System.Drawing.Size(36, 20);
             this.label16.TabIndex = 42;
             this.label16.Text = "NR:";
+            // 
+            // printPrewBT
+            // 
+            this.printPrewBT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.printPrewBT.Location = new System.Drawing.Point(761, 531);
+            this.printPrewBT.Margin = new System.Windows.Forms.Padding(4);
+            this.printPrewBT.Name = "printPrewBT";
+            this.printPrewBT.Size = new System.Drawing.Size(135, 45);
+            this.printPrewBT.TabIndex = 43;
+            this.printPrewBT.Text = "Print preview";
+            this.printPrewBT.UseVisualStyleBackColor = true;
+            this.printPrewBT.Click += new System.EventHandler(this.printPrewBT_Click);
+            // 
+            // printDocumentPrim
+            // 
+            this.printDocumentPrim.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocumentPrim_PrintPage);
+            // 
+            // printPreviewDialogPrim
+            // 
+            this.printPreviewDialogPrim.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialogPrim.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialogPrim.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialogPrim.Enabled = true;
+            this.printPreviewDialogPrim.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialogPrim.Icon")));
+            this.printPreviewDialogPrim.Name = "printPreviewDialogPrim";
+            this.printPreviewDialogPrim.Visible = false;
+            // 
+            // printDialog1
+            // 
+            this.printDialog1.AllowSomePages = true;
+            this.printDialog1.PrintToFile = true;
+            this.printDialog1.UseEXDialog = true;
             // 
             // Primka
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(909, 587);
+            this.Controls.Add(this.printPrewBT);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
@@ -483,7 +521,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Primka";
             this.ShowIcon = false;
-            this.Text = "Primka";
+            this.Text = "Receipt";
             this.Load += new System.EventHandler(this.Primka_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -522,5 +560,9 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Button printPrewBT;
+        private System.Drawing.Printing.PrintDocument printDocumentPrim;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialogPrim;
+        private System.Windows.Forms.PrintDialog printDialog1;
     }
 }

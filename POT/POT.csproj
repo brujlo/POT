@@ -25,7 +25,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ProductName>POT</ProductName>
     <PublisherName>Exception</PublisherName>
-    <ApplicationRevision>23</ApplicationRevision>
+    <ApplicationRevision>45</ApplicationRevision>
     <ApplicationVersion>1.3.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -166,6 +166,8 @@
     <Compile Include="State.Designer.cs">
       <DependentUpon>State.cs</DependentUpon>
     </Compile>
+    <Compile Include="WorkingClasses\CLogo.cs" />
+    <Compile Include="WorkingClasses\PrintMe.cs" />
     <Compile Include="WorkingUser.cs" />
     <EmbeddedResource Include="AddRegion.resx">
       <DependentUpon>AddRegion.cs</DependentUpon>
@@ -244,6 +246,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="EXE.ico" />
+    <None Include="Resources\POTLogo1.png" />
+    <None Include="Resources\POTLogo.png" />
+    <None Include="Resources\Logo_Initial.png" />
+    <None Include="Resources\Default.bmp" />
     <None Include="Resources\input.png" />
     <None Include="Resources\Info_Simple.png" />
     <None Include="Resources\info.png" />
@@ -253,5 +259,6 @@
     <None Include="Resources\EXE.png" />
     <None Include="Resources\Exeption_logo.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

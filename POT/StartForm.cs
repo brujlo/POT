@@ -20,6 +20,22 @@ namespace POT
             this.checkBox1.Checked = Properties.Settings.Default.Remember;
             this.UsernameBX.Text = Properties.Settings.Default.Username;
             this.PasswordBX.Text = Properties.Settings.Default.Password;
+            //if (Properties.Settings.Default.LanguageStt.Equals("hrv"))
+            //{
+            //    rbHrv.Checked = true;
+            //    rbEng.Checked = false;
+            //}
+            //else if (Properties.Settings.Default.LanguageStt.Equals("eng"))
+            //{
+            //    rbHrv.Checked = false;
+            //    rbEng.Checked = true;
+            //}
+            //else
+            //{
+            //    rbHrv.Checked = false;
+            //    rbEng.Checked = true;
+            //}
+            Properties.Settings.Default.Save();
         }
 
         private void OkBT_Click_1(object sender, EventArgs e)
@@ -55,6 +71,25 @@ namespace POT
                         Properties.Settings.Default.Remember = true;
                         Properties.Settings.Default.Username = this.UsernameBX.Text;
                         Properties.Settings.Default.Password = this.PasswordBX.Text;
+                        //Properties.Settings.Default.DefaultLogoName = "DefaultLogoPOT";
+                        //try
+                        //{
+                        //    if (rbHrv.Checked)
+                        //    {
+                        //        Properties.Settings.Default.LanguageStt = "hrv";
+                        //        Thread.CurrentThread.CurrentUICulture = new CultureInfo("hr-HR");
+                        //    }
+                        //    else if(rbEng.Checked)
+                        //    {
+                        //        Properties.Settings.Default.LanguageStt = "eng";
+                        //        Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
+                        //    }
+                        //}
+                        //catch (Exception)
+                        //{
+                        //    Properties.Settings.Default.LanguageStt = "other";
+                        //    Properties.Settings.Default.Save();
+                        //}
                         Properties.Settings.Default.Save();
                     }
 

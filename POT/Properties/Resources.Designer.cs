@@ -63,9 +63,9 @@ namespace POT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _500px_ExitApp {
+        internal static System.Drawing.Bitmap _200x100 {
             get {
-                object obj = ResourceManager.GetObject("500px-ExitApp", resourceCulture);
+                object obj = ResourceManager.GetObject("_200x100", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -76,6 +76,26 @@ namespace POT.Properties {
         internal static System.Drawing.Bitmap allRightsReserved {
             get {
                 object obj = ResourceManager.GetObject("allRightsReserved", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DefaultLogoPOT {
+            get {
+                object obj = ResourceManager.GetObject("DefaultLogoPOT", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DefaultLogoPOT1 {
+            get {
+                object obj = ResourceManager.GetObject("DefaultLogoPOT1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -96,6 +116,16 @@ namespace POT.Properties {
         internal static System.Drawing.Bitmap Exeption_logo {
             get {
                 object obj = ResourceManager.GetObject("Exeption_logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ExitApp {
+            get {
+                object obj = ResourceManager.GetObject("ExitApp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

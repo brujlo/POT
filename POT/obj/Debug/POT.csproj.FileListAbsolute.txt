@@ -28,10 +28,12 @@ F:\PROJEKTI\VS\POT\POT\POT\bin\Debug\POT.exe.manifest
 F:\PROJEKTI\VS\POT\POT\POT\bin\Debug\POT.application
 F:\PROJEKTI\VS\POT\POT\POT\bin\Debug\POT.exe
 F:\PROJEKTI\VS\POT\POT\POT\bin\Debug\POT.pdb
+F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.csprojAssemblyReference.cache
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.AddRegion.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.CompanyInfo.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.DeleteDBUser.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.LoginForm.resources
+F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.MainCmpSelector.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.PartsList.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.Primka.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.Selector.resources
@@ -47,5 +49,3 @@ F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.exe.manifest
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.application
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.exe
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.pdb
-F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.csprojAssemblyReference.cache
-F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.MainCmpSelector.resources

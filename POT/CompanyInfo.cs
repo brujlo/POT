@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Drawing;
-using System.Windows.Forms;
 using System.Resources;
-using System.Collections.Generic;
+using System.Windows.Forms;
+using POT.WorkingClasses;
 
 namespace POT
 {
@@ -11,6 +11,7 @@ namespace POT
         QueryCommands qc = new QueryCommands();
         ConnectionHelper cn = new ConnectionHelper();
         int cnt;
+        Image img = null;
 
         public CompanyInfo()
         {
@@ -26,12 +27,15 @@ namespace POT
             CmpPhoneTB.Text = Properties.Settings.Default.CmpPhone;
             CmpEmail.Text = Properties.Settings.Default.CmpEmail;
 
+            CmpIBAN.Text = Properties.Settings.Default.CmpIBAN;
+            CmpSwift.Text = Properties.Settings.Default.CmpSWIFT;
+            CmpMB.Text = Properties.Settings.Default.CmpMB;
+
             try
             {
-                using (ResXResourceSet resxLoad = new ResXResourceSet(@".\Logo.resx"))
-                {
-                    pictureBox1.Image = (Image) resxLoad.GetObject("LogoPicture", true);
-                }
+                CLogo logoImage = new CLogo();
+                img = logoImage.GetImage();
+                pictureBox1.Image = img;
 
                 cnt = qc.CountCompany(WorkingUser.Username, WorkingUser.Password);
                 if (cnt != 0)
@@ -54,6 +58,9 @@ namespace POT
                 Properties.Settings.Default.CmpWWW = this.CmpWWWTB.Text.Trim();
                 Properties.Settings.Default.CmpPhone = this.CmpPhoneTB.Text.Trim();
                 Properties.Settings.Default.CmpEmail = this.CmpEmail.Text.Trim();
+                Properties.Settings.Default.CmpIBAN = this.CmpIBAN.Text.Trim();
+                Properties.Settings.Default.CmpSWIFT = this.CmpSwift.Text.Trim();
+                Properties.Settings.Default.CmpMB = this.CmpMB.Text.Trim();
 
                 using (ResXResourceWriter resx = new ResXResourceWriter(@".\Logo.resx"))
                 {

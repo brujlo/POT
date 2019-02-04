@@ -214,5 +214,89 @@ namespace POT.Properties {
                 this["MainCompanyCode"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string CmpMB {
+            get {
+                return ((string)(this["CmpMB"]));
+            }
+            set {
+                this["CmpMB"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string CmpIBAN {
+            get {
+                return ((string)(this["CmpIBAN"]));
+            }
+            set {
+                this["CmpIBAN"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string CmpSWIFT {
+            get {
+                return ((string)(this["CmpSWIFT"]));
+            }
+            set {
+                this["CmpSWIFT"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int partRows {
+            get {
+                return ((int)(this["partRows"]));
+            }
+            set {
+                this["partRows"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int pageNbr {
+            get {
+                return ((int)(this["pageNbr"]));
+            }
+            set {
+                this["pageNbr"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool printingSN {
+            get {
+                return ((bool)(this["printingSN"]));
+            }
+            set {
+                this["printingSN"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("eng")]
+        public string LanguageStt {
+            get {
+                return ((string)(this["LanguageStt"]));
+            }
+            set {
+                this["LanguageStt"] = value;
+            }
+        }
     }
 }

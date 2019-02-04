@@ -44,6 +44,10 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.EmailTB = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.BICTB = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.CountryTB = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.ContactTB = new System.Windows.Forms.TextBox();
@@ -56,10 +60,6 @@
             this.addressTB = new System.Windows.Forms.TextBox();
             this.CityTB = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.BICTB = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.EmailTB = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -67,7 +67,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(124, 37);
+            this.textBox1.Location = new System.Drawing.Point(134, 37);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(252, 26);
@@ -75,7 +75,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(124, 82);
+            this.textBox2.Location = new System.Drawing.Point(134, 82);
             this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(252, 26);
@@ -103,7 +103,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(331, 740);
+            this.button1.Location = new System.Drawing.Point(396, 737);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(86, 32);
@@ -114,7 +114,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(218, 740);
+            this.button2.Location = new System.Drawing.Point(283, 737);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(86, 32);
@@ -125,7 +125,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(110, 740);
+            this.button3.Location = new System.Drawing.Point(175, 737);
             this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(86, 32);
@@ -163,7 +163,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(381, 80);
+            this.groupBox1.Size = new System.Drawing.Size(473, 80);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Delete";
@@ -183,7 +183,7 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(381, 175);
+            this.groupBox2.Size = new System.Drawing.Size(473, 175);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Add";
@@ -191,7 +191,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(302, 137);
+            this.label6.Location = new System.Drawing.Point(416, 137);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(51, 20);
@@ -202,16 +202,16 @@
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(246, 137);
+            this.label5.Location = new System.Drawing.Point(312, 137);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 20);
+            this.label5.Size = new System.Drawing.Size(74, 20);
             this.label5.TabIndex = 7;
-            this.label5.Text = "lastID - ";
+            this.label5.Text = "Last ID - ";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(124, 128);
+            this.textBox3.Location = new System.Drawing.Point(134, 128);
             this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(76, 26);
@@ -250,10 +250,50 @@
             this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox3.Size = new System.Drawing.Size(381, 422);
+            this.groupBox3.Size = new System.Drawing.Size(473, 422);
             this.groupBox3.TabIndex = 8;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Info";
+            // 
+            // EmailTB
+            // 
+            this.EmailTB.Location = new System.Drawing.Point(156, 364);
+            this.EmailTB.Margin = new System.Windows.Forms.Padding(2);
+            this.EmailTB.MaxLength = 50;
+            this.EmailTB.Name = "EmailTB";
+            this.EmailTB.Size = new System.Drawing.Size(220, 26);
+            this.EmailTB.TabIndex = 15;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.ForeColor = System.Drawing.Color.Blue;
+            this.label14.Location = new System.Drawing.Point(4, 369);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(48, 20);
+            this.label14.TabIndex = 16;
+            this.label14.Text = "Email";
+            // 
+            // BICTB
+            // 
+            this.BICTB.Location = new System.Drawing.Point(156, 317);
+            this.BICTB.Margin = new System.Windows.Forms.Padding(2);
+            this.BICTB.MaxLength = 50;
+            this.BICTB.Name = "BICTB";
+            this.BICTB.Size = new System.Drawing.Size(220, 26);
+            this.BICTB.TabIndex = 13;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.ForeColor = System.Drawing.Color.Blue;
+            this.label13.Location = new System.Drawing.Point(4, 322);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(59, 20);
+            this.label13.TabIndex = 14;
+            this.label13.Text = "SWIFT";
             // 
             // CountryTB
             // 
@@ -270,9 +310,9 @@
             this.label12.Location = new System.Drawing.Point(4, 274);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(149, 20);
+            this.label12.Size = new System.Drawing.Size(142, 20);
             this.label12.TabIndex = 12;
-            this.label12.Text = "Country (Short. HR)";
+            this.label12.Text = "Country (short HR)";
             // 
             // ContactTB
             // 
@@ -308,9 +348,9 @@
             this.label7.Location = new System.Drawing.Point(4, 177);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(37, 20);
+            this.label7.Size = new System.Drawing.Size(40, 20);
             this.label7.TabIndex = 8;
-            this.label7.Text = "OIB";
+            this.label7.Text = "VAT";
             // 
             // PBTB
             // 
@@ -327,9 +367,9 @@
             this.label9.Location = new System.Drawing.Point(4, 132);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(30, 20);
+            this.label9.Size = new System.Drawing.Size(34, 20);
             this.label9.TabIndex = 6;
-            this.label9.Text = "PB";
+            this.label9.Text = "ZIP";
             // 
             // label10
             // 
@@ -369,51 +409,11 @@
             this.label11.TabIndex = 4;
             this.label11.Text = "City";
             // 
-            // BICTB
-            // 
-            this.BICTB.Location = new System.Drawing.Point(156, 317);
-            this.BICTB.Margin = new System.Windows.Forms.Padding(2);
-            this.BICTB.MaxLength = 50;
-            this.BICTB.Name = "BICTB";
-            this.BICTB.Size = new System.Drawing.Size(220, 26);
-            this.BICTB.TabIndex = 13;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.ForeColor = System.Drawing.Color.Blue;
-            this.label13.Location = new System.Drawing.Point(4, 322);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(36, 20);
-            this.label13.TabIndex = 14;
-            this.label13.Text = "BIC";
-            // 
-            // EmailTB
-            // 
-            this.EmailTB.Location = new System.Drawing.Point(156, 364);
-            this.EmailTB.Margin = new System.Windows.Forms.Padding(2);
-            this.EmailTB.MaxLength = 50;
-            this.EmailTB.Name = "EmailTB";
-            this.EmailTB.Size = new System.Drawing.Size(220, 26);
-            this.EmailTB.TabIndex = 15;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.ForeColor = System.Drawing.Color.Blue;
-            this.label14.Location = new System.Drawing.Point(4, 369);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(48, 20);
-            this.label14.TabIndex = 16;
-            this.label14.Text = "Email";
-            // 
             // AddRegion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(428, 837);
+            this.ClientSize = new System.Drawing.Size(504, 792);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);

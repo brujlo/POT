@@ -38,6 +38,8 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.rbHrv = new System.Windows.Forms.RadioButton();
+            this.rbEng = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,7 +59,7 @@
             this.UsernameBX.AcceptsTab = true;
             this.UsernameBX.Location = new System.Drawing.Point(127, 156);
             this.UsernameBX.Name = "UsernameBX";
-            this.UsernameBX.Size = new System.Drawing.Size(338, 26);
+            this.UsernameBX.Size = new System.Drawing.Size(263, 26);
             this.UsernameBX.TabIndex = 1;
             // 
             // UserenameLB
@@ -84,7 +86,7 @@
             this.PasswordBX.Location = new System.Drawing.Point(127, 195);
             this.PasswordBX.Name = "PasswordBX";
             this.PasswordBX.PasswordChar = '*';
-            this.PasswordBX.Size = new System.Drawing.Size(338, 26);
+            this.PasswordBX.Size = new System.Drawing.Size(263, 26);
             this.PasswordBX.TabIndex = 2;
             // 
             // CancelBT
@@ -129,6 +131,32 @@
             this.linkLabel1.Text = "Set DB Connection";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
+            // rbHrv
+            // 
+            this.rbHrv.AutoSize = true;
+            this.rbHrv.Enabled = false;
+            this.rbHrv.ForeColor = System.Drawing.Color.Red;
+            this.rbHrv.Location = new System.Drawing.Point(439, 156);
+            this.rbHrv.Name = "rbHrv";
+            this.rbHrv.Size = new System.Drawing.Size(58, 24);
+            this.rbHrv.TabIndex = 16;
+            this.rbHrv.Text = "Hrv";
+            this.rbHrv.UseVisualStyleBackColor = true;
+            // 
+            // rbEng
+            // 
+            this.rbEng.AutoSize = true;
+            this.rbEng.Checked = true;
+            this.rbEng.Enabled = false;
+            this.rbEng.ForeColor = System.Drawing.Color.Red;
+            this.rbEng.Location = new System.Drawing.Point(439, 195);
+            this.rbEng.Name = "rbEng";
+            this.rbEng.Size = new System.Drawing.Size(63, 24);
+            this.rbEng.TabIndex = 17;
+            this.rbEng.TabStop = true;
+            this.rbEng.Text = "Eng";
+            this.rbEng.UseVisualStyleBackColor = true;
+            // 
             // LoginFR
             // 
             this.AcceptButton = this.OkBT;
@@ -137,6 +165,8 @@
             this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.CancelBT;
             this.ClientSize = new System.Drawing.Size(521, 347);
+            this.Controls.Add(this.rbEng);
+            this.Controls.Add(this.rbHrv);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.CancelBT);
@@ -171,6 +201,8 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.RadioButton rbHrv;
+        private System.Windows.Forms.RadioButton rbEng;
     }
 }
 

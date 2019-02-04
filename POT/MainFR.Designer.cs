@@ -75,6 +75,8 @@
             this.linkLabel6 = new System.Windows.Forms.LinkLabel();
             this.label23 = new System.Windows.Forms.Label();
             this.version = new System.Windows.Forms.Label();
+            this.linkLabel8 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel9 = new System.Windows.Forms.LinkLabel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -82,8 +84,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.linkLabel8 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel9 = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -587,10 +587,10 @@
             this.linkLabel6.Location = new System.Drawing.Point(58, 292);
             this.linkLabel6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel6.Name = "linkLabel6";
-            this.linkLabel6.Size = new System.Drawing.Size(146, 25);
+            this.linkLabel6.Size = new System.Drawing.Size(77, 25);
             this.linkLabel6.TabIndex = 5;
             this.linkLabel6.TabStop = true;
-            this.linkLabel6.Text = "Input document";
+            this.linkLabel6.Text = "Receipt";
             this.linkLabel6.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel6_LinkClicked);
             // 
             // label23
@@ -616,6 +616,31 @@
             this.version.Size = new System.Drawing.Size(59, 20);
             this.version.TabIndex = 16;
             this.version.Text = "version";
+            // 
+            // linkLabel8
+            // 
+            this.linkLabel8.AutoSize = true;
+            this.linkLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.linkLabel8.Location = new System.Drawing.Point(58, 334);
+            this.linkLabel8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.linkLabel8.Name = "linkLabel8";
+            this.linkLabel8.Size = new System.Drawing.Size(162, 25);
+            this.linkLabel8.TabIndex = 22;
+            this.linkLabel8.TabStop = true;
+            this.linkLabel8.Text = "Output document";
+            // 
+            // linkLabel9
+            // 
+            this.linkLabel9.AutoSize = true;
+            this.linkLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.linkLabel9.Location = new System.Drawing.Point(58, 186);
+            this.linkLabel9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.linkLabel9.Name = "linkLabel9";
+            this.linkLabel9.Size = new System.Drawing.Size(176, 25);
+            this.linkLabel9.TabIndex = 23;
+            this.linkLabel9.TabStop = true;
+            this.linkLabel9.Text = "Select MainRegion";
+            this.linkLabel9.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel9_LinkClicked);
             // 
             // pictureBox7
             // 
@@ -687,7 +712,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox4.Image = global::POT.Properties.Resources._500px_ExitApp;
+            this.pictureBox4.Image = global::POT.Properties.Resources.ExitApp;
             this.pictureBox4.Location = new System.Drawing.Point(863, 374);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(90, 90);
@@ -695,31 +720,6 @@
             this.pictureBox4.TabIndex = 18;
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
-            // 
-            // linkLabel8
-            // 
-            this.linkLabel8.AutoSize = true;
-            this.linkLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.linkLabel8.Location = new System.Drawing.Point(58, 334);
-            this.linkLabel8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.linkLabel8.Name = "linkLabel8";
-            this.linkLabel8.Size = new System.Drawing.Size(162, 25);
-            this.linkLabel8.TabIndex = 22;
-            this.linkLabel8.TabStop = true;
-            this.linkLabel8.Text = "Output document";
-            // 
-            // linkLabel9
-            // 
-            this.linkLabel9.AutoSize = true;
-            this.linkLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.linkLabel9.Location = new System.Drawing.Point(58, 186);
-            this.linkLabel9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.linkLabel9.Name = "linkLabel9";
-            this.linkLabel9.Size = new System.Drawing.Size(176, 25);
-            this.linkLabel9.TabIndex = 23;
-            this.linkLabel9.TabStop = true;
-            this.linkLabel9.Text = "Select MainRegion";
-            this.linkLabel9.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel9_LinkClicked);
             // 
             // MainFR
             // 
