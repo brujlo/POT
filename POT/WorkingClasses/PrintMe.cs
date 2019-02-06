@@ -213,7 +213,7 @@ namespace POT.WorkingClasses
                         blackPen.DashPattern = dashValues;
                         e.Graphics.DrawLine(blackPen, margins.Left, headerpointVer + (moveBy * 2), bounds.Right - margins.Right, headerpointVer + (moveBy * 2));
 
-                        workingStr = string.Format("{0:000}", groupedPartsList[0][0].CompanyO) + string.Format("{0:00}", groupedPartsList[partRows][0].CompanyC) + string.Format("{0:000000000}", groupedPartsList[0][0].PartialCode);//tu partRows
+                        workingStr = string.Format("{0:000}", groupedPartsList[0][0].CompanyO) + string.Format("{0:00}", groupedPartsList[partRows][0].CompanyC) + " " + string.Format("{0:000 000 000}", groupedPartsList[0][0].PartialCode);//tu partRows
                         fnt = fitFontSize(e, workingStr, fontSizeR, code - rb);
                         measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
                         measureField = code - rb;
@@ -418,49 +418,53 @@ namespace POT.WorkingClasses
                         //for (; partRows < 35; partRows++)
                         for (; partRows < groupedPartsListSN.Count; partRows++)
                         {
-
-                            if (headerpointVer + (moveBy * 4) + 20 > (bounds.Bottom - margins.Bottom))
+                            int rbInner = 1;
+                            for (int partRowsInner = 0; partRowsInner < groupedPartsListSN[partRows].Count; partRowsInner++)
                             {
-                                //printingSN = true;
-                                e.HasMorePages = true;
-                                Properties.Settings.Default.printingSN = true;
-                                Properties.Settings.Default.pageNbr = pageNbr;
-                                Properties.Settings.Default.partRows = partRows;
-                                return;
+                                if (headerpointVer + (moveBy * 4) + 20 > (bounds.Bottom - margins.Bottom))
+                                {
+                                    //printingSN = true;
+                                    e.HasMorePages = true;
+                                    Properties.Settings.Default.printingSN = true;
+                                    Properties.Settings.Default.pageNbr = pageNbr;
+                                    Properties.Settings.Default.partRows = partRows;
+                                    return;
 
+                                }
+
+                                headerpointVer = headerpointVer + (moveBy * 3);
+                                //e.Graphics.DrawRectangle(new Pen(Brushes.Black), margins.Left, headerpointVer, bounds.Right - margins.Right - margins.Left, 20);
+                                //e.Graphics.DrawLine(new Pen(Brushes.Black), margins.Left, headerpointVer + (moveBy * 2), bounds.Right - margins.Right, headerpointVer + (moveBy * 2));
+                                float[] dashValues = { 2, 2, 2, 2 };
+                                Pen blackPen = new Pen(Color.Black, 1);
+                                blackPen.DashPattern = dashValues;
+                                e.Graphics.DrawLine(blackPen, margins.Left, headerpointVer + (moveBy * 3), bounds.Right - margins.Right, headerpointVer + (moveBy * 3));
+
+                                workingStr = (partRows + 1).ToString()+ " - " + rbInner;//tu partRows
+                                fnt = fitFontSize(e, workingStr, fontSizeR, rbSN - margins.Left);
+                                measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
+                                measureField = rbSN - margins.Left;
+                                e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, rbSN - margins.Left), Brushes.Black, new Point(margins.Left + (((int)measureField - (int)measureStr) / 2), headerpointVer + moveBy * 2)); //  + moveBy
+
+                                workingStr = string.Format("{0:000}", groupedPartsListSN[partRows][partRowsInner].CompanyO) + string.Format("{0:00}", groupedPartsListSN[partRows][partRowsInner].CompanyC) + string.Format("{0:000000000}", groupedPartsListSN[partRows][partRowsInner].PartialCode);//tu partRows
+                                fnt = fitFontSizeIDAutomation(e, workingStr, fontSizeR, codeSN - rbSN);
+                                measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
+                                measureField = codeSN - rbSN;
+                                e.Graphics.DrawString("*" + workingStr + "*", fitFontSizeIDAutomation(e, workingStr, 6, codeSN - rbSN), Brushes.Black, new Point(rbSN + (((int)measureField - (int)measureStr) / 2), headerpointVer)); //  + moveBy
+
+                                workingStr = groupedPartsListSN[partRows][partRowsInner].SN.ToString();//tu
+                                fnt = fitFontSizeIDAutomation(e, workingStr, fontSizeR, snSN - codeSN);
+                                measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
+                                measureField = snSN - codeSN;
+                                e.Graphics.DrawString("*" + workingStr + "*", fitFontSizeIDAutomation(e, workingStr, 6, snSN - codeSN), Brushes.Black, new Point(codeSN + (((int)measureField - (int)measureStr) / 2), headerpointVer)); //  + moveBy
+
+                                workingStr = groupedPartsListSN[partRows][partRowsInner].CN.ToString();//tu
+                                fnt = fitFontSizeIDAutomation(e, (partRows + 1).ToString(), fontSizeR, bounds.Right - margins.Right - snSN); //tu
+                                measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
+                                measureField = bounds.Right - margins.Right - snSN;
+                                e.Graphics.DrawString("*" + workingStr + "*", fitFontSizeIDAutomation(e, workingStr, 6, bounds.Right - margins.Right - snSN), Brushes.Black, new Point(snSN + (((int)measureField - (int)measureStr) / 2), headerpointVer)); //  + moveBy
+                                rbInner++;
                             }
-
-                            headerpointVer = headerpointVer + (moveBy * 3);
-                            //e.Graphics.DrawRectangle(new Pen(Brushes.Black), margins.Left, headerpointVer, bounds.Right - margins.Right - margins.Left, 20);
-                            //e.Graphics.DrawLine(new Pen(Brushes.Black), margins.Left, headerpointVer + (moveBy * 2), bounds.Right - margins.Right, headerpointVer + (moveBy * 2));
-                            float[] dashValues = { 2, 2, 2, 2 };
-                            Pen blackPen = new Pen(Color.Black, 1);
-                            blackPen.DashPattern = dashValues;
-                            e.Graphics.DrawLine(blackPen, margins.Left, headerpointVer + (moveBy * 3), bounds.Right - margins.Right, headerpointVer + (moveBy * 3));
-
-                            workingStr = (partRows + 1).ToString();//tu partRows
-                            fnt = fitFontSize(e, workingStr, fontSizeR, rbSN - margins.Left);
-                            measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
-                            measureField = rbSN - margins.Left;
-                            e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, rbSN - margins.Left), Brushes.Black, new Point(margins.Left + (((int)measureField - (int)measureStr) / 2), headerpointVer + moveBy * 2)); //  + moveBy
-
-                            workingStr = string.Format("{0:000}", groupedPartsListSN[partRows][0].CompanyO) + string.Format("{0:00}", groupedPartsListSN[partRows][0].CompanyC) + string.Format("{0:000000000}", groupedPartsListSN[partRows][0].PartialCode);//tu partRows
-                            fnt = fitFontSizeIDAutomation(e, workingStr, fontSizeR, codeSN - rbSN);
-                            measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
-                            measureField = codeSN - rbSN;
-                            e.Graphics.DrawString("*" + workingStr + "*", fitFontSizeIDAutomation(e, workingStr, 6, codeSN - rbSN), Brushes.Black, new Point(rbSN + (((int)measureField - (int)measureStr) / 2), headerpointVer)); //  + moveBy
-
-                            workingStr = groupedPartsListSN[partRows][0].SN.ToString();//tu
-                            fnt = fitFontSizeIDAutomation(e, workingStr, fontSizeR, snSN - codeSN);
-                            measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
-                            measureField = snSN - codeSN;
-                            e.Graphics.DrawString("*" + workingStr + "*", fitFontSizeIDAutomation(e, workingStr, 6, snSN - codeSN), Brushes.Black, new Point(codeSN + (((int)measureField - (int)measureStr) / 2), headerpointVer)); //  + moveBy
-
-                            workingStr = groupedPartsListSN[partRows][0].CN.ToString();//tu
-                            fnt = fitFontSizeIDAutomation(e, (partRows + 1).ToString(), fontSizeR, bounds.Right - margins.Right - snSN); //tu
-                            measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
-                            measureField = bounds.Right - margins.Right - snSN;
-                            e.Graphics.DrawString("*" + workingStr + "*", fitFontSizeIDAutomation(e, workingStr, 6, bounds.Right - margins.Right - snSN), Brushes.Black, new Point(snSN + (((int)measureField - (int)measureStr) / 2), headerpointVer)); //  + moveBy
                         }
 
                         Properties.Settings.Default.printingSN = false;
