@@ -71,5 +71,8 @@
     <Setting Name="LanguageStt" Type="System.String" Scope="User">
       <Value Profile="(Default)">eng</Value>
     </Setting>
+    <Setting Name="AutoLogin" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

@@ -1071,6 +1071,152 @@ namespace POT
             cnn.Close();
             return executed;
         }
+
+        public String OTPUnesiUredajeDaSuPrimljeni(String Uname, String Pass, List<Part> ListOfParts, Company cmpR, Company cmpS, String napomena)
+        {
+            String executed = "nok";
+            long otpCnt = 0;
+            SqlConnection cnn = cn.Connect(Uname, Pass);
+            query = "select Count(otpID) from OTP where otpID LIKE '" + DateTime.Now.ToString("yy") + "%'";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (!dataReader.HasRows)
+            {
+                executed = "nok";
+                dataReader.Close();
+            }
+            else
+            {
+                otpCnt = long.Parse(dataReader.GetValue(0).ToString());
+                otpCnt = long.Parse(DateTime.Now.ToString("yy") + string.Format("{0:000}", (otpCnt + 1)));
+                Properties.Settings.Default.ShareDocumentName = otpCnt.ToString();
+
+                dataReader.Close();
+                command = cnn.CreateCommand();
+                SqlTransaction transaction = cnn.BeginTransaction();
+                command.Connection = cnn;
+                command.Transaction = transaction;
+
+                try
+                {
+                    command.CommandText = "INSERT INTO OTP (otpID, customerID, dateCreated, napomena, userID) VALUES (" + otpCnt + ", " + cmpR.ID + ", '" + DateTime.Now.ToString("dd.MM.yy.") + "', '" + napomena + "', " +WorkingUser.UserID + ")";
+                    command.ExecuteNonQuery();
+
+                    for (int i = 0; i < ListOfParts.Count; i++)
+                    {
+                        command.CommandText = "INSERT INTO PartsPoslano SELECT* FROM Parts p WHERE p.partID = " + ListOfParts[i].PartID;
+                        command.ExecuteNonQuery();
+
+                        command.CommandText = "UPDATE PartsPoslano SET DateOut = '" + DateTime.Now.ToString("dd.MM.yy.") + "' WHERE PartID = " + ListOfParts[i].PartID;
+                        command.ExecuteNonQuery();
+
+                        command.CommandText = "INSERT INTO OTPparts (otpID, partID) VALUES (" + otpCnt + ", " + ListOfParts[i].PartID + ")";
+                        command.ExecuteNonQuery();
+
+                        command.CommandText = "UPDATE Parts SET StorageID = 3, DateSend = '" + DateTime.Now.ToString("dd.MM.yy.") + "' WHERE PartID = " + ListOfParts[i].PartID;
+                        command.ExecuteNonQuery();
+
+                        command.CommandText = "DELETE FROM Parts WHERE partID = " + ListOfParts[i].PartID;
+                        command.ExecuteNonQuery();
+                    }
+
+                    command.CommandText = "INSERT INTO Transport (TransactionID, TransportDateOut, RegionIDOut, RegionIDIn, UsersUserIDOut, haveTrackingNumbers) VALUES (" 
+                        + otpCnt + ", '" + DateTime.Now.ToString("dd.MM.yy.") + "', " + WorkingUser.RegionID + ", " + cmpR.RegionID + ", " + WorkingUser.UserID + ", " + 0 + ")";
+                    command.ExecuteNonQuery();
+
+                    transaction.Commit();
+                    executed = string.Format("{0:00/000}", otpCnt);
+                }
+                catch (Exception)
+                {
+                    try
+                    {
+                        transaction.Rollback();
+                        executed = "nok";
+                        throw;
+                    }
+                    catch (Exception)
+                    {
+                        throw;
+                    }
+                }
+            }
+            dataReader.Close();
+            cnn.Close();
+            return executed;
+        }
+
+        public String OTPUnesiUredajeDaSuPrimljeniInner(String Uname, String Pass, List<Part> ListOfParts, Company cmpR, Company cmpS, String napomena)
+        {
+            String executed = "nok";
+            long otpCnt = 0;
+            SqlConnection cnn = cn.Connect(Uname, Pass);
+            query = "select Count(otpID) from OTP where otpID LIKE '" + DateTime.Now.ToString("yy") + "%'";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (!dataReader.HasRows)
+            {
+                executed = "nok";
+                dataReader.Close();
+            }
+            else
+            {
+                otpCnt = long.Parse(dataReader.GetValue(0).ToString());
+                otpCnt = long.Parse(DateTime.Now.ToString("yy") + string.Format("{0:000}", (otpCnt + 1)));
+                Properties.Settings.Default.ShareDocumentName = otpCnt.ToString();
+
+                dataReader.Close();
+                command = cnn.CreateCommand();
+                SqlTransaction transaction = cnn.BeginTransaction();
+                command.Connection = cnn;
+                command.Transaction = transaction;
+
+                try
+                {
+                    command.CommandText = "INSERT INTO OTP (otpID, customerID, dateCreated, napomena, userID) VALUES (" + otpCnt + ", " + cmpR.ID + ", '" + DateTime.Now.ToString("dd.MM.yy.") + "', '" + napomena + "', " + WorkingUser.UserID + ")";
+                    command.ExecuteNonQuery();
+
+                    for (int i = 0; i < ListOfParts.Count; i++)
+                    {
+                        command.CommandText = "INSERT INTO OTPparts (otpID, partID) VALUES (" + otpCnt + ", " + ListOfParts[i].PartID + ")";
+                        //command.CommandText = "INSERT INTO OTPparts (otpID, partID, trackingNumber) VALUES (" + otpCnt + ", " + ListOfParts[i].PartID + ", '" + PrenesiTN(i) + "')";
+                        command.ExecuteNonQuery();
+
+                        command.CommandText = "UPDATE Parts SET StorageID = 2, DateSend = '" + DateTime.Now.ToString("dd.MM.yy.") + "' WHERE PartID = " + ListOfParts[i].PartID;
+                        command.ExecuteNonQuery();
+                    }
+
+                    command.CommandText = "INSERT INTO Transport (TransactionID, TransportDateOut, RegionIDOut, RegionIDIn, UsersUserIDOut, haveTrackingNumbers) VALUES ("
+                        + otpCnt + ", '" + DateTime.Now.ToString("dd.MM.yy.") + "', " + WorkingUser.RegionID + ", " + cmpR.RegionID + ", " + WorkingUser.UserID + ", " + 0 + ")";
+                    command.ExecuteNonQuery();
+
+                    transaction.Commit();
+                    executed = string.Format("{0:00/000}", otpCnt);
+                }
+                catch (Exception)
+                {
+                    try
+                    {
+                        transaction.Rollback();
+                        executed = "nok";
+                        throw;
+                    }
+                    catch (Exception)
+                    {
+                        throw;
+                    }
+                }
+            }
+            dataReader.Close();
+            cnn.Close();
+            return executed;
+        }
     }
 }
 

@@ -140,6 +140,13 @@ namespace POT
             LoginForm fr = new LoginForm();
             fr.ShowDialog();
 
+            if(loginCNt == 1)
+            {
+                MainFR MF = new MainFR();
+                MF.ShowDialog();
+                Close();
+                return;
+            }
             if (loginCNt == 3 && !fr.isLoged)
             {
                 MessageBox.Show("To many attempts, I will close now!");
@@ -163,7 +170,7 @@ namespace POT
                     linkLabel5.Enabled = true;
                     linkLabel9.Enabled = true;
                 }
-                Form MF = new MainFR();
+                MainFR MF = new MainFR();
                 MF.ShowDialog();
                 Close();
             }
@@ -277,6 +284,12 @@ namespace POT
                 linkLabel5.Enabled = true;
                 linkLabel9.Enabled = true;
             }
+        }
+
+        private void linkLabel8_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Otpremnica otp = new Otpremnica();
+            otp.Show();
         }
     }
 }

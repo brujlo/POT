@@ -30,6 +30,7 @@ namespace POT
                         Properties.Settings.Default.Remember = true;
                         Properties.Settings.Default.Username = this.UsernameBX.Text;
                         Properties.Settings.Default.Password = this.PasswordBX.Text;
+                        Properties.Settings.Default.AutoLogin = checkBox2.Checked ? true : false;
                         Properties.Settings.Default.Save();
                     }
 
@@ -52,6 +53,7 @@ namespace POT
         private void CancelBT_Click(object sender, EventArgs e)
         {
             this.Close();
+
             //Application.Exit();
         }
 
@@ -60,6 +62,10 @@ namespace POT
             this.checkBox1.Checked = false;
             this.UsernameBX.Text = Properties.Settings.Default.Username;
             this.PasswordBX.Text = Properties.Settings.Default.Password;
+
+            Properties.Settings.Default.Remember = true;
+            checkBox2.Checked = Properties.Settings.Default.AutoLogin ? true : false;
+            Properties.Settings.Default.Save();
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

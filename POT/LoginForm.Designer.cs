@@ -38,6 +38,7 @@
             this.OkBT = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,17 +48,17 @@
             this.checkBox1.Location = new System.Drawing.Point(126, 228);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(114, 24);
-            this.checkBox1.TabIndex = 9;
+            this.checkBox1.TabIndex = 3;
             this.checkBox1.Text = "Remember";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // CancelBT
             // 
             this.CancelBT.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.CancelBT.Location = new System.Drawing.Point(12, 276);
+            this.CancelBT.Location = new System.Drawing.Point(12, 340);
             this.CancelBT.Name = "CancelBT";
             this.CancelBT.Size = new System.Drawing.Size(160, 56);
-            this.CancelBT.TabIndex = 11;
+            this.CancelBT.TabIndex = 6;
             this.CancelBT.Text = "Cancel";
             this.CancelBT.UseVisualStyleBackColor = true;
             this.CancelBT.Click += new System.EventHandler(this.CancelBT_Click);
@@ -69,7 +70,7 @@
             this.PasswordBX.Name = "PasswordBX";
             this.PasswordBX.PasswordChar = '*';
             this.PasswordBX.Size = new System.Drawing.Size(338, 26);
-            this.PasswordBX.TabIndex = 8;
+            this.PasswordBX.TabIndex = 2;
             // 
             // PasswordLB
             // 
@@ -95,15 +96,15 @@
             this.UsernameBX.Location = new System.Drawing.Point(126, 156);
             this.UsernameBX.Name = "UsernameBX";
             this.UsernameBX.Size = new System.Drawing.Size(338, 26);
-            this.UsernameBX.TabIndex = 7;
+            this.UsernameBX.TabIndex = 1;
             // 
             // OkBT
             // 
             this.OkBT.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.OkBT.Location = new System.Drawing.Point(329, 276);
+            this.OkBT.Location = new System.Drawing.Point(329, 340);
             this.OkBT.Name = "OkBT";
             this.OkBT.Size = new System.Drawing.Size(160, 56);
-            this.OkBT.TabIndex = 10;
+            this.OkBT.TabIndex = 5;
             this.OkBT.Text = "OK";
             this.OkBT.UseVisualStyleBackColor = true;
             this.OkBT.Click += new System.EventHandler(this.OkBT_Click);
@@ -129,12 +130,23 @@
             this.linkLabel1.Text = "Set DB Connection";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(126, 258);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(174, 24);
+            this.checkBox2.TabIndex = 4;
+            this.checkBox2.Text = "Auto login next time";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(523, 348);
+            this.ClientSize = new System.Drawing.Size(521, 408);
+            this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.checkBox1);
@@ -167,5 +179,6 @@
         private System.Windows.Forms.Button OkBT;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.CheckBox checkBox2;
     }
 }

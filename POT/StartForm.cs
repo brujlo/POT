@@ -36,6 +36,11 @@ namespace POT
             //    rbEng.Checked = true;
             //}
             Properties.Settings.Default.Save();
+            if (Properties.Settings.Default.AutoLogin == true)
+            {
+                checkBox2.Checked = true;
+                OkBT_Click_1(sender, e); ;
+            }
         }
 
         private void OkBT_Click_1(object sender, EventArgs e)
@@ -71,6 +76,8 @@ namespace POT
                         Properties.Settings.Default.Remember = true;
                         Properties.Settings.Default.Username = this.UsernameBX.Text;
                         Properties.Settings.Default.Password = this.PasswordBX.Text;
+                        Properties.Settings.Default.AutoLogin = checkBox2.Checked ? true : false;
+
                         //Properties.Settings.Default.DefaultLogoName = "DefaultLogoPOT";
                         //try
                         //{
@@ -135,6 +142,21 @@ namespace POT
         {
             Form sDB = new SetDBConnection();
             sDB.ShowDialog();
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            if(!UsernameBX.Equals("") && !PasswordBX.Equals(""))
+            {
+                if (checkBox2.Checked)
+                    checkBox1.Checked = true;
+            }
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!checkBox1.Checked)
+                checkBox2.Checked = false;
         }
     }
 }

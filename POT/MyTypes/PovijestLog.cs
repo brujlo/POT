@@ -36,7 +36,23 @@ namespace POT.MyTypes
             using (SqlConnection cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password))
             {
                 datumRada = mDatumRada;
-                sifraNovi = mNewOldPart[0].CodePartFull;
+
+                try
+                {
+                    if (mNewOldPart[0].CodePartFull == 0)
+                    {
+                        sifraNovi = long.Parse(string.Format("{0:00}", mNewOldPart[0].CompanyO) + string.Format("{0:00}", mNewOldPart[0].CompanyC) + string.Format("{0:000000000}", mNewOldPart[0].PartialCode));
+                    }
+                    else
+                    {
+                        sifraNovi = mNewOldPart[0].CodePartFull;
+                    }
+
+                }
+                catch
+                {
+                    sifraNovi = 0;
+                }
 
                 if (mNewOldPart[0].PartialCode != 0)
                     nazivNovi = qc.PartInfoByFullCodeSifrarnik(WorkingUser.Username, WorkingUser.Password, mNewOldPart[0].PartialCode).FullName;
@@ -57,7 +73,22 @@ namespace POT.MyTypes
                         nazivStari = qc.PartInfoByFullCodeSifrarnik(WorkingUser.Username, WorkingUser.Password, mNewOldPart[1].PartialCode).FullName;
                     else
                         nazivStari = "";
-                    sifraStari = mNewOldPart[1].PartialCode;
+                    try
+                    {
+                        if (mNewOldPart[1].CodePartFull == 0)
+                        {
+                            sifraStari = long.Parse(string.Format("{0:00}", mNewOldPart[1].CompanyO) + string.Format("{0:00}", mNewOldPart[1].CompanyC) + string.Format("{0:000000000}", mNewOldPart[1].PartialCode));
+                        }
+                        else
+                        {
+                            sifraStari = mNewOldPart[1].CodePartFull;
+                        }
+
+                    }
+                    catch
+                    {
+                        sifraStari = 0;
+                    }
                     sNStari = mNewOldPart[1].SN;
                 }
                     
@@ -71,7 +102,9 @@ namespace POT.MyTypes
 
                 try
                 {
-                    for (int i = 0; i < mNewOldPart.Count; i++)
+                    int partCount = mNewOldPart.Count;
+                    partCount = sifraNovi == 0 ? partCount / 2 : partCount;
+                    for (int i = 0; i < partCount; i++)
                     {
                         command.CommandText = "insert into PovijestLog " +
                             "(DatumUpisa, DatumRada, SifraNovi, NazivNovi, Opis, SNNovi, SNStari, CN, UserID, Customer, CCN, CI, " +

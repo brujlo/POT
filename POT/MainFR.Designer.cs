@@ -624,10 +624,11 @@
             this.linkLabel8.Location = new System.Drawing.Point(58, 334);
             this.linkLabel8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel8.Name = "linkLabel8";
-            this.linkLabel8.Size = new System.Drawing.Size(162, 25);
+            this.linkLabel8.Size = new System.Drawing.Size(82, 25);
             this.linkLabel8.TabIndex = 22;
             this.linkLabel8.TabStop = true;
-            this.linkLabel8.Text = "Output document";
+            this.linkLabel8.Text = "Delivery";
+            this.linkLabel8.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel8_LinkClicked);
             // 
             // linkLabel9
             // 

@@ -1,40 +1,39 @@
 ﻿using POT.MyTypes;
+using POT.WorkingClasses;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Drawing.Printing;
 using System.Linq;
+using System.Media;
 using System.Threading;
 using System.Windows.Forms;
-using POT.WorkingClasses;
-using System.Media;
 
 namespace POT
 {
-    public partial class Primka : Form
+    public partial class Otpremnica : Form
     {
         int rb = 1;
         List<String> partsArr = new List<string>();
         List<String> resultArr = new List<string>();
         List<String> resultArrSearchCode = new List<string>();
-        List<String> openedOTP = new List<string>();
         List<String> openedTransactionSenderRegions = new List<string>();
         static List<String> sifrarnikArr = new List<string>();
-        Boolean isPrimkaSaved = false;
+        Boolean isOtpremnicaSaved = false;
         Company cmpS = new Company();
         Company cmpR = new Company();
-        String PrimkaNumber;
+        String OTPNumber;
         List<Part> partListPrint = new List<Part>();
-        String napomenaPRIMPrint;
+        String napomenaOTPPrint;
 
         List<Company> resultArrC = new List<Company>();
 
-        public Primka()
+        public Otpremnica()
         {
             InitializeComponent();
         }
 
-        private void Primka_Load(object sender, EventArgs e)
+        private void Otpremnica_Load(object sender, EventArgs e)
         {
             comboBox3.Text = Properties.Settings.Default.MainCompanyCode;
             comboBox4.Text = Properties.Settings.Default.MainCompanyCode;
@@ -108,7 +107,7 @@ namespace POT
             }
             catch (Exception)
             {
-                
+
             }
         }
 
@@ -137,9 +136,9 @@ namespace POT
                 lvi1.SubItems.Add(textBox3.Text);
                 lvi1.SubItems.Add(radioButton1.Checked ? "g" : "ng");
 
-                if(listView1.Items.Count > 1)
+                if (listView1.Items.Count > 1)
                     listView1.EnsureVisible(listView1.Items.Count - 1);
-                
+
                 listView1.Items.Add(lvi1);
                 partsArr.Add(textBox1.Text);
                 partsArr.Add(textBox2.Text);
@@ -196,19 +195,19 @@ namespace POT
                 button1_Click(sender, e);
                 textBox1.SelectAll();
                 textBox1.Focus();
-                
+
                 e.Handled = true;
                 e.SuppressKeyPress = true;
             }
         }
 
-        private void radioButton1_Click(object sender, EventArgs e)
+        private void radioButton1_Click_x(object sender, EventArgs e)
         {
             textBox1.SelectAll();
             textBox1.Focus();
         }
 
-        private void radioButton2_Click(object sender, EventArgs e)
+        private void radioButton2_Click_x(object sender, EventArgs e)
         {
             textBox1.SelectAll();
             textBox1.Focus();
@@ -269,9 +268,31 @@ namespace POT
             textBox1.SelectAll();
             textBox1.Focus();
         }
-
         private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
         {
+            textBox1.SelectAll();
+            textBox1.Focus();
+        }
+
+        private void button3_Click_x(object sender, EventArgs e)
+        {
+            var items = listView1.SelectedItems;
+            int k = 1;
+
+            foreach (ListViewItem item in listView1.SelectedItems)
+            {
+                listView1.Items.Remove(item);
+            }
+
+            foreach (ListViewItem item in listView1.Items)
+            {
+                if (listView1.SelectedItems != null && listView1.Items.Count != 0)
+                {
+                    item.SubItems[0].Text = k.ToString();
+                    k++;
+                }
+            }
+            rb = listView1.Items.Count + 1;
             textBox1.SelectAll();
             textBox1.Focus();
         }
@@ -301,7 +322,7 @@ namespace POT
 
         private void button2_Click(object sender, EventArgs e)
         {
-            PrimkaNumber = "";
+            OTPNumber = "";
 
             if (this.label2.Text.Equals("Name"))
             {
@@ -317,16 +338,11 @@ namespace POT
             }
             else
             {
-                List<Part> listOfOtpPartsFromOTP = new List<Part>();
-                //List<Part> listOfOtpPartsPrimka = new List<Part>();
-
-                if (cmpS.GetCompanyByName(label2.Text.Trim()) && cmpR.GetCompanyInfoByRegionID(WorkingUser.RegionID.ToString()))
+                if (cmpR.GetCompanyByName(label2.Text.Trim()) && cmpS.GetCompanyInfoByRegionID(WorkingUser.RegionID.ToString()))
                 {
                     try
                     {
                         List<String> arr = new List<string>();
-                        SqlCommand commandPR;
-                        String queryPR;
                         ConnectionHelper cn = new ConnectionHelper();
                         using (SqlConnection cnnPR = cn.Connect(WorkingUser.Username, WorkingUser.Password))
                         {
@@ -337,13 +353,13 @@ namespace POT
 
                                 for (int i = 0; i < listView1.Items.Count; i++) // vec imam provjeru gore kod unosa ali neka ostane(tamo je po imenu)
                                 {
-                                    if (!qc.GetPartIDCompareCodeSNCNStorage(WorkingUser.Username, WorkingUser.Password,
+                                    if (qc.GetPartIDCompareCodeSNCNStorage(WorkingUser.Username, WorkingUser.Password,
                                         long.Parse(listView1.Items[i].SubItems[2].Text),
                                         listView1.Items[i].SubItems[3].Text,
                                         listView1.Items[i].SubItems[4].Text,
                                         WorkingUser.RegionID)[0].Equals("nok"))
                                     {
-                                        MessageBox.Show("In your storage, part with: \n\n Code: " + listView1.Items[i].SubItems[2].Text + "\n on position " + (listView1.Items[i].Index + 1) + "\n, already exist in DB.\n\nNothing Done.");
+                                        MessageBox.Show("There is no part in your storage with: \n\n Code: " + listView1.Items[i].SubItems[2].Text + "\n on position " + (listView1.Items[i].Index + 1) + ". \n\nNothing Done.");
                                         textBox1.SelectAll();
                                         textBox1.Focus();
                                         return;
@@ -351,202 +367,27 @@ namespace POT
                                 }
 
                                 //Provjera i spremanje u bazu
-
                                 List<String> allRegions = new List<string>();
                                 allRegions = qc.GetAllRegions(WorkingUser.Username, WorkingUser.Password);
 
                                 int index = resultArrC.FindIndex(resultArrC => resultArrC.Name.Equals(label2.Text));
 
-                                if (resultArrC[index].RegionID != Properties.Settings.Default.OstaliIDRegion &&
-                                    resultArrC[index].RegionID != Properties.Settings.Default.TransportIDRegion)
+                                if (resultArrC[index].RegionID != WorkingUser.RegionID)
                                 {
-                                    queryPR = "Select RegionIDOut from Transport where RegionIDIn = " + WorkingUser.RegionID + " and UsersUserIDIn is NULL";
-                                    commandPR = new SqlCommand(queryPR, cnnPR);
-                                    commandPR.ExecuteNonQuery();
-                                    SqlDataReader dataReader = commandPR.ExecuteReader();
-                                    dataReader.Read();
-
-                                    if (dataReader.HasRows)
-                                    {
-                                        do
-                                        {
-                                            openedTransactionSenderRegions.Add(dataReader["RegionIDOut"].ToString());
-                                        } while (dataReader.Read());
-                                        dataReader.Close();
-                                    }
-                                    else
-                                    {
-                                        MessageBox.Show("From selected region nothing is sent to you. \n\n Nothing Done.");
-                                        textBox1.SelectAll();
-                                        textBox1.Focus();
-                                        return;
-                                    }
-
                                     for (int i = 0; i < listView1.Items.Count; i++) // vec imam provjeru gore kod unosa ali neka ostane(tamo je po imenu)
                                     {
                                         long test = long.Parse(listView1.Items[i].SubItems[2].Text.Substring(4));
                                         if (!resultArrSearchCode.Contains(test.ToString()))
                                         {
-                                            MessageBox.Show("There is no part in 'Sifrarnik' with code, = " + test.ToString() + "\n" + "on position " + (listView1.Items[i].Index + 1) + "  \n\n Nothing Done.");
+                                            MessageBox.Show("There is no part in 'Sifrarnik' with code, = " + test.ToString() + "\n" + "on position " + (listView1.Items[i].Index + 1) + "  \n\nNothing Done.");
                                             textBox1.SelectAll();
                                             textBox1.Focus();
                                             return;
                                         }
                                     }
 
-                                    //Provjera da li sam odabrao dobru tvrtku koja salje
-                                    Boolean exist = false;
-                                    for (int j = 0; j < openedTransactionSenderRegions.Count; j++)
-                                    {
-                                        if (cmpS.RegionID.ToString().Equals(openedTransactionSenderRegions[j]))
-                                        {
-                                            exist = true;
-                                            break;
-                                        }
-                                    }
-
-                                    if (!exist)
-                                    {
-                                        MessageBox.Show("Please select right company! \n\n Nothing done.");
-                                        textBox1.SelectAll();
-                                        textBox1.Focus();
-                                        return;
-                                    }
-
-                                    openedOTP = qc.GetAllOpenedOTP(WorkingUser.Username, WorkingUser.Password, WorkingUser.RegionID);
-                                    long selectedOTP = 0;
-
-                                    if (openedOTP[0].Equals("nok"))
-                                    {
-                                        MessageBox.Show("There is no opened documents for you!");
-                                        textBox1.SelectAll();
-                                        textBox1.Focus();
-                                        return;
-                                    }
-
-                                    using (Selector selector = new Selector())
-                                    {
-                                        selector.SetLabelText = "Please select receiving document";
-                                        selector.SetComboBoxStringList = openedOTP;
-                                        selector.ShowDialog();
-
-                                        if (selector.GetOTPValue > 0)
-                                        {
-                                            selectedOTP = selector.GetOTPValue;
-                                        }
-                                        else
-                                        {
-                                            MessageBox.Show("Please select valid receiving document! \n\n Nothing done.");
-                                            textBox1.SelectAll();
-                                            textBox1.Focus();
-                                            return;
-                                        }
-                                    }
-
-                                    Part otpParts = new Part();
-                                    listOfOtpPartsFromOTP = otpParts.GetListOfPartsOTPParts(selectedOTP);
-
-                                    int counterLP = listOfOtpPartsFromOTP.Count;
-                                    int counterLV = listView1.Items.Count;
-                                    Boolean same = false;
-                                    for (int i = 0; i < counterLP; i++)
-                                    {
-                                        for (int ii = 0; ii < counterLV; ii++)
-                                        {
-                                            if (listOfOtpPartsFromOTP[i].CodePartFull == long.Parse(listView1.Items[ii].SubItems[2].Text)
-                                                && listOfOtpPartsFromOTP[i].SN.Equals(listView1.Items[ii].SubItems[3].Text)
-                                                && listOfOtpPartsFromOTP[i].CN.Equals(listView1.Items[ii].SubItems[4].Text))
-                                            {
-                                                same = true;
-                                                break;
-                                            }
-                                            else
-                                            {
-                                                same = false;
-                                            }
-                                        }
-                                        if (!same)
-                                            break;
-                                    }
-
-                                    if (!same || counterLP != counterLV)
-                                    {
-                                        MessageBox.Show("Receiving document and sending document items do not match ! \n\n Nothing done.");
-                                        textBox1.SelectAll();
-                                        textBox1.Focus();
-                                        return;
-                                    }
-
-                                    PrimkaNumber = qc.PRIMUnesiUredajeDaSuPrimljeniInnner(WorkingUser.Username, WorkingUser.Password, listOfOtpPartsFromOTP, cmpS.RegionID, cmpR.RegionID, selectedOTP, textBox4.Text);
-                                    if (!PrimkaNumber.Equals("nok"))
-                                    {
-                                        PovijestLog pl = new PovijestLog();
-                                        Boolean saved = false;
-                                        for (int k = 0; k < listOfOtpPartsFromOTP.Count; k++)
-                                        {
-                                            List<Part> tempPart = new List<Part>();
-                                            tempPart.Clear();
-                                            tempPart.Add(listOfOtpPartsFromOTP[k]);
-                                            if (pl.SaveToPovijestLog(tempPart, DateTime.Now.ToString("dd.MM.yy."), textBox4.Text, cmpS.Name, "", "", "PRIM " + Properties.Settings.Default.ShareDocumentName, tempPart[0].State))
-                                            {
-                                                saved = true;
-                                                Properties.Settings.Default.ShareDocumentName = "";
-                                            }
-                                            else
-                                            {
-                                                saved = false;
-                                                break;
-                                            }
-                                        }
-
-                                        if (saved)
-                                        {
-                                            MessageBox.Show("DONE, document nbr. 'PRIM " + PrimkaNumber + "'.");
-                                            isPrimkaSaved = true;
-                                            listView1.Clear();
-                                            listView1.View = View.Details;
-
-                                            partListPrint.Clear();
-                                            partListPrint = listOfOtpPartsFromOTP;
-                                            //partListPrint = listOfOtpPartsPrimka;
-
-                                            listView1.Columns.Add("RB");
-                                            listView1.Columns.Add("Name");
-                                            listView1.Columns.Add("Code");
-                                            listView1.Columns.Add("SN");
-                                            listView1.Columns.Add("CN");
-                                            listView1.Columns.Add("Condition");
-                                            textBox4.Clear();
-                                        }
-                                        else
-                                        {
-                                            MessageBox.Show("DONE, document nbr. 'PRIM " + PrimkaNumber + "', but not saved in PL.");
-                                            listView1.Clear();
-                                            listView1.View = View.Details;
-
-                                            partListPrint.Clear();
-                                            partListPrint = listOfOtpPartsFromOTP;
-                                            //partListPrint = listOfOtpPartsPrimka;
-
-                                            listView1.Columns.Add("RB");
-                                            listView1.Columns.Add("Name");
-                                            listView1.Columns.Add("Code");
-                                            listView1.Columns.Add("SN");
-                                            listView1.Columns.Add("CN");
-                                            listView1.Columns.Add("Condition");
-                                            textBox4.Clear();
-                                        }
-                                    }
-                                    else
-                                    {
-                                        MessageBox.Show("Unknown error in QUERYinner.");
-                                        isPrimkaSaved = false;
-                                    }
-                                }
-                                else if (resultArrC[index].RegionID == Properties.Settings.Default.OstaliIDRegion)
-                                {
                                     List<Part> partList = new List<Part>();
-                                    String napomenaPRIM = textBox4.Text;
+                                    String napomenaOTP = textBox4.Text;
 
                                     for (int i = 0; i < listView1.Items.Count; i++)
                                     {
@@ -563,12 +404,47 @@ namespace POT
                                         tempPart.State = listView1.Items[i].SubItems[5].Text;
                                         tempPart.CompanyO = listView1.Items[i].SubItems[2].Text.Substring(0, 2);
                                         tempPart.CompanyC = listView1.Items[i].SubItems[2].Text.Substring(2, 2);
+                                        long tempCode = long.Parse(string.Format("{0:00}", tempPart.CompanyO) + string.Format("{0:00}", tempPart.CompanyC) + string.Format("{0:000000000}", tempSifPart.FullCode));
+                                        String tmpResult = qc.GetPartIDCompareCodeSNCNStorage(WorkingUser.Username, WorkingUser.Password,
+                                            long.Parse(listView1.Items[i].SubItems[2].Text),
+                                            listView1.Items[i].SubItems[3].Text,
+                                            listView1.Items[i].SubItems[4].Text,
+                                            WorkingUser.RegionID)[0];
 
-                                        partList.Add(tempPart);
+                                        if (tmpResult.Equals("nok"))
+                                        {
+                                            MessageBox.Show("There is no part in your storage with: \n\n Code: " + listView1.Items[i].SubItems[2].Text + "\n on position " + (listView1.Items[i].Index + 1) + ". \n\nNothing Done.");
+                                            textBox1.SelectAll();
+                                            textBox1.Focus();
+                                            return;
+                                        }
+                                        else
+                                        {
+                                            tempPart.PartID = long.Parse(tmpResult);
+                                            partList.Add(tempPart);
+                                        }
                                     }
 
-                                    PrimkaNumber = qc.PRIMUnesiUredajeDaSuPrimljeni(WorkingUser.Username, WorkingUser.Password, partList, WorkingUser.RegionID, cmpS.ID, napomenaPRIM);
-                                    if (!PrimkaNumber.Equals("nok"))
+                                    if (resultArrC[index].RegionID != Properties.Settings.Default.OstaliIDRegion &&
+                                        resultArrC[index].RegionID != Properties.Settings.Default.TransportIDRegion &&
+                                        resultArrC[index].RegionID != Properties.Settings.Default.ServisIDRegion)
+                                    {
+                                        OTPNumber = qc.OTPUnesiUredajeDaSuPrimljeniInner(WorkingUser.Username, WorkingUser.Password, partList, cmpR, cmpS, textBox4.Text);
+                                    }
+                                    else if (resultArrC[index].RegionID != Properties.Settings.Default.TransportIDRegion &&
+                                            resultArrC[index].RegionID != Properties.Settings.Default.ServisIDRegion)
+                                    {
+                                        OTPNumber = qc.OTPUnesiUredajeDaSuPrimljeni(WorkingUser.Username, WorkingUser.Password, partList, cmpR, cmpS, textBox4.Text);
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Hm... You cant send part to service!");
+                                        textBox1.SelectAll();
+                                        textBox1.Focus();
+                                        return;
+                                    }
+
+                                    if (!OTPNumber.Equals("nok"))
                                     {
                                         PovijestLog pl = new PovijestLog();
                                         Boolean saved = false;
@@ -576,8 +452,9 @@ namespace POT
                                         {
                                             List<Part> tempPart = new List<Part>();
                                             tempPart.Clear();
+                                            tempPart.Add(new Part());
                                             tempPart.Add(partList[k]);
-                                            if (pl.SaveToPovijestLog(tempPart, DateTime.Now.ToString("dd.MM.yy."), napomenaPRIM, cmpS.Name, "", "", "PRIM " + Properties.Settings.Default.ShareDocumentName, tempPart[0].State))
+                                            if (pl.SaveToPovijestLog(tempPart, DateTime.Now.ToString("dd.MM.yy."), napomenaOTP, cmpR.Name, "", "", "OTP " + Properties.Settings.Default.ShareDocumentName, tempPart[1].State))
                                             {
                                                 saved = true;
                                             }
@@ -591,12 +468,12 @@ namespace POT
 
                                         if (saved)
                                         {
-                                            MessageBox.Show("DONE, document nbr. PRIM '" + PrimkaNumber + "'.");
+                                            MessageBox.Show("DONE, document nbr. OTP '" + OTPNumber + "'.");
 
                                             partListPrint.Clear();
                                             partListPrint = partList;
 
-                                            isPrimkaSaved = true;
+                                            isOtpremnicaSaved = true;
                                             listView1.Clear();
                                             listView1.View = View.Details;
 
@@ -607,16 +484,16 @@ namespace POT
                                             listView1.Columns.Add("CN");
                                             listView1.Columns.Add("Condition");
                                             textBox4.Clear();
-                                            napomenaPRIMPrint = napomenaPRIM;
+                                            napomenaOTPPrint = napomenaOTP;
                                         }
                                         else
                                         {
-                                            MessageBox.Show("DONE, document nbr. 'PRIM " + PrimkaNumber + "', but not saved in PL.");
+                                            MessageBox.Show("DONE, document nbr. 'OTP " + OTPNumber + "', but not saved in PL.");
 
                                             partListPrint.Clear();
                                             partListPrint = partList;
 
-                                            isPrimkaSaved = true;
+                                            isOtpremnicaSaved = true;
                                             listView1.Clear();
                                             listView1.View = View.Details;
 
@@ -627,15 +504,16 @@ namespace POT
                                             listView1.Columns.Add("CN");
                                             listView1.Columns.Add("Condition");
                                             textBox4.Clear();
-                                            napomenaPRIMPrint = napomenaPRIM;
+                                            napomenaOTPPrint = napomenaOTP;
                                         }
                                     }
-                                    else
-                                    {
-                                        MessageBox.Show("Unknown error in QUERY.");
-                                        napomenaPRIMPrint = "";
-                                        isPrimkaSaved = false;
-                                    }
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Hm... Same receiving and sending company?!");
+                                    textBox1.SelectAll();
+                                    textBox1.Focus();
+                                    return;
                                 }
                             }
                             cnnPR.Close();
@@ -648,7 +526,7 @@ namespace POT
                         textBox1.Focus();
                     }
                 }
-                this.printPrewBT.Enabled = isPrimkaSaved;
+                this.printPrewBT.Enabled = isOtpremnicaSaved;
             }
         }
 
@@ -661,17 +539,17 @@ namespace POT
             int screenWidth = Screen.PrimaryScreen.Bounds.Width;
             int screenHeight = Screen.PrimaryScreen.Bounds.Height;
 
-            printPreviewDialogPrim.Document = printDocumentPrim;
-            printPreviewDialogPrim.Size = new System.Drawing.Size(screenWidth - ((screenWidth / 100) * 60), screenHeight - (screenHeight / 100) * 10);
-            printPreviewDialogPrim.ShowDialog();
+            printPreviewDialogOtp.Document = printDocumentOtp;
+            printPreviewDialogOtp.Size = new System.Drawing.Size(screenWidth - ((screenWidth / 100) * 60), screenHeight - (screenHeight / 100) * 10);
+            printPreviewDialogOtp.ShowDialog();
 
             textBox1.SelectAll();
             textBox1.Focus();
         }
 
-        private void printDocumentPrim_PrintPage(object sender, PrintPageEventArgs e)
+        private void printDocumentOtp_PrintPage(object sender, PrintPageEventArgs e)
         {
-            PrintMe pr = new PrintMe(cmpS, cmpR, sifrarnikArr, partListPrint, PrimkaNumber, napomenaPRIMPrint, "Receipt", "customer", false);
+            PrintMe pr = new PrintMe(cmpR, cmpS, sifrarnikArr, partListPrint, OTPNumber, napomenaOTPPrint, "Delivery", "customer", true);
             //PrintMe pr = new PrintMe(cmpS, cmpR, sifrarnikArr, partListPrint, PrimkaNumber);
             pr.Print(e);
         }

@@ -104,6 +104,7 @@
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -1030,6 +1031,10 @@
             this.label36.TabIndex = 33;
             this.label36.Text = "Customer";
             // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            // 
             // State
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -1216,5 +1221,6 @@
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label36;
+        private System.Drawing.Printing.PrintDocument printDocument1;
     }
 }

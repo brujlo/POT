@@ -237,7 +237,6 @@
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.listView1.LabelEdit = true;
             this.listView1.Location = new System.Drawing.Point(11, 180);
             this.listView1.Margin = new System.Windows.Forms.Padding(4);
             this.listView1.Name = "listView1";
@@ -521,6 +520,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Primka";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Receipt";
             this.Load += new System.EventHandler(this.Primka_Load);
             this.ResumeLayout(false);

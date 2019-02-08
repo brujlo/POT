@@ -324,5 +324,10 @@ namespace POT
             textBox1.Text = comboBox2.Text + comboBox3.Text + string.Format("{0:000000000}", int.Parse(resultArrSearchCode.ElementAt(comboBox1.SelectedIndex)));
             SendKeys.Send("{ENTER}");
         }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+
+        }
     }
 }

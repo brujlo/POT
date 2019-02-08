@@ -20,6 +20,7 @@ namespace POT.WorkingClasses
         String napomenaPRIMPrint;
         String documentName;
         String recipientSender;
+        Boolean signature = false;
 
         int headerpointVer;
         int headerpointHor;
@@ -33,7 +34,7 @@ namespace POT.WorkingClasses
 
         PrintMe() { }
 
-        public PrintMe(Company _cmpS, Company _cmpR, List<String> _sifrarnikArr, List<Part> _partListPrint, String _PrimkaNumber, String _napomenaPRIMPrint, String _DocumentName, String _recipientSender)
+        public PrintMe(Company _cmpS, Company _cmpR, List<String> _sifrarnikArr, List<Part> _partListPrint, String _PrimkaNumber, String _napomenaPRIMPrint, String _DocumentName, String _recipientSender, Boolean _Signature)
         {
             cmpR = _cmpR;
             cmpS = _cmpS;
@@ -43,6 +44,7 @@ namespace POT.WorkingClasses
             napomenaPRIMPrint = _napomenaPRIMPrint;
             documentName = _DocumentName.ToUpper();
             recipientSender = _recipientSender.ToUpper();
+            signature = _Signature;
 
             CLogo logoImage = new CLogo();
             img = logoImage.GetImage();
@@ -108,7 +110,7 @@ namespace POT.WorkingClasses
                         e.Graphics.DrawString("Time: " + DateTime.Now.ToString("hh:mm"), new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * 7)));
                         e.Graphics.DrawString("UserID: " + WorkingUser.UserID, new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * 8)));
                         e.Graphics.DrawString("RegionID: " + WorkingUser.RegionID, new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * 9)));
-                        e.Graphics.DrawString("Made by " + WorkingUser.Name + " " + WorkingUser.Surename, new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * 10)));
+                        e.Graphics.DrawString("Made by: " + WorkingUser.Name + " " + WorkingUser.Surename, new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * 10)));
 
                         //MyCompany Info
                         e.Graphics.DrawImage(img, bounds.Right - imgW - margins.Right, bounds.Top + margins.Top, imgW, imgH);
@@ -465,6 +467,39 @@ namespace POT.WorkingClasses
                                 e.Graphics.DrawString("*" + workingStr + "*", fitFontSizeIDAutomation(e, workingStr, 6, bounds.Right - margins.Right - snSN), Brushes.Black, new Point(snSN + (((int)measureField - (int)measureStr) / 2), headerpointVer)); //  + moveBy
                                 rbInner++;
                             }
+                        }
+
+                        if (signature)
+                        {
+                            headerpointVer = headerpointVer + (moveBy * 12);
+
+                            if (headerpointVer + (moveBy * 16) + 20 > (bounds.Bottom - margins.Bottom))
+                            {
+                                //printingSN = true;
+                                e.HasMorePages = true;
+                                Properties.Settings.Default.printingSN = true;
+                                Properties.Settings.Default.pageNbr = pageNbr;
+                                Properties.Settings.Default.partRows = partRows;
+                                return;
+
+                            }
+
+                            int lineLength = (bounds.Right - margins.Right - margins.Left) / 4;
+                            e.Graphics.DrawLine(new Pen(Brushes.Black), new Point(margins.Left, headerpointVer), new Point(margins.Left + lineLength, headerpointVer));
+                            headerpointVer = headerpointVer + (moveBy / 2);
+
+                            workingStr = "Date";
+                            fnt = fitFontSize(e, workingStr, 7, lineLength);
+                            measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
+                            e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(margins.Left + ((lineLength - (int)measureStr) / 2), headerpointVer));
+                            headerpointVer = headerpointVer + (moveBy * 4);
+
+                            e.Graphics.DrawLine(new Pen(Brushes.Black), new Point(margins.Left, headerpointVer), new Point(margins.Left + lineLength, headerpointVer));
+                            headerpointVer = headerpointVer + (moveBy / 2);
+
+                            workingStr = "Signature";
+                            measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
+                            e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(margins.Left + ((lineLength - (int)measureStr) / 2), headerpointVer));
                         }
 
                         Properties.Settings.Default.printingSN = false;
