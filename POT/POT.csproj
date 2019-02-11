@@ -115,6 +115,12 @@
     <Compile Include="MyTypes\PartSifrarnik.cs" />
     <Compile Include="MyTypes\Part.cs" />
     <Compile Include="MyTypes\PovijestLog.cs" />
+    <Compile Include="OpenTicketList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpenTicketList.Designer.cs">
+      <DependentUpon>OpenTicketList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Otpremnica.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -194,6 +200,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainCmpSelector.resx">
       <DependentUpon>MainCmpSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpenTicketList.resx">
+      <DependentUpon>OpenTicketList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Otpremnica.resx">
       <DependentUpon>Otpremnica.cs</DependentUpon>

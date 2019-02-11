@@ -89,6 +89,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
+            this.linkLabel10 = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -835,12 +836,12 @@
             // 
             // label30
             // 
-            this.label30.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label30.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label30.AutoSize = true;
             this.label30.BackColor = System.Drawing.Color.Black;
             this.label30.Font = new System.Drawing.Font("Nirmala UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label30.ForeColor = System.Drawing.Color.White;
-            this.label30.Location = new System.Drawing.Point(886, 1);
+            this.label30.Location = new System.Drawing.Point(883, 3);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(75, 21);
             this.label30.TabIndex = 24;
@@ -891,12 +892,30 @@
             this.label32.TabIndex = 26;
             this.label32.Text = "Working time:";
             // 
+            // linkLabel10
+            // 
+            this.linkLabel10.AutoSize = true;
+            this.linkLabel10.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel10.Font = new System.Drawing.Font("Letter Gothic Std", 10F);
+            this.linkLabel10.ForeColor = System.Drawing.Color.Transparent;
+            this.linkLabel10.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.linkLabel10.LinkColor = System.Drawing.Color.Yellow;
+            this.linkLabel10.Location = new System.Drawing.Point(316, 101);
+            this.linkLabel10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.linkLabel10.Name = "linkLabel10";
+            this.linkLabel10.Size = new System.Drawing.Size(154, 24);
+            this.linkLabel10.TabIndex = 28;
+            this.linkLabel10.TabStop = true;
+            this.linkLabel10.Text = "Open tickets";
+            this.linkLabel10.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel10_LinkClicked);
+            // 
             // MainFR
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(964, 599);
+            this.Controls.Add(this.linkLabel10);
             this.Controls.Add(this.label31);
             this.Controls.Add(this.label32);
             this.Controls.Add(this.panel2);
@@ -1017,5 +1036,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.LinkLabel linkLabel10;
     }
 }

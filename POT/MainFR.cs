@@ -364,5 +364,11 @@ namespace POT
             this.linkLabel7.Text = Properties.strings.CompanyInfo;
             this.linkLabel9.Text = Properties.strings.SelectMainRegion;
         }
+
+        private void linkLabel10_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            OpenTicketList opl = new OpenTicketList(qc.openedTicketsList(WorkingUser.Username, WorkingUser.Password));
+            opl.Show();
+        }
     }
 }
