@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Resources;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace POT
@@ -11,6 +12,14 @@ namespace POT
     {
         private int loginCNt = 1;
         Image img = null;
+
+        int timerCnt = 0;
+        int timerRB = 0;
+        TimeSpan duration = new TimeSpan(0, 0, 0);
+        DateTime dt = DateTime.Now;
+        static QueryCommands qc = new QueryCommands();
+        ConnectionHelper cn = new ConnectionHelper();
+        static List<String> labResultArr = new List<string>();
 
         public MainFR()
         {
@@ -33,7 +42,7 @@ namespace POT
                 this.linkLabel5.Enabled = false;
                 this.linkLabel9.Enabled = false;
             }
-
+            
             this.label16.Text = DateTime.Now.ToString("dd.MM.yyyy.");
             
             QueryCommands qc = new QueryCommands();
@@ -86,6 +95,8 @@ namespace POT
             tel.Text = Properties.Settings.Default.CmpPhone;
             infomail.Text = Properties.Settings.Default.CmpEmail;
 
+            setText();
+
 
             CLogo logoImage = new CLogo();
             img = logoImage.GetImage();
@@ -114,6 +125,10 @@ namespace POT
             this.label28.Text = Properties.Settings.Default.CmpName;
 
             version.Text = "Version: " + Application.ProductVersion;
+
+            timer2.Start();
+            Thread myThread = new Thread(getOpenedTasks);
+            myThread.Start();
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -189,6 +204,8 @@ namespace POT
         private void timer1_Tick(object sender, EventArgs e)
         {
             this.label17.Text = DateTime.Now.ToString("HH:mm:ss");
+            duration = DateTime.Now - dt;
+            this.label31.Text = duration.ToString(@"dd\.hh\:mm\:ss");
         }
 
         private void linkLabel6_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -290,6 +307,62 @@ namespace POT
         {
             Otpremnica otp = new Otpremnica();
             otp.Show();
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            if(labResultArr.Count > 0 && !labResultArr[0].Equals("nok"))
+            { 
+                if (timerCnt >= this.Size.Width + label30.Width)
+                {
+                    if (timerRB >= labResultArr.Count)
+                    {
+                        timerRB = 0;
+                        try
+                        {
+                            labResultArr.Clear();
+                            labResultArr = qc.openedTickets(WorkingUser.Username, WorkingUser.Password);
+                        }
+                        catch (Exception)
+                        {
+
+                        }
+                    }
+
+                    timerCnt = 0;
+                    label30.Text = labResultArr.Count + " / " + labResultArr[timerRB++];
+                }
+                else
+                {
+                    label30.Location = new Point(this.Size.Width - timerCnt, label30.Height / 2);
+                }
+            }
+            timerCnt++;
+        }
+
+        static void getOpenedTasks()
+        {
+            try
+            {
+                labResultArr = qc.openedTickets(WorkingUser.Username, WorkingUser.Password);
+            }
+            catch (Exception)
+            {
+                
+            }
+        }
+
+        private void setText()
+        {
+            this.label21.Text = Properties.strings.Set;
+            this.label22.Text = Properties.strings.Check;
+            this.label23.Text = Properties.strings.Do;
+
+            this.linkLabel1.Text = Properties.strings.SetDBUser;
+            this.linkLabel2.Text = Properties.strings.DeleteDBUser;
+            this.linkLabel5.Text = Properties.strings.EditRegion;
+            this.linkLabel7.Text = Properties.strings.CompanyInfo;
+            this.linkLabel9.Text = Properties.strings.SelectMainRegion;
         }
     }
 }

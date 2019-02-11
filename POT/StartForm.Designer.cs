@@ -136,7 +136,6 @@
             // rbHrv
             // 
             this.rbHrv.AutoSize = true;
-            this.rbHrv.Enabled = false;
             this.rbHrv.ForeColor = System.Drawing.Color.Red;
             this.rbHrv.Location = new System.Drawing.Point(439, 156);
             this.rbHrv.Name = "rbHrv";
@@ -149,7 +148,6 @@
             // 
             this.rbEng.AutoSize = true;
             this.rbEng.Checked = true;
-            this.rbEng.Enabled = false;
             this.rbEng.ForeColor = System.Drawing.Color.Red;
             this.rbEng.Location = new System.Drawing.Point(439, 195);
             this.rbEng.Name = "rbEng";

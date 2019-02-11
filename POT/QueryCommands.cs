@@ -1217,6 +1217,56 @@ namespace POT
             cnn.Close();
             return executed;
         }
+
+        public List<String> openedTickets(String Uname, String Pass)
+        {
+            int cnt = 1;
+            List<String> arr = new List<string>();
+            SqlConnection cnn = cn.Connect(Uname, Pass);
+            query = "SELECT * FROM Ticket WHERE (UserIDUnio <> 2 or UserIDUnio is NULL) and VriZavrsio is NULL ";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                do
+                {
+                    String wrkStr = "";
+
+                    if (dataReader["DatPreuzeto"].ToString().Equals(""))
+                    {
+                        wrkStr = "Need action";
+                    }
+                    else if (dataReader["DatDrive"].ToString().Equals(""))
+                    {
+                        wrkStr = "Taken " + dataReader["DatPreuzeto"].ToString() + " - " + dataReader["VriPreuzeto"].ToString() + "h";
+                    }
+                    else if (dataReader["DatPoceo"].ToString().Equals(""))
+                    {
+                        wrkStr = "Driving " + dataReader["DatDrive"].ToString() + " - " + dataReader["VriDrive"].ToString() + "h";
+                    }
+                    else if (dataReader["DatZavrsio"].ToString().Equals(""))
+                    {
+                        wrkStr = "Working " + dataReader["DatPoceo"].ToString() + " - " + dataReader["VriPoceo"].ToString() + "h";
+                    }
+
+                    arr.Add(cnt + " =>     ID: " + dataReader["TicketID"].ToString() + "  #  CUST: " + dataReader["TvrtkeID"].ToString() + " - F" + dataReader["Filijala"].ToString() + "  #  CCN: " + dataReader["CCN"].ToString() + " - " + dataReader["CID"].ToString() + "  #  PLACED: " +
+                    dataReader["DatPrijave"].ToString() + " - " + dataReader["VriPrijave"].ToString() + "h  #  SLA: " + dataReader["DatSLA"].ToString() + " - " + dataReader["VriSLA"].ToString() + "h  #  STATUS: " + wrkStr);
+
+                    cnt++;
+                } while (dataReader.Read());
+            }
+            else
+            {
+                arr.Add("nok");
+            }
+
+            dataReader.Close();
+            cnn.Close();
+            return arr;
+        }
     }
 }
 

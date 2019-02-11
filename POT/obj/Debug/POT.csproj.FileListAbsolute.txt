@@ -50,3 +50,7 @@ F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.exe.manifest
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.application
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.exe
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.pdb
+F:\PROJEKTI\VS\POT\POT\POT\bin\Debug\hr\POT.resources.dll
+F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.Properties.strings.hr.resources
+F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\hr\POT.resources.dll
+F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.Properties.strings.resources

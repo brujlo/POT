@@ -478,6 +478,7 @@
             // printDialog1
             // 
             this.printDialog1.AllowSomePages = true;
+            this.printDialog1.Document = this.printDocumentPrim;
             this.printDialog1.PrintToFile = true;
             this.printDialog1.UseEXDialog = true;
             // 

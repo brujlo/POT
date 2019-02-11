@@ -103,6 +103,16 @@ namespace POT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap documents_64px {
+            get {
+                object obj = ResourceManager.GetObject("documents_64px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap EXE {
             get {
                 object obj = ResourceManager.GetObject("EXE", resourceCulture);
@@ -133,6 +143,16 @@ namespace POT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap gears_64px {
+            get {
+                object obj = ResourceManager.GetObject("gears_64px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap info {
             get {
                 object obj = ResourceManager.GetObject("info", resourceCulture);
@@ -156,6 +176,26 @@ namespace POT.Properties {
         internal static System.Drawing.Bitmap input {
             get {
                 object obj = ResourceManager.GetObject("input", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap magnifying_glass_64px {
+            get {
+                object obj = ResourceManager.GetObject("magnifying_glass_64px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap search_64px {
+            get {
+                object obj = ResourceManager.GetObject("search_64px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
