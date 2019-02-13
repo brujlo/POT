@@ -4,7 +4,7 @@
   <description asmv2:iconFile="EXE.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="POT" version="1.3.0.1" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="POT" version="1.5.1.1" language="neutral" processorArchitecture="msil" />
     <commandLine file="POT.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -44,25 +44,25 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="POT.exe" size="6713768">
-      <assemblyIdentity name="POT" version="1.3.0.1" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="POT" version="1.5.1.1" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>alVv7lP945h/RT2WeUHfD90++5HhiJi1js52ZpkFLdY=</dsig:DigestValue>
+        <dsig:DigestValue>2vitC4IVv2uyeGb/NTiKEjadCpN017l/lPP1z/cfGsU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="hr\POT.resources.dll" size="3584">
-      <assemblyIdentity name="POT.resources" version="1.3.0.1" language="hr" processorArchitecture="msil" />
+      <assemblyIdentity name="POT.resources" version="1.5.1.1" language="hr" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>u670jN+FqJoxcffdE+EdModOmsrUBMGaqOcnDpMJU4g=</dsig:DigestValue>
+        <dsig:DigestValue>t3/Y3O9VNoCWtfXrbnLmyf+B4c/isPQJ4mV+8xbiEeQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
