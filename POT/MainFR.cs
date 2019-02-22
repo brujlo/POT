@@ -1,6 +1,8 @@
-﻿using POT.WorkingClasses;
+﻿using POT.BuildingClasses;
+using POT.WorkingClasses;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Drawing;
 using System.Resources;
 using System.Threading;
@@ -42,7 +44,10 @@ namespace POT
                 this.linkLabel5.Enabled = false;
                 this.linkLabel9.Enabled = false;
             }
-            
+            Properties.Settings.Default.DBTabelsBuilded = false;
+            Properties.Settings.Default.Save();
+            if (Properties.Settings.Default.DBTabelsBuilded) linkLabel11.Enabled = false;
+
             this.label16.Text = DateTime.Now.ToString("dd.MM.yyyy.");
             
             QueryCommands qc = new QueryCommands();
@@ -369,6 +374,71 @@ namespace POT
         {
             OpenTicketList opl = new OpenTicketList(qc.openedTicketsList(WorkingUser.Username, WorkingUser.Password));
             opl.Show();
+        }
+
+        private void linkLabel11_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            backgroundWorker1.WorkerReportsProgress = true;
+            backgroundWorker1.WorkerSupportsCancellation = true;
+
+            if (backgroundWorker1.IsBusy != true)
+            {
+                backgroundWorker1.RunWorkerAsync();
+            }
+
+            while (backgroundWorker1.IsBusy && !backgroundWorker1.CancellationPending)
+            {
+                if (Properties.Settings.Default.DBTabelsBuilded)
+                {
+                    linkLabel11.Enabled = false;
+                    this.Refresh();
+                }
+            }
+        }
+
+        private void backgroundWorker1_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
+        {
+            MakeDataBase mdb = new MakeDataBase();
+            try
+            {
+                if (mdb.MakeDB("ZBase"))
+                    if (mdb.MakeTables("ZBase"))
+                        MessageBox.Show("I am done with buildibng the DB!");
+                    else
+                        MessageBox.Show("I am done with buildibng the DB, but tabels are not added!");
+                else
+                    MessageBox.Show("Nothing done!");
+                
+                backgroundWorker1.CancelAsync();
+                e.Cancel = true;
+            }
+            catch (Exception es)
+            {
+                MessageBox.Show("There was a error, ErrMsg: " + es.Message);
+                backgroundWorker1.CancelAsync();
+                e.Cancel = true;
+            }
+        }
+
+        private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            //if (e.Cancelled == true)
+            //{
+            //    MessageBox.Show("Canceled!");
+            //}
+            //else if (e.Error != null)
+            //{
+            //    MessageBox.Show("Error: " + e.Error.Message);
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Done!");
+            //}
+
+            if (e.Error != null)
+            {
+                MessageBox.Show("BCKP Workrer Error: " + e.Error.Message);
+            }
         }
     }
 }

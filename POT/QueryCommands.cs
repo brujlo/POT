@@ -1,4 +1,5 @@
 ﻿using POT.MyTypes;
+using POT.WorkingClasses;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -59,8 +60,14 @@ namespace POT
         {
             List<String> arr = new List<string>();
 
+            CriptMe cm = new CriptMe();
+            String hashPswd = cm.Cript(Pass);
+            //Form1 fr = new Form1();
+            //fr.setText(hashPswd);
+            //fr.ShowDialog();
             SqlConnection cnn = cn.Connect(Uname, Pass);
-            query = "Select * from Users where Username = '" + Uname + "' and Password = '" + Pass + "'";
+            query = "Select * from Users where Username = '" + Uname + "' and HashPswd = '" + hashPswd + "'";
+            //query = "Select * from Users where Username = '" + Uname + "' and Password = '" + Pass + "'";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
             SqlDataReader dataReader = command.ExecuteReader();
@@ -140,13 +147,16 @@ namespace POT
             {
                 try
                 {
+                    CriptMe cm = new CriptMe();
+                    String hashPswd = cm.Cript(value[3]);
+
                     command.CommandText = "CREATE LOGIN " + value[2] + " WITH PASSWORD = '" + value[3] + "'";
                     command.ExecuteNonQuery();
                     command.CommandText = "CREATE USER " + value[2] + " FOR LOGIN " + value[2];
                     command.ExecuteNonQuery();
                     command.CommandText = "GRANT INSERT,UPDATE,DELETE,SELECT,EXECUTE ON SCHEMA :: dbo TO " + value[2];
                     command.ExecuteNonQuery();
-                    command.CommandText = "Insert into Users(Name, Surename, Username, Password, Phone, Email, RegionID, AdminRights) values('" + value[0] + "', '" + value[1] + "', '" + value[2] + "', '" + value[3] + "', '" + value[4] + "', '" + value[5] + "', " + value[6] + ", " + value[7] + ")";
+                    command.CommandText = "Insert into Users(Name, Surename, Username, Password, Phone, Email, RegionID, AdminRights, HashPswd) values('" + value[0] + "', '" + value[1] + "', '" + value[2] + "', '" + value[3] + "', '" + value[4] + "', '" + value[5] + "', " + value[6] + ", " + value[7] + ", '" + hashPswd + "')";
                     command.ExecuteNonQuery();
                     transaction.Commit();
                 }
@@ -199,11 +209,15 @@ namespace POT
                 {
                     try
                     {
+                        command.CommandText = "ALTER DATABASE [CP] SET MULTI_USER";
+                        command.ExecuteNonQuery();
                         cnn.Close();
                         throw;
                     }
                     catch (Exception)
                     {
+                        command.CommandText = "ALTER DATABASE [CP] SET MULTI_USER";
+                        command.ExecuteNonQuery();
                         throw;
                     }
                 }

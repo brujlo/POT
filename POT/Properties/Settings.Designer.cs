@@ -310,5 +310,29 @@ namespace POT.Properties {
                 this["AutoLogin"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool DBBuilded {
+            get {
+                return ((bool)(this["DBBuilded"]));
+            }
+            set {
+                this["DBBuilded"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool DBTabelsBuilded {
+            get {
+                return ((bool)(this["DBTabelsBuilded"]));
+            }
+            set {
+                this["DBTabelsBuilded"] = value;
+            }
+        }
     }
 }

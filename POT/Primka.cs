@@ -38,7 +38,7 @@ namespace POT
         {
             comboBox3.Text = Properties.Settings.Default.MainCompanyCode;
             comboBox4.Text = Properties.Settings.Default.MainCompanyCode;
-            this.printPrewBT.Enabled = false;
+            //this.printPrewBT.Enabled = false;
 
             Thread myThread = new Thread(fillComboBoxes);
 
