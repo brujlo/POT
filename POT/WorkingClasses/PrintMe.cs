@@ -24,11 +24,12 @@ namespace POT.WorkingClasses
 
         int headerpointVer;
         int headerpointHor;
-        int imgH = 75;
-        int imgW = 150;
+        int imgH = 0;  //75
+        int imgW = 300 / Properties.Settings.Default.LogoSize; //150
         int moveBy = 12;
         int fontSizeR = 8;
         int fontSizeS = 10;
+        double imgScale = 0;
 
         Image img = null;
 
@@ -48,6 +49,10 @@ namespace POT.WorkingClasses
 
             CLogo logoImage = new CLogo();
             img = logoImage.GetImage();
+
+            imgScale = (double)img.Width / img.Height;
+
+            imgH = (int)((double)imgW / imgScale);
         }
 
         public void Print(PrintPageEventArgs e)
@@ -84,17 +89,20 @@ namespace POT.WorkingClasses
             Rectangle bounds = page.Bounds;
             Margins margins = page.Margins;
 
+            //Podesavanje pocetka ispisa za prvi list od vrha (default = 100)
+            margins.Bottom = margins.Bottom / 2;
+            margins.Top = margins.Top / 2;
+
             headerpointVer = margins.Top;
             headerpointHor = bounds.Right - margins.Right;
             int napomenaHeight = bounds.Bottom - margins.Bottom - moveBy * 5;
-
 
             try
             {
                 String workingStr = "";
                 float measureStr = 0;
                 float measureField = 0;
-
+               
                 using (img)
                 {
                     //var groupedPartsList = partListPrint.GroupBy(c => c.PartialCode).Select(grp => grp.ToList()).ToList();
@@ -114,7 +122,7 @@ namespace POT.WorkingClasses
 
                         //MyCompany Info
                         e.Graphics.DrawImage(img, bounds.Right - imgW - margins.Right, bounds.Top + margins.Top, imgW, imgH);
-
+                        
                         e.Graphics.DrawString(Properties.Settings.Default.CmpName, new Font("Calibri light", fontSizeR, FontStyle.Bold), Brushes.Black, new Point(bounds.Right - margins.Right - (imgW - imgW / 7), margins.Top + imgH + (moveBy)));
                         e.Graphics.DrawString(Properties.Settings.Default.CmpAddress, new Font("Calibri light", fontSizeR, FontStyle.Regular), Brushes.Black, new Point(bounds.Right - margins.Right - (imgW - imgW / 7), margins.Top + imgH + (moveBy * 2)));
                         e.Graphics.DrawString("MB: " + Properties.Settings.Default.CmpMB, new Font("Calibri light", fontSizeR, FontStyle.Regular), Brushes.Black, new Point(bounds.Right - margins.Right - (imgW - imgW / 7), margins.Top + imgH + (moveBy * 3)));
@@ -136,8 +144,8 @@ namespace POT.WorkingClasses
                     }
                     else
                     {
-                        imgH = 40;
-                        imgW = 80;
+                        imgW = imgW / 2; //80
+                        imgH = (int)((double)imgW / imgScale); //75 //40
                         e.Graphics.DrawImage(img, bounds.Right - imgW - margins.Right, bounds.Top + margins.Top, imgW, imgH);
                         headerpointVer = bounds.Top + margins.Top + imgH + 50;
                     }
@@ -321,6 +329,10 @@ namespace POT.WorkingClasses
             Rectangle bounds = page.Bounds;
             Margins margins = page.Margins;
 
+            //Podesavanje pocetka ispisa za ostale listove od vrha (default = 100)
+            margins.Bottom = margins.Bottom / 2;
+            margins.Top = margins.Top / 2;
+
             headerpointVer = margins.Top;
             headerpointHor = bounds.Right - margins.Right;
             int napomenaHeight = bounds.Bottom - margins.Bottom - moveBy * 5;
@@ -346,9 +358,9 @@ namespace POT.WorkingClasses
                     if (partRows <= groupedPartsListSN.Count) //Ovo je test
                     {
                         headerpointVer = bounds.Bottom + margins.Top;
-
-                        imgH = 40;
-                        imgW = 80;
+                       
+                        imgW = imgW / 2; //80
+                        imgH = (int)((double)imgW / imgScale); //75 //40
 
                         e.Graphics.DrawImage(img, bounds.Right - imgW - margins.Right, bounds.Top + margins.Top, imgW, imgH);
                         headerpointVer = bounds.Top + margins.Top + imgH + 50;

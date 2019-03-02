@@ -25,6 +25,13 @@ namespace POT
 
         public MainFR()
         {
+            //For Testing DB BUILD
+
+            Properties.Settings.Default.DBTabelsBuilded = false;
+            Properties.Settings.Default.Save();
+            
+            ///
+
             InitializeComponent();
             // 1 - admin 
             // 2 - superuser
@@ -44,8 +51,7 @@ namespace POT
                 this.linkLabel5.Enabled = false;
                 this.linkLabel9.Enabled = false;
             }
-            Properties.Settings.Default.DBTabelsBuilded = false;
-            Properties.Settings.Default.Save();
+
             if (Properties.Settings.Default.DBTabelsBuilded) linkLabel11.Enabled = false;
 
             this.label16.Text = DateTime.Now.ToString("dd.MM.yyyy.");
@@ -101,7 +107,6 @@ namespace POT
             infomail.Text = Properties.Settings.Default.CmpEmail;
 
             setText();
-
 
             CLogo logoImage = new CLogo();
             img = logoImage.GetImage();
@@ -396,16 +401,23 @@ namespace POT
             }
         }
 
-        private void backgroundWorker1_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
             MakeDataBase mdb = new MakeDataBase();
             try
             {
-                if (mdb.MakeDB("ZBase"))
-                    if (mdb.MakeTables("ZBase"))
-                        MessageBox.Show("I am done with buildibng the DB!");
+                String newDBName = Properties.Settings.Default.CmpName.Replace(".", "");
+                newDBName = newDBName.Replace(",", "");
+                newDBName = newDBName.Replace("-", "");
+                newDBName = newDBName.Replace("/", "");
+                var ndbnArr = newDBName.Split();
+                newDBName = ndbnArr[0];
+
+                if (mdb.MakeDB(newDBName))
+                    if (mdb.MakeTables(newDBName))
+                        MessageBox.Show("I am done with buildibng the DB! \r\n Your catalog name is: " + Properties.Settings.Default.Catalog + ".");
                     else
-                        MessageBox.Show("I am done with buildibng the DB, but tabels are not added!");
+                        MessageBox.Show("I am done with buildibng the DB, but tabels are not added! \r\n Your catalog name is: " + Properties.Settings.Default.Catalog + ".");
                 else
                     MessageBox.Show("Nothing done!");
                 

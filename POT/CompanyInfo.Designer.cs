@@ -53,7 +53,10 @@
             this.CmpSwift = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.LogoSize = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LogoSize)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -300,16 +303,41 @@
             // 
             this.label12.AutoSize = true;
             this.label12.ForeColor = System.Drawing.Color.MediumSeaGreen;
-            this.label12.Location = new System.Drawing.Point(319, 99);
+            this.label12.Location = new System.Drawing.Point(13, 166);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(106, 20);
+            this.label12.Size = new System.Drawing.Size(221, 20);
             this.label12.TabIndex = 24;
-            this.label12.Text = "Logo ratio 2:1";
+            this.label12.Text = "BEST ratio 2:1 With > 500 .jpg";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label13.Location = new System.Drawing.Point(330, 74);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(77, 20);
+            this.label13.TabIndex = 25;
+            this.label13.Text = "Logo size";
+            // 
+            // LogoSize
+            // 
+            this.LogoSize.Location = new System.Drawing.Point(334, 90);
+            this.LogoSize.Name = "LogoSize";
+            this.LogoSize.Size = new System.Drawing.Size(86, 26);
+            this.LogoSize.TabIndex = 27;
+            this.LogoSize.TabStop = false;
+            this.LogoSize.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // CompanyInfo
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(577, 573);
+            this.Controls.Add(this.LogoSize);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.CmpSwift);
@@ -341,6 +369,7 @@
             this.Text = "Company info";
             this.Load += new System.EventHandler(this.CompanyInfo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LogoSize)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -373,5 +402,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox CmpSwift;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.NumericUpDown LogoSize;
     }
 }

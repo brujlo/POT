@@ -30,6 +30,7 @@ namespace POT
             CmpIBAN.Text = Properties.Settings.Default.CmpIBAN;
             CmpSwift.Text = Properties.Settings.Default.CmpSWIFT;
             CmpMB.Text = Properties.Settings.Default.CmpMB;
+            LogoSize.Value = Properties.Settings.Default.LogoSize;
 
             try
             {
@@ -61,6 +62,7 @@ namespace POT
                 Properties.Settings.Default.CmpIBAN = this.CmpIBAN.Text.Trim();
                 Properties.Settings.Default.CmpSWIFT = this.CmpSwift.Text.Trim();
                 Properties.Settings.Default.CmpMB = this.CmpMB.Text.Trim();
+                Properties.Settings.Default.LogoSize = int.Parse(this.LogoSize.Value.ToString());
 
                 using (ResXResourceWriter resx = new ResXResourceWriter(@".\Logo.resx"))
                 {
