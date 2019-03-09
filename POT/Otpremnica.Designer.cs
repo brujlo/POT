@@ -398,6 +398,7 @@
             this.radioButton2.TabIndex = 54;
             this.radioButton2.Text = "No Good";
             this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.Click += new System.EventHandler(this.radioButton2_Click);
             // 
             // radioButton1
             // 
@@ -412,6 +413,7 @@
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Good";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.Click += new System.EventHandler(this.radioButton1_Click);
             // 
             // label5
             // 

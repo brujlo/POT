@@ -853,7 +853,55 @@ namespace POT
         {
             List<String> arr = new List<string>();
             SqlConnection cnn = cn.Connect(Uname, Pass);
-            query = "select Count(CodePartFull) from Parts p where p.CodePartFull = " + mCodePartFull + " and p.StorageID = " + mStorageID + " and (p.State = 'ng' or p.State = 's')";
+            query = "select Count(CodePartFull) from Parts p where p.CodePartFull = " + mCodePartFull + " and p.StorageID = " + mStorageID + " and p.State = 'ng'";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                var cnt = dataReader.GetValue(0);
+                arr.Add(cnt.ToString());
+            }
+            else
+            {
+                arr.Add("nok");
+            }
+            dataReader.Close();
+            cnn.Close();
+            return arr;
+        }
+
+        public List<String> PartsCntNGS(String Uname, String Pass, long mCodePartFull)
+        {
+            List<String> arr = new List<string>();
+            SqlConnection cnn = cn.Connect(Uname, Pass);
+            query = "select Count(CodePartFull) from Parts p where p.CodePartFull = " + mCodePartFull + " and p.State = 'ngs'";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                var cnt = dataReader.GetValue(0);
+                arr.Add(cnt.ToString());
+            }
+            else
+            {
+                arr.Add("nok");
+            }
+            dataReader.Close();
+            cnn.Close();
+            return arr;
+        }
+
+        public List<String> PartsCntGS(String Uname, String Pass, long mCodePartFull)
+        {
+            List<String> arr = new List<string>();
+            SqlConnection cnn = cn.Connect(Uname, Pass);
+            query = "select Count(CodePartFull) from Parts p where p.CodePartFull = " + mCodePartFull + " and p.State = 'gs'";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
             SqlDataReader dataReader = command.ExecuteReader();
@@ -905,6 +953,32 @@ namespace POT
             List<String> arr = new List<string>();
             SqlConnection cnn = cn.Connect(Uname, Pass);
             query = "Select PartID from Parts where CodePartFull = " + mCodePartFull + " and SN = '" + mSN + "' and CN = '" + mCN + "' and StorageID = " + mStorageID;
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                do
+                {
+                    arr.Add(dataReader["PartID"].ToString());
+                } while (dataReader.Read());
+            }
+            else
+            {
+                arr.Add("nok");
+            }
+            dataReader.Close();
+            cnn.Close();
+            return arr;
+        }
+
+        public List<String> GetPartIDCompareCodeSNCNStorageState(String Uname, String Pass, long mCodePartFull, String mSN, String mCN, long mStorageID, String mState)
+        {
+            List<String> arr = new List<string>();
+            SqlConnection cnn = cn.Connect(Uname, Pass);
+            query = "Select PartID from Parts where CodePartFull = " + mCodePartFull + " and SN = '" + mSN + "' and CN = '" + mCN + "' and StorageID = " + mStorageID + "and State = '" + mState + "'";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
             SqlDataReader dataReader = command.ExecuteReader();
@@ -1225,6 +1299,69 @@ namespace POT
                     {
                         throw;
                     }
+                }
+            }
+            dataReader.Close();
+            cnn.Close();
+            return executed;
+        }
+
+        public String IUSPrebaciUServis(String Uname, String Pass, List<Part> ListOfParts, long RegionIDReciever, long CustomerID, String mNapomenaIUS)
+        {
+            String executed = "nok";
+            long IUSCnt = 0;
+            long IUSCntFull = 0;
+            SqlConnection cnn = cn.Connect(Uname, Pass);
+            query = "select distinct top 1 rb from IUSparts where iusID LIKE '" + DateTime.Now.ToString("yy") + "%' ORDER BY rb desc";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (!dataReader.HasRows)
+                IUSCnt = 1;
+            else
+                IUSCnt = long.Parse(dataReader.GetValue(0).ToString()) + (IUSCnt + 1);
+
+            IUSCntFull = long.Parse(DateTime.Now.ToString("yy")) * 1000000 + (WorkingUser.UserID * 1000);
+
+            Properties.Settings.Default.ShareDocumentName = (IUSCntFull + IUSCnt).ToString();
+
+            dataReader.Close();
+            command = cnn.CreateCommand();
+            SqlTransaction transaction = cnn.BeginTransaction();
+            command.Connection = cnn;
+            command.Transaction = transaction;
+
+            try
+            {
+                    
+
+                for (int i = 0; i < ListOfParts.Count; i++)
+                {
+                    command.CommandText = "UPDATE Parts SET State = 'ngs' WHERE PartID = " + ListOfParts[i].PartID;
+                    command.ExecuteNonQuery();
+
+                    command.CommandText = "INSERT INTO IUSparts (iusID, partID, date, rb, customerID, napomena) VALUES (" + IUSCntFull + ", " + ListOfParts[i].PartID
+                        + ", '" + DateTime.Now.ToString("dd.MM.yy.") + "', " + IUSCnt + ", " + CustomerID + ", '" + mNapomenaIUS + "')";
+
+                    command.ExecuteNonQuery();
+                }
+
+                transaction.Commit();
+                executed = string.Format("{0:00/000/000}", IUSCntFull + IUSCnt);
+            }
+            catch (Exception)
+            {
+                try
+                {
+                    transaction.Rollback();
+                    executed = "nok";
+                    throw;
+                }
+                catch (Exception)
+                {
+                    throw;
                 }
             }
             dataReader.Close();

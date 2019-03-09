@@ -56,3 +56,4 @@ F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\hr\POT.resources.dll
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.Properties.strings.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.OpenTicketList.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.Form1.resources
+F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.IUS.resources

@@ -146,7 +146,12 @@ namespace POT
                                 txtBoxAddG.ReadOnly = true;
                                 resultArrG.Clear();
                                 sendArr.Clear();
-                                resultArrG = qc.PartsCntG(WorkingUser.Username, WorkingUser.Password, long.Parse(label18.Text.Trim()), long.Parse(resultArr3[jj].Trim()));
+
+                                if (resultArr3[jj + 1].Equals("S"))
+                                    resultArrG = qc.PartsCntGS(WorkingUser.Username, WorkingUser.Password, long.Parse(label18.Text.Trim()));
+                                else
+                                    resultArrG = qc.PartsCntG(WorkingUser.Username, WorkingUser.Password, long.Parse(label18.Text.Trim()), long.Parse(resultArr3[jj].Trim()));
+
                                 txtBoxAddG.Name = "txtBoxAddG_" + i;
                                 txtBoxAddG.Text = resultArrG[0] == "nok" ? "" : resultArrG[0].Equals("0") ? "" : resultArrG[0];
                                 if (!txtBoxAddG.Text.Equals("")) totalG = totalG + int.Parse(txtBoxAddG.Text);
@@ -162,7 +167,12 @@ namespace POT
                                 txtBoxAddNG.ReadOnly = true;
                                 resultArrNG.Clear();
                                 sendArr.Clear();
-                                resultArrNG = qc.PartsCntNG(WorkingUser.Username, WorkingUser.Password, long.Parse(label18.Text.Trim()), long.Parse(resultArr3[jj].Trim()));
+
+                                if(resultArr3[jj + 1].Equals("S"))
+                                    resultArrNG = qc.PartsCntNGS(WorkingUser.Username, WorkingUser.Password, long.Parse(label18.Text.Trim()));
+                                else
+                                    resultArrNG = qc.PartsCntNG(WorkingUser.Username, WorkingUser.Password, long.Parse(label18.Text.Trim()), long.Parse(resultArr3[jj].Trim()));
+
                                 txtBoxAddNG.Name = "txtBoxAddNG_" + i;
                                 txtBoxAddNG.Text = resultArrNG[0] == "nok" ? "" : resultArrNG[0].Equals("0") ? "" : resultArrNG[0];
                                 if (!txtBoxAddNG.Text.Equals("")) totalNG = totalNG + int.Parse(txtBoxAddNG.Text);
@@ -323,11 +333,6 @@ namespace POT
             textBox1.Focus();
             textBox1.Text = comboBox2.Text + comboBox3.Text + string.Format("{0:000000000}", int.Parse(resultArrSearchCode.ElementAt(comboBox1.SelectedIndex)));
             SendKeys.Send("{ENTER}");
-        }
-
-        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
-        {
-
         }
     }
 }

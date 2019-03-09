@@ -452,5 +452,11 @@ namespace POT
                 MessageBox.Show("BCKP Workrer Error: " + e.Error.Message);
             }
         }
+
+        private void linkLabel12_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            IUS ius = new IUS();
+            ius.Show();
+        }
     }
 }

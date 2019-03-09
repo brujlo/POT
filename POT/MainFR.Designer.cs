@@ -92,6 +92,7 @@
             this.linkLabel10 = new System.Windows.Forms.LinkLabel();
             this.linkLabel11 = new System.Windows.Forms.LinkLabel();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.linkLabel12 = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -933,6 +934,23 @@
             this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
             this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
             // 
+            // linkLabel12
+            // 
+            this.linkLabel12.AutoSize = true;
+            this.linkLabel12.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel12.Font = new System.Drawing.Font("Letter Gothic Std", 10F);
+            this.linkLabel12.ForeColor = System.Drawing.Color.Transparent;
+            this.linkLabel12.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.linkLabel12.LinkColor = System.Drawing.Color.Yellow;
+            this.linkLabel12.Location = new System.Drawing.Point(359, 136);
+            this.linkLabel12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.linkLabel12.Name = "linkLabel12";
+            this.linkLabel12.Size = new System.Drawing.Size(46, 24);
+            this.linkLabel12.TabIndex = 30;
+            this.linkLabel12.TabStop = true;
+            this.linkLabel12.Text = "IUS";
+            this.linkLabel12.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel12_LinkClicked);
+            // 
             // MainFR
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -940,6 +958,7 @@
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(964, 599);
+            this.Controls.Add(this.linkLabel12);
             this.Controls.Add(this.linkLabel8);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox7);
@@ -1065,5 +1084,6 @@
         private System.Windows.Forms.LinkLabel linkLabel10;
         private System.Windows.Forms.LinkLabel linkLabel11;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.LinkLabel linkLabel12;
     }
 }

@@ -201,13 +201,13 @@ namespace POT
             }
         }
 
-        private void radioButton1_Click_x(object sender, EventArgs e)
+        private void radioButton1_Click(object sender, EventArgs e)
         {
             textBox1.SelectAll();
             textBox1.Focus();
         }
 
-        private void radioButton2_Click_x(object sender, EventArgs e)
+        private void radioButton2_Click(object sender, EventArgs e)
         {
             textBox1.SelectAll();
             textBox1.Focus();
@@ -270,29 +270,6 @@ namespace POT
         }
         private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
         {
-            textBox1.SelectAll();
-            textBox1.Focus();
-        }
-
-        private void button3_Click_x(object sender, EventArgs e)
-        {
-            var items = listView1.SelectedItems;
-            int k = 1;
-
-            foreach (ListViewItem item in listView1.SelectedItems)
-            {
-                listView1.Items.Remove(item);
-            }
-
-            foreach (ListViewItem item in listView1.Items)
-            {
-                if (listView1.SelectedItems != null && listView1.Items.Count != 0)
-                {
-                    item.SubItems[0].Text = k.ToString();
-                    k++;
-                }
-            }
-            rb = listView1.Items.Count + 1;
             textBox1.SelectAll();
             textBox1.Focus();
         }
@@ -404,7 +381,7 @@ namespace POT
                                         tempPart.State = listView1.Items[i].SubItems[5].Text;
                                         tempPart.CompanyO = listView1.Items[i].SubItems[2].Text.Substring(0, 2);
                                         tempPart.CompanyC = listView1.Items[i].SubItems[2].Text.Substring(2, 2);
-                                        long tempCode = long.Parse(string.Format("{0:00}", tempPart.CompanyO) + string.Format("{0:00}", tempPart.CompanyC) + string.Format("{0:000000000}", tempSifPart.FullCode));
+                                        //long tempCode = long.Parse(string.Format("{0:00}", tempPart.CompanyO) + string.Format("{0:00}", tempPart.CompanyC) + string.Format("{0:000000000}", tempSifPart.FullCode));
                                         String tmpResult = qc.GetPartIDCompareCodeSNCNStorage(WorkingUser.Username, WorkingUser.Password,
                                             long.Parse(listView1.Items[i].SubItems[2].Text),
                                             listView1.Items[i].SubItems[3].Text,
