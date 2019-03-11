@@ -156,11 +156,29 @@ namespace POT
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Form st = new State();
-            st.ShowDialog();
+            //st.ShowDialog();
+            st.Show();
         }
 
         private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            int cnt = 0;
+
+            foreach (Form frm in Application.OpenForms)
+            {
+                if (!frm.Name.Equals("MainFR") && !frm.Name.Equals("LoginFR") && !frm.Name.Equals("StartForm"))
+                    cnt++;
+            }
+
+            if (cnt == 0)
+                linkLabel4.Enabled = true;
+            else
+            {
+                linkLabel4.Enabled = false;
+                return;
+            }
+
+
             Hide();
             LoginForm fr = new LoginForm();
             fr.ShowDialog();
@@ -221,7 +239,7 @@ namespace POT
         private void linkLabel6_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Primka pr = new Primka();
-            pr.ShowDialog();
+            pr.Show();
         }
 
         private void linkLabel7_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -407,6 +425,11 @@ namespace POT
             try
             {
                 String newDBName = Properties.Settings.Default.CmpName.Replace(".", "");
+                if (newDBName.Equals(""))
+                {
+                    MessageBox.Show("First you must insert main company. \r\n Nothing done.");
+                    return;
+                }
                 newDBName = newDBName.Replace(",", "");
                 newDBName = newDBName.Replace("-", "");
                 newDBName = newDBName.Replace("/", "");
@@ -458,5 +481,22 @@ namespace POT
             IUS ius = new IUS();
             ius.Show();
         }
+
+        private void MainFR_Click(object sender, EventArgs e)
+        {
+            int cnt = 0; 
+
+            foreach (Form frm in Application.OpenForms)
+            {
+                if (!frm.Name.Equals("MainFR") && !frm.Name.Equals("LoginFR") && !frm.Name.Equals("StartForm"))
+                    cnt++;
+            }
+
+            if(cnt == 0)
+                linkLabel4.Enabled = true;
+            else
+                linkLabel4.Enabled = false;
+        }
+
     }
 }

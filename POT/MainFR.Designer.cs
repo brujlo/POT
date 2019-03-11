@@ -93,6 +93,8 @@
             this.linkLabel11 = new System.Windows.Forms.LinkLabel();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.linkLabel12 = new System.Windows.Forms.LinkLabel();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.label33 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -102,6 +104,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -828,6 +831,7 @@
             // 
             this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Image = global::POT.Properties.Resources.ExitApp;
             this.pictureBox4.Location = new System.Drawing.Point(881, 403);
             this.pictureBox4.Name = "pictureBox4";
@@ -906,10 +910,10 @@
             this.linkLabel10.Location = new System.Drawing.Point(58, 366);
             this.linkLabel10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel10.Name = "linkLabel10";
-            this.linkLabel10.Size = new System.Drawing.Size(154, 24);
+            this.linkLabel10.Size = new System.Drawing.Size(178, 24);
             this.linkLabel10.TabIndex = 28;
             this.linkLabel10.TabStop = true;
-            this.linkLabel10.Text = "Open tickets";
+            this.linkLabel10.Text = "Opened tickets";
             this.linkLabel10.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel10_LinkClicked);
             // 
             // linkLabel11
@@ -942,7 +946,7 @@
             this.linkLabel12.ForeColor = System.Drawing.Color.Transparent;
             this.linkLabel12.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.linkLabel12.LinkColor = System.Drawing.Color.Yellow;
-            this.linkLabel12.Location = new System.Drawing.Point(359, 136);
+            this.linkLabel12.Location = new System.Drawing.Point(359, 330);
             this.linkLabel12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel12.Name = "linkLabel12";
             this.linkLabel12.Size = new System.Drawing.Size(46, 24);
@@ -951,6 +955,29 @@
             this.linkLabel12.Text = "IUS";
             this.linkLabel12.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel12_LinkClicked);
             // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox8.Image = global::POT.Properties.Resources.settings_3;
+            this.pictureBox8.Location = new System.Drawing.Point(313, 292);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 33;
+            this.pictureBox8.TabStop = false;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.BackColor = System.Drawing.Color.Transparent;
+            this.label33.ForeColor = System.Drawing.Color.White;
+            this.label33.Location = new System.Drawing.Point(349, 302);
+            this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(61, 20);
+            this.label33.TabIndex = 32;
+            this.label33.Text = "Service";
+            // 
             // MainFR
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -958,6 +985,8 @@
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(964, 599);
+            this.Controls.Add(this.pictureBox8);
+            this.Controls.Add(this.label33);
             this.Controls.Add(this.linkLabel12);
             this.Controls.Add(this.linkLabel8);
             this.Controls.Add(this.pictureBox6);
@@ -1004,6 +1033,7 @@
             this.Text = "POT";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MainFR_Load);
+            this.Click += new System.EventHandler(this.MainFR_Click);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -1015,6 +1045,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1085,5 +1116,7 @@
         private System.Windows.Forms.LinkLabel linkLabel11;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.LinkLabel linkLabel12;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Label label33;
     }
 }

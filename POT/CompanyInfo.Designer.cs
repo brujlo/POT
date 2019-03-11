@@ -315,9 +315,9 @@
             this.label13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label13.Location = new System.Drawing.Point(330, 74);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(77, 20);
+            this.label13.Size = new System.Drawing.Size(119, 20);
             this.label13.TabIndex = 25;
-            this.label13.Text = "Logo size";
+            this.label13.Text = "Logo down size";
             // 
             // LogoSize
             // 

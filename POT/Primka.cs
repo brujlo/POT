@@ -125,13 +125,15 @@ namespace POT
                 rb = listView1.Items.Count + 1;
                 lvi1.Text = rb.ToString();
 
-                if ((sifrarnikArr.IndexOf((long.Parse((textBox1.Text).Substring(4)).ToString()))) < 0)
+                //if ((sifrarnikArr.IndexOf((long.Parse((textBox1.Text).Substring(4)).ToString()))) < 0) //DecoderBB
+                if (sifrarnikArr.IndexOf(Decoder.GetFullPartCodeStr(textBox1.Text)) < 0)
                 {
                     MessageBox.Show("Selected code does not exist in DB.");
                     textBox1.SelectAll();
                     return;
                 }
-                lvi1.SubItems.Add(sifrarnikArr[sifrarnikArr.IndexOf((long.Parse((textBox1.Text).Substring(4)).ToString())) - 1]);
+                //lvi1.SubItems.Add(sifrarnikArr[sifrarnikArr.IndexOf((long.Parse((textBox1.Text).Substring(4)).ToString())) - 1]); //DecoderBB
+                lvi1.SubItems.Add(sifrarnikArr[sifrarnikArr.IndexOf(Decoder.GetFullPartCodeStr(textBox1.Text)) - 1]);
                 lvi1.SubItems.Add(textBox1.Text);
                 lvi1.SubItems.Add(textBox2.Text);
                 lvi1.SubItems.Add(textBox3.Text);
@@ -384,7 +386,8 @@ namespace POT
 
                                     for (int i = 0; i < listView1.Items.Count; i++) // vec imam provjeru gore kod unosa ali neka ostane(tamo je po imenu)
                                     {
-                                        long test = long.Parse(listView1.Items[i].SubItems[2].Text.Substring(4));
+                                        //long test = long.Parse(listView1.Items[i].SubItems[2].Text.Substring(4)); //DecoderBB
+                                        long test = Decoder.GetFullPartCodeLng(listView1.Items[i].SubItems[2].Text);
                                         if (!resultArrSearchCode.Contains(test.ToString()))
                                         {
                                             MessageBox.Show("There is no part in 'Sifrarnik' with code, = " + test.ToString() + "\n" + "on position " + (listView1.Items[i].Index + 1) + "  \n\n Nothing Done.");
@@ -553,7 +556,8 @@ namespace POT
                                         PartSifrarnik tempSifPart = new PartSifrarnik();
                                         Part tempPart = new Part();
 
-                                        tempSifPart.GetPart(listView1.Items[i].SubItems[2].Text.Substring(4));
+                                        //tempSifPart.GetPart(listView1.Items[i].SubItems[2].Text.Substring(4)); //DecoderBB
+                                        tempSifPart.GetPart(Decoder.GetFullPartCodeStr(listView1.Items[i].SubItems[2].Text));
 
                                         tempPart.PartialCode = tempSifPart.FullCode;
                                         tempPart.SN = listView1.Items[i].SubItems[3].Text;
@@ -561,8 +565,10 @@ namespace POT
                                         tempPart.DateIn = DateTime.Now.ToString("dd.MM.yy.");
                                         tempPart.StorageID = WorkingUser.RegionID;
                                         tempPart.State = listView1.Items[i].SubItems[5].Text;
-                                        tempPart.CompanyO = listView1.Items[i].SubItems[2].Text.Substring(0, 2);
-                                        tempPart.CompanyC = listView1.Items[i].SubItems[2].Text.Substring(2, 2);
+                                        //tempPart.CompanyO = listView1.Items[i].SubItems[2].Text.Substring(0, 2); //DecoderBB
+                                        tempPart.CompanyO = Decoder.GetOwnerCode(listView1.Items[i].SubItems[2].Text);
+                                        //tempPart.CompanyC = listView1.Items[i].SubItems[2].Text.Substring(2, 2); //DecoderBB
+                                        tempPart.CompanyC = Decoder.GetCustomerCode(listView1.Items[i].SubItems[2].Text);
 
                                         partList.Add(tempPart);
                                     }

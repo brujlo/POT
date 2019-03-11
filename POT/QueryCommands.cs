@@ -62,9 +62,6 @@ namespace POT
 
             CriptMe cm = new CriptMe();
             String hashPswd = cm.Cript(Pass);
-            //Form1 fr = new Form1();
-            //fr.setText(hashPswd);
-            //fr.ShowDialog();
             SqlConnection cnn = cn.Connect(Uname, Pass);
             query = "Select * from Users where Username = '" + Uname + "' and HashPswd = '" + hashPswd + "'";
             //query = "Select * from Users where Username = '" + Uname + "' and Password = '" + Pass + "'";
@@ -877,7 +874,7 @@ namespace POT
         {
             List<String> arr = new List<string>();
             SqlConnection cnn = cn.Connect(Uname, Pass);
-            query = "select Count(CodePartFull) from Parts p where p.CodePartFull = " + mCodePartFull + " and p.State = 'ngs'";
+            query = "select Count(CodePartFull) from Parts p where p.CodePartFull = " + mCodePartFull + " and p.State = 'sng'";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
             SqlDataReader dataReader = command.ExecuteReader();
@@ -901,7 +898,7 @@ namespace POT
         {
             List<String> arr = new List<string>();
             SqlConnection cnn = cn.Connect(Uname, Pass);
-            query = "select Count(CodePartFull) from Parts p where p.CodePartFull = " + mCodePartFull + " and p.State = 'gs'";
+            query = "select Count(CodePartFull) from Parts p where p.CodePartFull = " + mCodePartFull + " and p.State = 'sg'";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
             SqlDataReader dataReader = command.ExecuteReader();
@@ -1339,7 +1336,7 @@ namespace POT
 
                 for (int i = 0; i < ListOfParts.Count; i++)
                 {
-                    command.CommandText = "UPDATE Parts SET State = 'ngs' WHERE PartID = " + ListOfParts[i].PartID;
+                    command.CommandText = "UPDATE Parts SET State = 'sng' WHERE PartID = " + ListOfParts[i].PartID;
                     command.ExecuteNonQuery();
 
                     command.CommandText = "INSERT INTO IUSparts (iusID, partID, date, rb, customerID, napomena) VALUES (" + IUSCntFull + ", " + ListOfParts[i].PartID

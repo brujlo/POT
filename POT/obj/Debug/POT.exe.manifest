@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="POT.exe" size="6793640">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="POT.exe" size="6796712">
       <assemblyIdentity name="POT" version="1.5.1.1" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>HtDmOGb+XJYgYD/J9rmlxyfPIw6BJeqwaNumHmwnuUI=</dsig:DigestValue>
+        <dsig:DigestValue>WCUzTAcHxavrJVB83b0AKIEo6cK4phdTKf7lx63fDLo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -62,7 +62,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>d6H4I0uev0RjkxAQam+j9T3XK9aiZ/tZf4UON1dOZrM=</dsig:DigestValue>
+        <dsig:DigestValue>eHdnial0NaUpMJnvWdmHHaVP2lZ6TSYFDrvdbjLbn2w=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

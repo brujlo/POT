@@ -242,7 +242,7 @@
             // 
             this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox4.BackColor = System.Drawing.Color.Khaki;
+            this.textBox4.BackColor = System.Drawing.Color.LimeGreen;
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.textBox4.Location = new System.Drawing.Point(611, 311);
             this.textBox4.Margin = new System.Windows.Forms.Padding(4);
@@ -284,7 +284,7 @@
             this.listView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.listView1.BackColor = System.Drawing.Color.LemonChiffon;
+            this.listView1.BackColor = System.Drawing.Color.LightGreen;
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.ImeMode = System.Windows.Forms.ImeMode.On;

@@ -1,4 +1,5 @@
 ﻿using POT.MyTypes;
+using POT.WorkingClasses;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -89,7 +90,8 @@ namespace POT
                     Company cmpO = new Company();
                     Company cmpC = new Company();
                 
-                    if (prt.GetPart(textBox1.Text.Substring(4, 9)) && cmpO.GetCompanyInfoByCode(textBox1.Text.Substring(0, 2)) && cmpC.GetCompanyInfoByCode(textBox1.Text.Substring(2, 2)))
+                    //if (prt.GetPart(textBox1.Text.Substring(4, 9)) && cmpO.GetCompanyInfoByCode(textBox1.Text.Substring(0, 2)) && cmpC.GetCompanyInfoByCode(textBox1.Text.Substring(2, 2))) //DecoderBB
+                    if (prt.GetPart(Decoder.GetFullPartCodeStr(textBox1.Text)) && cmpO.GetCompanyInfoByCode(Decoder.GetOwnerCode(textBox1.Text)) && cmpC.GetCompanyInfoByCode(Decoder.GetCustomerCode(textBox1.Text)))
                     {
                         this.textBox2.ResetText();
                         this.textBox2.Text = prt.FullName;

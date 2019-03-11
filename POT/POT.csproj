@@ -198,6 +198,7 @@
     </Compile>
     <Compile Include="WorkingClasses\CLogo.cs" />
     <Compile Include="WorkingClasses\CriptMe.cs" />
+    <Compile Include="WorkingClasses\Decoder.cs" />
     <Compile Include="WorkingClasses\PrintMe.cs" />
     <Compile Include="WorkingUser.cs" />
     <EmbeddedResource Include="AddRegion.resx">
@@ -294,6 +295,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="EXE.ico" />
+    <None Include="Resources\settings 3.png" />
     <None Include="Resources\search_64px.png" />
     <None Include="Resources\magnifying-glass_64px.png" />
     <None Include="Resources\gears_64px.png" />

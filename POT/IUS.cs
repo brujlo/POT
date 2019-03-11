@@ -146,13 +146,15 @@ namespace POT
                 rb = listView1.Items.Count + 1;
                 lvi1.Text = rb.ToString();
 
-                if ((sifrarnikArr.IndexOf((long.Parse((textBox1.Text).Substring(4)).ToString()))) < 0)
+                //if ((sifrarnikArr.IndexOf((long.Parse((textBox1.Text).Substring(4)).ToString()))) < 0) //DecoderBB
+                if ((sifrarnikArr.IndexOf(Decoder.GetFullPartCodeStr(textBox1.Text))) < 0)
                 {
                     MessageBox.Show("Selected code does not exist in DB.");
                     textBox1.SelectAll();
                     return;
                 }
-                lvi1.SubItems.Add(sifrarnikArr[sifrarnikArr.IndexOf((long.Parse((textBox1.Text).Substring(4)).ToString())) - 1]);
+                //lvi1.SubItems.Add(sifrarnikArr[sifrarnikArr.IndexOf((long.Parse((textBox1.Text).Substring(4)).ToString())) - 1]); //DecoderBB
+                lvi1.SubItems.Add(sifrarnikArr[sifrarnikArr.IndexOf(Decoder.GetFullPartCodeStr(textBox1.Text)) - 1]);
                 lvi1.SubItems.Add(textBox1.Text);
                 lvi1.SubItems.Add(textBox2.Text);
                 lvi1.SubItems.Add(textBox3.Text);
@@ -351,7 +353,8 @@ namespace POT
                                         PartSifrarnik tempSifPart = new PartSifrarnik();
                                         Part tempPart = new Part();
 
-                                        tempSifPart.GetPart(listView1.Items[i].SubItems[2].Text.Substring(4));
+                                        //tempSifPart.GetPart(listView1.Items[i].SubItems[2].Text.Substring(4)); //DecoderBB
+                                        tempSifPart.GetPart(Decoder.GetFullPartCodeStr(listView1.Items[i].SubItems[2].Text));
 
                                         tempPart.PartialCode = tempSifPart.FullCode;
                                         tempPart.SN = listView1.Items[i].SubItems[3].Text;
@@ -359,10 +362,12 @@ namespace POT
                                         tempPart.DateIn = DateTime.Now.ToString("dd.MM.yy.");
                                         tempPart.StorageID = WorkingUser.RegionID;
                                         tempPart.State = "ng";
-                                        tempPart.CompanyO = listView1.Items[i].SubItems[2].Text.Substring(0, 2);
-                                        tempPart.CompanyC = listView1.Items[i].SubItems[2].Text.Substring(2, 2);
+                                        //tempPart.CompanyO = listView1.Items[i].SubItems[2].Text.Substring(0, 2); //DecoderBB
+                                        tempPart.CompanyO = Decoder.GetOwnerCode(listView1.Items[i].SubItems[2].Text);
+                                        //tempPart.CompanyC = listView1.Items[i].SubItems[2].Text.Substring(2, 2); //DecoderBB
+                                        tempPart.CompanyC = Decoder.GetCustomerCode(listView1.Items[i].SubItems[2].Text);
 
-                                        String tmpResult = qc.GetPartIDCompareCodeSNCNStorage(WorkingUser.Username, WorkingUser.Password,
+                                    String tmpResult = qc.GetPartIDCompareCodeSNCNStorage(WorkingUser.Username, WorkingUser.Password,
                                             long.Parse(listView1.Items[i].SubItems[2].Text),
                                             listView1.Items[i].SubItems[3].Text,
                                             listView1.Items[i].SubItems[4].Text,
