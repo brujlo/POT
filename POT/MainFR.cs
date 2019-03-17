@@ -1,8 +1,10 @@
 ﻿using POT.BuildingClasses;
+using POT.Documents;
 using POT.WorkingClasses;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Drawing;
 using System.Resources;
 using System.Threading;
@@ -14,6 +16,8 @@ namespace POT
     {
         private int loginCNt = 1;
         Image img = null;
+        Boolean isClosePicClicked = false;
+        Boolean logOutClicked = false;
 
         int timerCnt = 0;
         int timerRB = 0;
@@ -42,6 +46,9 @@ namespace POT
                 this.linkLabel5.Enabled = true;
                 this.linkLabel7.Enabled = true;
                 this.linkLabel9.Enabled = true;
+                this.linkLabel4.Enabled = true;
+                this.linkLabel11.Enabled = true;
+                this.linkLabel15.Enabled = true;
             }
             else
             {
@@ -50,6 +57,20 @@ namespace POT
                 this.linkLabel5.Enabled = false;
                 this.linkLabel5.Enabled = false;
                 this.linkLabel9.Enabled = false;
+                this.linkLabel4.Enabled = false;
+                this.linkLabel11.Enabled = false;
+                this.linkLabel15.Enabled = false;
+            }
+
+            if (WorkingUser.AdminRights.ToString().Contains("2") || WorkingUser.AdminRights.ToString().Contains("1"))
+            {
+                this.linkLabel9.Enabled = true;
+                this.linkLabel5.Enabled = true;
+            }
+            else
+            {
+                this.linkLabel9.Enabled = false;
+                this.linkLabel5.Enabled = false;
             }
 
             if (Properties.Settings.Default.DBTabelsBuilded) linkLabel11.Enabled = false;
@@ -84,11 +105,13 @@ namespace POT
                 }
                 catch (Exception ex)
                 {
+                    new LogWriter(ex);
                     MessageBox.Show(ex.Message);
                 }
             }
-            catch (Exception)
+            catch (Exception e1)
             {
+                new LogWriter(e1);
                 this.label15.Text = DateTime.Now.ToString("Error");
                 this.label12.Text = DateTime.Now.ToString("Error");
                 this.label11.Text = DateTime.Now.ToString("Error");
@@ -139,6 +162,8 @@ namespace POT
             timer2.Start();
             Thread myThread = new Thread(getOpenedTasks);
             myThread.Start();
+
+            new LogWriter(System.Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + "App started" + System.Environment.NewLine);
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -178,7 +203,8 @@ namespace POT
                 return;
             }
 
-
+            logOutClicked = true;
+            new LogWriter(System.Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + "LogOut clicked" + System.Environment.NewLine);
             Hide();
             LoginForm fr = new LoginForm();
             fr.ShowDialog();
@@ -260,9 +286,9 @@ namespace POT
                     pictureBox3.Image = (Image)resxLoad.GetObject("LogoPicture", true);
                 }
             }
-            catch (Exception)
+            catch (Exception e1)
             {
-
+                new LogWriter(e1);
             }
         }
 
@@ -311,6 +337,8 @@ namespace POT
                 //System.Threading.Thread.Sleep(10);
             } while (pictureBox4.Height > 0);
 
+            isClosePicClicked = true;
+            new LogWriter(System.Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + "App turned off" + System.Environment.NewLine);
             Application.Exit();
         }
 
@@ -351,14 +379,40 @@ namespace POT
                             labResultArr.Clear();
                             labResultArr = qc.openedTickets(WorkingUser.Username, WorkingUser.Password);
                         }
-                        catch (Exception)
+                        catch (Exception e1)
                         {
-
+                            new LogWriter(e1);
                         }
                     }
 
                     timerCnt = 0;
                     label30.Text = labResultArr.Count + " / " + labResultArr[timerRB++];
+                }
+                else
+                {
+                    label30.Location = new Point(this.Size.Width - timerCnt, label30.Height / 2);
+                }
+            }
+            else
+            {
+                if (timerCnt >= this.Size.Width + label30.Width)
+                {
+                    if (timerRB >= labResultArr.Count)
+                    {
+                        timerRB = 0;
+                        try
+                        {
+                            labResultArr.Clear();
+                            labResultArr = qc.openedTickets(WorkingUser.Username, WorkingUser.Password);
+                        }
+                        catch (Exception e1)
+                        {
+                            new LogWriter(e1);
+                        }
+                    }
+
+                    timerCnt = 0;
+                    label30.Text = Properties.Settings.Default.CmpName + "   -   " + Properties.Settings.Default.CmpWWW + "   -   " + Properties.Settings.Default.CmpPhone;
                 }
                 else
                 {
@@ -374,9 +428,9 @@ namespace POT
             {
                 labResultArr = qc.openedTickets(WorkingUser.Username, WorkingUser.Password);
             }
-            catch (Exception)
+            catch (Exception e1)
             {
-                
+                new LogWriter(e1);
             }
         }
 
@@ -440,7 +494,7 @@ namespace POT
                     if (mdb.MakeTables(newDBName))
                         MessageBox.Show("I am done with buildibng the DB! \r\n Your catalog name is: " + Properties.Settings.Default.Catalog + ".");
                     else
-                        MessageBox.Show("I am done with buildibng the DB, but tabels are not added! \r\n Your catalog name is: " + Properties.Settings.Default.Catalog + ".");
+                        MessageBox.Show("I am done with buildibng the DB, but tabels are not added! \r\n Your catalog name is: " + Properties.Settings.Default.Catalog);
                 else
                     MessageBox.Show("Nothing done!");
                 
@@ -449,6 +503,7 @@ namespace POT
             }
             catch (Exception es)
             {
+                new LogWriter(es);
                 MessageBox.Show("There was a error, ErrMsg: " + es.Message);
                 backgroundWorker1.CancelAsync();
                 e.Cancel = true;
@@ -498,5 +553,34 @@ namespace POT
                 linkLabel4.Enabled = false;
         }
 
+        private void linkLabel13_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Tickets tck = new Tickets();
+            tck.Show();
+        }
+
+        private void linkLabel14_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            try
+            {
+                Process.Start(Properties.Settings.Default.Path);
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
+                MessageBox.Show("File does not exist!", "Important Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void linkLabel15_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            MessageBox.Show(Properties.Settings.Default.Path);
+        }
+
+        private void MainFR_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (!isClosePicClicked && !logOutClicked)
+                new LogWriter(System.Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + "App turned off" + System.Environment.NewLine);
+        }
     }
 }

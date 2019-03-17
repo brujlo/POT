@@ -1,4 +1,5 @@
-﻿using System;
+﻿using POT.WorkingClasses;
+using System;
 
 namespace POT.MyTypes
 {
@@ -50,8 +51,9 @@ namespace POT.MyTypes
                     IsInitialized = false;
                 }
             }
-            catch (Exception )
+            catch (Exception e1)
             {
+                new LogWriter(e1);
                 throw;
             }
             return IsInitialized;

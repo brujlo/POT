@@ -1,4 +1,5 @@
-﻿using System;
+﻿using POT.WorkingClasses;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -49,8 +50,9 @@ namespace POT.MyTypes
                     }
 
                 }
-                catch
+                catch (Exception e1)
                 {
+                    new LogWriter(e1);
                     sifraNovi = 0;
                 }
 
@@ -85,8 +87,9 @@ namespace POT.MyTypes
                         }
 
                     }
-                    catch
+                    catch (Exception e1)
                     {
+                        new LogWriter(e1);
                         sifraStari = 0;
                     }
                     sNStari = mNewOldPart[1].SN;
@@ -119,8 +122,9 @@ namespace POT.MyTypes
                     transaction.Commit();
                     saved = true;
                 }
-                catch (Exception)
+                catch (Exception e1)
                 {
+                    new LogWriter(e1);
                     try
                     {
                         transaction.Rollback();
@@ -128,8 +132,9 @@ namespace POT.MyTypes
                         cnn.Close();
                         throw;
                     }
-                    catch (Exception)
+                    catch (Exception e2)
                     {
+                        new LogWriter(e2);
                         saved = false;
                         cnn.Close();
                         //throw;

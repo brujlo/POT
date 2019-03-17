@@ -26,8 +26,9 @@ namespace POT.WorkingClasses
                         img = (Image)rm.GetObject("DefaultLogoPOT");
                 }
             }
-            catch (Exception)
+            catch (Exception e1)
             {
+                new LogWriter(e1);
                 img = (Image)rm.GetObject("DefaultLogoPOT");
             }
 

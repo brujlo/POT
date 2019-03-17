@@ -1,4 +1,5 @@
-﻿using System;
+﻿using POT.WorkingClasses;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
@@ -39,9 +40,10 @@ namespace POT
                     Close();
                 }
             }
-            catch (Exception ex)
+            catch (Exception e1)
             {
-                MessageBox.Show(ex.Message);
+                new LogWriter(e1);
+                MessageBox.Show(e1.Message);
             }
         }
 

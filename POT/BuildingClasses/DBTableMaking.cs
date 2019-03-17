@@ -1,4 +1,5 @@
-﻿using System;
+﻿using POT.WorkingClasses;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -42,8 +43,9 @@ namespace POT.BuildingClasses
 
                         executed = true;
                     }
-                    catch (Exception)
+                    catch (Exception e1)
                     {
+                        new LogWriter(e1);
                         throw;
                     }
                     finally
@@ -87,7 +89,7 @@ namespace POT.BuildingClasses
                         command.CommandText = "CREATE TABLE " + _DBName + ".dbo.IISparts ([iisID][numeric](18, 0) NOT NULL,[partID] [numeric] (18, 0) NOT NULL,[date] [nvarchar] (11) NOT NULL,[rb] [numeric] (18, 0) NULL,[times] [nvarchar] (5) NULL,[iusID] [numeric] (18, 0) NULL,[customerID] [numeric] (18, 0) NULL) ON[PRIMARY]";
                         command.ExecuteNonQuery();
 
-                        command.CommandText = "CREATE TABLE " + _DBName + ".dbo.IUSparts ([iusID][numeric](18, 0) NOT NULL,[partID] [numeric] (18, 0) NOT NULL,[date] [nvarchar] (11) NOT NULL,[rb] [numeric] (18, 0) NULL,[customerID] [numeric] (18, 0) NULL), [napomena] [nvarchar](200) NULL ON[PRIMARY]";
+                        command.CommandText = "CREATE TABLE " + _DBName + ".dbo.IUSparts ([iusID][numeric](18, 0) NOT NULL,[partID] [numeric] (18, 0) NOT NULL,[date] [nvarchar] (11) NOT NULL,[rb] [numeric] (18, 0) NULL,[customerID] [numeric] (18, 0) NULL, [napomena] [nvarchar](200) NULL) ON[PRIMARY]";
                         command.ExecuteNonQuery();
 
                         command.CommandText = "CREATE TABLE " + _DBName + ".dbo.MUIzvjestaj (" +
@@ -526,16 +528,18 @@ namespace POT.BuildingClasses
 
                         executed = true;
                     }
-                    catch (Exception)
+                    catch (Exception e1)
                     {
+                        new LogWriter(e1);
                         try
                         {
                             if (transaction != null)
                                 transaction.Rollback();
                             throw;
                         }
-                        catch (Exception)
+                        catch (Exception e2)
                         {
+                            new LogWriter(e2);
                             throw;
                         }
                     }

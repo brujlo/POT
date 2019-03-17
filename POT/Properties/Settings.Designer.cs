@@ -346,5 +346,29 @@ namespace POT.Properties {
                 this["LogoSize"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string SupportEmail {
+            get {
+                return ((string)(this["SupportEmail"]));
+            }
+            set {
+                this["SupportEmail"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Path {
+            get {
+                return ((string)(this["Path"]));
+            }
+            set {
+                this["Path"] = value;
+            }
+        }
     }
 }

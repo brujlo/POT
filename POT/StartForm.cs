@@ -1,4 +1,5 @@
-﻿using System;
+﻿using POT.WorkingClasses;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -43,7 +44,7 @@ namespace POT
             if (Properties.Settings.Default.AutoLogin == true)
             {
                 checkBox2.Checked = true;
-                OkBT_Click_1(sender, e); ;
+                OkBT_Click_1(sender, e);
             }
         }
 
@@ -97,8 +98,9 @@ namespace POT
                                 Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("en-US");
                             }
                         }
-                        catch (Exception)
+                        catch (Exception e1)
                         {
+                            new LogWriter(e1);
                             Properties.Settings.Default.LanguageStt = "other";
                             Properties.Settings.Default.Save();
                         }
@@ -112,9 +114,10 @@ namespace POT
                     Close();
                 }
             }
-            catch (Exception ex)
+            catch (Exception e1)
             {
-                MessageBox.Show(ex.Message);
+                new LogWriter(e1);
+                MessageBox.Show(e1.Message);
             }
             finally
             {

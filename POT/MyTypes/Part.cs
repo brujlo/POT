@@ -1,4 +1,5 @@
-﻿using System;
+﻿using POT.WorkingClasses;
+using System;
 using System.Collections.Generic;
 
 namespace POT.MyTypes
@@ -50,8 +51,9 @@ namespace POT.MyTypes
                     }
                 }
             }
-            catch (Exception)
+            catch (Exception e1)
             {
+                new LogWriter(e1);
                 throw;
             }
             return pr;
@@ -102,8 +104,9 @@ namespace POT.MyTypes
                     }
                 }
             }
-            catch (Exception)
+            catch (Exception e1)
             {
+                new LogWriter(e1);
                 throw;
             }
             return pr;

@@ -1,8 +1,7 @@
-﻿using System;
+﻿using POT.WorkingClasses;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace POT.MyTypes
@@ -51,9 +50,10 @@ namespace POT.MyTypes
                 RegionID = long.Parse(resultArr[12]);
                 Email = resultArr[13].Trim();
             }
-            catch (Exception ex)
+            catch (Exception e1)
             {
-                MessageBox.Show(ex.Message);
+                new LogWriter(e1);
+                MessageBox.Show(e1.Message);
                 return false;
             }
 
@@ -86,9 +86,10 @@ namespace POT.MyTypes
                 RegionID = long.Parse(resultArr[12]);
                 Email = resultArr[13].Trim();
             }
-            catch (Exception ex)
+            catch (Exception e1)
             {
-                MessageBox.Show(ex.Message);
+                new LogWriter(e1);
+                MessageBox.Show(e1.Message);
                 return false;
             }
 
@@ -121,9 +122,10 @@ namespace POT.MyTypes
                 RegionID = long.Parse(resultArr[12]);
                 Email = resultArr[13].Trim();
             }
-            catch (Exception ex)
+            catch (Exception e1)
             {
-                MessageBox.Show(ex.Message);
+                new LogWriter(e1);
+                MessageBox.Show(e1.Message);
                 return false;
             }
 
@@ -164,9 +166,10 @@ namespace POT.MyTypes
                     resultArrC.Add(tempC);
                 }
             }
-            catch (Exception ex)
+            catch (Exception e1)
             {
-                MessageBox.Show(ex.Message);
+                new LogWriter(e1);
+                MessageBox.Show(e1.Message);
             }
 
             return resultArrC;
@@ -207,12 +210,31 @@ namespace POT.MyTypes
                     resultArrC.Add(tempC);
                 }
             }
-            catch (Exception ex)
+            catch (Exception e1)
             {
-                MessageBox.Show(ex.Message);
+                new LogWriter(e1);
+                MessageBox.Show(e1.Message);
             }
 
             return resultArrC;
+        }
+
+        public void Clear()
+        {
+            id = 0;
+            name = "";
+            address = "";
+            city = "";
+            pb = "";
+            oib = "";
+            contact = "";
+            bic = "";
+            kn = 0;
+            eur = 0;
+            code = "";
+            country = "";
+            regionID = 0;
+            email = "";
         }
 
         public long ID

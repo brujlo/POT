@@ -310,9 +310,10 @@ namespace POT.WorkingClasses
                 }
                 return;
             }
-            catch(Exception ee)
+            catch (Exception e1)
             {
-                MessageBox.Show(ee.Message);
+                new LogWriter(e1);
+                MessageBox.Show(e1.Message);
             }
         }
 
@@ -521,9 +522,10 @@ namespace POT.WorkingClasses
                     }
                 }
             }
-            catch(Exception ee)
+            catch (Exception e1)
             {
-                MessageBox.Show(ee.Message);
+                new LogWriter(e1);
+                MessageBox.Show(e1.Message);
             }
         }
 
