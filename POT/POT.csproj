@@ -25,7 +25,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ProductName>POT</ProductName>
     <PublisherName>Exception</PublisherName>
-    <ApplicationRevision>53</ApplicationRevision>
+    <ApplicationRevision>54</ApplicationRevision>
     <ApplicationVersion>1.3.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -85,6 +85,12 @@
     </Compile>
     <Compile Include="BuildingClasses\AddRegion.Designer.cs">
       <DependentUpon>AddRegion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuildingClasses\CmpRegEditcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuildingClasses\CmpRegEditcs.Designer.cs">
+      <DependentUpon>CmpRegEditcs.cs</DependentUpon>
     </Compile>
     <Compile Include="BuildingClasses\DBTableMaking.cs" />
     <Compile Include="BuildingClasses\CompanyInfo.cs">
@@ -161,6 +167,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>strings.resx</DependentUpon>
     </Compile>
+    <Compile Include="WorkingClasses\PrintMeRac.cs" />
     <Compile Include="WorkingClasses\Selector.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,6 +214,9 @@
     <Compile Include="BuildingClasses\WorkingUser.cs" />
     <EmbeddedResource Include="BuildingClasses\AddRegion.resx">
       <DependentUpon>AddRegion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuildingClasses\CmpRegEditcs.resx">
+      <DependentUpon>CmpRegEditcs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BuildingClasses\CompanyInfo.resx">
       <DependentUpon>CompanyInfo.cs</DependentUpon>

@@ -57,3 +57,4 @@ F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.Properties.strings.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.OpenTicketList.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.IUS.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.Documents.Tickets.resources
+F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.BuildingClasses.CmpRegEditcs.resources

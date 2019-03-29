@@ -22,6 +22,7 @@ namespace POT.MyTypes
         private String country = "";
         private long regionID;
         private String email = "";
+        private long count;
 
 
         public Boolean GetCompanyByName(String mName)
@@ -85,6 +86,8 @@ namespace POT.MyTypes
                 Country = resultArr[11].Trim();
                 RegionID = long.Parse(resultArr[12]);
                 Email = resultArr[13].Trim();
+
+                count++;
             }
             catch (Exception e1)
             {
@@ -121,6 +124,8 @@ namespace POT.MyTypes
                 Country = resultArr[11].Trim();
                 RegionID = long.Parse(resultArr[12]);
                 Email = resultArr[13].Trim();
+
+                count++;
             }
             catch (Exception e1)
             {
@@ -164,6 +169,7 @@ namespace POT.MyTypes
                     tempC.Email = resultArr[i + 13].Trim();
 
                     resultArrC.Add(tempC);
+                    count++;
                 }
             }
             catch (Exception e1)
@@ -208,6 +214,7 @@ namespace POT.MyTypes
                     tempC.Email = resultArr[i + 13].Trim();
 
                     resultArrC.Add(tempC);
+                    count++;
                 }
             }
             catch (Exception e1)
@@ -235,6 +242,15 @@ namespace POT.MyTypes
             country = "";
             regionID = 0;
             email = "";
+            count = 0;
+        }
+
+        public Boolean HasItems()
+        {
+            if (count > 0)
+                return true;
+            else
+                return false;
         }
 
         public long ID
@@ -440,6 +456,14 @@ namespace POT.MyTypes
                     email = "";
             }
 
+        }
+
+        public long Count
+        {
+            get
+            {
+                return count;
+            }
         }
     }
 }

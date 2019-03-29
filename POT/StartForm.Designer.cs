@@ -107,7 +107,7 @@
             this.checkBox1.Location = new System.Drawing.Point(127, 228);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(114, 24);
-            this.checkBox1.TabIndex = 4;
+            this.checkBox1.TabIndex = 3;
             this.checkBox1.Text = "Remember";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
@@ -128,7 +128,7 @@
             this.linkLabel1.Location = new System.Drawing.Point(319, 228);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(146, 20);
-            this.linkLabel1.TabIndex = 15;
+            this.linkLabel1.TabIndex = 9;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Set DB Connection";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
@@ -140,7 +140,7 @@
             this.rbHrv.Location = new System.Drawing.Point(439, 156);
             this.rbHrv.Name = "rbHrv";
             this.rbHrv.Size = new System.Drawing.Size(58, 24);
-            this.rbHrv.TabIndex = 16;
+            this.rbHrv.TabIndex = 7;
             this.rbHrv.Text = "Hrv";
             this.rbHrv.UseVisualStyleBackColor = true;
             // 
@@ -152,7 +152,7 @@
             this.rbEng.Location = new System.Drawing.Point(439, 195);
             this.rbEng.Name = "rbEng";
             this.rbEng.Size = new System.Drawing.Size(63, 24);
-            this.rbEng.TabIndex = 17;
+            this.rbEng.TabIndex = 8;
             this.rbEng.TabStop = true;
             this.rbEng.Text = "Eng";
             this.rbEng.UseVisualStyleBackColor = true;
@@ -163,7 +163,7 @@
             this.checkBox2.Location = new System.Drawing.Point(127, 258);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(174, 24);
-            this.checkBox2.TabIndex = 18;
+            this.checkBox2.TabIndex = 4;
             this.checkBox2.Text = "Auto login next time";
             this.checkBox2.UseVisualStyleBackColor = true;
             this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);

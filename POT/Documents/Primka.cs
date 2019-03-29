@@ -8,6 +8,7 @@ using System.Threading;
 using System.Windows.Forms;
 using POT.WorkingClasses;
 using System.Media;
+using System.Drawing;
 
 namespace POT
 {
@@ -39,6 +40,7 @@ namespace POT
             comboBox3.Text = Properties.Settings.Default.MainCompanyCode;
             comboBox4.Text = Properties.Settings.Default.MainCompanyCode;
             //this.printPrewBT.Enabled = false;
+            //this.selectPrinterPrintBtn.Enabled = false;
 
             Thread myThread = new Thread(fillComboBoxes);
 
@@ -121,11 +123,9 @@ namespace POT
         {
             try
             {
-                ListViewItem lvi1 = new ListViewItem();
-                rb = listView1.Items.Count + 1;
-                lvi1.Text = rb.ToString();
-
                 //if ((sifrarnikArr.IndexOf((long.Parse((textBox1.Text).Substring(4)).ToString()))) < 0) //DecoderBB
+                rb = listView1.Items.Count + 1;
+
                 if (sifrarnikArr.IndexOf(Decoder.GetFullPartCodeStr(textBox1.Text)) < 0)
                 {
                     MessageBox.Show("Selected code does not exist in DB.");
@@ -133,25 +133,34 @@ namespace POT
                     return;
                 }
                 //lvi1.SubItems.Add(sifrarnikArr[sifrarnikArr.IndexOf((long.Parse((textBox1.Text).Substring(4)).ToString())) - 1]); //DecoderBB
-                lvi1.SubItems.Add(sifrarnikArr[sifrarnikArr.IndexOf(Decoder.GetFullPartCodeStr(textBox1.Text)) - 1]);
-                lvi1.SubItems.Add(textBox1.Text);
-                lvi1.SubItems.Add(textBox2.Text);
-                lvi1.SubItems.Add(textBox3.Text);
-                lvi1.SubItems.Add(radioButton1.Checked ? "g" : "ng");
 
-                if(listView1.Items.Count > 1)
-                    listView1.EnsureVisible(listView1.Items.Count - 1);
+                for (int i = 1; i <= numericUpDown1.Value; i++)
+                {
+                    ListViewItem lvi1 = new ListViewItem(rb.ToString());
+
+                    lvi1.SubItems.Add(sifrarnikArr[sifrarnikArr.IndexOf(Decoder.GetFullPartCodeStr(textBox1.Text)) - 1]);
+                    lvi1.SubItems.Add(textBox1.Text);
+                    lvi1.SubItems.Add(textBox2.Text);
+                    lvi1.SubItems.Add(textBox3.Text);
+                    lvi1.SubItems.Add(radioButton1.Checked ? "g" : "ng");
+
+                    if(listView1.Items.Count > 1)
+                        listView1.EnsureVisible(listView1.Items.Count - 1);
                 
-                listView1.Items.Add(lvi1);
-                partsArr.Add(textBox1.Text);
-                partsArr.Add(textBox2.Text);
-                partsArr.Add(textBox3.Text);
-                partsArr.Add(radioButton1.Checked ? "g" : "ng");
+                    listView1.Items.Add(lvi1);
+
+                    partsArr.Add(textBox1.Text);
+                    partsArr.Add(textBox2.Text);
+                    partsArr.Add(textBox3.Text);
+                    partsArr.Add(radioButton1.Checked ? "g" : "ng");
+                    rb = listView1.Items.Count + 1;
+                }
             }
             catch (Exception e1)
             {
                 new LogWriter(e1);
                 MessageBox.Show(e1.Message);
+                numericUpDown1.Value = 1;
             }
 
             for (int i = 0; i < 6; i++)
@@ -163,6 +172,7 @@ namespace POT
             textBox1.Clear();
             textBox2.Clear();
             textBox3.Clear();
+            numericUpDown1.Value = 1;
 
             textBox1.SelectAll();
             textBox1.Focus();
@@ -342,16 +352,19 @@ namespace POT
 
                                 for (int i = 0; i < listView1.Items.Count; i++) // vec imam provjeru gore kod unosa ali neka ostane(tamo je po imenu)
                                 {
-                                    if (!qc.GetPartIDCompareCodeSNCNStorage(WorkingUser.Username, WorkingUser.Password,
-                                        long.Parse(listView1.Items[i].SubItems[2].Text),
-                                        listView1.Items[i].SubItems[3].Text,
-                                        listView1.Items[i].SubItems[4].Text,
-                                        WorkingUser.RegionID)[0].Equals("nok"))
+                                    if (!listView1.Items[i].SubItems[3].Text.Equals("") && !listView1.Items[i].SubItems[4].Text.Equals(""))
                                     {
-                                        MessageBox.Show("In your storage, part with: \n\n Code: " + listView1.Items[i].SubItems[2].Text + "\n on position " + (listView1.Items[i].Index + 1) + "\n, already exist in DB.\n\nNothing Done.");
-                                        textBox1.SelectAll();
-                                        textBox1.Focus();
-                                        return;
+                                        if (!qc.GetPartIDCompareCodeSNCNStorage(WorkingUser.Username, WorkingUser.Password,
+                                            long.Parse(listView1.Items[i].SubItems[2].Text),
+                                            listView1.Items[i].SubItems[3].Text,
+                                            listView1.Items[i].SubItems[4].Text,
+                                            WorkingUser.RegionID)[0].Equals("nok"))
+                                        {
+                                            MessageBox.Show("In your storage, part with: \n\n Code: " + listView1.Items[i].SubItems[2].Text + "\n on position " + (listView1.Items[i].Index + 1) + "\n, already exist in DB.\n\nNothing Done.");
+                                            textBox1.SelectAll();
+                                            textBox1.Focus();
+                                            return;
+                                        }
                                     }
                                 }
 
@@ -659,6 +672,7 @@ namespace POT
                     }
                 }
                 this.printPrewBT.Enabled = isPrimkaSaved;
+                this.selectPrinterPrintBtn.Enabled = isPrimkaSaved;
             }
         }
 
@@ -681,7 +695,7 @@ namespace POT
 
         private void printDocumentPrim_PrintPage(object sender, PrintPageEventArgs e)
         {
-            PrintMe pr = new PrintMe(cmpS, cmpR, sifrarnikArr, partListPrint, PrimkaNumber, napomenaPRIMPrint, "Receipt", "customer", false);
+            PrintMe pr = new PrintMe(cmpS, cmpR, sifrarnikArr, partListPrint, PrimkaNumber, napomenaPRIMPrint, Properties.strings.RECEIPT, Properties.strings.customer, false);
             //PrintMe pr = new PrintMe(cmpS, cmpR, sifrarnikArr, partListPrint, PrimkaNumber);
             pr.Print(e);
         }
@@ -689,6 +703,24 @@ namespace POT
         private void Primka_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+            if (numericUpDown1.Value < 1)
+                numericUpDown1.Value = 1;
+        }
+
+        private void selectPrinterPrintBtn_Click(object sender, EventArgs e)
+        {
+            PrintDialog printDialog1 = new PrintDialog();
+            printDialog1.Document = printDocumentPrim;
+            DialogResult result = printDialog1.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                printPrewBT_Click(sender, e);
+                //printDocumentPrim.Print();
+            }
         }
     }
 }

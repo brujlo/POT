@@ -20,7 +20,7 @@ namespace POT.Documents
         public Tickets()
         {
             InitializeComponent();
-            AppendTextBox("- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + "Waiting");
+            AppendTextBox(Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + "Waiting");
         }
 
         private void Tickets_Load(object sender, EventArgs e)
@@ -140,7 +140,7 @@ namespace POT.Documents
                 DateConverter dc = new DateConverter();
 
                 if(this.prio.Text.Equals("6"))
-                    this.SLAdat.Text = dc.CalculatePrio(this.prio.Text, this.SLAdat.Text, this.SLAvri.Text).ToString("dd.MM.yy.");
+                    this.SLAdat.Text = dc.CalculatePrio(this.prio.Text, dc.ConvertDDMMYY(this.SLAdat.Text), dc.ConvertTimeHHMM(this.SLAvri.Text)).ToString("dd.MM.yy.");
                 else
                     this.SLAdat.Text = dc.CalculatePrio(this.prio.Text, this.datPrijave.Text, this.vriPrijave.Text).ToString("dd.MM.yy.");
             }
@@ -172,8 +172,10 @@ namespace POT.Documents
             {
                 DateConverter dc = new DateConverter();
 
+                
+
                 if (this.prio.Text.Equals("6"))
-                    this.SLAvri.Text = dc.CalculatePrio(this.prio.Text, this.SLAdat.Text, this.SLAvri.Text).ToString("HH:mm");
+                    this.SLAvri.Text = dc.CalculatePrio(this.prio.Text, dc.ConvertDDMMYY(this.SLAdat.Text), dc.ConvertTimeHHMM(this.SLAvri.Text)).ToString("HH:mm");
                 else
                     this.SLAvri.Text = dc.CalculatePrio(this.prio.Text, this.datPrijave.Text, this.vriPrijave.Text).ToString("HH:mm");
             }
@@ -225,8 +227,9 @@ namespace POT.Documents
             {
                 String msg = System.Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + " TID already exist";
                 AppendTextBox(msg);
-                new LogWriter(msg);
             }
+
+            ////  DODATI POVIJEST LOG  ////
 
             SystemSounds.Hand.Play();
         }
@@ -264,7 +267,7 @@ namespace POT.Documents
             this.drive.ResetText();
             this.SLAdat.ResetText();
             this.SLAvri.ResetText();
-            this.label30.ResetText();
+            this.InqUser.ResetText();
             this.filijala.ResetText();
             this.ccn.ResetText();
             this.cid.ResetText();
@@ -277,12 +280,20 @@ namespace POT.Documents
 
         private void filijala_Leave(object sender, EventArgs e)
         {
-            this.filijala.Text = this.filijala.Text.ToUpper();
+            try
+            {
+                this.filijala.Text = filijala.Text.ToUpper();
+                if(long.TryParse(filijala.Text,out long n))
+                    filijala.Text = long.Parse(filijala.Text).ToString("000");
+            }catch(Exception e1)
+            {
+                new LogWriter(e1);
+            }
         }
 
-        private void textBox1_Leave(object sender, EventArgs e)
+        private void InqUser_Leave(object sender, EventArgs e)
         {
-            this.label30.Text = this.label30.Text.ToUpper();
+            InqUser.Text = InqUser.Text.ToUpper();
         }
 
         private void ccn_Leave(object sender, EventArgs e)

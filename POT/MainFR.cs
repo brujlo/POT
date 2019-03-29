@@ -49,6 +49,8 @@ namespace POT
                 this.linkLabel4.Enabled = true;
                 this.linkLabel11.Enabled = true;
                 this.linkLabel15.Enabled = true;
+                this.linkLabel16.Enabled = true;
+                
             }
             else
             {
@@ -60,17 +62,20 @@ namespace POT
                 this.linkLabel4.Enabled = false;
                 this.linkLabel11.Enabled = false;
                 this.linkLabel15.Enabled = false;
+                this.linkLabel16.Enabled = false;
             }
 
             if (WorkingUser.AdminRights.ToString().Contains("2") || WorkingUser.AdminRights.ToString().Contains("1"))
             {
                 this.linkLabel9.Enabled = true;
                 this.linkLabel5.Enabled = true;
+                this.linkLabel16.Enabled = true;
             }
             else
             {
                 this.linkLabel9.Enabled = false;
                 this.linkLabel5.Enabled = false;
+                this.linkLabel16.Enabled = false;
             }
 
             if (Properties.Settings.Default.DBTabelsBuilded) linkLabel11.Enabled = false;
@@ -163,96 +168,131 @@ namespace POT
             Thread myThread = new Thread(getOpenedTasks);
             myThread.Start();
 
-            new LogWriter(System.Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + "App started" + System.Environment.NewLine);
+            new LogWriter(System.Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + "App started");
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Form ndb = new NewDBUser();
-            ndb.ShowDialog();
+            try
+            {
+                Form ndb = new NewDBUser();
+                ndb.ShowDialog();
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
+            }
         }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Form ndb = new DeleteDBUser();
-            ndb.ShowDialog();
+            try
+            {
+                Form ndb = new DeleteDBUser();
+                ndb.ShowDialog();
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
+            }
         }
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Form st = new State();
-            //st.ShowDialog();
-            st.Show();
-        }
+            try
+            {
+                Form st = new State();
+                //st.ShowDialog();
+                st.Show();
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
+            }
+}
 
         private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            int cnt = 0;
+            try
+            { 
+                int cnt = 0;
 
-            foreach (Form frm in Application.OpenForms)
-            {
-                if (!frm.Name.Equals("MainFR") && !frm.Name.Equals("LoginFR") && !frm.Name.Equals("StartForm"))
-                    cnt++;
-            }
-
-            if (cnt == 0)
-                linkLabel4.Enabled = true;
-            else
-            {
-                linkLabel4.Enabled = false;
-                return;
-            }
-
-            logOutClicked = true;
-            new LogWriter(System.Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + "LogOut clicked" + System.Environment.NewLine);
-            Hide();
-            LoginForm fr = new LoginForm();
-            fr.ShowDialog();
-
-            if(loginCNt == 1)
-            {
-                MainFR MF = new MainFR();
-                MF.ShowDialog();
-                Close();
-                return;
-            }
-            if (loginCNt == 3 && !fr.isLoged)
-            {
-                MessageBox.Show("To many attempts, I will close now!");
-                Application.Exit();
-            }
-            else if (!fr.isLoged)
-            {
-                MessageBox.Show("Wrong login data, please check again, attempts left: " + (3 - loginCNt));
-                loginCNt++;
-            }
-
-            if (fr.isLoged)
-            {
-                if (!CheckIDs())
+                foreach (Form frm in Application.OpenForms)
                 {
-                    foreach (Control ctr in this.Controls)
-                    {
-                        if (ctr is LinkLabel)
-                            ((LinkLabel)ctr).Enabled = false;
-                    }
-                    linkLabel5.Enabled = true;
-                    linkLabel9.Enabled = true;
+                    if (!frm.Name.Equals("MainFR") && !frm.Name.Equals("LoginFR") && !frm.Name.Equals("StartForm"))
+                        cnt++;
                 }
-                MainFR MF = new MainFR();
-                MF.ShowDialog();
-                Close();
+
+                if (cnt == 0)
+                    linkLabel4.Enabled = true;
+                else
+                {
+                    linkLabel4.Enabled = false;
+                    return;
+                }
+
+                logOutClicked = true;
+                new LogWriter(System.Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + "LogOut clicked" + System.Environment.NewLine);
+                Hide();
+                LoginForm fr = new LoginForm();
+                fr.ShowDialog();
+
+                if(loginCNt == 1)
+                {
+                    MainFR MF = new MainFR();
+                    MF.ShowDialog();
+                    Close();
+                    return;
+                }
+                if (loginCNt == 3 && !fr.isLoged)
+                {
+                    MessageBox.Show("To many attempts, I will close now!");
+                    Application.Exit();
+                }
+                else if (!fr.isLoged)
+                {
+                    MessageBox.Show("Wrong login data, please check again, attempts left: " + (3 - loginCNt));
+                    loginCNt++;
+                }
+
+                if (fr.isLoged)
+                {
+                    if (!CheckIDs())
+                    {
+                        foreach (Control ctr in this.Controls)
+                        {
+                            if (ctr is LinkLabel)
+                                ((LinkLabel)ctr).Enabled = false;
+                        }
+                        linkLabel5.Enabled = true;
+                        linkLabel9.Enabled = true;
+                    }
+                    MainFR MF = new MainFR();
+                    MF.ShowDialog();
+                    Close();
+                }
+                else
+                {
+                    Show();
+                }
             }
-            else
+            catch (Exception e1)
             {
-                Show();
+                new LogWriter(e1);
             }
         }
 
         private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Form re = new AddRegion();
-            re.ShowDialog();
+            try
+            {
+                Form re = new AddRegion();
+                re.ShowDialog();
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
+            }
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -264,8 +304,15 @@ namespace POT
 
         private void linkLabel6_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Primka pr = new Primka();
-            pr.Show();
+            try
+            {
+                Primka pr = new Primka();
+                pr.Show();
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
+            }
         }
 
         private void linkLabel7_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -296,73 +343,102 @@ namespace POT
         {
             Boolean isIn = false;
 
-            if(Properties.Settings.Default.TransportIDRegion != 0 && Properties.Settings.Default.ServisIDRegion != 0 && Properties.Settings.Default.OstaliIDRegion != 0 && Properties.Settings.Default.MainCompanyCode == "01")
+            try
             {
-                isIn = true;
-            }
-            else
-            {
-                if (Properties.Settings.Default.TransportIDRegion == 0)
-                    MessageBox.Show("Please define Transport Region, else program will not work correctly!");
-                if (Properties.Settings.Default.ServisIDRegion == 0)
-                    MessageBox.Show("Please define Ostali Region, else program will not work correctly!");
-                if (Properties.Settings.Default.OstaliIDRegion == 0)
-                    MessageBox.Show("Please define Service Region, else program will not work correctly!");
-                if (Properties.Settings.Default.MainCompanyCode != "01")
+                if(Properties.Settings.Default.TransportIDRegion != 0 && Properties.Settings.Default.ServisIDRegion != 0 && Properties.Settings.Default.OstaliIDRegion != 0 && Properties.Settings.Default.MainCompanyCode == "01")
                 {
-                    MessageBox.Show("Please define MainRegion data, else program will not work correctly!");
-                    /*QueryCommands qc = new QueryCommands();
-                    List<String> sendArr = new List<string>();
-                    sendArr.Add("Tvrtke");
-                    qc.ResetAutoIcrement(WorkingUser.Username, WorkingUser.Password, sendArr);*/
+                    isIn = true;
                 }
-                isIn = false;
-            }
+                else
+                {
+                    if (Properties.Settings.Default.TransportIDRegion == 0)
+                        MessageBox.Show("Please define Transport Region, else program will not work correctly!");
+                    if (Properties.Settings.Default.ServisIDRegion == 0)
+                        MessageBox.Show("Please define Ostali Region, else program will not work correctly!");
+                    if (Properties.Settings.Default.OstaliIDRegion == 0)
+                        MessageBox.Show("Please define Service Region, else program will not work correctly!");
+                    if (Properties.Settings.Default.MainCompanyCode != "01")
+                    {
+                        MessageBox.Show("Please define MainRegion data, else program will not work correctly!");
+                        /*QueryCommands qc = new QueryCommands();
+                        List<String> sendArr = new List<string>();
+                        sendArr.Add("Tvrtke");
+                        qc.ResetAutoIcrement(WorkingUser.Username, WorkingUser.Password, sendArr);*/
+                    }
+                    isIn = false;
+                }
 
-            this.Refresh();
-            return isIn;
+                this.Refresh();
+                return isIn;
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
+                return isIn;
+            }
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            int pHgth = pictureBox4.Height; //90,90);
-            do
+            try
             {
-                pHgth = pHgth - 10;
+                int pHgth = pictureBox4.Height; //90,90);
+                do
+                {
+                    pHgth = pHgth - 10;
 
-                pictureBox4.Height = pHgth; 
-                pictureBox4.Width = pHgth;
+                    pictureBox4.Height = pHgth; 
+                    pictureBox4.Width = pHgth;
 
-                this.Refresh();
-                //System.Threading.Thread.Sleep(10);
-            } while (pictureBox4.Height > 0);
+                    this.Refresh();
+                    //System.Threading.Thread.Sleep(10);
+                } while (pictureBox4.Height > 0);
 
-            isClosePicClicked = true;
-            new LogWriter(System.Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + "App turned off" + System.Environment.NewLine);
-            Application.Exit();
+                isClosePicClicked = true;
+                new LogWriter(System.Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + "App turned off");
+                Application.Exit();
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
+            }
         }
 
         private void linkLabel9_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            MainCmpSelector mfs = new MainCmpSelector();
-            mfs.ShowDialog();
-
-            if (!CheckIDs())
+            try
             {
-                foreach (Control ctr in this.Controls)
+                MainCmpSelector mfs = new MainCmpSelector();
+                mfs.ShowDialog();
+
+                if (!CheckIDs())
                 {
-                    if (ctr is LinkLabel)
-                        ((LinkLabel)ctr).Enabled = false;
+                    foreach (Control ctr in this.Controls)
+                    {
+                        if (ctr is LinkLabel)
+                            ((LinkLabel)ctr).Enabled = false;
+                    }
+                    linkLabel5.Enabled = true;
+                    linkLabel9.Enabled = true;
                 }
-                linkLabel5.Enabled = true;
-                linkLabel9.Enabled = true;
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
             }
         }
 
         private void linkLabel8_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Otpremnica otp = new Otpremnica();
-            otp.Show();
+            try
+            {
+                Otpremnica otp = new Otpremnica();
+                otp.Show();
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
+            }
         }
 
         private void timer2_Tick(object sender, EventArgs e)
@@ -449,27 +525,41 @@ namespace POT
 
         private void linkLabel10_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            OpenTicketList opl = new OpenTicketList(qc.openedTicketsList(WorkingUser.Username, WorkingUser.Password));
-            opl.Show();
+            try
+            {
+                OpenTicketList opl = new OpenTicketList(qc.openedTicketsList(WorkingUser.Username, WorkingUser.Password));
+                opl.Show();
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
+            }
         }
 
         private void linkLabel11_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            backgroundWorker1.WorkerReportsProgress = true;
-            backgroundWorker1.WorkerSupportsCancellation = true;
-
-            if (backgroundWorker1.IsBusy != true)
+            try
             {
-                backgroundWorker1.RunWorkerAsync();
-            }
+                backgroundWorker1.WorkerReportsProgress = true;
+                backgroundWorker1.WorkerSupportsCancellation = true;
 
-            while (backgroundWorker1.IsBusy && !backgroundWorker1.CancellationPending)
-            {
-                if (Properties.Settings.Default.DBTabelsBuilded)
+                if (backgroundWorker1.IsBusy != true)
                 {
-                    linkLabel11.Enabled = false;
-                    this.Refresh();
+                    backgroundWorker1.RunWorkerAsync();
                 }
+
+                while (backgroundWorker1.IsBusy && !backgroundWorker1.CancellationPending)
+                {
+                    if (Properties.Settings.Default.DBTabelsBuilded)
+                    {
+                        linkLabel11.Enabled = false;
+                        this.Refresh();
+                    }
+                }
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
             }
         }
 
@@ -533,30 +623,51 @@ namespace POT
 
         private void linkLabel12_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            IUS ius = new IUS();
-            ius.Show();
+            try
+            {
+                IUS ius = new IUS();
+                ius.Show();
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
+            }
         }
 
         private void MainFR_Click(object sender, EventArgs e)
         {
-            int cnt = 0; 
-
-            foreach (Form frm in Application.OpenForms)
+            try
             {
-                if (!frm.Name.Equals("MainFR") && !frm.Name.Equals("LoginFR") && !frm.Name.Equals("StartForm"))
-                    cnt++;
-            }
+                int cnt = 0; 
 
-            if(cnt == 0)
-                linkLabel4.Enabled = true;
-            else
-                linkLabel4.Enabled = false;
+                foreach (Form frm in Application.OpenForms)
+                {
+                    if (!frm.Name.Equals("MainFR") && !frm.Name.Equals("LoginFR") && !frm.Name.Equals("StartForm"))
+                        cnt++;
+                }
+
+                if(cnt == 0)
+                    linkLabel4.Enabled = true;
+                else
+                    linkLabel4.Enabled = false;
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
+            }
         }
 
         private void linkLabel13_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Tickets tck = new Tickets();
-            tck.Show();
+            try
+            {
+                Tickets tck = new Tickets();
+                tck.Show();
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
+            }
         }
 
         private void linkLabel14_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -574,13 +685,33 @@ namespace POT
 
         private void linkLabel15_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            MessageBox.Show(Properties.Settings.Default.Path);
+            try
+            {
+                MessageBox.Show(Properties.Settings.Default.Path);
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
+            }
         }
 
         private void MainFR_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (!isClosePicClicked && !logOutClicked)
-                new LogWriter(System.Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + "App turned off" + System.Environment.NewLine);
+                new LogWriter(System.Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + "App turned off");
+        }
+
+        private void linkLabel16_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            try
+            {
+                CmpRegEditcs cre = new CmpRegEditcs();
+                cre.Show();
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
+            }
         }
     }
 }

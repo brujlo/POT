@@ -1,15 +1,891 @@
 
-- 17.03.19. 02:17 - LogOut clicked
+- 19.03.19. 18:38 - App started
+    *** BrunoBrckovic *** 
+
+- 19.03.19. 18:43 - App turned off
+    *** BrunoBrckovic *** 
+
+- 19.03.19. 23:46 - App started
+    *** BrunoBrckovic *** 
+
+- 19.03.19. 23:46 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 19.03.19. 23:46 - App started
+    *** BrunoBrckovic *** 
+
+- 20.03.19. 00:11 - App started
+    *** BrunoBrckovic *** 
+
+- 20.03.19. 00:24 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.03.19. 00:32 - App started
+    *** BrunoBrckovic *** 
+
+- 20.03.19. 00:32
+    - BaseEcp: System.ArgumentException: Cannot add or insert the item '2' in more than one place. You must first remove it from its current location or clone it.
+Parameter name: item
+   at System.Windows.Forms.ListView.InsertItems(Int32 displayIndex, ListViewItem[] items, Boolean checkHosting)
+   at System.Windows.Forms.ListView.ListViewNativeItemCollection.Add(ListViewItem value)
+   at System.Windows.Forms.ListView.ListViewItemCollection.Add(ListViewItem value)
+   at POT.Primka.button1_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 149
+    - InnerEcp: 
+    - MessageEcp: Cannot add or insert the item '2' in more than one place. You must first remove it from its current location or clone it.
+Parameter name: item
+    - SourceEcp: System.Windows.Forms
+    - StackTrqceEcp:    at System.Windows.Forms.ListView.InsertItems(Int32 displayIndex, ListViewItem[] items, Boolean checkHosting)
+   at System.Windows.Forms.ListView.ListViewNativeItemCollection.Add(ListViewItem value)
+   at System.Windows.Forms.ListView.ListViewItemCollection.Add(ListViewItem value)
+   at POT.Primka.button1_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 149
+    - TypeNameEcp: System.ArgumentException
+    *** BrunoBrckovic *** 
 
 
-- 17.03.19. 02:17 - App started
+- 20.03.19. 00:34
+    - BaseEcp: System.ArgumentException: Cannot add or insert the item '2' in more than one place. You must first remove it from its current location or clone it.
+Parameter name: item
+   at System.Windows.Forms.ListView.InsertItems(Int32 displayIndex, ListViewItem[] items, Boolean checkHosting)
+   at System.Windows.Forms.ListView.ListViewNativeItemCollection.Add(ListViewItem value)
+   at System.Windows.Forms.ListView.ListViewItemCollection.Add(ListViewItem value)
+   at POT.Primka.button1_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 149
+    - InnerEcp: 
+    - MessageEcp: Cannot add or insert the item '2' in more than one place. You must first remove it from its current location or clone it.
+Parameter name: item
+    - SourceEcp: System.Windows.Forms
+    - StackTrqceEcp:    at System.Windows.Forms.ListView.InsertItems(Int32 displayIndex, ListViewItem[] items, Boolean checkHosting)
+   at System.Windows.Forms.ListView.ListViewNativeItemCollection.Add(ListViewItem value)
+   at System.Windows.Forms.ListView.ListViewItemCollection.Add(ListViewItem value)
+   at POT.Primka.button1_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 149
+    - TypeNameEcp: System.ArgumentException
+    *** BrunoBrckovic *** 
 
 
-- 17.03.19. 02:17 - LogOut clicked
+- 20.03.19. 00:39
+    - BaseEcp: System.ArgumentException: Cannot add or insert the item '2' in more than one place. You must first remove it from its current location or clone it.
+Parameter name: item
+   at System.Windows.Forms.ListView.InsertItems(Int32 displayIndex, ListViewItem[] items, Boolean checkHosting)
+   at System.Windows.Forms.ListView.ListViewNativeItemCollection.Add(ListViewItem value)
+   at System.Windows.Forms.ListView.ListViewItemCollection.Add(ListViewItem value)
+   at POT.Primka.button1_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Cannot add or insert the item '2' in more than one place. You must first remove it from its current location or clone it.
+Parameter name: item
+    - SourceEcp: System.Windows.Forms
+    - StackTrqceEcp:    at System.Windows.Forms.ListView.InsertItems(Int32 displayIndex, ListViewItem[] items, Boolean checkHosting)
+   at System.Windows.Forms.ListView.ListViewNativeItemCollection.Add(ListViewItem value)
+   at System.Windows.Forms.ListView.ListViewItemCollection.Add(ListViewItem value)
+   at POT.Primka.button1_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.ArgumentException
+    *** BrunoBrckovic *** 
 
 
-- 17.03.19. 02:17 - App started
+- 20.03.19. 00:40
+    - BaseEcp: System.ArgumentException: Cannot add or insert the item '2' in more than one place. You must first remove it from its current location or clone it.
+Parameter name: item
+   at System.Windows.Forms.ListView.InsertItems(Int32 displayIndex, ListViewItem[] items, Boolean checkHosting)
+   at System.Windows.Forms.ListView.ListViewNativeItemCollection.Add(ListViewItem value)
+   at System.Windows.Forms.ListView.ListViewItemCollection.Add(ListViewItem value)
+   at POT.Primka.button1_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Cannot add or insert the item '2' in more than one place. You must first remove it from its current location or clone it.
+Parameter name: item
+    - SourceEcp: System.Windows.Forms
+    - StackTrqceEcp:    at System.Windows.Forms.ListView.InsertItems(Int32 displayIndex, ListViewItem[] items, Boolean checkHosting)
+   at System.Windows.Forms.ListView.ListViewNativeItemCollection.Add(ListViewItem value)
+   at System.Windows.Forms.ListView.ListViewItemCollection.Add(ListViewItem value)
+   at POT.Primka.button1_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.ArgumentException
+    *** BrunoBrckovic *** 
 
 
-- 17.03.19. 02:17 - App turned off
+- 20.03.19. 01:15 - App turned off
+    *** BrunoBrckovic *** 
 
+- 20.03.19. 01:18 - App started
+    *** BrunoBrckovic *** 
+
+- 20.03.19. 01:19
+    - BaseEcp: System.InvalidOperationException: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+    - InnerEcp: 
+    - MessageEcp: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+    - SourceEcp: System.Data
+    - StackTrqceEcp:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+    - TypeNameEcp: System.InvalidOperationException
+    *** BrunoBrckovic *** 
+
+
+- 20.03.19. 01:19
+    - BaseEcp: System.InvalidOperationException: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 27
+   at POT.QueryCommands.PartInfoByFullCodeSifrarnik(String Uname, String Pass, Int64 mFullCode) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 301
+    - InnerEcp: 
+    - MessageEcp: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+    - SourceEcp: System.Data
+    - StackTrqceEcp:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 27
+   at POT.QueryCommands.PartInfoByFullCodeSifrarnik(String Uname, String Pass, Int64 mFullCode) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 301
+    - TypeNameEcp: System.InvalidOperationException
+    *** BrunoBrckovic *** 
+
+
+- 20.03.19. 01:19
+    - BaseEcp: System.InvalidOperationException: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 27
+   at POT.QueryCommands.PartInfoByFullCodeSifrarnik(String Uname, String Pass, Int64 mFullCode) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 333
+   at POT.MyTypes.PovijestLog.SaveToPovijestLog(List`1 mNewOldPart, String mDatumRada, String mOpis, String mCustomerName, String mCCN, String mCI, String mDokument, String mGNG) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PovijestLog.cs:line 75
+   at POT.Otpremnica.button2_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 451
+    - InnerEcp: 
+    - MessageEcp: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+    - SourceEcp: System.Data
+    - StackTrqceEcp:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 27
+   at POT.QueryCommands.PartInfoByFullCodeSifrarnik(String Uname, String Pass, Int64 mFullCode) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 333
+   at POT.MyTypes.PovijestLog.SaveToPovijestLog(List`1 mNewOldPart, String mDatumRada, String mOpis, String mCustomerName, String mCCN, String mCI, String mDokument, String mGNG) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PovijestLog.cs:line 75
+   at POT.Otpremnica.button2_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 451
+    - TypeNameEcp: System.InvalidOperationException
+    *** BrunoBrckovic *** 
+
+
+- 20.03.19. 01:19
+    - BaseEcp: System.InvalidOperationException: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+    - InnerEcp: 
+    - MessageEcp: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+    - SourceEcp: System.Data
+    - StackTrqceEcp:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+    - TypeNameEcp: System.InvalidOperationException
+    *** BrunoBrckovic *** 
+
+
+- 20.03.19. 01:19
+    - BaseEcp: System.InvalidOperationException: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 27
+   at POT.QueryCommands.PartInfoByFullCodeSifrarnik(String Uname, String Pass, Int64 mFullCode) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 301
+    - InnerEcp: 
+    - MessageEcp: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+    - SourceEcp: System.Data
+    - StackTrqceEcp:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 27
+   at POT.QueryCommands.PartInfoByFullCodeSifrarnik(String Uname, String Pass, Int64 mFullCode) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 301
+    - TypeNameEcp: System.InvalidOperationException
+    *** BrunoBrckovic *** 
+
+
+- 20.03.19. 01:19
+    - BaseEcp: System.InvalidOperationException: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 27
+   at POT.QueryCommands.PartInfoByFullCodeSifrarnik(String Uname, String Pass, Int64 mFullCode) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 333
+   at POT.MyTypes.PovijestLog.SaveToPovijestLog(List`1 mNewOldPart, String mDatumRada, String mOpis, String mCustomerName, String mCCN, String mCI, String mDokument, String mGNG) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PovijestLog.cs:line 75
+   at POT.Otpremnica.button2_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 451
+    - InnerEcp: 
+    - MessageEcp: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+    - SourceEcp: System.Data
+    - StackTrqceEcp:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 27
+   at POT.QueryCommands.PartInfoByFullCodeSifrarnik(String Uname, String Pass, Int64 mFullCode) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 333
+   at POT.MyTypes.PovijestLog.SaveToPovijestLog(List`1 mNewOldPart, String mDatumRada, String mOpis, String mCustomerName, String mCCN, String mCI, String mDokument, String mGNG) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PovijestLog.cs:line 75
+   at POT.Otpremnica.button2_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 451
+    - TypeNameEcp: System.InvalidOperationException
+    *** BrunoBrckovic *** 
+
+
+- 20.03.19. 01:19
+    - BaseEcp: System.InvalidOperationException: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+    - InnerEcp: 
+    - MessageEcp: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+    - SourceEcp: System.Data
+    - StackTrqceEcp:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+    - TypeNameEcp: System.InvalidOperationException
+    *** BrunoBrckovic *** 
+
+
+- 20.03.19. 01:19
+    - BaseEcp: System.InvalidOperationException: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 27
+   at POT.QueryCommands.GetPartIDCompareCodeSNCNStorage(String Uname, String Pass, Int64 mCodePartFull, String mSN, String mCN, Int64 mStorageID) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 962
+   at POT.Otpremnica.button2_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 402
+    - InnerEcp: 
+    - MessageEcp: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+    - SourceEcp: System.Data
+    - StackTrqceEcp:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 27
+   at POT.QueryCommands.GetPartIDCompareCodeSNCNStorage(String Uname, String Pass, Int64 mCodePartFull, String mSN, String mCN, Int64 mStorageID) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 962
+   at POT.Otpremnica.button2_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 402
+    - TypeNameEcp: System.InvalidOperationException
+    *** BrunoBrckovic *** 
+
+
+- 20.03.19. 01:19 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.03.19. 01:21 - App started
+    *** BrunoBrckovic *** 
+
+- 20.03.19. 01:24
+    - BaseEcp: System.InvalidOperationException: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+    - InnerEcp: 
+    - MessageEcp: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+    - SourceEcp: System.Data
+    - StackTrqceEcp:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+    - TypeNameEcp: System.InvalidOperationException
+    *** BrunoBrckovic *** 
+
+
+- 20.03.19. 01:24
+    - BaseEcp: System.InvalidOperationException: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 27
+   at POT.QueryCommands.GetPartIDCompareCodeSNCNStorage(String Uname, String Pass, Int64 mCodePartFull, String mSN, String mCN, Int64 mStorageID) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 962
+   at POT.Otpremnica.button2_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 402
+    - InnerEcp: 
+    - MessageEcp: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+    - SourceEcp: System.Data
+    - StackTrqceEcp:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 27
+   at POT.QueryCommands.GetPartIDCompareCodeSNCNStorage(String Uname, String Pass, Int64 mCodePartFull, String mSN, String mCN, Int64 mStorageID) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 962
+   at POT.Otpremnica.button2_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 402
+    - TypeNameEcp: System.InvalidOperationException
+    *** BrunoBrckovic *** 
+
+
+- 20.03.19. 01:26
+    - BaseEcp: System.InvalidOperationException: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password)
+    - InnerEcp: 
+    - MessageEcp: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+    - SourceEcp: System.Data
+    - StackTrqceEcp:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password)
+    - TypeNameEcp: System.InvalidOperationException
+    *** BrunoBrckovic *** 
+
+
+- 20.03.19. 01:26
+    - BaseEcp: System.InvalidOperationException: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password)
+   at POT.QueryCommands.GetPartIDCompareCodeSNCNStorage(String Uname, String Pass, Int64 mCodePartFull, String mSN, String mCN, Int64 mStorageID)
+   at POT.Otpremnica.button2_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+    - SourceEcp: System.Data
+    - StackTrqceEcp:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password)
+   at POT.QueryCommands.GetPartIDCompareCodeSNCNStorage(String Uname, String Pass, Int64 mCodePartFull, String mSN, String mCN, Int64 mStorageID)
+   at POT.Otpremnica.button2_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.InvalidOperationException
+    *** BrunoBrckovic *** 
+
+
+- 20.03.19. 01:27
+    - BaseEcp: System.InvalidOperationException: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password)
+    - InnerEcp: 
+    - MessageEcp: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+    - SourceEcp: System.Data
+    - StackTrqceEcp:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password)
+    - TypeNameEcp: System.InvalidOperationException
+    *** BrunoBrckovic *** 
+
+
+- 20.03.19. 01:27
+    - BaseEcp: System.InvalidOperationException: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password)
+   at POT.QueryCommands.GetPartIDCompareCodeSNCNStorage(String Uname, String Pass, Int64 mCodePartFull, String mSN, String mCN, Int64 mStorageID)
+   at POT.Otpremnica.button2_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+    - SourceEcp: System.Data
+    - StackTrqceEcp:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password)
+   at POT.QueryCommands.GetPartIDCompareCodeSNCNStorage(String Uname, String Pass, Int64 mCodePartFull, String mSN, String mCN, Int64 mStorageID)
+   at POT.Otpremnica.button2_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.InvalidOperationException
+    *** BrunoBrckovic *** 
+
+
+- 20.03.19. 01:33 - App started
+    *** BrunoBrckovic *** 
+
+- 20.03.19. 01:43 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.03.19. 01:55 - App started
+    *** BrunoBrckovic *** 
+
+- 20.03.19. 01:55 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.03.19. 02:41 - App started
+    *** BrunoBrckovic *** 
+
+- 20.03.19. 02:48 - App started
+    *** BrunoBrckovic *** 
+
+- 20.03.19. 02:52
+    - BaseEcp: System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at POT.Otpremnica.button2_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: The given key was not present in the dictionary.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at POT.Otpremnica.button2_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.Collections.Generic.KeyNotFoundException
+    *** BrunoBrckovic *** 
+
+
+- 20.03.19. 03:27 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.03.19. 04:02 - App started
+    *** BrunoBrckovic *** 
+
+- 20.03.19. 04:03 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.03.19. 04:07 - App started
+    *** BrunoBrckovic *** 
+
+- 20.03.19. 04:07
+    - BaseEcp: System.ArgumentException: An item with the same key has already been added.
+   at System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at POT.Otpremnica.button2_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 347
+    - InnerEcp: 
+    - MessageEcp: An item with the same key has already been added.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at POT.Otpremnica.button2_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 347
+    - TypeNameEcp: System.ArgumentException
+    *** BrunoBrckovic *** 
+
+
+- 20.03.19. 04:08 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.03.19. 04:09 - App started
+    *** BrunoBrckovic *** 
+
+- 20.03.19. 04:10
+    - BaseEcp: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at POT.Otpremnica.button2_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 442
+    - InnerEcp: 
+    - MessageEcp: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at POT.Otpremnica.button2_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 442
+    - TypeNameEcp: System.ArgumentOutOfRangeException
+    *** BrunoBrckovic *** 
+
+
+- 20.03.19. 04:16 - App started
+    *** BrunoBrckovic *** 
+
+- 20.03.19. 04:16 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.03.19. 04:17 - App started
+    *** BrunoBrckovic *** 
+
+- 20.03.19. 04:25 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.03.19. 04:27 - App started
+    *** BrunoBrckovic *** 
+
+- 20.03.19. 04:44 - App started
+    *** BrunoBrckovic *** 
+
+- 20.03.19. 04:48 - App started
+    *** BrunoBrckovic *** 
+
+- 20.03.19. 04:49 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.03.19. 05:00 - App started
+    *** BrunoBrckovic *** 
+
+- 20.03.19. 05:01 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.03.19. 19:04 - App started
+    *** BrunoBrckovic *** 
+
+- 20.03.19. 19:04 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.03.19. 19:24 - App started
+    *** BrunoBrckovic *** 
+
+- 20.03.19. 19:28 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.03.19. 20:36 - App started
+    *** BrunoBrckovic *** 
+
+- 20.03.19. 20:40 - App started
+    *** BrunoBrckovic *** 
+
+- 20.03.19. 20:40 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 20.03.19. 20:40 - App started
+    *** BrunoBrckovic *** 
+
+- 20.03.19. 20:40 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.03.19. 20:40 - App started
+    *** BrunoBrckovic *** 
+
+- 20.03.19. 20:42 - App turned off
+    *** BrunoBrckovic *** 
+
+- 26.03.19. 06:26 - App started
+    *** BrunoBrckovic *** 
+
+- 26.03.19. 06:27 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 26.03.19. 06:27 - App started
+    *** BrunoBrckovic *** 
+
+- 26.03.19. 06:28
+    - BaseEcp: System.ArgumentNullException: Value cannot be null.
+Parameter name: text
+   at System.Windows.Forms.Clipboard.SetText(String text, TextDataFormat format)
+   at System.Windows.Forms.Clipboard.SetText(String text)
+   at POT.PartsList.button1_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartsList.cs:line 89
+    - InnerEcp: 
+    - MessageEcp: Value cannot be null.
+Parameter name: text
+    - SourceEcp: System.Windows.Forms
+    - StackTrqceEcp:    at System.Windows.Forms.Clipboard.SetText(String text, TextDataFormat format)
+   at System.Windows.Forms.Clipboard.SetText(String text)
+   at POT.PartsList.button1_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartsList.cs:line 89
+    - TypeNameEcp: System.ArgumentNullException
+    *** BrunoBrckovic *** 
+
+
+- 26.03.19. 06:30 - App turned off
+    *** BrunoBrckovic *** 
+
+- 26.03.19. 06:32 - App started
+    *** BrunoBrckovic *** 
+
+- 26.03.19. 06:37
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Transport_Tvrtke". The conflict occurred in database "DMD", table "dbo.Tvrtke", column 'ID'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.OTPUnesiUredajeDaSuPrimljeni(String Uname, String Pass, List`1 ListOfParts, Company cmpR, Company cmpS, String napomena) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 1290
+ClientConnectionId:86e77e6a-be48-47aa-befd-1cff64b44c85
+Error Number:547,State:0,Class:16
+    - InnerEcp: 
+    - MessageEcp: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Transport_Tvrtke". The conflict occurred in database "DMD", table "dbo.Tvrtke", column 'ID'.
+The statement has been terminated.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.OTPUnesiUredajeDaSuPrimljeni(String Uname, String Pass, List`1 ListOfParts, Company cmpR, Company cmpS, String napomena) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 1290
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 26.03.19. 06:37
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Transport_Tvrtke". The conflict occurred in database "DMD", table "dbo.Tvrtke", column 'ID'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.OTPUnesiUredajeDaSuPrimljeni(String Uname, String Pass, List`1 ListOfParts, Company cmpR, Company cmpS, String napomena) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 1302
+ClientConnectionId:86e77e6a-be48-47aa-befd-1cff64b44c85
+Error Number:547,State:0,Class:16
+    - InnerEcp: 
+    - MessageEcp: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Transport_Tvrtke". The conflict occurred in database "DMD", table "dbo.Tvrtke", column 'ID'.
+The statement has been terminated.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.OTPUnesiUredajeDaSuPrimljeni(String Uname, String Pass, List`1 ListOfParts, Company cmpR, Company cmpS, String napomena) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 1302
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 26.03.19. 06:37
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Transport_Tvrtke". The conflict occurred in database "DMD", table "dbo.Tvrtke", column 'ID'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.OTPUnesiUredajeDaSuPrimljeni(String Uname, String Pass, List`1 ListOfParts, Company cmpR, Company cmpS, String napomena) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 1307
+   at POT.Otpremnica.button2_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 472
+ClientConnectionId:86e77e6a-be48-47aa-befd-1cff64b44c85
+Error Number:547,State:0,Class:16
+    - InnerEcp: 
+    - MessageEcp: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Transport_Tvrtke". The conflict occurred in database "DMD", table "dbo.Tvrtke", column 'ID'.
+The statement has been terminated.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.OTPUnesiUredajeDaSuPrimljeni(String Uname, String Pass, List`1 ListOfParts, Company cmpR, Company cmpS, String napomena) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 1307
+   at POT.Otpremnica.button2_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 472
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 26.03.19. 06:46
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Transport_Tvrtke". The conflict occurred in database "DMD", table "dbo.Tvrtke", column 'ID'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.OTPUnesiUredajeDaSuPrimljeni(String Uname, String Pass, List`1 ListOfParts, Company cmpR, Company cmpS, String napomena) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 1290
+ClientConnectionId:12d846a2-2917-45e5-a85c-1b761d137a83
+Error Number:547,State:0,Class:16
+    - InnerEcp: 
+    - MessageEcp: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Transport_Tvrtke". The conflict occurred in database "DMD", table "dbo.Tvrtke", column 'ID'.
+The statement has been terminated.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.OTPUnesiUredajeDaSuPrimljeni(String Uname, String Pass, List`1 ListOfParts, Company cmpR, Company cmpS, String napomena) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 1290
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 26.03.19. 06:46
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Transport_Tvrtke". The conflict occurred in database "DMD", table "dbo.Tvrtke", column 'ID'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.OTPUnesiUredajeDaSuPrimljeni(String Uname, String Pass, List`1 ListOfParts, Company cmpR, Company cmpS, String napomena) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 1302
+ClientConnectionId:12d846a2-2917-45e5-a85c-1b761d137a83
+Error Number:547,State:0,Class:16
+    - InnerEcp: 
+    - MessageEcp: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Transport_Tvrtke". The conflict occurred in database "DMD", table "dbo.Tvrtke", column 'ID'.
+The statement has been terminated.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.OTPUnesiUredajeDaSuPrimljeni(String Uname, String Pass, List`1 ListOfParts, Company cmpR, Company cmpS, String napomena) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 1302
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 26.03.19. 06:46
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Transport_Tvrtke". The conflict occurred in database "DMD", table "dbo.Tvrtke", column 'ID'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.OTPUnesiUredajeDaSuPrimljeni(String Uname, String Pass, List`1 ListOfParts, Company cmpR, Company cmpS, String napomena) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 1307
+   at POT.Otpremnica.button2_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 472
+ClientConnectionId:12d846a2-2917-45e5-a85c-1b761d137a83
+Error Number:547,State:0,Class:16
+    - InnerEcp: 
+    - MessageEcp: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Transport_Tvrtke". The conflict occurred in database "DMD", table "dbo.Tvrtke", column 'ID'.
+The statement has been terminated.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.OTPUnesiUredajeDaSuPrimljeni(String Uname, String Pass, List`1 ListOfParts, Company cmpR, Company cmpS, String napomena) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 1307
+   at POT.Otpremnica.button2_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 472
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 26.03.19. 07:09 - App started
+    *** BrunoBrckovic *** 
+
+- 26.03.19. 07:09
+    - BaseEcp: System.ArgumentNullException: Value cannot be null.
+Parameter name: text
+   at System.Windows.Forms.Clipboard.SetText(String text, TextDataFormat format)
+   at System.Windows.Forms.Clipboard.SetText(String text)
+   at POT.PartsList.button1_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartsList.cs:line 92
+    - InnerEcp: 
+    - MessageEcp: Value cannot be null.
+Parameter name: text
+    - SourceEcp: System.Windows.Forms
+    - StackTrqceEcp:    at System.Windows.Forms.Clipboard.SetText(String text, TextDataFormat format)
+   at System.Windows.Forms.Clipboard.SetText(String text)
+   at POT.PartsList.button1_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartsList.cs:line 92
+    - TypeNameEcp: System.ArgumentNullException
+    *** BrunoBrckovic *** 
+
+
+- 26.03.19. 07:10
+    - BaseEcp: System.ArgumentNullException: Value cannot be null.
+Parameter name: text
+   at System.Windows.Forms.Clipboard.SetText(String text, TextDataFormat format)
+   at System.Windows.Forms.Clipboard.SetText(String text)
+   at POT.PartsList.button1_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartsList.cs:line 92
+    - InnerEcp: 
+    - MessageEcp: Value cannot be null.
+Parameter name: text
+    - SourceEcp: System.Windows.Forms
+    - StackTrqceEcp:    at System.Windows.Forms.Clipboard.SetText(String text, TextDataFormat format)
+   at System.Windows.Forms.Clipboard.SetText(String text)
+   at POT.PartsList.button1_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartsList.cs:line 92
+    - TypeNameEcp: System.ArgumentNullException
+    *** BrunoBrckovic *** 
+
+
+- 26.03.19. 07:15
+    - BaseEcp: System.ArgumentNullException: Value cannot be null.
+Parameter name: text
+   at System.Windows.Forms.Clipboard.SetText(String text, TextDataFormat format)
+   at System.Windows.Forms.Clipboard.SetText(String text)
+   at POT.PartsList.button1_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Value cannot be null.
+Parameter name: text
+    - SourceEcp: System.Windows.Forms
+    - StackTrqceEcp:    at System.Windows.Forms.Clipboard.SetText(String text, TextDataFormat format)
+   at System.Windows.Forms.Clipboard.SetText(String text)
+   at POT.PartsList.button1_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.ArgumentNullException
+    *** BrunoBrckovic *** 
+
+
+- 26.03.19. 18:32 - App started
+    *** BrunoBrckovic *** 
+
+- 26.03.19. 18:54 - App started
+    *** BrunoBrckovic *** 
+
+- 26.03.19. 18:54 - App turned off
+    *** BrunoBrckovic *** 
+
+- 26.03.19. 18:55 - App started
+    *** BrunoBrckovic *** 

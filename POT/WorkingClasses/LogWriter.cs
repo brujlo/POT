@@ -13,7 +13,7 @@ namespace POT.WorkingClasses
                 path = path + @"\POTLog.txt";
 
                 TextWriter tw = new StreamWriter(path, true);
-                tw.WriteLine(value);
+                tw.WriteLine(value + Environment.NewLine + "    *** " + WorkingUser.Name + WorkingUser.Surename + " *** ");
                 tw.Close();
 
                 Properties.Settings.Default.Path = path;
@@ -21,7 +21,7 @@ namespace POT.WorkingClasses
             }
             catch(Exception eInner)
             {
-                WriteLog(Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm") + Environment.NewLine + "Error writing log error message in LogWriter constructor with string value" + Environment.NewLine + "    - ErrorMSg:" + eInner.Message + Environment.NewLine);
+                WriteLog(Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm") + "Error writing log error message in LogWriter constructor with string value" + Environment.NewLine + "    - ErrorMSg:" + eInner.Message + Environment.NewLine + "    *** " + WorkingUser.Name + WorkingUser.Surename + " *** " + Environment.NewLine);
             }
         }
 
@@ -39,7 +39,8 @@ namespace POT.WorkingClasses
                     Environment.NewLine + "    - MessageEcp: " + e.Message +
                     Environment.NewLine + "    - SourceEcp: " + e.Source +
                     Environment.NewLine + "    - StackTrqceEcp: " + e.StackTrace +
-                    Environment.NewLine + "    - TypeNameEcp: " + e.GetType().FullName + Environment.NewLine);
+                    Environment.NewLine + "    - TypeNameEcp: " + e.GetType().FullName + Environment.NewLine 
+                    + "    *** " + WorkingUser.Name + WorkingUser.Surename + " *** " + Environment.NewLine);
                 tw.Close();
 
                 Properties.Settings.Default.Path = path;
@@ -47,7 +48,7 @@ namespace POT.WorkingClasses
             }
             catch (Exception eInner1)
             {
-                WriteLog(Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm") + Environment.NewLine + "Error writing log error message in LogWriter constructor with exception value" + Environment.NewLine + "    - ErrorMSg:" + eInner1.Message + Environment.NewLine);
+                WriteLog(Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm") + "Error writing log error message in LogWriter constructor with exception value" + Environment.NewLine + "    - ErrorMSg:" + eInner1.Message + Environment.NewLine + "    *** " + WorkingUser.Name + WorkingUser.Surename + " *** " + Environment.NewLine);
             }
         }
 
@@ -61,7 +62,7 @@ namespace POT.WorkingClasses
                 path = path + @"\POTLog.txt";
 
                 TextWriter tw = new StreamWriter(path, true);
-                tw.WriteLine(value);
+                tw.WriteLine(value + Environment.NewLine + "    *** " + WorkingUser.Name + WorkingUser.Surename + " *** " + Environment.NewLine);
                 tw.Close();
 
                 Properties.Settings.Default.Path = path;
@@ -69,7 +70,7 @@ namespace POT.WorkingClasses
             }
             catch (Exception eInner2)
             {
-                WriteLog(Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm") + Environment.NewLine + "Error writing log error message in LogWriter method" + Environment.NewLine + "    - ErrorMSg:" + eInner2.Message + Environment.NewLine);
+                WriteLog(Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm") + "Error writing log error message in LogWriter method" + Environment.NewLine + "    - ErrorMSg:" + eInner2.Message + Environment.NewLine + "    **** " + WorkingUser.Name + WorkingUser.Surename + " **** " + Environment.NewLine);
             }
         }
     }

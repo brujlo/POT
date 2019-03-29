@@ -120,25 +120,117 @@
   <data name="Check" xml:space="preserve">
     <value>Provjeri</value>
   </data>
+  <data name="CODE" xml:space="preserve">
+    <value>ŠIFRA</value>
+    <comment>PrintME</comment>
+  </data>
   <data name="CompanyInfo" xml:space="preserve">
     <value>Infomacije o tvrtki</value>
   </data>
+  <data name="CUSTOMERNBR" xml:space="preserve">
+    <value>BR.DOBAVLJAČA</value>
+    <comment>PrintME</comment>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Datum</value>
+    <comment>PrintME</comment>
+  </data>
   <data name="DeleteDBUser" xml:space="preserve">
-    <value>Obrisi DB korisnika</value>
+    <value>Obriši DB korisnika</value>
   </data>
   <data name="Do" xml:space="preserve">
     <value>Uradi</value>
   </data>
+  <data name="Document" xml:space="preserve">
+    <value>Dokument</value>
+    <comment>PrintME</comment>
+  </data>
+  <data name="DocumentNbr" xml:space="preserve">
+    <value>Broj dokumenta</value>
+    <comment>PrintME-zaglavlje</comment>
+  </data>
   <data name="EditRegion" xml:space="preserve">
     <value>Uredi regiju</value>
   </data>
+  <data name="MadeBy" xml:space="preserve">
+    <value>Izradio</value>
+    <comment>PrintME-zaglavlje</comment>
+  </data>
+  <data name="NAME" xml:space="preserve">
+    <value>NAZIV</value>
+    <comment>PrintME</comment>
+  </data>
+  <data name="NOTE" xml:space="preserve">
+    <value>NAPOMENA</value>
+    <comment>PrintME</comment>
+  </data>
+  <data name="PACK" xml:space="preserve">
+    <value>PAKIRANJE</value>
+    <comment>PrintME</comment>
+  </data>
+  <data name="Page" xml:space="preserve">
+    <value>Stranica</value>
+    <comment>PrintME</comment>
+  </data>
+  <data name="PARTLIST" xml:space="preserve">
+    <value>POPIS DIJELOVA</value>
+    <comment>PrintME</comment>
+  </data>
+  <data name="QUA" xml:space="preserve">
+    <value>KOL</value>
+    <comment>PrintME</comment>
+  </data>
+  <data name="RegionID" xml:space="preserve">
+    <value>Regija id</value>
+    <comment>PrintME-zaglavlje</comment>
+  </data>
   <data name="SelectMainRegion" xml:space="preserve">
     <value>Odaberi glavnu regiju</value>
+  </data>
+  <data name="SERIALNBR" xml:space="preserve">
+    <value>SERIJSKI BR</value>
+    <comment>PrintME</comment>
   </data>
   <data name="Set" xml:space="preserve">
     <value>Postavi</value>
   </data>
   <data name="SetDBUser" xml:space="preserve">
     <value>Dodaj DB korisnika</value>
+  </data>
+  <data name="Signature" xml:space="preserve">
+    <value>Potpis</value>
+    <comment>PrintME</comment>
+  </data>
+  <data name="SWIFT" xml:space="preserve">
+    <value>BIC</value>
+    <comment>PrintME-zaglavlje</comment>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>Vrijeme</value>
+    <comment>PrintME-zaglavlje</comment>
+  </data>
+  <data name="UserID" xml:space="preserve">
+    <value>Djelatnik id</value>
+    <comment>PrintME-zaglavlje</comment>
+  </data>
+  <data name="VAT" xml:space="preserve">
+    <value>OIB</value>
+    <comment>PrintME-zaglavlje</comment>
+  </data>
+  <data name="customer" xml:space="preserve">
+    <value>klijent</value>
+    <comment>Primka</comment>
+  </data>
+  <data name="DELIVERY" xml:space="preserve">
+    <value>OTPREMNICA</value>
+    <comment>Primka</comment>
+  </data>
+  <data name="RECEIPT" xml:space="preserve">
+    <value>PRIMKA</value>
+    <comment>Primka</comment>
+  </data>
+  <data name="Made" xml:space="preserve">
+    <value>IZRADIO</value>
+    <comment>PrintME-zaglavlje</comment>
   </data>
 </root>

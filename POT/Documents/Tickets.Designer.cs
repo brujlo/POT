@@ -143,7 +143,7 @@
             this.InqUser.Name = "InqUser";
             this.InqUser.Size = new System.Drawing.Size(112, 30);
             this.InqUser.TabIndex = 125;
-            this.InqUser.Leave += new System.EventHandler(this.textBox1_Leave);
+            this.InqUser.Leave += new System.EventHandler(this.InqUser_Leave);
             // 
             // textBox3
             // 

@@ -120,9 +120,7 @@ namespace POT
         {
             try
             {
-                ListViewItem lvi1 = new ListViewItem();
                 rb = listView1.Items.Count + 1;
-                lvi1.Text = rb.ToString();
 
                 if (sifrarnikArr.IndexOf(Decoder.GetFullPartCodeStr(textBox1.Text)) < 0)
                 {
@@ -131,25 +129,34 @@ namespace POT
                     return;
                 }
                 //lvi1.SubItems.Add(sifrarnikArr[sifrarnikArr.IndexOf((long.Parse((textBox1.Text).Substring(4)).ToString())) - 1]); //DecoderBB
-                lvi1.SubItems.Add(sifrarnikArr[sifrarnikArr.IndexOf(Decoder.GetFullPartCodeStr(textBox1.Text)) - 1]);
-                lvi1.SubItems.Add(textBox1.Text);
-                lvi1.SubItems.Add(textBox2.Text);
-                lvi1.SubItems.Add(textBox3.Text);
-                lvi1.SubItems.Add(radioButton1.Checked ? "g" : "ng");
 
-                if (listView1.Items.Count > 1)
-                    listView1.EnsureVisible(listView1.Items.Count - 1);
+                for (int i = 1; i <= numericUpDown1.Value; i++)
+                {
+                    ListViewItem lvi1 = new ListViewItem(rb.ToString());
 
-                listView1.Items.Add(lvi1);
-                partsArr.Add(textBox1.Text);
-                partsArr.Add(textBox2.Text);
-                partsArr.Add(textBox3.Text);
-                partsArr.Add(radioButton1.Checked ? "g" : "ng");
+                    lvi1.SubItems.Add(sifrarnikArr[sifrarnikArr.IndexOf(Decoder.GetFullPartCodeStr(textBox1.Text)) - 1]);
+                    lvi1.SubItems.Add(textBox1.Text);
+                    lvi1.SubItems.Add(textBox2.Text);
+                    lvi1.SubItems.Add(textBox3.Text);
+                    lvi1.SubItems.Add(radioButton1.Checked ? "g" : "ng");
+
+                    if (listView1.Items.Count > 1)
+                        listView1.EnsureVisible(listView1.Items.Count - 1);
+
+                    listView1.Items.Add(lvi1);
+                    partsArr.Add(textBox1.Text);
+                    partsArr.Add(textBox2.Text);
+                    partsArr.Add(textBox3.Text);
+                    partsArr.Add(radioButton1.Checked ? "g" : "ng");
+
+                    rb = listView1.Items.Count + 1;
+                }
             }
             catch (Exception e1)
             {
                 new LogWriter(e1);
                 MessageBox.Show(e1.Message);
+                numericUpDown1.Value = 1;
             }
 
             for (int i = 0; i < 6; i++)
@@ -161,6 +168,7 @@ namespace POT
             textBox1.Clear();
             textBox2.Clear();
             textBox3.Clear();
+            numericUpDown1.Value = 1;
 
             textBox1.SelectAll();
             textBox1.Focus();
@@ -303,6 +311,8 @@ namespace POT
 
         private void button2_Click(object sender, EventArgs e)
         {
+            Dictionary<String, int> groupArr = new Dictionary<string, int>();
+
             OTPNumber = "";
 
             if (this.label2.Text.Equals("Name"))
@@ -327,12 +337,55 @@ namespace POT
                         ConnectionHelper cn = new ConnectionHelper();
                         using (SqlConnection cnnPR = cn.Connect(WorkingUser.Username, WorkingUser.Password))
                         {
+                            QueryCommands qc = new QueryCommands();
+
                             if (cn.TestConnection(cnnPR))
                             {
-                                //Provjera da li se dijelovi nalaze u mom skladistu
-                                QueryCommands qc = new QueryCommands();
+                                //Provjera da li brojcano odgovaraju dijelovi
 
-                                for (int i = 0; i < listView1.Items.Count; i++) // vec imam provjeru gore kod unosa ali neka ostane(tamo je po imenu)
+                                String testStr;
+                                
+                                groupArr.Add(listView1.Items[0].SubItems[2].Text + "_" + listView1.Items[0].SubItems[3].Text + "_" + 
+                                    listView1.Items[0].SubItems[4].Text + "_" + listView1.Items[0].SubItems[5].Text + "_" + WorkingUser.RegionID.ToString(), 1);
+
+                                for (int i = 1; i < listView1.Items.Count; i++)
+                                {
+                                    testStr = listView1.Items[i].SubItems[2].Text + "_" + listView1.Items[i].SubItems[3].Text + "_" + 
+                                        listView1.Items[i].SubItems[4].Text + "_" + listView1.Items[i].SubItems[5].Text + "_" + WorkingUser.RegionID.ToString();
+
+                                    if (groupArr.ContainsKey(testStr))
+                                        groupArr[testStr] = groupArr[testStr] + 1;
+                                    else
+                                        groupArr.Add(testStr, 1);
+                                }
+
+                                for (int i = 0; i < groupArr.Count(); i++)
+                                {
+                                    var testArr = groupArr.ElementAt(i).Key.Split('_');
+
+                                    int prtConut = qc.GetPartCountByCodeSNCNStateStorage(WorkingUser.Username, WorkingUser.Password,
+                                        long.Parse(testArr[0]),
+                                        testArr[1],
+                                        testArr[2],
+                                        testArr[3],
+                                        long.Parse(testArr[4]));
+
+                                    if (groupArr[groupArr.ElementAt(i).Key] != prtConut)
+                                    {
+                                        MessageBox.Show("You do not have enough patrs in you storage:" +
+                                            "\n\n Code: " + testArr[0] + 
+                                            "\n SN:  " + testArr[1] +
+                                            "\n CN:  " + testArr[2] +
+                                            "\n State: " + testArr[3] +
+                                            "\n\nYou have: " + prtConut + 
+                                            "\nYou want: " + groupArr[groupArr.ElementAt(i).Key] +
+                                            "\n\nNothing Done.", "Caution", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                        return;
+                                    }
+                                }
+                                
+                                //Provjera da li se dijelovi nalaze u mom skladistu
+                                for (int i = 0; i < listView1.Items.Count; i++)
                                 {
                                     if (qc.GetPartIDCompareCodeSNCNStorage(WorkingUser.Username, WorkingUser.Password,
                                         long.Parse(listView1.Items[i].SubItems[2].Text),
@@ -368,49 +421,45 @@ namespace POT
                                         }
                                     }
 
+                                    //Provjera da li se dijelovi nalaze u mom skladistu i dohvacanje dijelova
                                     List<Part> partList = new List<Part>();
                                     String napomenaOTP = textBox4.Text;
 
-                                    for (int i = 0; i < listView1.Items.Count; i++)
+                                    for (int i = 0; i < groupArr.Count(); i++)
                                     {
                                         PartSifrarnik tempSifPart = new PartSifrarnik();
+                                        List<Part> tempParts = new List<Part>();
                                         Part tempPart = new Part();
 
-                                        //tempSifPart.GetPart(listView1.Items[i].SubItems[2].Text.Substring(4));  //DecoderBB
-                                        tempSifPart.GetPart(Decoder.GetFullPartCodeStr(listView1.Items[i].SubItems[2].Text)); 
+                                        tempSifPart.GetPart(Decoder.GetFullPartCodeStr(listView1.Items[i].SubItems[2].Text));
 
-                                        tempPart.PartialCode = tempSifPart.FullCode;
-                                        tempPart.SN = listView1.Items[i].SubItems[3].Text;
-                                        tempPart.CN = listView1.Items[i].SubItems[4].Text;
-                                        tempPart.DateIn = DateTime.Now.ToString("dd.MM.yy.");
-                                        tempPart.StorageID = WorkingUser.RegionID;
-                                        tempPart.State = listView1.Items[i].SubItems[5].Text;
-                                        //tempPart.CompanyO = listView1.Items[i].SubItems[2].Text.Substring(0, 2); //DecoderBB
-                                        tempPart.CompanyO = Decoder.GetOwnerCode(listView1.Items[i].SubItems[2].Text);
-                                        //tempPart.CompanyC = listView1.Items[i].SubItems[2].Text.Substring(2, 2); //DecoderBB
-                                        tempPart.CompanyC = Decoder.GetCustomerCode(listView1.Items[i].SubItems[2].Text);
+                                        tempParts = tempPart.GetListOfParts(long.Parse(groupArr.ElementAt(i).Key.Split('_')[0]), groupArr.ElementAt(i).Key.Split('_')[1], 
+                                            groupArr.ElementAt(i).Key.Split('_')[2], groupArr.ElementAt(i).Key.Split('_')[3], long.Parse(groupArr.ElementAt(i).Key.Split('_')[4]));
 
-                                        //long tempCode = long.Parse(string.Format("{0:00}", tempPart.CompanyO) + string.Format("{0:00}", tempPart.CompanyC) + string.Format("{0:000000000}", tempSifPart.FullCode));
-                                        String tmpResult = qc.GetPartIDCompareCodeSNCNStorage(WorkingUser.Username, WorkingUser.Password,
-                                            long.Parse(listView1.Items[i].SubItems[2].Text),
-                                            listView1.Items[i].SubItems[3].Text,
-                                            listView1.Items[i].SubItems[4].Text,
-                                            WorkingUser.RegionID)[0];
-
-                                        if (tmpResult.Equals("nok"))
+                                        if (tempParts.Count() < groupArr[groupArr.ElementAt(i).Key])
                                         {
-                                            MessageBox.Show("There is no part in your storage with: \n\n Code: " + listView1.Items[i].SubItems[2].Text + "\n on position " + (listView1.Items[i].Index + 1) + ". \n\nNothing Done.");
+                                            MessageBox.Show("There is no part in your storage with:" + "" +
+                                                "\n\n Code: " + groupArr.ElementAt(i).Key.Split('_')[0] +
+                                                "\n SN:  " + groupArr.ElementAt(i).Key.Split('_')[1] +
+                                                "\n CN:  " + groupArr.ElementAt(i).Key.Split('_')[2] +
+                                                "\n State: " + groupArr.ElementAt(i).Key.Split('_')[3] +
+                                                "\n\nYou have: " + tempParts.Count +
+                                                "\nYou want: " + groupArr[groupArr.ElementAt(i).Key] +
+                                                "\n\nNothing Done.", "Caution", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                                             textBox1.SelectAll();
                                             textBox1.Focus();
                                             return;
                                         }
                                         else
                                         {
-                                            tempPart.PartID = long.Parse(tmpResult);
-                                            partList.Add(tempPart);
+                                            foreach (Part prt in tempParts)
+                                            {
+                                                partList.Add(prt);
+                                            }
                                         }
                                     }
 
+                                    //SPREMANJE U BAZU
                                     if (resultArrC[index].RegionID != Properties.Settings.Default.OstaliIDRegion &&
                                         resultArrC[index].RegionID != Properties.Settings.Default.TransportIDRegion &&
                                         resultArrC[index].RegionID != Properties.Settings.Default.ServisIDRegion)
@@ -536,9 +585,27 @@ namespace POT
 
         private void printDocumentOtp_PrintPage(object sender, PrintPageEventArgs e)
         {
-            PrintMe pr = new PrintMe(cmpR, cmpS, sifrarnikArr, partListPrint, OTPNumber, napomenaOTPPrint, "Delivery", "customer", true);
+            PrintMe pr = new PrintMe(cmpR, cmpS, sifrarnikArr, partListPrint, OTPNumber, napomenaOTPPrint, Properties.strings.DELIVERY, Properties.strings.customer, true);
             //PrintMe pr = new PrintMe(cmpS, cmpR, sifrarnikArr, partListPrint, PrimkaNumber);
             pr.Print(e);
+        }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+            if (numericUpDown1.Value < 1)
+                numericUpDown1.Value = 1;
+        }
+
+        private void selectPrinterPrintBtn_Click(object sender, EventArgs e)
+        {
+            PrintDialog printDialog1 = new PrintDialog();
+            printDialog1.Document = printDocumentOtp;
+            DialogResult result = printDialog1.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                printPrewBT_Click(sender, e);
+                //printDocumentPrim.Print();
+            }
         }
     }
 }

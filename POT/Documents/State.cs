@@ -223,7 +223,7 @@ namespace POT
 
             try
             {
-                resultArr = qc.ListPartsByCodeRegionState(WorkingUser.Username, WorkingUser.Password, long.Parse(label18.Text), long.Parse(regionIdcontrol.Text.Split('-')[1].Trim().ToString()), ((TextBox)sender).Name.Contains("txtBoxAddNG") ? "ng" : "g");
+                resultArr = qc.ListPartsByCodeRegionStateS(WorkingUser.Username, WorkingUser.Password, long.Parse(label18.Text), long.Parse(regionIdcontrol.Text.Split('-')[1].Trim().ToString()), ((TextBox)sender).Name.Contains("txtBoxAddNG") ? "ng" : "g");
             }
             catch (Exception e1)
             {

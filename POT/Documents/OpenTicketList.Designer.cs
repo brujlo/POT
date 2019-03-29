@@ -83,6 +83,7 @@
             this.Controls.Add(this.listView1);
             this.Name = "OpenTicketList";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OpenTicketList";
             this.Load += new System.EventHandler(this.OpenTicketList_Load);
             this.ResumeLayout(false);

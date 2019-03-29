@@ -28,7 +28,7 @@ namespace POT.MyTypes
             try
             {
 
-                resultArr = qc.ListPartsByCodeRegionState(WorkingUser.Username, WorkingUser.Password, mCodePartFull, mStorageID, mState);
+                resultArr = qc.ListPartsByCodeRegionStateS(WorkingUser.Username, WorkingUser.Password, mCodePartFull, mStorageID, mState);
 
                 if (resultArr[0] != "nok")
                 {
@@ -50,6 +50,23 @@ namespace POT.MyTypes
                         pr.Add(onlyPart);
                     }
                 }
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
+                throw;
+            }
+            return pr;
+        }
+
+        public List<Part> GetListOfParts(long mCodePartFull, String mSN, String mCN, String mState, long mStorageID)
+        {
+
+            List<Part> pr = new List<Part>();
+            QueryCommands qc = new QueryCommands();
+            try
+            {
+                pr = qc.ListPartsByCodeRegionStateP(WorkingUser.Username, WorkingUser.Password, mCodePartFull, mSN, mCN, mState, mStorageID);
             }
             catch (Exception e1)
             {

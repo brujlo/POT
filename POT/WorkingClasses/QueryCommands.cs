@@ -335,7 +335,7 @@ namespace POT
             return tempPart;
         }
 
-        public List<String> ListPartsByCodeRegionState(String Uname, String Pass, long mCodePartFull, long mStorageID, String mState)
+        public List<String> ListPartsByCodeRegionStateS(String Uname, String Pass, long mCodePartFull, long mStorageID, String mState)
         {
             List<String> arr = new List<string>();
             SqlConnection cnn = cn.Connect(Uname, Pass);
@@ -367,6 +367,44 @@ namespace POT
             {
                 arr.Add("nok");
             }
+            dataReader.Close();
+            cnn.Close();
+            return arr;
+        }
+
+        public List<Part> ListPartsByCodeRegionStateP(String Uname, String Pass, long mCodePartFull, String mSN, String mCN, String mState, long mStorageID)
+        {
+            List<Part> arr = new List<Part>();
+            SqlConnection cnn = cn.Connect(Uname, Pass);
+            query = "Select * from Parts where CodePartFull = " + mCodePartFull + " and SN = '" + mSN + "' and CN = '" + mCN + "' and StorageID = " + mStorageID + " and State = '" + mState + "'";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                do
+                {
+                    Part tempPart = new Part();
+
+                    tempPart.PartID = long.Parse(dataReader["PartID"].ToString());
+                    tempPart.CodePartFull = long.Parse(dataReader["CodePartFull"].ToString());
+                    tempPart.PartialCode = long.Parse(dataReader["PartialCode"].ToString());
+                    tempPart.SN = dataReader["SN"].ToString();
+                    tempPart.CN = dataReader["CN"].ToString();
+                    tempPart.DateIn = dataReader["DateIn"].ToString();
+                    tempPart.DateOut = dataReader["DateOut"].ToString();
+                    tempPart.DateSend = dataReader["DateSend"].ToString();
+                    tempPart.StorageID = long.Parse(dataReader["StorageID"].ToString());
+                    tempPart.State = dataReader["State"].ToString();
+                    tempPart.CompanyO = dataReader["CompanyO"].ToString();
+                    tempPart.CompanyC = dataReader["CompanyC"].ToString();
+
+                    arr.Add(tempPart);
+                } while (dataReader.Read());
+            }
+
             dataReader.Close();
             cnn.Close();
             return arr;
@@ -982,6 +1020,30 @@ namespace POT
             return arr;
         }
 
+        public int GetPartCountByCodeSNCNStateStorage(String Uname, String Pass, long mCodePartFull, String mSN, String mCN, String mState, long mStorageID)
+        {
+            int retValue = 0;
+            SqlConnection cnn = cn.Connect(Uname, Pass);
+            query = "Select Count(PartID) from Parts where CodePartFull = " + mCodePartFull + " and SN = '" + mSN + "' and CN = '" + mCN + "' and StorageID = " + mStorageID + " and State = '" + mState + "'";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                if (dataReader.HasRows)
+                {
+                    retValue = dataReader.GetInt32(0);
+                }
+
+            }
+
+            dataReader.Close();
+            cnn.Close();
+            return retValue;
+        }
+
         public List<String> GetPartIDCompareCodeSNCNStorageState(String Uname, String Pass, long mCodePartFull, String mSN, String mCN, long mStorageID, String mState)
         {
             List<String> arr = new List<string>();
@@ -1224,7 +1286,7 @@ namespace POT
                     }
 
                     command.CommandText = "INSERT INTO Transport (TransactionID, TransportDateOut, RegionIDOut, RegionIDIn, UsersUserIDOut, haveTrackingNumbers) VALUES (" 
-                        + otpCnt + ", '" + DateTime.Now.ToString("dd.MM.yy.") + "', " + WorkingUser.RegionID + ", " + cmpR.RegionID + ", " + WorkingUser.UserID + ", " + 0 + ")";
+                        + otpCnt + ", '" + DateTime.Now.ToString("dd.MM.yy.") + "', " + cmpS.ID + ", " + cmpR.ID + ", " + WorkingUser.UserID + ", " + 0 + ")";
                     command.ExecuteNonQuery();
 
                     transaction.Commit();
@@ -1295,7 +1357,7 @@ namespace POT
                     }
 
                     command.CommandText = "INSERT INTO Transport (TransactionID, TransportDateOut, RegionIDOut, RegionIDIn, UsersUserIDOut, haveTrackingNumbers) VALUES ("
-                        + otpCnt + ", '" + DateTime.Now.ToString("dd.MM.yy.") + "', " + WorkingUser.RegionID + ", " + cmpR.RegionID + ", " + WorkingUser.UserID + ", " + 0 + ")";
+                        + otpCnt + ", '" + DateTime.Now.ToString("dd.MM.yy.") + "', " + cmpS.ID + ", " + cmpR.ID + ", " + WorkingUser.UserID + ", " + 0 + ")";
                     command.ExecuteNonQuery();
 
                     transaction.Commit();
@@ -1668,33 +1730,43 @@ namespace POT
             SqlDataReader dataReader = command.ExecuteReader();
             dataReader.Read();
 
-            if (dataReader.HasRows)
+            try
             {
-                exist = true;
-            }
-            else if(!exist)
-            {
-                query = "Select * from Ticket where CCN = '" + mCCN + "'";
-                command = new SqlCommand(query, cnn);
-                command.ExecuteNonQuery();
-                dataReader = command.ExecuteReader();
-                dataReader.Read();
                 if (dataReader.HasRows)
+                {
                     exist = true;
+                }
+                else if(!exist)
+                {
+                    dataReader.Close();
+                    query = "Select * from Ticket where CCN = '" + mCCN + "'";
+                    command = new SqlCommand(query, cnn);
+                    command.ExecuteNonQuery();
+                    dataReader = command.ExecuteReader();
+                    dataReader.Read();
+                    if (dataReader.HasRows)
+                        exist = true;
+                }
+                else if (!exist)
+                {
+                    dataReader.Close();
+                    query = "Select * from Ticket where CID = '" + mCID + "'";
+                    command = new SqlCommand(query, cnn);
+                    command.ExecuteNonQuery();
+                    dataReader = command.ExecuteReader();
+                    dataReader.Read();
+                    if (dataReader.HasRows)
+                        exist = true;
+                }
+                dataReader.Close();
+                cnn.Close();
+                return exist;
             }
-            else if (!exist)
+            catch (Exception e2)
             {
-                query = "Select * from Ticket where CID = '" + mCID + "'";
-                command = new SqlCommand(query, cnn);
-                command.ExecuteNonQuery();
-                dataReader = command.ExecuteReader();
-                dataReader.Read();
-                if (dataReader.HasRows)
-                    exist = true;
+                new LogWriter(e2);
+                return exist;
             }
-            dataReader.Close();
-            cnn.Close();
-            return exist;
         }
 
         public List<String> FilByFilNumber(String mFilNumber)
@@ -1707,28 +1779,38 @@ namespace POT
             SqlDataReader dataReader = command.ExecuteReader();
             dataReader.Read();
 
-            if (dataReader.HasRows)
+            try
             {
-                do
+                if (dataReader.HasRows)
                 {
-                    arr.Add(dataReader["filID"].ToString());
-                    arr.Add(dataReader["tvrtkeCode"].ToString());
-                    arr.Add(dataReader["filNumber"].ToString());
-                    arr.Add(dataReader["regionID"].ToString());
-                    arr.Add(dataReader["address"].ToString());
-                    arr.Add(dataReader["city"].ToString());
-                    arr.Add(dataReader["pb"].ToString());
-                    arr.Add(dataReader["phone"].ToString());
-                    arr.Add(dataReader["country"].ToString());
-                } while (dataReader.Read());
+                    do
+                    {
+                        arr.Add(dataReader["filID"].ToString());
+                        arr.Add(dataReader["tvrtkeCode"].ToString());
+                        arr.Add(dataReader["filNumber"].ToString());
+                        arr.Add(dataReader["regionID"].ToString());
+                        arr.Add(dataReader["address"].ToString());
+                        arr.Add(dataReader["city"].ToString());
+                        arr.Add(dataReader["pb"].ToString());
+                        arr.Add(dataReader["phone"].ToString());
+                        arr.Add(dataReader["country"].ToString());
+                    } while (dataReader.Read());
+                }
+                else
+                {
+                    arr.Add("nok");
+                }
+                dataReader.Close();
+                cnn.Close();
+                return arr;
             }
-            else
+            catch (Exception e2)
             {
                 arr.Add("nok");
+                new LogWriter(e2);
+                return arr;
             }
-            dataReader.Close();
-            cnn.Close();
-            return arr;
+
         }
 
         public List<String> FilByTvrtkeCodeFilNumber(String mTvrtkeCode, String mFilNumber)

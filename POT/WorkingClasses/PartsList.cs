@@ -81,11 +81,14 @@ namespace POT
                 {
                     for (int i = 0; i < 12; i++)
                     {
-                        builder.Append(item.SubItems[i].Text + ",");
+                        if (item.SubItems[i].Text.Equals(""))
+                            builder.Append("" + ",");
+                        else
+                            builder.Append(item.SubItems[i].Text + ",");
                     }
                     builder.AppendLine();
                 }
-
+                //PROVJERITI STO AKO JE PRAZAN
                 Clipboard.SetText(builder.ToString());
 
                 MessageBox.Show("Copied.");
@@ -106,7 +109,10 @@ namespace POT
                 {
                     for (int i = 0; i < 12; i++)
                     {
-                        builder.Append(item.SubItems[i].Text + " ");
+                        if (item.SubItems[i].Text.Equals(""))
+                            builder.Append(" " + " ");
+                        else
+                            builder.Append(item.SubItems[i].Text + " ");
                     }
                     builder.AppendLine();
                 }
