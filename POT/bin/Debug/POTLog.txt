@@ -889,3 +889,499 @@ Parameter name: text
 
 - 26.03.19. 18:55 - App started
     *** BrunoBrckovic *** 
+
+- 04.04.19. 17:35 - App started
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 17:36 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 17:36 - App started
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 17:36 - App turned off
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 17:36 - App started
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 17:36 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 17:36 - App started
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 17:36 - App turned off
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 17:36 - App started
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 17:38 - App turned off
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 17:50 - App started
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 17:51 - App turned off
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 18:04 - App started
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 18:05 - App turned off
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 18:15 - App started
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 18:16 - App started
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 18:16 - App turned off
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 18:29 - App started
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 18:29 - App turned off
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 18:31 - App started
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 18:37 - App started
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 18:39 - App started
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 18:39
+    - BaseEcp: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at POT.BuildingClasses.CmpRegEditcs.textBox10_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\BuildingClasses\CmpRegEditcs.cs:line 176
+   at System.Windows.Forms.Control.OnLeave(EventArgs e)
+   at System.Windows.Forms.Control.NotifyLeave()
+   at System.Windows.Forms.ContainerControl.UpdateFocusedControl()
+   at System.Windows.Forms.ContainerControl.AssignActiveControlInternal(Control value)
+   at System.Windows.Forms.ContainerControl.ActivateControlInternal(Control control, Boolean originator)
+   at System.Windows.Forms.ContainerControl.SetActiveControlInternal(Control value)
+   at System.Windows.Forms.ContainerControl.set_ActiveControl(Control value)
+   at System.Windows.Forms.Control.Select(Boolean directed, Boolean forward)
+   at System.Windows.Forms.Control.SelectNextControl(Control ctl, Boolean forward, Boolean tabStopOnly, Boolean nested, Boolean wrap)
+   at System.Windows.Forms.Form.ProcessTabKey(Boolean forward)
+   at System.Windows.Forms.ContainerControl.ProcessDialogKey(Keys keyData)
+   at System.Windows.Forms.Form.ProcessDialogKey(Keys keyData)
+   at System.Windows.Forms.Control.ProcessDialogKey(Keys keyData)
+   at System.Windows.Forms.Control.ProcessDialogKey(Keys keyData)
+   at System.Windows.Forms.TextBoxBase.ProcessDialogKey(Keys keyData)
+   at System.Windows.Forms.Control.PreProcessMessage(Message& msg)
+   at System.Windows.Forms.Control.PreProcessControlMessageInternal(Control target, Message& msg)
+   at System.Windows.Forms.Application.ThreadContext.PreTranslateMessage(MSG& msg)
+   at System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FPreTranslateMessage(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\StartForm.cs:line 113
+    - InnerEcp: 
+    - MessageEcp: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at POT.BuildingClasses.CmpRegEditcs.textBox10_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\BuildingClasses\CmpRegEditcs.cs:line 176
+   at System.Windows.Forms.Control.OnLeave(EventArgs e)
+   at System.Windows.Forms.Control.NotifyLeave()
+   at System.Windows.Forms.ContainerControl.UpdateFocusedControl()
+   at System.Windows.Forms.ContainerControl.AssignActiveControlInternal(Control value)
+   at System.Windows.Forms.ContainerControl.ActivateControlInternal(Control control, Boolean originator)
+   at System.Windows.Forms.ContainerControl.SetActiveControlInternal(Control value)
+   at System.Windows.Forms.ContainerControl.set_ActiveControl(Control value)
+   at System.Windows.Forms.Control.Select(Boolean directed, Boolean forward)
+   at System.Windows.Forms.Control.SelectNextControl(Control ctl, Boolean forward, Boolean tabStopOnly, Boolean nested, Boolean wrap)
+   at System.Windows.Forms.Form.ProcessTabKey(Boolean forward)
+   at System.Windows.Forms.ContainerControl.ProcessDialogKey(Keys keyData)
+   at System.Windows.Forms.Form.ProcessDialogKey(Keys keyData)
+   at System.Windows.Forms.Control.ProcessDialogKey(Keys keyData)
+   at System.Windows.Forms.Control.ProcessDialogKey(Keys keyData)
+   at System.Windows.Forms.TextBoxBase.ProcessDialogKey(Keys keyData)
+   at System.Windows.Forms.Control.PreProcessMessage(Message& msg)
+   at System.Windows.Forms.Control.PreProcessControlMessageInternal(Control target, Message& msg)
+   at System.Windows.Forms.Application.ThreadContext.PreTranslateMessage(MSG& msg)
+   at System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FPreTranslateMessage(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\StartForm.cs:line 113
+    - TypeNameEcp: System.ArgumentOutOfRangeException
+    *** BrunoBrckovic *** 
+
+
+- 04.04.19. 18:40 - App started
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 18:40 - App started
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 18:41
+    - BaseEcp: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at POT.BuildingClasses.CmpRegEditcs.textBox10_Leave(Object sender, EventArgs e)
+   at System.Windows.Forms.Control.OnLeave(EventArgs e)
+   at System.Windows.Forms.Control.NotifyLeave()
+   at System.Windows.Forms.ContainerControl.UpdateFocusedControl()
+   at System.Windows.Forms.ContainerControl.AssignActiveControlInternal(Control value)
+   at System.Windows.Forms.ContainerControl.ActivateControlInternal(Control control, Boolean originator)
+   at System.Windows.Forms.ContainerControl.SetActiveControlInternal(Control value)
+   at System.Windows.Forms.ContainerControl.set_ActiveControl(Control value)
+   at System.Windows.Forms.Control.Select(Boolean directed, Boolean forward)
+   at System.Windows.Forms.Control.SelectNextControl(Control ctl, Boolean forward, Boolean tabStopOnly, Boolean nested, Boolean wrap)
+   at System.Windows.Forms.Form.ProcessTabKey(Boolean forward)
+   at System.Windows.Forms.ContainerControl.ProcessDialogKey(Keys keyData)
+   at System.Windows.Forms.Form.ProcessDialogKey(Keys keyData)
+   at System.Windows.Forms.Control.ProcessDialogKey(Keys keyData)
+   at System.Windows.Forms.Control.ProcessDialogKey(Keys keyData)
+   at System.Windows.Forms.TextBoxBase.ProcessDialogKey(Keys keyData)
+   at System.Windows.Forms.Control.PreProcessMessage(Message& msg)
+   at System.Windows.Forms.Control.PreProcessControlMessageInternal(Control target, Message& msg)
+   at System.Windows.Forms.Application.ThreadContext.PreTranslateMessage(MSG& msg)
+   at System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FPreTranslateMessage(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at POT.BuildingClasses.CmpRegEditcs.textBox10_Leave(Object sender, EventArgs e)
+   at System.Windows.Forms.Control.OnLeave(EventArgs e)
+   at System.Windows.Forms.Control.NotifyLeave()
+   at System.Windows.Forms.ContainerControl.UpdateFocusedControl()
+   at System.Windows.Forms.ContainerControl.AssignActiveControlInternal(Control value)
+   at System.Windows.Forms.ContainerControl.ActivateControlInternal(Control control, Boolean originator)
+   at System.Windows.Forms.ContainerControl.SetActiveControlInternal(Control value)
+   at System.Windows.Forms.ContainerControl.set_ActiveControl(Control value)
+   at System.Windows.Forms.Control.Select(Boolean directed, Boolean forward)
+   at System.Windows.Forms.Control.SelectNextControl(Control ctl, Boolean forward, Boolean tabStopOnly, Boolean nested, Boolean wrap)
+   at System.Windows.Forms.Form.ProcessTabKey(Boolean forward)
+   at System.Windows.Forms.ContainerControl.ProcessDialogKey(Keys keyData)
+   at System.Windows.Forms.Form.ProcessDialogKey(Keys keyData)
+   at System.Windows.Forms.Control.ProcessDialogKey(Keys keyData)
+   at System.Windows.Forms.Control.ProcessDialogKey(Keys keyData)
+   at System.Windows.Forms.TextBoxBase.ProcessDialogKey(Keys keyData)
+   at System.Windows.Forms.Control.PreProcessMessage(Message& msg)
+   at System.Windows.Forms.Control.PreProcessControlMessageInternal(Control target, Message& msg)
+   at System.Windows.Forms.Application.ThreadContext.PreTranslateMessage(MSG& msg)
+   at System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FPreTranslateMessage(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e)
+    - TypeNameEcp: System.ArgumentOutOfRangeException
+    *** BrunoBrckovic *** 
+
+
+- 04.04.19. 18:42 - App started
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 18:54 - App started
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 18:55 - App turned off
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 18:55 - App started
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 18:57 - App started
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 18:57 - App turned off
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 18:58 - App started
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 18:58 - App turned off
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 18:59 - App started
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 18:59 - App turned off
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 19:00 - App started
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 19:01 - App turned off
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 19:02 - App started
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 19:02 - App turned off
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 21:23 - App started
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 21:26 - App started
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 21:27
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): The multi-part identifier "t.TvrtkeCode" could not be bound.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.AddFilToDB(String mTvrtkeCode, String mFillNumber, Int64 mRegionID, String mAddress, String mCity, String mPB, String mPhone, String mCountry) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 2062
+   at POT.BuildingClasses.CmpRegEditcs.button3_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\BuildingClasses\CmpRegEditcs.cs:line 241
+ClientConnectionId:7cf77d5f-d13f-4c68-8bb8-4b2ccb010772
+Error Number:4104,State:1,Class:16
+    - InnerEcp: 
+    - MessageEcp: The multi-part identifier "t.TvrtkeCode" could not be bound.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.AddFilToDB(String mTvrtkeCode, String mFillNumber, Int64 mRegionID, String mAddress, String mCity, String mPB, String mPhone, String mCountry) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 2062
+   at POT.BuildingClasses.CmpRegEditcs.button3_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\BuildingClasses\CmpRegEditcs.cs:line 241
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 04.04.19. 21:27
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): The multi-part identifier "t.TvrtkeCode" could not be bound.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.AddFilToDB(String mTvrtkeCode, String mFillNumber, Int64 mRegionID, String mAddress, String mCity, String mPB, String mPhone, String mCountry) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 2062
+   at POT.BuildingClasses.CmpRegEditcs.button3_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\BuildingClasses\CmpRegEditcs.cs:line 241
+ClientConnectionId:d4480d18-f5af-4c3d-9b57-9479bff6accb
+Error Number:4104,State:1,Class:16
+    - InnerEcp: 
+    - MessageEcp: The multi-part identifier "t.TvrtkeCode" could not be bound.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.AddFilToDB(String mTvrtkeCode, String mFillNumber, Int64 mRegionID, String mAddress, String mCity, String mPB, String mPhone, String mCountry) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 2062
+   at POT.BuildingClasses.CmpRegEditcs.button3_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\BuildingClasses\CmpRegEditcs.cs:line 241
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 04.04.19. 21:28
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): The multi-part identifier "t.TvrtkeCode" could not be bound.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.AddFilToDB(String mTvrtkeCode, String mFillNumber, Int64 mRegionID, String mAddress, String mCity, String mPB, String mPhone, String mCountry) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 2062
+   at POT.BuildingClasses.CmpRegEditcs.button3_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\BuildingClasses\CmpRegEditcs.cs:line 241
+ClientConnectionId:bed1c3d4-78cd-485f-b197-1431b64f2c5a
+Error Number:4104,State:1,Class:16
+    - InnerEcp: 
+    - MessageEcp: The multi-part identifier "t.TvrtkeCode" could not be bound.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.AddFilToDB(String mTvrtkeCode, String mFillNumber, Int64 mRegionID, String mAddress, String mCity, String mPB, String mPhone, String mCountry) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 2062
+   at POT.BuildingClasses.CmpRegEditcs.button3_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\BuildingClasses\CmpRegEditcs.cs:line 241
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 04.04.19. 21:28
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): The multi-part identifier "t.TvrtkeCode" could not be bound.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.AddFilToDB(String mTvrtkeCode, String mFillNumber, Int64 mRegionID, String mAddress, String mCity, String mPB, String mPhone, String mCountry) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 2062
+   at POT.BuildingClasses.CmpRegEditcs.button3_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\BuildingClasses\CmpRegEditcs.cs:line 241
+ClientConnectionId:8c287fb4-df23-4458-9b84-4d2bbf0a45fe
+Error Number:4104,State:1,Class:16
+    - InnerEcp: 
+    - MessageEcp: The multi-part identifier "t.TvrtkeCode" could not be bound.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.AddFilToDB(String mTvrtkeCode, String mFillNumber, Int64 mRegionID, String mAddress, String mCity, String mPB, String mPhone, String mCountry) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 2062
+   at POT.BuildingClasses.CmpRegEditcs.button3_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\BuildingClasses\CmpRegEditcs.cs:line 241
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 04.04.19. 21:29
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): The multi-part identifier "t.TvrtkeCode" could not be bound.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.AddFilToDB(String mTvrtkeCode, String mFillNumber, Int64 mRegionID, String mAddress, String mCity, String mPB, String mPhone, String mCountry) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 2062
+   at POT.BuildingClasses.CmpRegEditcs.button3_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\BuildingClasses\CmpRegEditcs.cs:line 241
+ClientConnectionId:bed1c3d4-78cd-485f-b197-1431b64f2c5a
+Error Number:4104,State:1,Class:16
+    - InnerEcp: 
+    - MessageEcp: The multi-part identifier "t.TvrtkeCode" could not be bound.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.AddFilToDB(String mTvrtkeCode, String mFillNumber, Int64 mRegionID, String mAddress, String mCity, String mPB, String mPhone, String mCountry) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 2062
+   at POT.BuildingClasses.CmpRegEditcs.button3_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\BuildingClasses\CmpRegEditcs.cs:line 241
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 04.04.19. 21:30
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): The multi-part identifier "t.TvrtkeCode" could not be bound.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.AddFilToDB(String mTvrtkeCode, String mFillNumber, Int64 mRegionID, String mAddress, String mCity, String mPB, String mPhone, String mCountry)
+   at POT.BuildingClasses.CmpRegEditcs.button3_Click(Object sender, EventArgs e)
+ClientConnectionId:d4480d18-f5af-4c3d-9b57-9479bff6accb
+Error Number:4104,State:1,Class:16
+    - InnerEcp: 
+    - MessageEcp: The multi-part identifier "t.TvrtkeCode" could not be bound.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.AddFilToDB(String mTvrtkeCode, String mFillNumber, Int64 mRegionID, String mAddress, String mCity, String mPB, String mPhone, String mCountry)
+   at POT.BuildingClasses.CmpRegEditcs.button3_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 04.04.19. 21:32
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'FinNumber'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.AddFilToDB(String mTvrtkeCode, String mFillNumber, Int64 mRegionID, String mAddress, String mCity, String mPB, String mPhone, String mCountry)
+   at POT.BuildingClasses.CmpRegEditcs.button3_Click(Object sender, EventArgs e)
+ClientConnectionId:8c287fb4-df23-4458-9b84-4d2bbf0a45fe
+Error Number:207,State:1,Class:16
+    - InnerEcp: 
+    - MessageEcp: Invalid column name 'FinNumber'.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.AddFilToDB(String mTvrtkeCode, String mFillNumber, Int64 mRegionID, String mAddress, String mCity, String mPB, String mPhone, String mCountry)
+   at POT.BuildingClasses.CmpRegEditcs.button3_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 04.04.19. 21:37 - App started
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 21:37 - App turned off
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 21:37 - App started
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 21:37 - App turned off
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 21:38 - App started
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 21:38 - App turned off
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 21:39 - App started
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 21:39 - App turned off
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 21:42 - App started
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 21:47 - App started
+    *** BrunoBrckovic *** 
+
+- 04.04.19. 21:48 - App turned off
+    *** BrunoBrckovic *** 

@@ -28,7 +28,6 @@ F:\PROJEKTI\VS\POT\POT\POT\bin\Debug\POT.exe.manifest
 F:\PROJEKTI\VS\POT\POT\POT\bin\Debug\POT.application
 F:\PROJEKTI\VS\POT\POT\POT\bin\Debug\POT.exe
 F:\PROJEKTI\VS\POT\POT\POT\bin\Debug\POT.pdb
-F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.csprojAssemblyReference.cache
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.AddRegion.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.CompanyInfo.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.DeleteDBUser.resources
@@ -58,3 +57,4 @@ F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.OpenTicketList.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.IUS.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.Documents.Tickets.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.BuildingClasses.CmpRegEditcs.resources
+F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.csprojAssemblyReference.cache

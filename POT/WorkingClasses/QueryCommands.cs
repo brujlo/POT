@@ -1983,6 +1983,40 @@ namespace POT
             return arr;
         }
 
+        public List<String> AllFilByTvrtkeCode(string mTvrtkeCode)
+        {
+            List<String> arr = new List<string>();
+            SqlConnection cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "Select * from Filijale where TvrtkeCode = '" + mTvrtkeCode + "'";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                do
+                {
+                    arr.Add(dataReader["filID"].ToString());
+                    arr.Add(dataReader["tvrtkeCode"].ToString());
+                    arr.Add(dataReader["filNumber"].ToString());
+                    arr.Add(dataReader["regionID"].ToString());
+                    arr.Add(dataReader["address"].ToString());
+                    arr.Add(dataReader["city"].ToString());
+                    arr.Add(dataReader["pb"].ToString());
+                    arr.Add(dataReader["phone"].ToString());
+                    arr.Add(dataReader["country"].ToString());
+                } while (dataReader.Read());
+            }
+            else
+            {
+                arr.Add("nok");
+            }
+            dataReader.Close();
+            cnn.Close();
+            return arr;
+        }
+
         public List<String> AllFilInfoSortByFilNumber()
         {
             List<String> arr = new List<string>();
@@ -2015,6 +2049,62 @@ namespace POT
             dataReader.Close();
             cnn.Close();
             return arr;
+        }
+
+        public Boolean AddFilToDB(String mTvrtkeCode, String mFillNumber, long mRegionID, String mAddress, String mCity, String mPB, String mPhone, String mCountry)
+        {
+            String Uname = WorkingUser.Username;
+            String Pass = WorkingUser.Password;
+            Boolean executed = false;
+            SqlConnection cnn = cn.Connect(Uname, Pass);
+            query = "select Count(FilNumber) from Filijale f where f.TvrtkeCode = '" + mTvrtkeCode + "' and FilNumber = '" + mFillNumber + "'";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows && !dataReader.GetValue(0).Equals(0))
+            {
+                executed = false;
+                dataReader.Close();
+            }
+            else
+            {
+                dataReader.Close();
+                command = cnn.CreateCommand();
+                SqlTransaction transaction = cnn.BeginTransaction();
+                command.Connection = cnn;
+                command.Transaction = transaction;
+
+                try
+                {
+                    command.CommandText = "INSERT INTO Filijale (TvrtkeCode, FilNumber, RegionID, Address, City, PB, Phone, Country) " +
+                        "values ('" + mTvrtkeCode + "', '" + mFillNumber + "', " + mRegionID + ", '" + mAddress + "', '" + mCity + "', '" + mPB + "', '" + mPhone + "', '" + mCountry + "')";
+                    command.ExecuteNonQuery();
+
+                    transaction.Commit();
+
+                    executed = true;
+                }
+                catch (Exception e1)
+                {
+                    new LogWriter(e1);
+                    try
+                    {
+                        transaction.Rollback();
+                        executed = false;
+                        throw;
+                    }
+                    catch (Exception e2)
+                    {
+                        new LogWriter(e2);
+                        throw;
+                    }
+                }
+            }
+            dataReader.Close();
+            cnn.Close();
+            return executed;
         }
     }
 }

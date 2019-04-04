@@ -48,6 +48,44 @@ namespace POT.MyTypes
             }
         }
 
+        public List<Branch> GetAllFilByTvrtkeCode(String mTvrtkeCOde)
+        {
+            QueryCommands qc = new QueryCommands();
+            List<String> resultArr = new List<string>();
+            List<Branch> resultArrB = new List<Branch>();
+
+            try
+            {
+                resultArr = qc.AllFilByTvrtkeCode(mTvrtkeCOde);
+                if (!resultArr[0].Equals("nok"))
+                {
+                    for (int i = 0; i < resultArr.Count(); i = i + 9)
+                    {
+                        Branch tempB = new Branch();
+
+                        tempB.filID = long.Parse(resultArr[0 + i]);
+                        tempB.tvrtkeCode = resultArr[1 + i].Trim();
+                        tempB.filNumber = resultArr[2 + i].Trim();
+                        tempB.regionID = long.Parse(resultArr[3 + i].Trim());
+                        tempB.address = resultArr[4 + i].Trim();
+                        tempB.city = resultArr[5 + i].Trim();
+                        tempB.pb = resultArr[6 + i].Trim();
+                        tempB.phone = resultArr[7 + i].Trim();
+                        tempB.country = resultArr[8 + i];
+
+                        resultArrB.Add(tempB);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                new LogWriter(ex);
+                MessageBox.Show(ex.Message);
+            }
+
+            return resultArrB;
+        }
+
         public void SetFilByTvrtkeCodeFilNumber(String mTvrtkeCode, String mFilNumber)
         {
             QueryCommands qc = new QueryCommands();
