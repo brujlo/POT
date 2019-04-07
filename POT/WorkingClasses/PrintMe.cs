@@ -399,7 +399,7 @@ namespace POT.WorkingClasses
                     //if (partRows >= 35) //Ovo je test
                     if (partRows <= groupedPartsListSN.Count) //Ovo je test
                     {
-                        headerpointVer = bounds.Bottom + margins.Top;
+                        //headerpointVer = bounds.Bottom + margins.Top; //TODO OVO SAM ZAKOMENTIRAO JER MI JE PRINTAO BESKONACNO STRANICA - TREBA TESTIRATI
                        
                         imgW = imgW / 2; //80
                         imgH = (int)((double)imgW / imgScale); //75 //40

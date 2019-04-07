@@ -2117,7 +2117,7 @@ namespace POT
             List<String> arr = new List<string>();
             //SqlConnection cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
             cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
-            query = "Select * from Filijale where TvrtkeCode = '" + mTvrtkeCode + "'";
+            query = "Select * from Filijale where TvrtkeCode = '" + mTvrtkeCode + "' order by filNumber asc";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
             SqlDataReader dataReader = command.ExecuteReader();
