@@ -394,7 +394,7 @@ namespace POT
                                         testArr[3],
                                         long.Parse(testArr[4]));
 
-                                    if (groupArr[groupArr.ElementAt(i).Key] != prtConut)
+                                    if (groupArr[groupArr.ElementAt(i).Key] > prtConut)
                                     {
                                         MessageBox.Show("You do not have enough patrs in you storage:" +
                                             "\n\n Code: " + testArr[0] + 
@@ -476,9 +476,13 @@ namespace POT
                                         }
                                         else
                                         {
+                                            int kk = 0;
                                             foreach (Part prt in tempParts)
                                             {
                                                 partList.Add(prt);
+                                                kk++;
+                                                if (kk == groupArr[groupArr.ElementAt(i).Key])
+                                                    break;
                                             }
                                         }
                                     }
