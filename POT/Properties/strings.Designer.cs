@@ -61,6 +61,24 @@ namespace POT.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Address.
+        /// </summary>
+        internal static string branchAddress {
+            get {
+                return ResourceManager.GetString("branchAddress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Branch.
+        /// </summary>
+        internal static string branchNbr {
+            get {
+                return ResourceManager.GetString("branchNbr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Check.
         /// </summary>
         internal static string Check {

@@ -63,6 +63,8 @@
             this.label21 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label22 = new System.Windows.Forms.Label();
+            this.textBox10 = new System.Windows.Forms.TextBox();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.button3 = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
@@ -78,8 +80,6 @@
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -493,6 +493,23 @@
             this.tabPage3.Text = "Eddit branch";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(21, 491);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(64, 20);
+            this.label22.TabIndex = 15;
+            this.label22.Text = "Country";
+            // 
+            // textBox10
+            // 
+            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.textBox10.Location = new System.Drawing.Point(16, 512);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(359, 30);
+            this.textBox10.TabIndex = 7;
+            // 
             // comboBox6
             // 
             this.comboBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
@@ -631,23 +648,6 @@
             this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
             this.comboBox4.TextChanged += new System.EventHandler(this.comboBox4_TextChanged);
             this.comboBox4.Leave += new System.EventHandler(this.comboBox4_Leave);
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(21, 491);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(64, 20);
-            this.label22.TabIndex = 15;
-            this.label22.Text = "Country";
-            // 
-            // textBox10
-            // 
-            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox10.Location = new System.Drawing.Point(16, 512);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(359, 30);
-            this.textBox10.TabIndex = 7;
             // 
             // CmpRegEditcs
             // 

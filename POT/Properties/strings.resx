@@ -230,4 +230,11 @@
     <value>MADE</value>
     <comment>PrintME-zaglavlje</comment>
   </data>
+  <data name="branchNbr" xml:space="preserve">
+    <value>Branch</value>
+    <comment>PrintME-zaglavlje</comment>
+  </data>
+  <data name="branchAddress" xml:space="preserve">
+    <value>Address</value>
+  </data>
 </root>

@@ -2,13 +2,7 @@
 using POT.WorkingClasses;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace POT.BuildingClasses
@@ -241,7 +235,7 @@ namespace POT.BuildingClasses
                     MessageBox.Show("All fields fileds must be filled in.");
                     return;
                 }
-                zamjeniZabranjeneZnakove(textBox12.Text, textBox16.Text, textBox17.Text, textBox15.Text, textBox10.Text, comboBox6.Text);
+                zamjeniZabranjeneZnakove(textBox12.Text, textBox16.Text, textBox17.Text, textBox15.Text, textBox10.Text, comboBox6.Text, comboBox5.Text);
 
                 QueryCommands qc = new QueryCommands();
                 if (qc.AddFilToDB(tvrtCode, Filijala, RegionID, Address, City, Zip, Phone, Country))
@@ -260,7 +254,7 @@ namespace POT.BuildingClasses
             }
         }
 
-        private void zamjeniZabranjeneZnakove(String mAddress, String mCity, String mZip, String mPhone, String mCountry, String mFilijala)
+        private void zamjeniZabranjeneZnakove(String mAddress, String mCity, String mZip, String mPhone, String mCountry, String mFilijala, String mRegijaID)
         {
             Address = mAddress.Replace("'", "*").Trim();
             Address = Address.Replace("\"", "*").Trim();
@@ -285,10 +279,28 @@ namespace POT.BuildingClasses
             Filijala = mFilijala.Replace("'", "*").Trim();
             Filijala = Filijala.Replace("\"", "*").Trim();
             Filijala = Filijala.Replace("#", "*").Trim().ToUpper();
+
+            mRegijaID = mRegijaID.Replace("'", "*").Trim();
+            mRegijaID = mRegijaID.Replace("\"", "*").Trim();
+            RegionID = long.Parse(mRegijaID.Replace("#", "*").Trim().ToUpper());
         }
 
         private void comboBox5_TextChanged(object sender, EventArgs e)
         {
+            String test = comboBox5.Text;
+
+            if(test.Length > 0)
+            {
+                var isNumeric = int.TryParse(test.Substring(test.Length - 1, 1), out int n);
+
+                if (!isNumeric)
+                {
+                    comboBox5.Text = comboBox5.Text.Remove(comboBox5.Text.Length - 1);
+                }
+            }
+
+            comboBox5.SelectionStart = comboBox5.Text.Length;
+
             int index;
             index = comboBox5.FindStringExact(comboBox5.Text);
 

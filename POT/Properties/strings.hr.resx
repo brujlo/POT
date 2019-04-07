@@ -233,4 +233,11 @@
     <value>IZRADIO</value>
     <comment>PrintME-zaglavlje</comment>
   </data>
+  <data name="branchNbr" xml:space="preserve">
+    <value>Filijala</value>
+    <comment>PrintME-zaglavlje</comment>
+  </data>
+  <data name="branchAddress" xml:space="preserve">
+    <value>Adresa</value>
+  </data>
 </root>

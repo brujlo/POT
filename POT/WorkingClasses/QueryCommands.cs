@@ -12,16 +12,17 @@ namespace POT
         SqlCommand command;
         String query;
         ConnectionHelper cn = new ConnectionHelper();
+        SqlConnection cnn = new SqlConnection();
 
         public Boolean ResetAutoIcrement(String Uname, String Pass, List<String> TableArr)
         {
             Boolean executed = false;
-            using (SqlConnection cnn = cn.Connect(Uname, Pass))
+            using (SqlConnection cnn1 = cn.Connect(Uname, Pass))
             {
 
-                command = cnn.CreateCommand();
-                SqlTransaction transaction = cnn.BeginTransaction();
-                command.Connection = cnn;
+                command = cnn1.CreateCommand();
+                SqlTransaction transaction = cnn1.BeginTransaction();
+                command.Connection = cnn1;
                 command.Transaction = transaction;
 
                 if (TableArr.Count > 0)
@@ -52,8 +53,12 @@ namespace POT
                             MessageBox.Show(e2.Message);
                         }
                     }
+                    finally
+                    {
+                        if (cnn1.State.ToString().Equals("Open"))
+                            cnn1.Close();
+                    }
                 }
-                cnn.Close();
                 return executed;
             }
         }
@@ -64,7 +69,8 @@ namespace POT
 
             CriptMe cm = new CriptMe();
             String hashPswd = cm.Cript(Pass);
-            SqlConnection cnn = cn.Connect(Uname, Pass);
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(Uname, Pass);
             query = "Select * from Users where Username = '" + Uname + "' and HashPswd = '" + hashPswd + "'";
             //query = "Select * from Users where Username = '" + Uname + "' and Password = '" + Pass + "'";
             command = new SqlCommand(query, cnn);
@@ -107,7 +113,8 @@ namespace POT
             query = "Select * from Users where UserID = " + int.Parse(mUserID);
             command.ExecuteNonQuery();
             SqlDataReader dataReader = command.ExecuteReader();
-            SqlConnection cnn = cn.Connect(Uname, Pass);
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(Uname, Pass);
             command = new SqlCommand(query, cnn);
             dataReader.Read();
 
@@ -136,7 +143,8 @@ namespace POT
 
         public void NewDBUser(String Uname, String Pass, List<String> value)
         {
-            SqlConnection cnn = cn.Connect(Uname, Pass);
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(Uname, Pass);
             command = cnn.CreateCommand();
             SqlTransaction transaction = cnn.BeginTransaction();
             command.Connection = cnn;
@@ -174,13 +182,19 @@ namespace POT
                         throw;
                     }
                 }
+                finally
+                {
+                    if (cnn.State.ToString().Equals("Open"))
+                        cnn.Close();
+                }
             }
             cnn.Close();
         }
 
         public Boolean DeleteDBUser(String Uname, String Pass, String mUserName, String mUserId)
         {
-            SqlConnection cnn = cn.Connect(Uname, Pass);
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(Uname, Pass);
             command = cnn.CreateCommand();
             command.Connection = cnn;
 
@@ -224,6 +238,11 @@ namespace POT
                         throw;
                     }
                 }
+                finally
+                {
+                    if (cnn.State.ToString().Equals("Open"))
+                        cnn.Close();
+                }
             }
             cnn.Close();
             return false;
@@ -233,7 +252,8 @@ namespace POT
         {
             List<String> arr = new List<string>();
 
-            SqlConnection cnn = cn.Connect(Uname, Pass);
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(Uname, Pass);
             query = "Select * from Regija";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -262,7 +282,8 @@ namespace POT
         {
             List<String> arr = new List<string>();
 
-            SqlConnection cnn = cn.Connect(Uname, Pass);
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(Uname, Pass);
             query = "Select * from Users";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -298,7 +319,8 @@ namespace POT
 
             try
             {
-                SqlConnection cnn = cn.Connect(Uname, Pass);
+                //SqlConnection cnn = cn.Connect(Uname, Pass);
+                cnn = cn.Connect(Uname, Pass);
                 query = "Select * from Sifrarnik where FullCode = " + mFullCode;
                 command = new SqlCommand(query, cnn);
                 command.ExecuteNonQuery();
@@ -332,13 +354,19 @@ namespace POT
                 new LogWriter(e1);
                 throw;
             }
+            finally
+            {
+                if (cnn.State.ToString().Equals("Open"))
+                    cnn.Close();
+            }
             return tempPart;
         }
 
         public List<String> ListPartsByCodeRegionStateS(String Uname, String Pass, long mCodePartFull, long mStorageID, String mState)
         {
             List<String> arr = new List<string>();
-            SqlConnection cnn = cn.Connect(Uname, Pass);
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(Uname, Pass);
             query = "Select * from Parts where CodePartFull = " + mCodePartFull + " and StorageID = " + mStorageID + " and State = '" + mState + "'";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -375,7 +403,8 @@ namespace POT
         public List<Part> ListPartsByCodeRegionStateP(String Uname, String Pass, long mCodePartFull, String mSN, String mCN, String mState, long mStorageID)
         {
             List<Part> arr = new List<Part>();
-            SqlConnection cnn = cn.Connect(Uname, Pass);
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(Uname, Pass);
             query = "Select * from Parts where CodePartFull = " + mCodePartFull + " and SN = '" + mSN + "' and CN = '" + mCN + "' and StorageID = " + mStorageID + " and State = '" + mState + "'";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -413,7 +442,8 @@ namespace POT
         public List<String> GetPartsByOTPID(String Uname, String Pass, long mPartID)
         {
             List<String> arr = new List<string>();
-            SqlConnection cnn = cn.Connect(Uname, Pass);
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(Uname, Pass);
             query = "Select * from Parts where PartID = " + mPartID;
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -450,7 +480,8 @@ namespace POT
         public List<String> GetPartsIDSbyOpenedOTP(String Uname, String Pass, long otpID)
         {
             List<String> arr = new List<string>();
-            SqlConnection cnn = cn.Connect(Uname, Pass);
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(Uname, Pass);
             query = "Select partID from OTPparts where otpID = " + otpID;
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -476,7 +507,8 @@ namespace POT
         public List<String> SelectNameCodeFromSifrarnik(String Uname, String Pass)
         {
             List<String> arr = new List<string>();
-            SqlConnection cnn = cn.Connect(Uname, Pass);
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(Uname, Pass);
             query = "Select FullName, FullCode from Sifrarnik order by FullName asc";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -503,7 +535,8 @@ namespace POT
         public int CountCompany(String Uname, String Pass)
         {
             int value;
-            SqlConnection cnn = cn.Connect(Uname, Pass);
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(Uname, Pass);
             query = "select Count(ID) from Tvrtke";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -527,7 +560,8 @@ namespace POT
         public List<String> CompanyInfoByCode(String Uname, String Pass, String mCode)
         {
             List<String> arr = new List<string>();
-            SqlConnection cnn = cn.Connect(Uname, Pass);
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(Uname, Pass);
             query = "Select * from Tvrtke where Code = '" + mCode + "'";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -563,7 +597,8 @@ namespace POT
         public List<String> CompanyInfoByName(String Uname, String Pass, String mName)
         {
             List<String> arr = new List<string>();
-            SqlConnection cnn = cn.Connect(Uname, Pass);
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(Uname, Pass);
             query = "Select * from Tvrtke where Name = '" + mName + "'";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -599,7 +634,8 @@ namespace POT
         public List<String> CompanyInfoByRegionID(String Uname, String Pass, long mRegionID)
         {
             List<String> arr = new List<string>();
-            SqlConnection cnn = cn.Connect(Uname, Pass);
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(Uname, Pass);
             query = "Select * from Tvrtke where RegionID = " + mRegionID;
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -638,7 +674,8 @@ namespace POT
         public List<String> AllCompanyInfoSortCode(String Uname, String Pass)
         {
             List<String> arr = new List<string>();
-            SqlConnection cnn = cn.Connect(Uname, Pass);
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(Uname, Pass);
             query = "Select * from Tvrtke order by Code asc";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -677,7 +714,8 @@ namespace POT
         public List<String> AllCompanyInfoSortByName(String Uname, String Pass)
         {
             List<String> arr = new List<string>();
-            SqlConnection cnn = cn.Connect(Uname, Pass);
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(Uname, Pass);
             query = "Select * from Tvrtke order by Name asc";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -716,7 +754,8 @@ namespace POT
         public List<String> GetAllRegions(String Uname, String Pass)
         {
             List<String> arr = new List<string>();
-            SqlConnection cnn = cn.Connect(Uname, Pass);
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(Uname, Pass);
             query = "Select * from Regija";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -744,7 +783,8 @@ namespace POT
         public List<String> InTransport(String Uname, String Pass, long mCodePartFull)
         {
             List<String> arr = new List<string>();
-            SqlConnection cnn = cn.Connect(Uname, Pass);
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(Uname, Pass);
             query = "select Count(CodePartFull) from Parts p where p.CodePartFull =" + mCodePartFull + " and p.StorageID = " + Properties.Settings.Default.TransportIDRegion;
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -769,7 +809,8 @@ namespace POT
         {
 
             Boolean executed = false;
-            SqlConnection cnn = cn.Connect(Uname, Pass);
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(Uname, Pass);
             query = "select Count(RegionID) from Regija r where r.RegionID =" + mRegionID;
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -818,6 +859,11 @@ namespace POT
                             throw;
                         }
                     }
+                    finally
+                    {
+                        if (cnn.State.ToString().Equals("Open"))
+                            cnn.Close();
+                    }
                 }
             }
             dataReader.Close();
@@ -828,7 +874,8 @@ namespace POT
         public Boolean DeleteRegion(String Uname, String Pass, int mRegionID)
         {
             Boolean executed = false;
-            SqlConnection cnn = cn.Connect(Uname, Pass);
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(Uname, Pass);
             command = cnn.CreateCommand();
             SqlTransaction transaction = cnn.BeginTransaction();
             command.Connection = cnn;
@@ -866,6 +913,11 @@ namespace POT
                         throw;
                     }
                 }
+                finally
+                {
+                    if (cnn.State.ToString().Equals("Open"))
+                        cnn.Close();
+                }
             }
             cnn.Close();
             return executed;
@@ -874,7 +926,8 @@ namespace POT
         public List<String> PartsCntG(String Uname, String Pass, long mCodePartFull, long mStorageID)
         {
             List<String> arr = new List<string>();
-            SqlConnection cnn = cn.Connect(Uname, Pass);
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(Uname, Pass);
             query = "select Count(CodePartFull) from Parts p where p.CodePartFull = " + mCodePartFull + " and p.StorageID = " + mStorageID + " and p.State = 'g'";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -898,7 +951,8 @@ namespace POT
         public List<String> PartsCntNG(String Uname, String Pass, long mCodePartFull, long mStorageID)
         {
             List<String> arr = new List<string>();
-            SqlConnection cnn = cn.Connect(Uname, Pass);
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(Uname, Pass);
             query = "select Count(CodePartFull) from Parts p where p.CodePartFull = " + mCodePartFull + " and p.StorageID = " + mStorageID + " and p.State = 'ng'";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -922,7 +976,8 @@ namespace POT
         public List<String> PartsCntNGS(String Uname, String Pass, long mCodePartFull)
         {
             List<String> arr = new List<string>();
-            SqlConnection cnn = cn.Connect(Uname, Pass);
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(Uname, Pass);
             query = "select Count(CodePartFull) from Parts p where p.CodePartFull = " + mCodePartFull + " and p.State = 'sng'";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -946,7 +1001,8 @@ namespace POT
         public List<String> PartsCntGS(String Uname, String Pass, long mCodePartFull)
         {
             List<String> arr = new List<string>();
-            SqlConnection cnn = cn.Connect(Uname, Pass);
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(Uname, Pass);
             query = "select Count(CodePartFull) from Parts p where p.CodePartFull = " + mCodePartFull + " and p.State = 'sg'";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -970,7 +1026,8 @@ namespace POT
         public List<String> CurrentExchangeRate(String Uname, String Pass)
         {
             List<String> arr = new List<string>();
-            SqlConnection cnn = cn.Connect(Uname, Pass);
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(Uname, Pass);
             query = "SELECT * FROM TecajnaLista WHERE id = (SELECT MAX(id) FROM TecajnaLista)";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -997,7 +1054,8 @@ namespace POT
         public List<String> GetPartIDCompareCodeSNCNStorage(String Uname, String Pass, long mCodePartFull, String mSN, String mCN, long mStorageID)
         {
             List<String> arr = new List<string>();
-            SqlConnection cnn = cn.Connect(Uname, Pass);
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(Uname, Pass);
             query = "Select PartID from Parts where CodePartFull = " + mCodePartFull + " and SN = '" + mSN + "' and CN = '" + mCN + "' and StorageID = " + mStorageID;
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -1023,7 +1081,8 @@ namespace POT
         public int GetPartCountByCodeSNCNStateStorage(String Uname, String Pass, long mCodePartFull, String mSN, String mCN, String mState, long mStorageID)
         {
             int retValue = 0;
-            SqlConnection cnn = cn.Connect(Uname, Pass);
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(Uname, Pass);
             query = "Select Count(PartID) from Parts where CodePartFull = " + mCodePartFull + " and SN = '" + mSN + "' and CN = '" + mCN + "' and StorageID = " + mStorageID + " and State = '" + mState + "'";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -1047,7 +1106,8 @@ namespace POT
         public List<String> GetPartIDCompareCodeSNCNStorageState(String Uname, String Pass, long mCodePartFull, String mSN, String mCN, long mStorageID, String mState)
         {
             List<String> arr = new List<string>();
-            SqlConnection cnn = cn.Connect(Uname, Pass);
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(Uname, Pass);
             query = "Select PartID from Parts where CodePartFull = " + mCodePartFull + " and SN = '" + mSN + "' and CN = '" + mCN + "' and StorageID = " + mStorageID + "and State = '" + mState + "'";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -1073,7 +1133,8 @@ namespace POT
         public List<String> GetAllOpenedOTP(String Uname, String Pass, long mReciever)
         {
             List<String> arr = new List<string>();
-            SqlConnection cnn = cn.Connect(Uname, Pass);
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(Uname, Pass);
             query = "Select otpID from OTP where customerID = " + mReciever + " and primID is NULL";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -1100,7 +1161,8 @@ namespace POT
         {
             String executed = "nok";
             long primCnt = 0;
-            SqlConnection cnn = cn.Connect(Uname, Pass);
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(Uname, Pass);
             query = "select Count(primID) from PRIM where primID LIKE '" + DateTime.Now.ToString("yy") + "%'";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -1162,6 +1224,11 @@ namespace POT
                         throw;
                     }
                 }
+                finally
+                {
+                    if (cnn.State.ToString().Equals("Open"))
+                        cnn.Close();
+                }
             }
             dataReader.Close();
             cnn.Close();
@@ -1172,7 +1239,8 @@ namespace POT
         {
             String executed = "nok";
             long primCnt = 0;
-            SqlConnection cnn = cn.Connect(Uname, Pass);
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(Uname, Pass);
             query = "select Count(primID) from PRIM where primID LIKE '" + DateTime.Now.ToString("yy") + "%'";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -1228,6 +1296,11 @@ namespace POT
                         throw;
                     }
                 }
+                finally
+                {
+                    if (cnn.State.ToString().Equals("Open"))
+                        cnn.Close();
+                }
             }
             dataReader.Close();
             cnn.Close();
@@ -1238,7 +1311,8 @@ namespace POT
         {
             String executed = "nok";
             long otpCnt = 0;
-            SqlConnection cnn = cn.Connect(Uname, Pass);
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(Uname, Pass);
             query = "select Count(otpID) from OTP where otpID LIKE '" + DateTime.Now.ToString("yy") + "%'";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -1307,6 +1381,11 @@ namespace POT
                         throw;
                     }
                 }
+                finally
+                {
+                    if (cnn.State.ToString().Equals("Open"))
+                        cnn.Close();
+                }
             }
             dataReader.Close();
             cnn.Close();
@@ -1317,7 +1396,8 @@ namespace POT
         {
             String executed = "nok";
             long otpCnt = 0;
-            SqlConnection cnn = cn.Connect(Uname, Pass);
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(Uname, Pass);
             query = "select Count(otpID) from OTP where otpID LIKE '" + DateTime.Now.ToString("yy") + "%'";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -1378,6 +1458,11 @@ namespace POT
                         throw;
                     }
                 }
+                finally
+                {
+                    if (cnn.State.ToString().Equals("Open"))
+                        cnn.Close();
+                }
             }
             dataReader.Close();
             cnn.Close();
@@ -1389,7 +1474,8 @@ namespace POT
             String executed = "nok";
             long IUSCnt = 0;
             long IUSCntFull = 0;
-            SqlConnection cnn = cn.Connect(Uname, Pass);
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(Uname, Pass);
             query = "select distinct top 1 rb from IUSparts where iusID LIKE '" + DateTime.Now.ToString("yy") + "%' ORDER BY rb desc";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -1444,6 +1530,11 @@ namespace POT
                     throw;
                 }
             }
+            finally
+            {
+                if (cnn.State.ToString().Equals("Open"))
+                    cnn.Close();
+            }
             dataReader.Close();
             cnn.Close();
             return executed;
@@ -1453,7 +1544,8 @@ namespace POT
         {
             int cnt = 1;
             List<String> arr = new List<string>();
-            SqlConnection cnn = cn.Connect(Uname, Pass);
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(Uname, Pass);
             query = "SELECT * FROM Ticket WHERE (UserIDUnio <> 2 or UserIDUnio is NULL) and VriZavrsio is NULL ";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -1502,7 +1594,8 @@ namespace POT
         public List<String> openedTicketsList(String Uname, String Pass)
         {
             List<String> arr = new List<string>();
-            SqlConnection cnn = cn.Connect(Uname, Pass);
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(Uname, Pass);
             query = "SELECT * FROM Ticket WHERE (UserIDUnio <> 2 or UserIDUnio is NULL) and VriZavrsio is NULL ";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -1555,7 +1648,8 @@ namespace POT
         public int GetLastTicketID(String Uname, String Pass)
         {
             int retValue = 0;
-            SqlConnection cnn = cn.Connect(Uname, Pass);
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(Uname, Pass);
             query = "select count(TicketID) from ticket";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -1567,7 +1661,6 @@ namespace POT
                 retValue = dataReader.GetInt32(0);
             }
 
-
             dataReader.Close();
             cnn.Close();
             return retValue;
@@ -1576,7 +1669,8 @@ namespace POT
         public List<String> SentToUsers()
         {
             List<String> arr = new List<string>();
-            SqlConnection cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            //SqlConnection cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
             query = "Select Email, UserID from Users where UserID > 3 and Email is NOT NULL";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -1603,7 +1697,8 @@ namespace POT
         public Boolean SendTIDStorno(String Uname, String Pass, long mTicketID, String mNaslov, String mPosaljiPoruku, String mSendList)
         {
             Boolean isDone = false;
-            SqlConnection cnn = cn.Connect(Uname, Pass);
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(Uname, Pass);
             command = cnn.CreateCommand();
             SqlTransaction transaction = cnn.BeginTransaction();
             command.Connection = cnn;
@@ -1636,6 +1731,11 @@ namespace POT
                     throw;
                 }
             }
+            finally
+            {
+                if (cnn.State.ToString().Equals("Open"))
+                    cnn.Close();
+            }
             cnn.Close();
             return isDone;
         }
@@ -1643,7 +1743,8 @@ namespace POT
         public Boolean SendTID(String Uname, String Pass, long mTicketID, String mNaslov, String mPosaljiPoruku, String mSendList)
         {
             Boolean isDone = false;
-            SqlConnection cnn = cn.Connect(Uname, Pass);
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(Uname, Pass);
             command = cnn.CreateCommand();
             SqlTransaction transaction = cnn.BeginTransaction();
             command.Connection = cnn;
@@ -1676,6 +1777,11 @@ namespace POT
                     throw;
                 }
             }
+            finally
+            {
+                if (cnn.State.ToString().Equals("Open"))
+                    cnn.Close();
+            }
             cnn.Close();
             return isDone;
         }
@@ -1683,7 +1789,8 @@ namespace POT
         public Boolean AddTID(String Uname, String Pass, long mTicketID, Company mCmp, long mPrio, String mFilijala, String mCCN, String mCID, String mDatPrijave, String mVriPrijave, String mDatSla, String mVriSla, long mDrive, String mNazivUredaja, String mOpis, String mPrijavio)
         {
             Boolean isDone = false;
-            SqlConnection cnn = cn.Connect(Uname, Pass);
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(Uname, Pass);
             command = cnn.CreateCommand();
             SqlTransaction transaction = cnn.BeginTransaction();
             command.Connection = cnn;
@@ -1716,6 +1823,11 @@ namespace POT
                     throw;
                 }
             }
+            finally
+            {
+                if (cnn.State.ToString().Equals("Open"))
+                    cnn.Close();
+            }
             cnn.Close();
             return isDone;
         }
@@ -1723,7 +1835,8 @@ namespace POT
         public Boolean IsTIDExistByIDCCNCID(long mID, String mCCN, String mCID)
         {
             Boolean exist = false;
-            SqlConnection cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            //SqlConnection cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
             query = "Select * from Ticket where TicketID = " + mID;
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -1767,12 +1880,18 @@ namespace POT
                 new LogWriter(e2);
                 return exist;
             }
+            finally
+            {
+                if (cnn.State.ToString().Equals("Open"))
+                    cnn.Close();
+            }
         }
 
         public List<String> FilByFilNumber(String mFilNumber)
         {
             List<String> arr = new List<string>();
-            SqlConnection cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            //SqlConnection cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
             query = "Select * from Filijale where FilNumber = '" + mFilNumber + "'";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -1810,13 +1929,19 @@ namespace POT
                 new LogWriter(e2);
                 return arr;
             }
+            finally
+            {
+                if (cnn.State.ToString().Equals("Open"))
+                    cnn.Close();
+            }
 
         }
 
         public List<String> FilByTvrtkeCodeFilNumber(String mTvrtkeCode, String mFilNumber)
         {
             List<String> arr = new List<string>();
-            SqlConnection cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            //SqlConnection cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
             query = "Select * from Filijale where TvrtkeCode = '" + mTvrtkeCode + "' and FilNumber = '" + mFilNumber + "'";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -1850,7 +1975,8 @@ namespace POT
         public List<String> FilByAddress(String mAddress)
         {
             List<String> arr = new List<string>();
-            SqlConnection cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            //SqlConnection cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
             query = "Select * from Filijale where Address = '" + mAddress + "'";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -1884,7 +2010,8 @@ namespace POT
         public List<String> FilByCity(String mCity)
         {
             List<String> arr = new List<string>();
-            SqlConnection cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            //SqlConnection cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
             query = "Select * from Filijale where City = '" + mCity + "'";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -1918,7 +2045,8 @@ namespace POT
         public List<String> FilByCountry(String mCountry)
         {
             List<String> arr = new List<string>();
-            SqlConnection cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            //SqlConnection cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
             query = "Select * from Filijale where Country = '" + mCountry + "'";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -1952,7 +2080,8 @@ namespace POT
         public List<String> FilByRegionID(long mRegionID)
         {
             List<String> arr = new List<string>();
-            SqlConnection cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            //SqlConnection cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
             query = "Select * from Filijale where RegionID = " + mRegionID;
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -1986,7 +2115,8 @@ namespace POT
         public List<String> AllFilByTvrtkeCode(string mTvrtkeCode)
         {
             List<String> arr = new List<string>();
-            SqlConnection cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            //SqlConnection cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
             query = "Select * from Filijale where TvrtkeCode = '" + mTvrtkeCode + "'";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -2020,7 +2150,8 @@ namespace POT
         public List<String> AllFilInfoSortByFilNumber()
         {
             List<String> arr = new List<string>();
-            SqlConnection cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            //SqlConnection cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
             query = "Select * from Filijale Order by FilNumber ASC";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -2056,7 +2187,8 @@ namespace POT
             String Uname = WorkingUser.Username;
             String Pass = WorkingUser.Password;
             Boolean executed = false;
-            SqlConnection cnn = cn.Connect(Uname, Pass);
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
             query = "select Count(FilNumber) from Filijale f where f.TvrtkeCode = '" + mTvrtkeCode + "' and FilNumber = '" + mFillNumber + "'";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -2100,6 +2232,11 @@ namespace POT
                         new LogWriter(e2);
                         throw;
                     }
+                }
+                finally
+                {
+                    if (cnn.State.ToString().Equals("Open"))
+                        cnn.Close();
                 }
             }
             dataReader.Close();

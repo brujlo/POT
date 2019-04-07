@@ -24,6 +24,7 @@ namespace POT.WorkingClasses
         String documentName;
         String recipientSender;
         Boolean signature = false;
+        Branch branch = new Branch();
 
         int headerpointVer;
         int headerpointHor;
@@ -56,6 +57,28 @@ namespace POT.WorkingClasses
             imgScale = (double)img.Width / img.Height;
 
             imgH = (int)((double)imgW / imgScale);
+        }
+
+        public PrintMe(Company _cmpS, Company _cmpR, List<String> _sifrarnikArr, List<Part> _partListPrint, String _PrimkaNumber, String _napomenaPRIMPrint, String _DocumentName, String _recipientSender, Boolean _Signature, Branch _Branch)
+        {
+            cmpR = _cmpR;
+            cmpS = _cmpS;
+            sifrarnikArr = _sifrarnikArr;
+            partListPrint = _partListPrint;
+            PrimkaNumber = _PrimkaNumber;
+            napomenaPRIMPrint = _napomenaPRIMPrint;
+            documentName = _DocumentName.ToUpper();
+            recipientSender = _recipientSender.ToUpper();
+            signature = _Signature;
+
+            CLogo logoImage = new CLogo();
+            img = logoImage.GetImage();
+
+            imgScale = (double)img.Width / img.Height;
+
+            imgH = (int)((double)imgW / imgScale);
+
+            branch = _Branch;
         }
 
         public void Print(PrintPageEventArgs e)
@@ -111,7 +134,7 @@ namespace POT.WorkingClasses
                     //var groupedPartsList = partListPrint.GroupBy(c => c.PartialCode).Select(grp => grp.ToList()).ToList();
                     if (pageNbr == 1)
                     {
-                        //Sendere Company Info
+                        //Sender/Receiver Company Info
                         e.Graphics.DrawString(recipientSender + ": ", new Font("Calibri light", fontSizeS - 1, FontStyle.Underline | FontStyle.Italic), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy / 2)));
                         e.Graphics.DrawString(cmpS.Name, new Font("Calibri light", fontSizeS, FontStyle.Bold), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * 2)));
                         e.Graphics.DrawString(cmpS.Address, new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * 3)));
@@ -119,12 +142,21 @@ namespace POT.WorkingClasses
                         e.Graphics.DrawString(Properties.strings.VAT + ": " + cmpS.OIB, new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * 5)));
                         e.Graphics.DrawString(Environment.NewLine, new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * 6 / 2)));
 
+                        int pomak = 8;
+                        if (!branch.FilNumber.Equals(""))
+                        {
+                            //String podaciOFilijali =  + Environment.NewLine + "Address: " + branch.Address + ", " + branch.Pb + " " + branch.City + ", " + branch.Country;
+                            e.Graphics.DrawString(Properties.strings.branchNbr + ": " + branch.FilNumber, new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * pomak)));
+                            e.Graphics.DrawString(Properties.strings.branchAddress + ": " + branch.Address + ", " + branch.Pb + " " + branch.City + ", " + branch.Country, new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * (pomak + 1))));
+                            pomak = pomak + 2;
+                        }
+
                         //PRVI RED JE NASLOV ZA IZRADIO
-                        e.Graphics.DrawString(Properties.strings.MadeBy.ToUpper() + ": ", new Font("Calibri light", fontSizeS - 1, FontStyle.Underline | FontStyle.Italic), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * 11) + 8));
-                        e.Graphics.DrawString(Properties.strings.Date + ": " + DateTime.Now.ToString("dd.MM.yyyy."), new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * 13)));
-                        e.Graphics.DrawString(Properties.strings.Time + ": " + DateTime.Now.ToString("hh:mm"), new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * 14)));
-                        e.Graphics.DrawString(Properties.strings.UserID + ": " + WorkingUser.UserID, new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * 15)));
-                        e.Graphics.DrawString(Properties.strings.RegionID + ": " + WorkingUser.RegionID, new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * 16)));
+                        e.Graphics.DrawString(Properties.strings.MadeBy.ToUpper() + ": ", new Font("Calibri light", fontSizeS - 1, FontStyle.Underline | FontStyle.Italic), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * (pomak + 3))));
+                        e.Graphics.DrawString(Properties.strings.Date + ": " + DateTime.Now.ToString("dd.MM.yyyy."), new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * (pomak + 4))));
+                        e.Graphics.DrawString(Properties.strings.Time + ": " + DateTime.Now.ToString("hh:mm"), new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * (pomak + 5))));
+                        e.Graphics.DrawString(Properties.strings.UserID + ": " + WorkingUser.UserID, new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * (pomak + 6))));
+                        e.Graphics.DrawString(Properties.strings.RegionID + ": " + WorkingUser.RegionID, new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * (pomak + 7))));
                         
                         //KORISNIK - da se ne vidi ime i prezime, odkomentiraj da se vidi
                         //e.Graphics.DrawString(Properties.strings.MadeBy + ": " + WorkingUser.Name + " " + WorkingUser.Surename, new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * 13)));

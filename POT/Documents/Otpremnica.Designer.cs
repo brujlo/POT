@@ -65,6 +65,9 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.selectPrinterPrintBtn = new System.Windows.Forms.Button();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.includeInOTP = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -394,6 +397,7 @@
             this.textBox1.TabIndex = 44;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
+            this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
             // 
             // radioButton2
             // 
@@ -520,10 +524,45 @@
             this.selectPrinterPrintBtn.UseVisualStyleBackColor = true;
             this.selectPrinterPrintBtn.Click += new System.EventHandler(this.selectPrinterPrintBtn_Click);
             // 
+            // comboBox5
+            // 
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Location = new System.Drawing.Point(211, 85);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(161, 28);
+            this.comboBox5.Sorted = true;
+            this.comboBox5.TabIndex = 77;
+            this.comboBox5.TabStop = false;
+            this.comboBox5.SelectedIndexChanged += new System.EventHandler(this.comboBox5_SelectedIndexChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(207, 69);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(130, 20);
+            this.label1.TabIndex = 78;
+            this.label1.Text = "Branch (optional)";
+            // 
+            // includeInOTP
+            // 
+            this.includeInOTP.AutoSize = true;
+            this.includeInOTP.Location = new System.Drawing.Point(389, 89);
+            this.includeInOTP.Name = "includeInOTP";
+            this.includeInOTP.Size = new System.Drawing.Size(87, 24);
+            this.includeInOTP.TabIndex = 79;
+            this.includeInOTP.TabStop = false;
+            this.includeInOTP.Text = "Include";
+            this.includeInOTP.UseVisualStyleBackColor = true;
+            // 
             // Otpremnica
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(958, 644);
+            this.Controls.Add(this.includeInOTP);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.comboBox5);
             this.Controls.Add(this.selectPrinterPrintBtn);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.printPrewBT);
@@ -606,5 +645,8 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Button selectPrinterPrintBtn;
+        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox includeInOTP;
     }
 }

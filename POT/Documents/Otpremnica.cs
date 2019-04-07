@@ -28,6 +28,10 @@ namespace POT
 
         List<Company> resultArrC = new List<Company>();
 
+        Branch br = new Branch();
+        List<Branch> brList = new List<Branch>();
+        String tvrtCode;
+
         public Otpremnica()
         {
             InitializeComponent();
@@ -225,6 +229,8 @@ namespace POT
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            comboBox5.Items.Clear();
+            comboBox5.ResetText();
             textBox1.SelectAll();
             textBox1.Focus();
 
@@ -232,6 +238,18 @@ namespace POT
             label3.Text = resultArrC.ElementAt(comboBox1.SelectedIndex).Address.Trim();
             label4.Text = resultArrC.ElementAt(comboBox1.SelectedIndex).OIB.Trim();
             label5.Text = resultArrC.ElementAt(comboBox1.SelectedIndex).Contact.Trim();
+
+            int index = comboBox1.SelectedIndex;
+            if (index >= 0)
+            {
+                brList = br.GetAllFilByTvrtkeCode(resultArrC.ElementAt(index).Code);
+                tvrtCode = resultArrC.ElementAt(index).Code;
+
+                for (int i = 0; i < brList.Count(); i++)
+                {
+                    comboBox5.Items.Add(brList[i].FilNumber);
+                }
+            }
 
             textBox1.Focus();
         }
@@ -312,6 +330,12 @@ namespace POT
         private void button2_Click(object sender, EventArgs e)
         {
             Dictionary<String, int> groupArr = new Dictionary<string, int>();
+
+            int ind;
+            ind = comboBox5.FindStringExact(comboBox5.Text);
+
+            if (ind < 0)
+                comboBox5.ResetText();
 
             OTPNumber = "";
 
@@ -585,9 +609,17 @@ namespace POT
 
         private void printDocumentOtp_PrintPage(object sender, PrintPageEventArgs e)
         {
-            PrintMe pr = new PrintMe(cmpR, cmpS, sifrarnikArr, partListPrint, OTPNumber, napomenaOTPPrint, Properties.strings.DELIVERY, Properties.strings.customer, true);
+            if (includeInOTP.Checked && !comboBox5.Text.Equals(""))
+            {
+                PrintMe pr = new PrintMe(cmpR, cmpS, sifrarnikArr, partListPrint, OTPNumber, napomenaOTPPrint, Properties.strings.DELIVERY, Properties.strings.customer, true, br);
+                pr.Print(e);
+            }
+            else
+            {
+                PrintMe pr = new PrintMe(cmpR, cmpS, sifrarnikArr, partListPrint, OTPNumber, napomenaOTPPrint, Properties.strings.DELIVERY, Properties.strings.customer, true);
+                pr.Print(e);
+            }
             //PrintMe pr = new PrintMe(cmpS, cmpR, sifrarnikArr, partListPrint, PrimkaNumber);
-            pr.Print(e);
         }
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
@@ -605,6 +637,25 @@ namespace POT
             {
                 printPrewBT_Click(sender, e);
                 //printDocumentPrim.Print();
+            }
+        }
+
+        private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int index = comboBox5.SelectedIndex;
+            br = brList[index];
+        }
+
+        private void textBox1_Leave(object sender, EventArgs e)
+        {
+            try
+            {
+                long transform = long.Parse(textBox1.Text);
+                textBox1.Text = string.Format("{0:0000000000000}", (transform));
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
             }
         }
     }

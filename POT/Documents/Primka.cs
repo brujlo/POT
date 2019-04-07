@@ -722,5 +722,18 @@ namespace POT
                 //printDocumentPrim.Print();
             }
         }
+
+        private void textBox1_Leave(object sender, EventArgs e)
+        {
+            try
+            {
+                long transform = long.Parse(textBox1.Text);
+                textBox1.Text = string.Format("{0:0000000000000}", (transform));
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
+            }
+        }
     }
 }
