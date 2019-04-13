@@ -208,7 +208,7 @@ namespace POT.Documents
                 || this.SLAdat.Text.Equals("") || this.SLAvri.Text.Equals("") || this.label30.Text.Equals("") || this.filijala.Text.Equals("") 
                 || this.ccn.Text.Equals("") || this.cid.Text.Equals("") || this.prio.Text.Equals("") || this.opis.Text.Equals("") || this.naziv.Text.Equals(""))
             {
-                AppendTextBox(System.Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + "All fields must filed in" + System.Environment.NewLine + "    - Nothing done");
+                AppendTextBox(Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + "All fields must filed in" + Environment.NewLine + "    - Nothing done");
                 return;
             }
 
@@ -220,16 +220,15 @@ namespace POT.Documents
 
             if (!qc.IsTIDExistByIDCCNCID(TIDid, ccn.Text, cid.Text))
             {
-                if (at.sendIntervention(cmp, datPrijave.Text, vriPrijave.Text, prio.Text, SLAdat.Text, SLAvri.Text, filijala.Text, ccn.Text, cid.Text, TIDid, drive.Text, InqUser.Text, naziv.Text, opis.Text, "", br.City, br.Address, br.Phone, this))
-                    AppendTextBox(System.Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + " Added and sent");
+                Boolean storno = false;
+                if (at.sendIntervention(cmp, datPrijave.Text, vriPrijave.Text, prio.Text, SLAdat.Text, SLAvri.Text, filijala.Text, ccn.Text, cid.Text, TIDid, drive.Text, InqUser.Text, naziv.Text, opis.Text, storno, br.City, br.Address, br.Phone, this))
+                    AppendTextBox(Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + " Added and sent");
             }
             else
             {
-                String msg = System.Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + " TID already exist";
+                String msg = Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + " TID already exist";
                 AppendTextBox(msg);
             }
-
-            ////  DODATI POVIJEST LOG  ////
 
             SystemSounds.Hand.Play();
         }

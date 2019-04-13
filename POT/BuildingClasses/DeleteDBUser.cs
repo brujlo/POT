@@ -54,6 +54,14 @@ namespace POT
 
         private void button1_Click(object sender, EventArgs e)
         {
+            ///////////////// LogMe ////////////////////////
+            String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
+            String usedQC = "qc.DeleteDBUser";
+            String data = this.comboBox1.Text + ", " + this.label9.Text;
+            String Result = "";
+            LogWriter lw = new LogWriter();
+            ////////////////////////////////////////////////
+            ///
             QueryCommands qc = new QueryCommands();
 
             if (!this.label9.Text.Equals("UserID"))
@@ -62,7 +70,10 @@ namespace POT
                 {
                     if(qc.DeleteDBUser(WorkingUser.Username, WorkingUser.Password, this.comboBox1.Text, this.label9.Text))
                     {
-                        MessageBox.Show("User deleted.");
+                        Result = "User deleted.";
+                        lw.LogMe(function, usedQC, data, Result);
+                        MessageBox.Show(Result);
+
                         this.label6.Text = "";
                         this.label7.Text = "";
                         this.label8.Text = "";
@@ -80,13 +91,17 @@ namespace POT
                 catch (Exception e1)
                 {
                     new LogWriter(e1);
-                    MessageBox.Show("User NOT deleted." + "\n\n" + e1.Message);
+                    Result = "User NOT deleted." + "\n\n" + e1.Message;
+                    lw.LogMe(function, usedQC, data, Result);
+                    MessageBox.Show(Result);
                     return;
                 }
             }
             else
             {
-                MessageBox.Show("Please select user to delete.");
+                Result = "Please select user to delete.";
+                lw.LogMe(function, usedQC, data, Result);
+                MessageBox.Show(Result);
             }
         }
 

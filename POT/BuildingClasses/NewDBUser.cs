@@ -18,6 +18,14 @@ namespace POT
 
         private void button2_Click(object sender, EventArgs e)
         {
+            ///////////////// LogMe ////////////////////////
+            String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
+            String usedQC = "qc.NewDBUser";
+            String data = "";
+            String Result = "";
+            LogWriter lw = new LogWriter();
+            ////////////////////////////////////////////////
+
             QueryCommands qc = new QueryCommands();
             List<String> sendArr = new List<string>();
 
@@ -38,6 +46,8 @@ namespace POT
             else
                 sendArr.Add("0");
 
+            data = sendArr[0] + ", " + sendArr[1] + ", " + sendArr[2] + ", " + sendArr[3] + ", " + sendArr[4] + ", " + sendArr[5] + ", " + sendArr[6] + ", " + sendArr[7];
+
             try
             {
                 qc.NewDBUser(WorkingUser.Username, WorkingUser.Password, sendArr);
@@ -45,10 +55,14 @@ namespace POT
             catch (Exception e1)
             {
                 new LogWriter(e1);
-                MessageBox.Show("User NOT added." + "\n\n" + e1.Message);
+                Result = "User NOT added." + "\n\n" + e1.Message;
+                MessageBox.Show(Result);
                 return;
             }
-            MessageBox.Show("User added.");
+
+            Result = "User added.";
+            lw.LogMe(function, usedQC, data, Result);
+            MessageBox.Show(Result);
         }
 
         private void NewDBUser_Load(object sender, EventArgs e)

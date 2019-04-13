@@ -51,6 +51,17 @@ namespace POT
 
         private void button2_Click(object sender, EventArgs e)
         {
+            ///////////////// LogMe ////////////////////////
+            String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
+            String usedQC = "resx.AddResource(\"LogoPicture\", pictureBox1.Image)";
+            String data = this.CmpNameTB.Text.Trim() + ", " + this.CmpAddressTB.Text.Trim() + ", " + this.CmpOIBTB.Text.Trim() + ", " + this.CmpWWWTB.Text.Trim() + 
+                ", " + this.CmpPhoneTB.Text.Trim() + ", " + this.CmpEmail.Text.Trim() + ", " + this.CmpIBAN.Text.Trim() + ", " + this.CmpSwift.Text.Trim() + ", " + 
+                this.CmpMB.Text.Trim() + ", " + int.Parse(this.LogoSize.Value.ToString()) + ", " + this.SupportEmail.Text.Trim(); 
+            String Result = "";
+            LogWriter lw = new LogWriter();
+            ////////////////////////////////////////////////
+            ///
+
             if (!this.cmpCode.Text.Equals("") && long.Parse(this.cmpCode.Text.Trim()) == 1)
             {
                 Properties.Settings.Default.Remember = true;
@@ -73,11 +84,15 @@ namespace POT
 
                 Properties.Settings.Default.Save();
 
-                MessageBox.Show("Saved.");
+                Result = "Saved.";
+                lw.LogMe(function, usedQC, data, Result);
+                MessageBox.Show(Result);
             }
             else
             {
-                MessageBox.Show("Not saved, new Company Code must be bigger then last Code.");
+                Result = "Not saved, new Company Code must be bigger then last Code.";
+                lw.LogMe(function, usedQC, data, Result);
+                MessageBox.Show(Result);
             }
         }
 
@@ -85,12 +100,23 @@ namespace POT
         {
             using(OpenFileDialog dlg = new OpenFileDialog())
             {
+                ///////////////// LogMe ////////////////////////
+                String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
+                String usedQC = "dlg.ShowDialog()";
+                String data = "Change logo";
+                String Result = "";
+                LogWriter lw = new LogWriter();
+                ////////////////////////////////////////////////
+                ///
+
                 dlg.Title = "Select image";
                 
                 {
                     if(dlg.ShowDialog() == DialogResult.OK)
                     {
                         pictureBox1.ImageLocation = dlg.FileName;
+                        Result = dlg.FileName.ToString();
+                        lw.LogMe(function, usedQC, data, Result);
                     }
                 }
             }

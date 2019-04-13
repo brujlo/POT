@@ -1,12 +1,7 @@
 ﻿using POT.MyTypes;
+using POT.WorkingClasses;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace POT
@@ -23,6 +18,15 @@ namespace POT
 
         private void button1_Click(object sender, EventArgs e)
         {
+            ///////////////// LogMe ////////////////////////
+            String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
+            String usedQC = "Main cmp select";
+            String data = "";
+            String Result = "";
+            LogWriter lw = new LogWriter();
+            ////////////////////////////////////////////////
+            ///
+
             int index = comboBox1.SelectedIndex;
 
             Properties.Settings.Default.CmpName = resultList[index].Name;
@@ -38,6 +42,11 @@ namespace POT
             Properties.Settings.Default.CmpName = resultList[index].Name;
             Properties.Settings.Default.Remember = true;
             Properties.Settings.Default.Save();
+
+            Result = "Main cmp selected, please relog to see changes.";
+            lw.LogMe(function, usedQC, data, Result);
+            MessageBox.Show(Result);
+
             Close();
         }
 

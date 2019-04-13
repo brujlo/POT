@@ -221,6 +221,15 @@ namespace POT.BuildingClasses
 
         private void button3_Click(object sender, EventArgs e)
         {
+            ///////////////// LogMe ////////////////////////
+            String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
+            String usedQC = "qc.AddFilToDB";
+            String data = tvrtCode + ", " + Filijala + ", " + RegionID + ", " + Address + ", " + City + ", " + Zip + ", " + Phone + ", " + Country;
+            String Result = "";
+            LogWriter lw = new LogWriter();
+            ////////////////////////////////////////////////
+            ///
+
             int index;
             index = comboBox5.FindStringExact(comboBox5.Text);
 
@@ -232,7 +241,9 @@ namespace POT.BuildingClasses
                 if (comboBox4.Text.Equals("") || comboBox5.Text.Equals("") || comboBox6.Text.Equals("")
                     || textBox12.Text.Equals("") || textBox15.Text.Equals("") || textBox16.Text.Equals("") || textBox17.Text.Equals("") || textBox10.Text.Equals(""))
                 {
-                    MessageBox.Show("All fields fileds must be filled in.");
+                    Result = "All fields fileds must be filled in.";
+                    lw.LogMe(function, usedQC, data, Result);
+                    MessageBox.Show(Result);
                     return;
                 }
                 zamjeniZabranjeneZnakove(textBox12.Text, textBox16.Text, textBox17.Text, textBox15.Text, textBox10.Text, comboBox6.Text, comboBox5.Text);
@@ -240,11 +251,15 @@ namespace POT.BuildingClasses
                 QueryCommands qc = new QueryCommands();
                 if (qc.AddFilToDB(tvrtCode, Filijala, RegionID, Address, City, Zip, Phone, Country))
                 {
-                    MessageBox.Show("Branch added.");
+                    Result = "Branch added.";
+                    lw.LogMe(function, usedQC, data, Result);
+                    MessageBox.Show(Result);
                 }
                 else
                 {
-                    MessageBox.Show("Branch NOT added.");
+                    Result = "Branch NOT added.";
+                    lw.LogMe(function, usedQC, data, Result);
+                    MessageBox.Show(Result);
                 }
             }
             catch (Exception e1)
@@ -308,6 +323,59 @@ namespace POT.BuildingClasses
                 button3.Enabled = false;
             else
                 button3.Enabled = true;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            ///////////////// LogMe ////////////////////////
+            String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
+            String usedQC = "qc.UpdateFilToDB";
+            String data = tvrtCode + ", " + Filijala + ", " + RegionID + ", " + Address + ", " + City + ", " + Zip + ", " + Phone + ", " + Country;
+            String Result = "";
+            LogWriter lw = new LogWriter();
+            ////////////////////////////////////////////////
+            ///
+            try
+            {
+                if (comboBox4.Text.Equals("") || comboBox5.Text.Equals("") || comboBox6.Text.Equals("")
+                    || textBox12.Text.Equals("") || textBox15.Text.Equals("") || textBox16.Text.Equals("") || textBox17.Text.Equals("") || textBox10.Text.Equals(""))
+                {
+                    Result = "All fields fileds must be filled in.";
+                    lw.LogMe(function, usedQC, data, Result);
+                    MessageBox.Show(Result);
+                    return;
+                }
+                zamjeniZabranjeneZnakove(textBox12.Text, textBox16.Text, textBox17.Text, textBox15.Text, textBox10.Text, comboBox6.Text, comboBox5.Text);
+
+                QueryCommands qc = new QueryCommands();
+                if (qc.UpdateFilToDB(tvrtCode, Filijala, RegionID, Address, City, Zip, Phone, Country))
+                {
+                    Result = "Branch updated.";
+                    lw.LogMe(function, usedQC, data, Result);
+                    MessageBox.Show(Result);
+                }
+                else
+                {
+                    Result = "Branch NOT updated.";
+                    lw.LogMe(function, usedQC, data, Result);
+                    MessageBox.Show(Result);
+                }
+            }
+            catch (Exception e1)
+            {
+                MessageBox.Show(e1.Message);
+                new LogWriter(e1);
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

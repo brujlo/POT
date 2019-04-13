@@ -47,7 +47,7 @@ namespace POT
             listView1.Columns.Add("TimeStart");
             listView1.Columns.Add("UserIDEnd");
             listView1.Columns.Add("DatEnd");
-            listView1.Columns.Add("TimeENd");
+            listView1.Columns.Add("TimeEnd");
             listView1.Columns.Add("MadeID");
             listView1.Columns.Add("Description");
 

@@ -9,11 +9,21 @@ namespace POT.WorkingClasses
     {
         public Boolean sendIntervention(Company cmp, String datPrijave, String VriPrijave, String Prio, String slaDatum,
                 String slaVrijeme, String Filijala, String CCN, String CID, long idNumber,
-                String drive, String Prijavio, String NazivUredaja, String Opis, String storno, String grad, String adresa, String telefon, Tickets frm)
+                String drive, String Prijavio, String NazivUredaja, String Opis, Boolean storno, String grad, String adresa, String telefon, Tickets frm)
         {
+            ///////////////// LogMe ////////////////////////
+            String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
+            String usedQC = "Dodavanje TID";
+            String data = "";
+            String Result = "";
+            LogWriter lw = new LogWriter();
+            ////////////////////////////////////////////////
+            ///
+
             String posaljiPoruku;
             String naslov;
             String GoogleS;
+            Boolean done = false;
 
             GoogleS = adresa + "+" + grad;
             GoogleS = GoogleS.Replace(".", "+");
@@ -24,7 +34,7 @@ namespace POT.WorkingClasses
             if (grad.Equals("")) grad = "Unknown";
             if (telefon.Equals("")) telefon = "Unknown";
 
-            if (storno.ToUpper().Equals("STORNO"))
+            if (storno)
             {
                 naslov = "STORNO" + " CUST_" + cmp.Code + "_ID_" + idNumber + "_CCN_" + CCN + "_CID_" + CID + "_" + "F" + Filijala;
                 
@@ -53,14 +63,20 @@ namespace POT.WorkingClasses
 
                 if (qc.SendTIDStorno(WorkingUser.Username, WorkingUser.Password, idNumber, naslov, posaljiPoruku, sendList))
                 {
-                    frm.AppendTextBox(System.Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + "TID " + idNumber + " STORNO sent at " + DateTime.Now);
-                    return true;
+                    Result = "Sent";
+                    frm.AppendTextBox(Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + "TID " + idNumber + " STORNO sent at " + DateTime.Now);
+                    lw.LogMe(function, usedQC, data, Result);
+                    done = true;
                 }
                 else
                 {
-                    frm.AppendTextBox(System.Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + "TID " + idNumber + " STORNO NOT sent at " + DateTime.Now);
-                    return false;
+                    Result = "Not sent";
+                    frm.AppendTextBox(Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + "TID " + idNumber + " STORNO NOT sent at " + DateTime.Now);
+                    lw.LogMe(function, usedQC, data, Result);
+                    done = false;
                 }
+
+                return done;
             }
             else
             {
@@ -71,14 +87,30 @@ namespace POT.WorkingClasses
                 try
                 {
                     if (qc.AddTID(WorkingUser.Username, WorkingUser.Password, idNumber, cmp, long.Parse(Prio), Filijala, CCN, CID, datPrijave, VriPrijave, slaDatum, slaVrijeme, long.Parse(drive), NazivUredaja, Opis, Prijavio))
-                        frm.AppendTextBox(System.Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + "TID " + idNumber + " - " + CCN + " added to DB at " + DateTime.Now);
+                    {
+                        data = WorkingUser.Username + ", " + WorkingUser.Password + ", " + idNumber + ", " + cmp + ", " + long.Parse(Prio) + ", " + Filijala + ", " + CCN + ", " + CID + ", " + datPrijave + 
+                            ", " + VriPrijave + ", " + slaDatum + ", " + slaVrijeme + ", " + long.Parse(drive) + ", " + NazivUredaja + ", " + Opis + ", " + Prijavio;
+                        Result = "Added";
+                        frm.AppendTextBox(Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + "TID " + idNumber + " - " + CCN + " added to DB at " + DateTime.Now);
+                        lw.LogMe(function, usedQC, data, Result);
+                    }
+                    else
+                    {
+                        data = WorkingUser.Username + ", " + WorkingUser.Password + ", " + idNumber + ", " + cmp + ", " + long.Parse(Prio) + ", " + Filijala + ", " + CCN + ", " + CID + ", " + datPrijave +
+                            ", " + VriPrijave + ", " + slaDatum + ", " + slaVrijeme + ", " + long.Parse(drive) + ", " + NazivUredaja + ", " + Opis + ", " + Prijavio;
+                        Result = "Not added";
+                        frm.AppendTextBox(Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + "TID " + idNumber + " - " + CCN + " NOT added to DB at " + DateTime.Now);
+                        lw.LogMe(function, usedQC, data, Result);
+                    }
                 }
                 catch (Exception ex)
                 {
+                    done = false;
+
                     new LogWriter(ex);
-                    frm.AppendTextBox(System.Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + "TID " + idNumber + " - " + CCN + " NOT added to DB,");
-                    frm.AppendTextBox(System.Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + "ERROR msg: " + ex.Message + " at " + DateTime.Now);
-                    return false;
+                    frm.AppendTextBox(Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + "TID " + idNumber + " - " + CCN + " NOT added to DB,");
+                    frm.AppendTextBox(Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + "ERROR msg: " + ex.Message + " at " + DateTime.Now);
+                    return done;
                 }
 
                 List<String> arr = new List<string>();
@@ -114,19 +146,37 @@ namespace POT.WorkingClasses
                     try
                     {
                         if (qc.SendTID(WorkingUser.Username, WorkingUser.Password, idNumber, naslov, posaljiPoruku, sendList))
-                            frm.AppendTextBox(System.Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + "TID " + idNumber + " - " + CCN + " sent to user " + arr[i - 1] + " at " + DateTime.Now);
+                        {
+                            data = posaljiPoruku;
+                            Result = "Sent";
+                            frm.AppendTextBox(Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + "TID " + idNumber + " - " + CCN + " sent to user " + arr[i - 1] + " at " + DateTime.Now);
+                            lw.LogMe(function, usedQC, data, Result);
+
+                            done = true;
+                        }
+                        else
+                        {
+                            data = posaljiPoruku;
+                            Result = "Not sent";
+                            frm.AppendTextBox(Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + "TID " + idNumber + " - " + CCN + " NOT sent to user " + arr[i - 1] + " at " + DateTime.Now);
+                            lw.LogMe(function, usedQC, data, Result);
+
+                            done = false;
+                        }
                     }
                     catch (Exception ex1)
                     {
+                        done = false;
+
                         new LogWriter(ex1);
-                        frm.AppendTextBox(System.Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + "TID " + idNumber + " - " + CCN + " NOT sent,");
-                        frm.AppendTextBox(System.Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + "ERROR msg: " + ex1.Message + " at " + DateTime.Now);
+                        frm.AppendTextBox(Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + "TID " + idNumber + " - " + CCN + " NOT sent,");
+                        frm.AppendTextBox(Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + "ERROR msg: " + ex1.Message + " at " + DateTime.Now);
                         break;
                     }
                 }
             }
 
-            return false;
+            return done;
         }
 
         private String setAutoFooter()

@@ -568,10 +568,21 @@ namespace POT
             MakeDataBase mdb = new MakeDataBase();
             try
             {
+                ///////////////// LogMe ////////////////////////
+                String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
+                String usedQC = "DB making";
+                String data = "";
+                String Result = "";
+                LogWriter lw = new LogWriter();
+                ////////////////////////////////////////////////
+                ///
+
                 String newDBName = Properties.Settings.Default.CmpName.Replace(".", "");
                 if (newDBName.Equals(""))
                 {
-                    MessageBox.Show("First you must insert main company. \r\n Nothing done.");
+                    Result = "First you must insert main company. \r\n Nothing done.";
+                    lw.LogMe(function, usedQC, data, Result);
+                    MessageBox.Show(Result);
                     return;
                 }
                 newDBName = newDBName.Replace(",", "");
@@ -579,14 +590,27 @@ namespace POT
                 newDBName = newDBName.Replace("/", "");
                 var ndbnArr = newDBName.Split();
                 newDBName = ndbnArr[0];
+                data = newDBName;
 
                 if (mdb.MakeDB(newDBName))
                     if (mdb.MakeTables(newDBName))
-                        MessageBox.Show("I am done with buildibng the DB! \r\n Your catalog name is: " + Properties.Settings.Default.Catalog + ".");
+                    {
+                        Result = "I am done with buildibng the DB! \r\n Your catalog name is: " + Properties.Settings.Default.Catalog;
+                        lw.LogMe(function, usedQC, data, Result);
+                        MessageBox.Show(Result);
+                    }
                     else
-                        MessageBox.Show("I am done with buildibng the DB, but tabels are not added! \r\n Your catalog name is: " + Properties.Settings.Default.Catalog);
+                    {
+                        Result = "I am done with buildibng the DB, but tabels are not added! \r\n Your catalog name is: " + Properties.Settings.Default.Catalog;
+                        lw.LogMe(function, usedQC, data, Result);
+                        MessageBox.Show(Result);
+                    }
                 else
-                    MessageBox.Show("Nothing done!");
+                {
+                    Result = "Nothing done!";
+                    lw.LogMe(function, usedQC, data, Result);
+                    MessageBox.Show(Result);
+                }
                 
                 backgroundWorker1.CancelAsync();
                 e.Cancel = true;

@@ -5,6 +5,8 @@ namespace POT.WorkingClasses
 {
     class LogWriter
     {
+        public LogWriter(){}
+
         public LogWriter(String value)
         {
             try
@@ -52,8 +54,6 @@ namespace POT.WorkingClasses
             }
         }
 
-        public LogWriter(){}
-
         public void WriteLog(String value)
         {
             try
@@ -71,6 +71,31 @@ namespace POT.WorkingClasses
             catch (Exception eInner2)
             {
                 WriteLog(Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm") + "Error writing log error message in LogWriter method" + Environment.NewLine + "    - ErrorMSg:" + eInner2.Message + Environment.NewLine + "    **** " + WorkingUser.Name + WorkingUser.Surename + " **** " + Environment.NewLine);
+            }
+        }
+         
+        public void LogMe(String function, String usedQC, String data, String Result)
+        {
+            try
+            {
+                string path = Directory.GetCurrentDirectory();
+                path = path + @"\POTLog.txt";
+
+                TextWriter tw = new StreamWriter(path, true);
+                tw.WriteLine(Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm") +
+                    Environment.NewLine + "    - LOGED change: " + function + Environment.NewLine +
+                    "     - Used: " + usedQC + Environment.NewLine +
+                    "     - Data: " + data + Environment.NewLine +
+                    "     - Result: " + Result + Environment.NewLine +
+                    "    *** " + WorkingUser.Name + WorkingUser.Surename + " *** " + Environment.NewLine);
+                tw.Close();
+
+                Properties.Settings.Default.Path = path;
+                Properties.Settings.Default.Save();
+            }
+            catch (Exception eInner1)
+            {
+                WriteLog(Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm") + "Error writing log error message in LogWriter constructor with exception value" + Environment.NewLine + "    - ErrorMSg:" + eInner1.Message + Environment.NewLine + "    *** " + WorkingUser.Name + WorkingUser.Surename + " *** " + Environment.NewLine);
             }
         }
     }

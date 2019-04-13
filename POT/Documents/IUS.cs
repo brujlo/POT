@@ -141,6 +141,15 @@ namespace POT
 
         private void button1_Click(object sender, EventArgs e)
         {
+            ///////////////// LogMe ////////////////////////
+            String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
+            String usedQC = "Add to list";
+            String data = "";
+            String Result = "";
+            LogWriter lw = new LogWriter();
+            ////////////////////////////////////////////////
+            ///
+
             try
             {
                 ListViewItem lvi1 = new ListViewItem();
@@ -150,7 +159,10 @@ namespace POT
                 //if ((sifrarnikArr.IndexOf((long.Parse((textBox1.Text).Substring(4)).ToString()))) < 0) //DecoderBB
                 if ((sifrarnikArr.IndexOf(Decoder.GetFullPartCodeStr(textBox1.Text))) < 0)
                 {
-                    MessageBox.Show("Selected code does not exist in DB.");
+                    data = textBox1.Text;
+                    Result = "Selected code does not exist in DB.";
+                    lw.LogMe(function, usedQC, data, Result);
+                    MessageBox.Show(Result);
                     textBox1.SelectAll();
                     return;
                 }
@@ -169,6 +181,11 @@ namespace POT
                 partsArr.Add(textBox2.Text);
                 partsArr.Add(textBox3.Text);
                 partsArr.Add("ng");
+
+                if (data.Equals(""))
+                    data = textBox1.Text + ", " + textBox2.Text + ", " + textBox3.Text + ", ng";
+                else
+                    data = data + Environment.NewLine + "             " + textBox1.Text + ", " + textBox2.Text + ", " + textBox3.Text + ", ng";
             }
             catch (Exception e1)
             {
@@ -188,6 +205,9 @@ namespace POT
 
             textBox1.SelectAll();
             textBox1.Focus();
+
+            Result = "Added";
+            lw.LogMe(function, usedQC, data, Result);
 
             SystemSounds.Hand.Play();
         }
@@ -269,12 +289,25 @@ namespace POT
 
         private void button3_Click(object sender, EventArgs e)
         {
+            ///////////////// LogMe ////////////////////////
+            String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
+            String usedQC = "Remove selected";
+            String data = "";
+            String Result = "";
+            LogWriter lw = new LogWriter();
+            ////////////////////////////////////////////////
+            ///
+
             var items = listView1.SelectedItems;
             int k = 1;
 
             foreach (ListViewItem item in listView1.SelectedItems)
             {
                 listView1.Items.Remove(item);
+                if (data.Equals(""))
+                    data = item.SubItems[0] + ", " + item.SubItems[1] + ", " + item.SubItems[2] + ", " + item.SubItems[3] + ", " + item.SubItems[4] + ", " + item.SubItems[5];
+                else
+                    data = data + Environment.NewLine + "             " + item.SubItems[0] + ", " + item.SubItems[1] + ", " + item.SubItems[2] + ", " + item.SubItems[3] + ", " + item.SubItems[4] + ", " + item.SubItems[5];
             }
 
             foreach (ListViewItem item in listView1.Items)
@@ -285,6 +318,10 @@ namespace POT
                     k++;
                 }
             }
+
+            Result = "Removed";
+            lw.LogMe(function, usedQC, data, Result);
+
             rb = listView1.Items.Count + 1;
             textBox1.SelectAll();
             textBox1.Focus();
@@ -292,17 +329,30 @@ namespace POT
 
         private void button2_Click(object sender, EventArgs e)
         {
+            ///////////////// LogMe ////////////////////////
+            String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
+            String usedQC = "Save to db";
+            String data = "";
+            String Result = "";
+            LogWriter lw = new LogWriter();
+            ////////////////////////////////////////////////
+            ///
+
             IUSNumber = "";
 
             if (this.label2.Text.Equals("Name"))
             {
-                MessageBox.Show("Please select company, nothing done.");
+                Result = "Please select company, nothing done.";
+                lw.LogMe(function, usedQC, data, Result);
+                MessageBox.Show(Result);
                 textBox1.SelectAll();
                 textBox1.Focus();
             }
             else if (this.listView1.Items.Count == 0)
             {
-                MessageBox.Show("There is no items in list, nothing done.");
+                Result = "There is no items in list, nothing done.";
+                lw.LogMe(function, usedQC, data, Result);
+                MessageBox.Show(Result);
                 textBox1.SelectAll();
                 textBox1.Focus();
             }
@@ -331,7 +381,10 @@ namespace POT
                                         listView1.Items[i].SubItems[4].Text,
                                         WorkingUser.RegionID, "ng")[0].Equals("nok"))
                                     {
-                                        MessageBox.Show("In your storage does not exist NG part with: \n\n Code: " + listView1.Items[i].SubItems[2].Text + "\n on position " + (listView1.Items[i].Index + 1) + "\n\nNothing Done.");
+                                        data = listView1.Items[i].SubItems[2].Text + "\n on position " + (listView1.Items[i].Index + 1);
+                                        Result = "In your storage does not exist NG part with: \n\n Code: " + listView1.Items[i].SubItems[2].Text + "\n on position " + (listView1.Items[i].Index + 1) + "\n\nNothing Done.";
+                                        lw.LogMe(function, usedQC, data, Result);
+                                        MessageBox.Show(Result);
                                         textBox1.SelectAll();
                                         textBox1.Focus();
                                         return;
@@ -348,117 +401,126 @@ namespace POT
                                 //if (resultArrC[index].RegionID != Properties.Settings.Default.OstaliIDRegion &&
                                 //    resultArrC[index].RegionID != Properties.Settings.Default.TransportIDRegion)
                                 //{
-                                    List<Part> partList = new List<Part>();
-                                    String napomenaIUS = textBox4.Text;
+                                List<Part> partList = new List<Part>();
+                                String napomenaIUS = textBox4.Text;
 
-                                    for (int i = 0; i < listView1.Items.Count; i++)
+                                for (int i = 0; i < listView1.Items.Count; i++)
+                                {
+                                    PartSifrarnik tempSifPart = new PartSifrarnik();
+                                    Part tempPart = new Part();
+
+                                    //tempSifPart.GetPart(listView1.Items[i].SubItems[2].Text.Substring(4)); //DecoderBB
+                                    tempSifPart.GetPart(Decoder.GetFullPartCodeStr(listView1.Items[i].SubItems[2].Text));
+
+                                    tempPart.PartialCode = tempSifPart.FullCode;
+                                    tempPart.SN = listView1.Items[i].SubItems[3].Text;
+                                    tempPart.CN = listView1.Items[i].SubItems[4].Text;
+                                    tempPart.DateIn = DateTime.Now.ToString("dd.MM.yy.");
+                                    tempPart.StorageID = WorkingUser.RegionID;
+                                    tempPart.State = "ng";
+                                    //tempPart.CompanyO = listView1.Items[i].SubItems[2].Text.Substring(0, 2); //DecoderBB
+                                    tempPart.CompanyO = Decoder.GetOwnerCode(listView1.Items[i].SubItems[2].Text);
+                                    //tempPart.CompanyC = listView1.Items[i].SubItems[2].Text.Substring(2, 2); //DecoderBB
+                                    tempPart.CompanyC = Decoder.GetCustomerCode(listView1.Items[i].SubItems[2].Text);
+
+                                String tmpResult = qc.GetPartIDCompareCodeSNCNStorage(WorkingUser.Username, WorkingUser.Password,
+                                        long.Parse(listView1.Items[i].SubItems[2].Text),
+                                        listView1.Items[i].SubItems[3].Text,
+                                        listView1.Items[i].SubItems[4].Text,
+                                        WorkingUser.RegionID)[0];
+
+                                    if (tmpResult.Equals("nok"))
                                     {
-                                        PartSifrarnik tempSifPart = new PartSifrarnik();
-                                        Part tempPart = new Part();
-
-                                        //tempSifPart.GetPart(listView1.Items[i].SubItems[2].Text.Substring(4)); //DecoderBB
-                                        tempSifPart.GetPart(Decoder.GetFullPartCodeStr(listView1.Items[i].SubItems[2].Text));
-
-                                        tempPart.PartialCode = tempSifPart.FullCode;
-                                        tempPart.SN = listView1.Items[i].SubItems[3].Text;
-                                        tempPart.CN = listView1.Items[i].SubItems[4].Text;
-                                        tempPart.DateIn = DateTime.Now.ToString("dd.MM.yy.");
-                                        tempPart.StorageID = WorkingUser.RegionID;
-                                        tempPart.State = "ng";
-                                        //tempPart.CompanyO = listView1.Items[i].SubItems[2].Text.Substring(0, 2); //DecoderBB
-                                        tempPart.CompanyO = Decoder.GetOwnerCode(listView1.Items[i].SubItems[2].Text);
-                                        //tempPart.CompanyC = listView1.Items[i].SubItems[2].Text.Substring(2, 2); //DecoderBB
-                                        tempPart.CompanyC = Decoder.GetCustomerCode(listView1.Items[i].SubItems[2].Text);
-
-                                    String tmpResult = qc.GetPartIDCompareCodeSNCNStorage(WorkingUser.Username, WorkingUser.Password,
-                                            long.Parse(listView1.Items[i].SubItems[2].Text),
-                                            listView1.Items[i].SubItems[3].Text,
-                                            listView1.Items[i].SubItems[4].Text,
-                                            WorkingUser.RegionID)[0];
-
-                                        if (tmpResult.Equals("nok"))
-                                        {
-                                            MessageBox.Show("There is no NG part in your storage with: \n\n Code: " + listView1.Items[i].SubItems[2].Text + "\n on position " + (listView1.Items[i].Index + 1) + ". \n\nNothing Done.");
-                                            textBox1.SelectAll();
-                                            textBox1.Focus();
-                                            return;
-                                        }
-                                        else
-                                        {
-                                            tempPart.PartID = long.Parse(tmpResult);
-                                            partList.Add(tempPart);
-                                        }
-                                    }
-
-                                    IUSNumber = qc.IUSPrebaciUServis(WorkingUser.Username, WorkingUser.Password, partList, WorkingUser.RegionID, cmpS.ID, napomenaIUS);
-                                    if (!IUSNumber.Equals("nok"))
-                                    {
-                                        PovijestLog pl = new PovijestLog();
-                                        Boolean saved = false;
-                                        for (int k = 0; k < partList.Count; k++)
-                                        {
-                                            List<Part> tempPart = new List<Part>();
-                                            tempPart.Clear();
-                                            tempPart.Add(partList[k]);
-                                            if (pl.SaveToPovijestLog(tempPart, DateTime.Now.ToString("dd.MM.yy."), napomenaIUS, cmpS.Name, "", "", "PRIM " + Properties.Settings.Default.ShareDocumentName, tempPart[0].State))
-                                            {
-                                                saved = true;
-                                            }
-                                            else
-                                            {
-                                                saved = false;
-                                                Properties.Settings.Default.ShareDocumentName = "";
-                                                break;
-                                            }
-                                        }
-
-                                        if (saved)
-                                        {
-                                            MessageBox.Show("DONE, document nbr. PRIM '" + IUSNumber + "'.");
-
-                                            partListPrint.Clear();
-                                            partListPrint = partList;
-
-                                            isIUSSaved = true;
-                                            listView1.Clear();
-                                            listView1.View = View.Details;
-
-                                            listView1.Columns.Add("RB");
-                                            listView1.Columns.Add("Name");
-                                            listView1.Columns.Add("Code");
-                                            listView1.Columns.Add("SN");
-                                            listView1.Columns.Add("CN");
-                                            listView1.Columns.Add("Condition");
-                                            textBox4.Clear();
-                                            napomenaIUSPrint = napomenaIUS;
-                                        }
-                                        else
-                                        {
-                                            MessageBox.Show("DONE, document nbr. 'PRIM " + IUSNumber + "', but not saved in PL.");
-
-                                            partListPrint.Clear();
-                                            partListPrint = partList;
-
-                                            isIUSSaved = true;
-                                            listView1.Clear();
-                                            listView1.View = View.Details;
-
-                                            listView1.Columns.Add("RB");
-                                            listView1.Columns.Add("Name");
-                                            listView1.Columns.Add("Code");
-                                            listView1.Columns.Add("SN");
-                                            listView1.Columns.Add("CN");
-                                            listView1.Columns.Add("Condition");
-                                            textBox4.Clear();
-                                            napomenaIUSPrint = napomenaIUS;
-                                        }
+                                        data = listView1.Items[i].SubItems[2].Text + "\n on position " + (listView1.Items[i].Index + 1);
+                                        Result = "There is no NG part in your storage with: \n\n Code: " + listView1.Items[i].SubItems[2].Text + "\n on position " + (listView1.Items[i].Index + 1) + ". \n\nNothing Done.";
+                                        lw.LogMe(function, usedQC, data, Result);
+                                        MessageBox.Show(Result);
+                                        textBox1.SelectAll();
+                                        textBox1.Focus();
+                                        return;
                                     }
                                     else
                                     {
-                                        MessageBox.Show("Unknown error in QUERY.");
-                                        napomenaIUSPrint = "";
-                                        isIUSSaved = false;
+                                        tempPart.PartID = long.Parse(tmpResult);
+                                        partList.Add(tempPart);
                                     }
+                                }
+
+                                IUSNumber = qc.IUSPrebaciUServis(WorkingUser.Username, WorkingUser.Password, partList, WorkingUser.RegionID, cmpS.ID, napomenaIUS);
+                                if (!IUSNumber.Equals("nok"))
+                                {
+                                    PovijestLog pl = new PovijestLog();
+                                    Boolean saved = false;
+                                    for (int k = 0; k < partList.Count; k++)
+                                    {
+                                        List<Part> tempPart = new List<Part>();
+                                        tempPart.Clear();
+                                        tempPart.Add(partList[k]);
+                                        if (pl.SaveToPovijestLog(tempPart, DateTime.Now.ToString("dd.MM.yy."), napomenaIUS, cmpS.Name, "", "", "PRIM " + Properties.Settings.Default.ShareDocumentName, tempPart[0].State))
+                                        {
+                                            saved = true;
+                                        }
+                                        else
+                                        {
+                                            saved = false;
+                                            Properties.Settings.Default.ShareDocumentName = "";
+                                            break;
+                                        }
+                                    }
+
+                                    if (saved)
+                                    {
+                                        Result = "DONE, document nbr. PRIM '" + IUSNumber + "'.";
+                                        lw.LogMe(function, usedQC, data, Result);
+                                        MessageBox.Show(Result);
+
+                                        partListPrint.Clear();
+                                        partListPrint = partList;
+
+                                        isIUSSaved = true;
+                                        listView1.Clear();
+                                        listView1.View = View.Details;
+
+                                        listView1.Columns.Add("RB");
+                                        listView1.Columns.Add("Name");
+                                        listView1.Columns.Add("Code");
+                                        listView1.Columns.Add("SN");
+                                        listView1.Columns.Add("CN");
+                                        listView1.Columns.Add("Condition");
+                                        textBox4.Clear();
+                                        napomenaIUSPrint = napomenaIUS;
+                                    }
+                                    else
+                                    {
+                                        Result = "DONE, document nbr. 'PRIM " + IUSNumber + "', but not saved in PL.";
+                                        lw.LogMe(function, usedQC, data, Result);
+                                        MessageBox.Show(Result);
+
+                                        partListPrint.Clear();
+                                        partListPrint = partList;
+
+                                        isIUSSaved = true;
+                                        listView1.Clear();
+                                        listView1.View = View.Details;
+
+                                        listView1.Columns.Add("RB");
+                                        listView1.Columns.Add("Name");
+                                        listView1.Columns.Add("Code");
+                                        listView1.Columns.Add("SN");
+                                        listView1.Columns.Add("CN");
+                                        listView1.Columns.Add("Condition");
+                                        textBox4.Clear();
+                                        napomenaIUSPrint = napomenaIUS;
+                                    }
+                                }
+                                else
+                                {
+                                    Result = "Unknown error in QUERY.";
+                                    lw.LogMe(function, usedQC, data, Result);
+                                    MessageBox.Show(Result);
+                                    napomenaIUSPrint = "";
+                                    isIUSSaved = false;
+                                }
                                 //}
                             }
                             cnnIUS.Close();
@@ -495,9 +557,33 @@ namespace POT
 
         private void printDocumentIUS_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
+            ///////////////// LogMe ////////////////////////
+            String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
+            String usedQC = "Print";
+            String data = "";
+            String Result = "";
+            LogWriter lw = new LogWriter();
+            ////////////////////////////////////////////////
+            ///
+
             PrintMe pr = new PrintMe(cmpS, cmpR, sifrarnikArr, partListPrint, IUSNumber, napomenaIUSPrint, "IUS", "customer", false);
-            //PrintMe pr = new PrintMe(cmpS, cmpR, sifrarnikArr, partListPrint, PrimkaNumber);
             pr.Print(e);
+
+            data = cmpS + ", " + cmpR + ", " + sifrarnikArr + ", " + partListPrint + ", " + IUSNumber + ", " + napomenaIUSPrint + ", IUS, customer, false";
+            Result = "Print page called";
+            lw.LogMe(function, usedQC, data, Result);
+        }
+
+        private void selectPrinterPrintBtn_Click(object sender, EventArgs e)
+        {
+            PrintDialog printDialog1 = new PrintDialog();
+            printDialog1.Document = printDocumentIUS;
+            DialogResult result = printDialog1.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                printPrewBT_Click(sender, e);
+                //printDocumentPrim.Print();
+            }
         }
     }
 }

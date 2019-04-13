@@ -122,13 +122,25 @@ namespace POT
 
         private void button1_Click(object sender, EventArgs e)
         {
+            ///////////////// LogMe ////////////////////////
+            String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
+            String usedQC = "Add to list";
+            String data = "";
+            String Result = "";
+            LogWriter lw = new LogWriter();
+            ////////////////////////////////////////////////
+            ///
+
             try
             {
                 rb = listView1.Items.Count + 1;
 
                 if (sifrarnikArr.IndexOf(Decoder.GetFullPartCodeStr(textBox1.Text)) < 0)
                 {
-                    MessageBox.Show("Selected code does not exist in DB.");
+                    data = textBox1.Text;
+                    Result = "Selected code does not exist in DB.";
+                    lw.LogMe(function, usedQC, data, Result);
+                    MessageBox.Show(Result);
                     textBox1.SelectAll();
                     return;
                 }
@@ -154,6 +166,11 @@ namespace POT
                     partsArr.Add(radioButton1.Checked ? "g" : "ng");
 
                     rb = listView1.Items.Count + 1;
+
+                    if (data.Equals(""))
+                        data = textBox1.Text + ", " + textBox2.Text + ", " + textBox3.Text + ", ng";
+                    else
+                        data = data + Environment.NewLine + "             " + textBox1.Text + ", " + textBox2.Text + ", " + textBox3.Text + ", ng";
                 }
             }
             catch (Exception e1)
@@ -176,6 +193,9 @@ namespace POT
 
             textBox1.SelectAll();
             textBox1.Focus();
+
+            Result = "Added";
+            lw.LogMe(function, usedQC, data, Result);
 
             SystemSounds.Hand.Play();
         }
@@ -306,12 +326,25 @@ namespace POT
 
         private void button3_Click(object sender, EventArgs e)
         {
+            ///////////////// LogMe ////////////////////////
+            String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
+            String usedQC = "Remove selected";
+            String data = "";
+            String Result = "";
+            LogWriter lw = new LogWriter();
+            ////////////////////////////////////////////////
+            ///
+
             var items = listView1.SelectedItems;
             int k = 1;
 
             foreach (ListViewItem item in listView1.SelectedItems)
             {
                 listView1.Items.Remove(item);
+                if (data.Equals(""))
+                    data = item.SubItems[0] + ", " + item.SubItems[1] + ", " + item.SubItems[2] + ", " + item.SubItems[3] + ", " + item.SubItems[4] + ", " + item.SubItems[5];
+                else
+                    data = data + Environment.NewLine + "             " + item.SubItems[0] + ", " + item.SubItems[1] + ", " + item.SubItems[2] + ", " + item.SubItems[3] + ", " + item.SubItems[4] + ", " + item.SubItems[5];
             }
 
             foreach (ListViewItem item in listView1.Items)
@@ -322,6 +355,10 @@ namespace POT
                     k++;
                 }
             }
+
+            Result = "Removed";
+            lw.LogMe(function, usedQC, data, Result);
+
             rb = listView1.Items.Count + 1;
             textBox1.SelectAll();
             textBox1.Focus();
@@ -329,6 +366,15 @@ namespace POT
 
         private void button2_Click(object sender, EventArgs e)
         {
+            ///////////////// LogMe ////////////////////////
+            String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
+            String usedQC = "Save to db";
+            String data = "";
+            String Result = "";
+            LogWriter lw = new LogWriter();
+            ////////////////////////////////////////////////
+            ///
+
             Dictionary<String, int> groupArr = new Dictionary<string, int>();
 
             int ind;
@@ -341,13 +387,17 @@ namespace POT
 
             if (this.label2.Text.Equals("Name"))
             {
-                MessageBox.Show("Please select company, nothing done.");
+                Result = "Please select company, nothing done.";
+                lw.LogMe(function, usedQC, data, Result);
+                MessageBox.Show(Result);
                 textBox1.SelectAll();
                 textBox1.Focus();
             }
             else if (this.listView1.Items.Count == 0)
             {
-                MessageBox.Show("There is no items in list, nothing done.");
+                Result = "There is no items in list, nothing done.";
+                lw.LogMe(function, usedQC, data, Result);
+                MessageBox.Show(Result);
                 textBox1.SelectAll();
                 textBox1.Focus();
             }
@@ -396,14 +446,17 @@ namespace POT
 
                                     if (groupArr[groupArr.ElementAt(i).Key] > prtConut)
                                     {
-                                        MessageBox.Show("You do not have enough patrs in you storage:" +
-                                            "\n\n Code: " + testArr[0] + 
+                                        data = testArr[0] + ", " + testArr[1] + ", " + testArr[2] + ", " + testArr[3] + ", " + prtConut + ", " + groupArr[groupArr.ElementAt(i).Key];
+                                        Result = "You do not have enough patrs in you storage:" +
+                                            "\n\n Code: " + testArr[0] +
                                             "\n SN:  " + testArr[1] +
                                             "\n CN:  " + testArr[2] +
                                             "\n State: " + testArr[3] +
-                                            "\n\nYou have: " + prtConut + 
+                                            "\n\nYou have: " + prtConut +
                                             "\nYou want: " + groupArr[groupArr.ElementAt(i).Key] +
-                                            "\n\nNothing Done.", "Caution", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                            "\n\nNothing Done.";
+                                        lw.LogMe(function, usedQC, data, Result);
+                                        MessageBox.Show(Result, "Caution", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                                         return;
                                     }
                                 }
@@ -417,7 +470,11 @@ namespace POT
                                         listView1.Items[i].SubItems[4].Text,
                                         WorkingUser.RegionID)[0].Equals("nok"))
                                     {
-                                        MessageBox.Show("There is no part in your storage with: \n\n Code: " + listView1.Items[i].SubItems[2].Text + "\n on position " + (listView1.Items[i].Index + 1) + ". \n\nNothing Done.");
+                                        data = listView1.Items[i].SubItems[2].Text + ", " + listView1.Items[i].Index + 1;
+                                        Result = "There is no part in your storage with: \n\n Code: " + listView1.Items[i].SubItems[2].Text + "\n on position " + (listView1.Items[i].Index + 1) + ". \n\nNothing Done.";
+                                        lw.LogMe(function, usedQC, data, Result);
+                                        MessageBox.Show(Result);
+
                                         textBox1.SelectAll();
                                         textBox1.Focus();
                                         return;
@@ -438,7 +495,11 @@ namespace POT
                                         long test = Decoder.GetFullPartCodeLng(listView1.Items[i].SubItems[2].Text);
                                         if (!resultArrSearchCode.Contains(test.ToString()))
                                         {
-                                            MessageBox.Show("There is no part in 'Sifrarnik' with code, = " + test.ToString() + "\n" + "on position " + (listView1.Items[i].Index + 1) + "  \n\nNothing Done.");
+                                            data = test.ToString() + ", " + listView1.Items[i].Index + 1;
+                                            Result = "There is no part in 'Sifrarnik' with code, = " + test.ToString() + "\n" + "on position " + (listView1.Items[i].Index + 1) + "  \n\nNothing Done.";
+                                            lw.LogMe(function, usedQC, data, Result);
+                                            MessageBox.Show(Result);
+
                                             textBox1.SelectAll();
                                             textBox1.Focus();
                                             return;
@@ -462,14 +523,18 @@ namespace POT
 
                                         if (tempParts.Count() < groupArr[groupArr.ElementAt(i).Key])
                                         {
-                                            MessageBox.Show("There is no part in your storage with:" + "" +
+                                            data = groupArr.ElementAt(i).Key.Split('_')[0] + ", " + groupArr.ElementAt(i).Key.Split('_')[1] + ", " + groupArr.ElementAt(i).Key.Split('_')[2] + ", " + groupArr.ElementAt(i).Key.Split('_')[3] + ", " + tempParts.Count + ", " + groupArr[groupArr.ElementAt(i).Key];
+                                            Result = "There is no part in your storage with:" + "" +
                                                 "\n\n Code: " + groupArr.ElementAt(i).Key.Split('_')[0] +
                                                 "\n SN:  " + groupArr.ElementAt(i).Key.Split('_')[1] +
                                                 "\n CN:  " + groupArr.ElementAt(i).Key.Split('_')[2] +
                                                 "\n State: " + groupArr.ElementAt(i).Key.Split('_')[3] +
                                                 "\n\nYou have: " + tempParts.Count +
                                                 "\nYou want: " + groupArr[groupArr.ElementAt(i).Key] +
-                                                "\n\nNothing Done.", "Caution", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                                "\n\nNothing Done.";
+                                            lw.LogMe(function, usedQC, data, Result);
+                                            MessageBox.Show(Result, "Caution", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
                                             textBox1.SelectAll();
                                             textBox1.Focus();
                                             return;
@@ -501,7 +566,10 @@ namespace POT
                                     }
                                     else
                                     {
-                                        MessageBox.Show("Hm... You cant send part to service!");
+                                        Result = "Hm... You cant send part to service!";
+                                        lw.LogMe(function, usedQC, data, Result);
+                                        MessageBox.Show(Result);
+
                                         textBox1.SelectAll();
                                         textBox1.Focus();
                                         return;
@@ -531,7 +599,9 @@ namespace POT
 
                                         if (saved)
                                         {
-                                            MessageBox.Show("DONE, document nbr. OTP '" + OTPNumber + "'.");
+                                            Result = "DONE, document nbr. OTP '" + OTPNumber + "'.";
+                                            lw.LogMe(function, usedQC, data, Result);
+                                            MessageBox.Show(Result);
 
                                             partListPrint.Clear();
                                             partListPrint = partList;
@@ -551,7 +621,9 @@ namespace POT
                                         }
                                         else
                                         {
-                                            MessageBox.Show("DONE, document nbr. 'OTP " + OTPNumber + "', but not saved in PL.");
+                                            Result = "DONE, document nbr. 'OTP " + OTPNumber + "', but not saved in PL.";
+                                            lw.LogMe(function, usedQC, data, Result);
+                                            MessageBox.Show(Result);
 
                                             partListPrint.Clear();
                                             partListPrint = partList;
@@ -573,7 +645,10 @@ namespace POT
                                 }
                                 else
                                 {
-                                    MessageBox.Show("Hm... Same receiving and sending company?!");
+                                    Result = "Hm... Same receiving and sending company?!";
+                                    lw.LogMe(function, usedQC, data, Result);
+                                    MessageBox.Show(Result);
+
                                     textBox1.SelectAll();
                                     textBox1.Focus();
                                     return;
@@ -613,17 +688,30 @@ namespace POT
 
         private void printDocumentOtp_PrintPage(object sender, PrintPageEventArgs e)
         {
+            ///////////////// LogMe ////////////////////////
+            String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
+            String usedQC = "Print";
+            String data = "";
+            String Result = "";
+            LogWriter lw = new LogWriter();
+            ////////////////////////////////////////////////
+            ///
+
             if (includeInOTP.Checked && !comboBox5.Text.Equals(""))
             {
                 PrintMe pr = new PrintMe(cmpR, cmpS, sifrarnikArr, partListPrint, OTPNumber, napomenaOTPPrint, Properties.strings.DELIVERY, Properties.strings.customer, true, br);
                 pr.Print(e);
+                data = cmpR + ", " + cmpS + ", " + sifrarnikArr + ", " + partListPrint + ", " + OTPNumber + ", " + napomenaOTPPrint + ", " + Properties.strings.DELIVERY + ", " + Properties.strings.customer + ", true, " + br ;
             }
             else
             {
                 PrintMe pr = new PrintMe(cmpR, cmpS, sifrarnikArr, partListPrint, OTPNumber, napomenaOTPPrint, Properties.strings.DELIVERY, Properties.strings.customer, true);
                 pr.Print(e);
+                data = cmpR + ", " + cmpS + ", " + sifrarnikArr + ", " + partListPrint + ", " + OTPNumber + ", " + napomenaOTPPrint + ", " + Properties.strings.DELIVERY + ", " + Properties.strings.customer + ", true";
             }
-            //PrintMe pr = new PrintMe(cmpS, cmpR, sifrarnikArr, partListPrint, PrimkaNumber);
+
+            Result = "Print page called";
+            lw.LogMe(function, usedQC, data, Result);
         }
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)

@@ -63,6 +63,7 @@
             this.label21 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.button4 = new System.Windows.Forms.Button();
             this.label22 = new System.Windows.Forms.Label();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
@@ -115,8 +116,9 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(123, 41);
             this.button2.TabIndex = 14;
-            this.button2.Text = "Save";
+            this.button2.Text = "Add";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label5
             // 
@@ -342,6 +344,7 @@
             this.button1.TabIndex = 15;
             this.button1.Text = "Update";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // comboBox1
             // 
@@ -468,6 +471,7 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.button4);
             this.tabPage3.Controls.Add(this.label22);
             this.tabPage3.Controls.Add(this.textBox10);
             this.tabPage3.Controls.Add(this.comboBox6);
@@ -492,6 +496,16 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Eddit branch";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(502, 406);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(155, 58);
+            this.button4.TabIndex = 16;
+            this.button4.Text = "Update";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label22
             // 
@@ -721,5 +735,6 @@
         private System.Windows.Forms.ComboBox comboBox6;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.Button button4;
     }
 }

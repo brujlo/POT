@@ -67,6 +67,15 @@ namespace POT
 
         private void button1_Click(object sender, EventArgs e)
         {
+            ///////////////// LogMe ////////////////////////
+            String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
+            String usedQC = "qc.AddRegion";
+            String data = comboBox1.Text + ", " + textBox3.Text + ", " + textBox1.Text + ", " + textBox2.Text + ", " + addressTB.Text + ", " + CityTB.Text + ", " + PBTB.Text + ", " + OIBTB.Text + ", " +
+                        ContactTB.Text + ", " + CountryTB.Text + ", " + BICTB.Text + ", " + EmailTB.Text + ", " + Properties.Settings.Default.MainCompanyCode;
+            String Result = "";
+            LogWriter lw = new LogWriter();
+            ////////////////////////////////////////////////
+            
             QueryCommands qc = new QueryCommands();
             Boolean result = false;
             String CompanyCode;
@@ -105,12 +114,20 @@ namespace POT
                 }
                 if (result)
                 {
-                    MessageBox.Show("Region added.");
+                    Result = "Region added.";
+                    lw.LogMe(function, usedQC, data, Result);
+
+                    MessageBox.Show(Result);
                     Properties.Settings.Default.Remember = true;
                     Properties.Settings.Default.Save();
                 }
                 else
-                    MessageBox.Show("Region NOT added.");
+                {
+                    Result = "Region NOT added.";
+                    lw.LogMe(function, usedQC, data, Result);
+
+                    MessageBox.Show(Result);
+                }
             }
             else
             {
@@ -123,9 +140,20 @@ namespace POT
             QueryCommands qc = new QueryCommands();
             Boolean result = false;
 
-            if(textBox3.Text.Equals("1") || textBox3.Text.Equals("2") || textBox3.Text.Equals("3") || textBox3.Text.Equals("4"))
+            ///////////////// LogMe ////////////////////////
+            String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
+            String usedQC = "qc.DeleteRegion";
+            String data = comboBox1.Text + ", " + textBox3.Text + ", " + textBox1.Text + ", " + textBox2.Text + ", " + addressTB.Text + ", " + CityTB.Text + ", " + PBTB.Text + ", " + OIBTB.Text + ", " +
+                        ContactTB.Text + ", " + CountryTB.Text + ", " + BICTB.Text + ", " + EmailTB.Text + ", " + Properties.Settings.Default.MainCompanyCode;
+            String Result = "";
+            LogWriter lw = new LogWriter();
+            ////////////////////////////////////////////////
+            
+            if (textBox3.Text.Equals("1") || textBox3.Text.Equals("2") || textBox3.Text.Equals("3") || textBox3.Text.Equals("4"))
             {
-                MessageBox.Show("Not deleted, regions 01, 02, 03 and 04 cant be deleted.");
+                Result = "Not deleted, regions 01, 02, 03 and 04 cant be deleted.";
+                lw.LogMe(function, usedQC, data, Result);
+                MessageBox.Show(Result);
                 return;
             }
 
@@ -134,11 +162,15 @@ namespace POT
                 result = qc.DeleteRegion(WorkingUser.Username, WorkingUser.Password, int.Parse(textBox3.Text.Trim()));
                 if (result)
                 {
-                    MessageBox.Show("Deleted.");
+                    Result = "Deleted.";
+                    lw.LogMe(function, usedQC, data, Result);
+                    MessageBox.Show(Result);
                 }
                 else
                 {
-                    MessageBox.Show("NOT Deleted.");
+                    Result = "NOT Deleted.";
+                    lw.LogMe(function, usedQC, data, Result);
+                    MessageBox.Show(Result);
                 }
             }
             catch (Exception e1)

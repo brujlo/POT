@@ -1596,7 +1596,7 @@ namespace POT
             List<String> arr = new List<string>();
             //SqlConnection cnn = cn.Connect(Uname, Pass);
             cnn = cn.Connect(Uname, Pass);
-            query = "SELECT * FROM Ticket WHERE (UserIDUnio <> 2 or UserIDUnio is NULL) and VriZavrsio is NULL ";
+            query = "SELECT * FROM Ticket WHERE (UserIDUnio <> 2 or UserIDUnio is NULL) and VriZavrsio is NULL order by TicketID asc";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
             SqlDataReader dataReader = command.ExecuteReader();
@@ -2184,8 +2184,6 @@ namespace POT
 
         public Boolean AddFilToDB(String mTvrtkeCode, String mFillNumber, long mRegionID, String mAddress, String mCity, String mPB, String mPhone, String mCountry)
         {
-            String Uname = WorkingUser.Username;
-            String Pass = WorkingUser.Password;
             Boolean executed = false;
             //SqlConnection cnn = cn.Connect(Uname, Pass);
             cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
@@ -2212,6 +2210,66 @@ namespace POT
                 {
                     command.CommandText = "INSERT INTO Filijale (TvrtkeCode, FilNumber, RegionID, Address, City, PB, Phone, Country) " +
                         "values ('" + mTvrtkeCode + "', '" + mFillNumber + "', " + mRegionID + ", '" + mAddress + "', '" + mCity + "', '" + mPB + "', '" + mPhone + "', '" + mCountry + "')";
+                    command.ExecuteNonQuery();
+
+                    transaction.Commit();
+
+                    executed = true;
+                }
+                catch (Exception e1)
+                {
+                    new LogWriter(e1);
+                    try
+                    {
+                        transaction.Rollback();
+                        executed = false;
+                        throw;
+                    }
+                    catch (Exception e2)
+                    {
+                        new LogWriter(e2);
+                        throw;
+                    }
+                }
+                finally
+                {
+                    if (cnn.State.ToString().Equals("Open"))
+                        cnn.Close();
+                }
+            }
+            dataReader.Close();
+            cnn.Close();
+            return executed;
+        }
+
+        public Boolean UpdateFilToDB(String mTvrtkeCode, String mFillNumber, long mRegionID, String mAddress, String mCity, String mPB, String mPhone, String mCountry)
+        {
+            Boolean executed = false;
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "select Count(FilNumber) from Filijale f where f.TvrtkeCode = '" + mTvrtkeCode + "' and FilNumber = '" + mFillNumber + "'";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (!dataReader.HasRows && dataReader.GetValue(0).Equals(0))
+            {
+                executed = false;
+                dataReader.Close();
+            }
+            else
+            {
+                dataReader.Close();
+                command = cnn.CreateCommand();
+                SqlTransaction transaction = cnn.BeginTransaction();
+                command.Connection = cnn;
+                command.Transaction = transaction;
+
+                try
+                {
+                    command.CommandText = "UPDATE Filijale Set TvrtkeCode = '" + mTvrtkeCode + "', FilNumber = '" + mFillNumber + "', RegionID = " + mRegionID +
+                        ", Address = '" + mAddress + "', City = '" + mCity + "', PB = '" + mPB + "', Phone = '" + mPhone + "', Country =  '" + mCountry + "' where TvrtkeCode = '" + mTvrtkeCode + "' and FilNumber = '" + mFillNumber + "'";
                     command.ExecuteNonQuery();
 
                     transaction.Commit();
