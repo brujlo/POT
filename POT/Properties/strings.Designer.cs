@@ -124,11 +124,20 @@ namespace POT.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Date.
+        ///   Looks up a localized string similar to Date made.
         /// </summary>
         internal static string Date {
             get {
                 return ResourceManager.GetString("Date", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Date.
+        /// </summary>
+        internal static string DateSignature {
+            get {
+                return ResourceManager.GetString("DateSignature", resourceCulture);
             }
         }
         
@@ -331,7 +340,7 @@ namespace POT.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TIME.
+        ///   Looks up a localized string similar to Date print.
         /// </summary>
         internal static string Time {
             get {

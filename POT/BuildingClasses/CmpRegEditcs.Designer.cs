@@ -298,6 +298,8 @@
             this.comboBox3.Size = new System.Drawing.Size(124, 31);
             this.comboBox3.Sorted = true;
             this.comboBox3.TabIndex = 12;
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
+            this.comboBox3.Leave += new System.EventHandler(this.comboBox3_Leave);
             // 
             // comboBox2
             // 
@@ -518,19 +520,19 @@
             // 
             // textBox10
             // 
-            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.textBox10.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.textBox10.Location = new System.Drawing.Point(16, 512);
             this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(359, 30);
+            this.textBox10.Size = new System.Drawing.Size(359, 32);
             this.textBox10.TabIndex = 7;
             // 
             // comboBox6
             // 
-            this.comboBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.comboBox6.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.comboBox6.FormattingEnabled = true;
             this.comboBox6.Location = new System.Drawing.Point(16, 110);
             this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(359, 33);
+            this.comboBox6.Size = new System.Drawing.Size(359, 31);
             this.comboBox6.TabIndex = 1;
             this.comboBox6.SelectedIndexChanged += new System.EventHandler(this.comboBox6_SelectedIndexChanged);
             this.comboBox6.Leave += new System.EventHandler(this.comboBox6_Leave);
@@ -610,54 +612,54 @@
             // 
             // textBox17
             // 
-            this.textBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.textBox17.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.textBox17.Location = new System.Drawing.Point(16, 446);
             this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(359, 30);
+            this.textBox17.Size = new System.Drawing.Size(359, 32);
             this.textBox17.TabIndex = 6;
             // 
             // textBox16
             // 
-            this.textBox16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.textBox16.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.textBox16.Location = new System.Drawing.Point(16, 380);
             this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(359, 30);
+            this.textBox16.Size = new System.Drawing.Size(359, 32);
             this.textBox16.TabIndex = 5;
             // 
             // textBox15
             // 
-            this.textBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.textBox15.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.textBox15.Location = new System.Drawing.Point(16, 314);
             this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(359, 30);
+            this.textBox15.Size = new System.Drawing.Size(359, 32);
             this.textBox15.TabIndex = 4;
             // 
             // textBox12
             // 
-            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.textBox12.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.textBox12.Location = new System.Drawing.Point(16, 248);
             this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(359, 30);
+            this.textBox12.Size = new System.Drawing.Size(359, 32);
             this.textBox12.TabIndex = 3;
             // 
             // comboBox5
             // 
-            this.comboBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.comboBox5.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Location = new System.Drawing.Point(16, 179);
             this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(359, 33);
+            this.comboBox5.Size = new System.Drawing.Size(359, 31);
             this.comboBox5.Sorted = true;
             this.comboBox5.TabIndex = 2;
             this.comboBox5.TextChanged += new System.EventHandler(this.comboBox5_TextChanged);
             // 
             // comboBox4
             // 
-            this.comboBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.comboBox4.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Location = new System.Drawing.Point(16, 41);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(359, 33);
+            this.comboBox4.Size = new System.Drawing.Size(359, 31);
             this.comboBox4.TabIndex = 0;
             this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
             this.comboBox4.TextChanged += new System.EventHandler(this.comboBox4_TextChanged);

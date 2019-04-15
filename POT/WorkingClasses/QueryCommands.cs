@@ -110,26 +110,26 @@ namespace POT
         {
             List<String> arr = new List<string>();
 
-            query = "Select * from Users where UserID = " + int.Parse(mUserID);
-            command.ExecuteNonQuery();
-            SqlDataReader dataReader = command.ExecuteReader();
             //SqlConnection cnn = cn.Connect(Uname, Pass);
             cnn = cn.Connect(Uname, Pass);
+            query = "Select * from Users where UserID = " + int.Parse(mUserID);
             command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
             dataReader.Read();
 
             if (cn.TestConnection(cnn))
             {
                 if (dataReader.HasRows)
                 {
-                    arr.Add(dataReader.GetDecimal(0).ToString("0.00").Replace(".00", String.Empty));
+                    arr.Add(dataReader.GetDecimal(0).ToString("0").Replace(".00", String.Empty));
                     arr.Add(dataReader.GetString(1));
                     arr.Add(dataReader.GetString(2));
                     arr.Add(dataReader.GetString(3));
                     arr.Add(dataReader.GetString(4));
                     arr.Add(dataReader.GetString(5));
                     arr.Add(dataReader.GetString(6));
-                    arr.Add(dataReader.GetDecimal(7).ToString("0.00").Replace(".00", String.Empty));
+                    arr.Add(dataReader.GetDecimal(7).ToString("0").Replace(".00", String.Empty));
                 }
                 else
                 {
@@ -362,12 +362,141 @@ namespace POT
             return tempPart;
         }
 
+        public List<PartSifrarnik> GetPartsAllSifrarnik()
+        {
+            PartSifrarnik tempPart = new PartSifrarnik();
+            List<PartSifrarnik> prs = new List<PartSifrarnik>();
+
+            try
+            {
+                //SqlConnection cnn = cn.Connect(Uname, Pass);
+                cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+                query = "Select * from Sifrarnik";
+                command = new SqlCommand(query, cnn);
+                command.ExecuteNonQuery();
+
+                using (SqlDataReader dataReader = command.ExecuteReader())
+                {
+                    dataReader.Read();
+
+                    if (dataReader.HasRows)
+                    {
+                        do
+                        {
+                            tempPart.CategoryCode = long.Parse(dataReader["CategoryCode"].ToString());
+                            tempPart.CategoryName = dataReader["CategoryName"].ToString();
+                            tempPart.PartCode = long.Parse(dataReader["PartCode"].ToString());
+                            tempPart.PartName = dataReader["PartName"].ToString();
+                            tempPart.SubPartCode = long.Parse(dataReader["SubPartCode"].ToString());
+                            tempPart.SubPartName = dataReader["SubPartName"].ToString();
+                            tempPart.PartNumber = dataReader["PartNumber"].ToString();
+                            tempPart.PriceInKn = decimal.Parse(dataReader["PriceInKn"].ToString());
+                            tempPart.PriceOutKn = decimal.Parse(dataReader["PriceOutKn"].ToString());
+                            tempPart.PriceInEur = decimal.Parse(dataReader["PriceInEur"].ToString());
+                            tempPart.PriceOutEur = decimal.Parse(dataReader["PriceOutEur"].ToString());
+                            tempPart.FullCode = long.Parse(dataReader["FullCode"].ToString());
+                            tempPart.FullName = dataReader["FullName"].ToString();
+                            tempPart.Packing = dataReader["Packing"].ToString();
+                            prs.Add(tempPart);
+                        } while (dataReader.Read()) ;
+                    }
+                }
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
+                throw;
+            }
+            finally
+            {
+                if (cnn.State.ToString().Equals("Open"))
+                    cnn.Close();
+            }
+            return prs;
+        }
+
         public List<String> ListPartsByCodeRegionStateS(String Uname, String Pass, long mCodePartFull, long mStorageID, String mState)
         {
             List<String> arr = new List<string>();
             //SqlConnection cnn = cn.Connect(Uname, Pass);
             cnn = cn.Connect(Uname, Pass);
             query = "Select * from Parts where CodePartFull = " + mCodePartFull + " and StorageID = " + mStorageID + " and State = '" + mState + "'";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                do
+                {
+                    arr.Add(dataReader["PartID"].ToString());
+                    arr.Add(dataReader["CodePartFull"].ToString());
+                    arr.Add(dataReader["PartialCode"].ToString());
+                    arr.Add(dataReader["SN"].ToString());
+                    arr.Add(dataReader["CN"].ToString());
+                    arr.Add(dataReader["DateIn"].ToString());
+                    arr.Add(dataReader["DateOut"].ToString());
+                    arr.Add(dataReader["DateSend"].ToString());
+                    arr.Add(dataReader["StorageID"].ToString());
+                    arr.Add(dataReader["State"].ToString());
+                    arr.Add(dataReader["CompanyO"].ToString());
+                    arr.Add(dataReader["CompanyC"].ToString());
+                } while (dataReader.Read());
+            }
+            else
+            {
+                arr.Add("nok");
+            }
+            dataReader.Close();
+            cnn.Close();
+            return arr;
+        }
+
+        public List<String> GetListPartsByPartIDFromParts(long mPartID)
+        {
+            List<String> arr = new List<string>();
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "Select * from Parts where PartID = " + mPartID;
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                do
+                {
+                    arr.Add(dataReader["PartID"].ToString());
+                    arr.Add(dataReader["CodePartFull"].ToString());
+                    arr.Add(dataReader["PartialCode"].ToString());
+                    arr.Add(dataReader["SN"].ToString());
+                    arr.Add(dataReader["CN"].ToString());
+                    arr.Add(dataReader["DateIn"].ToString());
+                    arr.Add(dataReader["DateOut"].ToString());
+                    arr.Add(dataReader["DateSend"].ToString());
+                    arr.Add(dataReader["StorageID"].ToString());
+                    arr.Add(dataReader["State"].ToString());
+                    arr.Add(dataReader["CompanyO"].ToString());
+                    arr.Add(dataReader["CompanyC"].ToString());
+                } while (dataReader.Read());
+            }
+            else
+            {
+                arr.Add("nok");
+            }
+            dataReader.Close();
+            cnn.Close();
+            return arr;
+        }
+
+        public List<String> GetListPartsByPartIDFromPartsPoslano(long mPartID)
+        {
+            List<String> arr = new List<string>();
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "Select * from PartsPoslano where PartID = " + mPartID;
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
             SqlDataReader dataReader = command.ExecuteReader();
@@ -594,11 +723,48 @@ namespace POT
             return arr;
         }
 
-        public List<String> CompanyInfoByName(String Uname, String Pass, String mName)
+        public List<String> CompanyInfoByID(String Uname, String Pass, long mID)
         {
             List<String> arr = new List<string>();
             //SqlConnection cnn = cn.Connect(Uname, Pass);
             cnn = cn.Connect(Uname, Pass);
+            query = "Select * from Tvrtke where ID = " + mID;
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                arr.Add(dataReader["ID"].ToString());
+                arr.Add(dataReader["Name"].ToString());
+                arr.Add(dataReader["Address"].ToString());
+                arr.Add(dataReader["City"].ToString());
+                arr.Add(dataReader["PB"].ToString());
+                arr.Add(dataReader["OIB"].ToString());
+                arr.Add(dataReader["Contact"].ToString());
+                arr.Add(dataReader["BIC"].ToString());
+                arr.Add(dataReader["KN"].ToString());
+                arr.Add(dataReader["Eur"].ToString());
+                arr.Add(dataReader["Code"].ToString());
+                arr.Add(dataReader["Country"].ToString());
+                arr.Add(dataReader["RegionID"].ToString());
+                arr.Add(dataReader["email"].ToString());
+            }
+            else
+            {
+                arr.Add("nok");
+            }
+            dataReader.Close();
+            cnn.Close();
+            return arr;
+        }
+
+        public List<String> CompanyInfoByName(String mName)
+        {
+            List<String> arr = new List<string>();
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
             query = "Select * from Tvrtke where Name = '" + mName + "'";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -1157,6 +1323,342 @@ namespace POT
             return arr;
         }
 
+        public List<long> GetAllOTPID()
+        {
+            List<long> arr = new List<long>();
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "Select Distinct otpID from OTP order by otpID asc";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                do
+                {
+                    arr.Add(long.Parse(dataReader["otpID"].ToString()));
+                } while (dataReader.Read());
+            }
+            else
+            {
+                arr.Add(-1);
+            }
+            dataReader.Close();
+            cnn.Close();
+            return arr;
+        }
+
+        public List<long> GetAllOTPcustomerID()
+        {
+            List<long> arr = new List<long>();
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "Select Distinct customerID from OTP order by customerID asc";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                do
+                {
+                    arr.Add(long.Parse(dataReader["customerID"].ToString()));
+                } while (dataReader.Read());
+            }
+            else
+            {
+                arr.Add(-1);
+            }
+            dataReader.Close();
+            cnn.Close();
+            return arr;
+        }
+
+        public List<String> GetAllOTPdateCreated()
+        {
+            List<String> arr = new List<string>();
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "Select Distinct dateCreated from OTP";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                do
+                {
+                    arr.Add(dataReader["dateCreated"].ToString());
+                } while (dataReader.Read());
+            }
+            else
+            {
+                arr.Add("nok");
+            }
+
+            try
+            {
+                List<DateTime> dates = new List<DateTime>();
+
+                foreach (String a in arr)
+                {
+                    dates.Add(DateTime.Parse(a));
+                }
+
+                dates.Sort();
+                arr.Clear();
+                DateConverter dc = new DateConverter();
+
+                foreach (DateTime a in dates)
+                {
+                    arr.Add(dc.ConvertDDMMYY(a.ToShortDateString()));
+                }
+            }
+            catch(Exception e1)
+            {
+                new LogWriter(e1);
+                throw;
+            }
+
+            dataReader.Close();
+            cnn.Close();
+            return arr;
+        }
+
+        public List<String> GetAllInfoOTPBy(String what, String value)
+        {
+            List<String> arr = new List<string>();
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            if (what.Equals("dateCreated"))
+                query = "Select * from OTP where " + what + " = '" + value + "' order by otpID";
+            else
+                query = "Select * from OTP where " + what + " = " + value + " order by otpID";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                do
+                {
+                    arr.Add(dataReader["otpID"].ToString());
+                    arr.Add(dataReader["customerID"].ToString());
+                    arr.Add(dataReader["dateCreated"].ToString());
+                    arr.Add(dataReader["napomena"].ToString());
+                    arr.Add(dataReader["primID"].ToString());
+                    arr.Add(dataReader["userID"].ToString());
+                    arr.Add(dataReader["branchID"].ToString());
+                } while (dataReader.Read());
+            }
+            else
+            {
+                arr.Add("nok");
+            }
+            dataReader.Close();
+            cnn.Close();
+            return arr;
+        }
+
+        public List<long> GetAllpartIDByOtpID(long pOtpID)
+        {
+            List<long> arr = new List<long>();
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "Select distinct partID from OTPparts where otpID = " + pOtpID  + " order by partID";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                do
+                {
+                    arr.Add(long.Parse(dataReader["partID"].ToString()));
+                } while (dataReader.Read());
+            }
+            else
+            {
+                arr.Add(-1);
+            }
+            dataReader.Close();
+            cnn.Close();
+            return arr;
+        }
+
+        public List<long> GetAllPRIMID()
+        {
+            List<long> arr = new List<long>();
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "Select Distinct primID from PRIM order by primID asc";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                do
+                {
+                    arr.Add(long.Parse(dataReader["primID"].ToString()));
+                } while (dataReader.Read());
+            }
+            else
+            {
+                arr.Add(-1);
+            }
+            dataReader.Close();
+            cnn.Close();
+            return arr;
+        }
+
+        public List<long> GetAllPRIMcustomerID()
+        {
+            List<long> arr = new List<long>();
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "Select Distinct customerID from PRIM order by customerID asc";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                do
+                {
+                    arr.Add(long.Parse(dataReader["customerID"].ToString()));
+                } while (dataReader.Read());
+            }
+            else
+            {
+                arr.Add(-1);
+            }
+            dataReader.Close();
+            cnn.Close();
+            return arr;
+        }
+
+        public List<String> GetAllPRIMdateCreated()
+        {
+            List<String> arr = new List<string>();
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "Select Distinct dateCreated from PRIM";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                do
+                {
+                    arr.Add(dataReader["dateCreated"].ToString());
+                } while (dataReader.Read());
+            }
+            else
+            {
+                arr.Add("nok");
+            }
+
+            try
+            {
+                List<DateTime> dates = new List<DateTime>();
+
+                foreach (String a in arr)
+                {
+                    dates.Add(DateTime.Parse(a));
+                }
+
+                dates.Sort();
+                arr.Clear();
+                DateConverter dc = new DateConverter();
+
+                foreach (DateTime a in dates)
+                {
+                    arr.Add(dc.ConvertDDMMYY(a.ToShortDateString()));
+                }
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
+                throw;
+            }
+
+            dataReader.Close();
+            cnn.Close();
+            return arr;
+        }
+
+        public List<String> GetAllInfoPRIMBy(String what, String value)
+        {
+            List<String> arr = new List<string>();
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            if (what.Equals("dateCreated"))
+                query = "Select * from PRIM where " + what + " = '" + value + "' order by primID";
+            else
+                query = "Select * from PRIM where " + what + " = " + value + " order by primID";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                do
+                {
+                    arr.Add(dataReader["primID"].ToString());
+                    arr.Add(dataReader["customerID"].ToString());
+                    arr.Add(dataReader["dateCreated"].ToString());
+                    arr.Add(dataReader["napomena"].ToString());
+                    arr.Add(dataReader["userID"].ToString());
+                } while (dataReader.Read());
+            }
+            else
+            {
+                arr.Add("nok");
+            }
+            dataReader.Close();
+            cnn.Close();
+            return arr;
+        }
+
+        public List<long> GetAllpartIDByPrimID(long pPrimID)
+        {
+            List<long> arr = new List<long>();
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "Select distinct partID from PRIMparts where primID = " + pPrimID + " order by partID";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                do
+                {
+                    arr.Add(long.Parse(dataReader["partID"].ToString()));
+                } while (dataReader.Read());
+            }
+            else
+            {
+                arr.Add(-1);
+            }
+            dataReader.Close();
+            cnn.Close();
+            return arr;
+        }
+
         public String PRIMUnesiUredajeDaSuPrimljeniInnner(String Uname, String Pass, List<Part> PartsID, long RegionS, long RegionR, long otpID, String napomena)
         {
             String executed = "nok";
@@ -1307,7 +1809,7 @@ namespace POT
             return executed;
         }
 
-        public String OTPUnesiUredajeDaSuPrimljeni(String Uname, String Pass, List<Part> ListOfParts, Company cmpR, Company cmpS, String napomena)
+        public String OTPUnesiUredajeDaSuPrimljeni(String Uname, String Pass, List<Part> ListOfParts, Company cmpR, Company cmpS, String napomena, long mBranchID)
         {
             String executed = "nok";
             long otpCnt = 0;
@@ -1338,7 +1840,7 @@ namespace POT
 
                 try
                 {
-                    command.CommandText = "INSERT INTO OTP (otpID, customerID, dateCreated, napomena, userID) VALUES (" + otpCnt + ", " + cmpR.ID + ", '" + DateTime.Now.ToString("dd.MM.yy.") + "', '" + napomena + "', " +WorkingUser.UserID + ")";
+                    command.CommandText = "INSERT INTO OTP (otpID, customerID, dateCreated, napomena, userID, branchID) VALUES (" + otpCnt + ", " + cmpR.ID + ", '" + DateTime.Now.ToString("dd.MM.yy.") + "', '" + napomena + "', " +WorkingUser.UserID + ", " + mBranchID + ")";
                     command.ExecuteNonQuery();
 
                     for (int i = 0; i < ListOfParts.Count; i++)
@@ -1423,7 +1925,7 @@ namespace POT
 
                 try
                 {
-                    command.CommandText = "INSERT INTO OTP (otpID, customerID, dateCreated, napomena, userID) VALUES (" + otpCnt + ", " + cmpR.ID + ", '" + DateTime.Now.ToString("dd.MM.yy.") + "', '" + napomena + "', " + WorkingUser.UserID + ")";
+                    command.CommandText = "INSERT INTO OTP (otpID, customerID, dateCreated, napomena, userID, branchID) VALUES (" + otpCnt + ", " + cmpR.ID + ", '" + DateTime.Now.ToString("dd.MM.yy.") + "', '" + napomena + "', " + WorkingUser.UserID + ")";
                     command.ExecuteNonQuery();
 
                     for (int i = 0; i < ListOfParts.Count; i++)
@@ -2147,6 +2649,41 @@ namespace POT
             return arr;
         }
 
+        public List<String> GetFillByID(long mFillID)
+        {
+            List<String> arr = new List<string>();
+            //SqlConnection cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "Select * from Filijale where FilID = " + mFillID;
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                do
+                {
+                    arr.Add(dataReader["filID"].ToString());
+                    arr.Add(dataReader["tvrtkeCode"].ToString());
+                    arr.Add(dataReader["filNumber"].ToString());
+                    arr.Add(dataReader["regionID"].ToString());
+                    arr.Add(dataReader["address"].ToString());
+                    arr.Add(dataReader["city"].ToString());
+                    arr.Add(dataReader["pb"].ToString());
+                    arr.Add(dataReader["phone"].ToString());
+                    arr.Add(dataReader["country"].ToString());
+                } while (dataReader.Read());
+            }
+            else
+            {
+                arr.Add("nok");
+            }
+            dataReader.Close();
+            cnn.Close();
+            return arr;
+        }
+
         public List<String> AllFilInfoSortByFilNumber()
         {
             List<String> arr = new List<string>();
@@ -2300,6 +2837,66 @@ namespace POT
             dataReader.Close();
             cnn.Close();
             return executed;
+        }
+
+        public Boolean UpdateTvrtke(long mID, String mName, String mAddress, String mCity, String mPB, String mOIB, String mContact, String mBIC, String mKN, String mEUR, String mCode, String mCountry, long mRegionID, String mEmail)
+        {
+            Boolean isExecuted = false;
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "select Count(ID) from Tvrtke where ID = " + mID;
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (!dataReader.HasRows)
+            {
+                isExecuted = false;
+                dataReader.Close();
+            }
+            else
+            {
+                dataReader.Close();
+                command = cnn.CreateCommand();
+                SqlTransaction transaction = cnn.BeginTransaction();
+                command.Connection = cnn;
+                command.Transaction = transaction;
+                
+                try
+                {
+                    command.CommandText = "UPDATE Tvrtke SET Name = '" + mName +"', Address = '" + mAddress + "', City = '" + mCity + "', PB = '" + mPB + "', OIB = '" + mOIB +"', Contact = '" + mContact + "', BIC = '" + mBIC + "', KN = " + mKN + 
+                        ", Eur = " + mEUR + ", Code = '" + mCode + "', Country = '" + mCountry + "', RegionID = " + mRegionID + ", email = '" + mEmail + "' where ID = " + mID;
+                    command.ExecuteNonQuery();
+
+                    transaction.Commit();
+                    isExecuted = true;
+                }
+                catch (Exception e1)
+                {
+                    isExecuted = false;
+                    new LogWriter(e1);
+                    try
+                    {
+                        transaction.Rollback();
+                        isExecuted = false;
+                        throw;
+                    }
+                    catch (Exception e2)
+                    {
+                        new LogWriter(e2);
+                        throw;
+                    }
+                }
+                finally
+                {
+                    if (cnn.State.ToString().Equals("Open"))
+                        cnn.Close();
+                }
+            }
+            dataReader.Close();
+            cnn.Close();
+            return isExecuted;
         }
     }
 }

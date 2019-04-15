@@ -132,7 +132,7 @@
     <comment>PrintME</comment>
   </data>
   <data name="Date" xml:space="preserve">
-    <value>Datum</value>
+    <value>Datum izrade</value>
     <comment>PrintME</comment>
   </data>
   <data name="DeleteDBUser" xml:space="preserve">
@@ -206,7 +206,7 @@
     <comment>PrintME-zaglavlje</comment>
   </data>
   <data name="Time" xml:space="preserve">
-    <value>Vrijeme</value>
+    <value>Datum ispisa</value>
     <comment>PrintME-zaglavlje</comment>
   </data>
   <data name="UserID" xml:space="preserve">
@@ -239,5 +239,9 @@
   </data>
   <data name="branchAddress" xml:space="preserve">
     <value>Adresa</value>
+  </data>
+  <data name="DateSignature" xml:space="preserve">
+    <value>Datum</value>
+    <comment>PrintME-zaglavlje</comment>
   </data>
 </root>

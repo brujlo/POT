@@ -34,7 +34,7 @@ namespace POT.MyTypes
 
             try
             {
-                resultArr = qc.CompanyInfoByName(WorkingUser.Username, WorkingUser.Password, mName);
+                resultArr = qc.CompanyInfoByName(mName);
 
                 ID = long.Parse(resultArr[0]);
                 Name = resultArr[1].Trim();
@@ -71,6 +71,44 @@ namespace POT.MyTypes
             try
             {
                 resultArr = qc.CompanyInfoByCode(WorkingUser.Username, WorkingUser.Password, mCode);
+
+                ID = long.Parse(resultArr[0]);
+                Name = resultArr[1].Trim();
+                Address = resultArr[2].Trim();
+                City = resultArr[3].Trim();
+                PB = resultArr[4].Trim();
+                OIB = resultArr[5].Trim();
+                Contact = resultArr[6].Trim();
+                BIC = resultArr[7].Trim();
+                KN = decimal.Parse(resultArr[8]);
+                EUR = decimal.Parse(resultArr[9]);
+                Code = resultArr[10].Trim();
+                Country = resultArr[11].Trim();
+                RegionID = long.Parse(resultArr[12]);
+                Email = resultArr[13].Trim();
+
+                count++;
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
+                MessageBox.Show(e1.Message);
+                return false;
+            }
+
+            return true;
+        }
+
+        public Boolean GetCompanyInfoByID(long mID)
+        {
+            //Part mPart = new Part();
+
+            QueryCommands qc = new QueryCommands();
+            List<String> resultArr = new List<string>();
+
+            try
+            {
+                resultArr = qc.CompanyInfoByID(WorkingUser.Username, WorkingUser.Password, mID);
 
                 ID = long.Parse(resultArr[0]);
                 Name = resultArr[1].Trim();

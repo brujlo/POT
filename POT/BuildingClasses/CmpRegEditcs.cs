@@ -370,12 +370,78 @@ namespace POT.BuildingClasses
 
         private void button1_Click(object sender, EventArgs e)
         {
+            comboBox3_Leave(sender, e);
 
+            ///////////////// LogMe ////////////////////////
+            String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
+            String usedQC = "UpdateTvrtke";
+            String data = "";
+            String Result = "";
+            LogWriter lw = new LogWriter();
+            ////////////////////////////////////////////////
+            ///
+            try
+            {
+                long regID = long.Parse(comboBox3.Text);
+                String eur = textBox9.Text.Replace(',', '.');
+                String kn = textBox8.Text.Replace(',', '.');
+
+                QueryCommands qc = new QueryCommands();
+                qc.UpdateTvrtke(long.Parse(textBox14.Text), comboBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, 
+                        textBox6.Text, textBox7.Text, kn, eur, comboBox2.Text, textBox11.Text, regID, textBox13.Text);
+
+                data = long.Parse(textBox14.Text) + ", " + comboBox1.Text + ", " + textBox2.Text + ", " + textBox3.Text + ", " + textBox4.Text + 
+                        ", " + textBox5.Text + ", " + textBox6.Text + ", " + textBox7.Text + ", " + kn + ", " + eur + ", " + comboBox2.Text + ", " + textBox11.Text + ", " + regID + ", " + textBox13.Text;
+            }
+            catch(Exception e1)
+            {
+                data = comboBox3.Text + ", " + textBox9.Text + ", " + textBox8.Text;
+                Result = "Cmp not updated." + Environment.NewLine + e1.ToString();
+                lw.LogMe(function, usedQC, data, Result);
+                new LogWriter(e1);
+                MessageBox.Show(Result);
+                return;
+            }
+
+            Result = "Cmp updated.";
+            lw.LogMe(function, usedQC, data, Result);
+            MessageBox.Show(Result);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            comboBox3_Leave(sender, e);
+        }
 
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            QueryCommands qc = new QueryCommands();
+            List<String> arr = qc.GetAllRegions(WorkingUser.Username, WorkingUser.Password);
+
+            for (int i = 0; i < arr.Count; i = i + 3)
+            {
+                if (arr[i].Equals(comboBox3.Text))
+                {
+                    textBox1.Text = arr[i + 2];
+                    break;
+                }
+            }
+        }
+
+        private void comboBox3_Leave(object sender, EventArgs e)
+        {
+            Boolean itIs = false;
+            foreach (var item in comboBox3.Items)
+            {
+                if (item.Equals(comboBox3.Text))
+                {
+                    itIs = true;
+                    break;
+                }
+            }
+
+            if (!itIs)
+                textBox1.ResetText();
         }
     }
 }

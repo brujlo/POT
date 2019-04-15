@@ -58,3 +58,5 @@ F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.IUS.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.Documents.Tickets.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.BuildingClasses.CmpRegEditcs.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.csprojAssemblyReference.cache
+F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.CopyPrintForms.cOTPcs.resources
+F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.CopyPrintForms.cPRIM.resources

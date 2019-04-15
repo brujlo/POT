@@ -26,6 +26,11 @@ namespace POT.WorkingClasses
         Boolean signature = false;
         Branch branch = new Branch();
 
+        public String datumIzrade = "";
+        public String datumIspisa = "";
+        public String izradioUser = "";
+        public String izradioRegija = "";
+
         int headerpointVer;
         int headerpointHor;
         int imgH = 0;  //75
@@ -104,8 +109,15 @@ namespace POT.WorkingClasses
         {
             partRows = Properties.Settings.Default.partRows;
             pageNbr = Properties.Settings.Default.pageNbr;
-            
-            
+
+            if (datumIzrade.Equals(""))
+                datumIzrade = DateTime.Now.ToString("dd.MM.yy.");
+            if (datumIspisa.Equals(""))
+                datumIspisa = DateTime.Now.ToString("dd.MM.yy.");
+            if (izradioUser.Equals(""))
+                izradioUser = WorkingUser.UserID.ToString();
+            if (izradioRegija.Equals(""))
+                izradioRegija = WorkingUser.RegionID.ToString();
 
             e.HasMorePages = false;
 
@@ -152,11 +164,11 @@ namespace POT.WorkingClasses
                         }
 
                         //PRVI RED JE NASLOV ZA IZRADIO
-                        e.Graphics.DrawString(Properties.strings.MadeBy.ToUpper() + ": ", new Font("Calibri light", fontSizeS - 1, FontStyle.Underline | FontStyle.Italic), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * (pomak + 3))));
-                        e.Graphics.DrawString(Properties.strings.Date + ": " + DateTime.Now.ToString("dd.MM.yyyy."), new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * (pomak + 4))));
-                        e.Graphics.DrawString(Properties.strings.Time + ": " + DateTime.Now.ToString("hh:mm"), new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * (pomak + 5))));
-                        e.Graphics.DrawString(Properties.strings.UserID + ": " + WorkingUser.UserID, new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * (pomak + 6))));
-                        e.Graphics.DrawString(Properties.strings.RegionID + ": " + WorkingUser.RegionID, new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * (pomak + 7))));
+                        e.Graphics.DrawString(Properties.strings.MadeBy.ToUpper() + ": ", new Font("Calibri light", fontSizeS - 1, FontStyle.Underline | FontStyle.Italic), Brushes.Black, new Point(margins.Left, margins.Top - 5 + (moveBy * (pomak + 3))));
+                        e.Graphics.DrawString(Properties.strings.Date + ": " + datumIzrade, new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * (pomak + 4))));
+                        e.Graphics.DrawString(Properties.strings.Time + ": " + datumIspisa, new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * (pomak + 5))));
+                        e.Graphics.DrawString(Properties.strings.UserID + ": " + izradioUser, new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * (pomak + 6))));
+                        e.Graphics.DrawString(Properties.strings.RegionID + ": " + izradioRegija, new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * (pomak + 7))));
                         
                         //KORISNIK - da se ne vidi ime i prezime, odkomentiraj da se vidi
                         //e.Graphics.DrawString(Properties.strings.MadeBy + ": " + WorkingUser.Name + " " + WorkingUser.Surename, new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * 13)));
@@ -539,7 +551,8 @@ namespace POT.WorkingClasses
                             signatureInitiated = true;
                             headerpointVer = headerpointVer + (moveBy * 12);
 
-                            if (headerpointVer + (moveBy * 16) + 20 > (bounds.Bottom - margins.Bottom))
+                            //if (headerpointVer + (moveBy * 16) + 20 > (bounds.Bottom - margins.Bottom))
+                            if (headerpointVer + 40 > (bounds.Bottom - margins.Bottom))
                             {
                                 //printingSN = true;
                                 e.HasMorePages = true;
@@ -554,7 +567,7 @@ namespace POT.WorkingClasses
                             e.Graphics.DrawLine(new Pen(Brushes.Black), new Point(margins.Left, headerpointVer), new Point(margins.Left + lineLength, headerpointVer));
                             headerpointVer = headerpointVer + (moveBy / 2);
 
-                            workingStr = Properties.strings.Date;
+                            workingStr = Properties.strings.DateSignature;
                             fnt = fitFontSize(e, workingStr, 7, lineLength);
                             measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
                             e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(margins.Left + ((lineLength - (int)measureStr) / 2), headerpointVer));

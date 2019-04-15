@@ -562,7 +562,7 @@ namespace POT
                                     else if (resultArrC[index].RegionID != Properties.Settings.Default.TransportIDRegion &&
                                             resultArrC[index].RegionID != Properties.Settings.Default.ServisIDRegion)
                                     {
-                                        OTPNumber = qc.OTPUnesiUredajeDaSuPrimljeni(WorkingUser.Username, WorkingUser.Password, partList, cmpR, cmpS, textBox4.Text);
+                                        OTPNumber = qc.OTPUnesiUredajeDaSuPrimljeni(WorkingUser.Username, WorkingUser.Password, partList, cmpR, cmpS, textBox4.Text, br.FilID);
                                     }
                                     else
                                     {

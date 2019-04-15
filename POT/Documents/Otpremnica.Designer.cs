@@ -44,7 +44,6 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.printPreviewDialogOtp = new System.Windows.Forms.PrintPreviewDialog();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
@@ -68,6 +67,7 @@
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.includeInOTP = new System.Windows.Forms.CheckBox();
+            this.printPreviewDialogOtp = new System.Windows.Forms.PrintPreviewDialog();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -243,16 +243,6 @@
             this.label10.Size = new System.Drawing.Size(70, 20);
             this.label10.TabIndex = 62;
             this.label10.Text = "cnt / 200";
-            // 
-            // printPreviewDialogOtp
-            // 
-            this.printPreviewDialogOtp.AutoScrollMargin = new System.Drawing.Size(0, 0);
-            this.printPreviewDialogOtp.AutoScrollMinSize = new System.Drawing.Size(0, 0);
-            this.printPreviewDialogOtp.ClientSize = new System.Drawing.Size(400, 300);
-            this.printPreviewDialogOtp.Enabled = true;
-            this.printPreviewDialogOtp.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialogOtp.Icon")));
-            this.printPreviewDialogOtp.Name = "printPreviewDialogPrim";
-            this.printPreviewDialogOtp.Visible = false;
             // 
             // label9
             // 
@@ -556,6 +546,16 @@
             this.includeInOTP.Text = "Include";
             this.includeInOTP.UseVisualStyleBackColor = true;
             // 
+            // printPreviewDialogOtp
+            // 
+            this.printPreviewDialogOtp.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialogOtp.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialogOtp.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialogOtp.Enabled = true;
+            this.printPreviewDialogOtp.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialogOtp.Icon")));
+            this.printPreviewDialogOtp.Name = "printPreviewDialog1";
+            this.printPreviewDialogOtp.Visible = false;
+            // 
             // Otpremnica
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -624,7 +624,6 @@
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.PrintPreviewDialog printPreviewDialogOtp;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Button button2;
@@ -648,5 +647,6 @@
         private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox includeInOTP;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialogOtp;
     }
 }

@@ -86,6 +86,35 @@ namespace POT.MyTypes
             return resultArrB;
         }
 
+        public void GetFilByID(long mFillID)
+        {
+            QueryCommands qc = new QueryCommands();
+            List<String> resultArr = new List<string>();
+            FilID = 0;
+
+            try
+            {
+                resultArr = qc.GetFillByID(mFillID);
+                if (!resultArr[0].Equals("nok"))
+                {
+                    FilID = long.Parse(resultArr[0]);
+                    TvrtkeCode = resultArr[1].Trim();
+                    FilNumber = resultArr[2].Trim();
+                    RegionID = long.Parse(resultArr[3].Trim());
+                    Address = resultArr[4].Trim();
+                    City = resultArr[5].Trim();
+                    Pb = resultArr[6].Trim();
+                    Phone = resultArr[7].Trim();
+                    Country = resultArr[8];
+                }
+            }
+            catch (Exception ex)
+            {
+                new LogWriter(ex);
+                MessageBox.Show(ex.Message);
+            }
+        }
+
         public void SetFilByTvrtkeCodeFilNumber(String mTvrtkeCode, String mFilNumber)
         {
             QueryCommands qc = new QueryCommands();

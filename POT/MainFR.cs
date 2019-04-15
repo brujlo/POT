@@ -1,4 +1,5 @@
 ﻿using POT.BuildingClasses;
+using POT.CopyPrintForms;
 using POT.Documents;
 using POT.WorkingClasses;
 using System;
@@ -7,6 +8,7 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
 using System.Resources;
+using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -89,9 +91,10 @@ namespace POT
             try
             {
                 resultArr = qc.CurrentExchangeRate(WorkingUser.Username, WorkingUser.Password);
-                this.label15.Text = DateTime.Now.ToString(resultArr[2] + " kn");
-                this.label12.Text = DateTime.Now.ToString(resultArr[3] + " kn");
-                this.label11.Text = DateTime.Now.ToString(resultArr[4] + " kn");
+                this.label15.Text = resultArr[2] + " kn";
+                this.label12.Text = resultArr[3] + " kn";
+                this.label11.Text = resultArr[4] + " kn";
+                this.label35.Text = resultArr[1];
 
                 try
                 {
@@ -711,7 +714,24 @@ namespace POT
         {
             try
             {
-                MessageBox.Show(Properties.Settings.Default.Path);
+                var result = MessageBox.Show(Properties.Settings.Default.Path, "Log file path", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+
+                if (result == DialogResult.Cancel)
+                {
+                    try
+                    {
+                        var builder = new StringBuilder();
+                        builder.Append(Properties.Settings.Default.Path);
+                        builder.AppendLine();
+
+                        Clipboard.SetText(builder.ToString());
+                    }
+                    catch (Exception e1)
+                    {
+                        new LogWriter(e1);
+                        MessageBox.Show(e1.Message.ToString());
+                    }
+                }
             }
             catch (Exception e1)
             {
@@ -736,6 +756,19 @@ namespace POT
             {
                 new LogWriter(e1);
             }
+        }
+
+        private void linkLabel17_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            cOTPcs doc = new cOTPcs();
+            doc.Show();
+
+        }
+
+        private void linkLabel18_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            cPRIM doc = new cPRIM();
+            doc.Show();
         }
     }
 }

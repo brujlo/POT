@@ -1,5 +1,6 @@
 ﻿using POT.WorkingClasses;
 using System;
+using System.Collections.Generic;
 
 namespace POT.MyTypes
 {
@@ -57,6 +58,21 @@ namespace POT.MyTypes
                 throw;
             }
             return IsInitialized;
+        }
+
+        public List<PartSifrarnik> GetPartsFullSifrarnik()
+        {
+            try
+            {
+                QueryCommands qc = new QueryCommands();
+                List<PartSifrarnik> prs = qc.GetPartsAllSifrarnik();
+                return prs;
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
+                throw;
+            }
         }
 
 

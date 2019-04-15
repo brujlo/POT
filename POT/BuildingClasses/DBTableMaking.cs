@@ -298,9 +298,9 @@ namespace POT.BuildingClasses
                         command.CommandText = "ALTER TABLE  " + _DBName + ".dbo.RN CHECK CONSTRAINT [FK_RN_Ticket]";
                         command.ExecuteNonQuery();
 
-                        //OTP
-                        command.CommandText = "CREATE TABLE " + _DBName + ".dbo.OTP ([otpID][numeric](18, 0) NOT NULL,[customerID] [numeric] (18, 0) NOT NULL,[dateCreated] [nvarchar] (11) NOT NULL," +
-                            "[napomena] [nvarchar] (200) NULL,[primID] [numeric] (18, 0) NULL,[userID] [numeric] (18, 0) NULL,CONSTRAINT[UQ_OTPid] UNIQUE NONCLUSTERED([otpID] ASC)WITH(PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, " +
+                       //OTP
+                       command.CommandText = "CREATE TABLE " + _DBName + ".dbo.OTP ([otpID][numeric](18, 0) NOT NULL,[customerID] [numeric] (18, 0) NOT NULL,[dateCreated] [nvarchar] (11) NOT NULL," +
+                            "[napomena] [nvarchar] (200) NULL,[primID] [numeric] (18, 0) NULL,[userID] [numeric] (18, 0) NULL, branchID] [numeric] (18, 0) NULL, CONSTRAINT[UQ_OTPid] UNIQUE NONCLUSTERED([otpID] ASC)WITH(PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, " +
                             "IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON[PRIMARY]) ON[PRIMARY]";
                         command.ExecuteNonQuery();
 

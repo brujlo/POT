@@ -99,6 +99,13 @@
             this.linkLabel14 = new System.Windows.Forms.LinkLabel();
             this.linkLabel15 = new System.Windows.Forms.LinkLabel();
             this.linkLabel16 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel17 = new System.Windows.Forms.LinkLabel();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
+            this.splitContainer3 = new System.Windows.Forms.SplitContainer();
+            this.linkLabel18 = new System.Windows.Forms.LinkLabel();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -109,6 +116,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
+            this.splitContainer2.Panel1.SuspendLayout();
+            this.splitContainer2.Panel2.SuspendLayout();
+            this.splitContainer2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).BeginInit();
+            this.splitContainer3.Panel1.SuspendLayout();
+            this.splitContainer3.Panel2.SuspendLayout();
+            this.splitContainer3.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -157,7 +176,7 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(777, 144);
+            this.panel1.Location = new System.Drawing.Point(48, 118);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(196, 252);
@@ -340,12 +359,12 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel1.BackColor = System.Drawing.Color.Black;
             this.linkLabel1.Font = new System.Drawing.Font("Letter Gothic Std", 10F);
             this.linkLabel1.ForeColor = System.Drawing.Color.Transparent;
             this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.linkLabel1.LinkColor = System.Drawing.Color.Yellow;
-            this.linkLabel1.Location = new System.Drawing.Point(58, 66);
+            this.linkLabel1.Location = new System.Drawing.Point(54, 38);
             this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(178, 24);
@@ -357,12 +376,12 @@
             // linkLabel2
             // 
             this.linkLabel2.AutoSize = true;
-            this.linkLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel2.BackColor = System.Drawing.Color.Black;
             this.linkLabel2.Font = new System.Drawing.Font("Letter Gothic Std", 10F);
             this.linkLabel2.ForeColor = System.Drawing.Color.Transparent;
             this.linkLabel2.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.linkLabel2.LinkColor = System.Drawing.Color.Yellow;
-            this.linkLabel2.Location = new System.Drawing.Point(58, 102);
+            this.linkLabel2.Location = new System.Drawing.Point(54, 74);
             this.linkLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(178, 24);
@@ -374,12 +393,12 @@
             // linkLabel3
             // 
             this.linkLabel3.AutoSize = true;
-            this.linkLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel3.BackColor = System.Drawing.Color.Black;
             this.linkLabel3.Font = new System.Drawing.Font("Letter Gothic Std", 10F);
             this.linkLabel3.ForeColor = System.Drawing.Color.Transparent;
             this.linkLabel3.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.linkLabel3.LinkColor = System.Drawing.Color.Yellow;
-            this.linkLabel3.Location = new System.Drawing.Point(58, 374);
+            this.linkLabel3.Location = new System.Drawing.Point(54, 346);
             this.linkLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel3.Name = "linkLabel3";
             this.linkLabel3.Size = new System.Drawing.Size(166, 24);
@@ -391,12 +410,12 @@
             // linkLabel5
             // 
             this.linkLabel5.AutoSize = true;
-            this.linkLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel5.BackColor = System.Drawing.Color.Black;
             this.linkLabel5.Font = new System.Drawing.Font("Letter Gothic Std", 10F);
             this.linkLabel5.ForeColor = System.Drawing.Color.Transparent;
             this.linkLabel5.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.linkLabel5.LinkColor = System.Drawing.Color.Yellow;
-            this.linkLabel5.Location = new System.Drawing.Point(58, 138);
+            this.linkLabel5.Location = new System.Drawing.Point(54, 110);
             this.linkLabel5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel5.Name = "linkLabel5";
             this.linkLabel5.Size = new System.Drawing.Size(142, 24);
@@ -413,7 +432,7 @@
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label11.ForeColor = System.Drawing.Color.DimGray;
-            this.label11.Location = new System.Drawing.Point(330, 637);
+            this.label11.Location = new System.Drawing.Point(316, 83);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(0, 20);
@@ -427,7 +446,7 @@
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label12.ForeColor = System.Drawing.Color.DimGray;
-            this.label12.Location = new System.Drawing.Point(330, 616);
+            this.label12.Location = new System.Drawing.Point(316, 62);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(0, 20);
@@ -441,7 +460,7 @@
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label13.ForeColor = System.Drawing.Color.DimGray;
-            this.label13.Location = new System.Drawing.Point(236, 637);
+            this.label13.Location = new System.Drawing.Point(222, 83);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(130, 20);
@@ -456,7 +475,7 @@
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label14.ForeColor = System.Drawing.Color.DimGray;
-            this.label14.Location = new System.Drawing.Point(236, 616);
+            this.label14.Location = new System.Drawing.Point(222, 62);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(131, 20);
@@ -471,7 +490,7 @@
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label15.ForeColor = System.Drawing.Color.DimGray;
-            this.label15.Location = new System.Drawing.Point(330, 597);
+            this.label15.Location = new System.Drawing.Point(316, 43);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(0, 20);
@@ -485,7 +504,7 @@
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label16.ForeColor = System.Drawing.Color.DimGray;
-            this.label16.Location = new System.Drawing.Point(90, 618);
+            this.label16.Location = new System.Drawing.Point(76, 64);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(0, 20);
@@ -499,7 +518,7 @@
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label17.ForeColor = System.Drawing.Color.DimGray;
-            this.label17.Location = new System.Drawing.Point(90, 597);
+            this.label17.Location = new System.Drawing.Point(76, 43);
             this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(0, 20);
@@ -513,7 +532,7 @@
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label18.ForeColor = System.Drawing.Color.DimGray;
-            this.label18.Location = new System.Drawing.Point(236, 597);
+            this.label18.Location = new System.Drawing.Point(222, 43);
             this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(130, 20);
@@ -528,7 +547,7 @@
             this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label19.ForeColor = System.Drawing.Color.DimGray;
-            this.label19.Location = new System.Drawing.Point(18, 597);
+            this.label19.Location = new System.Drawing.Point(4, 43);
             this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(100, 20);
@@ -543,7 +562,7 @@
             this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label20.ForeColor = System.Drawing.Color.DimGray;
-            this.label20.Location = new System.Drawing.Point(18, 618);
+            this.label20.Location = new System.Drawing.Point(4, 64);
             this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(102, 20);
@@ -566,10 +585,10 @@
             this.panel3.Controls.Add(this.oib);
             this.panel3.Controls.Add(this.adresa);
             this.panel3.Controls.Add(this.infomail);
-            this.panel3.Location = new System.Drawing.Point(-4, 557);
+            this.panel3.Location = new System.Drawing.Point(0, -1);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1000, 33);
+            this.panel3.Size = new System.Drawing.Size(988, 33);
             this.panel3.TabIndex = 11;
             // 
             // www
@@ -645,12 +664,12 @@
             // linkLabel7
             // 
             this.linkLabel7.AutoSize = true;
-            this.linkLabel7.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel7.BackColor = System.Drawing.Color.Black;
             this.linkLabel7.Font = new System.Drawing.Font("Letter Gothic Std", 10F);
             this.linkLabel7.ForeColor = System.Drawing.Color.Transparent;
             this.linkLabel7.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.linkLabel7.LinkColor = System.Drawing.Color.Yellow;
-            this.linkLabel7.Location = new System.Drawing.Point(58, 174);
+            this.linkLabel7.Location = new System.Drawing.Point(54, 146);
             this.linkLabel7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel7.Name = "linkLabel7";
             this.linkLabel7.Size = new System.Drawing.Size(154, 24);
@@ -664,7 +683,7 @@
             this.label21.AutoSize = true;
             this.label21.BackColor = System.Drawing.Color.Transparent;
             this.label21.ForeColor = System.Drawing.Color.White;
-            this.label21.Location = new System.Drawing.Point(52, 43);
+            this.label21.Location = new System.Drawing.Point(48, 15);
             this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(34, 20);
@@ -674,9 +693,9 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.BackColor = System.Drawing.Color.Transparent;
+            this.label22.BackColor = System.Drawing.Color.Black;
             this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(49, 345);
+            this.label22.Location = new System.Drawing.Point(45, 317);
             this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(54, 20);
@@ -686,12 +705,12 @@
             // linkLabel6
             // 
             this.linkLabel6.AutoSize = true;
-            this.linkLabel6.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel6.BackColor = System.Drawing.Color.Black;
             this.linkLabel6.Font = new System.Drawing.Font("Letter Gothic Std", 10F);
             this.linkLabel6.ForeColor = System.Drawing.Color.Transparent;
             this.linkLabel6.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.linkLabel6.LinkColor = System.Drawing.Color.Yellow;
-            this.linkLabel6.Location = new System.Drawing.Point(359, 64);
+            this.linkLabel6.Location = new System.Drawing.Point(355, 36);
             this.linkLabel6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel6.Name = "linkLabel6";
             this.linkLabel6.Size = new System.Drawing.Size(94, 24);
@@ -705,7 +724,7 @@
             this.label23.AutoSize = true;
             this.label23.BackColor = System.Drawing.Color.Transparent;
             this.label23.ForeColor = System.Drawing.Color.White;
-            this.label23.Location = new System.Drawing.Point(349, 44);
+            this.label23.Location = new System.Drawing.Point(345, 16);
             this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(30, 20);
@@ -719,7 +738,7 @@
             this.version.BackColor = System.Drawing.Color.Transparent;
             this.version.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.version.ForeColor = System.Drawing.Color.Orange;
-            this.version.Location = new System.Drawing.Point(856, 642);
+            this.version.Location = new System.Drawing.Point(855, 88);
             this.version.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.version.Name = "version";
             this.version.Size = new System.Drawing.Size(59, 20);
@@ -729,12 +748,12 @@
             // linkLabel8
             // 
             this.linkLabel8.AutoSize = true;
-            this.linkLabel8.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel8.BackColor = System.Drawing.Color.Black;
             this.linkLabel8.Font = new System.Drawing.Font("Letter Gothic Std", 10F);
             this.linkLabel8.ForeColor = System.Drawing.Color.Transparent;
             this.linkLabel8.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.linkLabel8.LinkColor = System.Drawing.Color.Yellow;
-            this.linkLabel8.Location = new System.Drawing.Point(359, 101);
+            this.linkLabel8.Location = new System.Drawing.Point(355, 73);
             this.linkLabel8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel8.Name = "linkLabel8";
             this.linkLabel8.Size = new System.Drawing.Size(106, 24);
@@ -746,12 +765,12 @@
             // linkLabel9
             // 
             this.linkLabel9.AutoSize = true;
-            this.linkLabel9.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel9.BackColor = System.Drawing.Color.Black;
             this.linkLabel9.Font = new System.Drawing.Font("Letter Gothic Std", 10F);
             this.linkLabel9.ForeColor = System.Drawing.Color.Transparent;
             this.linkLabel9.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.linkLabel9.LinkColor = System.Drawing.Color.Yellow;
-            this.linkLabel9.Location = new System.Drawing.Point(58, 210);
+            this.linkLabel9.Location = new System.Drawing.Point(54, 182);
             this.linkLabel9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel9.Name = "linkLabel9";
             this.linkLabel9.Size = new System.Drawing.Size(214, 24);
@@ -764,7 +783,7 @@
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox7.Image = global::POT.Properties.Resources.documents_64px;
-            this.pictureBox7.Location = new System.Drawing.Point(313, 34);
+            this.pictureBox7.Location = new System.Drawing.Point(308, 6);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(30, 30);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -775,7 +794,7 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.Image = global::POT.Properties.Resources.search_64px;
-            this.pictureBox6.Location = new System.Drawing.Point(12, 336);
+            this.pictureBox6.Location = new System.Drawing.Point(8, 308);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(30, 30);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -786,7 +805,7 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Image = global::POT.Properties.Resources.gears_64px;
-            this.pictureBox5.Location = new System.Drawing.Point(12, 34);
+            this.pictureBox5.Location = new System.Drawing.Point(8, 6);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(30, 30);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -798,7 +817,7 @@
             this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.InitialImage = null;
-            this.pictureBox3.Location = new System.Drawing.Point(777, 32);
+            this.pictureBox3.Location = new System.Drawing.Point(48, 6);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(200, 100);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -810,7 +829,7 @@
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::POT.Properties.Resources.allRightsReserved;
-            this.pictureBox2.Location = new System.Drawing.Point(857, 596);
+            this.pictureBox2.Location = new System.Drawing.Point(856, 42);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(120, 40);
@@ -823,7 +842,7 @@
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::POT.Properties.Resources.EXE;
-            this.pictureBox1.Location = new System.Drawing.Point(756, 598);
+            this.pictureBox1.Location = new System.Drawing.Point(755, 44);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(90, 30);
@@ -833,11 +852,11 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Image = global::POT.Properties.Resources.ExitApp;
-            this.pictureBox4.Location = new System.Drawing.Point(903, 468);
+            this.pictureBox4.Location = new System.Drawing.Point(172, 382);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(72, 82);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -853,7 +872,7 @@
             this.label30.BackColor = System.Drawing.Color.Black;
             this.label30.Font = new System.Drawing.Font("Nirmala UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label30.ForeColor = System.Drawing.Color.White;
-            this.label30.Location = new System.Drawing.Point(894, 0);
+            this.label30.Location = new System.Drawing.Point(902, 9);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(75, 21);
             this.label30.TabIndex = 24;
@@ -869,10 +888,10 @@
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel2.Location = new System.Drawing.Point(0, 25);
+            this.panel2.Location = new System.Drawing.Point(2, 33);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1000, 2);
+            this.panel2.Size = new System.Drawing.Size(986, 2);
             this.panel2.TabIndex = 25;
             // 
             // label31
@@ -883,7 +902,7 @@
             this.label31.BackColor = System.Drawing.Color.Transparent;
             this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label31.ForeColor = System.Drawing.Color.DimGray;
-            this.label31.Location = new System.Drawing.Point(90, 637);
+            this.label31.Location = new System.Drawing.Point(76, 83);
             this.label31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(0, 20);
@@ -897,7 +916,7 @@
             this.label32.BackColor = System.Drawing.Color.Transparent;
             this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label32.ForeColor = System.Drawing.Color.DimGray;
-            this.label32.Location = new System.Drawing.Point(18, 637);
+            this.label32.Location = new System.Drawing.Point(4, 83);
             this.label32.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(105, 20);
@@ -907,12 +926,12 @@
             // linkLabel10
             // 
             this.linkLabel10.AutoSize = true;
-            this.linkLabel10.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel10.BackColor = System.Drawing.Color.Black;
             this.linkLabel10.Font = new System.Drawing.Font("Letter Gothic Std", 10F);
             this.linkLabel10.ForeColor = System.Drawing.Color.Transparent;
             this.linkLabel10.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.linkLabel10.LinkColor = System.Drawing.Color.Yellow;
-            this.linkLabel10.Location = new System.Drawing.Point(58, 410);
+            this.linkLabel10.Location = new System.Drawing.Point(54, 382);
             this.linkLabel10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel10.Name = "linkLabel10";
             this.linkLabel10.Size = new System.Drawing.Size(178, 24);
@@ -924,12 +943,12 @@
             // linkLabel11
             // 
             this.linkLabel11.AutoSize = true;
-            this.linkLabel11.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel11.BackColor = System.Drawing.Color.Black;
             this.linkLabel11.Font = new System.Drawing.Font("Letter Gothic Std", 10F);
             this.linkLabel11.ForeColor = System.Drawing.Color.Transparent;
             this.linkLabel11.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.linkLabel11.LinkColor = System.Drawing.Color.Yellow;
-            this.linkLabel11.Location = new System.Drawing.Point(58, 246);
+            this.linkLabel11.Location = new System.Drawing.Point(54, 218);
             this.linkLabel11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel11.Name = "linkLabel11";
             this.linkLabel11.Size = new System.Drawing.Size(106, 24);
@@ -946,12 +965,12 @@
             // linkLabel12
             // 
             this.linkLabel12.AutoSize = true;
-            this.linkLabel12.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel12.BackColor = System.Drawing.Color.Black;
             this.linkLabel12.Font = new System.Drawing.Font("Letter Gothic Std", 10F);
             this.linkLabel12.ForeColor = System.Drawing.Color.Transparent;
             this.linkLabel12.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.linkLabel12.LinkColor = System.Drawing.Color.Yellow;
-            this.linkLabel12.Location = new System.Drawing.Point(359, 374);
+            this.linkLabel12.Location = new System.Drawing.Point(355, 346);
             this.linkLabel12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel12.Name = "linkLabel12";
             this.linkLabel12.Size = new System.Drawing.Size(46, 24);
@@ -962,9 +981,9 @@
             // 
             // pictureBox8
             // 
-            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox8.BackColor = System.Drawing.Color.Black;
             this.pictureBox8.Image = global::POT.Properties.Resources.settings_3;
-            this.pictureBox8.Location = new System.Drawing.Point(313, 336);
+            this.pictureBox8.Location = new System.Drawing.Point(309, 308);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(30, 30);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -974,9 +993,9 @@
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.BackColor = System.Drawing.Color.Transparent;
+            this.label33.BackColor = System.Drawing.Color.Black;
             this.label33.ForeColor = System.Drawing.Color.White;
-            this.label33.Location = new System.Drawing.Point(349, 346);
+            this.label33.Location = new System.Drawing.Point(345, 318);
             this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(61, 20);
@@ -986,12 +1005,12 @@
             // linkLabel13
             // 
             this.linkLabel13.AutoSize = true;
-            this.linkLabel13.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel13.BackColor = System.Drawing.Color.Black;
             this.linkLabel13.Font = new System.Drawing.Font("Letter Gothic Std", 10F);
             this.linkLabel13.ForeColor = System.Drawing.Color.Transparent;
             this.linkLabel13.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.linkLabel13.LinkColor = System.Drawing.Color.Yellow;
-            this.linkLabel13.Location = new System.Drawing.Point(359, 138);
+            this.linkLabel13.Location = new System.Drawing.Point(355, 110);
             this.linkLabel13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel13.Name = "linkLabel13";
             this.linkLabel13.Size = new System.Drawing.Size(94, 24);
@@ -1003,12 +1022,12 @@
             // linkLabel14
             // 
             this.linkLabel14.AutoSize = true;
-            this.linkLabel14.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel14.BackColor = System.Drawing.Color.Black;
             this.linkLabel14.Font = new System.Drawing.Font("Letter Gothic Std", 10F);
             this.linkLabel14.ForeColor = System.Drawing.Color.Transparent;
             this.linkLabel14.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.linkLabel14.LinkColor = System.Drawing.Color.Yellow;
-            this.linkLabel14.Location = new System.Drawing.Point(58, 282);
+            this.linkLabel14.Location = new System.Drawing.Point(54, 254);
             this.linkLabel14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel14.Name = "linkLabel14";
             this.linkLabel14.Size = new System.Drawing.Size(106, 24);
@@ -1020,12 +1039,12 @@
             // linkLabel15
             // 
             this.linkLabel15.AutoSize = true;
-            this.linkLabel15.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel15.BackColor = System.Drawing.Color.Black;
             this.linkLabel15.Font = new System.Drawing.Font("Letter Gothic Std", 10F);
             this.linkLabel15.ForeColor = System.Drawing.Color.Transparent;
             this.linkLabel15.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.linkLabel15.LinkColor = System.Drawing.Color.Yellow;
-            this.linkLabel15.Location = new System.Drawing.Point(147, 282);
+            this.linkLabel15.Location = new System.Drawing.Point(143, 254);
             this.linkLabel15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel15.Name = "linkLabel15";
             this.linkLabel15.Size = new System.Drawing.Size(82, 24);
@@ -1037,12 +1056,12 @@
             // linkLabel16
             // 
             this.linkLabel16.AutoSize = true;
-            this.linkLabel16.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel16.BackColor = System.Drawing.Color.Black;
             this.linkLabel16.Font = new System.Drawing.Font("Letter Gothic Std", 10F);
             this.linkLabel16.ForeColor = System.Drawing.Color.Transparent;
             this.linkLabel16.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.linkLabel16.LinkColor = System.Drawing.Color.Yellow;
-            this.linkLabel16.Location = new System.Drawing.Point(359, 175);
+            this.linkLabel16.Location = new System.Drawing.Point(355, 147);
             this.linkLabel16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel16.Name = "linkLabel16";
             this.linkLabel16.Size = new System.Drawing.Size(178, 24);
@@ -1051,6 +1070,181 @@
             this.linkLabel16.Text = "Company/Region";
             this.linkLabel16.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel16_LinkClicked);
             // 
+            // linkLabel17
+            // 
+            this.linkLabel17.AutoSize = true;
+            this.linkLabel17.BackColor = System.Drawing.Color.Black;
+            this.linkLabel17.Font = new System.Drawing.Font("Letter Gothic Std", 10F);
+            this.linkLabel17.ForeColor = System.Drawing.Color.Transparent;
+            this.linkLabel17.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.linkLabel17.LinkColor = System.Drawing.Color.Yellow;
+            this.linkLabel17.Location = new System.Drawing.Point(54, 419);
+            this.linkLabel17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.linkLabel17.Name = "linkLabel17";
+            this.linkLabel17.Size = new System.Drawing.Size(46, 24);
+            this.linkLabel17.TabIndex = 38;
+            this.linkLabel17.TabStop = true;
+            this.linkLabel17.Text = "OTP";
+            this.linkLabel17.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel17_LinkClicked);
+            // 
+            // splitContainer1
+            // 
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.IsSplitterFixed = true;
+            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Name = "splitContainer1";
+            this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Controls.Add(this.splitContainer2);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.BackColor = System.Drawing.Color.Transparent;
+            this.splitContainer1.Panel2.Controls.Add(this.label34);
+            this.splitContainer1.Panel2.Controls.Add(this.label35);
+            this.splitContainer1.Panel2.Controls.Add(this.label19);
+            this.splitContainer1.Panel2.Controls.Add(this.label20);
+            this.splitContainer1.Panel2.Controls.Add(this.label18);
+            this.splitContainer1.Panel2.Controls.Add(this.label17);
+            this.splitContainer1.Panel2.Controls.Add(this.label16);
+            this.splitContainer1.Panel2.Controls.Add(this.label15);
+            this.splitContainer1.Panel2.Controls.Add(this.label14);
+            this.splitContainer1.Panel2.Controls.Add(this.label13);
+            this.splitContainer1.Panel2.Controls.Add(this.label12);
+            this.splitContainer1.Panel2.Controls.Add(this.label11);
+            this.splitContainer1.Panel2.Controls.Add(this.label32);
+            this.splitContainer1.Panel2.Controls.Add(this.label31);
+            this.splitContainer1.Panel2.Controls.Add(this.pictureBox2);
+            this.splitContainer1.Panel2.Controls.Add(this.pictureBox1);
+            this.splitContainer1.Panel2.Controls.Add(this.version);
+            this.splitContainer1.Panel2.Controls.Add(this.panel3);
+            this.splitContainer1.Panel2.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
+            this.splitContainer1.Size = new System.Drawing.Size(986, 664);
+            this.splitContainer1.SplitterDistance = 553;
+            this.splitContainer1.SplitterWidth = 1;
+            this.splitContainer1.TabIndex = 39;
+            this.splitContainer1.TabStop = false;
+            // 
+            // splitContainer2
+            // 
+            this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer2.IsSplitterFixed = true;
+            this.splitContainer2.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer2.Name = "splitContainer2";
+            this.splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer2.Panel1
+            // 
+            this.splitContainer2.Panel1.Controls.Add(this.panel2);
+            this.splitContainer2.Panel1.Controls.Add(this.label30);
+            // 
+            // splitContainer2.Panel2
+            // 
+            this.splitContainer2.Panel2.Controls.Add(this.splitContainer3);
+            this.splitContainer2.Size = new System.Drawing.Size(986, 553);
+            this.splitContainer2.SplitterDistance = 36;
+            this.splitContainer2.SplitterWidth = 1;
+            this.splitContainer2.TabIndex = 0;
+            this.splitContainer2.TabStop = false;
+            // 
+            // splitContainer3
+            // 
+            this.splitContainer3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer3.IsSplitterFixed = true;
+            this.splitContainer3.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer3.Margin = new System.Windows.Forms.Padding(0);
+            this.splitContainer3.Name = "splitContainer3";
+            // 
+            // splitContainer3.Panel1
+            // 
+            this.splitContainer3.Panel1.AutoScroll = true;
+            this.splitContainer3.Panel1.BackColor = System.Drawing.Color.Transparent;
+            this.splitContainer3.Panel1.Controls.Add(this.linkLabel18);
+            this.splitContainer3.Panel1.Controls.Add(this.pictureBox5);
+            this.splitContainer3.Panel1.Controls.Add(this.linkLabel17);
+            this.splitContainer3.Panel1.Controls.Add(this.linkLabel9);
+            this.splitContainer3.Panel1.Controls.Add(this.linkLabel16);
+            this.splitContainer3.Panel1.Controls.Add(this.linkLabel7);
+            this.splitContainer3.Panel1.Controls.Add(this.linkLabel15);
+            this.splitContainer3.Panel1.Controls.Add(this.label21);
+            this.splitContainer3.Panel1.Controls.Add(this.linkLabel14);
+            this.splitContainer3.Panel1.Controls.Add(this.linkLabel1);
+            this.splitContainer3.Panel1.Controls.Add(this.linkLabel13);
+            this.splitContainer3.Panel1.Controls.Add(this.linkLabel2);
+            this.splitContainer3.Panel1.Controls.Add(this.pictureBox8);
+            this.splitContainer3.Panel1.Controls.Add(this.linkLabel11);
+            this.splitContainer3.Panel1.Controls.Add(this.label33);
+            this.splitContainer3.Panel1.Controls.Add(this.linkLabel3);
+            this.splitContainer3.Panel1.Controls.Add(this.linkLabel12);
+            this.splitContainer3.Panel1.Controls.Add(this.linkLabel5);
+            this.splitContainer3.Panel1.Controls.Add(this.linkLabel8);
+            this.splitContainer3.Panel1.Controls.Add(this.linkLabel10);
+            this.splitContainer3.Panel1.Controls.Add(this.pictureBox6);
+            this.splitContainer3.Panel1.Controls.Add(this.linkLabel6);
+            this.splitContainer3.Panel1.Controls.Add(this.pictureBox7);
+            this.splitContainer3.Panel1.Controls.Add(this.label22);
+            this.splitContainer3.Panel1.Controls.Add(this.label23);
+            // 
+            // splitContainer3.Panel2
+            // 
+            this.splitContainer3.Panel2.BackColor = System.Drawing.Color.Transparent;
+            this.splitContainer3.Panel2.Controls.Add(this.pictureBox3);
+            this.splitContainer3.Panel2.Controls.Add(this.panel1);
+            this.splitContainer3.Panel2.Controls.Add(this.pictureBox4);
+            this.splitContainer3.Size = new System.Drawing.Size(986, 516);
+            this.splitContainer3.SplitterDistance = 733;
+            this.splitContainer3.SplitterWidth = 1;
+            this.splitContainer3.TabIndex = 0;
+            this.splitContainer3.TabStop = false;
+            // 
+            // linkLabel18
+            // 
+            this.linkLabel18.AutoSize = true;
+            this.linkLabel18.BackColor = System.Drawing.Color.Black;
+            this.linkLabel18.Font = new System.Drawing.Font("Letter Gothic Std", 10F);
+            this.linkLabel18.ForeColor = System.Drawing.Color.Transparent;
+            this.linkLabel18.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.linkLabel18.LinkColor = System.Drawing.Color.Yellow;
+            this.linkLabel18.Location = new System.Drawing.Point(54, 454);
+            this.linkLabel18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.linkLabel18.Name = "linkLabel18";
+            this.linkLabel18.Size = new System.Drawing.Size(58, 24);
+            this.linkLabel18.TabIndex = 39;
+            this.linkLabel18.TabStop = true;
+            this.linkLabel18.Text = "PRIM";
+            this.linkLabel18.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel18_LinkClicked);
+            // 
+            // label34
+            // 
+            this.label34.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label34.AutoSize = true;
+            this.label34.BackColor = System.Drawing.Color.Transparent;
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.label34.ForeColor = System.Drawing.Color.DimGray;
+            this.label34.Location = new System.Drawing.Point(475, 43);
+            this.label34.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(120, 20);
+            this.label34.TabIndex = 28;
+            this.label34.Text = "Exchange date:";
+            // 
+            // label35
+            // 
+            this.label35.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label35.AutoSize = true;
+            this.label35.BackColor = System.Drawing.Color.Transparent;
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label35.ForeColor = System.Drawing.Color.DimGray;
+            this.label35.Location = new System.Drawing.Point(569, 43);
+            this.label35.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(0, 20);
+            this.label35.TabIndex = 29;
+            // 
             // MainFR
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -1058,53 +1252,10 @@
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(986, 664);
-            this.Controls.Add(this.linkLabel16);
-            this.Controls.Add(this.linkLabel15);
-            this.Controls.Add(this.linkLabel14);
-            this.Controls.Add(this.linkLabel13);
-            this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.label33);
-            this.Controls.Add(this.linkLabel12);
-            this.Controls.Add(this.linkLabel8);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.label23);
-            this.Controls.Add(this.label22);
-            this.Controls.Add(this.linkLabel6);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.linkLabel10);
-            this.Controls.Add(this.linkLabel5);
-            this.Controls.Add(this.linkLabel3);
-            this.Controls.Add(this.linkLabel11);
-            this.Controls.Add(this.label31);
-            this.Controls.Add(this.linkLabel2);
-            this.Controls.Add(this.label32);
-            this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.label21);
-            this.Controls.Add(this.label30);
-            this.Controls.Add(this.linkLabel7);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.linkLabel9);
-            this.Controls.Add(this.version);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label18);
-            this.Controls.Add(this.label20);
-            this.Controls.Add(this.label19);
-            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.splitContainer1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.MinimumSize = new System.Drawing.Size(986, 655);
+            this.MinimumSize = new System.Drawing.Size(1008, 720);
             this.Name = "MainFR";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "POT";
@@ -1124,8 +1275,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            this.splitContainer1.Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
+            this.splitContainer2.Panel1.ResumeLayout(false);
+            this.splitContainer2.Panel1.PerformLayout();
+            this.splitContainer2.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
+            this.splitContainer2.ResumeLayout(false);
+            this.splitContainer3.Panel1.ResumeLayout(false);
+            this.splitContainer3.Panel1.PerformLayout();
+            this.splitContainer3.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).EndInit();
+            this.splitContainer3.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -1200,5 +1365,12 @@
         private System.Windows.Forms.LinkLabel linkLabel14;
         private System.Windows.Forms.LinkLabel linkLabel15;
         private System.Windows.Forms.LinkLabel linkLabel16;
+        private System.Windows.Forms.LinkLabel linkLabel17;
+        private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.SplitContainer splitContainer2;
+        private System.Windows.Forms.SplitContainer splitContainer3;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.LinkLabel linkLabel18;
     }
 }
