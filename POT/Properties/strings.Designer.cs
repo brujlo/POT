@@ -160,6 +160,15 @@ namespace POT.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Delivery.
+        /// </summary>
+        internal static string DeliveryMain {
+            get {
+                return ResourceManager.GetString("DeliveryMain", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Do.
         /// </summary>
         internal static string Do {
@@ -273,6 +282,15 @@ namespace POT.Properties {
         internal static string RECEIPT {
             get {
                 return ResourceManager.GetString("RECEIPT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Receipt.
+        /// </summary>
+        internal static string ReceiptMain {
+            get {
+                return ResourceManager.GetString("ReceiptMain", resourceCulture);
             }
         }
         

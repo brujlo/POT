@@ -137,6 +137,7 @@ namespace POT
             tel.Text = Properties.Settings.Default.CmpPhone;
             infomail.Text = Properties.Settings.Default.CmpEmail;
 
+            //// Jezik ////
             setText();
 
             CLogo logoImage = new CLogo();
@@ -515,6 +516,8 @@ namespace POT
 
         private void setText()
         {
+            //// Jezik ////
+            
             this.label21.Text = Properties.strings.Set;
             this.label22.Text = Properties.strings.Check;
             this.label23.Text = Properties.strings.Do;
@@ -524,6 +527,11 @@ namespace POT
             this.linkLabel5.Text = Properties.strings.EditRegion;
             this.linkLabel7.Text = Properties.strings.CompanyInfo;
             this.linkLabel9.Text = Properties.strings.SelectMainRegion;
+            this.linkLabel6.Text = Properties.strings.ReceiptMain;
+            this.linkLabel8.Text = Properties.strings.DeliveryMain;
+            this.linkLabel18.Text = Properties.strings.ReceiptMain;
+            this.linkLabel17.Text = Properties.strings.DeliveryMain;
+
         }
 
         private void linkLabel10_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -724,6 +732,7 @@ namespace POT
                         builder.Append(Properties.Settings.Default.Path);
                         builder.AppendLine();
 
+                        //// Jezik ////
                         Clipboard.SetText(builder.ToString());
                     }
                     catch (Exception e1)

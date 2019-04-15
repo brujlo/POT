@@ -244,4 +244,10 @@
     <value>Datum</value>
     <comment>PrintME-zaglavlje</comment>
   </data>
+  <data name="DeliveryMain" xml:space="preserve">
+    <value>Otpremnica</value>
+  </data>
+  <data name="ReceiptMain" xml:space="preserve">
+    <value>Primka</value>
+  </data>
 </root>
