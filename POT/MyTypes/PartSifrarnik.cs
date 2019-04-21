@@ -29,7 +29,7 @@ namespace POT.MyTypes
                 QueryCommands qc = new QueryCommands();
                 PartSifrarnik dr = qc.PartInfoByFullCodeSifrarnik(WorkingUser.Username, WorkingUser.Password, long.Parse(mCode));
                 
-                if (!dr.FullName.Equals(""))
+                if (dr.FullName != null)
                 {
                     CategoryCode = dr.CategoryCode;
                     CategoryName = dr.CategoryName;

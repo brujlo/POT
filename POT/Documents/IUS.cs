@@ -359,8 +359,12 @@ namespace POT
             else
             {
                 //List<Part> listOfOtpPartsPrimka = new List<Part>();
+                MainCmp mpc = new MainCmp();
+                mpc.GetMainCmpByName(Properties.Settings.Default.CmpName);
+                cmpR.Clear();
+                cmpR = mpc.MainCmpToCompany();
 
-                if (cmpS.GetCompanyByName(label2.Text.Trim()) && cmpR.GetCompanyInfoByRegionID(WorkingUser.RegionID.ToString()))
+                if (cmpS.GetCompanyByName(label2.Text.Trim()))
                 {
                     try
                     {
@@ -394,7 +398,7 @@ namespace POT
                                 //Provjera i spremanje u bazu
 
                                 List<String> allRegions = new List<string>();
-                                allRegions = qc.GetAllRegions(WorkingUser.Username, WorkingUser.Password);
+                                allRegions = qc.GetAllRegions();
 
                                 int index = resultArrC.FindIndex(resultArrC => resultArrC.Name.Equals(label2.Text));
 

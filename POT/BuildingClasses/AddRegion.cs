@@ -27,7 +27,7 @@ namespace POT
 
             try
             {
-                resultArr = qc.GetAllRegions(WorkingUser.Username, WorkingUser.Password);
+                resultArr = qc.GetAllRegions();
             }
             catch (Exception e1)
             {

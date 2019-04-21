@@ -765,7 +765,7 @@ namespace POT
             List<String> arr = new List<string>();
             //SqlConnection cnn = cn.Connect(Uname, Pass);
             cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
-            query = "Select * from Tvrtke where Name = '" + mName + "'";
+            query = "Select * from Tvrtke where Name = '" + mName.Trim() + "'";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
             SqlDataReader dataReader = command.ExecuteReader();
@@ -917,11 +917,11 @@ namespace POT
             return arr;
         }
 
-        public List<String> GetAllRegions(String Uname, String Pass)
+        public List<String> GetAllRegions()
         {
             List<String> arr = new List<string>();
             //SqlConnection cnn = cn.Connect(Uname, Pass);
-            cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
             query = "Select * from Regija";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -2897,6 +2897,375 @@ namespace POT
             dataReader.Close();
             cnn.Close();
             return isExecuted;
+        }
+
+        //////////////////////////////////////////////////
+        ///
+
+        public int CountMainCmp()
+        {
+            int value;
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "select Count(ID) from MainCmp";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                var cnt = dataReader.GetValue(0);
+                value = (int)cnt; ;
+            }
+            else
+            {
+                value = 0;
+            }
+            dataReader.Close();
+            cnn.Close();
+            return value;
+        }
+
+        public List<String> MainCmpInfoByCode(String mCode)
+        {
+            List<String> arr = new List<string>();
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "Select * from MainCmp where CompanyCode = '" + mCode + "'";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                arr.Add(dataReader["ID"].ToString());
+                arr.Add(dataReader["CmpName"].ToString());
+                arr.Add(dataReader["Address"].ToString());
+                arr.Add(dataReader["City"].ToString());
+                arr.Add(dataReader["PB"].ToString());
+                arr.Add(dataReader["OIB"].ToString());
+                arr.Add(dataReader["Contact"].ToString());
+                arr.Add(dataReader["BIC"].ToString());
+                arr.Add(dataReader["KN"].ToString());
+                arr.Add(dataReader["EUR"].ToString());
+                arr.Add(dataReader["Code"].ToString());
+                arr.Add(dataReader["Country"].ToString());
+                arr.Add(dataReader["regionID"].ToString());
+                arr.Add(dataReader["Email"].ToString());
+                arr.Add(dataReader["Phone"].ToString());
+                arr.Add(dataReader["WWW"].ToString());
+                arr.Add(dataReader["MB"].ToString());
+                arr.Add(dataReader["IBAN"].ToString());
+                arr.Add(dataReader["SupportEmail"].ToString());
+            }
+            else
+            {
+                arr.Add("nok");
+            }
+            dataReader.Close();
+            cnn.Close();
+            return arr;
+        }
+
+        public List<String> MainCmpInfoByID(long mID)
+        {
+            List<String> arr = new List<string>();
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "Select * from MainCmp where ID = " + mID;
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                arr.Add(dataReader["ID"].ToString());
+                arr.Add(dataReader["CmpName"].ToString());
+                arr.Add(dataReader["Address"].ToString());
+                arr.Add(dataReader["City"].ToString());
+                arr.Add(dataReader["PB"].ToString());
+                arr.Add(dataReader["OIB"].ToString());
+                arr.Add(dataReader["Contact"].ToString());
+                arr.Add(dataReader["BIC"].ToString());
+                arr.Add(dataReader["KN"].ToString());
+                arr.Add(dataReader["EUR"].ToString());
+                arr.Add(dataReader["Code"].ToString());
+                arr.Add(dataReader["Country"].ToString());
+                arr.Add(dataReader["regionID"].ToString());
+                arr.Add(dataReader["Email"].ToString());
+                arr.Add(dataReader["Phone"].ToString());
+                arr.Add(dataReader["WWW"].ToString());
+                arr.Add(dataReader["MB"].ToString());
+                arr.Add(dataReader["IBAN"].ToString());
+                arr.Add(dataReader["SupportEmail"].ToString());
+            }
+            else
+            {
+                arr.Add("nok");
+            }
+            dataReader.Close();
+            cnn.Close();
+            return arr;
+        }
+
+        public List<String> MainCmpInfoByName(String mName)
+        {
+            List<String> arr = new List<string>();
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "Select * from MainCmp where CmpName = '" + mName + "'";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                arr.Add(dataReader["ID"].ToString());
+                arr.Add(dataReader["CmpName"].ToString());
+                arr.Add(dataReader["Address"].ToString());
+                arr.Add(dataReader["City"].ToString());
+                arr.Add(dataReader["PB"].ToString());
+                arr.Add(dataReader["OIB"].ToString());
+                arr.Add(dataReader["Contact"].ToString());
+                arr.Add(dataReader["BIC"].ToString());
+                arr.Add(dataReader["KN"].ToString());
+                arr.Add(dataReader["EUR"].ToString());
+                arr.Add(dataReader["Code"].ToString());
+                arr.Add(dataReader["Country"].ToString());
+                arr.Add(dataReader["regionID"].ToString());
+                arr.Add(dataReader["Email"].ToString());
+                arr.Add(dataReader["Phone"].ToString());
+                arr.Add(dataReader["WWW"].ToString());
+                arr.Add(dataReader["MB"].ToString());
+                arr.Add(dataReader["IBAN"].ToString());
+                arr.Add(dataReader["SupportEmail"].ToString());
+            }
+            else
+            {
+                arr.Add("nok");
+            }
+            dataReader.Close();
+            cnn.Close();
+            return arr;
+        }
+
+        public List<String> MainCmpInfoByRegionID(long mRegionID)
+        {
+            List<String> arr = new List<string>();
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "Select * from MainCmp where RegionID = " + mRegionID;
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                do
+                {
+                    arr.Add(dataReader["ID"].ToString());
+                    arr.Add(dataReader["CmpName"].ToString());
+                    arr.Add(dataReader["Address"].ToString());
+                    arr.Add(dataReader["City"].ToString());
+                    arr.Add(dataReader["PB"].ToString());
+                    arr.Add(dataReader["OIB"].ToString());
+                    arr.Add(dataReader["Contact"].ToString());
+                    arr.Add(dataReader["BIC"].ToString());
+                    arr.Add(dataReader["KN"].ToString());
+                    arr.Add(dataReader["EUR"].ToString());
+                    arr.Add(dataReader["Code"].ToString());
+                    arr.Add(dataReader["Country"].ToString());
+                    arr.Add(dataReader["regionID"].ToString());
+                    arr.Add(dataReader["Email"].ToString());
+                    arr.Add(dataReader["Phone"].ToString());
+                    arr.Add(dataReader["WWW"].ToString());
+                    arr.Add(dataReader["MB"].ToString());
+                    arr.Add(dataReader["IBAN"].ToString());
+                    arr.Add(dataReader["SupportEmail"].ToString());
+                } while (dataReader.Read());
+            }
+            else
+            {
+                arr.Add("nok");
+            }
+            dataReader.Close();
+            cnn.Close();
+            return arr;
+        }
+
+        public List<String> AllMainCmpInfoSortCode()
+        {
+            List<String> arr = new List<string>();
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "Select * from MainCmp order by Code asc";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                do
+                {
+                    arr.Add(dataReader["ID"].ToString());
+                    arr.Add(dataReader["CmpName"].ToString());
+                    arr.Add(dataReader["Address"].ToString());
+                    arr.Add(dataReader["City"].ToString());
+                    arr.Add(dataReader["PB"].ToString());
+                    arr.Add(dataReader["OIB"].ToString());
+                    arr.Add(dataReader["Contact"].ToString());
+                    arr.Add(dataReader["BIC"].ToString());
+                    arr.Add(dataReader["KN"].ToString());
+                    arr.Add(dataReader["EUR"].ToString());
+                    arr.Add(dataReader["Code"].ToString());
+                    arr.Add(dataReader["Country"].ToString());
+                    arr.Add(dataReader["regionID"].ToString());
+                    arr.Add(dataReader["Email"].ToString());
+                    arr.Add(dataReader["Phone"].ToString());
+                    arr.Add(dataReader["WWW"].ToString());
+                    arr.Add(dataReader["MB"].ToString());
+                    arr.Add(dataReader["IBAN"].ToString());
+                    arr.Add(dataReader["SupportEmail"].ToString());
+                } while (dataReader.Read());
+            }
+            else
+            {
+                arr.Add("nok");
+            }
+            dataReader.Close();
+            cnn.Close();
+            return arr;
+        }
+
+        public List<String> AllMainCmpInfoSortByName()
+        {
+            List<String> arr = new List<string>();
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "Select * from MainCmp order by CmpName asc";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                do
+                {
+                    arr.Add(dataReader["ID"].ToString());
+                    arr.Add(dataReader["CmpName"].ToString());
+                    arr.Add(dataReader["Address"].ToString());
+                    arr.Add(dataReader["City"].ToString());
+                    arr.Add(dataReader["PB"].ToString());
+                    arr.Add(dataReader["OIB"].ToString());
+                    arr.Add(dataReader["Contact"].ToString());
+                    arr.Add(dataReader["BIC"].ToString());
+                    arr.Add(dataReader["KN"].ToString());
+                    arr.Add(dataReader["EUR"].ToString());
+                    arr.Add(dataReader["Code"].ToString());
+                    arr.Add(dataReader["Country"].ToString());
+                    arr.Add(dataReader["regionID"].ToString());
+                    arr.Add(dataReader["Email"].ToString());
+                    arr.Add(dataReader["Phone"].ToString());
+                    arr.Add(dataReader["WWW"].ToString());
+                    arr.Add(dataReader["MB"].ToString());
+                    arr.Add(dataReader["IBAN"].ToString());
+                    arr.Add(dataReader["SupportEmail"].ToString());
+                } while (dataReader.Read());
+            }
+            else
+            {
+                arr.Add("nok");
+            }
+            dataReader.Close();
+            cnn.Close();
+            return arr;
+        }
+
+        public Boolean AddMainCmp(long mID, String mCmpName, String mAddress, String mCity, String mPB, String mVAT, String mContact,String mBIC, decimal mKN, decimal mEUR, String mCode, String mCountry, String mRegionID, String mEmail, String mPhone, String mWWW, String mMB, String mIBAN, String mSupportEmail)
+        {
+
+            Boolean executed = false;
+            String code = "";
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+
+            if (mID != 0)
+            {
+                query = "select Code from MainCmp t where t.ID =" + mID;
+                command = new SqlCommand(query, cnn);
+                command.ExecuteNonQuery();
+                SqlDataReader dataReader = command.ExecuteReader();
+                dataReader.Read();
+                if (!dataReader.HasRows && !dataReader.GetValue(0).Equals(0))
+                {
+                    executed = false;
+                    dataReader.Close();
+                }
+                else
+                {
+                    code = dataReader["Code"].ToString();
+                    dataReader.Close(); 
+                }
+            }
+
+            command = cnn.CreateCommand();
+            SqlTransaction transaction = cnn.BeginTransaction();
+            command.Connection = cnn;
+            command.Transaction = transaction;
+
+            try
+            {
+                if (mID != 0)
+                {
+                    command.CommandText = "UPDATE MainCmp SET CmpName = '" + mCmpName + "', Address = '" + mAddress + "', City = '" + mCity + "', PB = '" + mPB + "', OIB = '" + mVAT + "', " +
+                        "Contact = '" + mContact + "', BIC = '" + mBIC + "', KN = " + mKN + ", EUR = " + mEUR + ", Code = '" + mCode + "', Country = '" + mCountry + "', RegionID = " + mRegionID
+                            + ", Email = '" + mEmail + "', Phone = '" + mPhone + "', www = '" + mWWW + "', MB = '" + mMB + "', IBAN = '" + mIBAN + "', SupportEmail = '" + mSupportEmail + 
+                        "' WHERE ID = " + mID;
+                    command.ExecuteNonQuery();
+                }
+                else
+                {
+                    command.CommandText = "INSERT INTO MainCmp (CmpName, Address, City, PB, BIC, Contact, OIB, KN, EUR, Code, Country, RegionID, Email, Phone, WWW, MB, IBAN, SupportEmail)" +
+                            " values " 
+                            + "('" + mCmpName + "', '" + mAddress + "', '" + mCity + "', '" + mPB + "', '" + mVAT + "', '" + mContact + "', '" + mBIC + "', " + mKN + ", " + mEUR + ", '" + mCode +
+                            "', '" + mCountry + "', " + mRegionID + ", '" + mEmail + "', '" + mPhone + "', '" + mWWW + "', '" + mMB + "', '" + mIBAN + "', '" + mSupportEmail + "')";
+                    command.ExecuteNonQuery();
+                }
+
+                transaction.Commit();
+
+                executed = true;
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
+                try
+                {
+                    transaction.Rollback();
+                    executed = false;
+                    throw;
+                }
+                catch (Exception e2)
+                {
+                    new LogWriter(e2);
+                    throw;
+                }
+            }
+            finally
+            {
+                if (cnn.State.ToString().Equals("Open"))
+                    cnn.Close();
+            }
+            
+            cnn.Close();
+            return executed;
         }
     }
 }

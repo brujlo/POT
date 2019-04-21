@@ -83,15 +83,42 @@ namespace POT
                 try
                 {
 
-                    resultArr3 = qc.GetAllRegions(WorkingUser.Username, WorkingUser.Password);
-                
+                    resultArr3 = qc.GetAllRegions();
+
                     PartSifrarnik prt = new PartSifrarnik();
                     this.label7.Text = prt.PartCode.ToString();
                     Company cmpO = new Company();
                     Company cmpC = new Company();
-                
+                    Boolean cmpOb = false;
+                    Boolean cmpCb = false;
+
+                    if (Decoder.GetOwnerCode(textBox1.Text).Equals("01"))
+                    {
+                        MainCmp mpc = new MainCmp();
+                        mpc.GetMainCmpByName(Properties.Settings.Default.CmpName);
+                        cmpO = mpc.MainCmpToCompany();
+                        cmpOb = true;
+                    }
+                    else
+                    {
+                        cmpOb = cmpO.GetCompanyInfoByCode(Decoder.GetOwnerCode(textBox1.Text));
+                    }
+
+                    if (Decoder.GetOwnerCode(textBox1.Text).Equals("01"))
+                    {
+                        MainCmp mpc = new MainCmp();
+                        mpc.GetMainCmpByName(Properties.Settings.Default.CmpName);
+                        cmpC = mpc.MainCmpToCompany();
+                        cmpCb = true;
+                    }
+                    else
+                    {
+                        cmpCb = cmpC.GetCompanyInfoByCode(Decoder.GetCustomerCode(textBox1.Text));
+                    }
+
+
                     //if (prt.GetPart(textBox1.Text.Substring(4, 9)) && cmpO.GetCompanyInfoByCode(textBox1.Text.Substring(0, 2)) && cmpC.GetCompanyInfoByCode(textBox1.Text.Substring(2, 2))) //DecoderBB
-                    if (prt.GetPart(Decoder.GetFullPartCodeStr(textBox1.Text)) && cmpO.GetCompanyInfoByCode(Decoder.GetOwnerCode(textBox1.Text)) && cmpC.GetCompanyInfoByCode(Decoder.GetCustomerCode(textBox1.Text)))
+                    if (prt.GetPart(Decoder.GetFullPartCodeStr(textBox1.Text)) && cmpOb && cmpCb)
                     {
                         this.textBox2.ResetText();
                         this.textBox2.Text = prt.FullName;

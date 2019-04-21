@@ -370,5 +370,101 @@ namespace POT.Properties {
                 this["Path"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string CmpCity {
+            get {
+                return ((string)(this["CmpCity"]));
+            }
+            set {
+                this["CmpCity"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string CmpPB {
+            get {
+                return ((string)(this["CmpPB"]));
+            }
+            set {
+                this["CmpPB"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string CmpContact {
+            get {
+                return ((string)(this["CmpContact"]));
+            }
+            set {
+                this["CmpContact"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public decimal CmpKN {
+            get {
+                return ((decimal)(this["CmpKN"]));
+            }
+            set {
+                this["CmpKN"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public decimal CmpEUR {
+            get {
+                return ((decimal)(this["CmpEUR"]));
+            }
+            set {
+                this["CmpEUR"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string CmpCode {
+            get {
+                return ((string)(this["CmpCode"]));
+            }
+            set {
+                this["CmpCode"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string CmpCountry {
+            get {
+                return ((string)(this["CmpCountry"]));
+            }
+            set {
+                this["CmpCountry"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public long CmpRegionID {
+            get {
+                return ((long)(this["CmpRegionID"]));
+            }
+            set {
+                this["CmpRegionID"] = value;
+            }
+        }
     }
 }

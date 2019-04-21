@@ -8,8 +8,8 @@ namespace POT
 {
     public partial class MainCmpSelector : Form
     {
-        Company cmp = new Company();
-        List<Company> resultList = new List<Company>();
+        MainCmp cmp = new MainCmp();
+        List<MainCmp> resultList = new List<MainCmp>();
 
         public MainCmpSelector()
         {
@@ -30,7 +30,7 @@ namespace POT
             int index = comboBox1.SelectedIndex;
 
             Properties.Settings.Default.CmpName = resultList[index].Name;
-            Properties.Settings.Default.CmpAddress = resultList[index].Address + ", " + resultList[index].Country + " - " + resultList[index].PB + " " + resultList[index].City;
+            Properties.Settings.Default.CmpAddress = resultList[index].Address;
             Properties.Settings.Default.CmpVAT = resultList[index].OIB;
             if(Properties.Settings.Default.CmpWWW == "")
                 Properties.Settings.Default.CmpWWW = "www";
@@ -53,7 +53,7 @@ namespace POT
         private void MainCmpSelector_Load(object sender, EventArgs e)
         {
             QueryCommands qc = new QueryCommands();
-            resultList = cmp.GetAllCompanyInfoSortCode();
+            resultList = cmp.GetAllMainCmpInfoSortCode();
 
             if (resultList.Count != 0)
             {

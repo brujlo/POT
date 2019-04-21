@@ -531,7 +531,11 @@ namespace POT.CopyPrintForms
                 cmpR.Clear();
                 cmpS.Clear();
                 cmpR.GetCompanyInfoByID(code);
-                cmpS.GetCompanyInfoByRegionID(WorkingUser.RegionID.ToString());
+
+                MainCmp mpc = new MainCmp();
+                mpc.GetMainCmpByName(Properties.Settings.Default.CmpName);
+                cmpS.Clear();
+                cmpS = mpc.MainCmpToCompany();
             }
             catch (Exception e1)
             {

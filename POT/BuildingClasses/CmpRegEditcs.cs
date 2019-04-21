@@ -57,7 +57,7 @@ namespace POT.BuildingClasses
 
                 List<String> testresultArr1 = new List<string>();
 
-                testresultArr1 = qc.GetAllRegions(WorkingUser.Username, WorkingUser.Password);
+                testresultArr1 = qc.GetAllRegions();
 
                 if (!testresultArr1[0].Equals("nok"))
                 {
@@ -416,7 +416,7 @@ namespace POT.BuildingClasses
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
             QueryCommands qc = new QueryCommands();
-            List<String> arr = qc.GetAllRegions(WorkingUser.Username, WorkingUser.Password);
+            List<String> arr = qc.GetAllRegions();
 
             for (int i = 0; i < arr.Count; i = i + 3)
             {

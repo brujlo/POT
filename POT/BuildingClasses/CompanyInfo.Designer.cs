@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.CmpNameTB = new System.Windows.Forms.TextBox();
             this.CmpAddressTB = new System.Windows.Forms.TextBox();
             this.CmpOIBTB = new System.Windows.Forms.TextBox();
             this.CmpWWWTB = new System.Windows.Forms.TextBox();
@@ -57,72 +56,70 @@
             this.LogoSize = new System.Windows.Forms.NumericUpDown();
             this.label14 = new System.Windows.Forms.Label();
             this.SupportEmail = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.CmpContactTB = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.CmpCityTB = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.CmpPBTB = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.CmpCountryTB = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.CmpKNTB = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.CmpEURTB = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogoSize)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button1.Location = new System.Drawing.Point(330, 122);
+            this.button1.Location = new System.Drawing.Point(332, 122);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(123, 41);
-            this.button1.TabIndex = 1;
+            this.button1.TabIndex = 19;
             this.button1.Text = "Load logo";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // CmpNameTB
-            // 
-            this.CmpNameTB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CmpNameTB.Location = new System.Drawing.Point(12, 207);
-            this.CmpNameTB.Name = "CmpNameTB";
-            this.CmpNameTB.Size = new System.Drawing.Size(264, 26);
-            this.CmpNameTB.TabIndex = 2;
-            // 
             // CmpAddressTB
             // 
-            this.CmpAddressTB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CmpAddressTB.Location = new System.Drawing.Point(12, 267);
+            this.CmpAddressTB.Location = new System.Drawing.Point(12, 269);
             this.CmpAddressTB.Name = "CmpAddressTB";
-            this.CmpAddressTB.Size = new System.Drawing.Size(263, 26);
-            this.CmpAddressTB.TabIndex = 3;
+            this.CmpAddressTB.Size = new System.Drawing.Size(260, 26);
+            this.CmpAddressTB.TabIndex = 2;
             // 
             // CmpOIBTB
             // 
-            this.CmpOIBTB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CmpOIBTB.Location = new System.Drawing.Point(13, 328);
+            this.CmpOIBTB.Location = new System.Drawing.Point(299, 210);
             this.CmpOIBTB.Name = "CmpOIBTB";
-            this.CmpOIBTB.Size = new System.Drawing.Size(264, 26);
-            this.CmpOIBTB.TabIndex = 4;
+            this.CmpOIBTB.Size = new System.Drawing.Size(261, 26);
+            this.CmpOIBTB.TabIndex = 7;
             // 
             // CmpWWWTB
             // 
-            this.CmpWWWTB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CmpWWWTB.Location = new System.Drawing.Point(13, 385);
+            this.CmpWWWTB.Location = new System.Drawing.Point(596, 210);
             this.CmpWWWTB.Name = "CmpWWWTB";
-            this.CmpWWWTB.Size = new System.Drawing.Size(264, 26);
-            this.CmpWWWTB.TabIndex = 5;
+            this.CmpWWWTB.Size = new System.Drawing.Size(261, 26);
+            this.CmpWWWTB.TabIndex = 13;
             // 
             // CmpPhoneTB
             // 
-            this.CmpPhoneTB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CmpPhoneTB.Location = new System.Drawing.Point(13, 437);
+            this.CmpPhoneTB.Location = new System.Drawing.Point(596, 269);
             this.CmpPhoneTB.Name = "CmpPhoneTB";
-            this.CmpPhoneTB.Size = new System.Drawing.Size(264, 26);
-            this.CmpPhoneTB.TabIndex = 6;
+            this.CmpPhoneTB.Size = new System.Drawing.Size(261, 26);
+            this.CmpPhoneTB.TabIndex = 14;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(13, 193);
+            this.label1.Location = new System.Drawing.Point(13, 194);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(120, 20);
             this.label1.TabIndex = 7;
@@ -142,17 +139,17 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label3.Location = new System.Drawing.Point(13, 312);
+            this.label3.Location = new System.Drawing.Point(299, 194);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 20);
+            this.label3.Size = new System.Drawing.Size(67, 20);
             this.label3.TabIndex = 9;
-            this.label3.Text = "VAT";
+            this.label3.Text = "VAT nbr";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(13, 369);
+            this.label4.Location = new System.Drawing.Point(596, 194);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(42, 20);
             this.label4.TabIndex = 10;
@@ -162,7 +159,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label5.Location = new System.Drawing.Point(13, 421);
+            this.label5.Location = new System.Drawing.Point(596, 253);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(55, 20);
             this.label5.TabIndex = 11;
@@ -172,7 +169,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label6.Location = new System.Drawing.Point(12, 480);
+            this.label6.Location = new System.Drawing.Point(596, 371);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(48, 20);
             this.label6.TabIndex = 13;
@@ -180,18 +177,15 @@
             // 
             // CmpEmail
             // 
-            this.CmpEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CmpEmail.Location = new System.Drawing.Point(12, 496);
+            this.CmpEmail.Location = new System.Drawing.Point(596, 387);
             this.CmpEmail.Name = "CmpEmail";
-            this.CmpEmail.Size = new System.Drawing.Size(264, 26);
-            this.CmpEmail.TabIndex = 12;
+            this.CmpEmail.Size = new System.Drawing.Size(261, 26);
+            this.CmpEmail.TabIndex = 16;
             // 
             // button2
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button2.Location = new System.Drawing.Point(414, 520);
+            this.button2.Location = new System.Drawing.Point(691, 549);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(123, 41);
             this.button2.TabIndex = 18;
@@ -203,7 +197,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label7.Location = new System.Drawing.Point(325, 369);
+            this.label7.Location = new System.Drawing.Point(293, 489);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(115, 20);
             this.label7.TabIndex = 16;
@@ -211,20 +205,17 @@
             // 
             // cmpCode
             // 
-            this.cmpCode.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmpCode.Location = new System.Drawing.Point(325, 385);
+            this.cmpCode.Location = new System.Drawing.Point(293, 505);
             this.cmpCode.MaxLength = 2;
             this.cmpCode.Name = "cmpCode";
-            this.cmpCode.Size = new System.Drawing.Size(240, 26);
-            this.cmpCode.TabIndex = 16;
+            this.cmpCode.Size = new System.Drawing.Size(264, 26);
+            this.cmpCode.TabIndex = 12;
             // 
             // label8
             // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
             this.label8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label8.Location = new System.Drawing.Point(321, 480);
+            this.label8.Location = new System.Drawing.Point(592, 25);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(51, 20);
             this.label8.TabIndex = 17;
@@ -234,7 +225,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label9.Location = new System.Drawing.Point(326, 191);
+            this.label9.Location = new System.Drawing.Point(296, 312);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(33, 20);
             this.label9.TabIndex = 19;
@@ -242,18 +233,16 @@
             // 
             // CmpMB
             // 
-            this.CmpMB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CmpMB.Location = new System.Drawing.Point(326, 207);
+            this.CmpMB.Location = new System.Drawing.Point(296, 328);
             this.CmpMB.Name = "CmpMB";
-            this.CmpMB.Size = new System.Drawing.Size(240, 26);
-            this.CmpMB.TabIndex = 13;
+            this.CmpMB.Size = new System.Drawing.Size(263, 26);
+            this.CmpMB.TabIndex = 9;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label10.Location = new System.Drawing.Point(325, 251);
+            this.label10.Location = new System.Drawing.Point(295, 371);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(47, 20);
             this.label10.TabIndex = 21;
@@ -261,18 +250,16 @@
             // 
             // CmpIBAN
             // 
-            this.CmpIBAN.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CmpIBAN.Location = new System.Drawing.Point(325, 267);
+            this.CmpIBAN.Location = new System.Drawing.Point(295, 387);
             this.CmpIBAN.Name = "CmpIBAN";
-            this.CmpIBAN.Size = new System.Drawing.Size(240, 26);
-            this.CmpIBAN.TabIndex = 14;
+            this.CmpIBAN.Size = new System.Drawing.Size(264, 26);
+            this.CmpIBAN.TabIndex = 10;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label11.Location = new System.Drawing.Point(325, 312);
+            this.label11.Location = new System.Drawing.Point(297, 253);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(59, 20);
             this.label11.TabIndex = 23;
@@ -280,23 +267,19 @@
             // 
             // CmpSwift
             // 
-            this.CmpSwift.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CmpSwift.Location = new System.Drawing.Point(325, 328);
+            this.CmpSwift.Location = new System.Drawing.Point(297, 269);
             this.CmpSwift.Name = "CmpSwift";
-            this.CmpSwift.Size = new System.Drawing.Size(240, 26);
-            this.CmpSwift.TabIndex = 15;
+            this.CmpSwift.Size = new System.Drawing.Size(264, 26);
+            this.CmpSwift.TabIndex = 8;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Image = global::POT.Properties.Resources.DefaultLogoPOT;
             this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.pictureBox1.Location = new System.Drawing.Point(13, 13);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(300, 150);
+            this.pictureBox1.Size = new System.Drawing.Size(302, 150);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -308,7 +291,7 @@
             this.label12.Location = new System.Drawing.Point(13, 166);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(221, 20);
-            this.label12.TabIndex = 24;
+            this.label12.TabIndex = 0;
             this.label12.Text = "BEST ratio 2:1 With > 500 .jpg";
             // 
             // label13
@@ -317,13 +300,13 @@
             this.label13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label13.Location = new System.Drawing.Point(330, 74);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(119, 20);
+            this.label13.Size = new System.Drawing.Size(185, 20);
             this.label13.TabIndex = 25;
-            this.label13.Text = "Logo down size";
+            this.label13.Text = "Logo down size multiplier";
             // 
             // LogoSize
             // 
-            this.LogoSize.Location = new System.Drawing.Point(334, 90);
+            this.LogoSize.Location = new System.Drawing.Point(334, 45);
             this.LogoSize.Name = "LogoSize";
             this.LogoSize.Size = new System.Drawing.Size(86, 26);
             this.LogoSize.TabIndex = 27;
@@ -338,7 +321,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label14.Location = new System.Drawing.Point(325, 421);
+            this.label14.Location = new System.Drawing.Point(596, 430);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(107, 20);
             this.label14.TabIndex = 29;
@@ -346,17 +329,173 @@
             // 
             // SupportEmail
             // 
-            this.SupportEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.SupportEmail.Location = new System.Drawing.Point(325, 437);
+            this.SupportEmail.Location = new System.Drawing.Point(596, 446);
             this.SupportEmail.Name = "SupportEmail";
-            this.SupportEmail.Size = new System.Drawing.Size(240, 26);
+            this.SupportEmail.Size = new System.Drawing.Size(264, 26);
             this.SupportEmail.TabIndex = 17;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(12, 208);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(263, 28);
+            this.comboBox1.TabIndex = 1;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label15.Location = new System.Drawing.Point(596, 312);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(65, 20);
+            this.label15.TabIndex = 31;
+            this.label15.Text = "Contact";
+            // 
+            // CmpContactTB
+            // 
+            this.CmpContactTB.Location = new System.Drawing.Point(596, 328);
+            this.CmpContactTB.Name = "CmpContactTB";
+            this.CmpContactTB.Size = new System.Drawing.Size(261, 26);
+            this.CmpContactTB.TabIndex = 15;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label16.Location = new System.Drawing.Point(11, 312);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(35, 20);
+            this.label16.TabIndex = 33;
+            this.label16.Text = "City";
+            // 
+            // CmpCityTB
+            // 
+            this.CmpCityTB.Location = new System.Drawing.Point(12, 328);
+            this.CmpCityTB.Name = "CmpCityTB";
+            this.CmpCityTB.Size = new System.Drawing.Size(261, 26);
+            this.CmpCityTB.TabIndex = 3;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label17.Location = new System.Drawing.Point(11, 375);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(34, 20);
+            this.label17.TabIndex = 35;
+            this.label17.Text = "ZIP";
+            // 
+            // CmpPBTB
+            // 
+            this.CmpPBTB.Location = new System.Drawing.Point(12, 387);
+            this.CmpPBTB.Name = "CmpPBTB";
+            this.CmpPBTB.Size = new System.Drawing.Size(261, 26);
+            this.CmpPBTB.TabIndex = 4;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label18.Location = new System.Drawing.Point(11, 428);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(64, 20);
+            this.label18.TabIndex = 37;
+            this.label18.Text = "Country";
+            // 
+            // CmpCountryTB
+            // 
+            this.CmpCountryTB.Location = new System.Drawing.Point(12, 446);
+            this.CmpCountryTB.Name = "CmpCountryTB";
+            this.CmpCountryTB.Size = new System.Drawing.Size(261, 26);
+            this.CmpCountryTB.TabIndex = 36;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label19.Location = new System.Drawing.Point(11, 487);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(30, 20);
+            this.label19.TabIndex = 39;
+            this.label19.Text = "KN";
+            // 
+            // CmpKNTB
+            // 
+            this.CmpKNTB.Location = new System.Drawing.Point(12, 505);
+            this.CmpKNTB.Name = "CmpKNTB";
+            this.CmpKNTB.Size = new System.Drawing.Size(261, 26);
+            this.CmpKNTB.TabIndex = 5;
+            this.CmpKNTB.TextChanged += new System.EventHandler(this.CmpKNTB_TextChanged);
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label20.Location = new System.Drawing.Point(11, 549);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(44, 20);
+            this.label20.TabIndex = 41;
+            this.label20.Text = "EUR";
+            // 
+            // CmpEURTB
+            // 
+            this.CmpEURTB.Location = new System.Drawing.Point(12, 564);
+            this.CmpEURTB.Name = "CmpEURTB";
+            this.CmpEURTB.Size = new System.Drawing.Size(261, 26);
+            this.CmpEURTB.TabIndex = 6;
+            this.CmpEURTB.TextChanged += new System.EventHandler(this.CmpEURTB_TextChanged);
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label21.Location = new System.Drawing.Point(293, 429);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(77, 20);
+            this.label21.TabIndex = 43;
+            this.label21.Text = "RegionID";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(293, 444);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(77, 28);
+            this.comboBox2.TabIndex = 11;
+            this.comboBox2.TextChanged += new System.EventHandler(this.comboBox2_TextChanged);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Enabled = false;
+            this.textBox1.Location = new System.Drawing.Point(391, 446);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(170, 26);
+            this.textBox1.TabIndex = 44;
+            this.textBox1.TabStop = false;
             // 
             // CompanyInfo
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(577, 573);
+            this.ClientSize = new System.Drawing.Size(880, 618);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label21);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.CmpEURTB);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.CmpKNTB);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.CmpCountryTB);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.CmpPBTB);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.CmpCityTB);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.CmpContactTB);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.SupportEmail);
             this.Controls.Add(this.LogoSize);
@@ -378,14 +517,13 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.CmpPhoneTB);
             this.Controls.Add(this.CmpWWWTB);
             this.Controls.Add(this.CmpOIBTB);
             this.Controls.Add(this.CmpAddressTB);
-            this.Controls.Add(this.CmpNameTB);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "CompanyInfo";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -402,7 +540,6 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox CmpNameTB;
         private System.Windows.Forms.TextBox CmpAddressTB;
         private System.Windows.Forms.TextBox CmpOIBTB;
         private System.Windows.Forms.TextBox CmpWWWTB;
@@ -429,5 +566,21 @@
         private System.Windows.Forms.NumericUpDown LogoSize;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox SupportEmail;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox CmpContactTB;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox CmpCityTB;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox CmpPBTB;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.TextBox CmpCountryTB;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox CmpKNTB;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox CmpEURTB;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

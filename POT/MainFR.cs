@@ -99,9 +99,9 @@ namespace POT
                 try
                 {
                     resultArr.Clear();
-                    resultArr = qc.GetAllRegions(WorkingUser.Username, WorkingUser.Password);
+                    resultArr = qc.GetAllRegions();
 
-                    if(resultArr[0] != "nok")
+                    if (resultArr[0] != "nok")
                     {
                         Properties.Settings.Default.Remember = true;
                         Properties.Settings.Default.ServisIDRegion = int.Parse(resultArr[0].ToString());

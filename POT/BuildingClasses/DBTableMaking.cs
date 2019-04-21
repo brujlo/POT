@@ -503,6 +503,23 @@ namespace POT.BuildingClasses
                         transaction = cnn.BeginTransaction();
                         command.Transaction = transaction;
 
+                        //MainCmp
+                        command.CommandText = "CREATE TABLE " + _DBName + ".dbo.MainCmp([ID][numeric](18, 0) IDENTITY(1, 1) NOT NULL,[CmpName] [nvarchar] (50) NOT NULL,[Address] [nvarchar] (50) NULL,[VAT] [nvarchar] (50) NOT NULL," +
+                            "[www] [nvarchar] (50) NULL,[Phone] [nvarchar] (50) NULL,[Email] [nvarchar] (50) NULL,[MB] [nvarchar] (50) NOT NULL,[IBAN] [nvarchar] (50) NOT NULL,[SWIFT] [nvarchar] (50) NOT NULL," +
+                            "[CompanyCode] [nvarchar] (50) NOT NULL,[SupportEmail] [nvarchar] (50) NULL,[IDTvrtke] [numeric] (18, 0) NULL) ON[PRIMARY]";
+                        command.ExecuteNonQuery();
+
+                        command.CommandText = "ALTER TABLE  " + _DBName + ".dbo.MainCmp  WITH CHECK ADD  CONSTRAINT [FK_MainCmp_Tvrtke] FOREIGN KEY([IDTvrtke])REFERENCES[dbo].[Tvrtke]([ID])";
+                        command.ExecuteNonQuery();
+                        command.CommandText = "ALTER TABLE  " + _DBName + ".dbo.MainCmp CHECK CONSTRAINT [FK_MainCmp_Tvrtke]";
+                        command.ExecuteNonQuery();
+
+
+                        transaction.Commit();
+
+                        transaction = cnn.BeginTransaction();
+                        command.Transaction = transaction;
+
                         //Popunjavanje inicijalno potrebnih podataka
                         command.CommandText = "Insert into " + _DBName + ".dbo.Regija(RegionID, Region, FullRegion) values(1, 'S', 'Servis')";
                         command.ExecuteNonQuery();

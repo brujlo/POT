@@ -526,10 +526,13 @@ namespace POT.CopyPrintForms
         {
             try
             {
+                MainCmp mpc = new MainCmp();
+                mpc.GetMainCmpByName(Properties.Settings.Default.CmpName);
                 cmpR.Clear();
+                cmpR = mpc.MainCmpToCompany();
+
                 cmpS.Clear();
-                cmpR.GetCompanyInfoByID(code);
-                cmpS.GetCompanyInfoByRegionID(WorkingUser.RegionID.ToString());
+                cmpS.GetCompanyInfoByID(code);
             }
             catch (Exception e1)
             {

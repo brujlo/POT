@@ -403,7 +403,12 @@ namespace POT
             }
             else
             {
-                if (cmpR.GetCompanyByName(label2.Text.Trim()) && cmpS.GetCompanyInfoByRegionID(WorkingUser.RegionID.ToString()))
+                MainCmp mpc = new MainCmp();
+                mpc.GetMainCmpByName(Properties.Settings.Default.CmpName);
+                cmpS.Clear();
+                cmpS = mpc.MainCmpToCompany();
+
+                if (cmpR.GetCompanyByName(label2.Text.Trim()))
                 {
                     try
                     {
@@ -483,7 +488,7 @@ namespace POT
 
                                 //Provjera i spremanje u bazu
                                 List<String> allRegions = new List<string>();
-                                allRegions = qc.GetAllRegions(WorkingUser.Username, WorkingUser.Password);
+                                allRegions = qc.GetAllRegions();
 
                                 int index = resultArrC.FindIndex(resultArrC => resultArrC.Name.Equals(label2.Text));
 
