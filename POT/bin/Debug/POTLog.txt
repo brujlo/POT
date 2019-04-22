@@ -7895,3 +7895,805 @@ Parameter name: index
 
 - 21.04.19. 12:16 - App turned off
     *** BrunoBrckovic *** 
+
+- 21.04.19. 12:29 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 12:29 - App turned off
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 12:32 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 12:33 - App turned off
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 12:35 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 12:36 - App turned off
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 12:37 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 12:44 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 13:00 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 13:00 - App turned off
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 13:05 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 13:05 - App turned off
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 13:10 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 13:10
+    - BaseEcp: System.FormatException: Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+   at System.Text.StringBuilder.AppendFormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.FormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.Format(String format, Object[] args)
+   at POT.Documents.ISS.timer1_Tick(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\ISS.cs:line 35
+   at System.Windows.Forms.Timer.OnTick(EventArgs e)
+   at System.Windows.Forms.Timer.TimerNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\StartForm.cs:line 113
+    - InnerEcp: 
+    - MessageEcp: Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Text.StringBuilder.AppendFormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.FormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.Format(String format, Object[] args)
+   at POT.Documents.ISS.timer1_Tick(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\ISS.cs:line 35
+   at System.Windows.Forms.Timer.OnTick(EventArgs e)
+   at System.Windows.Forms.Timer.TimerNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\StartForm.cs:line 113
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 21.04.19. 13:11 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 13:13 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 13:13 - App turned off
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 13:26 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 13:28 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 13:32 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 13:33 - App turned off
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 13:34 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 13:36 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 13:38 - App turned off
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 13:39 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 13:39 - App turned off
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 13:48 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 13:51 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 20:16 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 20:16 - App turned off
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 20:17 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 20:17 - App turned off
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 20:36 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 20:40 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 20:40 - App turned off
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 20:43 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 20:43 - App turned off
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 20:43
+    - LOGED change: POT.SetDBConnection - button2_Click
+     - Used: DB connection address and name save.
+     - Data: 192.168.100.101, test
+     - Result: Saved, no msgToUser
+    ***  *** 
+
+
+- 21.04.19. 20:43 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 20:44 - App turned off
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 20:44 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 20:44 - App turned off
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 21:07 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 21:12 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 21:19 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 21:20 - App turned off
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 21:40 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 21:41 - App turned off
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 21:44 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 21:44
+    - BaseEcp: System.InvalidOperationException: Cross-thread operation not valid: Control 'NewPartCb' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.ComboBox.NativeAdd(Object item)
+   at System.Windows.Forms.ComboBox.ObjectCollection.AddInternal(Object item)
+   at System.Windows.Forms.ComboBox.ObjectCollection.Add(Object item)
+   at POT.Documents.ISS.fillSifrarnik() in F:\PROJEKTI\VS\POT\POT\POT\Documents\ISS.cs:line 188
+    - InnerEcp: 
+    - MessageEcp: Cross-thread operation not valid: Control 'NewPartCb' accessed from a thread other than the thread it was created on.
+    - SourceEcp: System.Windows.Forms
+    - StackTrqceEcp:    at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.ComboBox.NativeAdd(Object item)
+   at System.Windows.Forms.ComboBox.ObjectCollection.AddInternal(Object item)
+   at System.Windows.Forms.ComboBox.ObjectCollection.Add(Object item)
+   at POT.Documents.ISS.fillSifrarnik() in F:\PROJEKTI\VS\POT\POT\POT\Documents\ISS.cs:line 188
+    - TypeNameEcp: System.InvalidOperationException
+    *** BrunoBrckovic *** 
+
+
+- 21.04.19. 21:44 - App turned off
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 21:45 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 21:45
+    - BaseEcp: System.InvalidOperationException: Cross-thread operation not valid: Control 'NewPartCb' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.ComboBox.NativeAdd(Object item)
+   at System.Windows.Forms.ComboBox.ObjectCollection.AddInternal(Object item)
+   at System.Windows.Forms.ComboBox.ObjectCollection.Add(Object item)
+   at POT.Documents.ISS.fillSifrarnik() in F:\PROJEKTI\VS\POT\POT\POT\Documents\ISS.cs:line 189
+    - InnerEcp: 
+    - MessageEcp: Cross-thread operation not valid: Control 'NewPartCb' accessed from a thread other than the thread it was created on.
+    - SourceEcp: System.Windows.Forms
+    - StackTrqceEcp:    at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.ComboBox.NativeAdd(Object item)
+   at System.Windows.Forms.ComboBox.ObjectCollection.AddInternal(Object item)
+   at System.Windows.Forms.ComboBox.ObjectCollection.Add(Object item)
+   at POT.Documents.ISS.fillSifrarnik() in F:\PROJEKTI\VS\POT\POT\POT\Documents\ISS.cs:line 189
+    - TypeNameEcp: System.InvalidOperationException
+    *** BrunoBrckovic *** 
+
+
+- 21.04.19. 21:45 - App turned off
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 21:45 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 21:45
+    - BaseEcp: System.InvalidOperationException: Cross-thread operation not valid: Control 'NewPartCb' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.ComboBox.NativeAdd(Object item)
+   at System.Windows.Forms.ComboBox.ObjectCollection.AddInternal(Object item)
+   at System.Windows.Forms.ComboBox.ObjectCollection.Add(Object item)
+   at POT.Documents.ISS.fillSifrarnik() in F:\PROJEKTI\VS\POT\POT\POT\Documents\ISS.cs:line 189
+    - InnerEcp: 
+    - MessageEcp: Cross-thread operation not valid: Control 'NewPartCb' accessed from a thread other than the thread it was created on.
+    - SourceEcp: System.Windows.Forms
+    - StackTrqceEcp:    at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.ComboBox.NativeAdd(Object item)
+   at System.Windows.Forms.ComboBox.ObjectCollection.AddInternal(Object item)
+   at System.Windows.Forms.ComboBox.ObjectCollection.Add(Object item)
+   at POT.Documents.ISS.fillSifrarnik() in F:\PROJEKTI\VS\POT\POT\POT\Documents\ISS.cs:line 189
+    - TypeNameEcp: System.InvalidOperationException
+    *** BrunoBrckovic *** 
+
+
+- 21.04.19. 21:46 - App turned off
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 21:46 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 21:47
+    - BaseEcp: System.InvalidOperationException: Cross-thread operation not valid: Control 'NewPartCb' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.ComboBox.NativeAdd(Object item)
+   at System.Windows.Forms.ComboBox.ObjectCollection.AddInternal(Object item)
+   at System.Windows.Forms.ComboBox.ObjectCollection.Add(Object item)
+   at POT.Documents.ISS.fillSifrarnik() in F:\PROJEKTI\VS\POT\POT\POT\Documents\ISS.cs:line 188
+    - InnerEcp: 
+    - MessageEcp: Cross-thread operation not valid: Control 'NewPartCb' accessed from a thread other than the thread it was created on.
+    - SourceEcp: System.Windows.Forms
+    - StackTrqceEcp:    at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.ComboBox.NativeAdd(Object item)
+   at System.Windows.Forms.ComboBox.ObjectCollection.AddInternal(Object item)
+   at System.Windows.Forms.ComboBox.ObjectCollection.Add(Object item)
+   at POT.Documents.ISS.fillSifrarnik() in F:\PROJEKTI\VS\POT\POT\POT\Documents\ISS.cs:line 188
+    - TypeNameEcp: System.InvalidOperationException
+    *** BrunoBrckovic *** 
+
+
+- 21.04.19. 21:47
+    - BaseEcp: System.InvalidOperationException: Cross-thread operation not valid: Control 'NewPartCb' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.ComboBox.NativeAdd(Object item)
+   at System.Windows.Forms.ComboBox.ObjectCollection.AddInternal(Object item)
+   at System.Windows.Forms.ComboBox.ObjectCollection.Add(Object item)
+   at POT.Documents.ISS.fillSifrarnik()
+    - InnerEcp: 
+    - MessageEcp: Cross-thread operation not valid: Control 'NewPartCb' accessed from a thread other than the thread it was created on.
+    - SourceEcp: System.Windows.Forms
+    - StackTrqceEcp:    at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.ComboBox.NativeAdd(Object item)
+   at System.Windows.Forms.ComboBox.ObjectCollection.AddInternal(Object item)
+   at System.Windows.Forms.ComboBox.ObjectCollection.Add(Object item)
+   at POT.Documents.ISS.fillSifrarnik()
+    - TypeNameEcp: System.InvalidOperationException
+    *** BrunoBrckovic *** 
+
+
+- 21.04.19. 21:55 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 21:55
+    - BaseEcp: System.InvalidOperationException: Cross-thread operation not valid: Control 'NewPartCb' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.ComboBox.NativeAdd(Object item)
+   at System.Windows.Forms.ComboBox.ObjectCollection.AddInternal(Object item)
+   at System.Windows.Forms.ComboBox.ObjectCollection.Add(Object item)
+   at POT.Documents.ISS.fillSifrarnik() in F:\PROJEKTI\VS\POT\POT\POT\Documents\ISS.cs:line 210
+    - InnerEcp: 
+    - MessageEcp: Cross-thread operation not valid: Control 'NewPartCb' accessed from a thread other than the thread it was created on.
+    - SourceEcp: System.Windows.Forms
+    - StackTrqceEcp:    at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.ComboBox.NativeAdd(Object item)
+   at System.Windows.Forms.ComboBox.ObjectCollection.AddInternal(Object item)
+   at System.Windows.Forms.ComboBox.ObjectCollection.Add(Object item)
+   at POT.Documents.ISS.fillSifrarnik() in F:\PROJEKTI\VS\POT\POT\POT\Documents\ISS.cs:line 210
+    - TypeNameEcp: System.InvalidOperationException
+    *** BrunoBrckovic *** 
+
+
+- 21.04.19. 21:57
+    - BaseEcp: System.InvalidOperationException: Cross-thread operation not valid: Control 'NewPartCb' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.ComboBox.NativeAdd(Object item)
+   at System.Windows.Forms.ComboBox.ObjectCollection.AddInternal(Object item)
+   at System.Windows.Forms.ComboBox.ObjectCollection.Add(Object item)
+   at POT.Documents.ISS.fillSifrarnik() in F:\PROJEKTI\VS\POT\POT\POT\Documents\ISS.cs:line 210
+    - InnerEcp: 
+    - MessageEcp: Cross-thread operation not valid: Control 'NewPartCb' accessed from a thread other than the thread it was created on.
+    - SourceEcp: System.Windows.Forms
+    - StackTrqceEcp:    at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.ComboBox.NativeAdd(Object item)
+   at System.Windows.Forms.ComboBox.ObjectCollection.AddInternal(Object item)
+   at System.Windows.Forms.ComboBox.ObjectCollection.Add(Object item)
+   at POT.Documents.ISS.fillSifrarnik() in F:\PROJEKTI\VS\POT\POT\POT\Documents\ISS.cs:line 210
+    - TypeNameEcp: System.InvalidOperationException
+    *** BrunoBrckovic *** 
+
+
+- 21.04.19. 21:58 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 22:02
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.QueryCommands.GetPartsAllSifrarnik()
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.QueryCommands.GetPartsAllSifrarnik()
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 21.04.19. 22:02 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 22:10 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 22:12 - App turned off
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 22:13 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 22:14 - App turned off
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 22:14 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 22:16 - App turned off
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 22:17 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 22:20 - App turned off
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 22:21 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 22:25 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 22:25 - App turned off
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 22:34 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 22:43 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 22:45 - App turned off
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 22:50 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 22:58 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 23:01 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 23:01 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 23:24 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 23:26 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 23:29 - App turned off
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 23:30 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 23:30 - App turned off
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 23:31 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 23:32 - App turned off
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 23:33 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 23:33 - App turned off
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 23:42 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 23:42 - App turned off
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 23:43 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 23:58 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 23:58 - Please enter the part you are repairing.
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 23:58 - Please enter the part you are repairing.
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 23:58 - App turned off
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 23:59 - App started
+    *** BrunoBrckovic *** 
+
+- 21.04.19. 23:59 - Please enter the part you are repairing.
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 00:00 - Please enter the part you are repairing.
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 00:00 - Please enter the part you are repairing.
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 00:00 - Please enter the part you are repairing.
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 00:00 - Please enter the part you are repairing.
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 00:00 - App turned off
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 00:00 - App started
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 00:00 - Please enter the part you are repairing.
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 00:00 - Please enter the part you are repairing.
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 00:00 - Please enter the part you are repairing.
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 00:00 - Please enter the part you are repairing.
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 00:00 - App turned off
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 00:02 - App started
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 00:02 - App turned off
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 00:03 - App started
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 00:03 - App turned off
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 00:08 - App started
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 00:08 - App turned off
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 00:08 - App started
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 00:08 - App turned off
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 00:09 - App started
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 00:09 - App turned off
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 00:11 - App started
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 00:12 - App turned off
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 00:13 - App started
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 00:13 - App turned off
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 01:01 - App started
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 01:02
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Add to list
+     - Data: Dijagnostika, 010113002019, 2564, 12aa365da, 102001002000, FAB187604, 1100051680, 0:00:0:00, Dijagnostika, Neki koment
+     - Result: Added to list.
+    *** BrunoBrckovic *** 
+
+Added to list.
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 01:02 - App turned off
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 01:05 - App started
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 01:24
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Add to list
+     - Data: , , , , , , , 00:15, , 
+     - Result: Added to list.
+    *** BrunoBrckovic *** 
+
+Added to list.
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 01:29
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Add to list
+     - Data: Dijagnostika, , , , , , , 00:30, Dijagnostika, Ne printa racune
+     - Result: Added to list.
+    *** BrunoBrckovic *** 
+
+Added to list.
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 01:32
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Add to list
+     - Data: MONITOR NCR REAL POS 2x20 VFD Postolje, 010113002020, 2345252, 24SDF242F, 102001002000, FAB187608, 1100051680, 00:45, Zamjena, Poguljen dio
+     - Result: Added to list.
+    *** BrunoBrckovic *** 
+
+Added to list.
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 01:38 - App started
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 01:39
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Add to list
+     - Data: MONITOR NCR REAL POS 2x20 VFD Postolje, 010113002018, FHFH, FHFHFH, 102001002000, FAB187599, 1100051680, 00:45, bdghdghdh, fhgfhfh
+     - Result: Added to list.
+    *** BrunoBrckovic *** 
+
+Added to list.
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 01:40 - App started
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 01:40
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Add to list
+     - Data: MONITOR NCR REAL POS 2x20 VFD Postolje, 010113002012, SFSDFSF, FSDFSDFSF, 102001002000, FAB187604, 1100051680, 00:15, sfsfsdfsfsdf, sfsdfsdfsddf
+     - Result: Added to list.
+    *** BrunoBrckovic *** 
+
+Added to list.
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 01:40 - App turned off
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 01:41 - App started
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 01:41
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Add to list
+     - Data: MONITOR NCR REAL POS 2x20 VFD Postolje, 010113002013, SFSF, SFSDFSF, 102001002000, FAB187601, 1100051680, 00:15, sdfsdfsfsf, sfsdfsdfsfsf
+     - Result: Added to list.
+    *** BrunoBrckovic *** 
+
+Added to list.
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 01:41 - App turned off
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 01:43 - App started
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 01:43
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Add to list
+     - Data: MONITOR NCR REAL POS 2x20 VFD Postolje, 010113002014, DGDGDFGD, DGDFGDGDFG, 102001002000, D, 1100051680, 00:15, dgdgdgdg, dgdgdgdg
+     - Result: Added to list.
+    *** BrunoBrckovic *** 
+
+Added to list.
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 01:43
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Add to list
+     - Data: MONITOR NCR REAL POS 2x20 VFD Postolje, 010113002022, , , 102001002000, , , 00:15, , 
+     - Result: Added to list.
+    *** BrunoBrckovic *** 
+
+Added to list.
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 01:43
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Add to list
+     - Data: MONITOR NCR REAL POS 2x20 VFD Postolje, , , , , , , 00:15, , 
+     - Result: Added to list.
+    *** BrunoBrckovic *** 
+
+Added to list.
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 01:43 - App turned off
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 01:44 - App started
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 01:44
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Add to list
+     - Data: MONITOR NCR REAL POS 2x20 VFD Postolje, 010113002014, DGDFGDFG, DGDFGDGDFGDG, 102001002000, FAB187597, 1100051680, 00:15, dfgdfgdfgdfgg, dfgdfgdfgdgdg
+     - Result: Added to list.
+    *** BrunoBrckovic *** 
+
+Added to list.
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 01:44
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Add to list
+     - Data: MONITOR NCR REAL POS 2x20 VFD Postolje, , , , , , , 00:15, , 
+     - Result: Added to list.
+    *** BrunoBrckovic *** 
+
+Added to list.
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 01:44 - App turned off
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 01:46 - App started
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 01:46
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Add to list
+     - Data: MONITOR NCR REAL POS 2x20 VFD Postolje, 010113002014, FHFGHFGH, FHFHFGHFGH, 102001002000, FAB187597, 1100051680, 00:15, fghfghfghfhfh, fghfghfghfghgfh
+     - Result: Added to list.
+    *** BrunoBrckovic *** 
+
+Added to list.
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 01:47
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Add to list
+     - Data: MONITOR NCR REAL POS 2x20 VFD Postolje, , , , , , , 00:15, , 
+     - Result: Added to list.
+    *** BrunoBrckovic *** 
+
+Added to list.
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 01:47 - App turned off
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 01:49 - App started
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 01:50 - App turned off
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 01:55 - App started
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 01:55
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: MONITOR NCR REAL POS 2x20 VFD Postolje, 010113002013, , , 102001002000, , , 00:30, Dijagnostika, Ne printa racune
+     - Result: - 22.04.19. 01:55 - Added to list.
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 01:55 - Added to list.
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 01:56
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: MONITOR NCR REAL POS 2x20 VFD Postolje, 010113002015, SDFSDFSF, SFSDFSDFSDFS, 102001002000, FAB187603, 1100051680, 00:30, Zamjena, Pohaban dio
+     - Result: - 22.04.19. 01:56 - Added to list.
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 01:56 - Added to list.
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 02:04 - App turned off
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 02:05 - App started
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 02:06 - App turned off
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 02:07 - App started
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 02:07 - App turned off
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 02:08 - App started
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 02:08 - App turned off
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 02:10 - App started
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 02:11 - App turned off
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 02:11 - App started
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 02:13
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: MONITOR NCR REAL POS 2x20 VFD Postolje, , , , , , , 00:30, , 
+     - Result: - 22.04.19. 02:13 - Added to list.
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 02:13 - Added to list.
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 02:13 - App turned off
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 02:16 - App started
+    *** BrunoBrckovic *** 
+
+- 22.04.19. 02:17 - App turned off
+    *** BrunoBrckovic *** 

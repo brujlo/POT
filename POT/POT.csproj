@@ -111,6 +111,12 @@
     <Compile Include="CopyPrintForms\cPRIM.Designer.cs">
       <DependentUpon>cPRIM.cs</DependentUpon>
     </Compile>
+    <Compile Include="Documents\ISS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Documents\ISS.Designer.cs">
+      <DependentUpon>ISS.cs</DependentUpon>
+    </Compile>
     <Compile Include="Documents\Tickets.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -242,6 +248,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CopyPrintForms\cPRIM.resx">
       <DependentUpon>cPRIM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documents\ISS.resx">
+      <DependentUpon>ISS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Documents\IUS.resx">
       <DependentUpon>IUS.cs</DependentUpon>

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using POT.MyTypes;
+using System;
+using System.Collections.Generic;
 
 namespace POT.WorkingClasses
 {
@@ -171,6 +173,23 @@ namespace POT.WorkingClasses
                 default:
                     return 0;
             }
+        }
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        public static String ConnectCodeName(List<String> mSifrarnik, Part mPrt)
+        {
+            String name = "";
+            for (int i = 0; i < mSifrarnik.Count; i = i + 2)
+            {
+                if (long.Parse(mSifrarnik[i + 1]) == mPrt.PartialCode)
+                {
+                    name = mSifrarnik[i];
+                    break;
+                }
+            }
+
+            return name;
         }
     }
 }

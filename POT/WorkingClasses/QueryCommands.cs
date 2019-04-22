@@ -364,7 +364,6 @@ namespace POT
 
         public List<PartSifrarnik> GetPartsAllSifrarnik()
         {
-            PartSifrarnik tempPart = new PartSifrarnik();
             List<PartSifrarnik> prs = new List<PartSifrarnik>();
 
             try
@@ -383,6 +382,8 @@ namespace POT
                     {
                         do
                         {
+                            PartSifrarnik tempPart = new PartSifrarnik();
+
                             tempPart.CategoryCode = long.Parse(dataReader["CategoryCode"].ToString());
                             tempPart.CategoryName = dataReader["CategoryName"].ToString();
                             tempPart.PartCode = long.Parse(dataReader["PartCode"].ToString());
@@ -417,7 +418,7 @@ namespace POT
 
         public List<String> ListPartsByCodeRegionStateS(String Uname, String Pass, long mCodePartFull, long mStorageID, String mState)
         {
-            List<String> arr = new List<string>();
+            List<String> arr = new List<String>();
             //SqlConnection cnn = cn.Connect(Uname, Pass);
             cnn = cn.Connect(Uname, Pass);
             query = "Select * from Parts where CodePartFull = " + mCodePartFull + " and StorageID = " + mStorageID + " and State = '" + mState + "'";
@@ -447,6 +448,55 @@ namespace POT
             else
             {
                 arr.Add("nok");
+            }
+            dataReader.Close();
+            cnn.Close();
+            return arr;
+        }
+
+        public List<Part> ListPartsByRegionStateP(long mStorageID, String mState)
+        {
+            List<Part> arr = new List<Part>();
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "Select * from Parts where StorageID = " + mStorageID + " and State = '" + mState + "'";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            try
+            {
+                if (dataReader.HasRows)
+                {
+                    do
+                    {
+                        Part tempPart = new Part();
+
+                        tempPart.PartID = long.Parse(dataReader["PartID"].ToString());
+                        tempPart.CodePartFull = long.Parse(dataReader["CodePartFull"].ToString());
+                        tempPart.PartialCode = long.Parse(dataReader["PartialCode"].ToString());
+                        tempPart.SN = dataReader["SN"].ToString();
+                        tempPart.CN = dataReader["CN"].ToString();
+                        tempPart.DateIn = dataReader["DateIn"].ToString();
+                        tempPart.DateOut = dataReader["DateOut"].ToString();
+                        tempPart.DateSend = dataReader["DateSend"].ToString();
+                        tempPart.StorageID = long.Parse(dataReader["StorageID"].ToString());
+                        tempPart.State = dataReader["State"].ToString();
+                        tempPart.CompanyO = dataReader["CompanyO"].ToString();
+                        tempPart.CompanyC = dataReader["CompanyC"].ToString();
+
+                        arr.Add(tempPart);
+                    } while (dataReader.Read());
+                }
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
+            }
+            finally
+            {
+                if (cnn.State.ToString().Equals("Open"))
+                    cnn.Close();
             }
             dataReader.Close();
             cnn.Close();

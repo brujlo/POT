@@ -466,5 +466,17 @@ namespace POT.Properties {
                 this["CmpRegionID"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("15")]
+        public int ObracunskaJedinica {
+            get {
+                return ((int)(this["ObracunskaJedinica"]));
+            }
+            set {
+                this["ObracunskaJedinica"] = value;
+            }
+        }
     }
 }

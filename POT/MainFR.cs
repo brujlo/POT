@@ -52,7 +52,7 @@ namespace POT
                 this.linkLabel11.Enabled = true;
                 this.linkLabel15.Enabled = true;
                 this.linkLabel16.Enabled = true;
-                
+                this.linkLabel20.Enabled = true;
             }
             else
             {
@@ -65,6 +65,7 @@ namespace POT
                 this.linkLabel11.Enabled = false;
                 this.linkLabel15.Enabled = false;
                 this.linkLabel16.Enabled = false;
+                this.linkLabel20.Enabled = false;
             }
 
             if (WorkingUser.AdminRights.ToString().Contains("2") || WorkingUser.AdminRights.ToString().Contains("1"))
@@ -72,12 +73,14 @@ namespace POT
                 this.linkLabel9.Enabled = true;
                 this.linkLabel5.Enabled = true;
                 this.linkLabel16.Enabled = true;
+                this.linkLabel20.Enabled = true;
             }
             else
             {
                 this.linkLabel9.Enabled = false;
                 this.linkLabel5.Enabled = false;
                 this.linkLabel16.Enabled = false;
+                this.linkLabel20.Enabled = false;
             }
 
             if (Properties.Settings.Default.DBTabelsBuilded) linkLabel11.Enabled = false;
@@ -778,6 +781,12 @@ namespace POT
         {
             cPRIM doc = new cPRIM();
             doc.Show();
+        }
+
+        private void linkLabel19_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ISS iss = new ISS();
+            iss.Show();
         }
     }
 }
