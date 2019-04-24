@@ -474,7 +474,7 @@ namespace POT
 
                                     if (saved)
                                     {
-                                        Result = "DONE, document nbr. PRIM '" + IUSNumber + "'.";
+                                        Result = "DONE, document nbr. IUS '" + IUSNumber + "'.";
                                         lw.LogMe(function, usedQC, data, Result);
                                         MessageBox.Show(Result);
 
@@ -496,7 +496,7 @@ namespace POT
                                     }
                                     else
                                     {
-                                        Result = "DONE, document nbr. 'PRIM " + IUSNumber + "', but not saved in PL.";
+                                        Result = "DONE, document nbr. 'IUS " + IUSNumber + "', but not saved in PL.";
                                         lw.LogMe(function, usedQC, data, Result);
                                         MessageBox.Show(Result);
 

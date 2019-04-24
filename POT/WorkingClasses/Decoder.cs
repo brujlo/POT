@@ -62,9 +62,9 @@ namespace POT.WorkingClasses
             switch (retValue.Length)
             {
                 case 7:
-                    return retValue.Substring(0);
+                    return "00" + retValue.Substring(0);
                 case 8:
-                    return retValue.Substring(0);
+                    return "0" + retValue.Substring(0);
                 case 9:
                     return retValue.Substring(0);
                 case int n when (n > 9):

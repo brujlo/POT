@@ -76,6 +76,7 @@
             this.ISSSelectorCb = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.CANCELBt = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // timer1
@@ -575,6 +576,7 @@
             this.ISSSelectorCb.Name = "ISSSelectorCb";
             this.ISSSelectorCb.Size = new System.Drawing.Size(238, 28);
             this.ISSSelectorCb.TabIndex = 159;
+            this.ISSSelectorCb.SelectedIndexChanged += new System.EventHandler(this.ISSSelectorCb_SelectedIndexChanged);
             // 
             // button1
             // 
@@ -600,10 +602,21 @@
             this.CANCELBt.UseVisualStyleBackColor = false;
             this.CANCELBt.Click += new System.EventHandler(this.CANCELBt_Click);
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(679, 254);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(278, 24);
+            this.checkBox1.TabIndex = 163;
+            this.checkBox1.Text = "Check this if you want to close ISS";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // ISS
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(978, 662);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.CANCELBt);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label18);
@@ -709,5 +722,6 @@
         private System.Windows.Forms.ComboBox ISSSelectorCb;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button CANCELBt;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }

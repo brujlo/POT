@@ -169,7 +169,7 @@ namespace POT
                 }
                 catch (Exception e1)
                 {
-                    new LogWriter(e1);
+                    //new LogWriter(e1);
                     try
                     {
                         transaction.Rollback();
@@ -178,7 +178,7 @@ namespace POT
                     }
                     catch (Exception e2)
                     {
-                        new LogWriter(e2);
+                        //new LogWriter(e2);
                         throw;
                     }
                 }
@@ -222,7 +222,7 @@ namespace POT
                 }
                 catch (Exception e1)
                 {
-                    new LogWriter(e1);
+                    //new LogWriter(e1);
                     try
                     {
                         command.CommandText = "ALTER DATABASE [CP] SET MULTI_USER";
@@ -232,7 +232,7 @@ namespace POT
                     }
                     catch (Exception e2)
                     {
-                        new LogWriter(e2);
+                        //new LogWriter(e2);
                         command.CommandText = "ALTER DATABASE [CP] SET MULTI_USER";
                         command.ExecuteNonQuery();
                         throw;
@@ -313,14 +313,14 @@ namespace POT
             return arr;
         }
 
-        public PartSifrarnik PartInfoByFullCodeSifrarnik(String Uname, String Pass, long mFullCode)
+        public PartSifrarnik PartInfoByFullCodeSifrarnik(long mFullCode)
         {
             PartSifrarnik tempPart = new PartSifrarnik();
 
             try
             {
                 //SqlConnection cnn = cn.Connect(Uname, Pass);
-                cnn = cn.Connect(Uname, Pass);
+                cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
                 query = "Select * from Sifrarnik where FullCode = " + mFullCode;
                 command = new SqlCommand(query, cnn);
                 command.ExecuteNonQuery();
@@ -351,7 +351,7 @@ namespace POT
             }
             catch (Exception e1)
             {
-                new LogWriter(e1);
+                //new LogWriter(e1);
                 throw;
             }
             finally
@@ -405,7 +405,7 @@ namespace POT
             }
             catch (Exception e1)
             {
-                new LogWriter(e1);
+                //new LogWriter(e1);
                 throw;
             }
             finally
@@ -491,7 +491,8 @@ namespace POT
             }
             catch (Exception e1)
             {
-                new LogWriter(e1);
+                //new LogWriter(e1);
+                throw;
             }
             finally
             {
@@ -579,12 +580,89 @@ namespace POT
             return arr;
         }
 
+        public List<String> GetListPartsByPartIDFromPartsZamijenjeno(long mPartID)
+        {
+            List<String> arr = new List<string>();
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "Select * from PartsZamijenjeno where PartID = " + mPartID;
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                do
+                {
+                    arr.Add(dataReader["PartID"].ToString());
+                    arr.Add(dataReader["CodePartFull"].ToString());
+                    arr.Add(dataReader["PartialCode"].ToString());
+                    arr.Add(dataReader["SN"].ToString());
+                    arr.Add(dataReader["CN"].ToString());
+                    arr.Add(dataReader["DateIn"].ToString());
+                    arr.Add(dataReader["DateOut"].ToString());
+                    arr.Add(dataReader["DateSend"].ToString());
+                    arr.Add(dataReader["StorageID"].ToString());
+                    arr.Add(dataReader["State"].ToString());
+                    arr.Add(dataReader["CompanyO"].ToString());
+                    arr.Add(dataReader["CompanyC"].ToString());
+                } while (dataReader.Read());
+            }
+            else
+            {
+                arr.Add("nok");
+            }
+            dataReader.Close();
+            cnn.Close();
+            return arr;
+        }
+
         public List<Part> ListPartsByCodeRegionStateP(String Uname, String Pass, long mCodePartFull, String mSN, String mCN, String mState, long mStorageID)
         {
             List<Part> arr = new List<Part>();
             //SqlConnection cnn = cn.Connect(Uname, Pass);
             cnn = cn.Connect(Uname, Pass);
             query = "Select * from Parts where CodePartFull = " + mCodePartFull + " and SN = '" + mSN + "' and CN = '" + mCN + "' and StorageID = " + mStorageID + " and State = '" + mState + "'";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                do
+                {
+                    Part tempPart = new Part();
+
+                    tempPart.PartID = long.Parse(dataReader["PartID"].ToString());
+                    tempPart.CodePartFull = long.Parse(dataReader["CodePartFull"].ToString());
+                    tempPart.PartialCode = long.Parse(dataReader["PartialCode"].ToString());
+                    tempPart.SN = dataReader["SN"].ToString();
+                    tempPart.CN = dataReader["CN"].ToString();
+                    tempPart.DateIn = dataReader["DateIn"].ToString();
+                    tempPart.DateOut = dataReader["DateOut"].ToString();
+                    tempPart.DateSend = dataReader["DateSend"].ToString();
+                    tempPart.StorageID = long.Parse(dataReader["StorageID"].ToString());
+                    tempPart.State = dataReader["State"].ToString();
+                    tempPart.CompanyO = dataReader["CompanyO"].ToString();
+                    tempPart.CompanyC = dataReader["CompanyC"].ToString();
+
+                    arr.Add(tempPart);
+                } while (dataReader.Read());
+            }
+
+            dataReader.Close();
+            cnn.Close();
+            return arr;
+        }
+
+        public List<Part> SearchPartsInAllTablesBYPartID(long mPartID)
+        {
+            List<Part> arr = new List<Part>();
+            
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "Select * from Parts where PartID = " + mPartID;
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
             SqlDataReader dataReader = command.ExecuteReader();
@@ -1062,7 +1140,7 @@ namespace POT
                     }
                     catch (Exception e1)
                     {
-                        new LogWriter(e1);
+                        //new LogWriter(e1);
                         try
                         {
                             transaction.Rollback();
@@ -1071,7 +1149,7 @@ namespace POT
                         }
                         catch (Exception e2)
                         {
-                            new LogWriter(e2);
+                            //new LogWriter(e2);
                             throw;
                         }
                     }
@@ -1116,7 +1194,7 @@ namespace POT
                 }
                 catch (Exception e1)
                 {
-                    new LogWriter(e1);
+                    //new LogWriter(e1);
                     try
                     {
                         transaction.Rollback();
@@ -1125,7 +1203,7 @@ namespace POT
                     }
                     catch (Exception e2)
                     {
-                        new LogWriter(e2);
+                        //new LogWriter(e2);
                         throw;
                     }
                 }
@@ -1470,7 +1548,7 @@ namespace POT
             }
             catch(Exception e1)
             {
-                new LogWriter(e1);
+                //new LogWriter(e1);
                 throw;
             }
 
@@ -1639,7 +1717,7 @@ namespace POT
             }
             catch (Exception e1)
             {
-                new LogWriter(e1);
+                //new LogWriter(e1);
                 throw;
             }
 
@@ -1709,6 +1787,96 @@ namespace POT
             return arr;
         }
 
+        public long AddPartsToParts(List<Part> ListOfParts)
+        {
+            long newPartID = 0;
+
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            command = cnn.CreateCommand();
+            SqlTransaction transaction = cnn.BeginTransaction();
+            command.Connection = cnn;
+            command.Transaction = transaction;
+
+            try
+            {
+                for (int i = 0; i < ListOfParts.Count; i++)
+                {
+                    command.CommandText = "INSERT INTO Parts (PartialCode, SN, CN, DateIn, DateOut, DateSend, StorageID, State, CompanyO, CompanyC) output INSERTED.PartID VALUES (" + ListOfParts[i].PartialCode + ", '" + ListOfParts[i].SN + "', '" + ListOfParts[i].CN + "', '" + DateTime.Now.ToString("dd.MM.yy.") + "', '', '', " + WorkingUser.RegionID + ", '" + ListOfParts[i].State + "', '" + ListOfParts[i].CompanyO + "', '" + ListOfParts[i].CompanyC + "')";
+                    var retVal = command.ExecuteScalar();
+                    newPartID = (long)(retVal);
+                }
+
+                transaction.Commit();
+            }
+            catch (Exception e1)
+            {
+                //new LogWriter(e1);
+                try
+                {
+                    transaction.Rollback();
+                    newPartID = 0;
+                    throw;
+                }
+                catch (Exception e2)
+                {
+                    //new LogWriter(e2);
+                    throw;
+                }
+            }
+            finally
+            {
+                if (cnn.State.ToString().Equals("Open"))
+                    cnn.Close();
+            }
+            
+            cnn.Close();
+            return newPartID;
+        }
+
+        public long AddPartToParts(Part prt)
+        {
+            long newPartID = 0;
+
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            command = cnn.CreateCommand();
+            SqlTransaction transaction = cnn.BeginTransaction();
+            command.Connection = cnn;
+            command.Transaction = transaction;
+
+            try
+            {
+                command.CommandText = "INSERT INTO Parts (PartialCode, SN, CN, DateIn, DateOut, DateSend, StorageID, State, CompanyO, CompanyC) output INSERTED.PartID VALUES (" +
+                    prt.PartialCode + ", '" + prt.SN + "', '" + prt.CN + "', '" + DateTime.Now.ToString("dd.MM.yy.") + "', '', '', " + WorkingUser.RegionID + ", '" + prt.State + "', '" + prt.CompanyO + "', '" + prt.CompanyC + "')";
+                var retVal = command.ExecuteScalar();
+                newPartID = long.Parse(retVal.ToString());
+
+                transaction.Commit();
+            }
+            catch (Exception e1)
+            {
+                //new LogWriter(e1);
+                try
+                {
+                    transaction.Rollback();
+                    newPartID = 0;
+                    throw;
+                }
+                catch (Exception e2)
+                {
+                    //new LogWriter(e2);
+                    throw;
+                }
+            }
+            finally
+            {
+                if (cnn.State.ToString().Equals("Open"))
+                    cnn.Close();
+            }
+
+            cnn.Close();
+            return newPartID;
+        }
+
         public String PRIMUnesiUredajeDaSuPrimljeniInnner(String Uname, String Pass, List<Part> PartsID, long RegionS, long RegionR, long otpID, String napomena)
         {
             String executed = "nok";
@@ -1763,7 +1931,7 @@ namespace POT
                 }
                 catch (Exception e1)
                 {
-                    new LogWriter(e1);
+                    //new LogWriter(e1);
                     try
                     {
                         transaction.Rollback();
@@ -1772,7 +1940,7 @@ namespace POT
                     }
                     catch (Exception e2)
                     {
-                        new LogWriter(e2);
+                        //new LogWriter(e2);
                         throw;
                     }
                 }
@@ -1835,7 +2003,7 @@ namespace POT
                 }
                 catch (Exception e1)
                 {
-                    new LogWriter(e1);
+                    //new LogWriter(e1);
                     try
                     {
                         transaction.Rollback();
@@ -1844,7 +2012,7 @@ namespace POT
                     }
                     catch (Exception e2)
                     {
-                        new LogWriter(e2);
+                        //new LogWriter(e2);
                         throw;
                     }
                 }
@@ -1920,7 +2088,7 @@ namespace POT
                 }
                 catch (Exception e1)
                 {
-                    new LogWriter(e1);
+                    //new LogWriter(e1);
                     try
                     {
                         transaction.Rollback();
@@ -1929,7 +2097,7 @@ namespace POT
                     }
                     catch (Exception e2)
                     {
-                        new LogWriter(e2);
+                        //new LogWriter(e2);
                         throw;
                     }
                 }
@@ -1997,7 +2165,7 @@ namespace POT
                 }
                 catch (Exception e1)
                 {
-                    new LogWriter(e1);
+                    //new LogWriter(e1);
                     try
                     {
                         transaction.Rollback();
@@ -2006,7 +2174,7 @@ namespace POT
                     }
                     catch (Exception e2)
                     {
-                        new LogWriter(e2);
+                        //new LogWriter(e2);
                         throw;
                     }
                 }
@@ -2039,7 +2207,7 @@ namespace POT
             else
                 IUSCnt = long.Parse(dataReader.GetValue(0).ToString()) + (IUSCnt + 1);
 
-            IUSCntFull = long.Parse(DateTime.Now.ToString("yy")) * 1000000 + (WorkingUser.UserID * 1000);
+            IUSCntFull = long.Parse(DateTime.Now.ToString("yy")) * 1000000 + (WorkingUser.UserID * 1000) + IUSCnt;
 
             Properties.Settings.Default.ShareDocumentName = (IUSCntFull + IUSCnt).ToString();
 
@@ -2069,7 +2237,7 @@ namespace POT
             }
             catch (Exception e1)
             {
-                new LogWriter(e1);
+                //new LogWriter(e1);
                 try
                 {
                     transaction.Rollback();
@@ -2078,7 +2246,7 @@ namespace POT
                 }
                 catch (Exception e2)
                 {
-                    new LogWriter(e2);
+                    //new LogWriter(e2);
                     throw;
                 }
             }
@@ -2269,7 +2437,7 @@ namespace POT
             }
             catch (Exception e1)
             {
-                new LogWriter(e1);
+                //new LogWriter(e1);
                 try
                 {
                     transaction.Rollback();
@@ -2279,7 +2447,7 @@ namespace POT
                 }
                 catch (Exception e2)
                 {
-                    new LogWriter(e2);
+                    //new LogWriter(e2);
                     throw;
                 }
             }
@@ -2315,7 +2483,7 @@ namespace POT
             }
             catch (Exception e1)
             {
-                new LogWriter(e1);
+                //new LogWriter(e1);
                 try
                 {
                     transaction.Rollback();
@@ -2325,7 +2493,7 @@ namespace POT
                 }
                 catch (Exception e2)
                 {
-                    new LogWriter(e2);
+                    //new LogWriter(e2);
                     throw;
                 }
             }
@@ -2361,7 +2529,7 @@ namespace POT
             }
             catch (Exception e1)
             {
-                new LogWriter(e1);
+                //new LogWriter(e1);
                 try
                 {
                     transaction.Rollback();
@@ -2371,7 +2539,7 @@ namespace POT
                 }
                 catch (Exception e2)
                 {
-                    new LogWriter(e2);
+                    //new LogWriter(e2);
                     throw;
                 }
             }
@@ -2805,7 +2973,7 @@ namespace POT
                 }
                 catch (Exception e1)
                 {
-                    new LogWriter(e1);
+                    //new LogWriter(e1);
                     try
                     {
                         transaction.Rollback();
@@ -2814,7 +2982,7 @@ namespace POT
                     }
                     catch (Exception e2)
                     {
-                        new LogWriter(e2);
+                        //new LogWriter(e2);
                         throw;
                     }
                 }
@@ -2865,7 +3033,7 @@ namespace POT
                 }
                 catch (Exception e1)
                 {
-                    new LogWriter(e1);
+                    //new LogWriter(e1);
                     try
                     {
                         transaction.Rollback();
@@ -2874,7 +3042,7 @@ namespace POT
                     }
                     catch (Exception e2)
                     {
-                        new LogWriter(e2);
+                        //new LogWriter(e2);
                         throw;
                     }
                 }
@@ -2925,7 +3093,7 @@ namespace POT
                 catch (Exception e1)
                 {
                     isExecuted = false;
-                    new LogWriter(e1);
+                    //new LogWriter(e1);
                     try
                     {
                         transaction.Rollback();
@@ -2934,7 +3102,7 @@ namespace POT
                     }
                     catch (Exception e2)
                     {
-                        new LogWriter(e2);
+                        //new LogWriter(e2);
                         throw;
                     }
                 }
@@ -2948,9 +3116,6 @@ namespace POT
             cnn.Close();
             return isExecuted;
         }
-
-        //////////////////////////////////////////////////
-        ///
 
         public int CountMainCmp()
         {
@@ -2975,6 +3140,97 @@ namespace POT
             dataReader.Close();
             cnn.Close();
             return value;
+        }
+
+        public Boolean MainCmpChangeSelected(String mName)
+        {
+            Boolean executed = false;
+
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            command = cnn.CreateCommand();
+            SqlTransaction transaction = cnn.BeginTransaction();
+            command.Connection = cnn;
+            command.Transaction = transaction;
+
+            try
+            {
+                command.CommandText = "UPDATE MainCmp SET Selected = CASE WHEN CmpName <> '" + mName + "' THEN 0 ELSE 1 END";
+                command.ExecuteNonQuery();
+
+                transaction.Commit();
+                executed = true;
+            }
+            catch (Exception e1)
+            {
+                //new LogWriter(e1);
+                try
+                {
+                    transaction.Rollback();
+                    executed = false;
+                    throw;
+                }
+                catch (Exception e2)
+                {
+                    //new LogWriter(e2);
+                    throw;
+                }
+            }
+            finally
+            {
+                if (cnn.State.ToString().Equals("Open"))
+                    cnn.Close();
+            }
+
+            cnn.Close();
+            return executed;
+        }
+
+        public MainCmp MainCmpInfoSelected()
+        {
+            MainCmp cmp = new MainCmp();
+            
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "Select * from MainCmp where Selected = 1";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            try
+            {
+                cmp.ID = long.Parse(dataReader["ID"].ToString());
+                cmp.Name = dataReader["CmpName"].ToString();
+                cmp.Address = dataReader["Address"].ToString();
+                cmp.City = dataReader["City"].ToString();
+                cmp.PB = dataReader["PB"].ToString();
+                cmp.OIB = dataReader["OIB"].ToString();
+                cmp.Contact = dataReader["Contact"].ToString();
+                cmp.BIC = dataReader["BIC"].ToString();
+                cmp.KN = decimal.Parse(dataReader["KN"].ToString());
+                cmp.EUR = decimal.Parse(dataReader["EUR"].ToString());
+                cmp.Code = dataReader["Code"].ToString();
+                cmp.Country = dataReader["Country"].ToString();
+                cmp.RegionID = long.Parse(dataReader["regionID"].ToString());
+                cmp.Email = dataReader["Email"].ToString();
+                cmp.Phone = dataReader["Phone"].ToString();
+                cmp.WWW = dataReader["WWW"].ToString();
+                cmp.MB = dataReader["MB"].ToString();
+                cmp.IBAN = dataReader["IBAN"].ToString();
+                cmp.SupportEmail = dataReader["SupportEmail"].ToString();
+            }
+            catch (Exception e1)
+            {
+                //new LogWriter(e1);    
+                throw;
+            }
+            finally
+            {
+                if (cnn.State.ToString().Equals("Open"))
+                    cnn.Close();
+            }
+
+            cnn.Close();
+            return cmp;
         }
 
         public List<String> MainCmpInfoByCode(String mCode)
@@ -3295,7 +3551,7 @@ namespace POT
             }
             catch (Exception e1)
             {
-                new LogWriter(e1);
+                //new LogWriter(e1);
                 try
                 {
                     transaction.Rollback();
@@ -3304,7 +3560,7 @@ namespace POT
                 }
                 catch (Exception e2)
                 {
-                    new LogWriter(e2);
+                    //new LogWriter(e2);
                     throw;
                 }
             }
@@ -3316,6 +3572,180 @@ namespace POT
             
             cnn.Close();
             return executed;
+        }
+
+        public long ISSExistIfNotReturnNewID(long mISSid)
+        {
+            long ISSCnt = 0;
+
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "select Count(ID) from ISS where ID = " + mISSid;
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+            
+            if (dataReader.GetValue(0).ToString().Equals("0"))
+            {
+                dataReader.Close();
+                query = "select Count(ID) from ISS where ID LIKE '" + DateTime.Now.ToString("yy") + "%'";
+                command = new SqlCommand(query, cnn);
+                command.ExecuteNonQuery();
+                dataReader = command.ExecuteReader();
+                dataReader.Read();
+
+                ISSCnt = long.Parse(dataReader.GetValue(0).ToString());
+                ISSCnt = long.Parse(DateTime.Now.ToString("yy") + string.Format("{0:0000}", (ISSCnt + 1)));
+            }
+           
+            dataReader.Close();
+            cnn.Close();
+            return ISSCnt;
+        }
+
+        public Boolean ISSUnesiISS(Boolean mISSExist, Boolean mAllDone, long mISSid, String mDate, Company mCmpCustomer, Part mMainPart, List<ISSparts> listIssParts)
+        {
+            Boolean isExecuted = false;
+            int AllDone = mAllDone ? 1 : 0;
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            command = cnn.CreateCommand();
+            SqlTransaction transaction = cnn.BeginTransaction("T1");
+            command.Connection = cnn;
+            command.Transaction = transaction;
+            
+            try
+            {
+                if (!mISSExist)
+                {
+                    command.CommandText = "INSERT INTO ISS (ID, Date, UserID, CustomerID, PartID, Closed) VALUES (" + mISSid + ", '" + mDate + "', " + WorkingUser.UserID + ", " + mCmpCustomer.ID + ", " + mMainPart.PartID + ", " + AllDone + ")";
+                    command.ExecuteNonQuery();
+
+                    if (mAllDone)
+                    {
+                        command.CommandText = "UPDATE Parts SET State = 'sgg' where PartID = " + mMainPart.PartID;
+                        command.ExecuteNonQuery();
+                    }
+                }
+
+                for (int i = 0; i < listIssParts.Count; i++)
+                {
+
+                    if (listIssParts[i].PrtO.PartialCode != 0)
+                    {
+                        command.CommandText = "INSERT INTO Parts(PartialCode, SN, CN, DateIn, DateOut, DateSend, StorageID, State, CompanyO, CompanyC) VALUES(" +
+                            listIssParts[i].PrtO.PartialCode + ", '" + listIssParts[i].PrtO.SN + "', '" + listIssParts[i].PrtO.CN + "', '" + mDate +
+                            "', '', '', " + WorkingUser.RegionID + ", 'ng', '" + listIssParts[i].PrtO.CompanyO + "', '" + listIssParts[i].PrtO.CompanyC + "'); SELECT SCOPE_IDENTITY()";
+
+                        var retVal = command.ExecuteScalar();
+                        listIssParts[i].PrtO.PartID = long.Parse(retVal.ToString());
+                    }
+
+                    command.CommandText = "INSERT INTO ISSparts (ISSid, RB, oldPartID, newPartID, Work, Comment, Time) " +
+                        "VALUES (" +
+                        mISSid + ", " + listIssParts[i].RB + ", " + listIssParts[i].PrtO.PartID + ", " + listIssParts[i].PrtN.PartID + ", '" + listIssParts[i].Work + "', '" + listIssParts[i].Comment + "', '" + listIssParts[i].Time + "')";
+                    command.ExecuteNonQuery();
+                    
+                    if (listIssParts[i].PrtN.PartialCode != 0)
+                    {
+                        listIssParts[i].PrtN.DateOut = DateTime.Now.ToString("dd.MM.yy.");
+                        command.CommandText = "UPDATE Parts SET DateOut = '" + DateTime.Now.ToString("dd.MM.yy.") + "' where PartID = " + listIssParts[i].PrtN.PartID;
+                        command.ExecuteNonQuery();
+
+                        command.CommandText = "INSERT INTO PartsZamijenjeno SELECT * FROM Parts p WHERE p.partID = " + listIssParts[i].PrtN.PartID;
+                        command.ExecuteNonQuery();
+
+                        command.CommandText = "DELETE FROM Parts WHERE partID = " + listIssParts[i].PrtN.PartID;
+                        command.ExecuteNonQuery();
+                    }
+                }
+
+                transaction.Commit();
+                isExecuted = true;
+            }
+            catch (Exception e1)
+            {
+                //new LogWriter(e1);
+                try
+                {
+                    transaction.Rollback("T1");
+                    isExecuted = false;
+                    throw;
+                }
+                catch (Exception e2)
+                {
+                    //new LogWriter(e2);
+                    throw;
+                }
+            }
+            finally
+            {
+                if (cnn.State.ToString().Equals("Open"))
+                    cnn.Close();
+            }
+
+            cnn.Close();
+            return isExecuted;
+        }
+
+        public List<long> GetAllISSOpenClose(long mDone)
+        {
+            List<long> arr = new List<long>();
+
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "select ID from ISS where Closed = " + mDone;
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                do
+                {
+                    arr.Add(long.Parse(dataReader["ID"].ToString()));
+                } while (dataReader.Read());
+            }
+
+            dataReader.Close();
+            cnn.Close();
+            return arr;
+        }
+
+        public List<ISSparts> GetAllISSPartsByISSid(long mISSid)
+        {
+            List<ISSparts> arr = new List<ISSparts>();
+
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "select * from ISSparts where ISSid = " + mISSid;
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                do
+                {
+                    ISSparts tempPrt = new ISSparts();
+                    Part prt = new Part();
+
+                    tempPrt.ISSid = long.Parse(dataReader["ISSid"].ToString());
+                    tempPrt.RB = long.Parse(dataReader["RB"].ToString());
+
+                    tempPrt.PrtO = prt.GetPartFromPartsPartsPoslanoPartsZamijenjenoByID(long.Parse(dataReader["oldPartID"].ToString()));
+                    tempPrt.PrtN = prt.GetPartFromPartsPartsPoslanoPartsZamijenjenoByID(long.Parse(dataReader["newPartID"].ToString()));
+
+                    tempPrt.Comment = dataReader["Comment"].ToString();
+                    tempPrt.Work = dataReader["Work"].ToString();
+                    tempPrt.Time = dataReader["Time"].ToString();
+
+                    arr.Add(tempPrt);
+                } while (dataReader.Read());
+            }
+
+            dataReader.Close();
+            cnn.Close();
+            return arr;
         }
     }
 }

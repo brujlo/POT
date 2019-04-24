@@ -35,18 +35,20 @@ namespace POT.MyTypes
                     for (int i = 0; i < resultArr.Count; i = i + 12)
                     {
                         Part onlyPart = new Part();
-                        onlyPart.PartID = long.Parse(resultArr[0].ToString());
-                        onlyPart.CodePartFull = long.Parse(resultArr[1].ToString());
-                        onlyPart.PartialCode = long.Parse(resultArr[2].ToString());
-                        onlyPart.SN = resultArr[3].ToString();
-                        onlyPart.CN = resultArr[4].ToString();
-                        onlyPart.DateIn = resultArr[5].ToString();
-                        onlyPart.DateOut = resultArr[6].ToString();
-                        onlyPart.DateSend = resultArr[7].ToString();
-                        onlyPart.StorageID = long.Parse(resultArr[8].ToString());
-                        onlyPart.State = resultArr[9].ToString();
-                        onlyPart.CompanyO = resultArr[10].ToString();
-                        onlyPart.CompanyC = resultArr[11].ToString();
+
+                        onlyPart.PartID = long.Parse(resultArr[i + 0].ToString());
+                        onlyPart.CodePartFull = long.Parse(resultArr[i + 1].ToString());
+                        onlyPart.PartialCode = long.Parse(resultArr[i + 2].ToString());
+                        onlyPart.SN = resultArr[i + 3].ToString();
+                        onlyPart.CN = resultArr[i + 4].ToString();
+                        onlyPart.DateIn = resultArr[i + 5].ToString();
+                        onlyPart.DateOut = resultArr[i + 6].ToString();
+                        onlyPart.DateSend = resultArr[i + 7].ToString();
+                        onlyPart.StorageID = long.Parse(resultArr[i + 8].ToString());
+                        onlyPart.State = resultArr[i + 9].ToString();
+                        onlyPart.CompanyO = resultArr[i + 10].ToString();
+                        onlyPart.CompanyC = resultArr[i + 11].ToString();
+
                         pr.Add(onlyPart);
                     }
                 }
@@ -98,18 +100,20 @@ namespace POT.MyTypes
                     for (int i = 0; i < resultArr.Count; i = i + 12)
                     {
                         Part onlyPart = new Part();
-                        onlyPart.PartID = long.Parse(resultArr[0].ToString());
-                        onlyPart.CodePartFull = long.Parse(resultArr[1].ToString());
-                        onlyPart.PartialCode = long.Parse(resultArr[2].ToString());
-                        onlyPart.SN = resultArr[3].ToString();
-                        onlyPart.CN = resultArr[4].ToString();
-                        onlyPart.DateIn = resultArr[5].ToString();
-                        onlyPart.DateOut = resultArr[6].ToString();
-                        onlyPart.DateSend = resultArr[7].ToString();
-                        onlyPart.StorageID = long.Parse(resultArr[8].ToString());
-                        onlyPart.State = resultArr[9].ToString();
-                        onlyPart.CompanyO = resultArr[10].ToString();
-                        onlyPart.CompanyC = resultArr[11].ToString();
+                        
+                        onlyPart.PartID = long.Parse(resultArr[i + 0].ToString());
+                        onlyPart.CodePartFull = long.Parse(resultArr[i + 1].ToString());
+                        onlyPart.PartialCode = long.Parse(resultArr[i + 2].ToString());
+                        onlyPart.SN = resultArr[i + 3].ToString();
+                        onlyPart.CN = resultArr[i + 4].ToString();
+                        onlyPart.DateIn = resultArr[i + 5].ToString();
+                        onlyPart.DateOut = resultArr[i + 6].ToString();
+                        onlyPart.DateSend = resultArr[i + 7].ToString();
+                        onlyPart.StorageID = long.Parse(resultArr[i + 8].ToString());
+                        onlyPart.State = resultArr[i + 9].ToString();
+                        onlyPart.CompanyO = resultArr[i + 10].ToString();
+                        onlyPart.CompanyC = resultArr[i + 11].ToString();
+
                         pr.Add(onlyPart);
                     }
                 }
@@ -120,6 +124,105 @@ namespace POT.MyTypes
                 throw;
             }
             return pr;
+        }
+
+        public List<Part> GetListOfPartsFromPartsPartsPoslanoPartsZamijenjenoByID(List<long> mPartsID)
+        {
+
+            List<Part> pr = new List<Part>();
+            List<String> resultArr = new List<string>();
+            QueryCommands qc = new QueryCommands();
+            try
+            {
+                for (int k = 0; k < mPartsID.Count; k++)
+                {
+                    resultArr = qc.GetListPartsByPartIDFromPartsPoslano(mPartsID[k]);
+                    if (resultArr[0].Equals("nok"))
+                        resultArr = qc.GetListPartsByPartIDFromParts(mPartsID[k]);
+                    else if (resultArr[0].Equals("nok"))
+                        resultArr = qc.GetListPartsByPartIDFromPartsZamijenjeno(mPartsID[k]);
+                    else if(resultArr[0].Equals("nok"))
+                    {
+                        pr.Clear();
+                        return pr;
+                    }
+
+                    for (int i = 0; i < resultArr.Count; i = i + 12)
+                    {
+                        Part onlyPart = new Part();
+
+                        onlyPart.PartID = long.Parse(resultArr[i + 0].ToString());
+                        onlyPart.CodePartFull = long.Parse(resultArr[i + 1].ToString());
+                        onlyPart.PartialCode = long.Parse(resultArr[i + 2].ToString());
+                        onlyPart.SN = resultArr[i + 3].ToString();
+                        onlyPart.CN = resultArr[i + 4].ToString();
+                        onlyPart.DateIn = resultArr[i + 5].ToString();
+                        onlyPart.DateOut = resultArr[i + 6].ToString();
+                        onlyPart.DateSend = resultArr[i + 7].ToString();
+                        onlyPart.StorageID = long.Parse(resultArr[i + 8].ToString());
+                        onlyPart.State = resultArr[i + 9].ToString();
+                        onlyPart.CompanyO = resultArr[i + 10].ToString();
+                        onlyPart.CompanyC = resultArr[i + 11].ToString();
+
+                        pr.Add(onlyPart);
+                    }
+                }
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
+                throw;
+            }
+            return pr;
+        }
+
+        public Part GetPartFromPartsPartsPoslanoPartsZamijenjenoByID(long mPartID)
+        {
+            Part onlyPart = new Part();
+
+            if (mPartID != 0)
+            {
+                List<String> resultArr = new List<string>();
+                QueryCommands qc = new QueryCommands();
+                try
+                {
+                    resultArr = qc.GetListPartsByPartIDFromPartsPoslano(mPartID);
+
+                    if (resultArr[0].Equals("nok"))
+                    {
+                        resultArr.Clear();
+                        resultArr = qc.GetListPartsByPartIDFromParts(mPartID);
+                    }
+
+                    if (resultArr[0].Equals("nok"))
+                    {
+                        resultArr.Clear();
+                        resultArr = qc.GetListPartsByPartIDFromPartsZamijenjeno(mPartID);
+                    }
+
+                    if (resultArr[0].Equals("nok"))
+                        return onlyPart;
+
+                    onlyPart.PartID = long.Parse(resultArr[0].ToString());
+                    onlyPart.CodePartFull = long.Parse(resultArr[1].ToString());
+                    onlyPart.PartialCode = long.Parse(resultArr[2].ToString());
+                    onlyPart.SN = resultArr[3].ToString();
+                    onlyPart.CN = resultArr[4].ToString();
+                    onlyPart.DateIn = resultArr[5].ToString();
+                    onlyPart.DateOut = resultArr[6].ToString();
+                    onlyPart.DateSend = resultArr[7].ToString();
+                    onlyPart.StorageID = long.Parse(resultArr[8].ToString());
+                    onlyPart.State = resultArr[9].ToString();
+                    onlyPart.CompanyO = resultArr[10].ToString();
+                    onlyPart.CompanyC = resultArr[11].ToString();
+                }
+                catch (Exception e1)
+                {
+                    new LogWriter(e1);
+                    throw;
+                }
+            }
+            return onlyPart;
         }
 
         public List<Part> GetListOfPartsOTPParts(long mOTPID)
@@ -175,6 +278,35 @@ namespace POT.MyTypes
             return pr;
         }
 
+        public Boolean Clear()
+        {
+            Boolean isExecuted = false;
+            try
+            {
+                partID = 0;
+                codePartFull = 0;
+                partialCode = 0;
+                sN = "";
+                cN = "";
+                dateIn = "";
+                dateOut = "";
+                dateSend = "";
+                storageID = 0;
+                state = "";
+                companyO = "";
+                companyC = "";
+
+                isExecuted = true;
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
+                throw;
+            }
+
+            return isExecuted;
+        }
+
         public long PartID
         {
             get
@@ -224,7 +356,11 @@ namespace POT.MyTypes
             }
             set
             {
-                sN = value.ToUpper().Trim();
+                try
+                {
+                    sN = value.ToUpper().Trim();
+                }
+                catch { sN = ""; }
             }
 
         }
@@ -237,7 +373,11 @@ namespace POT.MyTypes
             }
             set
             {
-                cN = value.ToUpper().Trim();
+                try
+                {
+                    cN = value.ToUpper().Trim();
+                }
+                catch { cN = ""; }
             }
         }
 

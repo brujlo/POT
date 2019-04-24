@@ -242,7 +242,7 @@ namespace POT.WorkingClasses
                         e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, code - rb), Brushes.Black, new Point(code + 3, headerpointVer + moveBy));
 
                         QueryCommands qc = new QueryCommands();
-                        workingStr = qc.PartInfoByFullCodeSifrarnik(WorkingUser.Username, WorkingUser.Password, groupedPartsList[partRows][0].PartialCode).Packing;
+                        workingStr = qc.PartInfoByFullCodeSifrarnik(groupedPartsList[partRows][0].PartialCode).Packing;
                         fnt = fitFontSize(e, workingStr, fontSizeR, code - rb);
                         measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
                         measureField = mes - name;

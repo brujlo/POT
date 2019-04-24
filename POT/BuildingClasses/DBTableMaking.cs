@@ -142,7 +142,7 @@ namespace POT.BuildingClasses
                         command.CommandText = "CREATE TABLE " + _DBName + ".dbo.VersionTable ([Version][nvarchar](50) NULL) ON[PRIMARY]";
                         command.ExecuteNonQuery();
 
-                        
+                        /*
                         //Zamjena
                         command.CommandText = "CREATE TABLE " + _DBName + ".dbo.Zamjena ([zamjenaID][numeric](18, 0) NOT NULL,[DatIzrade] [nvarchar] (11) NOT NULL,[VriIzrade] [nvarchar] (5) NOT NULL,[RegijaID] [numeric] (18, 0) NOT NULL," +
                             "[PartID] [numeric] (18, 0) NOT NULL,[VriRada] [nchar] (10) NOT NULL,[UserID] [numeric] (18, 0) NOT NULL,CONSTRAINT[PK_Zamjena] PRIMARY KEY CLUSTERED([zamjenaID] ASC)" +
@@ -157,7 +157,7 @@ namespace POT.BuildingClasses
                         command.ExecuteNonQuery();
                         command.CommandText = "ALTER TABLE  " + _DBName + ".dbo.ZamjenaParts CHECK CONSTRAINT [FK_ZamjenaParts_Zamjena]";
                         command.ExecuteNonQuery();
-
+                        */
 
                         //Sifrarnik
                         command.CommandText = "CREATE TABLE " + _DBName + ".dbo.Sifrarnik " +
@@ -514,8 +514,21 @@ namespace POT.BuildingClasses
                         command.CommandText = "ALTER TABLE  " + _DBName + ".dbo.MainCmp CHECK CONSTRAINT [FK_MainCmp_Tvrtke]";
                         command.ExecuteNonQuery();
 
-
                         transaction.Commit();
+
+
+                        //ISS
+                        command.CommandText = "CREATE TABLE " + _DBName + ".dbo.ISS([ID] [numeric](18, 0) NOT NULL,[Date] [nvarchar](50) NOT NULL,[UserID] [numeric](18, 0) NOT NULL,[CustomerID] [numeric](18, 0) NOT NULL," +
+                            "[PartID] [numeric](18, 0) NOT NULL,[Closed] [numeric](1, 0) NOT NULL,PRIMARY KEY CLUSTERED ([ID] ASC)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON," +
+                            "ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]) ON [PRIMARY]";
+                        command.ExecuteNonQuery();
+
+
+                        //ISSparts
+                        command.CommandText = "CREATE TABLE " + _DBName + ".dbo.ISSparts([ISSid] [numeric](18, 0) NOT NULL,[RB] [numeric](18, 0) NOT NULL,[oldPartID] [numeric](18, 0) NULL,[newPartID] [numeric](18, 0) NULL," +
+                            "[Work] [nvarchar](200) NULL,[Comment] [nvarchar](200) NULL,[Time] [nvarchar](50) NULL) ON [PRIMARY]";
+                        command.ExecuteNonQuery();
+
 
                         transaction = cnn.BeginTransaction();
                         command.Transaction = transaction;

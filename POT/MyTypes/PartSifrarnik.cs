@@ -27,7 +27,7 @@ namespace POT.MyTypes
             try
             {
                 QueryCommands qc = new QueryCommands();
-                PartSifrarnik dr = qc.PartInfoByFullCodeSifrarnik(WorkingUser.Username, WorkingUser.Password, long.Parse(mCode));
+                PartSifrarnik dr = qc.PartInfoByFullCodeSifrarnik(long.Parse(mCode));
                 
                 if (dr.FullName != null)
                 {

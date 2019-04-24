@@ -124,6 +124,7 @@
       <DependentUpon>Tickets.cs</DependentUpon>
     </Compile>
     <Compile Include="MyTypes\Branch.cs" />
+    <Compile Include="MyTypes\ISSparts.cs" />
     <Compile Include="MyTypes\MainCmp.cs" />
     <Compile Include="WorkingClasses\AddTIDDB.cs" />
     <Compile Include="WorkingClasses\ConnectionHelper.cs" />

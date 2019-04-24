@@ -57,7 +57,7 @@ namespace POT.MyTypes
                 }
 
                 if (mNewOldPart[0].PartialCode != 0)
-                    nazivNovi = qc.PartInfoByFullCodeSifrarnik(WorkingUser.Username, WorkingUser.Password, mNewOldPart[0].PartialCode).FullName;
+                    nazivNovi = qc.PartInfoByFullCodeSifrarnik(mNewOldPart[0].PartialCode).FullName;
                 else
                     nazivNovi = "";
                 opis = mOpis;
@@ -72,7 +72,7 @@ namespace POT.MyTypes
                 if(mNewOldPart.Count > 1)
                 {
                     if (mNewOldPart[1].PartialCode != 0)
-                        nazivStari = qc.PartInfoByFullCodeSifrarnik(WorkingUser.Username, WorkingUser.Password, mNewOldPart[1].PartialCode).FullName;
+                        nazivStari = qc.PartInfoByFullCodeSifrarnik(mNewOldPart[1].PartialCode).FullName;
                     else
                         nazivStari = "";
                     try

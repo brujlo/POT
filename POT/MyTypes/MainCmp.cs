@@ -212,32 +212,35 @@ namespace POT.MyTypes
             {
                 resultArr = qc.AllMainCmpInfoSortCode();
 
-                for (int i = 0; i < resultArr.Count(); i = i + 19)
+                if (!resultArr[0].Equals("nok"))
                 {
-                    MainCmp tempC = new MainCmp();
+                    for (int i = 0; i < resultArr.Count(); i = i + 19)
+                    {
+                        MainCmp tempC = new MainCmp();
 
-                    tempC.ID            = long.Parse(resultArr[i + 0]);
-                    tempC.Name          = resultArr[i + 1].Trim();
-                    tempC.Address       = resultArr[i + 2].Trim();
-                    tempC.City          = resultArr[i + 3].Trim();
-                    tempC.PB            = resultArr[i + 4].Trim();
-                    tempC.OIB           = resultArr[i + 5].Trim();
-                    tempC.Contact       = resultArr[i + 6].Trim();
-                    tempC.BIC           = resultArr[i + 7].Trim();
-                    tempC.KN            = decimal.Parse(resultArr[i + 8]);
-                    tempC.EUR           = decimal.Parse(resultArr[i + 9]);
-                    tempC.Code          = resultArr[i + 10].Trim();
-                    tempC.Country       = resultArr[i + 11].Trim();
-                    tempC.RegionID      = long.Parse(resultArr[i + 12].Trim());
-                    tempC.Email         = resultArr[i + 13].Trim();
-                    tempC.Phone         = resultArr[i + 14].Trim();
-                    tempC.WWW           = resultArr[i + 15].Trim();
-                    tempC.MB            = resultArr[i + 16].Trim();
-                    tempC.IBAN          = resultArr[i + 17].Trim();
-                    tempC.SupportEmail  = resultArr[i + 18].Trim();
+                        tempC.ID            = long.Parse(resultArr[i + 0]);
+                        tempC.Name          = resultArr[i + 1].Trim();
+                        tempC.Address       = resultArr[i + 2].Trim();
+                        tempC.City          = resultArr[i + 3].Trim();
+                        tempC.PB            = resultArr[i + 4].Trim();
+                        tempC.OIB           = resultArr[i + 5].Trim();
+                        tempC.Contact       = resultArr[i + 6].Trim();
+                        tempC.BIC           = resultArr[i + 7].Trim();
+                        tempC.KN            = decimal.Parse(resultArr[i + 8]);
+                        tempC.EUR           = decimal.Parse(resultArr[i + 9]);
+                        tempC.Code          = resultArr[i + 10].Trim();
+                        tempC.Country       = resultArr[i + 11].Trim();
+                        tempC.RegionID      = long.Parse(resultArr[i + 12].Trim());
+                        tempC.Email         = resultArr[i + 13].Trim();
+                        tempC.Phone         = resultArr[i + 14].Trim();
+                        tempC.WWW           = resultArr[i + 15].Trim();
+                        tempC.MB            = resultArr[i + 16].Trim();
+                        tempC.IBAN          = resultArr[i + 17].Trim();
+                        tempC.SupportEmail  = resultArr[i + 18].Trim();
 
-                    resultArrC.Add(tempC);
-                    count++;
+                        resultArrC.Add(tempC);
+                        count++;
+                    }
                 }
             }
             catch (Exception e1)
