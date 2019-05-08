@@ -25,7 +25,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ProductName>POT</ProductName>
     <PublisherName>Exception</PublisherName>
-    <ApplicationRevision>58</ApplicationRevision>
+    <ApplicationRevision>59</ApplicationRevision>
     <ApplicationVersion>1.3.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -98,6 +98,12 @@
     </Compile>
     <Compile Include="BuildingClasses\CompanyInfo.Designer.cs">
       <DependentUpon>CompanyInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CopyPrintForms\cISS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CopyPrintForms\cISS.Designer.cs">
+      <DependentUpon>cISS.cs</DependentUpon>
     </Compile>
     <Compile Include="CopyPrintForms\cOTPcs.cs">
       <SubType>Form</SubType>
@@ -187,6 +193,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>strings.resx</DependentUpon>
     </Compile>
+    <Compile Include="WorkingClasses\PrintMeISS.cs" />
     <Compile Include="WorkingClasses\PrintMeRac.cs" />
     <Compile Include="WorkingClasses\Selector.cs">
       <SubType>Form</SubType>
@@ -243,6 +250,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BuildingClasses\DeleteDBUser.resx">
       <DependentUpon>DeleteDBUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CopyPrintForms\cISS.resx">
+      <DependentUpon>cISS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CopyPrintForms\cOTPcs.resx">
       <DependentUpon>cOTPcs.cs</DependentUpon>
@@ -341,6 +351,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="EXE.ico" />
+    <None Include="Resources\network.png" />
+    <None Include="Resources\cloud.png" />
     <None Include="Resources\settings 3.png" />
     <None Include="Resources\search_64px.png" />
     <None Include="Resources\magnifying-glass_64px.png" />

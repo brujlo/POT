@@ -247,4 +247,7 @@
   <data name="ReceiptMain" xml:space="preserve">
     <value>Receipt</value>
   </data>
+  <data name="ServiceReport" xml:space="preserve">
+    <value>SERVICE REPORT</value>
+  </data>
 </root>

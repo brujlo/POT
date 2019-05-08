@@ -45,6 +45,7 @@ namespace POT
 
                     Properties.Settings.Default.MainCompanyCode = resultList[index].Code;
                     Properties.Settings.Default.CmpName = resultList[index].Name;
+                    Properties.Settings.Default.CmpID = resultList[index].ID;
                     Properties.Settings.Default.Remember = true;
                     Properties.Settings.Default.Save();
 
@@ -70,7 +71,7 @@ namespace POT
         private void MainCmpSelector_Load(object sender, EventArgs e)
         {
             QueryCommands qc = new QueryCommands();
-            resultList = cmp.GetAllMainCmpInfoSortCode();
+            resultList = cmp.GetAllMainCmpInfoSortByName();
 
             if (resultList.Count != 0)
             {

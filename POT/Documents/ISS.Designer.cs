@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ISS));
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.TIMERlb = new System.Windows.Forms.Label();
             this.PAUSEbt = new System.Windows.Forms.Button();
             this.STARTbt = new System.Windows.Forms.Button();
             this.STOPbt = new System.Windows.Forms.Button();
@@ -74,26 +74,26 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.ISSSelectorCb = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.SAVEbt = new System.Windows.Forms.Button();
             this.CANCELBt = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.TIMERtb = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.PRINTbt = new System.Windows.Forms.Button();
+            this.SelectPrinterbt = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.printDialog1 = new System.Windows.Forms.PrintDialog();
+            this.button1 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
             // 
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // TIMERlb
-            // 
-            this.TIMERlb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.TIMERlb.AutoSize = true;
-            this.TIMERlb.Font = new System.Drawing.Font("Candara", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TIMERlb.Location = new System.Drawing.Point(704, 12);
-            this.TIMERlb.Name = "TIMERlb";
-            this.TIMERlb.Size = new System.Drawing.Size(174, 49);
-            this.TIMERlb.TabIndex = 0;
-            this.TIMERlb.Text = "00:00:00";
             // 
             // PAUSEbt
             // 
@@ -103,6 +103,7 @@
             this.PAUSEbt.Name = "PAUSEbt";
             this.PAUSEbt.Size = new System.Drawing.Size(112, 44);
             this.PAUSEbt.TabIndex = 155;
+            this.PAUSEbt.TabStop = false;
             this.PAUSEbt.Text = "PAUSE";
             this.PAUSEbt.UseVisualStyleBackColor = false;
             this.PAUSEbt.Click += new System.EventHandler(this.PAUSEbt_Click);
@@ -115,6 +116,7 @@
             this.STARTbt.Name = "STARTbt";
             this.STARTbt.Size = new System.Drawing.Size(112, 44);
             this.STARTbt.TabIndex = 2;
+            this.STARTbt.TabStop = false;
             this.STARTbt.Text = "START";
             this.STARTbt.UseVisualStyleBackColor = false;
             this.STARTbt.Click += new System.EventHandler(this.STARTbt_Click);
@@ -127,6 +129,7 @@
             this.STOPbt.Name = "STOPbt";
             this.STOPbt.Size = new System.Drawing.Size(112, 44);
             this.STOPbt.TabIndex = 3;
+            this.STOPbt.TabStop = false;
             this.STOPbt.Text = "STOP";
             this.STOPbt.UseVisualStyleBackColor = false;
             this.STOPbt.Click += new System.EventHandler(this.STOPbt_Click);
@@ -139,20 +142,21 @@
             this.PartCb.Location = new System.Drawing.Point(279, 23);
             this.PartCb.Name = "PartCb";
             this.PartCb.Size = new System.Drawing.Size(238, 28);
-            this.PartCb.TabIndex = 1;
+            this.PartCb.TabIndex = 0;
             this.PartCb.SelectedIndexChanged += new System.EventHandler(this.PartCb_SelectedIndexChanged);
             // 
             // button4
             // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button4.BackColor = System.Drawing.Color.Transparent;
             this.button4.Enabled = false;
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(939, 12);
+            this.button4.Location = new System.Drawing.Point(37, 612);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(27, 23);
+            this.button4.Size = new System.Drawing.Size(14, 12);
             this.button4.TabIndex = 105;
+            this.button4.TabStop = false;
             this.button4.UseVisualStyleBackColor = false;
             // 
             // NameTb
@@ -165,6 +169,7 @@
             this.NameTb.ReadOnly = true;
             this.NameTb.Size = new System.Drawing.Size(243, 26);
             this.NameTb.TabIndex = 106;
+            this.NameTb.TabStop = false;
             // 
             // DateInTb
             // 
@@ -175,6 +180,7 @@
             this.DateInTb.ReadOnly = true;
             this.DateInTb.Size = new System.Drawing.Size(96, 26);
             this.DateInTb.TabIndex = 107;
+            this.DateInTb.TabStop = false;
             // 
             // DateSentTb
             // 
@@ -185,6 +191,7 @@
             this.DateSentTb.ReadOnly = true;
             this.DateSentTb.Size = new System.Drawing.Size(96, 26);
             this.DateSentTb.TabIndex = 108;
+            this.DateSentTb.TabStop = false;
             // 
             // SNTb
             // 
@@ -196,6 +203,7 @@
             this.SNTb.ReadOnly = true;
             this.SNTb.Size = new System.Drawing.Size(243, 26);
             this.SNTb.TabIndex = 109;
+            this.SNTb.TabStop = false;
             // 
             // CNTb
             // 
@@ -207,6 +215,7 @@
             this.CNTb.ReadOnly = true;
             this.CNTb.Size = new System.Drawing.Size(243, 26);
             this.CNTb.TabIndex = 110;
+            this.CNTb.TabStop = false;
             // 
             // IDTb
             // 
@@ -217,6 +226,7 @@
             this.IDTb.ReadOnly = true;
             this.IDTb.Size = new System.Drawing.Size(96, 26);
             this.IDTb.TabIndex = 111;
+            this.IDTb.TabStop = false;
             // 
             // label1
             // 
@@ -318,6 +328,7 @@
             this.listView1.TabIndex = 119;
             this.listView1.TabStop = false;
             this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.DoubleClick += new System.EventHandler(this.listView1_DoubleClick);
             // 
             // WorkDoneCb
             // 
@@ -332,7 +343,7 @@
             this.WorkDoneCb.Margin = new System.Windows.Forms.Padding(4);
             this.WorkDoneCb.Name = "WorkDoneCb";
             this.WorkDoneCb.Size = new System.Drawing.Size(567, 33);
-            this.WorkDoneCb.TabIndex = 123;
+            this.WorkDoneCb.TabIndex = 1;
             this.WorkDoneCb.TabStop = false;
             // 
             // label9
@@ -355,6 +366,7 @@
             this.OldPartCodeTb.ReadOnly = true;
             this.OldPartCodeTb.Size = new System.Drawing.Size(100, 26);
             this.OldPartCodeTb.TabIndex = 124;
+            this.OldPartCodeTb.TabStop = false;
             // 
             // label10
             // 
@@ -377,7 +389,7 @@
             this.OldPartCb.Location = new System.Drawing.Point(14, 465);
             this.OldPartCb.Name = "OldPartCb";
             this.OldPartCb.Size = new System.Drawing.Size(413, 28);
-            this.OldPartCb.TabIndex = 126;
+            this.OldPartCb.TabIndex = 2;
             this.OldPartCb.SelectedIndexChanged += new System.EventHandler(this.OldPartCb_SelectedIndexChanged);
             // 
             // label55
@@ -401,7 +413,7 @@
             this.NewPartCb.Location = new System.Drawing.Point(14, 524);
             this.NewPartCb.Name = "NewPartCb";
             this.NewPartCb.Size = new System.Drawing.Size(413, 28);
-            this.NewPartCb.TabIndex = 130;
+            this.NewPartCb.TabIndex = 5;
             this.NewPartCb.SelectedIndexChanged += new System.EventHandler(this.NewPartCb_SelectedIndexChanged);
             // 
             // label13
@@ -424,6 +436,7 @@
             this.NewPartCodeTb.ReadOnly = true;
             this.NewPartCodeTb.Size = new System.Drawing.Size(100, 26);
             this.NewPartCodeTb.TabIndex = 128;
+            this.NewPartCodeTb.TabStop = false;
             // 
             // label12
             // 
@@ -456,6 +469,7 @@
             this.NewPartCNTb.ReadOnly = true;
             this.NewPartCNTb.Size = new System.Drawing.Size(200, 26);
             this.NewPartCNTb.TabIndex = 134;
+            this.NewPartCNTb.TabStop = false;
             // 
             // NewPartSNCb
             // 
@@ -465,7 +479,7 @@
             this.NewPartSNCb.Location = new System.Drawing.Point(543, 524);
             this.NewPartSNCb.Name = "NewPartSNCb";
             this.NewPartSNCb.Size = new System.Drawing.Size(215, 28);
-            this.NewPartSNCb.TabIndex = 136;
+            this.NewPartSNCb.TabIndex = 6;
             this.NewPartSNCb.SelectedIndexChanged += new System.EventHandler(this.NewPartSNCb_SelectedIndexChanged);
             // 
             // label15
@@ -486,7 +500,7 @@
             this.OldPartCNTb.Location = new System.Drawing.Point(770, 467);
             this.OldPartCNTb.Name = "OldPartCNTb";
             this.OldPartCNTb.Size = new System.Drawing.Size(200, 26);
-            this.OldPartCNTb.TabIndex = 138;
+            this.OldPartCNTb.TabIndex = 4;
             // 
             // label16
             // 
@@ -506,7 +520,7 @@
             this.OLDPartSNTb.Location = new System.Drawing.Point(544, 467);
             this.OLDPartSNTb.Name = "OLDPartSNTb";
             this.OLDPartSNTb.Size = new System.Drawing.Size(214, 26);
-            this.OLDPartSNTb.TabIndex = 140;
+            this.OLDPartSNTb.TabIndex = 3;
             // 
             // textBox1
             // 
@@ -528,11 +542,11 @@
             this.ComentTb.BackColor = System.Drawing.Color.White;
             this.ComentTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.ComentTb.ForeColor = System.Drawing.Color.Black;
-            this.ComentTb.Location = new System.Drawing.Point(14, 585);
+            this.ComentTb.Location = new System.Drawing.Point(87, 597);
             this.ComentTb.Multiline = true;
             this.ComentTb.Name = "ComentTb";
-            this.ComentTb.Size = new System.Drawing.Size(523, 65);
-            this.ComentTb.TabIndex = 156;
+            this.ComentTb.Size = new System.Drawing.Size(448, 65);
+            this.ComentTb.TabIndex = 7;
             this.ComentTb.TabStop = false;
             this.ComentTb.TextChanged += new System.EventHandler(this.ComentTb_TextChanged);
             // 
@@ -541,7 +555,7 @@
             this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.Color.Gray;
-            this.label8.Location = new System.Drawing.Point(12, 566);
+            this.label8.Location = new System.Drawing.Point(83, 578);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(78, 20);
             this.label8.TabIndex = 157;
@@ -552,7 +566,7 @@
             this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label17.AutoSize = true;
             this.label17.ForeColor = System.Drawing.Color.Crimson;
-            this.label17.Location = new System.Drawing.Point(425, 566);
+            this.label17.Location = new System.Drawing.Point(423, 578);
             this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(116, 20);
@@ -576,18 +590,20 @@
             this.ISSSelectorCb.Name = "ISSSelectorCb";
             this.ISSSelectorCb.Size = new System.Drawing.Size(238, 28);
             this.ISSSelectorCb.TabIndex = 159;
+            this.ISSSelectorCb.TabStop = false;
             this.ISSSelectorCb.SelectedIndexChanged += new System.EventHandler(this.ISSSelectorCb_SelectedIndexChanged);
             // 
-            // button1
+            // SAVEbt
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(825, 612);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 38);
-            this.button1.TabIndex = 161;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.SAVEbt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.SAVEbt.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.SAVEbt.Location = new System.Drawing.Point(843, 618);
+            this.SAVEbt.Name = "SAVEbt";
+            this.SAVEbt.Size = new System.Drawing.Size(112, 44);
+            this.SAVEbt.TabIndex = 8;
+            this.SAVEbt.Text = "Save";
+            this.SAVEbt.UseVisualStyleBackColor = false;
+            this.SAVEbt.Click += new System.EventHandler(this.button1_Click);
             // 
             // CANCELBt
             // 
@@ -598,6 +614,7 @@
             this.CANCELBt.Name = "CANCELBt";
             this.CANCELBt.Size = new System.Drawing.Size(112, 44);
             this.CANCELBt.TabIndex = 162;
+            this.CANCELBt.TabStop = false;
             this.CANCELBt.Text = "CANCEL";
             this.CANCELBt.UseVisualStyleBackColor = false;
             this.CANCELBt.Click += new System.EventHandler(this.CANCELBt_Click);
@@ -609,16 +626,129 @@
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(278, 24);
             this.checkBox1.TabIndex = 163;
+            this.checkBox1.TabStop = false;
             this.checkBox1.Text = "Check this if you want to close ISS";
             this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.button2.Location = new System.Drawing.Point(3, 183);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(116, 35);
+            this.button2.TabIndex = 164;
+            this.button2.Text = "Clear all";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // TIMERtb
+            // 
+            this.TIMERtb.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TIMERtb.Font = new System.Drawing.Font("Candara", 20F);
+            this.TIMERtb.ForeColor = System.Drawing.Color.Yellow;
+            this.TIMERtb.Location = new System.Drawing.Point(713, 16);
+            this.TIMERtb.Name = "TIMERtb";
+            this.TIMERtb.ReadOnly = true;
+            this.TIMERtb.Size = new System.Drawing.Size(253, 56);
+            this.TIMERtb.TabIndex = 165;
+            this.TIMERtb.TabStop = false;
+            this.TIMERtb.Text = "00:00:00";
+            this.TIMERtb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.AliceBlue;
+            this.button3.Location = new System.Drawing.Point(679, 23);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(28, 24);
+            this.button3.TabIndex = 166;
+            this.button3.TabStop = false;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // PRINTbt
+            // 
+            this.PRINTbt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.PRINTbt.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.PRINTbt.Location = new System.Drawing.Point(711, 618);
+            this.PRINTbt.Name = "PRINTbt";
+            this.PRINTbt.Size = new System.Drawing.Size(112, 44);
+            this.PRINTbt.TabIndex = 9;
+            this.PRINTbt.Text = "Print";
+            this.PRINTbt.UseVisualStyleBackColor = false;
+            this.PRINTbt.Click += new System.EventHandler(this.PRINTbt_Click);
+            // 
+            // SelectPrinterbt
+            // 
+            this.SelectPrinterbt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.SelectPrinterbt.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.SelectPrinterbt.Location = new System.Drawing.Point(711, 571);
+            this.SelectPrinterbt.Name = "SelectPrinterbt";
+            this.SelectPrinterbt.Size = new System.Drawing.Size(112, 44);
+            this.SelectPrinterbt.TabIndex = 10;
+            this.SelectPrinterbt.Text = "Select printer";
+            this.SelectPrinterbt.UseVisualStyleBackColor = false;
+            this.SelectPrinterbt.Click += new System.EventHandler(this.SelectPrinterbt_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Image = global::POT.Properties.Resources.network;
+            this.pictureBox1.Location = new System.Drawing.Point(7, 597);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(75, 65);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 167;
+            this.pictureBox1.TabStop = false;
+            // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
+            // 
+            // printDialog1
+            // 
+            this.printDialog1.AllowSomePages = true;
+            this.printDialog1.Document = this.printDocument1;
+            this.printDialog1.PrintToFile = true;
+            this.printDialog1.UseEXDialog = true;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.BackColor = System.Drawing.Color.LightGreen;
+            this.button1.Location = new System.Drawing.Point(843, 571);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(112, 44);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Remove from list";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.button1.UseCompatibleTextRendering = true;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // ISS
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(978, 662);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.SelectPrinterbt);
+            this.Controls.Add(this.PRINTbt);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.TIMERtb);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.CANCELBt);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.SAVEbt);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.ISSSelectorCb);
             this.Controls.Add(this.label17);
@@ -662,12 +792,13 @@
             this.Controls.Add(this.STOPbt);
             this.Controls.Add(this.STARTbt);
             this.Controls.Add(this.PAUSEbt);
-            this.Controls.Add(this.TIMERlb);
+            this.Controls.Add(this.pictureBox1);
             this.MinimumSize = new System.Drawing.Size(1000, 718);
             this.Name = "ISS";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ISS";
             this.Load += new System.EventHandler(this.ISS_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -676,7 +807,6 @@
         #endregion
 
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Label TIMERlb;
         private System.Windows.Forms.Button PAUSEbt;
         private System.Windows.Forms.Button STARTbt;
         private System.Windows.Forms.Button STOPbt;
@@ -720,8 +850,18 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.ComboBox ISSSelectorCb;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button SAVEbt;
         private System.Windows.Forms.Button CANCELBt;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox TIMERtb;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button PRINTbt;
+        private System.Windows.Forms.Button SelectPrinterbt;
+        private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        private System.Windows.Forms.PrintDialog printDialog1;
+        private System.Windows.Forms.Button button1;
     }
 }

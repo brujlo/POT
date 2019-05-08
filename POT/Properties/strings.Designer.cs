@@ -322,6 +322,15 @@ namespace POT.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to SERVICE REPORT.
+        /// </summary>
+        internal static string ServiceReport {
+            get {
+                return ResourceManager.GetString("ServiceReport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Set.
         /// </summary>
         internal static string Set {

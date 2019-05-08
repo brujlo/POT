@@ -13,6 +13,7 @@ namespace POT.MyTypes
         private String work = "";
         private String comment = "";
         private String time = "";
+        private long userID = 0;
 
         private Part tempPrt = new Part();
 
@@ -22,7 +23,7 @@ namespace POT.MyTypes
 
         public ISSparts() { }
 
-        public ISSparts(long mISSid, long mRB, long mCodeO, String mSNO, String mCNO, Part mPrtN, String mWork, String mComment, String mTime)
+        public ISSparts(long mISSid, long mRB, long mCodeO, String mSNO, String mCNO, Part mPrtN, String mWork, String mComment, String mTime, long mUserID)
         {
             ISSid = mISSid;
             RB = mRB;
@@ -38,10 +39,11 @@ namespace POT.MyTypes
             }
             Work = mWork;
             Comment = mComment;
+            UserID = mUserID;
             Time = mTime;
         }
 
-        public ISSparts(long mISSid, long mRB, Part mPrtO, Part mPrtN, String mWork, String mComment, String mTime)
+        public ISSparts(long mISSid, long mRB, Part mPrtO, Part mPrtN, String mWork, String mComment, String mTime, long mUserID)
         {
             ISSid = mISSid;
             RB = mRB;
@@ -51,6 +53,7 @@ namespace POT.MyTypes
 
             Work = mWork;
             Comment = mComment;
+            UserID = mUserID;
             Time = mTime;
         }
 
@@ -113,6 +116,7 @@ namespace POT.MyTypes
                 DateConverter dt = new DateConverter();
 
                 prtO.PartID = value.PartID;
+                prtO.CodePartFull = value.CodePartFull;
                 prtO.SN = value.SN;
                 prtO.CN = value.CN;
                 prtO.DateIn = dt.ConvertDDMMYY(DateTime.Now.ToString());
@@ -156,6 +160,16 @@ namespace POT.MyTypes
                 else
                     pCNO = value.Trim();
             }
+        }
+
+        public long UserID
+        {
+            set
+            {
+                userID = value;
+            }
+
+            get => userID;
         }
 
         internal Part TempPrt

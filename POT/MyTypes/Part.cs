@@ -91,7 +91,8 @@ namespace POT.MyTypes
                     resultArr = qc.GetListPartsByPartIDFromPartsPoslano(mPartsID[k]);
                     if (resultArr[0].Equals("nok"))
                         resultArr = qc.GetListPartsByPartIDFromParts(mPartsID[k]);
-                    else if (resultArr[0].Equals("nok"))
+
+                    if (resultArr[0].Equals("nok"))
                     {
                         pr.Clear();
                         return pr;

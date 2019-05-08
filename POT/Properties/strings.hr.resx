@@ -250,4 +250,7 @@
   <data name="ReceiptMain" xml:space="preserve">
     <value>Primka</value>
   </data>
+  <data name="ServiceReport" xml:space="preserve">
+    <value>IZVJEŠTAJ SERVISA</value>
+  </data>
 </root>

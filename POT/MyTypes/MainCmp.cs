@@ -262,7 +262,7 @@ namespace POT.MyTypes
 
             try
             {
-                resultArr = qc.AllMainCmpInfoSortCode();
+                resultArr = qc.AllMainCmpInfoSortByName();
 
                 for (int i = 0; i < resultArr.Count(); i = i + 19)
                 {

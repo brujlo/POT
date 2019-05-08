@@ -478,5 +478,17 @@ namespace POT.Properties {
                 this["ObracunskaJedinica"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public long CmpID {
+            get {
+                return ((long)(this["CmpID"]));
+            }
+            set {
+                this["CmpID"] = value;
+            }
+        }
     }
 }

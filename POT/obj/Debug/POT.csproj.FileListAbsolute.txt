@@ -61,3 +61,4 @@ F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.csprojAssemblyReference.cache
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.CopyPrintForms.cOTPcs.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.CopyPrintForms.cPRIM.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.Documents.ISS.resources
+F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.CopyPrintForms.cISS.resources
