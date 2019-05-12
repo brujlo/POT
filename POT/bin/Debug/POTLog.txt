@@ -518,3 +518,126 @@ Parameter name: emSize
 
 - 12.05.19. 13:15 - App turned off
     *** BrunoBrckovic *** 
+
+- 12.05.19. 13:23 - App started
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 13:24 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 13:24
+    - LOGED change: POT.SetDBConnection - button2_Click
+     - Used: DB connection address and name save.
+     - Data: 192.168.100.101, exe
+     - Result: Saved, no msgToUser
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 13:24 - App started
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 13:28 - App turned off
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 13:31
+    - LOGED change: POT.SetDBConnection - button2_Click
+     - Used: DB connection address and name save.
+     - Data: 192.168.100.101, exe
+     - Result: Saved, no msgToUser
+    ***  *** 
+
+
+- 12.05.19. 13:31 - App started
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 13:31
+    - LOGED change: POT.MainCmpSelector - button1_Click
+     - Used: Main cmp select
+     - Data: 
+     - Result: Main cmp selected, please relog to see changes.
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 13:31 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 13:31 - App started
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 13:31
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: DATE
+     - Data: 16.04.19.
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 13:31
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 707013002000, 12X0107, 1013756
+             707013002000, 12X0062, 1013855
+             707013002000, 12X0200, 1013828
+             707013002000, 1280148, 1013698
+             707013002000, 12X0087, 1013767
+             707013002000, 12X0042, 1013702
+             707013002000, 12X0205, 1013639
+             707013002000, 12X0103, 1013772
+             707013002000, 12X0169, 1013650
+             707013002000, 12X0212, 1013656
+             707013002000, 1270249, 1013774
+             707013002000, 1690262, 1013865
+             707013002000, 12X0211, 1013657
+             707013002000, 12X0180, 1013813
+             707013002000, 12X0213, 1013611
+             707013002000, 12X0057, 1013794
+             707013002000, 1690255, 1021929
+             707013002000, 1690212, 1022487
+             707013002000, 1270248, 1013846
+             707013002000, 1690283, 1021255
+             707013002000, 12X0143, 1021263
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 13:31
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 707013002000, 12X0107, 1013756
+             707013002000, 12X0062, 1013855
+             707013002000, 12X0200, 1013828
+             707013002000, 1280148, 1013698
+             707013002000, 12X0087, 1013767
+             707013002000, 12X0042, 1013702
+             707013002000, 12X0205, 1013639
+             707013002000, 12X0103, 1013772
+             707013002000, 12X0169, 1013650
+             707013002000, 12X0212, 1013656
+             707013002000, 1270249, 1013774
+             707013002000, 1690262, 1013865
+             707013002000, 12X0211, 1013657
+             707013002000, 12X0180, 1013813
+             707013002000, 12X0213, 1013611
+             707013002000, 12X0057, 1013794
+             707013002000, 1690255, 1021929
+             707013002000, 1690212, 1022487
+             707013002000, 1270248, 1013846
+             707013002000, 1690283, 1021255
+             707013002000, 12X0143, 1021263
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 13:32 - App turned off
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 13:35 - App started
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 13:36 - App turned off
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 13:38 - App started
+    *** BrunoBrckovic *** 

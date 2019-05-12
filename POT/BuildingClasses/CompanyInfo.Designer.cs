@@ -82,7 +82,7 @@
             this.button1.Location = new System.Drawing.Point(332, 122);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(123, 41);
-            this.button1.TabIndex = 19;
+            this.button1.TabIndex = 20;
             this.button1.Text = "Load logo";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -99,21 +99,21 @@
             this.CmpOIBTB.Location = new System.Drawing.Point(299, 210);
             this.CmpOIBTB.Name = "CmpOIBTB";
             this.CmpOIBTB.Size = new System.Drawing.Size(261, 26);
-            this.CmpOIBTB.TabIndex = 7;
+            this.CmpOIBTB.TabIndex = 8;
             // 
             // CmpWWWTB
             // 
             this.CmpWWWTB.Location = new System.Drawing.Point(596, 210);
             this.CmpWWWTB.Name = "CmpWWWTB";
             this.CmpWWWTB.Size = new System.Drawing.Size(261, 26);
-            this.CmpWWWTB.TabIndex = 13;
+            this.CmpWWWTB.TabIndex = 14;
             // 
             // CmpPhoneTB
             // 
             this.CmpPhoneTB.Location = new System.Drawing.Point(596, 269);
             this.CmpPhoneTB.Name = "CmpPhoneTB";
             this.CmpPhoneTB.Size = new System.Drawing.Size(261, 26);
-            this.CmpPhoneTB.TabIndex = 14;
+            this.CmpPhoneTB.TabIndex = 15;
             // 
             // label1
             // 
@@ -180,7 +180,7 @@
             this.CmpEmail.Location = new System.Drawing.Point(596, 387);
             this.CmpEmail.Name = "CmpEmail";
             this.CmpEmail.Size = new System.Drawing.Size(261, 26);
-            this.CmpEmail.TabIndex = 16;
+            this.CmpEmail.TabIndex = 17;
             // 
             // button2
             // 
@@ -188,7 +188,7 @@
             this.button2.Location = new System.Drawing.Point(691, 549);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(123, 41);
-            this.button2.TabIndex = 18;
+            this.button2.TabIndex = 19;
             this.button2.Text = "Save";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -209,7 +209,7 @@
             this.cmpCode.MaxLength = 2;
             this.cmpCode.Name = "cmpCode";
             this.cmpCode.Size = new System.Drawing.Size(264, 26);
-            this.cmpCode.TabIndex = 12;
+            this.cmpCode.TabIndex = 13;
             // 
             // label8
             // 
@@ -236,7 +236,7 @@
             this.CmpMB.Location = new System.Drawing.Point(296, 328);
             this.CmpMB.Name = "CmpMB";
             this.CmpMB.Size = new System.Drawing.Size(263, 26);
-            this.CmpMB.TabIndex = 9;
+            this.CmpMB.TabIndex = 10;
             // 
             // label10
             // 
@@ -253,7 +253,7 @@
             this.CmpIBAN.Location = new System.Drawing.Point(295, 387);
             this.CmpIBAN.Name = "CmpIBAN";
             this.CmpIBAN.Size = new System.Drawing.Size(264, 26);
-            this.CmpIBAN.TabIndex = 10;
+            this.CmpIBAN.TabIndex = 11;
             // 
             // label11
             // 
@@ -270,7 +270,7 @@
             this.CmpSwift.Location = new System.Drawing.Point(297, 269);
             this.CmpSwift.Name = "CmpSwift";
             this.CmpSwift.Size = new System.Drawing.Size(264, 26);
-            this.CmpSwift.TabIndex = 8;
+            this.CmpSwift.TabIndex = 9;
             // 
             // pictureBox1
             // 
@@ -332,7 +332,7 @@
             this.SupportEmail.Location = new System.Drawing.Point(596, 446);
             this.SupportEmail.Name = "SupportEmail";
             this.SupportEmail.Size = new System.Drawing.Size(264, 26);
-            this.SupportEmail.TabIndex = 17;
+            this.SupportEmail.TabIndex = 18;
             // 
             // comboBox1
             // 
@@ -358,7 +358,7 @@
             this.CmpContactTB.Location = new System.Drawing.Point(596, 328);
             this.CmpContactTB.Name = "CmpContactTB";
             this.CmpContactTB.Size = new System.Drawing.Size(261, 26);
-            this.CmpContactTB.TabIndex = 15;
+            this.CmpContactTB.TabIndex = 16;
             // 
             // label16
             // 
@@ -409,7 +409,7 @@
             this.CmpCountryTB.Location = new System.Drawing.Point(12, 446);
             this.CmpCountryTB.Name = "CmpCountryTB";
             this.CmpCountryTB.Size = new System.Drawing.Size(261, 26);
-            this.CmpCountryTB.TabIndex = 36;
+            this.CmpCountryTB.TabIndex = 5;
             // 
             // label19
             // 
@@ -426,7 +426,7 @@
             this.CmpKNTB.Location = new System.Drawing.Point(12, 505);
             this.CmpKNTB.Name = "CmpKNTB";
             this.CmpKNTB.Size = new System.Drawing.Size(261, 26);
-            this.CmpKNTB.TabIndex = 5;
+            this.CmpKNTB.TabIndex = 6;
             this.CmpKNTB.TextChanged += new System.EventHandler(this.CmpKNTB_TextChanged);
             // 
             // label20
@@ -444,7 +444,7 @@
             this.CmpEURTB.Location = new System.Drawing.Point(12, 564);
             this.CmpEURTB.Name = "CmpEURTB";
             this.CmpEURTB.Size = new System.Drawing.Size(261, 26);
-            this.CmpEURTB.TabIndex = 6;
+            this.CmpEURTB.TabIndex = 7;
             this.CmpEURTB.TextChanged += new System.EventHandler(this.CmpEURTB_TextChanged);
             // 
             // label21
@@ -463,7 +463,7 @@
             this.comboBox2.Location = new System.Drawing.Point(293, 444);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(77, 28);
-            this.comboBox2.TabIndex = 11;
+            this.comboBox2.TabIndex = 12;
             this.comboBox2.TextChanged += new System.EventHandler(this.comboBox2_TextChanged);
             // 
             // textBox1

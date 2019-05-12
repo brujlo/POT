@@ -40,7 +40,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.listView2 = new System.Windows.Forms.ListView();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -169,16 +168,6 @@
             this.button2.Text = "Clear";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.OldLace;
-            this.button1.Location = new System.Drawing.Point(809, 168);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(137, 44);
-            this.button1.TabIndex = 92;
-            this.button1.Text = "Select";
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // listView1
             // 
@@ -323,7 +312,6 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.listView2);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -356,7 +344,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ListView listView2;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
