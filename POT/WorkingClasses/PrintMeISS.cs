@@ -20,6 +20,7 @@ namespace POT.WorkingClasses
         Boolean signature = false;
         Part mainPart;
         String ISSid = "";
+        String date = "";
         List<ISSparts> listIssParts = new List<ISSparts>();
 
         public String datumIzrade = "";
@@ -35,12 +36,18 @@ namespace POT.WorkingClasses
         int fontSizeR = 8;
         int fontSizeS = 10;
         double imgScale = 0;
+        float spaceSize = 0;
+
+        PageSettings page;
+        RectangleF area;
+        Rectangle bounds;
+        Margins margins;
 
         Image img = null;
 
         PrintMeISS() { }
-
-        public PrintMeISS(Company _cmpCust, Company _cmpM, List<String>  _sifrarnikArr, Part _mainPart, List<ISSparts> _listIssParts, String _ISSid, String _DocumentName, String _recipientSender, Boolean _Signature)
+        
+        public PrintMeISS(Company _cmpCust, Company _cmpM, List<String>  _sifrarnikArr, Part _mainPart, List<ISSparts> _listIssParts, String _ISSid, String _DocumentName, String _recipientSender, Boolean _Signature, String _date)
         {
             cmpCust = _cmpCust;
             cmpM = _cmpM;
@@ -51,6 +58,7 @@ namespace POT.WorkingClasses
             listIssParts = _listIssParts;
             recipientSender = _recipientSender.ToUpper();
             signature = _Signature;
+            date = _date;
 
             CLogo logoImage = new CLogo();
             img = logoImage.GetImage();
@@ -68,8 +76,13 @@ namespace POT.WorkingClasses
 
         void printParts(PrintPageEventArgs e)
         {
+            Font fnt = getFont(fontSizeR);
+            spaceSize = e.Graphics.MeasureString("COMMENT: ", fnt).Width + 15;
+
             partRows = Properties.Settings.Default.partRows;
             pageNbr = Properties.Settings.Default.pageNbr;
+
+            datumIzrade = date;
 
             if (datumIzrade.Equals(""))
                 datumIzrade = DateTime.Now.ToString("dd.MM.yy.");
@@ -82,11 +95,11 @@ namespace POT.WorkingClasses
 
             e.HasMorePages = false;
 
-            PageSettings page = GetPrinterPageInfo();
+            page = GetPrinterPageInfo();
 
-            RectangleF area = page.PrintableArea;
-            Rectangle bounds = page.Bounds;
-            Margins margins = page.Margins;
+            area = page.PrintableArea;
+            bounds = page.Bounds;
+            margins = page.Margins;
 
             //Podesavanje pocetka ispisa za prvi list od vrha (default = 100)
             margins.Bottom = margins.Bottom / 2;
@@ -164,7 +177,7 @@ namespace POT.WorkingClasses
                         workingStr = mainPartName;
                         e.Graphics.DrawString(workingStr, fntRegular, Brushes.Black, new Point(margins.Left + (int)measureStr, headerpointVer));
 
-                        moveBy = moveBy + 2;
+                        moveBy += 2;
 
                         headerpointVer = headerpointVer + moveBy;
 
@@ -217,6 +230,8 @@ namespace POT.WorkingClasses
                         e.Graphics.DrawString(workingStr, fntRegular, Brushes.Black, new Point(margins.Left + (int)measureStr, headerpointVer));
 
                         headerpointVer = headerpointVer + moveBy;
+
+                        moveBy -= 2;
                     }
                     else
                     {
@@ -226,15 +241,12 @@ namespace POT.WorkingClasses
                         headerpointVer = bounds.Top + margins.Top + imgH + 50;
                     }
 
-                    moveBy = moveBy - 2;
 
                     int total = bounds.Right - margins.Left - margins.Right;
                     int rb = margins.Left + total / 17;
                     int code = rb + total / 5;
                     int name = code + total / 2;
                     int mes = name + total / 9;
-
-                    Font fnt = getFont(fontSizeR);
                     
                     //for (; partRows < 35; partRows++)
                     for (; partRows < listIssParts.Count; partRows++)
@@ -263,6 +275,7 @@ namespace POT.WorkingClasses
                         String partOldName = "";
                         String partNewName = "";
                         String columnName = "";
+                        int saljiSize = (int)spaceSize + margins.Left + 20;
 
                         measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
                         measureField = code - rb;
@@ -276,92 +289,98 @@ namespace POT.WorkingClasses
 
                         if (listIssParts[partRows].PrtO.PartialCode != 0)
                         {
-                            fnt = fitFontSizeBold(e, workingStr, fontSizeR, code - rb);
                             columnName = "PART OLD: ";
                             workingStr = columnName;
+                            fnt = fitFontSizeBold(e, workingStr, fontSizeR, code - rb);
                             e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(margins.Left + 20, headerpointVer + moveBy));
-
-                            measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
 
                             partOldName = sifrarnikArr[(sifrarnikArr.IndexOf((listIssParts[partRows].PrtO.PartialCode).ToString())) - 1];
                             workingStr = listIssParts[partRows].PrtO.PartID.ToString() + " - " + partOldName;
-                            e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, code - rb), Brushes.Black, new Point(margins.Left + 20 + (int)measureStr + 10, headerpointVer + moveBy));
-                            headerpointVer = headerpointVer + moveBy;
+                            measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
+                            toBig(saljiSize, measureStr, workingStr, e, fnt, code - rb);
+
+                            //e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, code - rb), Brushes.Black, new Point(saljiSize, headerpointVer + moveBy));
+                            //headerpointVer = headerpointVer + moveBy;
                         }
 
 
                         if (listIssParts[partRows].PrtN.PartialCode != 0)
                         {
-                            fnt = fitFontSizeBold(e, workingStr, fontSizeR, code - rb);
                             columnName = "PART NEW: ";
                             workingStr = columnName;
+                            fnt = fitFontSizeBold(e, workingStr, fontSizeR, code - rb);
                             e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(margins.Left + 20, headerpointVer + moveBy));
-
-                            measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
 
                             partNewName = sifrarnikArr[(sifrarnikArr.IndexOf((listIssParts[partRows].PrtO.PartialCode).ToString())) - 1];
                             workingStr = listIssParts[partRows].PrtN.PartID.ToString() + " - " + partNewName;
-                            e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, code - rb), Brushes.Black, new Point(margins.Left + 20 + (int)measureStr + 10, headerpointVer + moveBy));
-                            headerpointVer = headerpointVer + moveBy;
+                            measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
+                            toBig(saljiSize, measureStr, workingStr, e, fnt, code - rb);
+
+                            //e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, code - rb), Brushes.Black, new Point(saljiSize, headerpointVer + moveBy));
+                            //headerpointVer = headerpointVer + moveBy;
                         }
 
 
                         if (!listIssParts[partRows].Work.Equals(""))
                         {
-                            fnt = fitFontSizeBold(e, workingStr, fontSizeR, code - rb);
                             columnName = "WORK DONE: ";
                             workingStr = columnName;
+                            fnt = fitFontSizeBold(e, workingStr, fontSizeR, code - rb);
                             e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(margins.Left + 20, headerpointVer + moveBy));
 
-                            measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
-
                             workingStr = listIssParts[partRows].Work;
-                            e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, code - rb), Brushes.Black, new Point(margins.Left + 20 + (int)measureStr + 10, headerpointVer + moveBy));
-                            headerpointVer = headerpointVer + moveBy;
+                            measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
+                            toBig(saljiSize, measureStr, workingStr, e, fnt, code - rb);
+
+                            //e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, code - rb), Brushes.Black, new Point(saljiSize, headerpointVer + moveBy));
+                            //headerpointVer = headerpointVer + moveBy;
                         }
 
 
                         if (!listIssParts[partRows].Comment.Equals(""))
                         {
-                            fnt = fitFontSizeBold(e, workingStr, fontSizeR, code - rb);
                             columnName = "COMMENT: ";
                             workingStr = columnName;
+                            fnt = fitFontSizeBold(e, workingStr, fontSizeR, code - rb);
                             e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(margins.Left + 20, headerpointVer + moveBy));
-
-                            measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
-
+                            
                             workingStr = listIssParts[partRows].Comment;
-                            e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, code - rb), Brushes.Black, new Point(margins.Left + 20 + (int)measureStr + 10, headerpointVer + moveBy));
-                            headerpointVer = headerpointVer + moveBy;
+                            measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
+                            toBig(saljiSize, measureStr, workingStr, e, fnt, code - rb);
+                            
+                            //e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, code - rb), Brushes.Black, new Point(saljiSize, headerpointVer + moveBy));
+                            //headerpointVer = headerpointVer + moveBy;
                         }
 
 
                         if (!listIssParts[partRows].Time.Equals(""))
                         {
-                            fnt = fitFontSizeBold(e, workingStr, fontSizeR, code - rb);
                             columnName = "TIME: ";
                             workingStr = columnName;
+                            fnt = fitFontSizeBold(e, workingStr, fontSizeR, code - rb);
                             e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(margins.Left + 20, headerpointVer + moveBy));
 
-                            measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
-
                             workingStr = listIssParts[partRows].Time;
-                            e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, code - rb), Brushes.Black, new Point(margins.Left + 20 + (int)measureStr + 10, headerpointVer + moveBy));
-                            headerpointVer = headerpointVer + moveBy;
+                            measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
+                            toBig(saljiSize, measureStr, workingStr, e, fnt, code - rb);
+
+                            //e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, code - rb), Brushes.Black, new Point(saljiSize, headerpointVer + moveBy));
+                            //headerpointVer = headerpointVer + moveBy;
                         }
 
                         if (listIssParts[partRows].UserID != 0)
                         {
-                            fnt = fitFontSizeBold(e, workingStr, fontSizeR, code - rb);
                             columnName = "USER ID: ";
                             workingStr = columnName;
+                            fnt = fitFontSizeBold(e, workingStr, fontSizeR, code - rb);
                             e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(margins.Left + 20, headerpointVer + moveBy));
 
-                            measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
-
                             workingStr = listIssParts[partRows].UserID.ToString();
-                            e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, code - rb), Brushes.Black, new Point(margins.Left + 20 + (int)measureStr + 10, headerpointVer + moveBy));
-                            headerpointVer = headerpointVer + moveBy;
+                            measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
+                            toBig(saljiSize, measureStr, workingStr, e, fnt, code - rb);
+
+                            //e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, code - rb), Brushes.Black, new Point(saljiSize, headerpointVer + moveBy));
+                            //headerpointVer = headerpointVer + moveBy;
                         }
                     }
 
@@ -369,7 +388,13 @@ namespace POT.WorkingClasses
 
                     e.Graphics.DrawString(Properties.strings.Page + " : " + pageNbr, getFont(8), Brushes.Black, new Point(margins.Left, bounds.Bottom - margins.Bottom));
 
-                    Properties.Settings.Default.pageNbr = pageNbr = pageNbr + 1;
+                    if (e.HasMorePages)
+                        Properties.Settings.Default.pageNbr = pageNbr = pageNbr + 1;
+                    else
+                    {
+                        Properties.Settings.Default.pageNbr = 1;
+                        Properties.Settings.Default.partRows = 0;
+                    }
 
                     fnt = fitFontSize(e, (partRows + 1).ToString(), fontSizeR, code - rb);
                     workingStr = Properties.strings.Document + ": " + ISSid;
@@ -484,6 +509,61 @@ namespace POT.WorkingClasses
                 _FonthWith = e.Graphics.MeasureString(_WorkingStr, fnt).Width;
             }
             return new Font("IDAutomationHC39M", _FontSize, FontStyle.Regular);
+        }
+
+        private void toBig(int space, float size, String wString, PrintPageEventArgs e, Font fnt, int FieldWith)
+        {
+            String workingStrInner = wString;
+            float measureStr = size;
+            int wsLenght = (int)e.Graphics.MeasureString(workingStrInner, fnt).Width;
+            float measureField = bounds.Right - (margins.Left + space);
+
+            String ws1 = "";
+            String ws2 = "";
+            Boolean zavrsavaSa = true;
+
+            if (measureStr <= measureField)
+            {
+                e.Graphics.DrawString(workingStrInner, fitFontSize(e, wString, fontSizeR, FieldWith), Brushes.Black, new Point(space, headerpointVer + moveBy));
+                headerpointVer = headerpointVer + moveBy;
+            }
+            else
+            {
+                ws1 = workingStrInner; 
+
+                while (measureStr > measureField)
+                {
+                    while (wsLenght > measureField || zavrsavaSa)
+                    {
+                        ws2 = ws1.Substring(ws1.Length - 1, 1) + ws2; 
+                        ws1 = ws1.Substring(0, ws1.Length - 1);
+                        wsLenght = (int)e.Graphics.MeasureString(ws1, fnt).Width;
+
+                        if (wsLenght <= measureField && ws1.EndsWith(" "))
+                            zavrsavaSa = false;
+                    }
+
+                    zavrsavaSa = true;
+                    measureStr = wsLenght = (int)e.Graphics.MeasureString(ws2, fnt).Width;
+                
+                    if (wsLenght > measureField)
+                    {
+                        e.Graphics.DrawString(ws1, fitFontSize(e, "ws1", fontSizeR, FieldWith), Brushes.Black, new Point(space, headerpointVer + moveBy));
+                        headerpointVer = headerpointVer + moveBy;
+
+                        ws1 = ws2;
+                        ws2 = "";
+                    }
+                    else
+                    {
+                        e.Graphics.DrawString(ws1, fitFontSize(e, "ws1", fontSizeR, FieldWith), Brushes.Black, new Point(space, headerpointVer + moveBy));
+                        headerpointVer = headerpointVer + moveBy;
+
+                        e.Graphics.DrawString(ws2, fitFontSize(e, "ws2", fontSizeR, FieldWith), Brushes.Black, new Point(space, headerpointVer + moveBy));
+                        headerpointVer = headerpointVer + moveBy;
+                    }
+                }
+            }
         }
     }
 }

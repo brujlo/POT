@@ -235,7 +235,150 @@ namespace POT.CopyPrintForms
             listView1.Items.Clear();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
+        {
+            listView2.Items.Clear();
+        }
+
+        private void printPrewBT_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.pageNbr = 1;
+            Properties.Settings.Default.partRows = 0;
+            Properties.Settings.Default.printingSN = false;
+
+            int screenWidth = Screen.PrimaryScreen.Bounds.Width;
+            int screenHeight = Screen.PrimaryScreen.Bounds.Height;
+
+            printPreviewDialogPrim.Document = printDocumentPrim;
+            printPreviewDialogPrim.Size = new System.Drawing.Size(screenWidth - ((screenWidth / 100) * 60), screenHeight - (screenHeight / 100) * 10);
+            printPreviewDialogPrim.ShowDialog();
+        }
+
+        private void selectPrinterPrintBtn_Click(object sender, EventArgs e)
+        {
+            PrintDialog printDialog1 = new PrintDialog();
+            printDialog1.Document = printDocumentPrim;
+            DialogResult result = printDialog1.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                printPrewBT_Click(sender, e);
+                //printDocumentPrim.Print();
+            }
+        }
+
+        private void printDocumentPrim_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            ///////////////// LogMe ////////////////////////
+            String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
+            String usedQC = "Print";
+            String data = "";
+            String Result = "";
+            LogWriter lw = new LogWriter();
+            ////////////////////////////////////////////////
+            ///
+
+            if (br.FilID != 0)
+            {
+                PrintMe pr = new PrintMe(cmpS, cmpR, sifrarnikArr, partListPrint, PRIMNumber, napomenaPRIMPrint, Properties.strings.RECEIPT, Properties.strings.customer, false, br);
+                pr.datumIzrade = datumIzradeM;
+                pr.izradioUser = izradioUserM;
+                pr.izradioRegija = izradioRegijaM;
+                pr.Print(e);
+                data = cmpR + ", " + cmpS + ", " + sifrarnikArr + ", " + partListPrint + ", " + PRIMNumber + ", " + napomenaPRIMPrint + ", " + Properties.strings.DELIVERY + ", " + Properties.strings.customer + ", true, " + br;
+            }
+            else
+            {
+                PrintMe pr = new PrintMe(cmpS, cmpR, sifrarnikArr, partListPrint, PRIMNumber, napomenaPRIMPrint, Properties.strings.RECEIPT, Properties.strings.customer, false);
+                pr.datumIzrade = datumIzradeM;
+                pr.izradioUser = izradioUserM;
+                pr.izradioRegija = izradioRegijaM;
+                pr.Print(e);
+                data = cmpR + ", " + cmpS + ", " + sifrarnikArr + ", " + partListPrint + ", " + PRIMNumber + ", " + napomenaPRIMPrint + ", " + Properties.strings.DELIVERY + ", " + Properties.strings.customer + ", false";
+            }
+
+            Result = "Print page called";
+            lw.LogMe(function, usedQC, data, Result);
+        }
+
+        private void fillSifrarnik()
+        {
+            QueryCommands qc2 = new QueryCommands();
+            ConnectionHelper cn = new ConnectionHelper();
+            List<String> tresultArr = new List<string>();
+            int stop = 0;
+
+            try
+            {
+                while (tresultArr.Count == 0 || tresultArr[0].Equals("nok"))
+                {
+                    stop++;
+                    sifrarnikArr.Clear();
+                    tresultArr.Clear();
+                    tresultArr = qc.SelectNameCodeFromSifrarnik(WorkingUser.Username, WorkingUser.Password);
+
+                    if (stop == 100)
+                    {
+                        MessageBox.Show("Cant load 'sifrarnik'.");
+                        String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
+                        String usedQC = "Loading sifrarnik";
+                        String data = "Break limit reached, arr cnt = " + tresultArr.Count;
+                        String Result = "";
+                        LogWriter lw = new LogWriter();
+
+                        ChangeColor("Red");
+
+                        Result = "Cant load 'sifrarnik'.";
+                        lw.LogMe(function, usedQC, data, Result);
+
+                        break;
+                    }
+                }
+                if (stop < 100)
+                    ChangeColor("Green");
+                else
+                    ChangeColor("Red");
+                sifrarnikArr = tresultArr;
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
+                sifrarnikArr = tresultArr;
+            }
+        }
+
+        public void ChangeColor(string color)
+        {
+            if (InvokeRequired)
+            {
+                this.Invoke(new Action<string>(ChangeColor), new object[] { color });
+                return;
+            }
+
+            if (color.Equals("Green"))
+                this.button4.BackColor = Color.Green;
+            else
+                this.button4.BackColor = Color.Red;
+        }
+
+        private void fillCmp(long code)
+        {
+            try
+            {
+                MainCmp mpc = new MainCmp();
+                mpc.GetMainCmpByName(Properties.Settings.Default.CmpName);
+                cmpR.Clear();
+                cmpR = mpc.MainCmpToCompany();
+
+                cmpS.Clear();
+                cmpS.GetCompanyInfoByID(code);
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
+            }
+        }
+
+        private void listView1_DoubleClick(object sender, EventArgs e)
         {
             ///////////////// LogMe ////////////////////////
             String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
@@ -395,149 +538,6 @@ namespace POT.CopyPrintForms
             SystemSounds.Hand.Play();
 
             this.label7.ResetText();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            listView2.Items.Clear();
-        }
-
-        private void printPrewBT_Click(object sender, EventArgs e)
-        {
-            Properties.Settings.Default.pageNbr = 1;
-            Properties.Settings.Default.partRows = 0;
-            Properties.Settings.Default.printingSN = false;
-
-            int screenWidth = Screen.PrimaryScreen.Bounds.Width;
-            int screenHeight = Screen.PrimaryScreen.Bounds.Height;
-
-            printPreviewDialogPrim.Document = printDocumentPrim;
-            printPreviewDialogPrim.Size = new System.Drawing.Size(screenWidth - ((screenWidth / 100) * 60), screenHeight - (screenHeight / 100) * 10);
-            printPreviewDialogPrim.ShowDialog();
-        }
-
-        private void selectPrinterPrintBtn_Click(object sender, EventArgs e)
-        {
-            PrintDialog printDialog1 = new PrintDialog();
-            printDialog1.Document = printDocumentPrim;
-            DialogResult result = printDialog1.ShowDialog();
-            if (result == DialogResult.OK)
-            {
-                printPrewBT_Click(sender, e);
-                //printDocumentPrim.Print();
-            }
-        }
-
-        private void printDocumentPrim_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
-        {
-            ///////////////// LogMe ////////////////////////
-            String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
-            String usedQC = "Print";
-            String data = "";
-            String Result = "";
-            LogWriter lw = new LogWriter();
-            ////////////////////////////////////////////////
-            ///
-
-            if (br.FilID != 0)
-            {
-                PrintMe pr = new PrintMe(cmpS, cmpR, sifrarnikArr, partListPrint, PRIMNumber, napomenaPRIMPrint, Properties.strings.RECEIPT, Properties.strings.customer, false, br);
-                pr.datumIzrade = datumIzradeM;
-                pr.izradioUser = izradioUserM;
-                pr.izradioRegija = izradioRegijaM;
-                pr.Print(e);
-                data = cmpR + ", " + cmpS + ", " + sifrarnikArr + ", " + partListPrint + ", " + PRIMNumber + ", " + napomenaPRIMPrint + ", " + Properties.strings.DELIVERY + ", " + Properties.strings.customer + ", true, " + br;
-            }
-            else
-            {
-                PrintMe pr = new PrintMe(cmpS, cmpR, sifrarnikArr, partListPrint, PRIMNumber, napomenaPRIMPrint, Properties.strings.RECEIPT, Properties.strings.customer, false);
-                pr.datumIzrade = datumIzradeM;
-                pr.izradioUser = izradioUserM;
-                pr.izradioRegija = izradioRegijaM;
-                pr.Print(e);
-                data = cmpR + ", " + cmpS + ", " + sifrarnikArr + ", " + partListPrint + ", " + PRIMNumber + ", " + napomenaPRIMPrint + ", " + Properties.strings.DELIVERY + ", " + Properties.strings.customer + ", false";
-            }
-
-            Result = "Print page called";
-            lw.LogMe(function, usedQC, data, Result);
-        }
-
-        private void fillSifrarnik()
-        {
-            QueryCommands qc2 = new QueryCommands();
-            ConnectionHelper cn = new ConnectionHelper();
-            List<String> tresultArr = new List<string>();
-            int stop = 0;
-
-            try
-            {
-                while (tresultArr.Count == 0 || tresultArr[0].Equals("nok"))
-                {
-                    stop++;
-                    sifrarnikArr.Clear();
-                    tresultArr.Clear();
-                    tresultArr = qc.SelectNameCodeFromSifrarnik(WorkingUser.Username, WorkingUser.Password);
-
-                    if (stop == 100)
-                    {
-                        MessageBox.Show("Cant load 'sifrarnik'.");
-                        String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
-                        String usedQC = "Loading sifrarnik";
-                        String data = "Break limit reached, arr cnt = " + tresultArr.Count;
-                        String Result = "";
-                        LogWriter lw = new LogWriter();
-
-                        ChangeColor("Red");
-
-                        Result = "Cant load 'sifrarnik'.";
-                        lw.LogMe(function, usedQC, data, Result);
-
-                        break;
-                    }
-                }
-                if (stop < 100)
-                    ChangeColor("Green");
-                else
-                    ChangeColor("Red");
-                sifrarnikArr = tresultArr;
-            }
-            catch (Exception e1)
-            {
-                new LogWriter(e1);
-                sifrarnikArr = tresultArr;
-            }
-        }
-
-        public void ChangeColor(string color)
-        {
-            if (InvokeRequired)
-            {
-                this.Invoke(new Action<string>(ChangeColor), new object[] { color });
-                return;
-            }
-
-            if (color.Equals("Green"))
-                this.button4.BackColor = Color.Green;
-            else
-                this.button4.BackColor = Color.Red;
-        }
-
-        private void fillCmp(long code)
-        {
-            try
-            {
-                MainCmp mpc = new MainCmp();
-                mpc.GetMainCmpByName(Properties.Settings.Default.CmpName);
-                cmpR.Clear();
-                cmpR = mpc.MainCmpToCompany();
-
-                cmpS.Clear();
-                cmpS.GetCompanyInfoByID(code);
-            }
-            catch (Exception e1)
-            {
-                new LogWriter(e1);
-            }
         }
     }
 }

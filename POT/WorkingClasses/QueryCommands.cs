@@ -1570,6 +1570,7 @@ namespace POT
                 query = "Select * from OTP where " + what + " = '" + value + "' order by otpID";
             else
                 query = "Select * from OTP where " + what + " = " + value + " order by otpID";
+
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
             SqlDataReader dataReader = command.ExecuteReader();
@@ -3930,6 +3931,125 @@ namespace POT
             {
                 arr.Add("nok");
             }
+            dataReader.Close();
+            cnn.Close();
+            return arr;
+        }
+
+        public List<String> GetAllInfoISSBy(String what, String value)
+        {
+            List<String> arr = new List<string>();
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            if (what.Equals("Date"))
+                query = "Select * from ISS where " + what + " = '" + value + "' order by ID";
+            else
+                query = "Select * from ISS where " + what + " = " + value + " order by ID";
+
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+            
+            if (dataReader.HasRows)
+            {
+                do
+                {
+                    arr.Add(dataReader["ID"].ToString());
+                    arr.Add(dataReader["Date"].ToString());
+                    arr.Add(dataReader["UserID"].ToString());
+                    arr.Add(dataReader["CustomerID"].ToString());
+                    arr.Add(dataReader["PartID"].ToString());
+                    arr.Add(dataReader["Closed"].ToString());
+                } while (dataReader.Read());
+            }
+            else
+            {
+                arr.Add("nok");
+            }
+            dataReader.Close();
+            cnn.Close();
+            return arr;
+        }
+
+        public List<long> GetAllISScustomerID()
+        {
+            List<long> arr = new List<long>();
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "Select Distinct CustomerID from ISS order by CustomerID asc";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                do
+                {
+                    arr.Add(long.Parse(dataReader["CustomerID"].ToString()));
+                } while (dataReader.Read());
+            }
+            else
+            {
+                arr.Add(-1);
+            }
+            dataReader.Close();
+            cnn.Close();
+            return arr;
+        }
+
+        public List<String> GetAllISSdateCreated()
+        {
+            List<String> arr = new List<string>();
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "Select Distinct Date from ISS";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                do
+                {
+                    arr.Add(dataReader["Date"].ToString());
+                } while (dataReader.Read());
+            }
+            else
+            {
+                arr.Add("nok");
+            }
+
+            try
+            {
+                List<DateTime> dates = new List<DateTime>();
+
+                if (!arr[0].Equals("nok"))
+                {
+                    foreach (String a in arr)
+                    {
+                        dates.Add(DateTime.Parse(a));
+                    }
+
+                    dates.Sort();
+                    arr.Clear();
+                    DateConverter dc = new DateConverter();
+
+                    foreach (DateTime a in dates)
+                    {
+                        arr.Add(dc.ConvertDDMMYY(a.ToShortDateString()));
+                    }
+                }
+
+            }
+            catch (Exception)
+            {
+                //new LogWriter(e1);
+                throw;
+            }
+
             dataReader.Close();
             cnn.Close();
             return arr;

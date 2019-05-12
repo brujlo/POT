@@ -788,5 +788,11 @@ namespace POT
             ISS iss = new ISS();
             iss.Show();
         }
+
+        private void linkLabel21_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            cISS ciss = new cISS();
+            ciss.Show();
+        }
     }
 }

@@ -46,7 +46,7 @@ namespace POT.Documents
         MainCmp mm = new MainCmp();
 
         Boolean onlyOneTime = true;
-        Boolean itemRemoved = false;
+        //Boolean itemRemoved = false;
 
         int partIndex = -1; //sluzi za grupiranu listu podataka da izvucem podpodatak za po SN da dobijem cn
 
@@ -959,7 +959,7 @@ namespace POT.Documents
             ////////////////////////////////////////////////
             ///
 
-            PrintMeISS pr = new PrintMeISS(cmpCust, cmpM, sifrarnikArr, mainPart, listIssParts, ISSid.ToString(), Properties.strings.ServiceReport, Properties.strings.customer, false);
+            PrintMeISS pr = new PrintMeISS(cmpCust, cmpM, sifrarnikArr, mainPart, listIssParts, ISSid.ToString(), Properties.strings.ServiceReport, Properties.strings.customer, false, "");
             pr.Print(e);
 
             if (onlyOneTime)
@@ -1013,7 +1013,7 @@ namespace POT.Documents
 
             rb = listView1.Items.Count + 1;
 
-            itemRemoved = true;
+            //itemRemoved = true;
         }
 
         private void listView1_DoubleClick(object sender, EventArgs e)

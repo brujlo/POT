@@ -1,658 +1,520 @@
 
-- 05.05.19. 22:13
-    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
-     - Used: ID
-     - Data: 19001
+- 12.05.19. 11:57 - App started
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 11:57
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: ISS selected 190001
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 11:59 - App started
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 11:59
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: ISS selected 190001
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 12:00
+    - BaseEcp: System.ArgumentException: Value of '0' is not valid for 'emSize'. 'emSize' should be greater than 0 and less than or equal to System.Single.MaxValue.
+Parameter name: emSize
+   at System.Drawing.Font.Initialize(FontFamily family, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font.Initialize(String familyName, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font..ctor(String familyName, Single emSize, FontStyle style)
+   at POT.WorkingClasses.PrintMeISS.fitFontSizeBold(PrintPageEventArgs e, String _WorkingStr, Int32 _FontSize, Single _FieldWith) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PrintMeISS.cs:line 477
+   at POT.WorkingClasses.PrintMeISS.printParts(PrintPageEventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PrintMeISS.cs:line 355
+    - InnerEcp: 
+    - MessageEcp: Value of '0' is not valid for 'emSize'. 'emSize' should be greater than 0 and less than or equal to System.Single.MaxValue.
+Parameter name: emSize
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Font.Initialize(FontFamily family, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font.Initialize(String familyName, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font..ctor(String familyName, Single emSize, FontStyle style)
+   at POT.WorkingClasses.PrintMeISS.fitFontSizeBold(PrintPageEventArgs e, String _WorkingStr, Int32 _FontSize, Single _FieldWith) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PrintMeISS.cs:line 477
+   at POT.WorkingClasses.PrintMeISS.printParts(PrintPageEventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PrintMeISS.cs:line 355
+    - TypeNameEcp: System.ArgumentException
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 12:00 - App started
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 12:00
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: ISS selected 190001
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 12:01
+    - BaseEcp: System.ArgumentException: Value of '0' is not valid for 'emSize'. 'emSize' should be greater than 0 and less than or equal to System.Single.MaxValue.
+Parameter name: emSize
+   at System.Drawing.Font.Initialize(FontFamily family, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font.Initialize(String familyName, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font..ctor(String familyName, Single emSize, FontStyle style)
+   at POT.WorkingClasses.PrintMeISS.fitFontSizeBold(PrintPageEventArgs e, String _WorkingStr, Int32 _FontSize, Single _FieldWith) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PrintMeISS.cs:line 477
+   at POT.WorkingClasses.PrintMeISS.printParts(PrintPageEventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PrintMeISS.cs:line 355
+    - InnerEcp: 
+    - MessageEcp: Value of '0' is not valid for 'emSize'. 'emSize' should be greater than 0 and less than or equal to System.Single.MaxValue.
+Parameter name: emSize
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Font.Initialize(FontFamily family, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font.Initialize(String familyName, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font..ctor(String familyName, Single emSize, FontStyle style)
+   at POT.WorkingClasses.PrintMeISS.fitFontSizeBold(PrintPageEventArgs e, String _WorkingStr, Int32 _FontSize, Single _FieldWith) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PrintMeISS.cs:line 477
+   at POT.WorkingClasses.PrintMeISS.printParts(PrintPageEventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PrintMeISS.cs:line 355
+    - TypeNameEcp: System.ArgumentException
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 12:02 - App started
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 12:02
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: ISS selected 190001
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 12:03
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 12:07
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 12:07
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 12:09
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 12:09 - App started
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 12:10
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: ISS selected 190001
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 12:10
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 12:11
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 12:12
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 12:12
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 12:14 - App started
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 12:14
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: ISS selected 190001
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 12:15
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 12:16
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 12:18
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 12:23
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 12:34 - App started
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 12:34
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: ISS selected 190001
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 12:34
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 12:35
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 12:36
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 12:37
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 12:38
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 12:40
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 12:44
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 12:47
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 12:57 - App started
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 12:57
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: ISS selected 190001
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 12:57
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 12:59
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 13:00
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 13:00
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 13:02 - App started
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 13:02
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: ISS selected 190001
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 13:02
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 13:04
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 13:04
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 13:04
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 13:05
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 13:05
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 13:07
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 13:08
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 13:09
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: ISS selected 190001
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 13:10
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 13:10
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: NAME
+     - Data: 6
      - Result: Added
     *** BrunoBrckovic *** 
 
 
-- 05.05.19. 22:13
-    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
-    - InnerEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
-    - MessageEcp: A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.)
-    - SourceEcp: .Net SqlClient Data Provider
-    - StackTrqceEcp:    at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
-   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
-   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
-   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
-   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
-   at System.Data.SqlClient.SqlConnection.Open()
-   at POT.ConnectionHelper.Connect(String Username, String Password)
-    - TypeNameEcp: System.Data.SqlClient.SqlException
-    *** BrunoBrckovic *** 
-
-
-- 05.05.19. 22:13
-    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
-    - InnerEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
-    - MessageEcp: A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.)
-    - SourceEcp: .Net SqlClient Data Provider
-    - StackTrqceEcp:    at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
-   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
-   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
-   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
-   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
-   at System.Data.SqlClient.SqlConnection.Open()
-   at POT.ConnectionHelper.Connect(String Username, String Password)
-   at POT.QueryCommands.MainCmpInfoByName(String mName)
-   at POT.MyTypes.MainCmp.GetMainCmpByName(String mName)
-    - TypeNameEcp: System.Data.SqlClient.SqlException
-    *** BrunoBrckovic *** 
-
-
-- 05.05.19. 22:13
-    - LOGED change: POT.CopyPrintForms.cPRIM - button1_Click
-     - Used: PRIM Selected
-     - Data: 19001
-     - Result: Selected PRIM (19001) does not exist or do not have parts.
-    *** BrunoBrckovic *** 
-
-
-- 05.05.19. 22:13
-    - LOGED change: POT.CopyPrintForms.cPRIM - button1_Click
-     - Used: PRIM Selected
-     - Data: 19001
-     - Result: Selected PRIM (19001) does not exist or do not have parts.
-    *** BrunoBrckovic *** 
-
-
-- 05.05.19. 22:16
-    - LOGED change: POT.CopyPrintForms.cPRIM - button1_Click
-     - Used: PRIM Selected
-     - Data: 19001
-     - Result: Selected PRIM (19001) does not exist or do not have parts.
-    *** BrunoBrckovic *** 
-
-
-- 05.05.19. 22:16
-    - LOGED change: POT.CopyPrintForms.cPRIM - button1_Click
-     - Used: PRIM Selected
-     - Data: 19001
-     - Result: Selected PRIM (19001) does not exist or do not have parts.
-    *** BrunoBrckovic *** 
-
-
-- 05.05.19. 22:17
-    - LOGED change: POT.CopyPrintForms.cPRIM - button1_Click
-     - Used: PRIM Selected
-     - Data: 19001
-     - Result: Selected PRIM (19001) does not exist or do not have parts.
-    *** BrunoBrckovic *** 
-
-
-- 05.05.19. 22:17
-    - LOGED change: POT.CopyPrintForms.cPRIM - button1_Click
-     - Used: PRIM Selected
-     - Data: 19001
-     - Result: Selected PRIM (19001) does not exist or do not have parts.
-    *** BrunoBrckovic *** 
-
-
-- 05.05.19. 22:17 - App turned off
-    *** BrunoBrckovic *** 
-
-- 08.05.19. 17:16 - App started
-    *** BrunoBrckovic *** 
-
-- 08.05.19. 17:17
-    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
-     - Used: ISS loaded
-     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 9, 190001, SERVICE REPORT, customer, false
-     - Result: ISS selected 190001
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 17:17 - App turned off
-    *** BrunoBrckovic *** 
-
-- 08.05.19. 17:30 - App started
-    *** BrunoBrckovic *** 
-
-- 08.05.19. 17:30
-    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
-     - Used: ISS loaded
-     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 9, 190001, SERVICE REPORT, customer, false
-     - Result: ISS selected 190001
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 17:35 - App started
-    *** BrunoBrckovic *** 
-
-- 08.05.19. 17:35
-    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
-     - Used: ISS loaded
-     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 9, 190001, SERVICE REPORT, customer, false
-     - Result: ISS selected 190001
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 17:46 - App started
-    *** BrunoBrckovic *** 
-
-- 08.05.19. 17:47
-    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
-     - Used: ISS loaded
-     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 9, 190001, SERVICE REPORT, customer, false
-     - Result: ISS selected 190001
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 17:58
-    - LOGED change: POT.Documents.ISS - listView1_ItemSelectionChanged
-     - Used: ISS loaded
-     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 9, 190001, SERVICE REPORT, customer, false
-     - Result: ISS selected 190001
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 17:59
-    - LOGED change: POT.Documents.ISS - listView1_ItemSelectionChanged
-     - Used: ISS loaded
-     - Data: 190001
-
-     - Result: Input string was not in a correct format.
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 17:59
-    - LOGED change: POT.Documents.ISS - listView1_ItemSelectionChanged
-     - Used: ISS loaded
-     - Data: 190001
-
-     - Result: Input string was not in a correct format.
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 17:59
-    - LOGED change: POT.Documents.ISS - listView1_ItemSelectionChanged
-     - Used: ISS loaded
-     - Data: 190001
-
-     - Result: Input string was not in a correct format.
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:00
-    - LOGED change: POT.Documents.ISS - listView1_ItemSelectionChanged
-     - Used: ISS loaded
-     - Data: 190001
-
-     - Result: Input string was not in a correct format.
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:01
-    - LOGED change: POT.Documents.ISS - listView1_ItemSelectionChanged
-     - Used: ISS loaded
-     - Data: 190001
-
-     - Result: Input string was not in a correct format.
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:01
-    - LOGED change: POT.Documents.ISS - listView1_ItemSelectionChanged
-     - Used: ISS loaded
-     - Data: 190001
-
-     - Result: Input string was not in a correct format.
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:02
-    - LOGED change: POT.Documents.ISS - listView1_ItemSelectionChanged
-     - Used: ISS loaded
-     - Data: 190001
-
-     - Result: Input string was not in a correct format.
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:02
-    - LOGED change: POT.Documents.ISS - listView1_ItemSelectionChanged
-     - Used: ISS loaded
-     - Data: 190001
-
-     - Result: Input string was not in a correct format.
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:02
-    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
-     - Used: ISS loaded
-     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 9, 190001, SERVICE REPORT, customer, false
-     - Result: ISS selected 190001
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:03
-    - LOGED change: POT.Documents.ISS - listView1_ItemSelectionChanged
-     - Used: ISS loaded
-     - Data: 190001
-
-     - Result: Input string was not in a correct format.
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:03
-    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
-     - Used: ISS loaded
-     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 9, 190001, SERVICE REPORT, customer, false
-     - Result: ISS selected 190001
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:04
-    - LOGED change: POT.Documents.ISS - listView1_ItemSelectionChanged
-     - Used: ISS loaded
-     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 9, 190001, SERVICE REPORT, customer, false
-     - Result: ISS selected 190001
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:05
-    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
-     - Used: ISS loaded
-     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 9, 190001, SERVICE REPORT, customer, false
-     - Result: ISS selected 190001
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:06
-    - LOGED change: POT.Documents.ISS - button1_Click
-     - Used: Save to db
-     - Data: 1. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 24.04.19.h / 00:15 / ntntnttntnt
-2. / PRINTER Citizen CTS4000  /  / JJJJ / KKKKK / 707013002000 / 12X0143 / 1021263 / 24.04.19.h / 00:15 / dfsdfsdfsfs
-3. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 24.04.19.h / 00:15 / Cleaned
-4. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 24.04.19.h / 00:15 / Testing
-5. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 24.04.19.h / 00:15 / Repaired
-6. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 24.04.19.h / 00:15 / Changed
-7. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 24.04.19.h / 00:15 / Cleaned
-8. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 24.04.19.h / 00:15 / Pranje
-9. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 24.04.19.h / 00:15 / Diagnosis of failure
-
-     - Result: ISS saved with ID 190001
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:08
-    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
-     - Used: ISS loaded
-     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 9, 190001, SERVICE REPORT, customer, false
-     - Result: ISS selected 190001
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:10
-    - LOGED change: POT.Documents.ISS - button1_Click
-     - Used: Save to db
-     - Data: 1. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 24.04.19.h / 00:15 / ntntnttntnt
-2. / PRINTER Citizen CTS4000  /  / JJJJ / KKKKK / 707013002000 / 12X0143 / 1021263 / 24.04.19.h / 00:15 / dfsdfsdfsfs
-3. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 24.04.19.h / 00:15 / Cleaned
-4. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 24.04.19.h / 00:15 / Testing
-5. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 24.04.19.h / 00:15 / Repaired
-6. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 24.04.19.h / 00:15 / Changed
-7. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 24.04.19.h / 00:15 / Cleaned
-8. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 24.04.19.h / 00:15 / Pranje
-9. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 24.04.19.h / 00:15 / Diagnosis of failure
-
-     - Result: ISS saved with ID 190001
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:12 - App started
-    *** BrunoBrckovic *** 
-
-- 08.05.19. 18:12
-    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
-     - Used: ISS loaded
-     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 9, 190001, SERVICE REPORT, customer, false
-     - Result: ISS selected 190001
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:13
-    - LOGED change: POT.Documents.ISS - AddToWorkList
-     - Used: Adding to list
-     - Data: PRINTER Citizen CTS4000, 0707013002013, AA, BB, 707013002000, 12X0213, 1013611, 08.05.19., 00:15, , popravljeno
-     - Result: - 08.05.19. 18:13 - Added to list.
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:13
-    - LOGED change: POT.Documents.ISS - button1_Click
-     - Used: Save to db
-     - Data: 1. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 24.04.19.h / 00:15 / ntntnttntnt
-2. / PRINTER Citizen CTS4000  /  / JJJJ / KKKKK / 707013002000 / 12X0143 / 1021263 / 24.04.19.h / 00:15 / dfsdfsdfsfs
-3. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 24.04.19.h / 00:15 / Cleaned
-4. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 24.04.19.h / 00:15 / Testing
-5. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 24.04.19.h / 00:15 / Repaired
-6. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 24.04.19.h / 00:15 / Changed
-7. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 24.04.19.h / 00:15 / Cleaned
-8. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 24.04.19.h / 00:15 / Pranje
-9. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 24.04.19.h / 00:15 / Diagnosis of failure
-10. / PRINTER Citizen CTS4000 / 0707013002013 / AA / BB / 707013002000 / 12X0213 / 1013611 / 08.05.19.h / 00:15 / 
-
-     - Result: ISS saved with ID 190001
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:13
-    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+- 12.05.19. 13:10
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
      - Used: ISS loaded
      - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
      - Result: ISS selected 190001
     *** BrunoBrckovic *** 
 
 
-- 08.05.19. 18:13
-    - LOGED change: POT.Documents.ISS - AddToWorkList
-     - Used: Adding to list
-     - Data: PRINTER Citizen CTS4000, 0707013002012, BB, BB, 707013002000, 12X0057, 1013794, 08.05.19., 00:15, , 
-     - Result: - 08.05.19. 18:13 - Added to list.
+- 12.05.19. 13:10
+    - LOGED change: POT.CopyPrintForms.cISS - listView1_DoubleClick
+     - Used: OTP Selected
+     - Data: 
+     - Result: Added
     *** BrunoBrckovic *** 
 
 
-- 08.05.19. 18:15
-    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+- 12.05.19. 13:10
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 13:10
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: CMP
+     - Data: 6
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 13:10
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
      - Used: ISS loaded
      - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
      - Result: ISS selected 190001
     *** BrunoBrckovic *** 
 
 
-- 08.05.19. 18:16
-    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+- 12.05.19. 13:10
+    - LOGED change: POT.CopyPrintForms.cISS - listView1_DoubleClick
+     - Used: OTP Selected
+     - Data: 
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 13:10
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 13:10
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: DATE
+     - Data: 24.04.19.
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 13:10
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
      - Used: ISS loaded
      - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
      - Result: ISS selected 190001
     *** BrunoBrckovic *** 
 
 
-- 08.05.19. 18:18
-    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
-     - Used: ISS loaded
+- 12.05.19. 13:10
+    - LOGED change: POT.CopyPrintForms.cISS - listView1_DoubleClick
+     - Used: OTP Selected
+     - Data: 
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 13:10
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
      - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
-     - Result: ISS selected 190001
+     - Result: Print page called
     *** BrunoBrckovic *** 
 
 
-- 08.05.19. 18:18
-    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
-     - Used: ISS loaded
+- 12.05.19. 13:12
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
      - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
-     - Result: ISS selected 190001
+     - Result: Print page called
     *** BrunoBrckovic *** 
 
 
-- 08.05.19. 18:20
-    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
-     - Used: ISS loaded
-     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
-     - Result: ISS selected 190001
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:25
-    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
-     - Used: ISS loaded
-     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
-     - Result: ISS selected 190001
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:27
-    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
-     - Used: ISS loaded
-     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
-     - Result: ISS selected 190001
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:28
-    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
-     - Used: ISS loaded
-     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
-     - Result: ISS selected 190001
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:28
-    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
-     - Used: ISS loaded
-     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
-     - Result: ISS selected 190001
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:29
-    - LOGED change: POT.Documents.ISS - listView1_ItemSelectionChanged
-     - Used: ISS loaded
-     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
-     - Result: ISS selected 190001
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:30
-    - LOGED change: POT.Documents.ISS - AddToWorkList
-     - Used: Adding to list
-     - Data: PRINTER Citizen CTS4000, 0707013002020, AA, BB, 707013002000, 12X0213, 1013611, 08.05.19., 00:15, , popravljeno, zamijenjeno
-     - Result: - 08.05.19. 18:30 - Added to list.
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:30
-    - LOGED change: POT.Documents.ISS - listView1_ItemSelectionChanged
-     - Used: ISS loaded
-     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
-     - Result: ISS selected 190001
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:30
-    - LOGED change: POT.Documents.ISS - button1_Click_1
-     - Used: Remove selected
-     - Data: ListViewSubItem: {10}, ListViewSubItem: {PRINTER Citizen CTS4000 }, ListViewSubItem: {707013002013}, ListViewSubItem: {AA}, ListViewSubItem: {BB}, ListViewSubItem: {707013002000}
-     - Result: Line 10 removed
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:30
-    - LOGED change: POT.Documents.ISS - button1_Click
-     - Used: Save to db
-     - Data: 1. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 24.04.19.h / 00:15 / ntntnttntnt
-2. / PRINTER Citizen CTS4000  / 707013002010 / JJJJ / KKKKK / 707013002000 / 12X0143 / 1021263 / 24.04.19.h / 00:15 / dfsdfsdfsfs
-3. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 24.04.19.h / 00:15 / Cleaned
-4. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 24.04.19.h / 00:15 / Testing
-5. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 24.04.19.h / 00:15 / Repaired
-6. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 24.04.19.h / 00:15 / Changed
-7. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 24.04.19.h / 00:15 / Cleaned
-8. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 24.04.19.h / 00:15 / Pranje
-9. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 24.04.19.h / 00:15 / Diagnosis of failure
-10. / PRINTER Citizen CTS4000 / 0707013002020 / AA / BB / 707013002000 / 12X0213 / 1013611 / 08.05.19.h / 00:15 / 
-
-     - Result: ISS saved with ID 190001
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:32 - App turned off
-    *** BrunoBrckovic *** 
-
-- 08.05.19. 18:34 - App started
-    *** BrunoBrckovic *** 
-
-- 08.05.19. 18:34
-    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
-     - Used: ISS loaded
-     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
-     - Result: ISS selected 190001
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:34
-    - LOGED change: POT.Documents.ISS - listView1_DoubleClick
-     - Used: ISS loaded
-     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
-     - Result: ISS selected 190001
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:34
-    - LOGED change: POT.Documents.ISS - listView1_DoubleClick
-     - Used: ISS loaded
-     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
-     - Result: ISS selected 190001
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:34
-    - LOGED change: POT.Documents.ISS - listView1_DoubleClick
-     - Used: ISS loaded
-     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
-     - Result: ISS selected 190001
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:34
-    - LOGED change: POT.Documents.ISS - listView1_DoubleClick
-     - Used: ISS loaded
-     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
-     - Result: ISS selected 190001
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:34
-    - LOGED change: POT.Documents.ISS - listView1_DoubleClick
-     - Used: ISS loaded
-     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
-     - Result: ISS selected 190001
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:35 - App turned off
-    *** BrunoBrckovic *** 
-
-- 08.05.19. 18:42 - App started
-    *** BrunoBrckovic *** 
-
-- 08.05.19. 18:42
-    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
-     - Used: ISS loaded
-     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
-     - Result: ISS selected 190001
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:42
-    - LOGED change: POT.Documents.ISS - listView1_DoubleClick
-     - Used: ISS loaded
-     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
-     - Result: ISS selected 190001
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:42
-    - LOGED change: POT.Documents.ISS - button1_Click_1
-     - Used: Remove selected
-     - Data: ListViewSubItem: {10}, ListViewSubItem: {PRINTER Citizen CTS4000 }, ListViewSubItem: {707013002013}, ListViewSubItem: {AA}, ListViewSubItem: {BB}, ListViewSubItem: {707013002000}
-     - Result: Line 10 removed
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:42
-    - LOGED change: POT.Documents.ISS - AddToWorkList
-     - Used: Adding to list
-     - Data: PRINTER Citizen CTS4000, 0707013002022, AA, BB, 707013002000, 12X0213, 1013611, 08.05.19., 00:15, , popravljeno
-     - Result: - 08.05.19. 18:42 - Added to list.
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:43
-    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
-    - InnerEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
-    - MessageEcp: Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
-    - SourceEcp: .Net SqlClient Data Provider
-    - StackTrqceEcp:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
-   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
-   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
-   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
-   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
-   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
-   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
-   at POT.QueryCommands.ISSRBExist(Int64 mISSid, Int64 mRB) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 3621
-   at POT.QueryCommands.ISSUnesiISS(Boolean mISSExist, Boolean mAllDone, Int64 mISSid, String mDate, Company mCmpCustomer, Part mMainPart, List`1 listIssParts, Int64 mUserID) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 3716
-   at POT.Documents.ISS.button1_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\ISS.cs:line 681
-    - TypeNameEcp: System.Data.SqlClient.SqlException
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:44
-    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
-    - InnerEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
-    - MessageEcp: Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
-    - SourceEcp: .Net SqlClient Data Provider
-    - StackTrqceEcp:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
-   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
-   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
-   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
-   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
-   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
-   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
-   at POT.QueryCommands.ISSRBExist(Int64 mISSid, Int64 mRB) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 3621
-   at POT.QueryCommands.ISSUnesiISS(Boolean mISSExist, Boolean mAllDone, Int64 mISSid, String mDate, Company mCmpCustomer, Part mMainPart, List`1 listIssParts, Int64 mUserID) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 3716
-   at POT.Documents.ISS.button1_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\ISS.cs:line 681
-    - TypeNameEcp: System.Data.SqlClient.SqlException
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:45
-    - LOGED change: POT.Documents.ISS - listView1_DoubleClick
-     - Used: ISS loaded
-     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
-     - Result: ISS selected 190001
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:45
-    - LOGED change: POT.Documents.ISS - button1_Click_1
-     - Used: Remove selected
-     - Data: ListViewSubItem: {10}, ListViewSubItem: {PRINTER Citizen CTS4000}, ListViewSubItem: {0707013002022}, ListViewSubItem: {AA}, ListViewSubItem: {BB}, ListViewSubItem: {707013002000}
-     - Result: Line 10 removed
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:45
-    - LOGED change: POT.Documents.ISS - AddToWorkList
-     - Used: Adding to list
-     - Data: PRINTER Citizen CTS4000, 0707004002003, AA, BB, 707013002000, 12X0213, 1013611, 08.05.19., 00:15, , popravljeno
-     - Result: - 08.05.19. 18:45 - Added to list.
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:47
-    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
-    - InnerEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
-    - MessageEcp: Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
-    - SourceEcp: .Net SqlClient Data Provider
-    - StackTrqceEcp:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
-   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
-   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
-   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
-   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
-   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
-   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
-   at POT.QueryCommands.ISSRBExist(Int64 mISSid, Int64 mRB)
-   at POT.QueryCommands.ISSUnesiISS(Boolean mISSExist, Boolean mAllDone, Int64 mISSid, String mDate, Company mCmpCustomer, Part mMainPart, List`1 listIssParts, Int64 mUserID)
-   at POT.Documents.ISS.button1_Click(Object sender, EventArgs e)
-    - TypeNameEcp: System.Data.SqlClient.SqlException
-    *** BrunoBrckovic *** 
-
-
-- 08.05.19. 18:47 - App turned off
+- 12.05.19. 13:15 - App turned off
     *** BrunoBrckovic *** 
