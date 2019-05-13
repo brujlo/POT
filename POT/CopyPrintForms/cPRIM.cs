@@ -2,7 +2,6 @@
 using POT.WorkingClasses;
 using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
 using System.Media;
 using System.Threading;
@@ -32,6 +31,8 @@ namespace POT.CopyPrintForms
         Branch br = new Branch();
 
         QueryCommands qc = new QueryCommands();
+
+        Boolean pictureOn = true;
 
         public cPRIM()
         {
@@ -318,26 +319,40 @@ namespace POT.CopyPrintForms
 
                     if (stop == 100)
                     {
-                        MessageBox.Show("Cant load 'sifrarnik'.");
+                        //MessageBox.Show("Cant load 'sifrarnik'.");
                         String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
                         String usedQC = "Loading sifrarnik";
                         String data = "Break limit reached, arr cnt = " + tresultArr.Count;
                         String Result = "";
                         LogWriter lw = new LogWriter();
 
-                        ChangeColor("Red");
-
                         Result = "Cant load 'sifrarnik'.";
                         lw.LogMe(function, usedQC, data, Result);
+
+                        pictureBox1.Image = Properties.Resources.LoadDataOff;
+                        this.label7.ResetText();
+                        pictureOn = false;
+
+                        this.Refresh();
 
                         break;
                     }
                 }
-                if (stop < 100)
-                    ChangeColor("Green");
-                else
-                    ChangeColor("Red");
+
                 sifrarnikArr = tresultArr;
+
+                if (sifrarnikArr.Count > 0 && stop < 100)
+                {
+                    pictureBox1.Image = Properties.Resources.LoadDataOn;
+                    this.label7.ResetText();
+                    pictureOn = true;
+                }
+                else
+                {
+                    pictureBox1.Image = Properties.Resources.LoadDataOff;
+                    this.label7.ResetText();
+                    pictureOn = false;
+                }
             }
             catch (Exception e1)
             {
@@ -346,6 +361,7 @@ namespace POT.CopyPrintForms
             }
         }
 
+        /*
         public void ChangeColor(string color)
         {
             if (InvokeRequired)
@@ -359,6 +375,7 @@ namespace POT.CopyPrintForms
             else
                 this.button4.BackColor = Color.Red;
         }
+        */
 
         private void fillCmp(long code)
         {
@@ -394,20 +411,10 @@ namespace POT.CopyPrintForms
 
             br.Clear();
 
-            if (sifrarnikArr.Count > 0)
-                this.label6.Text = "SifrarnikArr: OK";
-            else
+            if (!pictureOn)
             {
                 Thread myThread = new Thread(fillSifrarnik);
                 myThread.Start();
-
-                this.label7.Text = "";
-
-                Result = "SifrarnikArr: NOK";
-                lw.LogMe(function, usedQC, data, Result);
-                this.label6.Text = "SifrarnikArr: NOK";
-                this.label7.ResetText();
-                return;
             }
 
             listView2.Items.Clear();

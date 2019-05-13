@@ -559,6 +559,7 @@
             // Otpremnica
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(958, 644);
             this.Controls.Add(this.includeInOTP);
             this.Controls.Add(this.label1);

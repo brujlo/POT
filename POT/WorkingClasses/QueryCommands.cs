@@ -14,6 +14,48 @@ namespace POT
         ConnectionHelper cn = new ConnectionHelper();
         SqlConnection cnn = new SqlConnection();
 
+        public Boolean CheckConnection()
+        {
+            Boolean cnnExist = false;
+
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "Select Username from Users where UserID = 1";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            try
+            {
+                if (cn.TestConnection(cnn))
+                {
+                    if (dataReader.HasRows)
+                    {
+                        if (dataReader.GetString(0).ToUpper().Equals("BAZA"))
+                            cnnExist = true;
+                    }
+                    else
+                    {
+                        cnnExist = false;
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                //new LogWriter(e1);
+                return cnnExist;
+            }
+            finally
+            {
+                if (cnn.State.ToString().Equals("Open"))
+                    cnn.Close();
+            }
+
+            dataReader.Close();
+            cnn.Close();
+            return cnnExist;
+        }
+
         public Boolean ResetAutoIcrement(String Uname, String Pass, List<String> TableArr)
         {
             Boolean executed = false;

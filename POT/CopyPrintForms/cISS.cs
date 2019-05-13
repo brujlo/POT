@@ -43,6 +43,7 @@ namespace POT.CopyPrintForms
         Object obj;
         Boolean onlyOneTime = true;
         Boolean oneTimeISSSelectorCb = true;
+        Boolean pictureOn = false;
 
         public cISS()
         {
@@ -162,7 +163,7 @@ namespace POT.CopyPrintForms
             var item = listView1.SelectedItems;
             if (item.Count == 0)
             {
-                ChangeColor("Red");
+                pictureBox1.Image = Properties.Resources.LoadDataOff;
                 return;
             }
 
@@ -381,34 +382,46 @@ namespace POT.CopyPrintForms
 
                     if (stop == 100)
                     {
-                        MessageBox.Show("Cant load 'sifrarnik'.");
+                        //MessageBox.Show("Cant load 'sifrarnik'.");
                         String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
                         String usedQC = "Loading sifrarnik";
                         String data = "Break limit reached, arr cnt = " + tresultArr.Count;
                         String Result = "";
                         LogWriter lw = new LogWriter();
 
-                        ChangeColor("Red");
-
                         Result = "Cant load 'sifrarnik'.";
                         lw.LogMe(function, usedQC, data, Result);
 
-                        return;
+                        pictureBox1.Image = Properties.Resources.LoadDataOff;
+                        pictureOn = false;
+
+                        this.Refresh();
+
+                        break;
                     }
                 }
-                if (stop < 100)
-                    ChangeColor("Green");
 
                 sifrarnikArr = tresultArr;
+
+                if (sifrarnikArr.Count > 0 && stop < 100)
+                {
+                    pictureBox1.Image = Properties.Resources.LoadDataOn;
+                    pictureOn = true;
+                }
+                else
+                {
+                    pictureBox1.Image = Properties.Resources.LoadDataOff;
+                    pictureOn = false;
+                }
             }
             catch (Exception e1)
             {
-                ChangeColor("Red");
                 new LogWriter(e1);
                 sifrarnikArr = tresultArr;
             }
         }
 
+        /*
         public void ChangeColor(string color)
         {
             if (InvokeRequired)
@@ -416,12 +429,8 @@ namespace POT.CopyPrintForms
                 this.Invoke(new Action<string>(ChangeColor), new object[] { color });
                 return;
             }
-
-            if (color.Equals("Green"))
-                this.button1.BackColor = Color.Green;
-            else
-                this.button1.BackColor = Color.Red;
         }
+        */
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {

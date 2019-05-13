@@ -35,7 +35,6 @@
             this.STARTbt = new System.Windows.Forms.Button();
             this.STOPbt = new System.Windows.Forms.Button();
             this.PartCb = new System.Windows.Forms.ComboBox();
-            this.button4 = new System.Windows.Forms.Button();
             this.NameTb = new System.Windows.Forms.TextBox();
             this.DateInTb = new System.Windows.Forms.TextBox();
             this.DateSentTb = new System.Windows.Forms.TextBox();
@@ -82,11 +81,11 @@
             this.button3 = new System.Windows.Forms.Button();
             this.PRINTbt = new System.Windows.Forms.Button();
             this.SelectPrinterbt = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -144,20 +143,6 @@
             this.PartCb.Size = new System.Drawing.Size(238, 28);
             this.PartCb.TabIndex = 0;
             this.PartCb.SelectedIndexChanged += new System.EventHandler(this.PartCb_SelectedIndexChanged);
-            // 
-            // button4
-            // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.Enabled = false;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(37, 612);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(14, 12);
-            this.button4.TabIndex = 105;
-            this.button4.TabStop = false;
-            this.button4.UseVisualStyleBackColor = false;
             // 
             // NameTb
             // 
@@ -542,7 +527,7 @@
             this.ComentTb.BackColor = System.Drawing.Color.White;
             this.ComentTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.ComentTb.ForeColor = System.Drawing.Color.Black;
-            this.ComentTb.Location = new System.Drawing.Point(87, 597);
+            this.ComentTb.Location = new System.Drawing.Point(15, 587);
             this.ComentTb.Multiline = true;
             this.ComentTb.Name = "ComentTb";
             this.ComentTb.Size = new System.Drawing.Size(448, 65);
@@ -555,7 +540,7 @@
             this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.Color.Gray;
-            this.label8.Location = new System.Drawing.Point(83, 578);
+            this.label8.Location = new System.Drawing.Point(11, 568);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(78, 20);
             this.label8.TabIndex = 157;
@@ -566,7 +551,7 @@
             this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label17.AutoSize = true;
             this.label17.ForeColor = System.Drawing.Color.Crimson;
-            this.label17.Location = new System.Drawing.Point(423, 578);
+            this.label17.Location = new System.Drawing.Point(351, 568);
             this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(116, 20);
@@ -597,7 +582,7 @@
             // 
             this.SAVEbt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.SAVEbt.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.SAVEbt.Location = new System.Drawing.Point(843, 618);
+            this.SAVEbt.Location = new System.Drawing.Point(843, 613);
             this.SAVEbt.Name = "SAVEbt";
             this.SAVEbt.Size = new System.Drawing.Size(112, 44);
             this.SAVEbt.TabIndex = 8;
@@ -670,7 +655,7 @@
             // 
             this.PRINTbt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.PRINTbt.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.PRINTbt.Location = new System.Drawing.Point(711, 618);
+            this.PRINTbt.Location = new System.Drawing.Point(711, 613);
             this.PRINTbt.Name = "PRINTbt";
             this.PRINTbt.Size = new System.Drawing.Size(112, 44);
             this.PRINTbt.TabIndex = 9;
@@ -682,24 +667,13 @@
             // 
             this.SelectPrinterbt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.SelectPrinterbt.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.SelectPrinterbt.Location = new System.Drawing.Point(711, 571);
+            this.SelectPrinterbt.Location = new System.Drawing.Point(711, 566);
             this.SelectPrinterbt.Name = "SelectPrinterbt";
             this.SelectPrinterbt.Size = new System.Drawing.Size(112, 44);
             this.SelectPrinterbt.TabIndex = 10;
             this.SelectPrinterbt.Text = "Select printer";
             this.SelectPrinterbt.UseVisualStyleBackColor = false;
             this.SelectPrinterbt.Click += new System.EventHandler(this.SelectPrinterbt_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Image = global::POT.Properties.Resources.network;
-            this.pictureBox1.Location = new System.Drawing.Point(7, 597);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(75, 65);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 167;
-            this.pictureBox1.TabStop = false;
             // 
             // printDocument1
             // 
@@ -726,7 +700,7 @@
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.BackColor = System.Drawing.Color.LightGreen;
-            this.button1.Location = new System.Drawing.Point(843, 571);
+            this.button1.Location = new System.Drawing.Point(843, 566);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(112, 44);
             this.button1.TabIndex = 11;
@@ -736,9 +710,21 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Image = global::POT.Properties.Resources.LoadDataOff;
+            this.pictureBox1.Location = new System.Drawing.Point(496, 585);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(137, 65);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 167;
+            this.pictureBox1.TabStop = false;
+            // 
             // ISS
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(978, 662);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.SelectPrinterbt);
@@ -787,7 +773,6 @@
             this.Controls.Add(this.DateSentTb);
             this.Controls.Add(this.DateInTb);
             this.Controls.Add(this.NameTb);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.PartCb);
             this.Controls.Add(this.STOPbt);
             this.Controls.Add(this.STARTbt);
@@ -811,7 +796,6 @@
         private System.Windows.Forms.Button STARTbt;
         private System.Windows.Forms.Button STOPbt;
         private System.Windows.Forms.ComboBox PartCb;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TextBox NameTb;
         private System.Windows.Forms.TextBox DateInTb;
         private System.Windows.Forms.TextBox DateSentTb;

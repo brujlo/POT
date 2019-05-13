@@ -48,6 +48,8 @@ namespace POT.Documents
         Boolean onlyOneTime = true;
         //Boolean itemRemoved = false;
 
+        Boolean pictureOn = false;
+
         int partIndex = -1; //sluzi za grupiranu listu podataka da izvucem podpodatak za po SN da dobijem cn
 
 
@@ -299,38 +301,46 @@ namespace POT.Documents
 
                     if (stop == 100)
                     {
-                        MessageBox.Show("Cant load 'sifrarnik'.");
+                        //MessageBox.Show("Cant load 'sifrarnik'.");
                         String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
                         String usedQC = "Loading sifrarnik";
                         String data = "Break limit reached, arr cnt = " + tresultArr.Count;
                         String Result = "";
                         LogWriter lw = new LogWriter();
 
-                        ChangeColor("Red");
-
                         Result = "Cant load 'sifrarnik'.";
                         lw.LogMe(function, usedQC, data, Result);
 
-                        dataLoaded = false;
-                        return;
+                        pictureBox1.Image = Properties.Resources.LoadDataOff;
+                        pictureOn = false;
+
+                        this.Refresh();
+
+                        break;
                     }
                 }
-                if (stop < 100)
-                    ChangeColor("Green");
 
                 sifrarnikArr = tresultArr;
 
-                dataLoaded = true;
+                if (sifrarnikArr.Count > 0 && stop < 100)
+                {
+                    pictureBox1.Image = Properties.Resources.LoadDataOn;
+                    pictureOn = true;
+                }
+                else
+                {
+                    pictureBox1.Image = Properties.Resources.LoadDataOff;
+                    pictureOn = false;
+                }
             }
             catch (Exception e1)
             {
-                ChangeColor("Red");
                 new LogWriter(e1);
                 sifrarnikArr = tresultArr;
-                dataLoaded = false;
             }
         }
 
+        /*
         public void ChangeColor(string color)
         {
             if (InvokeRequired)
@@ -344,6 +354,7 @@ namespace POT.Documents
             else
                 this.button4.BackColor = Color.Red;
         }
+        */
 
         private void CleanMe()
         {

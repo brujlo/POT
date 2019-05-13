@@ -193,9 +193,49 @@ namespace POT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LoadDataOff {
+            get {
+                object obj = ResourceManager.GetObject("LoadDataOff", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LoadDataOn {
+            get {
+                object obj = ResourceManager.GetObject("LoadDataOn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap magnifying_glass_64px {
             get {
                 object obj = ResourceManager.GetObject("magnifying_glass_64px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MainConnectionOff {
+            get {
+                object obj = ResourceManager.GetObject("MainConnectionOff", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MainConnectionOn {
+            get {
+                object obj = ResourceManager.GetObject("MainConnectionOn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

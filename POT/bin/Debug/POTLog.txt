@@ -641,3 +641,1040 @@ Parameter name: emSize
 
 - 12.05.19. 13:38 - App started
     *** BrunoBrckovic *** 
+
+- 12.05.19. 20:59 - App started
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 20:59 - App turned off
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 21:13 - App started
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 21:13 - App turned off
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 21:14 - App started
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 21:14 - App turned off
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 21:15 - App started
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 21:15 - App turned off
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 21:19 - App started
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 21:19 - App turned off
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 21:21 - App started
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 21:21 - App turned off
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 21:41 - App started
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 21:41 - App turned off
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 21:41 - App started
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 21:42 - App turned off
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 21:42 - App started
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 21:43 - App turned off
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 21:44 - App started
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 21:44 - App turned off
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 21:46 - App started
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 21:48 - App started
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 21:49 - App turned off
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 21:50 - App started
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 21:50 - App turned off
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 21:53 - App started
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 21:56 - App started
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 21:58 - App turned off
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 21:59 - App started
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 22:01 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 22:01
+    - LOGED change: POT.SetDBConnection - button2_Click
+     - Used: DB connection address and name save.
+     - Data: cphr.ddns.net, exe
+     - Result: Saved, no msgToUser
+    *** BrunoBrckovic *** 
+
+
+- 12.05.19. 22:01 - App started
+    *** BrunoBrckovic *** 
+
+- 12.05.19. 22:03 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 07:53
+    - LOGED change: POT.SetDBConnection - button2_Click
+     - Used: DB connection address and name save.
+     - Data: 192.168.100.101, test
+     - Result: Saved, no msgToUser
+    ***  *** 
+
+
+- 13.05.19. 07:53 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 07:54
+    - LOGED change: POT.MainCmpSelector - button1_Click
+     - Used: Main cmp select
+     - Data: 
+     - Result: Main cmp selected, please relog to see changes.
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 07:54 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 07:54 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 07:56
+    - BaseEcp: System.InvalidOperationException: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+    - InnerEcp: 
+    - MessageEcp: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+    - SourceEcp: System.Data
+    - StackTrqceEcp:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+    - TypeNameEcp: System.InvalidOperationException
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 07:56
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The network path was not found
+    - InnerEcp: System.ComponentModel.Win32Exception (0x80004005): The network path was not found
+    - MessageEcp: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 08:12 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 08:13 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 08:16 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 08:21 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 08:23
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: DATE
+     - Data: 24.04.19.
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 08:23
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 707013002000, listIssParts cnt 10, 190001, SERVICE REPORT, customer, false
+     - Result: ISS selected 190001
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 08:23
+    - LOGED change: POT.CopyPrintForms.cISS - listView1_DoubleClick
+     - Used: OTP Selected
+     - Data: 
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 08:24 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 08:24 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 08:24 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 08:25 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 08:25 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 08:26 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 08:26 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 08:26 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 08:26 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 08:27 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 08:27 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 08:27 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 08:27 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 08:27 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 08:29 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 17:49 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 17:49 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 17:50 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 17:50 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 17:51 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 17:51 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 17:52 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 17:52 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 17:52 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 17:52 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 18:02 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 18:02 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 18:03 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 18:05 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 18:06 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 18:06 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 18:07 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 18:08 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 18:08 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 18:08 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 18:12 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 18:12 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 18:22 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 18:23
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: ID
+     - Data: 19001
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 18:23
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 
+     - Result: SifrarnikArr: NOK
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 18:23
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 
+     - Result: SifrarnikArr: NOK
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 18:24
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: ID
+     - Data: 19001
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 18:24
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 
+     - Result: SifrarnikArr: NOK
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 18:24
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 
+     - Result: SifrarnikArr: NOK
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 18:24
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: ID
+     - Data: 19001
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 18:24
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 
+     - Result: SifrarnikArr: NOK
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 18:25
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 
+     - Result: SifrarnikArr: NOK
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 18:26
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: CMP
+     - Data: 6
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 18:26
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 
+     - Result: SifrarnikArr: NOK
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 18:27
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 
+     - Result: SifrarnikArr: NOK
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 18:27 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 18:28 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 18:29
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: ID
+     - Data: 19001
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 18:29
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 
+     - Result: SifrarnikArr: NOK
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 18:29
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: ID
+     - Data: 19001
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 18:30 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 18:30 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 18:31
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: ID
+     - Data: 19001
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 18:31
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: ID
+     - Data: 19001
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 18:32
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: ID
+     - Data: 19001
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 18:36
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 19001
+     - Result: Selected PRIM (19001) does not exist or do not have parts.
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 18:37
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 19001
+     - Result: Selected PRIM (19001) does not exist or do not have parts.
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 18:38
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 19001
+     - Result: Selected PRIM (19001) does not exist or do not have parts.
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 18:39 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 18:39
+    - BaseEcp: System.InvalidOperationException: Cross-thread operation not valid: Control 'cPRIM' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.get_InternalHandle()
+   at System.Windows.Forms.Control.get_CreateParams()
+   at System.Windows.Forms.Label.get_CreateParams()
+   at System.Windows.Forms.Control.SizeFromClientSize(Int32 width, Int32 height)
+   at System.Windows.Forms.Control.SizeFromClientSize(Size clientSize)
+   at System.Windows.Forms.Label.GetBordersAndPadding()
+   at System.Windows.Forms.Label.GetPreferredSizeCore(Size proposedConstraints)
+   at System.Windows.Forms.Control.GetPreferredSize(Size proposedSize)
+   at System.Windows.Forms.Label.GetPreferredSize(Size proposedSize)
+   at System.Windows.Forms.Control.get_PreferredSize()
+   at System.Windows.Forms.Label.AdjustSize()
+   at System.Windows.Forms.Label.OnTextChanged(EventArgs e)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at POT.CopyPrintForms.cPRIM.fillSifrarnik() in F:\PROJEKTI\VS\POT\POT\POT\CopyPrintForms\cPRIM.cs:line 344
+    - InnerEcp: 
+    - MessageEcp: Cross-thread operation not valid: Control 'cPRIM' accessed from a thread other than the thread it was created on.
+    - SourceEcp: System.Windows.Forms
+    - StackTrqceEcp:    at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.get_InternalHandle()
+   at System.Windows.Forms.Control.get_CreateParams()
+   at System.Windows.Forms.Label.get_CreateParams()
+   at System.Windows.Forms.Control.SizeFromClientSize(Int32 width, Int32 height)
+   at System.Windows.Forms.Control.SizeFromClientSize(Size clientSize)
+   at System.Windows.Forms.Label.GetBordersAndPadding()
+   at System.Windows.Forms.Label.GetPreferredSizeCore(Size proposedConstraints)
+   at System.Windows.Forms.Control.GetPreferredSize(Size proposedSize)
+   at System.Windows.Forms.Label.GetPreferredSize(Size proposedSize)
+   at System.Windows.Forms.Control.get_PreferredSize()
+   at System.Windows.Forms.Label.AdjustSize()
+   at System.Windows.Forms.Label.OnTextChanged(EventArgs e)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at POT.CopyPrintForms.cPRIM.fillSifrarnik() in F:\PROJEKTI\VS\POT\POT\POT\CopyPrintForms\cPRIM.cs:line 344
+    - TypeNameEcp: System.InvalidOperationException
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 18:40
+    - BaseEcp: System.InvalidOperationException: Cross-thread operation not valid: Control 'label6' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at POT.CopyPrintForms.cPRIM.fillSifrarnik()
+    - InnerEcp: 
+    - MessageEcp: Cross-thread operation not valid: Control 'label6' accessed from a thread other than the thread it was created on.
+    - SourceEcp: System.Windows.Forms
+    - StackTrqceEcp:    at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at POT.CopyPrintForms.cPRIM.fillSifrarnik()
+    - TypeNameEcp: System.InvalidOperationException
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 18:40
+    - LOGED change: POT.CopyPrintForms.cPRIM - fillSifrarnik
+     - Used: Loading sifrarnik
+     - Data: Break limit reached, arr cnt = 910
+     - Result: Cant load 'sifrarnik'.
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 18:40
+    - BaseEcp: System.InvalidOperationException: Cross-thread operation not valid: Control 'label6' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at POT.CopyPrintForms.cPRIM.fillSifrarnik()
+    - InnerEcp: 
+    - MessageEcp: Cross-thread operation not valid: Control 'label6' accessed from a thread other than the thread it was created on.
+    - SourceEcp: System.Windows.Forms
+    - StackTrqceEcp:    at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at POT.CopyPrintForms.cPRIM.fillSifrarnik()
+    - TypeNameEcp: System.InvalidOperationException
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 18:41
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: ID
+     - Data: 19001
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 18:41
+    - LOGED change: POT.CopyPrintForms.cPRIM - fillSifrarnik
+     - Used: Loading sifrarnik
+     - Data: Break limit reached, arr cnt = 910
+     - Result: Cant load 'sifrarnik'.
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 18:41
+    - BaseEcp: System.InvalidOperationException: Cross-thread operation not valid: Control 'cPRIM' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.Invalidate(Boolean invalidateChildren)
+   at System.Windows.Forms.Control.Refresh()
+   at POT.CopyPrintForms.cPRIM.fillSifrarnik()
+    - InnerEcp: 
+    - MessageEcp: Cross-thread operation not valid: Control 'cPRIM' accessed from a thread other than the thread it was created on.
+    - SourceEcp: System.Windows.Forms
+    - StackTrqceEcp:    at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.Invalidate(Boolean invalidateChildren)
+   at System.Windows.Forms.Control.Refresh()
+   at POT.CopyPrintForms.cPRIM.fillSifrarnik()
+    - TypeNameEcp: System.InvalidOperationException
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 18:42
+    - LOGED change: POT.CopyPrintForms.cPRIM - fillSifrarnik
+     - Used: Loading sifrarnik
+     - Data: Break limit reached, arr cnt = 910
+     - Result: Cant load 'sifrarnik'.
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 18:42
+    - BaseEcp: System.InvalidOperationException: Cross-thread operation not valid: Control 'cPRIM' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.Invalidate(Boolean invalidateChildren)
+   at System.Windows.Forms.Control.Refresh()
+   at POT.CopyPrintForms.cPRIM.fillSifrarnik()
+    - InnerEcp: 
+    - MessageEcp: Cross-thread operation not valid: Control 'cPRIM' accessed from a thread other than the thread it was created on.
+    - SourceEcp: System.Windows.Forms
+    - StackTrqceEcp:    at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.Invalidate(Boolean invalidateChildren)
+   at System.Windows.Forms.Control.Refresh()
+   at POT.CopyPrintForms.cPRIM.fillSifrarnik()
+    - TypeNameEcp: System.InvalidOperationException
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 18:42
+    - LOGED change: POT.CopyPrintForms.cPRIM - fillSifrarnik
+     - Used: Loading sifrarnik
+     - Data: Break limit reached, arr cnt = 910
+     - Result: Cant load 'sifrarnik'.
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 18:42
+    - BaseEcp: System.InvalidOperationException: Cross-thread operation not valid: Control 'label6' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at POT.CopyPrintForms.cPRIM.fillSifrarnik()
+    - InnerEcp: 
+    - MessageEcp: Cross-thread operation not valid: Control 'label6' accessed from a thread other than the thread it was created on.
+    - SourceEcp: System.Windows.Forms
+    - StackTrqceEcp:    at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at POT.CopyPrintForms.cPRIM.fillSifrarnik()
+    - TypeNameEcp: System.InvalidOperationException
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 18:42
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: ID
+     - Data: 19001
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 18:43
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 19001
+     - Result: Selected PRIM (19001) does not exist or do not have parts.
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 18:44
+    - LOGED change: POT.CopyPrintForms.cPRIM - fillSifrarnik
+     - Used: Loading sifrarnik
+     - Data: Break limit reached, arr cnt = 910
+     - Result: Cant load 'sifrarnik'.
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 18:44
+    - BaseEcp: System.InvalidOperationException: Cross-thread operation not valid: Control 'label6' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at POT.CopyPrintForms.cPRIM.fillSifrarnik()
+    - InnerEcp: 
+    - MessageEcp: Cross-thread operation not valid: Control 'label6' accessed from a thread other than the thread it was created on.
+    - SourceEcp: System.Windows.Forms
+    - StackTrqceEcp:    at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at POT.CopyPrintForms.cPRIM.fillSifrarnik()
+    - TypeNameEcp: System.InvalidOperationException
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 18:45
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: ID
+     - Data: 19001
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 18:45
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 19001
+     - Result: Selected PRIM (19001) does not exist or do not have parts.
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 18:46 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 18:47 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 18:47
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: ID
+     - Data: 19001
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 18:47
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 19001
+     - Result: Selected PRIM (19001) does not exist or do not have parts.
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 18:47
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: DATE
+     - Data: 24.04.19.
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 18:47
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 19001
+     - Result: Selected PRIM (19001) does not exist or do not have parts.
+    *** BrunoBrckovic *** 
+
+
+- 13.05.19. 18:48 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 18:51 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 18:52 - Waiting
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 18:52 - Waiting
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 18:52 - Waiting
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 18:52 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 18:54 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 18:54 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 18:59 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 18:59 - Waiting
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 19:07 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 19:08 - Waiting
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 19:10 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 19:10 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 19:43 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 19:43 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 19:44 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 19:44 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 19:45 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 19:46 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 19:49 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 19:49 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 19:49 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 19:49 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 19:49 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 19:50 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:00 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:00 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:00 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:04 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:04 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:04 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:04 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:06 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:06 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:07 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:07 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:08 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:08 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:13 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:13 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:15 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:15 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:15 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:15 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:17 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:17 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:22 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:22 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:22 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:23 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:27 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:27 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:27 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:28 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:28 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:28 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:28 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:28 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:29 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:29 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:34 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:34 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:34 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:34 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:34 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:34 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:35 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:35 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:35 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:35 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:36 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:36 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:36 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:36 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:36 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:36 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:37 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:37 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:37 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:37 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:38 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:38 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 20:38 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 22:17 - App started
+    *** BrunoBrckovic *** 
+
+- 13.05.19. 22:21 - App turned off
+    *** BrunoBrckovic *** 

@@ -29,13 +29,17 @@ namespace POT
         ConnectionHelper cn = new ConnectionHelper();
         static List<String> labResultArr = new List<string>();
 
+        Boolean pictureOn = false;
+
         public MainFR()
         {
             //For Testing DB BUILD
 
             Properties.Settings.Default.DBTabelsBuilded = false;
             Properties.Settings.Default.Save();
-            
+
+            this.Location = Properties.Settings.Default.DisplayPoint; //Pamti zadnju poziciju forme
+            this.Size = Properties.Settings.Default.MainFrSize;
             ///
 
             InitializeComponent();
@@ -150,6 +154,14 @@ namespace POT
 
         private void MainFR_Load(object sender, EventArgs e)
         {
+            backgroundWorker2.WorkerReportsProgress = true;
+            backgroundWorker2.WorkerSupportsCancellation = true;
+
+            if (backgroundWorker2.IsBusy != true)
+            {
+                backgroundWorker2.RunWorkerAsync();
+            }
+
             if (!CheckIDs())
             {
                 foreach(Control ctr in this.Controls)
@@ -176,6 +188,42 @@ namespace POT
             myThread.Start();
 
             new LogWriter(System.Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + "App started");
+        }
+
+        private void backgroundWorker2_DoWork(object sender, DoWorkEventArgs e)
+        {
+            try
+            {
+                QueryCommands wkQ = new QueryCommands();
+                
+                while (true)
+                {
+                    if (wkQ.CheckConnection())
+                    {
+                        if (!pictureOn)
+                        {
+                            pictureBox9.Image = Properties.Resources.MainConnectionOn;
+                            pictureOn = true;
+                        }
+
+                        Thread.Sleep(60000);
+                    }
+                    else
+                    {
+                        if (pictureOn)
+                        {
+                            pictureBox9.Image = Properties.Resources.MainConnectionOff;
+                            pictureOn = false;
+                        }
+
+                        Thread.Sleep(5000);
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                //new LogWriter(e1);
+            }
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -400,6 +448,10 @@ namespace POT
                     this.Refresh();
                     //System.Threading.Thread.Sleep(10);
                 } while (pictureBox4.Height > 0);
+
+                Properties.Settings.Default.DisplayPoint = Screen.FromControl(this).WorkingArea.Location;
+                Properties.Settings.Default.MainFrSize = this.Size;
+                Properties.Settings.Default.Save();
 
                 isClosePicClicked = true;
                 new LogWriter(System.Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + "App turned off");
@@ -755,6 +807,10 @@ namespace POT
         {
             if (!isClosePicClicked && !logOutClicked)
                 new LogWriter(System.Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + "App turned off");
+
+            Properties.Settings.Default.DisplayPoint = Screen.FromControl(this).WorkingArea.Location;
+            Properties.Settings.Default.MainFrSize = this.Size;
+            Properties.Settings.Default.Save();
         }
 
         private void linkLabel16_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

@@ -490,5 +490,29 @@ namespace POT.Properties {
                 this["CmpID"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
+        public global::System.Drawing.Point DisplayPoint {
+            get {
+                return ((global::System.Drawing.Point)(this["DisplayPoint"]));
+            }
+            set {
+                this["DisplayPoint"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0, 0")]
+        public global::System.Drawing.Size MainFrSize {
+            get {
+                return ((global::System.Drawing.Size)(this["MainFrSize"]));
+            }
+            set {
+                this["MainFrSize"] = value;
+            }
+        }
     }
 }

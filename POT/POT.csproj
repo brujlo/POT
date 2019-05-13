@@ -25,7 +25,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ProductName>POT</ProductName>
     <PublisherName>Exception</PublisherName>
-    <ApplicationRevision>61</ApplicationRevision>
+    <ApplicationRevision>62</ApplicationRevision>
     <ApplicationVersion>1.3.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -351,6 +351,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="EXE.ico" />
+    <None Include="Resources\LoadDataOn.gif" />
+    <None Include="Resources\LoadDataOff.gif" />
+    <None Include="Resources\MainConnectionOn1.gif" />
+    <None Include="Resources\MainConnectionOff1.gif" />
+    <None Include="Resources\MainConnectionOn.gif" />
+    <None Include="Resources\MainConnectionOff.gif" />
     <None Include="Resources\network.png" />
     <None Include="Resources\cloud.png" />
     <None Include="Resources\settings 3.png" />

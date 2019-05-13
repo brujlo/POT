@@ -36,7 +36,6 @@
             this.selectPrinterPrintBtn = new System.Windows.Forms.Button();
             this.printPrewBT = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.listView2 = new System.Windows.Forms.ListView();
             this.button2 = new System.Windows.Forms.Button();
@@ -52,7 +51,8 @@
             this.printDocumentOtp = new System.Drawing.Printing.PrintDocument();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.printPreviewDialogOtp = new System.Windows.Forms.PrintPreviewDialog();
-            this.button4 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label10
@@ -122,15 +122,6 @@
             this.button3.Text = "Clear";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label6.Location = new System.Drawing.Point(818, 380);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(0, 20);
-            this.label6.TabIndex = 96;
             // 
             // label5
             // 
@@ -284,23 +275,22 @@
             this.printPreviewDialogOtp.Name = "printPreviewDialogOtp";
             this.printPreviewDialogOtp.Visible = false;
             // 
-            // button4
+            // pictureBox1
             // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.Enabled = false;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(919, 12);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(27, 23);
-            this.button4.TabIndex = 104;
-            this.button4.UseVisualStyleBackColor = false;
+            this.pictureBox1.Image = global::POT.Properties.Resources.LoadDataOff;
+            this.pictureBox1.Location = new System.Drawing.Point(811, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(135, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 127;
+            this.pictureBox1.TabStop = false;
             // 
             // cOTPcs
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(958, 644);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -308,7 +298,6 @@
             this.Controls.Add(this.selectPrinterPrintBtn);
             this.Controls.Add(this.printPrewBT);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.listView2);
             this.Controls.Add(this.button2);
@@ -326,6 +315,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Select OTP";
             this.Load += new System.EventHandler(this.cOTPcs_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -340,7 +330,6 @@
         private System.Windows.Forms.Button selectPrinterPrintBtn;
         private System.Windows.Forms.Button printPrewBT;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ListView listView2;
         private System.Windows.Forms.Button button2;
@@ -356,6 +345,6 @@
         private System.Drawing.Printing.PrintDocument printDocumentOtp;
         private System.Windows.Forms.PrintDialog printDialog1;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialogOtp;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
