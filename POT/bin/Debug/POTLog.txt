@@ -1678,3 +1678,18 @@ Parameter name: emSize
 
 - 13.05.19. 22:21 - App turned off
     *** BrunoBrckovic *** 
+
+- 14.05.19. 20:28 - App started
+    *** BrunoBrckovic *** 
+
+- 14.05.19. 20:28 - App turned off
+    *** BrunoBrckovic *** 
+
+- 14.05.19. 20:28 - App started
+    *** BrunoBrckovic *** 
+
+- 14.05.19. 20:29 - App started
+    *** BrunoBrckovic *** 
+
+- 14.05.19. 20:29 - App turned off
+    *** BrunoBrckovic *** 

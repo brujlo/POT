@@ -325,11 +325,15 @@ namespace POT.Documents
                 if (sifrarnikArr.Count > 0 && stop < 100)
                 {
                     pictureBox1.Image = Properties.Resources.LoadDataOn;
+                    dataLoaded = true;
+                    STARTbt_Click(null, null);
                     pictureOn = true;
                 }
                 else
                 {
                     pictureBox1.Image = Properties.Resources.LoadDataOff;
+                    dataLoaded = false;
+                    STARTbt_Click(null, null);
                     pictureOn = false;
                 }
             }
