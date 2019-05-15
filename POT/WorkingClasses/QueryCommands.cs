@@ -463,7 +463,12 @@ namespace POT
             List<String> arr = new List<String>();
             //SqlConnection cnn = cn.Connect(Uname, Pass);
             cnn = cn.Connect(Uname, Pass);
-            query = "Select * from Parts where CodePartFull = " + mCodePartFull + " and StorageID = " + mStorageID + " and State = '" + mState + "'";
+
+            if (mStorageID == 1 || mStorageID == 2)
+                query = "Select * from Parts where CodePartFull = " + mCodePartFull + " and State = '" + mState + "'";
+            else
+                query = "Select * from Parts where CodePartFull = " + mCodePartFull + " and StorageID = " + mStorageID + " and State = '" + mState + "'";
+
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
             SqlDataReader dataReader = command.ExecuteReader();
@@ -3675,6 +3680,32 @@ namespace POT
             return exist;
         }
 
+        public List<long> GetISSRBByISSid(long mISSid)
+        {
+            List<long> arr = new List<long>();
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "select RB from ISSparts where ISSid = " + mISSid;
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                do
+                {
+                    arr.Add(long.Parse(dataReader["RB"].ToString()));
+                } while (dataReader.Read());
+            }
+            else
+            {
+                arr.Add(0);
+            }
+            dataReader.Close();
+            cnn.Close();
+            return arr;
+        }
+
         public Boolean ISSUnesiISS(Boolean mISSExist, Boolean mAllDone, long mISSid, String mDate, Company mCmpCustomer, Part mMainPart, List<ISSparts> listIssParts, long mUserID)
         {
             Boolean isExecuted = false;
@@ -3706,10 +3737,12 @@ namespace POT
                 }
 
                 QueryCommands qc1 = new QueryCommands();
-                
+                List<long> arr = new List<long>();
+
+                arr = qc1.GetISSRBByISSid(mISSid);
                 for (int i = 0; i < listIssParts.Count; i++)
                 {
-                    if (!qc1.ISSRBExist(mISSid, listIssParts[i].RB))
+                    if (!arr.Contains(listIssParts[i].RB))
                     {
                         if (listIssParts[i].PrtO.PartialCode != 0)
                         {
@@ -4014,12 +4047,12 @@ namespace POT
             return arr;
         }
 
-        public List<long> GetAllISScustomerID()
+        public List<long> GetAllISScustomerID(long mClosed)
         {
             List<long> arr = new List<long>();
             //SqlConnection cnn = cn.Connect(Uname, Pass);
             cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
-            query = "Select Distinct CustomerID from ISS order by CustomerID asc";
+            query = "Select Distinct CustomerID from ISS where Closed =" + mClosed + " order by CustomerID asc";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
             SqlDataReader dataReader = command.ExecuteReader();
@@ -4041,12 +4074,12 @@ namespace POT
             return arr;
         }
 
-        public List<String> GetAllISSdateCreated()
+        public List<String> GetAllISSdateCreated(long mClosed)
         {
             List<String> arr = new List<string>();
             //SqlConnection cnn = cn.Connect(Uname, Pass);
             cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
-            query = "Select Distinct Date from ISS";
+            query = "Select Distinct Date from ISS where Closed =" + mClosed;
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
             SqlDataReader dataReader = command.ExecuteReader();

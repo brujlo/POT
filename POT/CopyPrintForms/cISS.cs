@@ -43,7 +43,7 @@ namespace POT.CopyPrintForms
         Object obj;
         Boolean onlyOneTime = true;
         Boolean oneTimeISSSelectorCb = true;
-        Boolean pictureOn = false;
+        //Boolean pictureOn = false;
 
         public cISS()
         {
@@ -89,7 +89,7 @@ namespace POT.CopyPrintForms
             listView2.Columns.Add("Work done");
             listView2.Columns.Add("Comment");
 
-            customerID = qc.GetAllISScustomerID();
+            customerID = qc.GetAllISScustomerID(1);
             if (customerID[0] != -1)
             {
                 for (int i = 0; i < customerID.Count(); i++)
@@ -99,7 +99,7 @@ namespace POT.CopyPrintForms
 
             }
 
-            dateCreated = qc.GetAllISSdateCreated();
+            dateCreated = qc.GetAllISSdateCreated(1);
             if (!dateCreated[0].Equals("nok"))
             {
                 for (int i = 0; i < dateCreated.Count(); i++)
@@ -121,7 +121,7 @@ namespace POT.CopyPrintForms
 
             }
 
-            ISSids = qc.GetAllISSOpenClose(0);
+            ISSids = qc.GetAllISSOpenClose(1);
 
             for (int i = 0; i < ISSids.Count; i++)
             {
@@ -378,7 +378,7 @@ namespace POT.CopyPrintForms
                     stop++;
                     sifrarnikArr.Clear();
                     tresultArr.Clear();
-                    tresultArr = qc.SelectNameCodeFromSifrarnik(WorkingUser.Username, WorkingUser.Password);
+                    tresultArr = qc2.SelectNameCodeFromSifrarnik(WorkingUser.Username, WorkingUser.Password);
 
                     if (stop == 100)
                     {
@@ -393,7 +393,7 @@ namespace POT.CopyPrintForms
                         lw.LogMe(function, usedQC, data, Result);
 
                         pictureBox1.Image = Properties.Resources.LoadDataOff;
-                        pictureOn = false;
+                        //pictureOn = false;
 
                         this.Refresh();
 
@@ -406,12 +406,12 @@ namespace POT.CopyPrintForms
                 if (sifrarnikArr.Count > 0 && stop < 100)
                 {
                     pictureBox1.Image = Properties.Resources.LoadDataOn;
-                    pictureOn = true;
+                    //pictureOn = true;
                 }
                 else
                 {
                     pictureBox1.Image = Properties.Resources.LoadDataOff;
-                    pictureOn = false;
+                    //pictureOn = false;
                 }
             }
             catch (Exception e1)

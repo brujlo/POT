@@ -181,7 +181,11 @@ namespace POT
                                 else
                                     resultArrG = qc.PartsCntG(WorkingUser.Username, WorkingUser.Password, long.Parse(label18.Text.Trim()), long.Parse(resultArr3[jj].Trim()));
 
-                                txtBoxAddG.Name = "txtBoxAddG_" + i;
+                                if (resultArr3[jj + 1].Equals("S"))
+                                    txtBoxAddG.Name = "txtBoxAddSG_" + i;
+                                else
+                                    txtBoxAddG.Name = "txtBoxAddG_" + i;
+
                                 txtBoxAddG.Text = resultArrG[0] == "nok" ? "" : resultArrG[0].Equals("0") ? "" : resultArrG[0];
                                 if (!txtBoxAddG.Text.Equals("")) totalG = totalG + int.Parse(txtBoxAddG.Text);
 
@@ -202,7 +206,11 @@ namespace POT
                                 else
                                     resultArrNG = qc.PartsCntNG(WorkingUser.Username, WorkingUser.Password, long.Parse(label18.Text.Trim()), long.Parse(resultArr3[jj].Trim()));
 
-                                txtBoxAddNG.Name = "txtBoxAddNG_" + i;
+                                if (resultArr3[jj + 1].Equals("S"))
+                                    txtBoxAddNG.Name = "txtBoxAddSNG_" + i;
+                                else
+                                    txtBoxAddNG.Name = "txtBoxAddNG_" + i;
+
                                 txtBoxAddNG.Text = resultArrNG[0] == "nok" ? "" : resultArrNG[0].Equals("0") ? "" : resultArrNG[0];
                                 if (!txtBoxAddNG.Text.Equals("")) totalNG = totalNG + int.Parse(txtBoxAddNG.Text);
 
@@ -250,7 +258,10 @@ namespace POT
 
             try
             {
-                resultArr = qc.ListPartsByCodeRegionStateS(WorkingUser.Username, WorkingUser.Password, long.Parse(label18.Text), long.Parse(regionIdcontrol.Text.Split('-')[1].Trim().ToString()), ((TextBox)sender).Name.Contains("txtBoxAddNG") ? "ng" : "g");
+                if(((TextBox)sender).Name.Contains("txtBoxAddSNG"))
+                    resultArr = qc.ListPartsByCodeRegionStateS(WorkingUser.Username, WorkingUser.Password, long.Parse(label18.Text), long.Parse(regionIdcontrol.Text.Split('-')[1].Trim().ToString()), ((TextBox)sender).Name.Contains("txtBoxAddSNG") ? "sng" : "sg");
+                else
+                    resultArr = qc.ListPartsByCodeRegionStateS(WorkingUser.Username, WorkingUser.Password, long.Parse(label18.Text), long.Parse(regionIdcontrol.Text.Split('-')[1].Trim().ToString()), ((TextBox)sender).Name.Contains("txtBoxAddNG") ? "ng" : "g");
             }
             catch (Exception e1)
             {

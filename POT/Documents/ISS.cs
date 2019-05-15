@@ -48,7 +48,7 @@ namespace POT.Documents
         Boolean onlyOneTime = true;
         //Boolean itemRemoved = false;
 
-        Boolean pictureOn = false;
+        //Boolean pictureOn = false;
 
         int partIndex = -1; //sluzi za grupiranu listu podataka da izvucem podpodatak za po SN da dobijem cn
 
@@ -238,6 +238,7 @@ namespace POT.Documents
                         STARTbt.BackColor = Color.AliceBlue;
                         STOPbt.BackColor = Color.Yellow;
                         CANCELBt.Enabled = true;
+                        timerEnabled = false;
                         break;
                     case 1:
                         stopClicked = 0;
@@ -312,7 +313,7 @@ namespace POT.Documents
                         lw.LogMe(function, usedQC, data, Result);
 
                         pictureBox1.Image = Properties.Resources.LoadDataOff;
-                        pictureOn = false;
+                        //pictureOn = false;
 
                         this.Refresh();
 
@@ -327,14 +328,14 @@ namespace POT.Documents
                     pictureBox1.Image = Properties.Resources.LoadDataOn;
                     dataLoaded = true;
                     STARTbt_Click(null, null);
-                    pictureOn = true;
+                    //pictureOn = true;
                 }
                 else
                 {
                     pictureBox1.Image = Properties.Resources.LoadDataOff;
                     dataLoaded = false;
                     STARTbt_Click(null, null);
-                    pictureOn = false;
+                    //pictureOn = false;
                 }
             }
             catch (Exception e1)
@@ -364,7 +365,7 @@ namespace POT.Documents
         {
             ISSid = 0;
 
-            if(checkBox1.Checked == true)
+            if (checkBox1.Checked == true)
             {
                 checkBox1.Checked = false;
                 PartCb.ResetText();
@@ -406,6 +407,8 @@ namespace POT.Documents
             NewPartCodeTb.ResetText();
             WorkDoneCb.ResetText();
             ComentTb.ResetText();
+
+            ISSSelectorCb.ResetText();
 
             NewPartSNCb.ResetText();
             NewPartSNCb.Items.Clear();
@@ -617,6 +620,11 @@ namespace POT.Documents
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (h == 0 && m == 0 && s == 0)
+            {
+                MessageBox.Show("Please check the time spent on the repair.", "ISS time error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             ///////////////// LogMe ////////////////////////
             String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
             String usedQC = "Save to db";
@@ -626,12 +634,15 @@ namespace POT.Documents
             ////////////////////////////////////////////////
             ///
 
-            DialogResult result = MessageBox.Show("Close ISS?", "ISS", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (!checkBox1.Checked)
+            {
+                DialogResult result = MessageBox.Show("Close ISS?", "ISS", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
 
-            if (result == DialogResult.Yes)
-                checkBox1.Checked = true;
-            else
-                checkBox1.Checked = false;
+                if (result == DialogResult.Yes)
+                    checkBox1.Checked = true;
+                else
+                    checkBox1.Checked = false;
+            }
             //TODO
             //PRINTbt.Enabled = checkBox1.Checked;
             //SelectPrinterbt.Enabled = checkBox1.Checked;
@@ -678,7 +689,7 @@ namespace POT.Documents
                         WorkingUser.UserID);
                     
                     listIssParts.Add(issp);
-                    
+
                     data = data + listView1.Items[i].SubItems[0].Text + ". / " + listView1.Items[i].SubItems[1].Text + " / " + listView1.Items[i].SubItems[2].Text + " / " + listView1.Items[i].SubItems[3].Text + " / " +
                         listView1.Items[i].SubItems[4].Text + " / " + listView1.Items[i].SubItems[5].Text + " / " + listView1.Items[i].SubItems[6].Text + " / " + listView1.Items[i].SubItems[7].Text + " / " +
                         listView1.Items[i].SubItems[8].Text + "h / " + listView1.Items[i].SubItems[9].Text + " / " + listView1.Items[i].SubItems[10].Text + Environment.NewLine;
@@ -700,17 +711,20 @@ namespace POT.Documents
                     lw.LogMe(function, usedQC, data, Result);
                     MessageBox.Show(Result, "SAVED", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    ISSSelectorCb.Items.Clear();
-                    ISSSelectorCb.ResetText();
+                    //ISSSelectorCb.Items.Clear();
+                    //ISSSelectorCb.ResetText();
 
                     ISSids = qc.GetAllISSOpenClose(0);
+
+                    ISSSelectorCb.Items.Clear();
 
                     for (int i = 0; i < ISSids.Count; i++)
                     {
                         ISSSelectorCb.Items.Add(ISSids[i]);
                     }
 
-                    ISSid = 0;
+                    if (checkBox1.Checked)
+                        CleanMe();
                 }
                 else
                 {
@@ -744,8 +758,7 @@ namespace POT.Documents
                 new LogWriter(e1);
                 MessageBox.Show("Error" + Environment.NewLine + Environment.NewLine + e1.ToString(), "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-            CleanMe();
+            //CleanMe();
         }
 
         private void ISSSelectorCb_SelectedIndexChanged(object sender, EventArgs e)
@@ -893,9 +906,11 @@ namespace POT.Documents
                     try
                     {
                         var list = TIMERtb.Text.Split(':');
-                        int h = 0;
-                        int m = 0;
-                        int s = 0;
+                        if (list.Count() < 2)
+                            list = TIMERtb.Text.Split(',');
+                        h = 0;
+                        m = 0;
+                        s = 0;
 
                         switch (list.Count())
                         {

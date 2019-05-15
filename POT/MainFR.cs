@@ -52,7 +52,6 @@ namespace POT
                 this.linkLabel5.Enabled = true;
                 this.linkLabel7.Enabled = true;
                 this.linkLabel9.Enabled = true;
-                this.linkLabel4.Enabled = true;
                 this.linkLabel11.Enabled = true;
                 this.linkLabel15.Enabled = true;
                 this.linkLabel16.Enabled = true;
@@ -65,7 +64,6 @@ namespace POT
                 this.linkLabel5.Enabled = false;
                 this.linkLabel5.Enabled = false;
                 this.linkLabel9.Enabled = false;
-                this.linkLabel4.Enabled = false;
                 this.linkLabel11.Enabled = false;
                 this.linkLabel15.Enabled = false;
                 this.linkLabel16.Enabled = false;
@@ -849,6 +847,11 @@ namespace POT
         {
             cISS ciss = new cISS();
             ciss.Show();
+        }
+
+        private void linkLabel20_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
         }
     }
 }

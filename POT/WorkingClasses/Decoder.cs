@@ -191,5 +191,23 @@ namespace POT.WorkingClasses
 
             return name;
         }
+
+        public static String ConnectCodeName(List<String> mSifrarnik, long mCode)
+        {
+            String name = "";
+            String sCode = mCode.ToString();
+            long code = long.Parse(sCode.Substring(sCode.Length - 9));
+
+            for (int i = 0; i < mSifrarnik.Count; i = i + 2)
+            {
+                if (long.Parse(mSifrarnik[i + 1]) == code)
+                {
+                    name = mSifrarnik[i];
+                    break;
+                }
+            }
+
+            return name;
+        }
     }
 }
