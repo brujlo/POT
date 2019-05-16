@@ -411,6 +411,8 @@ namespace POT.BuildingClasses
         private void button2_Click(object sender, EventArgs e)
         {
             comboBox3_Leave(sender, e);
+            //TODO
+            MessageBox.Show("Nisi dodao funkcionalnost, moras ju dodati");
         }
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)

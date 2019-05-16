@@ -39,13 +39,17 @@ namespace POT.Documents
         List<ISSparts> listIssParts = new List<ISSparts>();
         List<long> ISSids = new List<long>();
         Part newSendPart = new Part();
+        List<Part> newSendPartList = new List<Part>();
         Part mainPart = new Part();
 
         Company cmpCust = new Company();
         Company cmpM = new Company();
         MainCmp mm = new MainCmp();
 
+        int uvecajGroupPart = 0;
         Boolean onlyOneTime = true;
+
+        ComboBox selectISS = null;
         //Boolean itemRemoved = false;
 
         //Boolean pictureOn = false;
@@ -361,11 +365,28 @@ namespace POT.Documents
         }
         */
 
-        private void CleanMe()
+        private void CleanMe(object sender)
         {
             ISSid = 0;
+            Button btn = null;
+            Boolean btnYN = false;
 
-            if (checkBox1.Checked == true)
+            try
+            {
+                btn = (Button)sender;
+            }
+            catch { }
+
+            if (btn != null && btn.Name.Equals("button2"))
+            {
+                DialogResult result = MessageBox.Show("Clear list and part also?", "ISS", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (result == DialogResult.Yes)
+                    btnYN = true;
+                else
+                    btnYN = false;
+            }
+            if (btnYN || checkBox1.Checked == true)
             {
                 checkBox1.Checked = false;
                 PartCb.ResetText();
@@ -427,12 +448,21 @@ namespace POT.Documents
         private void PartCb_SelectedIndexChanged(object sender, EventArgs e)
         {
             NameTb.Text = Decoder.ConnectCodeName(sifrarnikArr, partList[PartCb.SelectedIndex]);
-            SNTb.Text = partList[PartCb.SelectedIndex].SN;
-            CNTb.Text = partList[PartCb.SelectedIndex].CN;
-            DateInTb.Text = partList[PartCb.SelectedIndex].DateIn;
-            DateSentTb.Text = partList[PartCb.SelectedIndex].DateSend;
-            IDTb.Text = partList[PartCb.SelectedIndex].PartID.ToString();
-            mainPart = partList[PartCb.SelectedIndex];
+
+            if (selectISS != null && selectISS.Name.Equals("ISSSelectorCb"))
+            {
+                return;
+            }
+            else
+            {
+                SNTb.Text = partList[PartCb.SelectedIndex].SN;
+                CNTb.Text = partList[PartCb.SelectedIndex].CN;
+                DateInTb.Text = partList[PartCb.SelectedIndex].DateIn;
+                DateSentTb.Text = partList[PartCb.SelectedIndex].DateSend;
+                IDTb.Text = partList[PartCb.SelectedIndex].PartID.ToString();
+                mainPart = partList[PartCb.SelectedIndex];
+            }
+
         }
 
         private void OldPartCb_SelectedIndexChanged(object sender, EventArgs e)
@@ -463,14 +493,13 @@ namespace POT.Documents
 
         private void NewPartCb_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(NewPartCb.SelectedIndex > -1)
+            if (NewPartCb.SelectedIndex > -1)
             {
                 partIndex = NewPartCb.SelectedIndex;
 
                 NewPartCodeTb.Text = groupedGoodPartsCode[partIndex][0].CodePartFull.ToString();
 
-                newSendPart = new Part();
-                newSendPart = groupedGoodPartsCode[partIndex][0];
+                newSendPart = groupedGoodPartsCode[partIndex][0 + uvecajGroupPart];
 
                 NewPartCNTb.ResetText();
                 NewPartSNCb.ResetText();
@@ -492,8 +521,6 @@ namespace POT.Documents
 
         private void NewPartSNCb_SelectedIndexChanged(object sender, EventArgs e)
         {
-            newSendPart = new Part();
-
             int snIndex = NewPartSNCb.SelectedIndex;
             NewPartCNTb.ResetText();
             if (!NewPartSNCb.Items[0].Equals(""))
@@ -539,6 +566,41 @@ namespace POT.Documents
 
                 DateConverter dt = new DateConverter();
                 String date = dt.ConvertDDMMYY(DateTime.Now.ToString());
+                
+                if (CodeN.Equals(""))
+                {
+                    newSendPartList.Add(new Part());
+                }
+                else
+                {
+                    if (!newSendPartList.Contains(newSendPart))
+                    {
+                        newSendPartList.Add(newSendPart);
+                        uvecajGroupPart++;
+                    }
+                    else
+                    {
+                        int i;
+                        for (i = 0; i < groupedGoodPartsCode[partIndex].Count; i++)
+                        {
+                            if (!newSendPartList.Contains(groupedGoodPartsCode[partIndex][i]))
+                            {
+                                newSendPartList.Add(groupedGoodPartsCode[partIndex][i]);
+                                uvecajGroupPart++;
+                                break;
+                            }
+                        }
+
+                        if (i >= groupedGoodPartsCode[partIndex].Count)
+                        {
+                            data = "ISSid - " + ISSid.ToString();
+                            Result = "There is a error with adding part, I cant find requested part" + Environment.NewLine + "Please contact your administrator.";
+                            lw.LogMe(function, usedQC, data, Result);
+                            MessageBox.Show(Result, "NOT SAVED", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
+                        }
+                    }
+                }
 
                 m = m < obrJed ? m = obrJed : m = (int)(m / obrJed) * obrJed + obrJed;
                 if(m >= 60)
@@ -620,11 +682,6 @@ namespace POT.Documents
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (h == 0 && m == 0 && s == 0)
-            {
-                MessageBox.Show("Please check the time spent on the repair.", "ISS time error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
             ///////////////// LogMe ////////////////////////
             String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
             String usedQC = "Save to db";
@@ -633,7 +690,7 @@ namespace POT.Documents
             LogWriter lw = new LogWriter();
             ////////////////////////////////////////////////
             ///
-
+            
             if (!checkBox1.Checked)
             {
                 DialogResult result = MessageBox.Show("Close ISS?", "ISS", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
@@ -673,16 +730,15 @@ namespace POT.Documents
 
                     if (!listView1.Items[i].SubItems[2].Text.Trim().Equals(""))
                         CodeO = long.Parse(listView1.Items[i].SubItems[2].Text.Trim());
-                        //CodeO = 0101023003001;
-
+                    //CodeO = 0101023003001;
 
                     ISSparts issp = new ISSparts(
                         ISSid,
                         long.Parse(listView1.Items[i].SubItems[0].Text.Trim()),
                         CodeO, 
                         listView1.Items[i].SubItems[3].Text, 
-                        listView1.Items[i].SubItems[4].Text, 
-                        newSendPart, 
+                        listView1.Items[i].SubItems[4].Text,
+                        newSendPartList[i], 
                         listView1.Items[i].SubItems[10].Text, 
                         listView1.Items[i].SubItems[11].Text, 
                         listView1.Items[i].SubItems[9].Text,
@@ -694,7 +750,7 @@ namespace POT.Documents
                         listView1.Items[i].SubItems[4].Text + " / " + listView1.Items[i].SubItems[5].Text + " / " + listView1.Items[i].SubItems[6].Text + " / " + listView1.Items[i].SubItems[7].Text + " / " +
                         listView1.Items[i].SubItems[8].Text + "h / " + listView1.Items[i].SubItems[9].Text + " / " + listView1.Items[i].SubItems[10].Text + Environment.NewLine;
                 }
-
+                
                 cmpCust.GetCompanyInfoByCode(Decoder.GetCustomerCode(mainPart.CodePartFull));
 
                 /*
@@ -724,7 +780,7 @@ namespace POT.Documents
                     }
 
                     if (checkBox1.Checked)
-                        CleanMe();
+                        CleanMe(null);
                 }
                 else
                 {
@@ -763,6 +819,8 @@ namespace POT.Documents
 
         private void ISSSelectorCb_SelectedIndexChanged(object sender, EventArgs e)
         {
+            selectISS = (ComboBox)sender;
+
             ///////////////// LogMe ////////////////////////
             String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
             String usedQC = "ISS loaded";
@@ -774,7 +832,7 @@ namespace POT.Documents
 
             try
             {
-                CleanMe();
+                CleanMe(null);
                 listView1.Clear();
 
                 listView1.View = View.Details;
@@ -807,13 +865,25 @@ namespace POT.Documents
 
                 PartCb.Text = mainPart.CodePartFull.ToString();
 
+                SNTb.Text = mainPart.SN;
+                CNTb.Text = mainPart.CN;
+                DateInTb.Text = mainPart.DateIn;
+                DateSentTb.Text = mainPart.DateSend;
+                IDTb.Text = mainPart.PartID.ToString();
+
+                selectISS = null;
+
                 cmpCust.GetCompanyInfoByCode(Decoder.GetCustomerCode(mainPart.CodePartFull));
 
                 listIssParts.Clear();
                 listIssParts = qc.GetAllISSPartsByISSid(issID);
 
+                newSendPartList.Clear();
+
                 for (int i = 0; i < listIssParts.Count; i++)
                 {
+                    newSendPartList.Add(listIssParts[i].PrtN);
+
                     ListViewItem lvi1 = new ListViewItem(listIssParts[i].RB.ToString().ToString());
 
                     lvi1.SubItems.Add(qc.PartInfoByFullCodeSifrarnik(mainPart.PartialCode).FullName);
@@ -890,7 +960,7 @@ namespace POT.Documents
 
         private void button2_Click(object sender, EventArgs e)
         {
-            CleanMe();
+            CleanMe(sender);
         }
         //TODO popraviti
         private void button3_Click(object sender, EventArgs e)
@@ -1017,9 +1087,13 @@ namespace POT.Documents
             String showItem = "";
             var items = listView1.SelectedItems;
             int k = 1;
-
+            int mRB;
+            
             foreach (ListViewItem item in listView1.SelectedItems)
             {
+                mRB = int.Parse(item.SubItems[0].Text) - 1;
+                newSendPartList.RemoveAt(mRB);
+                uvecajGroupPart--;
                 listView1.Items.Remove(item);
                 showItem = item.SubItems[0].Text;
                 if (data.Equals(""))

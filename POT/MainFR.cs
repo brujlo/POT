@@ -851,7 +851,8 @@ namespace POT
 
         private void linkLabel20_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            //TODO
+            MessageBox.Show("Za uredivanje work liste za ISS");
         }
     }
 }

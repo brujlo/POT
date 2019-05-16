@@ -3831,7 +3831,7 @@ namespace POT
             List<ISSparts> arr = new List<ISSparts>();
 
             cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
-            query = "select * from ISSparts where ISSid = " + mISSid;
+            query = "select * from ISSparts where ISSid = " + mISSid + " order by RB asc";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
             SqlDataReader dataReader = command.ExecuteReader();

@@ -243,6 +243,7 @@ namespace POT
             CmpPhoneTB.Text = cmpList[i].Phone;
             CmpEmail.Text = cmpList[i].Email;
             SupportEmail.Text = cmpList[i].SupportEmail;
+            CmpContactTB.Text = cmpList[i].Contact;
             LogoSize.Value = Properties.Settings.Default.LogoSize;
         }
 
