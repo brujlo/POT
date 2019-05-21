@@ -161,6 +161,7 @@ namespace POT
                         Properties.Settings.Default.CmpCountry = this.CmpCountryTB.Text.Trim();
                         Properties.Settings.Default.CmpRegionID = long.Parse(comboBox2.Text.Trim());
                         Properties.Settings.Default.LogoSize = int.Parse(this.LogoSize.Value.ToString());
+                        Properties.Settings.Default.SupportEmail = SupportEmail.Text;
 
                         using (ResXResourceWriter resx = new ResXResourceWriter(@".\Logo.resx"))
                         {
@@ -172,6 +173,8 @@ namespace POT
                         Result = "Saved.";
                         lw.LogMe(function, usedQC, data, Result);
                         MessageBox.Show(Result);
+
+                        this.Close();
                     }
                     else
                     {

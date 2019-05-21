@@ -29,7 +29,6 @@ F:\PROJEKTI\VS\POT\POT\POT\bin\Debug\POT.application
 F:\PROJEKTI\VS\POT\POT\POT\bin\Debug\POT.exe
 F:\PROJEKTI\VS\POT\POT\POT\bin\Debug\POT.pdb
 F:\PROJEKTI\VS\POT\POT\POT\bin\Debug\hr\POT.resources.dll
-F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.AddRegion.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.BuildingClasses.CmpRegEditcs.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.CompanyInfo.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.DeleteDBUser.resources
@@ -101,3 +100,5 @@ D:\PROJECTS\VS\POT\POT\POT\obj\Debug\POT.exe.manifest
 D:\PROJECTS\VS\POT\POT\POT\obj\Debug\POT.application
 D:\PROJECTS\VS\POT\POT\POT\obj\Debug\POT.exe
 D:\PROJECTS\VS\POT\POT\POT\obj\Debug\POT.pdb
+F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.Documents.IIS.resources
+F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.AboutBox.resources

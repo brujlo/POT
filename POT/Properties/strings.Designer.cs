@@ -196,7 +196,7 @@ namespace POT.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Edit region.
+        ///   Looks up a localized string similar to Company/Region.
         /// </summary>
         internal static string EditRegion {
             get {

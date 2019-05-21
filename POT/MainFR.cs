@@ -5,6 +5,7 @@ using POT.WorkingClasses;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Deployment.Application;
 using System.Diagnostics;
 using System.Drawing;
 using System.Resources;
@@ -49,10 +50,10 @@ namespace POT
             {
                 this.linkLabel1.Enabled = true;
                 this.linkLabel2.Enabled = true;
-                this.linkLabel5.Enabled = true;
                 this.linkLabel7.Enabled = true;
                 this.linkLabel9.Enabled = true;
                 this.linkLabel11.Enabled = true;
+                this.linkLabel14.Enabled = true;
                 this.linkLabel15.Enabled = true;
                 this.linkLabel16.Enabled = true;
                 this.linkLabel20.Enabled = true;
@@ -61,10 +62,10 @@ namespace POT
             {
                 this.linkLabel1.Enabled = false;
                 this.linkLabel2.Enabled = false;
-                this.linkLabel5.Enabled = false;
-                this.linkLabel5.Enabled = false;
+                this.linkLabel7.Enabled = false;
                 this.linkLabel9.Enabled = false;
                 this.linkLabel11.Enabled = false;
+                this.linkLabel14.Enabled = false;
                 this.linkLabel15.Enabled = false;
                 this.linkLabel16.Enabled = false;
                 this.linkLabel20.Enabled = false;
@@ -73,14 +74,12 @@ namespace POT
             if (WorkingUser.AdminRights.ToString().Contains("2") || WorkingUser.AdminRights.ToString().Contains("1"))
             {
                 this.linkLabel9.Enabled = true;
-                this.linkLabel5.Enabled = true;
                 this.linkLabel16.Enabled = true;
                 this.linkLabel20.Enabled = true;
             }
             else
             {
                 this.linkLabel9.Enabled = false;
-                this.linkLabel5.Enabled = false;
                 this.linkLabel16.Enabled = false;
                 this.linkLabel20.Enabled = false;
             }
@@ -167,7 +166,7 @@ namespace POT
                     if(ctr is LinkLabel)
                         ((LinkLabel)ctr).Enabled = false;
                 }
-                linkLabel5.Enabled = true;
+                linkLabel16.Enabled = true;
                 linkLabel9.Enabled = true;
             }
             this.label4.Text = WorkingUser.Name;
@@ -179,7 +178,11 @@ namespace POT
             this.label26.Text = Properties.Settings.Default.MainCompanyCode;
             this.label28.Text = Properties.Settings.Default.CmpName;
 
-            version.Text = "Version: " + Application.ProductVersion;
+            //version.Text = "Version: " + Application.ProductVersion;
+            if (Debugger.IsAttached)
+                version.Text = "Debug Mode";
+            else
+                version.Text = "Version: " + ApplicationDeployment.CurrentDeployment.CurrentVersion.ToString();
 
             timer2.Start();
             Thread myThread = new Thread(getOpenedTasks);
@@ -317,7 +320,7 @@ namespace POT
                             if (ctr is LinkLabel)
                                 ((LinkLabel)ctr).Enabled = false;
                         }
-                        linkLabel5.Enabled = true;
+                        linkLabel16.Enabled = true;
                         linkLabel9.Enabled = true;
                     }
                     MainFR MF = new MainFR();
@@ -328,19 +331,6 @@ namespace POT
                 {
                     Show();
                 }
-            }
-            catch (Exception e1)
-            {
-                new LogWriter(e1);
-            }
-        }
-
-        private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            try
-            {
-                Form re = new AddRegion();
-                re.ShowDialog();
             }
             catch (Exception e1)
             {
@@ -435,7 +425,7 @@ namespace POT
         {
             try
             {
-                int pHgth = pictureBox4.Height; //90,90);
+                int pHgth = pictureBox4.Height; //(90,90);
                 do
                 {
                     pHgth = pHgth - 10;
@@ -475,7 +465,7 @@ namespace POT
                         if (ctr is LinkLabel)
                             ((LinkLabel)ctr).Enabled = false;
                     }
-                    linkLabel5.Enabled = true;
+                    linkLabel16.Enabled = true;
                     linkLabel9.Enabled = true;
                 }
             }
@@ -577,13 +567,13 @@ namespace POT
 
             this.linkLabel1.Text = Properties.strings.SetDBUser;
             this.linkLabel2.Text = Properties.strings.DeleteDBUser;
-            this.linkLabel5.Text = Properties.strings.EditRegion;
-            this.linkLabel7.Text = Properties.strings.CompanyInfo;
-            this.linkLabel9.Text = Properties.strings.SelectMainRegion;
             this.linkLabel6.Text = Properties.strings.ReceiptMain;
+            this.linkLabel7.Text = Properties.strings.CompanyInfo;
             this.linkLabel8.Text = Properties.strings.DeliveryMain;
-            this.linkLabel18.Text = Properties.strings.ReceiptMain;
+            this.linkLabel9.Text = Properties.strings.SelectMainRegion;
+            this.linkLabel16.Text = Properties.strings.EditRegion;
             this.linkLabel17.Text = Properties.strings.DeliveryMain;
+            this.linkLabel18.Text = Properties.strings.ReceiptMain;
 
         }
 
@@ -853,6 +843,18 @@ namespace POT
         {
             //TODO
             MessageBox.Show("Za uredivanje work liste za ISS");
+        }
+
+        private void linkLabel22_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            IIS iis = new IIS();
+            iis.Show();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            AboutBox ab = new AboutBox();
+            ab.ShowDialog();
         }
     }
 }

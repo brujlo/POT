@@ -253,9 +253,10 @@ namespace POT.MyTypes
             List<String> resultArr = new List<string>();
             List<Company> resultArrC = new List<Company>();
 
+            //AllCompanyInfoSortCode bilo prije
             try
             {
-                resultArr = qc.AllCompanyInfoSortCode(WorkingUser.Username, WorkingUser.Password);
+                resultArr = qc.AllCompanyInfoSortByName(WorkingUser.Username, WorkingUser.Password);
 
                 for (int i = 0; i < resultArr.Count(); i = i + 14)
                 {

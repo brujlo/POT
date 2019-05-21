@@ -1,4 +1,5 @@
-﻿using System.Reflection;
+﻿using System;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -6,11 +7,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("POT")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("This program is used for tracking and maintaining documentation and warehouses within the company. It works with service, entry / exit of goods, bills, bids, ticketing system and much more.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("POT")]
-[assembly: AssemblyCopyright("Copyright ©  2018")]
+[assembly: AssemblyCompany("Exception")]
+[assembly: AssemblyProduct("Popis Opreme Ticketing")]
+[assembly: AssemblyCopyright("Copyright © 2018, All rights reserved.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

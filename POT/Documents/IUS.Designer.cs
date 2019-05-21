@@ -67,12 +67,13 @@
             // printPrewBT
             // 
             this.printPrewBT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.printPrewBT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.printPrewBT.Location = new System.Drawing.Point(815, 581);
             this.printPrewBT.Margin = new System.Windows.Forms.Padding(4);
             this.printPrewBT.Name = "printPrewBT";
             this.printPrewBT.Size = new System.Drawing.Size(135, 50);
             this.printPrewBT.TabIndex = 74;
-            this.printPrewBT.Text = "Print preview";
+            this.printPrewBT.Text = "Print";
             this.printPrewBT.UseVisualStyleBackColor = true;
             this.printPrewBT.Click += new System.EventHandler(this.printPrewBT_Click);
             // 

@@ -123,7 +123,7 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(915, 570);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Open TID";
+            this.tabPage1.Text = "Create TID";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // label30

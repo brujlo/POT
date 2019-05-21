@@ -108,6 +108,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "PartsList";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PartList";
             this.Load += new System.EventHandler(this.PartsList_Load);
             this.ResumeLayout(false);

@@ -150,7 +150,7 @@
     <comment>PrintME-zaglavlje</comment>
   </data>
   <data name="EditRegion" xml:space="preserve">
-    <value>Edit region</value>
+    <value>Company/Region</value>
   </data>
   <data name="MadeBy" xml:space="preserve">
     <value>Made by</value>

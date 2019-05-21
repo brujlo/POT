@@ -25,7 +25,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ProductName>POT</ProductName>
     <PublisherName>Exception</PublisherName>
-    <ApplicationRevision>65</ApplicationRevision>
+    <ApplicationRevision>68</ApplicationRevision>
     <ApplicationVersion>1.3.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -80,11 +80,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BuildingClasses\AddRegion.cs">
+    <Compile Include="AboutBox.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BuildingClasses\AddRegion.Designer.cs">
-      <DependentUpon>AddRegion.cs</DependentUpon>
+    <Compile Include="AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
     </Compile>
     <Compile Include="BuildingClasses\CmpRegEditcs.cs">
       <SubType>Form</SubType>
@@ -116,6 +116,12 @@
     </Compile>
     <Compile Include="CopyPrintForms\cPRIM.Designer.cs">
       <DependentUpon>cPRIM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\IIS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Documents\IIS.Designer.cs">
+      <DependentUpon>IIS.cs</DependentUpon>
     </Compile>
     <Compile Include="Documents\ISS.cs">
       <SubType>Form</SubType>
@@ -239,8 +245,8 @@
     <Compile Include="WorkingClasses\Decoder.cs" />
     <Compile Include="WorkingClasses\PrintMe.cs" />
     <Compile Include="BuildingClasses\WorkingUser.cs" />
-    <EmbeddedResource Include="BuildingClasses\AddRegion.resx">
-      <DependentUpon>AddRegion.cs</DependentUpon>
+    <EmbeddedResource Include="AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BuildingClasses\CmpRegEditcs.resx">
       <DependentUpon>CmpRegEditcs.cs</DependentUpon>
@@ -260,6 +266,9 @@
     <EmbeddedResource Include="CopyPrintForms\cPRIM.resx">
       <DependentUpon>cPRIM.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Documents\IIS.resx">
+      <DependentUpon>IIS.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Documents\ISS.resx">
       <DependentUpon>ISS.cs</DependentUpon>
     </EmbeddedResource>
@@ -271,6 +280,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="WorkingClasses\MainCmpSelector.resx">
       <DependentUpon>MainCmpSelector.cs</DependentUpon>
@@ -303,6 +313,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StartForm.resx">
       <DependentUpon>StartForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="MainFR.resx">
       <DependentUpon>MainFR.cs</DependentUpon>
@@ -351,6 +362,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="EXE.ico" />
+    <None Include="Resources\Exeption_logoodrezan.jpg" />
+    <None Include="Resources\brush 2.png" />
+    <None Include="Resources\warehousG1.png" />
+    <None Include="Resources\warehousB.png" />
+    <None Include="Resources\warehousG.png" />
+    <None Include="Resources\warehous.png" />
     <None Include="Resources\LoadDataOn.gif" />
     <None Include="Resources\LoadDataOff.gif" />
     <None Include="Resources\MainConnectionOn1.gif" />

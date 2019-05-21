@@ -13,11 +13,11 @@ namespace POT
     public partial class IUS : Form
     {
         int rb = 1;
-        List<String> partsArr = new List<string>();
-        List<String> resultArr = new List<string>();
-        List<String> resultArrSearchCode = new List<string>();
-        List<String> openedTransactionSenderRegions = new List<string>();
-        static List<String> sifrarnikArr = new List<string>();
+        //List<String> partsArr = new List<String>();
+        List<String> resultArr = new List<String>();
+        List<String> resultArrSearchCode = new List<String>();
+        List<String> openedTransactionSenderRegions = new List<String>();
+        static List<String> sifrarnikArr = new List<String>();
         Boolean isIUSSaved = false;
         Company cmpS = new Company();
         Company cmpR = new Company();
@@ -39,7 +39,6 @@ namespace POT
             //this.printPrewBT.Enabled = false;
 
             Thread myThread = new Thread(fillComboBoxes);
-
             myThread.Start();
 
             listView1.View = View.Details;
@@ -177,10 +176,10 @@ namespace POT
                     listView1.EnsureVisible(listView1.Items.Count - 1);
 
                 listView1.Items.Add(lvi1);
-                partsArr.Add(textBox1.Text);
-                partsArr.Add(textBox2.Text);
-                partsArr.Add(textBox3.Text);
-                partsArr.Add("ng");
+                //partsArr.Add(textBox1.Text);
+                //partsArr.Add(textBox2.Text);
+                //partsArr.Add(textBox3.Text);
+                //partsArr.Add("ng");
 
                 if (data.Equals(""))
                     data = textBox1.Text + ", " + textBox2.Text + ", " + textBox3.Text + ", ng";

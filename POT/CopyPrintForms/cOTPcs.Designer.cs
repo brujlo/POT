@@ -108,7 +108,7 @@
             this.printPrewBT.Name = "printPrewBT";
             this.printPrewBT.Size = new System.Drawing.Size(135, 50);
             this.printPrewBT.TabIndex = 98;
-            this.printPrewBT.Text = "Print preview";
+            this.printPrewBT.Text = "Print";
             this.printPrewBT.UseVisualStyleBackColor = true;
             this.printPrewBT.Click += new System.EventHandler(this.printPrewBT_Click);
             // 

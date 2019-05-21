@@ -28,7 +28,7 @@ namespace POT.MyTypes
             try
             {
 
-                resultArr = qc.ListPartsByCodeRegionStateS(WorkingUser.Username, WorkingUser.Password, mCodePartFull, mStorageID, mState);
+                resultArr = qc.ListPartsByCodeRegionStateS(mCodePartFull, mStorageID, mState);
 
                 if (resultArr[0] != "nok")
                 {

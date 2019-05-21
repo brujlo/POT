@@ -458,16 +458,23 @@ namespace POT
             return prs;
         }
 
-        public List<String> ListPartsByCodeRegionStateS(String Uname, String Pass, long mCodePartFull, long mStorageID, String mState)
+        public List<String> ListPartsByCodeRegionStateS(long mCodePartFull, long mStorageID, String mState)
         {
             List<String> arr = new List<String>();
             //SqlConnection cnn = cn.Connect(Uname, Pass);
-            cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
 
-            if (mStorageID == 1 || mStorageID == 2)
-                query = "Select * from Parts where CodePartFull = " + mCodePartFull + " and State = '" + mState + "'";
+            if ( mCodePartFull == 0 && mStorageID == 0 && mState.Equals("") )
+            {
+                query = "Select * from Parts";
+            }
             else
-                query = "Select * from Parts where CodePartFull = " + mCodePartFull + " and StorageID = " + mStorageID + " and State = '" + mState + "'";
+            {
+                if (mStorageID == 1 || mStorageID == 2)
+                    query = "Select * from Parts where CodePartFull = " + mCodePartFull + " and State = '" + mState + "'";
+                else
+                    query = "Select * from Parts where CodePartFull = " + mCodePartFull + " and StorageID = " + mStorageID + " and State = '" + mState + "'";
+            }
 
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -1098,6 +1105,35 @@ namespace POT
             //SqlConnection cnn = cn.Connect(Uname, Pass);
             cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
             query = "Select * from Regija";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                do
+                {
+                    arr.Add(dataReader["RegionID"].ToString());
+                    arr.Add(dataReader["Region"].ToString());
+                    arr.Add(dataReader["FullRegion"].ToString());
+                } while (dataReader.Read());
+            }
+            else
+            {
+                arr.Add("nok");
+            }
+            dataReader.Close();
+            cnn.Close();
+            return arr;
+        }
+
+        public List<String> GetAllRegionsEditable()
+        {
+            List<String> arr = new List<string>();
+            
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "Select * from Regija where RegionID > 3";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
             SqlDataReader dataReader = command.ExecuteReader();
@@ -2261,7 +2297,7 @@ namespace POT
 
             IUSCntFull = long.Parse(DateTime.Now.ToString("yy")) * 1000000 + (WorkingUser.UserID * 1000) + IUSCnt;
 
-            Properties.Settings.Default.ShareDocumentName = (IUSCntFull + IUSCnt).ToString();
+            Properties.Settings.Default.ShareDocumentName = (IUSCntFull).ToString();
 
             dataReader.Close();
             command = cnn.CreateCommand();
@@ -2285,7 +2321,78 @@ namespace POT
                 }
 
                 transaction.Commit();
-                executed = string.Format("{0:00/000/000}", IUSCntFull + IUSCnt);
+                executed = string.Format("{0:00/000/000}", IUSCntFull);
+            }
+            catch (Exception)
+            {
+                //new LogWriter(e1);
+                try
+                {
+                    transaction.Rollback();
+                    executed = "nok";
+                    throw;
+                }
+                catch (Exception)
+                {
+                    //new LogWriter(e2);
+                    throw;
+                }
+            }
+            finally
+            {
+                if (cnn.State.ToString().Equals("Open"))
+                    cnn.Close();
+            }
+            dataReader.Close();
+            cnn.Close();
+            return executed;
+        }
+
+        public String IISPrebaciIzServisa(String Uname, String Pass, List<Part> ListOfParts, long RegionIDSender, long CustomerID, String mNapomenaIUS)
+        {
+            String executed = "nok";
+            long IISCnt = 0;
+            long IISCntFull = 0;
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(Uname, Pass);
+            query = "select distinct top 1 rb from IISparts where iisID LIKE '" + DateTime.Now.ToString("yy") + "%' ORDER BY rb desc";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (!dataReader.HasRows)
+                IISCnt = 1;
+            else
+                IISCnt = long.Parse(dataReader.GetValue(0).ToString()) + (IISCnt + 1);
+
+            IISCntFull = long.Parse(DateTime.Now.ToString("yy")) * 1000000 + (WorkingUser.UserID * 1000) + IISCnt;
+
+            Properties.Settings.Default.ShareDocumentName = (IISCntFull).ToString();
+
+            dataReader.Close();
+            command = cnn.CreateCommand();
+            SqlTransaction transaction = cnn.BeginTransaction();
+            command.Connection = cnn;
+            command.Transaction = transaction;
+
+            try
+            {
+
+
+                for (int i = 0; i < ListOfParts.Count; i++)
+                {
+                    command.CommandText = "UPDATE Parts SET State = 'g' WHERE PartID = " + ListOfParts[i].PartID;
+                    command.ExecuteNonQuery();
+
+                    command.CommandText = "INSERT INTO IISparts (iisID, partID, date, rb, customerID, napomena) VALUES (" + IISCntFull + ", " + ListOfParts[i].PartID
+                        + ", '" + DateTime.Now.ToString("dd.MM.yy.") + "', " + IISCnt + ", " + CustomerID + ", '" + mNapomenaIUS + "')";
+
+                    command.ExecuteNonQuery();
+                }
+
+                transaction.Commit();
+                executed = string.Format("{0:00/000/000}", IISCntFull);
             }
             catch (Exception)
             {
@@ -3725,7 +3832,7 @@ namespace POT
 
                     if (mAllDone)
                     {
-                        command.CommandText = "UPDATE Parts SET State = 'sgg' where PartID = " + mMainPart.PartID; 
+                        command.CommandText = "UPDATE Parts SET State = 'sg' where PartID = " + mMainPart.PartID; 
                         command.ExecuteNonQuery();
                     }
                 }

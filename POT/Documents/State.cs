@@ -258,10 +258,10 @@ namespace POT
 
             try
             {
-                if(((TextBox)sender).Name.Contains("txtBoxAddSNG"))
-                    resultArr = qc.ListPartsByCodeRegionStateS(WorkingUser.Username, WorkingUser.Password, long.Parse(label18.Text), long.Parse(regionIdcontrol.Text.Split('-')[1].Trim().ToString()), ((TextBox)sender).Name.Contains("txtBoxAddSNG") ? "sng" : "sg");
+                if(((TextBox)sender).Name.Contains("txtBoxAddSNG") || ((TextBox)sender).Name.Contains("txtBoxAddSG"))
+                    resultArr = qc.ListPartsByCodeRegionStateS(long.Parse(label18.Text), long.Parse(regionIdcontrol.Text.Split('-')[1].Trim().ToString()), ((TextBox)sender).Name.Contains("txtBoxAddSNG") ? "sng" : "sg");
                 else
-                    resultArr = qc.ListPartsByCodeRegionStateS(WorkingUser.Username, WorkingUser.Password, long.Parse(label18.Text), long.Parse(regionIdcontrol.Text.Split('-')[1].Trim().ToString()), ((TextBox)sender).Name.Contains("txtBoxAddNG") ? "ng" : "g");
+                    resultArr = qc.ListPartsByCodeRegionStateS(long.Parse(label18.Text), long.Parse(regionIdcontrol.Text.Split('-')[1].Trim().ToString()), ((TextBox)sender).Name.Contains("txtBoxAddNG") ? "ng" : "g");
             }
             catch (Exception e1)
             {
@@ -376,6 +376,47 @@ namespace POT
             textBox1.Focus();
             textBox1.Text = comboBox2.Text + comboBox3.Text + string.Format("{0:000000000}", int.Parse(resultArrSearchCode.ElementAt(comboBox1.SelectedIndex)));
             SendKeys.Send("{ENTER}");
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            int pHgth = pictureBox1.Height; //(90,90);
+            Point pPos = pictureBox1.Location; 
+
+            pictureBox1.Image = Properties.Resources.warehousG;
+            pictureBox1.Height = pHgth + 8;
+            pictureBox1.Width = pHgth + 8;
+            pictureBox1.Location = new Point(pPos.X - 4, pPos.Y - 4);
+            pictureBox1.Refresh();
+
+            System.Threading.Thread.Sleep(150);
+
+            pictureBox1.Image = Properties.Resources.warehousB;
+            pictureBox1.Location = new Point(pPos.X, pPos.Y);
+            pictureBox1.Height = pHgth;
+            pictureBox1.Width = pHgth;
+            pictureBox1.Refresh();
+
+            QueryCommands qc = new QueryCommands();
+            List<String> resultArr = new List<string>();
+            List<PartSifrarnik> partArr = new List<PartSifrarnik>();
+
+            ConnectionHelper cn = new ConnectionHelper();
+
+            try
+            {
+                resultArr = qc.ListPartsByCodeRegionStateS( 0, 0, "" );
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
+                MessageBox.Show(e1.Message);
+            }
+
+            PartsList pl = new PartsList(resultArr);
+            pl.Show();
+            textBox1.Focus();
+            pl.Focus();
         }
     }
 }

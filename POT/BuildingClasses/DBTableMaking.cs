@@ -86,7 +86,7 @@ namespace POT.BuildingClasses
                         command.CommandText = "CREATE TABLE " + _DBName + ".dbo.ErrorLog ([ErrorDescription][nvarchar](500) NULL,[Module] [nvarchar] (50) NULL,[FunctionName] [nvarchar] (50) NULL,[UserName] [nvarchar] (50) NULL,[Date] [nvarchar] (10) NULL,[Time] [nvarchar] (10) NULL) ON[PRIMARY]";
                         command.ExecuteNonQuery();
 
-                        command.CommandText = "CREATE TABLE " + _DBName + ".dbo.IISparts ([iisID][numeric](18, 0) NOT NULL,[partID] [numeric] (18, 0) NOT NULL,[date] [nvarchar] (11) NOT NULL,[rb] [numeric] (18, 0) NULL,[times] [nvarchar] (5) NULL,[iusID] [numeric] (18, 0) NULL,[customerID] [numeric] (18, 0) NULL) ON[PRIMARY]";
+                        command.CommandText = "CREATE TABLE " + _DBName + ".dbo.IISparts ([iisID][numeric](18, 0) NOT NULL,[partID] [numeric] (18, 0) NOT NULL,[date] [nvarchar] (11) NOT NULL,[rb] [numeric] (18, 0) NULL,[times] [nvarchar] (5) NULL,[iusID] [numeric] (18, 0) NULL,[customerID] [numeric] (18, 0) NULL,[napomena][nvarchar](200) NULL) ON[PRIMARY]";
                         command.ExecuteNonQuery();
 
                         command.CommandText = "CREATE TABLE " + _DBName + ".dbo.IUSparts ([iusID][numeric](18, 0) NOT NULL,[partID] [numeric] (18, 0) NOT NULL,[date] [nvarchar] (11) NOT NULL,[rb] [numeric] (18, 0) NULL,[customerID] [numeric] (18, 0) NULL, [napomena] [nvarchar](200) NULL) ON[PRIMARY]";
