@@ -255,7 +255,7 @@
             this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.AutoSize = true;
             this.label12.ForeColor = System.Drawing.Color.Gray;
-            this.label12.Location = new System.Drawing.Point(288, 260);
+            this.label12.Location = new System.Drawing.Point(258, 260);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(26, 20);
             this.label12.TabIndex = 139;
@@ -266,7 +266,7 @@
             this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label13.AutoSize = true;
             this.label13.ForeColor = System.Drawing.Color.Gray;
-            this.label13.Location = new System.Drawing.Point(288, 198);
+            this.label13.Location = new System.Drawing.Point(258, 198);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(79, 20);
             this.label13.TabIndex = 138;
@@ -297,7 +297,7 @@
             this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label16.AutoSize = true;
             this.label16.ForeColor = System.Drawing.Color.Gray;
-            this.label16.Location = new System.Drawing.Point(288, 136);
+            this.label16.Location = new System.Drawing.Point(258, 136);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(60, 20);
             this.label16.TabIndex = 135;
@@ -317,7 +317,7 @@
             // 
             this.IDTb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.IDTb.BackColor = System.Drawing.Color.PapayaWhip;
-            this.IDTb.Location = new System.Drawing.Point(292, 279);
+            this.IDTb.Location = new System.Drawing.Point(262, 279);
             this.IDTb.Name = "IDTb";
             this.IDTb.ReadOnly = true;
             this.IDTb.Size = new System.Drawing.Size(96, 26);
@@ -352,7 +352,7 @@
             // 
             this.DateSentTb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.DateSentTb.BackColor = System.Drawing.Color.PapayaWhip;
-            this.DateSentTb.Location = new System.Drawing.Point(292, 217);
+            this.DateSentTb.Location = new System.Drawing.Point(262, 217);
             this.DateSentTb.Name = "DateSentTb";
             this.DateSentTb.ReadOnly = true;
             this.DateSentTb.Size = new System.Drawing.Size(96, 26);
@@ -363,7 +363,7 @@
             // 
             this.DateInTb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.DateInTb.BackColor = System.Drawing.Color.PapayaWhip;
-            this.DateInTb.Location = new System.Drawing.Point(292, 155);
+            this.DateInTb.Location = new System.Drawing.Point(262, 155);
             this.DateInTb.Name = "DateInTb";
             this.DateInTb.ReadOnly = true;
             this.DateInTb.Size = new System.Drawing.Size(96, 26);
@@ -402,10 +402,10 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.OldLace;
-            this.button2.Location = new System.Drawing.Point(809, 114);
+            this.button2.BackColor = System.Drawing.Color.Wheat;
+            this.button2.Location = new System.Drawing.Point(838, 114);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(137, 44);
+            this.button2.Size = new System.Drawing.Size(101, 45);
             this.button2.TabIndex = 172;
             this.button2.Text = "Clear";
             this.button2.UseVisualStyleBackColor = false;
@@ -420,11 +420,11 @@
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.listView1.Location = new System.Drawing.Point(410, 114);
+            this.listView1.Location = new System.Drawing.Point(365, 114);
             this.listView1.Margin = new System.Windows.Forms.Padding(4);
             this.listView1.MultiSelect = false;
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(377, 191);
+            this.listView1.Size = new System.Drawing.Size(453, 191);
             this.listView1.TabIndex = 170;
             this.listView1.TabStop = false;
             this.listView1.UseCompatibleStateImageBehavior = false;

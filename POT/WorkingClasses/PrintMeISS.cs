@@ -19,6 +19,7 @@ namespace POT.WorkingClasses
         String recipientSender;
         Boolean signature = false;
         Part mainPart;
+        String totalTIme;
         String ISSid = "";
         String date = "";
         List<ISSparts> listIssParts = new List<ISSparts>();
@@ -47,7 +48,7 @@ namespace POT.WorkingClasses
 
         PrintMeISS() { }
         
-        public PrintMeISS(Company _cmpCust, Company _cmpM, List<String>  _sifrarnikArr, Part _mainPart, List<ISSparts> _listIssParts, String _ISSid, String _DocumentName, String _recipientSender, Boolean _Signature, String _date)
+        public PrintMeISS(Company _cmpCust, Company _cmpM, List<String>  _sifrarnikArr, Part _mainPart, List<ISSparts> _listIssParts, String _ISSid, String _DocumentName, String _recipientSender, Boolean _Signature, String _date, String _totalTIme)
         {
             cmpCust = _cmpCust;
             cmpM = _cmpM;
@@ -59,6 +60,7 @@ namespace POT.WorkingClasses
             recipientSender = _recipientSender.ToUpper();
             signature = _Signature;
             date = _date;
+            totalTIme = _totalTIme;
 
             CLogo logoImage = new CLogo();
             img = logoImage.GetImage();
@@ -227,6 +229,14 @@ namespace POT.WorkingClasses
                         e.Graphics.DrawString(workingStr, fntBold, Brushes.Black, new Point(margins.Left + (int)pamtiUdaljenost, headerpointVer));
                         measureStr = pamtiUdaljenost + e.Graphics.MeasureString(workingStr, fntBold).Width + 10;
                         workingStr = mainPart.StorageID.ToString();
+                        e.Graphics.DrawString(workingStr, fntRegular, Brushes.Black, new Point(margins.Left + (int)measureStr, headerpointVer));
+
+                        pamtiUdaljenost = measureStr + e.Graphics.MeasureString(workingStr, fntBold).Width + 10;
+
+                        workingStr = "Total time: ";
+                        e.Graphics.DrawString(workingStr, fntBold, Brushes.Black, new Point(margins.Left + (int)pamtiUdaljenost, headerpointVer));
+                        measureStr = pamtiUdaljenost + e.Graphics.MeasureString(workingStr, fntBold).Width + 10;
+                        workingStr = workingStr = totalTIme;
                         e.Graphics.DrawString(workingStr, fntRegular, Brushes.Black, new Point(margins.Left + (int)measureStr, headerpointVer));
 
                         headerpointVer = headerpointVer + moveBy;

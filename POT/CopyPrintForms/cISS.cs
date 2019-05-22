@@ -2,7 +2,6 @@
 using POT.WorkingClasses;
 using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
 using System.Media;
 using System.Threading;
@@ -35,6 +34,7 @@ namespace POT.CopyPrintForms
 
         Part newSendPart = new Part();
         Part mainPart = new Part();
+        String totalTime;
 
         Company cmpCust = new Company();
         Company cmpM = new Company();
@@ -43,6 +43,8 @@ namespace POT.CopyPrintForms
         Object obj;
         Boolean onlyOneTime = true;
         Boolean oneTimeISSSelectorCb = true;
+
+        int obrJed = Properties.Settings.Default.ObracunskaJedinica;
         //Boolean pictureOn = false;
 
         public cISS()
@@ -73,6 +75,7 @@ namespace POT.CopyPrintForms
             listView1.Columns.Add("CustomerID");
             listView1.Columns.Add("PartID");
             listView1.Columns.Add("Closed");
+            listView1.Columns.Add("TotalTime");
 
             listView2.View = View.Details;
 
@@ -229,6 +232,8 @@ namespace POT.CopyPrintForms
 
                     if (allISSInfo[0].Equals("nok"))
                         return;
+
+                    totalTime = allISSInfo[6] + ":00";
 
                     mainPart = qc.SearchPartsInAllTablesBYPartID(long.Parse(allISSInfo[4]))[0];
 
@@ -510,7 +515,7 @@ namespace POT.CopyPrintForms
                     return;
                 }
 
-                for (int i = 0; i < arr.Count; i = i + 6)
+                for (int i = 0; i < arr.Count; i = i + 7)
                 {
                     ListViewItem lvi1 = new ListViewItem(rb.ToString());
 
@@ -520,6 +525,7 @@ namespace POT.CopyPrintForms
                     lvi1.SubItems.Add(arr[i + 3]);
                     lvi1.SubItems.Add(arr[i + 4]);
                     lvi1.SubItems.Add(arr[i + 5]);
+                    lvi1.SubItems.Add(arr[i + 6]);
 
                     listView1.Items.Add(lvi1);
 
@@ -574,8 +580,13 @@ namespace POT.CopyPrintForms
             LogWriter lw = new LogWriter();
             ////////////////////////////////////////////////
             ///
-            
-            PrintMeISS pr = new PrintMeISS(cmpCust, cmpM, sifrarnikArr, mainPart, listIssParts, ISSid.ToString(), Properties.strings.ServiceReport, Properties.strings.customer, false, allISSInfo[1]);
+
+            int h = int.Parse(totalTime.Split(':')[0]);
+            int m = int.Parse(totalTime.Split(':')[1]);
+
+            totalTime = String.Format("{0:00}:{1:00}", h, m);
+
+            PrintMeISS pr = new PrintMeISS(cmpCust, cmpM, sifrarnikArr, mainPart, listIssParts, ISSid.ToString(), Properties.strings.ServiceReport, Properties.strings.customer, false, allISSInfo[1], totalTime);
             pr.Print(e);
 
             if (onlyOneTime)

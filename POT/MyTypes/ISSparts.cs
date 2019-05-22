@@ -77,7 +77,7 @@ namespace POT.MyTypes
             }
         }
 
-        public string Work
+        public String Work
         {
             get => work;
 
@@ -87,7 +87,7 @@ namespace POT.MyTypes
             }
         }
 
-        public string Comment
+        public String Comment
         {
             get => comment;
 
@@ -97,7 +97,7 @@ namespace POT.MyTypes
             }
         }
 
-        public string Time
+        public String Time
         {
             get => time;
 
@@ -140,7 +140,7 @@ namespace POT.MyTypes
 
         public long PCodeO { set => pCodeO = value; }
 
-        public string PSNO
+        public String PSNO
         {
             set
             {
@@ -151,7 +151,7 @@ namespace POT.MyTypes
             }
         }
 
-        public string PCNO
+        public String PCNO
         {
             set
             {
@@ -161,6 +161,31 @@ namespace POT.MyTypes
                     pCNO = value.Trim();
             }
         }
+
+        //public String TotalTime
+        //{
+        //    get => totalTime;
+
+        //    set
+        //    {
+        //        int h = 0;
+        //        int m = 0;
+        //        int s = 0;
+
+        //        try
+        //        {
+        //            h = int.Parse(value.Split(':')[0]);
+        //            m = int.Parse(value.Split(':')[1]);
+        //            s = int.Parse(value.Split(':')[2]);
+        //        }
+        //        catch{}
+
+        //        if (h == 0 && m == 0)
+        //            totalTime = "00:00";
+        //        else
+        //            totalTime = String.Format("{0:00}", h) + ":" + String.Format("{0:00}", m);
+        //    }
+        //}
 
         public long UserID
         {

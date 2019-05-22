@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Drawing.Printing;
 using System.Linq;
+using System.Threading;
 using System.Windows.Forms;
 using Decoder = POT.WorkingClasses.Decoder;
 
@@ -21,6 +22,7 @@ namespace POT.Documents
         int doNotRepeatMsg = 0;
 
         long ISSid = 0;
+        static long IISIDforThread = 0;
 
         DateTime startDate = DateTime.Now;
 
@@ -37,6 +39,10 @@ namespace POT.Documents
         Boolean dataLoaded = false;
         List<List<Part>> groupedGoodPartsCode = new List<List<Part>>();
         List<ISSparts> listIssParts = new List<ISSparts>();
+
+        static List<ISSparts> listIssBckpParts = new List<ISSparts>();
+        static Boolean isBckpFilled = false;
+
         List<long> ISSids = new List<long>();
         Part newSendPart = new Part();
         List<Part> newSendPartList = new List<Part>();
@@ -50,6 +56,8 @@ namespace POT.Documents
         Boolean onlyOneTime = true;
 
         ComboBox selectISS = null;
+        int obrJed = Properties.Settings.Default.ObracunskaJedinica;
+        String totalTime;
         //Boolean itemRemoved = false;
 
         //Boolean pictureOn = false;
@@ -272,20 +280,6 @@ namespace POT.Documents
             stopClicked = 0;
             timerStarted = false;
             STOPbt.Text = "STOP";
-        }
-
-        private void calculateTime(long pS)
-        {
-            if (pS % 60 == 0)
-            {
-                s = 0;
-                m++;
-                if(m % 60 == 0)
-                {
-                    m = 0;
-                    h++;
-                }
-            }
         }
 
         private void fillSifrarnik()
@@ -561,7 +555,6 @@ namespace POT.Documents
                 String CodeN = NewPartCodeTb.Text.Trim();
                 String SNN = NewPartSNCb.Text.Trim().ToUpper();
 
-                int obrJed = Properties.Settings.Default.ObracunskaJedinica;
                 String CNN = NewPartCNTb.Text.Trim().ToUpper();
 
                 DateConverter dt = new DateConverter();
@@ -602,12 +595,17 @@ namespace POT.Documents
                     }
                 }
 
-                m = m < obrJed ? m = obrJed : m = (int)(m / obrJed) * obrJed + obrJed;
-                if(m >= 60)
+                if (s >= 0)
+                {
+                    s = 0;
+                    m++;
+                }
+                if (m >= 60)
                 {
                     m = 0;
                     h++;
                 }
+
                 String time = string.Format("{0:00}", h) + ":" + string.Format("{0:00}", m);
 
                 String work = WorkDoneCb.Text.Trim();
@@ -672,6 +670,37 @@ namespace POT.Documents
             {
                 new LogWriter(e1);
                 MessageBox.Show(e1.Message);
+            }
+        }
+
+        private String calculateTime(List<ISSparts> listIssParts)
+        {
+            int hh = 0;
+            int mm = 0;
+
+            for(int i = 0; i < listIssParts.Count(); i++)
+            {
+                hh += int.Parse(listIssParts[i].Time.Split(':')[0]);
+                mm += int.Parse(listIssParts[i].Time.Split(':')[1]);
+            }
+
+            hh += mm / 60;
+            mm = mm % 60;
+
+            return String.Format("{0:00}:{1:00}:{2:00}", hh, mm, 0);
+        }
+
+        private void calculateTime(long pS)
+        {
+            if (pS % 60 == 0)
+            {
+                s = 0;
+                m++;
+                if (m % 60 == 0)
+                {
+                    m = 0;
+                    h++;
+                }
             }
         }
 
@@ -761,7 +790,24 @@ namespace POT.Documents
                     itemRemoved = false;
                 }*/
 
-                if ( qc.ISSUnesiISS(issExist, allDone, ISSid, _date, cmpCust, mainPart, listIssParts, WorkingUser.UserID) )
+                totalTime = calculateTime(listIssParts).Substring(0,5);
+
+                if (checkBox1.Checked)
+                {
+                    h = int.Parse(totalTime.Split(':')[0]);
+                    m = int.Parse(totalTime.Split(':')[1]);
+
+                    m = m < obrJed ? m = obrJed : m = (int)(m / obrJed) * obrJed + obrJed;
+                    if (m >= 60)
+                    {
+                        m = 0;
+                        h++;
+                    }
+
+                    totalTime = String.Format("{0:00}:{1:00}", h, m);
+                }
+
+                if ( qc.ISSUnesiISS(issExist, allDone, ISSid, _date, cmpCust, mainPart, listIssParts, WorkingUser.UserID, totalTime) )
                 {
                     Result = "ISS saved with ID " + ISSid;
                     lw.LogMe(function, usedQC, data, Result);
@@ -781,9 +827,12 @@ namespace POT.Documents
 
                     if (checkBox1.Checked)
                         CleanMe(null);
+
+                    isBckpFilled = false;
                 }
                 else
                 {
+                    isBckpFilled = true;
                     Result = "ISS not saved";
                     lw.LogMe(function, usedQC, data, Result);
                     MessageBox.Show(Result, "NOT SAVED", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -813,6 +862,7 @@ namespace POT.Documents
             {
                 new LogWriter(e1);
                 MessageBox.Show("Error" + Environment.NewLine + Environment.NewLine + e1.ToString(), "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                isBckpFilled = false;
             }
             //CleanMe();
         }
@@ -850,16 +900,25 @@ namespace POT.Documents
                 listView1.Columns.Add("Work done");
                 listView1.Columns.Add("Comment");
 
+                totalTime = "00:00";
+
                 long issID = long.Parse(ISSSelectorCb.SelectedItem.ToString());
+
+                IISIDforThread = issID;
+                Thread myThread = new Thread(bckpISSPartsFill);
+                myThread.Start();
+
                 Part mainPr = new Part();
                 List<String> allISSInfo = new List<String>();
 
                 ISSid = issID;
 
                 allISSInfo = qc.GetAllISSInfoById(issID);
-            
+
                 if (allISSInfo[0].Equals("nok"))
                     return;
+
+                totalTime = allISSInfo[6] + ":00";
 
                 mainPart = qc.SearchPartsInAllTablesBYPartID(long.Parse(allISSInfo[4]))[0];
 
@@ -958,11 +1017,27 @@ namespace POT.Documents
             }
         }
 
+        static void bckpISSPartsFill()
+        {
+            QueryCommands qc = new QueryCommands();
+
+            try
+            {
+                listIssBckpParts = qc.GetAllISSPartsByISSid(IISIDforThread);
+                isBckpFilled = true;
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
+                isBckpFilled = false;
+            }
+        }
+
         private void button2_Click(object sender, EventArgs e)
         {
             CleanMe(sender);
         }
-        //TODO popraviti
+        //TODO eventualno popraviti
         private void button3_Click(object sender, EventArgs e)
         {
             if (!timerEnabled)
@@ -1059,7 +1134,7 @@ namespace POT.Documents
             ////////////////////////////////////////////////
             ///
 
-            PrintMeISS pr = new PrintMeISS(cmpCust, cmpM, sifrarnikArr, mainPart, listIssParts, ISSid.ToString(), Properties.strings.ServiceReport, Properties.strings.customer, false, "");
+            PrintMeISS pr = new PrintMeISS(cmpCust, cmpM, sifrarnikArr, mainPart, listIssParts, ISSid.ToString(), Properties.strings.ServiceReport, Properties.strings.customer, false, "", totalTime);
             pr.Print(e);
 
             if (onlyOneTime)
@@ -1075,6 +1150,7 @@ namespace POT.Documents
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            
             ///////////////// LogMe ////////////////////////
             String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
             String usedQC = "Remove selected";
@@ -1092,6 +1168,18 @@ namespace POT.Documents
             foreach (ListViewItem item in listView1.SelectedItems)
             {
                 mRB = int.Parse(item.SubItems[0].Text) - 1;
+
+                if ( isBckpFilled && mRB <= listIssBckpParts.Count - 1 )
+                {
+                    MessageBox.Show("I cant delete the item that have already been recorded!" + Environment.NewLine + "Please contact you administrator.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                    return;
+                }
+                else if ( !isBckpFilled )
+                {
+                    MessageBox.Show("Sorry I can check if part can be removed." + Environment.NewLine + "I did not load parts correctly." + Environment.NewLine + "Please try again later or try to reload ISS, if the problem is persistent, contact you administrator.", "Parts error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    return;
+                }
+                
                 newSendPartList.RemoveAt(mRB);
                 uvecajGroupPart--;
                 listView1.Items.Remove(item);

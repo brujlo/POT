@@ -3813,7 +3813,7 @@ namespace POT
             return arr;
         }
 
-        public Boolean ISSUnesiISS(Boolean mISSExist, Boolean mAllDone, long mISSid, String mDate, Company mCmpCustomer, Part mMainPart, List<ISSparts> listIssParts, long mUserID)
+        public Boolean ISSUnesiISS(Boolean mISSExist, Boolean mAllDone, long mISSid, String mDate, Company mCmpCustomer, Part mMainPart, List<ISSparts> listIssParts, long mUserID, String mTotalTIme)
         {
             Boolean isExecuted = false;
             int AllDone = mAllDone ? 1 : 0;
@@ -3825,9 +3825,14 @@ namespace POT
             
             try
             {
-                if (!mISSExist)
+                if (mISSExist)
                 {
-                    command.CommandText = "INSERT INTO ISS (ID, Date, UserID, CustomerID, PartID, Closed) VALUES (" + mISSid + ", '" + mDate + "', " + WorkingUser.UserID + ", " + mCmpCustomer.ID + ", " + mMainPart.PartID + ", " + AllDone + ")";
+                    command.CommandText = "UPDATE ISS SET TotalTime = '" + mTotalTIme + "' where ID = " + mISSid;
+                    command.ExecuteNonQuery();
+                }
+                else
+                {
+                    command.CommandText = "INSERT INTO ISS (ID, Date, UserID, CustomerID, PartID, Closed, TotalTime) VALUES (" + mISSid + ", '" + mDate + "', " + WorkingUser.UserID + ", " + mCmpCustomer.ID + ", " + mMainPart.PartID + ", " + AllDone + ", '" + mTotalTIme + "')";
                     command.ExecuteNonQuery();
 
                     if (mAllDone)
@@ -4009,6 +4014,7 @@ namespace POT
                 arr.Add(dataReader["CustomerID"].ToString());
                 arr.Add(dataReader["PartID"].ToString());
                 arr.Add(dataReader["Closed"].ToString());
+                arr.Add(dataReader["TotalTime"].ToString());
             }
             else
             {
@@ -4124,9 +4130,9 @@ namespace POT
             //SqlConnection cnn = cn.Connect(Uname, Pass);
             cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
             if (what.Equals("Date"))
-                query = "Select * from ISS where " + what + " = '" + value + "' order by ID";
+                query = "Select * from ISS where " + what + " = '" + value + "' and Closed = 1 order by ID";
             else
-                query = "Select * from ISS where " + what + " = " + value + " order by ID";
+                query = "Select * from ISS where " + what + " = " + value + " and Closed = 1 order by ID";
 
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -4143,6 +4149,7 @@ namespace POT
                     arr.Add(dataReader["CustomerID"].ToString());
                     arr.Add(dataReader["PartID"].ToString());
                     arr.Add(dataReader["Closed"].ToString());
+                    arr.Add(dataReader["TotalTime"].ToString());
                 } while (dataReader.Read());
             }
             else
