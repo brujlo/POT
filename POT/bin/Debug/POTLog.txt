@@ -2906,3 +2906,80 @@ Parameter name: index
      - Result: Print page called
     *** BrunoBrckovic *** 
 
+
+- 22.05.19. 23:06
+    - LOGED change: POT.SetDBConnection - button2_Click
+     - Used: DB connection address and name save.
+     - Data: 192.168.100.101, exe
+     - Result: Saved, no msgToUser
+    ***  *** 
+
+
+- 22.05.19. 23:06 - App started
+    *** BrunoBrckovic *** 
+
+- 22.05.19. 23:06
+    - LOGED change: POT.CompanyInfo - button2_Click
+     - Used: Saving MainCmp info
+     - Data: Exception, Dunavska 31, Zagreb, 10040, HR, 0.00, 0.00, PBZGHR2X, PBZGHR2X, 97768138, HR9323400091160480462, 4, 1, www.exception.hr, +385914456454, Bruno Brckovic, info@exception.hr, support@exception.hr, 2
+     - Result: Saved.
+    *** BrunoBrckovic *** 
+
+
+- 22.05.19. 23:06
+    - LOGED change: POT.MainCmpSelector - button1_Click
+     - Used: Main cmp select
+     - Data: 
+     - Result: Main cmp selected, please relog to see changes.
+    *** BrunoBrckovic *** 
+
+
+- 22.05.19. 23:06 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 22.05.19. 23:06 - App started
+    *** BrunoBrckovic *** 
+
+- 22.05.19. 23:06
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 914, 707013002000, listIssParts cnt 5, 190021, SERVICE REPORT, customer, false
+     - Result: ISS selected 190021
+    *** BrunoBrckovic *** 
+
+
+- 22.05.19. 23:06
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 914, 707013002000, listIssParts cnt 4, 190009, SERVICE REPORT, customer, false
+     - Result: ISS selected 190009
+    *** BrunoBrckovic *** 
+
+
+- 22.05.19. 23:07
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 914, 707013002000, listIssParts cnt 4, 190005, SERVICE REPORT, customer, false
+     - Result: ISS selected 190005
+    *** BrunoBrckovic *** 
+
+
+- 22.05.19. 23:07
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 914, 707013002000, listIssParts cnt 5, 190019, SERVICE REPORT, customer, false
+     - Result: ISS selected 190019
+    *** BrunoBrckovic *** 
+
+
+- 22.05.19. 23:07
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 914, 707013002000, listIssParts cnt 4, 190012, SERVICE REPORT, customer, false
+     - Result: ISS selected 190012
+    *** BrunoBrckovic *** 
+
+
+- 22.05.19. 23:07 - App turned off
+    *** BrunoBrckovic *** 

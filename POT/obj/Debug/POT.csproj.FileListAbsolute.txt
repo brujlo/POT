@@ -68,7 +68,6 @@ D:\PROJECTS\VS\POT\POT\POT\bin\Debug\POT.exe
 D:\PROJECTS\VS\POT\POT\POT\bin\Debug\POT.pdb
 D:\PROJECTS\VS\POT\POT\POT\bin\Debug\hr\POT.resources.dll
 D:\PROJECTS\VS\POT\POT\POT\obj\Debug\POT.csprojAssemblyReference.cache
-D:\PROJECTS\VS\POT\POT\POT\obj\Debug\POT.AddRegion.resources
 D:\PROJECTS\VS\POT\POT\POT\obj\Debug\POT.BuildingClasses.CmpRegEditcs.resources
 D:\PROJECTS\VS\POT\POT\POT\obj\Debug\POT.CompanyInfo.resources
 D:\PROJECTS\VS\POT\POT\POT\obj\Debug\POT.DeleteDBUser.resources
@@ -102,3 +101,5 @@ D:\PROJECTS\VS\POT\POT\POT\obj\Debug\POT.exe
 D:\PROJECTS\VS\POT\POT\POT\obj\Debug\POT.pdb
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.Documents.IIS.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.AboutBox.resources
+D:\PROJECTS\VS\POT\POT\POT\obj\Debug\POT.AboutBox.resources
+D:\PROJECTS\VS\POT\POT\POT\obj\Debug\POT.Documents.IIS.resources

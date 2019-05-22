@@ -794,17 +794,20 @@ namespace POT.Documents
 
                 if (checkBox1.Checked)
                 {
-                    h = int.Parse(totalTime.Split(':')[0]);
-                    m = int.Parse(totalTime.Split(':')[1]);
+                    long th = 0;
+                    long tm = 0;
 
-                    m = m < obrJed ? m = obrJed : m = (int)(m / obrJed) * obrJed + obrJed;
-                    if (m >= 60)
+                    th = int.Parse(totalTime.Split(':')[0]);
+                    tm = int.Parse(totalTime.Split(':')[1]);
+
+                    tm = tm < obrJed ? tm = obrJed : tm = (int)(tm / obrJed) * obrJed + obrJed;
+                    if (tm >= 60)
                     {
-                        m = 0;
-                        h++;
+                        tm = 0;
+                        th++;
                     }
 
-                    totalTime = String.Format("{0:00}:{1:00}", h, m);
+                    totalTime = String.Format("{0:00}:{1:00}", th, tm);
                 }
 
                 if ( qc.ISSUnesiISS(issExist, allDone, ISSid, _date, cmpCust, mainPart, listIssParts, WorkingUser.UserID, totalTime) )
@@ -1052,7 +1055,10 @@ namespace POT.Documents
                     {
                         var list = TIMERtb.Text.Split(':');
                         if (list.Count() < 2)
+                        {
                             list = TIMERtb.Text.Split(',');
+                            list = TIMERtb.Text.Split('.');
+                        }
                         h = 0;
                         m = 0;
                         s = 0;
