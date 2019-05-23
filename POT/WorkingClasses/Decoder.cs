@@ -196,7 +196,11 @@ namespace POT.WorkingClasses
         {
             String name = "";
             String sCode = mCode.ToString();
-            long code = long.Parse(sCode.Substring(sCode.Length - 9));
+            long code = 0;
+            if (mCode.ToString().Length > 9)
+                code = long.Parse(sCode.Substring(sCode.Length - 9));
+            else
+                code = long.Parse(sCode);
 
             for (int i = 0; i < mSifrarnik.Count; i = i + 2)
             {

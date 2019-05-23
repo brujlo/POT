@@ -3835,11 +3835,12 @@ namespace POT
                     command.CommandText = "INSERT INTO ISS (ID, Date, UserID, CustomerID, PartID, Closed, TotalTime) VALUES (" + mISSid + ", '" + mDate + "', " + WorkingUser.UserID + ", " + mCmpCustomer.ID + ", " + mMainPart.PartID + ", " + AllDone + ", '" + mTotalTIme + "')";
                     command.ExecuteNonQuery();
 
-                    if (mAllDone)
-                    {
-                        command.CommandText = "UPDATE Parts SET State = 'sg' where PartID = " + mMainPart.PartID; 
-                        command.ExecuteNonQuery();
-                    }
+                }
+
+                if (mAllDone)
+                {
+                    command.CommandText = "UPDATE Parts SET State = 'sg' where PartID = " + mMainPart.PartID; 
+                    command.ExecuteNonQuery();
                 }
 
                 if (mISSExist && mAllDone)

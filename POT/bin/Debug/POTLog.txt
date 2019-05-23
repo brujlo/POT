@@ -2983,3 +2983,444 @@ Parameter name: index
 
 - 22.05.19. 23:07 - App turned off
     *** BrunoBrckovic *** 
+
+- 22.05.19. 23:33 - App started
+    *** BrunoBrckovic *** 
+
+- 22.05.19. 23:33
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 914, 707013002000, listIssParts cnt 4, 190007, SERVICE REPORT, customer, false
+     - Result: ISS selected 190007
+    *** BrunoBrckovic *** 
+
+
+- 22.05.19. 23:45 - App turned off
+    *** BrunoBrckovic *** 
+
+- 22.05.19. 23:50 - App started
+    *** BrunoBrckovic *** 
+
+- 22.05.19. 23:51
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 914, 707013002000, listIssParts cnt 4, 190001, SERVICE REPORT, customer, false
+     - Result: ISS selected 190001
+    *** BrunoBrckovic *** 
+
+
+- 22.05.19. 23:51
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 914, 707013002000, listIssParts cnt 4, 190002, SERVICE REPORT, customer, false
+     - Result: ISS selected 190002
+    *** BrunoBrckovic *** 
+
+
+- 22.05.19. 23:51
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 914, 707013002000, listIssParts cnt 4, 190003, SERVICE REPORT, customer, false
+     - Result: ISS selected 190003
+    *** BrunoBrckovic *** 
+
+
+- 22.05.19. 23:52
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 914, 707013002000, listIssParts cnt 4, 190004, SERVICE REPORT, customer, false
+     - Result: ISS selected 190004
+    *** BrunoBrckovic *** 
+
+
+- 22.05.19. 23:52
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 914, 707013002000, listIssParts cnt 4, 190005, SERVICE REPORT, customer, false
+     - Result: ISS selected 190005
+    *** BrunoBrckovic *** 
+
+
+- 22.05.19. 23:52
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 914, 707013002000, listIssParts cnt 4, 190006, SERVICE REPORT, customer, false
+     - Result: ISS selected 190006
+    *** BrunoBrckovic *** 
+
+
+- 22.05.19. 23:52
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 914, 707013002000, listIssParts cnt 4, 190007, SERVICE REPORT, customer, false
+     - Result: ISS selected 190007
+    *** BrunoBrckovic *** 
+
+
+- 22.05.19. 23:52
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 914, 707013002000, listIssParts cnt 4, 190008, SERVICE REPORT, customer, false
+     - Result: ISS selected 190008
+    *** BrunoBrckovic *** 
+
+
+- 22.05.19. 23:52
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 914, 707013002000, listIssParts cnt 4, 190010, SERVICE REPORT, customer, false
+     - Result: ISS selected 190010
+    *** BrunoBrckovic *** 
+
+
+- 22.05.19. 23:52
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 914, 707013002000, listIssParts cnt 4, 190011, SERVICE REPORT, customer, false
+     - Result: ISS selected 190011
+    *** BrunoBrckovic *** 
+
+
+- 22.05.19. 23:52
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 914, 707013002000, listIssParts cnt 4, 190012, SERVICE REPORT, customer, false
+     - Result: ISS selected 190012
+    *** BrunoBrckovic *** 
+
+
+- 22.05.19. 23:52
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 914, 707013002000, listIssParts cnt 4, 190013, SERVICE REPORT, customer, false
+     - Result: ISS selected 190013
+    *** BrunoBrckovic *** 
+
+
+- 22.05.19. 23:52
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 914, 707013002000, listIssParts cnt 5, 190019, SERVICE REPORT, customer, false
+     - Result: ISS selected 190019
+    *** BrunoBrckovic *** 
+
+
+- 23.05.19. 00:02
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: PRINTER Citizen CTS4000, , , , , , , 23.05.19., 00:06, Cleaned, 
+     - Result: - 23.05.19. 00:02 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 23.05.19. 00:06
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 21.05.19.h / 00:15 / Diagnosis of failure
+2. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 21.05.19.h / 00:45 / Basic service
+3. / PRINTER Citizen CTS4000  / 707013002030 /  /  / 101013002030 /  /  / 21.05.19.h / 00:15 / Changed
+4. / PRINTER Citizen CTS4000  / 707013002003 /  /  / 101013002003 /  /  / 21.05.19.h / 00:15 / Changed
+5. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 21.05.19.h / 00:05 / Test
+6. / PRINTER Citizen CTS4000 /  /  /  /  /  /  / 23.05.19.h / 00:06 / Cleaned
+
+     - Result: ISS saved with ID 190019
+    *** BrunoBrckovic *** 
+
+
+- 23.05.19. 00:09
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 914, 707013002000, listIssParts cnt 5, 190022, SERVICE REPORT, customer, false
+     - Result: ISS selected 190022
+    *** BrunoBrckovic *** 
+
+
+- 23.05.19. 00:09
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 914, 707013002000, listIssParts cnt 5, 190021, SERVICE REPORT, customer, false
+     - Result: ISS selected 190021
+    *** BrunoBrckovic *** 
+
+
+- 23.05.19. 00:09
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 914, 707013002000, listIssParts cnt 4, 190013, SERVICE REPORT, customer, false
+     - Result: ISS selected 190013
+    *** BrunoBrckovic *** 
+
+
+- 23.05.19. 00:09
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 914, 707013002000, listIssParts cnt 4, 190012, SERVICE REPORT, customer, false
+     - Result: ISS selected 190012
+    *** BrunoBrckovic *** 
+
+
+- 23.05.19. 00:10
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 914, 707013002000, listIssParts cnt 4, 190011, SERVICE REPORT, customer, false
+     - Result: ISS selected 190011
+    *** BrunoBrckovic *** 
+
+
+- 23.05.19. 00:10
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 914, 707013002000, listIssParts cnt 4, 190010, SERVICE REPORT, customer, false
+     - Result: ISS selected 190010
+    *** BrunoBrckovic *** 
+
+
+- 23.05.19. 00:10
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 914, 707013002000, listIssParts cnt 4, 190008, SERVICE REPORT, customer, false
+     - Result: ISS selected 190008
+    *** BrunoBrckovic *** 
+
+
+- 23.05.19. 00:15
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: , , , , , , , 23.05.19., 00:06, Cleaned, 
+     - Result: - 23.05.19. 00:15 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 23.05.19. 00:16
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 16.05.19.h / 00:15 / Diagnosis of failure
+2. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 16.05.19.h / 00:45 / Basic service
+3. / PRINTER Citizen CTS4000  / 707013002003 /  /  / 101013002003 /  /  / 16.05.19.h / 00:15 / Changed
+4. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 16.05.19.h / 00:15 / Test
+5. /  /  /  /  /  /  /  / 23.05.19.h / 00:06 / Cleaned
+
+     - Result: ISS saved with ID 190008
+    *** BrunoBrckovic *** 
+
+
+- 23.05.19. 00:17
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 914, 707013002000, listIssParts cnt 5, 190022, SERVICE REPORT, customer, false
+     - Result: ISS selected 190022
+    *** BrunoBrckovic *** 
+
+
+- 23.05.19. 00:17
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 914, 707013002000, listIssParts cnt 5, 190021, SERVICE REPORT, customer, false
+     - Result: ISS selected 190021
+    *** BrunoBrckovic *** 
+
+
+- 23.05.19. 00:17
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 914, 707013002000, listIssParts cnt 4, 190013, SERVICE REPORT, customer, false
+     - Result: ISS selected 190013
+    *** BrunoBrckovic *** 
+
+
+- 23.05.19. 00:24
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: , , , , , , , 23.05.19., 00:06, Cleaned, 
+     - Result: - 23.05.19. 00:24 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 23.05.19. 00:26
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 16.05.19.h / 00:15 / Diagnosis of failure
+2. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 16.05.19.h / 00:45 / Basic service
+3. / PRINTER Citizen CTS4000  / 707013002003 /  /  / 101013002003 /  /  / 16.05.19.h / 00:15 / Changed
+4. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 16.05.19.h / 00:15 / Test
+5. /  /  /  /  /  /  /  / 23.05.19.h / 00:06 / Cleaned
+
+     - Result: ISS saved with ID 190013
+    *** BrunoBrckovic *** 
+
+
+- 23.05.19. 00:33
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: 190001
+
+     - Result: StartIndex cannot be less than zero.
+Parameter name: startIndex
+    *** BrunoBrckovic *** 
+
+
+- 23.05.19. 00:35
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: 190001
+
+     - Result: StartIndex cannot be less than zero.
+Parameter name: startIndex
+    *** BrunoBrckovic *** 
+
+
+- 23.05.19. 00:35
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: 190001
+
+     - Result: StartIndex cannot be less than zero.
+Parameter name: startIndex
+    *** BrunoBrckovic *** 
+
+
+- 23.05.19. 00:36
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 914, 707013002000, listIssParts cnt 4, 190001, SERVICE REPORT, customer, false
+     - Result: ISS selected 190001
+    *** BrunoBrckovic *** 
+
+
+- 23.05.19. 00:36
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 914, 707013002000, listIssParts cnt 4, 190001, SERVICE REPORT, customer, false
+     - Result: ISS selected 190001
+    *** BrunoBrckovic *** 
+
+
+- 23.05.19. 00:39
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 914, 707013002000, listIssParts cnt 4, 190001, SERVICE REPORT, customer, false
+     - Result: ISS selected 190001
+    *** BrunoBrckovic *** 
+
+
+- 23.05.19. 00:45
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: PRINTER Citizen CTS4000, , , , , , , 23.05.19., 00:06, Cleaned, 
+     - Result: - 23.05.19. 00:45 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 23.05.19. 00:45
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 15.05.19.h / 00:15 / Diagnosis of failure
+2. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 15.05.19.h / 01:15 / Basic service
+3. / PRINTER Citizen CTS4000  / 707013002003 /  /  / 101013002003 /  /  / 15.05.19.h / 00:15 / Changed
+4. / PRINTER Citizen CTS4000  /  /  /  /  /  /  / 15.05.19.h / 00:30 / Testing
+5. / PRINTER Citizen CTS4000 /  /  /  /  /  /  / 23.05.19.h / 00:06 / Cleaned
+
+     - Result: ISS saved with ID 190001
+    *** BrunoBrckovic *** 
+
+
+- 23.05.19. 00:45 - App turned off
+    *** BrunoBrckovic *** 
+
+- 23.05.19. 02:03 - App started
+    *** BrunoBrckovic *** 
+
+- 23.05.19. 02:03
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: DATE
+     - Data: 14.05.19.
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 23.05.19. 02:03
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: DATE
+     - Data: 16.04.19.
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 23.05.19. 02:03
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 707013002000, 12X0107, 1013756
+             707013002000, 1690262, 1013865
+             707013002000, 12X0200, 1013828
+             707013002000, 1280148, 1013698
+             707013002000, 12X0087, 1013767
+             707013002000, 12X0042, 1013702
+             707013002000, 12X0205, 1013639
+             707013002000, 12X0103, 1013772
+             707013002000, 12X0169, 1013650
+             707013002000, 12X0212, 1013656
+             707013002000, 1270249, 1013774
+             707013002000, 12X0062, 1013855
+             707013002000, 12X0211, 1013657
+             707013002000, 12X0180, 1013813
+             707013002000, 12X0213, 1013611
+             707013002000, 12X0057, 1013794
+             707013002000, 1690255, 1021929
+             707013002000, 1690212, 1022487
+             707013002000, 1270248, 1013846
+             707013002000, 1690283, 1021255
+             707013002000, 12X0143, 1021263
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 23.05.19. 02:03
+    - LOGED change: POT.CopyPrintForms.cPRIM - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19005, , DELIVERY, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 23.05.19. 02:03
+    - LOGED change: POT.CopyPrintForms.cPRIM - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19005, , DELIVERY, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 23.05.19. 02:04
+    - LOGED change: POT.CopyPrintForms.cPRIM - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19005, , DELIVERY, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 23.05.19. 02:04
+    - LOGED change: POT.CopyPrintForms.cPRIM - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19005, , DELIVERY, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 23.05.19. 02:07
+    - LOGED change: POT.CopyPrintForms.cPRIM - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19005, , DELIVERY, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 23.05.19. 02:07
+    - LOGED change: POT.CopyPrintForms.cPRIM - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19005, , DELIVERY, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 23.05.19. 02:07 - App turned off
+    *** BrunoBrckovic *** 

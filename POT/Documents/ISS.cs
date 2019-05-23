@@ -165,7 +165,7 @@ namespace POT.Documents
         {
             s++;
             if (s > 59)
-                calculateTime(s);
+                calculateTimeLong(s);
             this.TIMERtb.Text = String.Format("{0:00}", h) + ":" + String.Format("{0:00}", m) + ":" + String.Format("{0:00}", s);
         }
 
@@ -690,7 +690,7 @@ namespace POT.Documents
             return String.Format("{0:00}:{1:00}:{2:00}", hh, mm, 0);
         }
 
-        private void calculateTime(long pS)
+        private void calculateTimeLong(long pS)
         {
             if (pS % 60 == 0)
             {
@@ -719,16 +719,27 @@ namespace POT.Documents
             LogWriter lw = new LogWriter();
             ////////////////////////////////////////////////
             ///
-            
+
+            Boolean allDone = checkBox1.Checked;
+
             if (!checkBox1.Checked)
             {
                 DialogResult result = MessageBox.Show("Close ISS?", "ISS", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
 
                 if (result == DialogResult.Yes)
+                {
                     checkBox1.Checked = true;
+                    allDone = true;
+                }
                 else
+                {
                     checkBox1.Checked = false;
+                    allDone = false;
+                }
             }
+
+            this.Refresh();
+
             //TODO
             //PRINTbt.Enabled = checkBox1.Checked;
             //SelectPrinterbt.Enabled = checkBox1.Checked;
@@ -736,7 +747,6 @@ namespace POT.Documents
             DateConverter dt = new DateConverter();
             String _date = dt.ConvertDDMMYY(DateTime.Now.ToString());
             Boolean issExist = false;
-            Boolean allDone = checkBox1.Checked;
 
             listIssParts.Clear();
 
@@ -932,6 +942,7 @@ namespace POT.Documents
                 DateInTb.Text = mainPart.DateIn;
                 DateSentTb.Text = mainPart.DateSend;
                 IDTb.Text = mainPart.PartID.ToString();
+                NameTb.Text = Decoder.ConnectCodeName(sifrarnikArr, mainPart.CodePartFull);
 
                 selectISS = null;
 
