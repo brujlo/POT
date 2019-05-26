@@ -441,7 +441,8 @@ namespace POT.Documents
 
         private void PartCb_SelectedIndexChanged(object sender, EventArgs e)
         {
-            NameTb.Text = Decoder.ConnectCodeName(sifrarnikArr, partList[PartCb.SelectedIndex]);
+            if (PartCb.SelectedIndex >= 0)
+                NameTb.Text = Decoder.ConnectCodeName(sifrarnikArr, partList[PartCb.SelectedIndex]);
 
             if (selectISS != null && selectISS.Name.Equals("ISSSelectorCb"))
             {
@@ -820,12 +821,20 @@ namespace POT.Documents
                     totalTime = String.Format("{0:00}:{1:00}", th, tm);
                 }
 
+                long IISidPL = ISSid;
+
                 if ( qc.ISSUnesiISS(issExist, allDone, ISSid, _date, cmpCust, mainPart, listIssParts, WorkingUser.UserID, totalTime) )
                 {
+
+                    if (allDone)
+                    {
+                        PartCb.Items.RemoveAt(PartCb.SelectedIndex);
+                        partList.Remove(mainPart);
+                    }
+
                     Result = "ISS saved with ID " + ISSid;
                     lw.LogMe(function, usedQC, data, Result);
                     MessageBox.Show(Result, "SAVED", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
                     //ISSSelectorCb.Items.Clear();
                     //ISSSelectorCb.ResetText();
 
@@ -860,7 +869,7 @@ namespace POT.Documents
                 plParts.Add(listIssParts[0].PrtN);
                 plParts.Add(listIssParts[0].PrtO);
 
-                if (!pl.SaveToPovijestLog(plParts, DateTime.Now.ToString("dd.MM.yy."), WorkDoneCb.Text, cmpCust.Name, "", "", ISSid.ToString(), "gng"))
+                if (!pl.SaveToPovijestLog(plParts, DateTime.Now.ToString("dd.MM.yy."), WorkDoneCb.Text, cmpCust.Name, "", "", "ISS " + IISidPL.ToString(), "gng"))
                 {
                     Result = "Povijest log is not saved.";
                     lw.LogMe(function, usedQC, data, Result);

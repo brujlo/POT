@@ -3424,3 +3424,3528 @@ Parameter name: startIndex
 
 - 23.05.19. 02:07 - App turned off
     *** BrunoBrckovic *** 
+
+- 25.05.19. 09:34
+    - LOGED change: POT.SetDBConnection - button2_Click
+     - Used: DB connection address and name save.
+     - Data: 192.168.100.101, test
+     - Result: Saved, no msgToUser
+    ***  *** 
+
+
+- 25.05.19. 09:34 - App started
+    *** BrunoBrckovic *** 
+
+- 25.05.19. 09:34
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.MyTypes.MainCmp.GetMainCmpInfoByID(Int64 mID) in D:\PROJECTS\VS\POT\POT\POT\MyTypes\MainCmp.cs:line 128
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.MyTypes.MainCmp.GetMainCmpInfoByID(Int64 mID) in D:\PROJECTS\VS\POT\POT\POT\MyTypes\MainCmp.cs:line 128
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:34
+    - LOGED change: POT.MainCmpSelector - button1_Click
+     - Used: Main cmp select
+     - Data: 
+     - Result: Main cmp selected, please relog to see changes.
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:34 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 25.05.19. 09:34 - App started
+    *** BrunoBrckovic *** 
+
+- 25.05.19. 09:35
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: NAME
+     - Data: 6
+     - Result: Selected ISS does not exist.
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:35
+    - LOGED change: POT.Documents.IIS - adddToList
+     - Used: Add to list
+     - Data: 101001004000, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:35
+    - LOGED change: POT.Documents.IIS - printDocumentIIS_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], , , IIS, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:35
+    - LOGED change: POT.Documents.IIS - button3_Click
+     - Used: Remove selected
+     - Data: ListViewSubItem: {1}, ListViewSubItem: {BROJAC ZA NOVCE PRC 950 }, ListViewSubItem: {101001004000}, ListViewSubItem: {}, ListViewSubItem: {}, ListViewSubItem: {sg}
+     - Result: Removed
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:35
+    - LOGED change: POT.Documents.IIS - adddToList
+     - Used: Add to list
+     - Data: 101004001000, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:35
+    - LOGED change: POT.Documents.IIS - button3_Click
+     - Used: Remove selected
+     - Data: 
+     - Result: Removed
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:36
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 847
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 847
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:36
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 847
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 847
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:36
+    - LOGED change: POT.Primka - button1_Click
+     - Used: Add to list
+     - Data: 0101004001000, , , ng
+             0101004001000, , , ng
+             0101004001000, , , ng
+             0101004001000, , , ng
+             0101004001000, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:36
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 847
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 847
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:36
+    - LOGED change: POT.Primka - button2_Click
+     - Used: Save to db
+     - Data: 19/002
+     - Result: DONE, document nbr. 'PRIM 19/002'.
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:36
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/002, , RECEIPT, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:36
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/002, , RECEIPT, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:45
+    - LOGED change: POT.IUS - button1_Click
+     - Used: Add to list
+     - Data: 0101004001000, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:45
+    - LOGED change: POT.IUS - button1_Click
+     - Used: Add to list
+     - Data: 0101004001000, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:46
+    - LOGED change: POT.IUS - button1_Click
+     - Used: Add to list
+     - Data: 0101004001000, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:46
+    - LOGED change: POT.IUS - button1_Click
+     - Used: Add to list
+     - Data: 0101004001000, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:46
+    - LOGED change: POT.IUS - button1_Click
+     - Used: Add to list
+     - Data: 0101004001000, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:46
+    - LOGED change: POT.IUS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. IUS '19/004/004'.
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:46
+    - LOGED change: POT.IUS - printDocumentIUS_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/004/004, , IUS, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:46
+    - LOGED change: POT.IUS - printDocumentIUS_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/004/004, , IUS, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:47 - App turned off
+    *** BrunoBrckovic *** 
+
+- 25.05.19. 09:47 - App started
+    *** BrunoBrckovic *** 
+
+- 25.05.19. 09:48
+    - LOGED change: POT.IUS - button1_Click
+     - Used: Add to list
+     - Data: 0101004001000, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:48
+    - LOGED change: POT.IUS - button1_Click
+     - Used: Add to list
+     - Data: 0101004001000, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:48
+    - LOGED change: POT.IUS - button1_Click
+     - Used: Add to list
+     - Data: 0101004001000, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:48
+    - LOGED change: POT.IUS - button1_Click
+     - Used: Add to list
+     - Data: 0101004001000, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:52
+    - LOGED change: POT.IUS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. IUS '19/004/005'.
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:53
+    - LOGED change: POT.IUS - button1_Click
+     - Used: Add to list
+     - Data: 0101004001000, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:53
+    - LOGED change: POT.IUS - button1_Click
+     - Used: Add to list
+     - Data: 0101004001000, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:53
+    - LOGED change: POT.IUS - button1_Click
+     - Used: Add to list
+     - Data: 0101004001000, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:53
+    - LOGED change: POT.IUS - button1_Click
+     - Used: Add to list
+     - Data: 0101004001000, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:58 - App started
+    *** BrunoBrckovic *** 
+
+- 25.05.19. 09:58
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 847
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 847
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:58
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 847
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 847
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:59
+    - LOGED change: POT.Primka - button1_Click
+     - Used: Add to list
+     - Data: 0101004008001, , , ng
+             0101004008001, , , ng
+             0101004008001, , , ng
+             0101004008001, , , ng
+             0101004008001, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:59
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 847
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 847
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:59
+    - LOGED change: POT.Primka - button1_Click
+     - Used: Add to list
+     - Data: 0101004008002, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:59
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 847
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 847
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:59
+    - LOGED change: POT.Primka - button1_Click
+     - Used: Add to list
+     - Data: 0101004008002, , , ng
+             0101004008002, , , ng
+             0101004008002, , , ng
+             0101004008002, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:59
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 847
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 847
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:59
+    - LOGED change: POT.Primka - button2_Click
+     - Used: Save to db
+     - Data: 19/003
+     - Result: DONE, document nbr. 'PRIM 19/003'.
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:59
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 750
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 750
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:59
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 750
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 750
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:59
+    - LOGED change: POT.Otpremnica - button1_Click
+     - Used: Add to list
+     - Data: 0101004008001, , , ng
+             0101004008001, , , ng
+             0101004008001, , , ng
+             0101004008001, , , ng
+             0101004008001, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:59
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 750
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 750
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 09:59
+    - LOGED change: POT.Otpremnica - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. OTP '19/001'.
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 10:00
+    - LOGED change: POT.Otpremnica - button1_Click
+     - Used: Add to list
+     - Data: 0101004008002, , , ng
+             0101004008002, , , ng
+             0101004008002, , , ng
+             0101004008002, , , ng
+             0101004008002, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 10:00
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 750
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 750
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 10:00
+    - LOGED change: POT.Otpremnica - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. OTP '19/002'.
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 10:00
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 847
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 847
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 10:00
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 847
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 847
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 10:00
+    - LOGED change: POT.Primka - button1_Click
+     - Used: Add to list
+     - Data: 0101004008001, , , ng
+             0101004008001, , , ng
+             0101004008001, , , ng
+             0101004008001, , , ng
+             0101004008001, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 10:00
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 847
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 847
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 10:00
+    - LOGED change: POT.Primka - button2_Click
+     - Used: Save to db
+     - Data: 19/004
+     - Result: DONE, document nbr. 'PRIM 19/004'.
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 10:01
+    - LOGED change: POT.IUS - button1_Click
+     - Used: Add to list
+     - Data: 0101004008001, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 10:01
+    - LOGED change: POT.IUS - button1_Click
+     - Used: Add to list
+     - Data: 0101004008001, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 10:01
+    - LOGED change: POT.IUS - button1_Click
+     - Used: Add to list
+     - Data: 0101004008001, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 10:01
+    - LOGED change: POT.IUS - button1_Click
+     - Used: Add to list
+     - Data: 0101004008001, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 10:01
+    - LOGED change: POT.IUS - button1_Click
+     - Used: Add to list
+     - Data: 0101004008001, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 10:01
+    - LOGED change: POT.IUS - button1_Click
+     - Used: Add to list
+     - Data: 0101004008001, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 10:01
+    - LOGED change: POT.IUS - button1_Click
+     - Used: Add to list
+     - Data: 0101004008001, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 10:01
+    - LOGED change: POT.IUS - button1_Click
+     - Used: Add to list
+     - Data: 0101004008001, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 10:01
+    - LOGED change: POT.IUS - button1_Click
+     - Used: Add to list
+     - Data: 0101004008001, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 10:01
+    - LOGED change: POT.IUS - button1_Click
+     - Used: Add to list
+     - Data: 0101004008001, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 10:02
+    - LOGED change: POT.IUS - button1_Click
+     - Used: Add to list
+     - Data: 0101004008001, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 10:02
+    - LOGED change: POT.IUS - button1_Click
+     - Used: Add to list
+     - Data: 0101004008001, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 10:02
+    - LOGED change: POT.IUS - button1_Click
+     - Used: Add to list
+     - Data: 0101004008001, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 10:02
+    - LOGED change: POT.IUS - button1_Click
+     - Used: Add to list
+     - Data: 0101004008001, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 10:02
+    - LOGED change: POT.IUS - button1_Click
+     - Used: Add to list
+     - Data: 0101004008001, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 10:02
+    - LOGED change: POT.IUS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: Please select company, nothing done.
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 10:02 - App turned off
+    *** BrunoBrckovic *** 
+
+- 25.05.19. 10:02 - App started
+    *** BrunoBrckovic *** 
+
+- 25.05.19. 10:02
+    - LOGED change: POT.IUS - button1_Click
+     - Used: Add to list
+     - Data: 0101004008001, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 10:02
+    - LOGED change: POT.IUS - button1_Click
+     - Used: Add to list
+     - Data: 0101004008001, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 10:02
+    - LOGED change: POT.IUS - button1_Click
+     - Used: Add to list
+     - Data: 0101004008001, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 10:02
+    - LOGED change: POT.IUS - button1_Click
+     - Used: Add to list
+     - Data: 0101004008001, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 10:02
+    - LOGED change: POT.IUS - button1_Click
+     - Used: Add to list
+     - Data: 0101004008001, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 10:03
+    - LOGED change: POT.IUS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. IUS '19/004/006'.
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 10:03 - App turned off
+    *** BrunoBrckovic *** 
+
+- 25.05.19. 12:58 - App started
+    *** BrunoBrckovic *** 
+
+- 25.05.19. 12:58
+    - LOGED change: POT.IUS - adddToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 13:00 - App started
+    *** BrunoBrckovic *** 
+
+- 25.05.19. 13:01
+    - LOGED change: POT.Documents.IIS - adddToList
+     - Used: Add to list
+     - Data: 707013002000, 12X0107, 1013756, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 13:02
+    - LOGED change: POT.IUS - adddToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 13:02
+    - LOGED change: POT.IUS - adddToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 13:02
+    - LOGED change: POT.IUS - adddToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 13:02
+    - LOGED change: POT.IUS - adddToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 13:02
+    - LOGED change: POT.IUS - adddToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 13:03 - App started
+    *** BrunoBrckovic *** 
+
+- 25.05.19. 13:03
+    - LOGED change: POT.IUS - adddToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 13:03
+    - LOGED change: POT.IUS - adddToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 13:03 - App started
+    *** BrunoBrckovic *** 
+
+- 25.05.19. 13:03
+    - LOGED change: POT.Documents.IIS - adddToList
+     - Used: Add to list
+     - Data: 707013002000, 12X0107, 1013756, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 13:04
+    - LOGED change: POT.Documents.IIS - adddToList
+     - Used: Add to list
+     - Data: 707013002000, 12X0107, 1013756, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 13:05
+    - LOGED change: POT.IUS - adddToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 13:05
+    - LOGED change: POT.IUS - adddToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 13:06 - App started
+    *** BrunoBrckovic *** 
+
+- 25.05.19. 13:06
+    - LOGED change: POT.Documents.IIS - adddToList
+     - Used: Add to list
+     - Data: 707013002000, 12X0062, 1013855, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 13:07 - App started
+    *** BrunoBrckovic *** 
+
+- 25.05.19. 13:14 - App started
+    *** BrunoBrckovic *** 
+
+- 25.05.19. 13:14
+    - LOGED change: POT.IUS - adddToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 13:14
+    - LOGED change: POT.IUS - adddToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 13:14 - App started
+    *** BrunoBrckovic *** 
+
+- 25.05.19. 13:16 - App started
+    *** BrunoBrckovic *** 
+
+- 25.05.19. 13:17 - App started
+    *** BrunoBrckovic *** 
+
+- 25.05.19. 13:17
+    - LOGED change: POT.IUS - adddToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 13:18 - App turned off
+    *** BrunoBrckovic *** 
+
+- 25.05.19. 13:38 - App started
+    *** BrunoBrckovic *** 
+
+- 25.05.19. 13:38
+    - LOGED change: POT.IUS - adddToList
+     - Used: Add to list
+     - Data: 101004001000, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 13:38
+    - LOGED change: POT.IUS - adddToList
+     - Used: Add to list
+     - Data: 101004001000, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 13:51 - App started
+    *** BrunoBrckovic *** 
+
+- 25.05.19. 13:53
+    - LOGED change: POT.IUS - adddToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 13:53
+    - LOGED change: POT.IUS - adddToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 13:56 - App started
+    *** BrunoBrckovic *** 
+
+- 25.05.19. 13:57
+    - LOGED change: POT.Documents.IIS - adddToList
+     - Used: Add to list
+     - Data: 707013002000, 12X0107, 1013756, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 13:58
+    - LOGED change: POT.IUS - adddToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 13:58
+    - LOGED change: POT.IUS - adddToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 14:01 - App started
+    *** BrunoBrckovic *** 
+
+- 25.05.19. 14:02
+    - LOGED change: POT.IUS - adddToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 14:02
+    - LOGED change: POT.IUS - adddToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 14:02 - App started
+    *** BrunoBrckovic *** 
+
+- 25.05.19. 14:03
+    - LOGED change: POT.Documents.IIS - adddToList
+     - Used: Add to list
+     - Data: 707013002000, 12X0107, 1013756, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 14:04
+    - LOGED change: POT.IUS - adddToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 14:04
+    - LOGED change: POT.IUS - adddToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 14:15 - App started
+    *** BrunoBrckovic *** 
+
+- 25.05.19. 14:15
+    - LOGED change: POT.IUS - adddToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 14:15
+    - LOGED change: POT.IUS - adddToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 14:19 - App started
+    *** BrunoBrckovic *** 
+
+- 25.05.19. 14:19
+    - LOGED change: POT.IUS - adddToList
+     - Used: Add to list
+     - Data: 101004001000, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 14:19
+    - LOGED change: POT.IUS - adddToList
+     - Used: Add to list
+     - Data: 101004001000, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 14:26 - App started
+    *** BrunoBrckovic *** 
+
+- 25.05.19. 14:26
+    - LOGED change: POT.IUS - adddToList
+     - Used: Add to list
+     - Data: 101004001000, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 14:27
+    - LOGED change: POT.IUS - adddToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 14:27
+    - LOGED change: POT.IUS - adddToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 14:30 - App started
+    *** BrunoBrckovic *** 
+
+- 25.05.19. 14:30
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004001000, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 14:30
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004001000, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 14:30 - App started
+    *** BrunoBrckovic *** 
+
+- 25.05.19. 14:31
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002000, 12X0062, 1013855, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 25.05.19. 14:31 - App turned off
+    *** BrunoBrckovic *** 
+
+- 26.05.19. 11:34 - App started
+    *** BrunoBrckovic *** 
+
+- 26.05.19. 11:34
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:35 - App turned off
+    *** BrunoBrckovic *** 
+
+- 26.05.19. 11:35 - App started
+    *** BrunoBrckovic *** 
+
+- 26.05.19. 11:35
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004001000, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:35
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:35
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:36
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:36
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004001000, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:36
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:36
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004001000, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:36
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004001000, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:36
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:36
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 707013002013, AA, BB, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:36
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 707013002010, JJJJ, KKKKK, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:36 - App turned off
+    *** BrunoBrckovic *** 
+
+- 26.05.19. 11:40 - App started
+    *** BrunoBrckovic *** 
+
+- 26.05.19. 11:40
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:40
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:41 - App started
+    *** BrunoBrckovic *** 
+
+- 26.05.19. 11:41 - App turned off
+    *** BrunoBrckovic *** 
+
+- 26.05.19. 11:42 - App started
+    *** BrunoBrckovic *** 
+
+- 26.05.19. 11:42
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004001000, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:42 - App turned off
+    *** BrunoBrckovic *** 
+
+- 26.05.19. 11:43 - App started
+    *** BrunoBrckovic *** 
+
+- 26.05.19. 11:43
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004001000, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:43
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004001000, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:46 - App started
+    *** BrunoBrckovic *** 
+
+- 26.05.19. 11:47
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 707013002010, JJJJ, KKKKK, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:47
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:47
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:48 - App started
+    *** BrunoBrckovic *** 
+
+- 26.05.19. 11:48
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004001000, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:48
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:48
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004001000, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:48
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004001000, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:48
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004001000, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:48
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:48
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:48
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:48
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 707013002013, AA, BB, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:48
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:48
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 707013002010, JJJJ, KKKKK, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:48
+    - LOGED change: POT.IUS - button3_Click
+     - Used: Remove selected
+     - Data: ListViewSubItem: {2}, ListViewSubItem: {KABEL Kabel strujni  Euro konektor}, ListViewSubItem: {101004008001}, ListViewSubItem: {}, ListViewSubItem: {}, ListViewSubItem: {sng}
+     - Result: Removed
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:48
+    - LOGED change: POT.IUS - button3_Click
+     - Used: Remove selected
+     - Data: ListViewSubItem: {10}, ListViewSubItem: {PRINTER Citizen CTS4000 Cover Cable L (Compatibility Parts:TB54101 -00F)}, ListViewSubItem: {707013002010}, ListViewSubItem: {JJJJ}, ListViewSubItem: {KKKKK}, ListViewSubItem: {sng}
+     - Result: Removed
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:48
+    - LOGED change: POT.IUS - button3_Click
+     - Used: Remove selected
+     - Data: ListViewSubItem: {9}, ListViewSubItem: {KABEL Kabel strujni  Euro konektor}, ListViewSubItem: {101004008001}, ListViewSubItem: {}, ListViewSubItem: {}, ListViewSubItem: {sng}
+     - Result: Removed
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:48
+    - LOGED change: POT.IUS - button3_Click
+     - Used: Remove selected
+     - Data: ListViewSubItem: {8}, ListViewSubItem: {PRINTER Citizen CTS4000 Cover, Cutter Paper ( With Caution, Edge)}, ListViewSubItem: {707013002013}, ListViewSubItem: {AA}, ListViewSubItem: {BB}, ListViewSubItem: {sng}
+     - Result: Removed
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:48
+    - LOGED change: POT.IUS - button3_Click
+     - Used: Remove selected
+     - Data: ListViewSubItem: {7}, ListViewSubItem: {KABEL Kabel strujni  Euro konektor}, ListViewSubItem: {101004008001}, ListViewSubItem: {}, ListViewSubItem: {}, ListViewSubItem: {sng}
+     - Result: Removed
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:48
+    - LOGED change: POT.IUS - button3_Click
+     - Used: Remove selected
+     - Data: ListViewSubItem: {6}, ListViewSubItem: {KABEL Kabel strujni  Euro konektor}, ListViewSubItem: {101004008001}, ListViewSubItem: {}, ListViewSubItem: {}, ListViewSubItem: {sng}
+     - Result: Removed
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:49
+    - LOGED change: POT.IUS - button3_Click
+     - Used: Remove selected
+     - Data: ListViewSubItem: {5}, ListViewSubItem: {KABEL Kabel strujni  Euro konektor}, ListViewSubItem: {101004008001}, ListViewSubItem: {}, ListViewSubItem: {}, ListViewSubItem: {sng}
+     - Result: Removed
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:49
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:49
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:49
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:49
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:49
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:50
+    - LOGED change: POT.IUS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. IUS '19/004/007'.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:51
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:52
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:52
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:52
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:52
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:53
+    - LOGED change: POT.IUS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: Please select company, nothing done.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:56
+    - LOGED change: POT.IUS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. IUS '19/004/008'.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:57
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:57
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 11:57
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:10
+    - LOGED change: POT.IUS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. IUS '19/004/009'.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:10
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:10
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:10
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:10
+    - LOGED change: POT.IUS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: Please select company, nothing done.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:12
+    - LOGED change: POT.IUS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. IUS '19/004/010'.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:13
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:13
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:13
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 707013002013, AA, BB, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:13
+    - LOGED change: POT.IUS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. IUS '19/004/011'.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:13
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:13
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:13
+    - LOGED change: POT.IUS - button3_Click
+     - Used: Remove selected
+     - Data: ListViewSubItem: {2}, ListViewSubItem: {KABEL Kabel strujni  Euro konektor}, ListViewSubItem: {101004008001}, ListViewSubItem: {}, ListViewSubItem: {}, ListViewSubItem: {sng}
+     - Result: Removed
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:13
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 707013002013, AA, BB, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:14
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:14
+    - LOGED change: POT.IUS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: Please select company, nothing done.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:14
+    - LOGED change: POT.IUS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. IUS '19/004/012'.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:14
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:14
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:14
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:14
+    - LOGED change: POT.IUS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: Please select company, nothing done.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:14
+    - LOGED change: POT.IUS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. IUS '19/004/013'.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:15
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 707013002013, AA, BB, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:15
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:15
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:30
+    - LOGED change: POT.IUS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. IUS '19/004/014'.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:31
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:31
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:31
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:31
+    - LOGED change: POT.IUS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: Please select company, nothing done.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:31
+    - LOGED change: POT.IUS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. IUS '19/004/015'.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:32
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:32
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:32
+    - LOGED change: POT.IUS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. IUS '19/004/016'.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:32
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 707013002013, AA, BB, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:32
+    - LOGED change: POT.IUS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. IUS '19/004/017'.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:35
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, Repaired, 
+     - Result: - 26.05.19. 12:35 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:35
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / Repaired
+
+     - Result: ISS saved with ID 190001
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:35 - App started
+    *** BrunoBrckovic *** 
+
+- 26.05.19. 12:36
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, , 
+     - Result: - 26.05.19. 12:36 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:36
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+
+     - Result: ISS saved with ID 190002
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:37
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, , 
+     - Result: - 26.05.19. 12:37 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:38
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+
+     - Result: ISS saved with ID 190003
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:39 - App turned off
+    *** BrunoBrckovic *** 
+
+- 26.05.19. 12:40 - App started
+    *** BrunoBrckovic *** 
+
+- 26.05.19. 12:40
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, , 
+     - Result: - 26.05.19. 12:40 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:41
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+
+     - Result: ISS saved with ID 190004
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:42 - App started
+    *** BrunoBrckovic *** 
+
+- 26.05.19. 12:45
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, , 
+     - Result: - 26.05.19. 12:45 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:47
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+
+     - Result: ISS saved with ID 190005
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:49 - App turned off
+    *** BrunoBrckovic *** 
+
+- 26.05.19. 12:50 - App started
+    *** BrunoBrckovic *** 
+
+- 26.05.19. 12:50
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, , 
+     - Result: - 26.05.19. 12:50 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:52 - App started
+    *** BrunoBrckovic *** 
+
+- 26.05.19. 12:52
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, , 
+     - Result: - 26.05.19. 12:52 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:57
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+
+     - Result: ISS saved with ID 190006
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:58
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, , 
+     - Result: - 26.05.19. 12:58 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:58
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+
+     - Result: ISS saved with ID 190007
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:58
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, Changed, 
+     - Result: - 26.05.19. 12:58 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:58
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+2. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / Changed
+
+     - Result: ISS saved with ID 190007
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:59
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, , 
+     - Result: - 26.05.19. 12:59 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:59
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+
+     - Result: ISS saved with ID 190008
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:59
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, , 
+     - Result: - 26.05.19. 12:59 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 12:59
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+
+     - Result: ISS saved with ID 190009
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 13:01 - App started
+    *** BrunoBrckovic *** 
+
+- 26.05.19. 13:01
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, , 
+     - Result: - 26.05.19. 13:01 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 13:01
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+
+     - Result: ISS saved with ID 190010
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 13:01
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, , 
+     - Result: - 26.05.19. 13:01 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 13:01
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+2. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+
+     - Result: ISS saved with ID 190010
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 13:02
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, , 
+     - Result: - 26.05.19. 13:02 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 13:02
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+
+     - Result: ISS saved with ID 190011
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 13:02
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, , 
+     - Result: - 26.05.19. 13:02 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 13:02
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+
+     - Result: ISS saved with ID 190012
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 13:02
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, , 
+     - Result: - 26.05.19. 13:02 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 13:02
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+2. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+
+     - Result: ISS saved with ID 190012
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 13:02
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, , 
+     - Result: - 26.05.19. 13:02 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 13:03
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+
+     - Result: ISS saved with ID 190013
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 13:03 - App turned off
+    *** BrunoBrckovic *** 
+
+- 26.05.19. 14:54 - App started
+    *** BrunoBrckovic *** 
+
+- 26.05.19. 14:55
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, , 
+     - Result: - 26.05.19. 14:55 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 14:55
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+
+     - Result: ISS saved with ID 190014
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 14:57 - App started
+    *** BrunoBrckovic *** 
+
+- 26.05.19. 14:57
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, , 
+     - Result: - 26.05.19. 14:57 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 14:57
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+
+     - Result: ISS saved with ID 190015
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 14:57
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, , 
+     - Result: - 26.05.19. 14:57 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 14:57
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+
+     - Result: ISS saved with ID 190016
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 14:58
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, , 
+     - Result: - 26.05.19. 14:58 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 14:58
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+
+     - Result: ISS saved with ID 190017
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 14:58
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, , 
+     - Result: - 26.05.19. 14:58 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 14:58
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+2. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+
+     - Result: ISS saved with ID 190017
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 14:59 - App turned off
+    *** BrunoBrckovic *** 
+
+- 26.05.19. 14:59 - App started
+    *** BrunoBrckovic *** 
+
+- 26.05.19. 14:59
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, , 
+     - Result: - 26.05.19. 14:59 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 14:59
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+
+     - Result: ISS saved with ID 190018
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 14:59
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, , 
+     - Result: - 26.05.19. 14:59 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 14:59
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+
+     - Result: ISS saved with ID 190019
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:00
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, , 
+     - Result: - 26.05.19. 15:00 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:03 - App started
+    *** BrunoBrckovic *** 
+
+- 26.05.19. 15:04
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, , 
+     - Result: - 26.05.19. 15:04 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:04
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+
+     - Result: ISS saved with ID 190020
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:06
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, , 
+     - Result: - 26.05.19. 15:06 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:07
+    - BaseEcp: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.RemoveAt(Int32 index)
+   at POT.Documents.ISS.button1_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.RemoveAt(Int32 index)
+   at POT.Documents.ISS.button1_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.ArgumentOutOfRangeException
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:07
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, , 
+     - Result: - 26.05.19. 15:07 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:08
+    - BaseEcp: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.RemoveAt(Int32 index)
+   at POT.Documents.ISS.button1_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.RemoveAt(Int32 index)
+   at POT.Documents.ISS.button1_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.ArgumentOutOfRangeException
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:08
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, , 
+     - Result: - 26.05.19. 15:08 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:09
+    - LOGED change: POT.Documents.ISS - button1_Click_1
+     - Used: Remove selected
+     - Data: 
+     - Result: Line  removed
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:09
+    - BaseEcp: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.RemoveAt(Int32 index)
+   at POT.Documents.ISS.button1_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.RemoveAt(Int32 index)
+   at POT.Documents.ISS.button1_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.ArgumentOutOfRangeException
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:10
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, , 
+     - Result: - 26.05.19. 15:10 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:10
+    - BaseEcp: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.RemoveAt(Int32 index)
+   at POT.Documents.ISS.button1_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.RemoveAt(Int32 index)
+   at POT.Documents.ISS.button1_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.ArgumentOutOfRangeException
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:10
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, , 
+     - Result: - 26.05.19. 15:10 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:12
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+
+     - Result: ISS saved with ID 190025
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:12
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, , 
+     - Result: - 26.05.19. 15:12 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:16
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+
+     - Result: ISS saved with ID 190026
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:16
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, , 
+     - Result: - 26.05.19. 15:16 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:16
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+
+     - Result: ISS saved with ID 190027
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:16
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, , 
+     - Result: - 26.05.19. 15:16 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:17
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+2. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+
+     - Result: ISS saved with ID 190027
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:17
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, , 
+     - Result: - 26.05.19. 15:17 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:17
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+
+     - Result: ISS saved with ID 190028
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:17
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, , 
+     - Result: - 26.05.19. 15:17 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:17
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+
+     - Result: ISS saved with ID 190029
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:18
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, , 
+     - Result: - 26.05.19. 15:18 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:18
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+
+     - Result: ISS saved with ID 190030
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:18
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: Exception d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 101004008001, listIssParts cnt 2, 190027, SERVICE REPORT, customer, false
+     - Result: ISS selected 190027
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:18
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: Exception d.o.o., DMD TRADE doo, Sifrarnik arr cnt 910, 101004008001, listIssParts cnt 2, 190027, SERVICE REPORT, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:19
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:19
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:19
+    - LOGED change: POT.Documents.IIS - button3_Click
+     - Used: Remove selected
+     - Data: ListViewSubItem: {2}, ListViewSubItem: {KABEL Kabel strujni  Euro konektor}, ListViewSubItem: {101004008001}, ListViewSubItem: {}, ListViewSubItem: {}, ListViewSubItem: {sg}
+     - Result: Removed
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:19
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:19
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:20 - App started
+    *** BrunoBrckovic *** 
+
+- 26.05.19. 15:20
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:20
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:21
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:21
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:21
+    - LOGED change: POT.Documents.IIS - button3_Click
+     - Used: Remove selected
+     - Data: ListViewSubItem: {3}, ListViewSubItem: {KABEL Kabel strujni  Euro konektor}, ListViewSubItem: {101004008001}, ListViewSubItem: {}, ListViewSubItem: {}, ListViewSubItem: {sg}
+     - Result: Removed
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:21
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:21
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:21
+    - LOGED change: POT.Documents.IIS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: Please select company, nothing done.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:21
+    - LOGED change: POT.Documents.IIS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. IIS '19/004/004'.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:22
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:22
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:22
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:22
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:22
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:22
+    - LOGED change: POT.Documents.IIS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: Please select company, nothing done.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:23
+    - LOGED change: POT.Documents.IIS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. IIS '19/004/005'.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:23
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:23
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:23
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:23
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:25
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:25
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:26
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:26
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:33 - App started
+    *** BrunoBrckovic *** 
+
+- 26.05.19. 15:33
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:33
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:33
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:33
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:33
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:34
+    - LOGED change: POT.Documents.IIS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: Please select company, nothing done.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:34
+    - LOGED change: POT.Documents.IIS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. IIS '19/004/006'.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:34
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:34
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:34
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:34 - App started
+    *** BrunoBrckovic *** 
+
+- 26.05.19. 15:34
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:34
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:35
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:35
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:35
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:35
+    - LOGED change: POT.Documents.IIS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: Please select company, nothing done.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:39
+    - LOGED change: POT.Documents.IIS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. IIS '19/004/007'.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:50 - App started
+    *** BrunoBrckovic *** 
+
+- 26.05.19. 15:50
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:50
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:51
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:51
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:51
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:51
+    - LOGED change: POT.IUS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: Please select company, nothing done.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:53
+    - BaseEcp: System.InvalidOperationException: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password)
+    - InnerEcp: 
+    - MessageEcp: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+    - SourceEcp: System.Data
+    - StackTrqceEcp:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password)
+    - TypeNameEcp: System.InvalidOperationException
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:54
+    - BaseEcp: System.InvalidOperationException: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password)
+   at POT.QueryCommands.PartInfoByFullCodeSifrarnik(Int64 mFullCode)
+   at POT.MyTypes.PovijestLog.SaveToPovijestLog(List`1 mNewOldPart, String mDatumRada, String mOpis, String mCustomerName, String mCCN, String mCI, String mDokument, String mGNG)
+   at POT.IUS.button2_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+    - SourceEcp: System.Data
+    - StackTrqceEcp:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password)
+   at POT.QueryCommands.PartInfoByFullCodeSifrarnik(Int64 mFullCode)
+   at POT.MyTypes.PovijestLog.SaveToPovijestLog(List`1 mNewOldPart, String mDatumRada, String mOpis, String mCustomerName, String mCCN, String mCI, String mDokument, String mGNG)
+   at POT.IUS.button2_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.InvalidOperationException
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:54 - App started
+    *** BrunoBrckovic *** 
+
+- 26.05.19. 15:54
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:56
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:56
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:56
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:56
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:56
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:56
+    - LOGED change: POT.IUS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: Please select company, nothing done.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:57
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+    - InnerEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+    - MessageEcp: Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=592; handshake=0; 
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password)
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:57Error writing log error message in LogWriter constructor with exception value
+    - ErrorMSg:The process cannot access the file 'F:\PROJEKTI\VS\POT\POT\POT\bin\Debug\POTLog.txt' because it is being used by another process.
+    *** BrunoBrckovic *** 
+
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:57
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+    - InnerEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+    - MessageEcp: Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=592; handshake=0; 
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password)
+   at POT.QueryCommands.PartInfoByFullCodeSifrarnik(Int64 mFullCode)
+   at POT.MyTypes.PovijestLog.SaveToPovijestLog(List`1 mNewOldPart, String mDatumRada, String mOpis, String mCustomerName, String mCCN, String mCI, String mDokument, String mGNG)
+   at POT.IUS.button2_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:58
+    - LOGED change: POT.IUS - button2_Click
+     - Used: Save to db
+     - Data: 101004008001
+ on position 1
+     - Result: There is no NG part in your storage with: 
+
+ Code: 101004008001
+ on position 1. 
+
+Nothing Done.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:58
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:58
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:58
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:58
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:58
+    - LOGED change: POT.IUS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:58
+    - LOGED change: POT.IUS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: Please select company, nothing done.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 15:59
+    - LOGED change: POT.IUS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. IUS '19/004/003'.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 16:00
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, , 
+     - Result: - 26.05.19. 16:00 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 16:00
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+
+     - Result: ISS saved with ID 190031
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 16:01 - App started
+    *** BrunoBrckovic *** 
+
+- 26.05.19. 16:01
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, , 
+     - Result: - 26.05.19. 16:01 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 16:01
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+
+     - Result: ISS saved with ID 190032
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 16:02
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, , 
+     - Result: - 26.05.19. 16:02 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 16:02
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, , 
+     - Result: - 26.05.19. 16:02 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 16:02
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+
+     - Result: ISS saved with ID 190033
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 16:06
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, , 
+     - Result: - 26.05.19. 16:06 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 16:06
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+
+     - Result: ISS saved with ID 190034
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 16:06
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+
+     - Result: ISS saved with ID 190034
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 16:07
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, , 
+     - Result: - 26.05.19. 16:07 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 16:07
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+
+     - Result: ISS saved with ID 190035
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 16:07
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+
+     - Result: ISS saved with ID 190035
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 16:07
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+
+     - Result: ISS saved with ID 190035
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 16:08
+    - LOGED change: POT.Documents.ISS - AddToWorkList
+     - Used: Adding to list
+     - Data: KABEL Kabel strujni  Euro konektor, , , , , , , 26.05.19., 00:01, , 
+     - Result: - 26.05.19. 16:08 - Added to list.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 16:08
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+
+     - Result: ISS saved with ID 190036
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 16:08
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+
+     - Result: ISS saved with ID 190036
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 16:08
+    - LOGED change: POT.Documents.ISS - button1_Click
+     - Used: Save to db
+     - Data: 1. / KABEL Kabel strujni  Euro konektor /  /  /  /  /  /  / 26.05.19.h / 00:01 / 
+
+     - Result: ISS saved with ID 190036
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 16:10
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 16:10
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 16:10
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 16:10
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 101004008001, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 16:10
+    - LOGED change: POT.Documents.IIS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: Please select company, nothing done.
+    *** BrunoBrckovic *** 
+
+
+- 26.05.19. 16:11
+    - LOGED change: POT.Documents.IIS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. IIS '19/004/001'.
+    *** BrunoBrckovic *** 
+

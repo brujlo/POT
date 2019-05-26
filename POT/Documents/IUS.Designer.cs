@@ -62,6 +62,8 @@
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.printPreviewDialogIUS = new System.Windows.Forms.PrintPreviewDialog();
             this.selectPrinterPrintBtn = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // printPrewBT
@@ -209,7 +211,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(10, 160);
+            this.label11.Location = new System.Drawing.Point(10, 239);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(67, 20);
@@ -293,10 +295,10 @@
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.listView1.Location = new System.Drawing.Point(13, 177);
+            this.listView1.Location = new System.Drawing.Point(12, 265);
             this.listView1.Margin = new System.Windows.Forms.Padding(4);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(543, 451);
+            this.listView1.Size = new System.Drawing.Size(543, 366);
             this.listView1.TabIndex = 58;
             this.listView1.TabStop = false;
             this.listView1.UseCompatibleStateImageBehavior = false;
@@ -469,11 +471,40 @@
             this.selectPrinterPrintBtn.UseVisualStyleBackColor = true;
             this.selectPrinterPrintBtn.Click += new System.EventHandler(this.selectPrinterPrintBtn_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(9, 164);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(67, 20);
+            this.label1.TabIndex = 110;
+            this.label1.Text = "Part List";
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox6.BackColor = System.Drawing.Color.Khaki;
+            this.comboBox6.DropDownWidth = 544;
+            this.comboBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Location = new System.Drawing.Point(11, 207);
+            this.comboBox6.MaxDropDownItems = 15;
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(544, 33);
+            this.comboBox6.TabIndex = 112;
+            this.comboBox6.TabStop = false;
+            this.comboBox6.Text = "Service parts";
+            this.comboBox6.SelectedIndexChanged += new System.EventHandler(this.comboBox6_SelectedIndexChanged);
+            // 
             // IUS
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(958, 644);
+            this.Controls.Add(this.comboBox6);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.selectPrinterPrintBtn);
             this.Controls.Add(this.printPrewBT);
             this.Controls.Add(this.label16);
@@ -549,5 +580,7 @@
         private System.Windows.Forms.PrintDialog printDialog1;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialogIUS;
         private System.Windows.Forms.Button selectPrinterPrintBtn;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox6;
     }
 }

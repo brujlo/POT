@@ -2,15 +2,10 @@
 using POT.WorkingClasses;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
 using System.Linq;
 using System.Media;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Decoder = POT.WorkingClasses.Decoder;
 
@@ -21,9 +16,8 @@ namespace POT.Documents
         int rb = 1;
         List<String> resultArr = new List<String>();
         List<String> resultArrSearchCode = new List<String>();
-        //List<String> openedTransactionSenderRegions = new List<string>();
         static List<String> sifrarnikArr = new List<String>();
-        List<PartSifrarnik> sifrarnikArrParts = new List<PartSifrarnik>();
+
         Boolean isIISSaved = false;
         Company cmpS = new Company();
         Company cmpR = new Company();
@@ -37,6 +31,8 @@ namespace POT.Documents
         QueryCommands qc = new QueryCommands();
         ConnectionHelper cn = new ConnectionHelper();
 
+        Boolean isFocused = false;
+
         public IIS()
         {
             InitializeComponent();
@@ -46,6 +42,7 @@ namespace POT.Documents
         {
             comboBox3.Text = Properties.Settings.Default.MainCompanyCode;
             comboBox4.Text = Properties.Settings.Default.MainCompanyCode;
+            //this.printPrewBT.Enabled = false;
 
             Thread myThread = new Thread(fillComboBoxes);
             myThread.Start();
@@ -62,7 +59,6 @@ namespace POT.Documents
             try
             {
                 Company cmpList = new Company();
-                //List<Company> resultArrC = new List<Company>();
 
                 resultArrC = cmpList.GetAllCompanyInfoSortByName();
 
@@ -74,8 +70,6 @@ namespace POT.Documents
                     }
 
                 }
-
-                sifrarnikArrParts = qc.GetPartsAllSifrarnik();
 
                 resultArr.Clear();
 
@@ -147,14 +141,18 @@ namespace POT.Documents
 
         private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Part tmpPart = partsArrCB5[comboBox5.SelectedIndex];
-            adddToList(false, tmpPart.CodePartFull, tmpPart.SN, tmpPart.CN);
-            partsArrCB5.RemoveAt(comboBox5.SelectedIndex);
+            if (!isFocused)
+            {
+                int indx = comboBox5.SelectedIndex;
+                Part tmpPart = partsArrCB5[indx];
+                addToList(false, tmpPart.CodePartFull, tmpPart.SN, tmpPart.CN);
+                partsArrCB5.RemoveAt(indx);
 
-            comboBox5.Items.RemoveAt(comboBox5.SelectedIndex);
+                comboBox5.Items.RemoveAt(indx);
+            }
         }
 
-        private void adddToList(Boolean clear, long mCode, String mSN, String mCN)
+        private void addToList(Boolean clear, long mCode, String mSN, String mCN)
         {
             ///////////////// LogMe ////////////////////////
             String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
@@ -192,7 +190,7 @@ namespace POT.Documents
                     listView1.EnsureVisible(listView1.Items.Count - 1);
 
                 listView1.Items.Add(lvi1);
-                
+
                 if (data.Equals(""))
                     data = mCode.ToString() + ", " + mSN + ", " + mCN + ", g";
                 else
@@ -217,9 +215,10 @@ namespace POT.Documents
                 textBox3.Clear();
             }
 
-            
             textBox1.SelectAll();
+            isFocused = true;
             textBox1.Focus();
+            isFocused = false;
 
             Result = "Added";
             lw.LogMe(function, usedQC, data, Result);
@@ -260,7 +259,7 @@ namespace POT.Documents
                     return;
                 }
 
-                adddToList(true, long.Parse(textBox1.Text), textBox2.Text, textBox3.Text);
+                addToList(true, long.Parse(textBox1.Text), textBox2.Text, textBox3.Text);
                 //lvi1.SubItems.Add(sifrarnikArr[sifrarnikArr.IndexOf((long.Parse((textBox1.Text).Substring(4)).ToString())) - 1]); //DecoderBB
 
                 if (data.Equals(""))
@@ -303,7 +302,9 @@ namespace POT.Documents
                 e.Handled = true;
                 button1_Click(sender, e);
                 textBox1.SelectAll();
+                isFocused = true;
                 textBox1.Focus();
+                isFocused = false;
 
                 e.Handled = true;
                 e.SuppressKeyPress = true;
@@ -313,14 +314,15 @@ namespace POT.Documents
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             textBox1.SelectAll();
-            textBox1.Focus();
 
             label2.Text = resultArrC.ElementAt(comboBox1.SelectedIndex).Name.Trim();
             label3.Text = resultArrC.ElementAt(comboBox1.SelectedIndex).Address.Trim();
             label4.Text = resultArrC.ElementAt(comboBox1.SelectedIndex).OIB.Trim();
             label5.Text = resultArrC.ElementAt(comboBox1.SelectedIndex).Contact.Trim();
 
+            isFocused = true;
             textBox1.Focus();
+            isFocused = false;
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
@@ -329,7 +331,9 @@ namespace POT.Documents
             {
                 textBox1.Text = comboBox4.Text + comboBox3.Text + string.Format("{0:000000000}", int.Parse(resultArrSearchCode.ElementAt(comboBox2.SelectedIndex)));
                 textBox1.SelectAll();
+                isFocused = true;
                 textBox1.Focus();
+                isFocused = false;
             }
             catch (Exception e1)
             {
@@ -341,13 +345,17 @@ namespace POT.Documents
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
             textBox1.SelectAll();
+            isFocused = true;
             textBox1.Focus();
+            isFocused = false;
         }
 
         private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
         {
             textBox1.SelectAll();
+            isFocused = true;
             textBox1.Focus();
+            isFocused = false;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -404,7 +412,9 @@ namespace POT.Documents
 
             rb = listView1.Items.Count + 1;
             textBox1.SelectAll();
+            isFocused = true;
             textBox1.Focus();
+            isFocused = false;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -426,7 +436,9 @@ namespace POT.Documents
                 lw.LogMe(function, usedQC, data, Result);
                 MessageBox.Show(Result);
                 textBox1.SelectAll();
+                isFocused = true;
                 textBox1.Focus();
+                isFocused = false;
             }
             else if (this.listView1.Items.Count == 0)
             {
@@ -434,7 +446,9 @@ namespace POT.Documents
                 lw.LogMe(function, usedQC, data, Result);
                 MessageBox.Show(Result);
                 textBox1.SelectAll();
+                isFocused = true;
                 textBox1.Focus();
+                isFocused = false;
             }
             else
             {
@@ -470,7 +484,9 @@ namespace POT.Documents
                                         lw.LogMe(function, usedQC, data, Result);
                                         MessageBox.Show(Result);
                                         textBox1.SelectAll();
+                                        isFocused = true;
                                         textBox1.Focus();
+                                        isFocused = false;
                                         return;
                                     }
                                 }
@@ -493,7 +509,7 @@ namespace POT.Documents
                                     {
                                         tempSifPart.GetPart(Decoder.GetFullPartCodeStr(listView1.Items[i].SubItems[2].Text));
 
-                                        if (part.PartialCode == tempSifPart.FullCode && part.SN.Equals(listView1.Items[i].SubItems[3].Text) && part.CN.Equals(listView1.Items[i].SubItems[4].Text))
+                                        if (part.PartialCode == tempSifPart.FullCode && part.SN.Equals(listView1.Items[i].SubItems[3].Text) && part.CN.Equals(listView1.Items[i].SubItems[4].Text) && !partList.Contains(part))
                                         {
                                             tempPart = part;
                                             tempPart.StorageID = WorkingUser.RegionID;
@@ -504,11 +520,7 @@ namespace POT.Documents
                                         }
                                     }
 
-                                    String tmpResult = qc.GetPartIDCompareCodeSNCNStorage(WorkingUser.Username, WorkingUser.Password,
-                                            long.Parse(listView1.Items[i].SubItems[2].Text),
-                                            listView1.Items[i].SubItems[3].Text,
-                                            listView1.Items[i].SubItems[4].Text,
-                                            WorkingUser.RegionID)[0];
+                                    String tmpResult = qc.GetListPartsByPartIDFromParts(tempPart.PartID)[0];
 
                                     if (tmpResult.Equals("nok"))
                                     {
@@ -517,7 +529,9 @@ namespace POT.Documents
                                         lw.LogMe(function, usedQC, data, Result);
                                         MessageBox.Show(Result);
                                         textBox1.SelectAll();
+                                        isFocused = true;
                                         textBox1.Focus();
+                                        isFocused = false;
                                         return;
                                     }
                                     else
@@ -537,7 +551,7 @@ namespace POT.Documents
                                         List<Part> tempPart = new List<Part>();
                                         tempPart.Clear();
                                         tempPart.Add(partList[k]);
-                                        if (pl.SaveToPovijestLog(tempPart, DateTime.Now.ToString("dd.MM.yy."), napomenaIIS, cmpS.Name, "", "", "PRIM " + Properties.Settings.Default.ShareDocumentName, tempPart[0].State))
+                                        if (pl.SaveToPovijestLog(tempPart, DateTime.Now.ToString("dd.MM.yy."), napomenaIIS, cmpS.Name, "", "", "IIS " + Properties.Settings.Default.ShareDocumentName, "g"))
                                         {
                                             saved = true;
                                         }
@@ -612,7 +626,9 @@ namespace POT.Documents
                         new LogWriter(e1);
                         MessageBox.Show(e1.Message);
                         textBox1.SelectAll();
+                        isFocused = true;
                         textBox1.Focus();
+                        isFocused = false;
                     }
                 }
                 this.printPrewBT.Enabled = isIISSaved;
@@ -652,7 +668,9 @@ namespace POT.Documents
             printPreviewDialogIIS.ShowDialog();
 
             textBox1.SelectAll();
+            isFocused = true;
             textBox1.Focus();
+            isFocused = false;
         }
 
         private void selectPrinterPrintBtn_Click(object sender, EventArgs e)
