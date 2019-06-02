@@ -75,6 +75,21 @@ namespace POT.MyTypes
             }
         }
 
+        public List<PartSifrarnik> GetPartsAllSifrarnikSortByFullName()
+        {
+            try
+            {
+                QueryCommands qc = new QueryCommands();
+                List<PartSifrarnik> prs = qc.GetPartsAllSifrarnikSortByFullName();
+                return prs;
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
+                throw;
+            }
+        }
+
 
         public long CategoryCode
         {

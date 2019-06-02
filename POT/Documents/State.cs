@@ -50,6 +50,8 @@ namespace POT
 
         private void FindPart()
         {
+            Program.LoadStart();
+
             QueryCommands qc = new QueryCommands();
             QueryCommands qc1 = new QueryCommands();
             QueryCommands qc2 = new QueryCommands();
@@ -243,6 +245,10 @@ namespace POT
                     clearME();
                     return;
                 }
+                finally
+                {
+                    Program.LoadStop();
+                }
             }
         }
 
@@ -364,11 +370,15 @@ namespace POT
             }
             catch (Exception e1)
             {
+                Program.LoadStop();
+
                 new LogWriter(e1);
                 MessageBox.Show(e1.Message);
                 clearME();
                 return;
             }
+
+            Program.LoadStop();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -380,43 +390,47 @@ namespace POT
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            int pHgth = pictureBox1.Height; //(90,90);
-            Point pPos = pictureBox1.Location; 
-
-            pictureBox1.Image = Properties.Resources.warehousG;
-            pictureBox1.Height = pHgth + 8;
-            pictureBox1.Width = pHgth + 8;
-            pictureBox1.Location = new Point(pPos.X - 4, pPos.Y - 4);
-            pictureBox1.Refresh();
-
-            System.Threading.Thread.Sleep(150);
-
-            pictureBox1.Image = Properties.Resources.warehousB;
-            pictureBox1.Location = new Point(pPos.X, pPos.Y);
-            pictureBox1.Height = pHgth;
-            pictureBox1.Width = pHgth;
-            pictureBox1.Refresh();
-
-            QueryCommands qc = new QueryCommands();
-            List<String> resultArr = new List<string>();
-            List<PartSifrarnik> partArr = new List<PartSifrarnik>();
-
-            ConnectionHelper cn = new ConnectionHelper();
-
+            Program.LoadStart();
             try
             {
+                int pHgth = pictureBox1.Height; //(90,90);
+                Point pPos = pictureBox1.Location; 
+
+                pictureBox1.Image = Properties.Resources.warehousG;
+                pictureBox1.Height = pHgth + 8;
+                pictureBox1.Width = pHgth + 8;
+                pictureBox1.Location = new Point(pPos.X - 4, pPos.Y - 4);
+                pictureBox1.Refresh();
+
+                System.Threading.Thread.Sleep(150);
+
+                pictureBox1.Image = Properties.Resources.warehousB;
+                pictureBox1.Location = new Point(pPos.X, pPos.Y);
+                pictureBox1.Height = pHgth;
+                pictureBox1.Width = pHgth;
+                pictureBox1.Refresh();
+
+                QueryCommands qc = new QueryCommands();
+                List<String> resultArr = new List<string>();
+                List<PartSifrarnik> partArr = new List<PartSifrarnik>();
+
+                ConnectionHelper cn = new ConnectionHelper();
+
                 resultArr = qc.ListPartsByCodeRegionStateS( 0, 0, "" );
+
+                PartsList pl = new PartsList(resultArr);
+
+                pl.Show();
+                textBox1.Focus();
+                pl.Focus();
             }
             catch (Exception e1)
             {
+                Program.LoadStop();
+
                 new LogWriter(e1);
                 MessageBox.Show(e1.Message);
             }
-
-            PartsList pl = new PartsList(resultArr);
-            pl.Show();
-            textBox1.Focus();
-            pl.Focus();
         }
     }
 }

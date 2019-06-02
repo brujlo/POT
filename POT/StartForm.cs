@@ -50,6 +50,9 @@ namespace POT
 
         private void OkBT_Click_1(object sender, EventArgs e)
         {
+            label1.Visible = true;
+            this.Refresh();
+
             QueryCommands qc = new QueryCommands();
             List<String> arr = new List<string>();
 
@@ -121,6 +124,9 @@ namespace POT
             }
             finally
             {
+                label1.Visible = false;
+                this.Refresh();
+
                 if (!arr.Any())
                 {
                     if (loginCNt == 3)

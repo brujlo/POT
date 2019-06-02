@@ -102,6 +102,8 @@ namespace POT.CopyPrintForms
                 }
 
             }
+
+            Program.LoadStop();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -219,7 +221,7 @@ namespace POT.CopyPrintForms
                 MessageBox.Show(e1.Message);
             }
 
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < listView1.Columns.Count; i++)
             {
                 listView1.AutoResizeColumn(i, ColumnHeaderAutoResizeStyle.ColumnContent);
                 listView1.AutoResizeColumn(i, ColumnHeaderAutoResizeStyle.HeaderSize);
@@ -509,7 +511,7 @@ namespace POT.CopyPrintForms
                 MessageBox.Show(e1.Message);
             }
 
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < listView2.Columns.Count; i++)
             {
                 listView2.AutoResizeColumn(i, ColumnHeaderAutoResizeStyle.ColumnContent);
                 listView2.AutoResizeColumn(i, ColumnHeaderAutoResizeStyle.HeaderSize);

@@ -17,6 +17,9 @@ namespace POT
 
         private void OkBT_Click(object sender, EventArgs e)
         {
+            label1.Visible = true;
+            this.Refresh();
+
             QueryCommands qc = new QueryCommands();
             List<String> arr = new List<string>();
 
@@ -44,6 +47,11 @@ namespace POT
             {
                 new LogWriter(e1);
                 MessageBox.Show(e1.Message);
+            }
+            finally
+            {
+                label1.Visible = false;
+                this.Refresh();
             }
         }
 

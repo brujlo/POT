@@ -29,5 +29,11 @@ namespace POT
             Result = "Saved, no msgToUser";
             lw.LogMe(function, usedQC, data, Result);
         }
+
+        private void SetDBConnection_Load(object sender, EventArgs e)
+        {
+            textBox1.Text = Properties.Settings.Default.DataSource;
+            textBox2.Text = Properties.Settings.Default.Catalog;
+        }
     }
 }

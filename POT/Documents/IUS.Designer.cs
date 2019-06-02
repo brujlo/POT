@@ -463,6 +463,7 @@
             // 
             // selectPrinterPrintBtn
             // 
+            this.selectPrinterPrintBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.selectPrinterPrintBtn.Location = new System.Drawing.Point(678, 581);
             this.selectPrinterPrintBtn.Name = "selectPrinterPrintBtn";
             this.selectPrinterPrintBtn.Size = new System.Drawing.Size(130, 50);

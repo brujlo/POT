@@ -36,11 +36,13 @@
             this.PasswordBX = new System.Windows.Forms.TextBox();
             this.CancelBT = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.rbHrv = new System.Windows.Forms.RadioButton();
             this.rbEng = new System.Windows.Forms.RadioButton();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -112,16 +114,6 @@
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-7, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(535, 144);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
-            // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
@@ -168,6 +160,28 @@
             this.checkBox2.UseVisualStyleBackColor = true;
             this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-7, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(535, 144);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Nirmala UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(148, 309);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(208, 28);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Credentials checking ...";
+            this.label1.Visible = false;
+            // 
             // LoginFR
             // 
             this.AcceptButton = this.OkBT;
@@ -176,6 +190,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.CancelBT;
             this.ClientSize = new System.Drawing.Size(521, 408);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.rbEng);
             this.Controls.Add(this.rbHrv);
@@ -216,6 +231,8 @@
         private System.Windows.Forms.RadioButton rbHrv;
         private System.Windows.Forms.RadioButton rbEng;
         private System.Windows.Forms.CheckBox checkBox2;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Label label1;
     }
 }
 

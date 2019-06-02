@@ -142,7 +142,7 @@ namespace POT.Documents
             listView1.Columns.Add("Work done");
             listView1.Columns.Add("Comment");
 
-            for (int i = 0; i < 12; i++)
+            for (int i = 0; i < listView1.Columns.Count; i++)
             {
                 listView1.AutoResizeColumn(i, ColumnHeaderAutoResizeStyle.ColumnContent);
                 listView1.AutoResizeColumn(i, ColumnHeaderAutoResizeStyle.HeaderSize);
@@ -159,6 +159,8 @@ namespace POT.Documents
             //SelectPrinterbt.Enabled = false;
 
             STARTbt_Click(sender, e);
+
+            Program.LoadStop();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -401,7 +403,7 @@ namespace POT.Documents
                 listView1.Columns.Add("Work done");
                 listView1.Columns.Add("Comment");
 
-                for (int i = 0; i < 12; i++)
+                for (int i = 0; i < listView1.Columns.Count; i++)
                 {
                     listView1.AutoResizeColumn(i, ColumnHeaderAutoResizeStyle.ColumnContent);
                     listView1.AutoResizeColumn(i, ColumnHeaderAutoResizeStyle.HeaderSize);
@@ -635,7 +637,7 @@ namespace POT.Documents
 
                 data = name + ", " + CodeO + ", " + SNO + ", " + CNO + ", " + CodeN + ", " + SNN + ", " + CNN + ", " + date + ", " + time + ", " + work + ", " + koment;
 
-                for (int i = 0; i < 12; i++)
+                for (int i = 0; i < listView1.Columns.Count; i++)
                 {
                     listView1.AutoResizeColumn(i, ColumnHeaderAutoResizeStyle.ColumnContent);
                     listView1.AutoResizeColumn(i, ColumnHeaderAutoResizeStyle.HeaderSize);
@@ -1018,7 +1020,7 @@ namespace POT.Documents
                     listView1.Items.Add(lvi1);
                 }
 
-                for (int i = 0; i < 12; i++)
+                for (int i = 0; i < listView1.Columns.Count; i++)
                 {
                     listView1.AutoResizeColumn(i, ColumnHeaderAutoResizeStyle.ColumnContent);
                     listView1.AutoResizeColumn(i, ColumnHeaderAutoResizeStyle.HeaderSize);

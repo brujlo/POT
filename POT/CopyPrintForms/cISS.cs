@@ -137,6 +137,7 @@ namespace POT.CopyPrintForms
                 listView2.AutoResizeColumn(i, ColumnHeaderAutoResizeStyle.HeaderSize);
             }
 
+            Program.LoadStop();
         }
 
         private void listView1_DoubleClick(object sender, EventArgs e)

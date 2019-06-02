@@ -73,15 +73,9 @@ namespace POT
                     }
 
                 }
-            }
-            catch (Exception e1)
-            {
-                new LogWriter(e1);
-            }
-
-            resultArr.Clear();
-            try
-            {
+                
+                resultArr.Clear();
+            
                 resultArr = qc.AllCompanyInfoSortCode(WorkingUser.Username, WorkingUser.Password);
 
                 if (!resultArr[0].Equals("nok"))
@@ -110,8 +104,10 @@ namespace POT
             }
             catch (Exception e1)
             {
+                Program.LoadStop();
                 new LogWriter(e1);
             }
+            Program.LoadStop();
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
@@ -181,7 +177,7 @@ namespace POT
                 numericUpDown1.Value = 1;
             }
 
-            for (int i = 0; i < 6; i++)
+            for (int i = 0; i < listView1.Columns.Count; i++)
             {
                 listView1.AutoResizeColumn(i, ColumnHeaderAutoResizeStyle.ColumnContent);
                 listView1.AutoResizeColumn(i, ColumnHeaderAutoResizeStyle.HeaderSize);
@@ -354,6 +350,8 @@ namespace POT
 
         private void button2_Click(object sender, EventArgs e)
         {
+            Program.SaveStart();
+
             ///////////////// LogMe ////////////////////////
             String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
             String usedQC = "Save to db";
@@ -369,7 +367,10 @@ namespace POT
             {
                 Result = "Please select company, nothing done.";
                 lw.LogMe(function, usedQC, data, Result);
+
+                Program.SaveStop();
                 MessageBox.Show(Result);
+
                 textBox1.SelectAll();
                 textBox1.Focus();
             }
@@ -377,7 +378,10 @@ namespace POT
             {
                 Result = "There is no items in list, nothing done.";
                 lw.LogMe(function, usedQC, data, Result);
+
+                Program.SaveStop();
                 MessageBox.Show(Result);
+
                 textBox1.SelectAll();
                 textBox1.Focus();
             }
@@ -418,6 +422,8 @@ namespace POT
                                             data = listView1.Items[i].SubItems[2].Text + ", " + listView1.Items[i].Index + 1;
                                             Result = "In your storage, part with: \n\n Code: " + listView1.Items[i].SubItems[2].Text + "\n on position " + (listView1.Items[i].Index + 1) + "\n, already exist in DB.\n\nNothing Done.";
                                             lw.LogMe(function, usedQC, data, Result);
+
+                                            Program.SaveStop();
                                             MessageBox.Show(Result);
 
                                             textBox1.SelectAll();
@@ -456,6 +462,8 @@ namespace POT
                                         data = resultArrC[index].RegionID + ", " + Properties.Settings.Default.OstaliIDRegion + ", " + resultArrC[index].RegionID + ", " + Properties.Settings.Default.TransportIDRegion;
                                         Result = "From selected region nothing is sent to you. \n\n Nothing Done.";
                                         lw.LogMe(function, usedQC, data, Result);
+
+                                        Program.SaveStop();
                                         MessageBox.Show(Result);
 
                                         textBox1.SelectAll();
@@ -472,8 +480,10 @@ namespace POT
                                             data = test.ToString() + ", " + listView1.Items[i].Index + 1;
                                             Result = "There is no part in 'Sifrarnik' with code, = " + test.ToString() + "\n" + "on position " + (listView1.Items[i].Index + 1) + "  \n\n Nothing Done.";
                                             lw.LogMe(function, usedQC, data, Result);
+
+                                            Program.SaveStop();
                                             MessageBox.Show(Result);
-                                            
+
                                             textBox1.SelectAll();
                                             textBox1.Focus();
                                             return;
@@ -496,8 +506,10 @@ namespace POT
                                         data = cmpS.RegionID.ToString();
                                         Result = "Please select right company! \n\n Nothing done.";
                                         lw.LogMe(function, usedQC, data, Result);
+
+                                        Program.SaveStop();
                                         MessageBox.Show(Result);
-                                        
+
                                         textBox1.SelectAll();
                                         textBox1.Focus();
                                         return;
@@ -511,6 +523,8 @@ namespace POT
                                         data = openedOTP[0].ToString();
                                         Result = "There is no opened documents for you!";
                                         lw.LogMe(function, usedQC, data, Result);
+
+                                        Program.SaveStop();
                                         MessageBox.Show(Result);
 
                                         textBox1.SelectAll();
@@ -533,6 +547,8 @@ namespace POT
                                             data = selectedOTP.ToString();
                                             Result = "Please select valid receiving document! \n\n Nothing done.";
                                             lw.LogMe(function, usedQC, data, Result);
+
+                                            Program.SaveStop();
                                             MessageBox.Show(Result);
 
                                             textBox1.SelectAll();
@@ -573,8 +589,10 @@ namespace POT
                                     {
                                         Result = "Receiving document and sending document items do not match ! \n\n Nothing done.";
                                         lw.LogMe(function, usedQC, data, Result);
+
+                                        Program.SaveStop();
                                         MessageBox.Show(Result);
-                                        
+
                                         textBox1.SelectAll();
                                         textBox1.Focus();
                                         return;
@@ -607,6 +625,8 @@ namespace POT
                                             data = PrimkaNumber;
                                             Result = "DONE, document nbr. 'PRIM " + PrimkaNumber + "'.";
                                             lw.LogMe(function, usedQC, data, Result);
+
+                                            Program.SaveStop();
                                             MessageBox.Show(Result);
                                             
                                             isPrimkaSaved = true;
@@ -630,6 +650,8 @@ namespace POT
                                             data = PrimkaNumber;
                                             Result = "DONE, document nbr. 'PRIM " + PrimkaNumber + "', but not saved in PL.";
                                             lw.LogMe(function, usedQC, data, Result);
+
+                                            Program.SaveStop();
                                             MessageBox.Show(Result);
 
                                             listView1.Clear();
@@ -652,6 +674,8 @@ namespace POT
                                     {
                                         Result = "Unknown error in QUERYinner.";
                                         lw.LogMe(function, usedQC, data, Result);
+
+                                        Program.SaveStop();
                                         MessageBox.Show(Result);
                                         
                                         isPrimkaSaved = false;
@@ -711,6 +735,8 @@ namespace POT
                                             data = PrimkaNumber;
                                             Result = "DONE, document nbr. 'PRIM " + PrimkaNumber + "'.";
                                             lw.LogMe(function, usedQC, data, Result);
+
+                                            Program.SaveStop();
                                             MessageBox.Show(Result);
 
                                             partListPrint.Clear();
@@ -734,6 +760,8 @@ namespace POT
                                             data = PrimkaNumber;
                                             Result = "DONE, document nbr. 'PRIM " + PrimkaNumber + "', but not saved in PL.";
                                             lw.LogMe(function, usedQC, data, Result);
+
+                                            Program.SaveStop();
                                             MessageBox.Show(Result);
 
                                             partListPrint.Clear();
@@ -757,6 +785,8 @@ namespace POT
                                     {
                                         Result = "Unknown error in QUERYinner.";
                                         lw.LogMe(function, usedQC, data, Result);
+
+                                        Program.SaveStop();
                                         MessageBox.Show(Result);
 
                                         napomenaPRIMPrint = "";
@@ -769,6 +799,8 @@ namespace POT
                     }
                     catch (Exception e1)
                     {
+                        Program.SaveStop();
+
                         new LogWriter(e1);
                         MessageBox.Show(e1.Message);
                         textBox1.SelectAll();
@@ -778,6 +810,7 @@ namespace POT
                 this.printPrewBT.Enabled = isPrimkaSaved;
                 this.selectPrinterPrintBtn.Enabled = isPrimkaSaved;
             }
+            Program.SaveStop();
         }
 
         private void printPrewBT_Click(object sender, EventArgs e)

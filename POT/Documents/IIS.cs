@@ -111,8 +111,10 @@ namespace POT.Documents
             }
             catch (Exception e1)
             {
+                Program.LoadStop();
                 new LogWriter(e1);
             }
+            Program.LoadStop();
         }
 
         static void fillComboBoxes()
@@ -202,7 +204,7 @@ namespace POT.Documents
                 MessageBox.Show(e1.Message);
             }
 
-            for (int i = 0; i < 6; i++)
+            for (int i = 0; i < listView1.Columns.Count; i++)
             {
                 listView1.AutoResizeColumn(i, ColumnHeaderAutoResizeStyle.ColumnContent);
                 listView1.AutoResizeColumn(i, ColumnHeaderAutoResizeStyle.HeaderSize);

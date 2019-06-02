@@ -606,6 +606,7 @@
             // 
             // checkBox1
             // 
+            this.checkBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(679, 254);
             this.checkBox1.Name = "checkBox1";
@@ -628,6 +629,7 @@
             // 
             // TIMERtb
             // 
+            this.TIMERtb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.TIMERtb.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.TIMERtb.Font = new System.Drawing.Font("Candara", 20F);
             this.TIMERtb.ForeColor = System.Drawing.Color.Yellow;
@@ -642,6 +644,7 @@
             // 
             // button3
             // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button3.BackColor = System.Drawing.Color.AliceBlue;
             this.button3.Location = new System.Drawing.Point(679, 23);
             this.button3.Name = "button3";
@@ -780,6 +783,7 @@
             this.Controls.Add(this.pictureBox1);
             this.MinimumSize = new System.Drawing.Size(1000, 718);
             this.Name = "ISS";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ISS";
             this.Load += new System.EventHandler(this.ISS_Load);

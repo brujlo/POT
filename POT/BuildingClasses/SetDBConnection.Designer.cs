@@ -105,6 +105,7 @@
             this.Name = "SetDBConnection";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SetDBConnection";
+            this.Load += new System.EventHandler(this.SetDBConnection_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

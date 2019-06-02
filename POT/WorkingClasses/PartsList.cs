@@ -71,6 +71,8 @@ namespace POT
             }
             catch (Exception e1)
             {
+                Program.LoadStop();
+
                 new LogWriter(e1);
                 MessageBox.Show(e1.Message);
             }
@@ -80,6 +82,8 @@ namespace POT
                 listView1.AutoResizeColumn(i, ColumnHeaderAutoResizeStyle.ColumnContent);
                 listView1.AutoResizeColumn(i, ColumnHeaderAutoResizeStyle.HeaderSize);
             }
+
+            Program.LoadStop();
         }
 
         private void button1_Click(object sender, EventArgs e)

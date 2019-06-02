@@ -80,6 +80,7 @@ namespace POT
                     comboBox1.Items.Add(resultList[i].Name);
                 }
             }
+            Program.LoadStop();
         }
     }
 }

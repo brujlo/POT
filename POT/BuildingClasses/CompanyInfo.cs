@@ -85,8 +85,10 @@ namespace POT
             }
             catch (Exception e1)
             {
+                Program.LoadStop();
                 new LogWriter(e1);
             }
+            Program.LoadStop();
         }
 
         private void button2_Click(object sender, EventArgs e)

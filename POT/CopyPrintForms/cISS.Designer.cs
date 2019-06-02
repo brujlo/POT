@@ -98,6 +98,7 @@
             // 
             // selectPrinterPrintBtn
             // 
+            this.selectPrinterPrintBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.selectPrinterPrintBtn.Location = new System.Drawing.Point(809, 504);
             this.selectPrinterPrintBtn.Name = "selectPrinterPrintBtn";
             this.selectPrinterPrintBtn.Size = new System.Drawing.Size(130, 50);
@@ -120,6 +121,7 @@
             // 
             // button3
             // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button3.BackColor = System.Drawing.Color.SkyBlue;
             this.button3.Location = new System.Drawing.Point(809, 338);
             this.button3.Name = "button3";
@@ -206,6 +208,8 @@
             // 
             // comboBox4
             // 
+            this.comboBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Location = new System.Drawing.Point(489, 27);
             this.comboBox4.Name = "comboBox4";
@@ -252,7 +256,6 @@
             // 
             // label12
             // 
-            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.AutoSize = true;
             this.label12.ForeColor = System.Drawing.Color.Gray;
             this.label12.Location = new System.Drawing.Point(258, 260);
@@ -263,7 +266,6 @@
             // 
             // label13
             // 
-            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label13.AutoSize = true;
             this.label13.ForeColor = System.Drawing.Color.Gray;
             this.label13.Location = new System.Drawing.Point(258, 198);
@@ -294,7 +296,6 @@
             // 
             // label16
             // 
-            this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label16.AutoSize = true;
             this.label16.ForeColor = System.Drawing.Color.Gray;
             this.label16.Location = new System.Drawing.Point(258, 136);
@@ -315,7 +316,6 @@
             // 
             // IDTb
             // 
-            this.IDTb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.IDTb.BackColor = System.Drawing.Color.PapayaWhip;
             this.IDTb.Location = new System.Drawing.Point(262, 279);
             this.IDTb.Name = "IDTb";
@@ -326,8 +326,6 @@
             // 
             // CNTb
             // 
-            this.CNTb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.CNTb.BackColor = System.Drawing.Color.PapayaWhip;
             this.CNTb.Location = new System.Drawing.Point(13, 279);
             this.CNTb.Name = "CNTb";
@@ -338,8 +336,6 @@
             // 
             // SNTb
             // 
-            this.SNTb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.SNTb.BackColor = System.Drawing.Color.PapayaWhip;
             this.SNTb.Location = new System.Drawing.Point(13, 217);
             this.SNTb.Name = "SNTb";
@@ -350,7 +346,6 @@
             // 
             // DateSentTb
             // 
-            this.DateSentTb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.DateSentTb.BackColor = System.Drawing.Color.PapayaWhip;
             this.DateSentTb.Location = new System.Drawing.Point(262, 217);
             this.DateSentTb.Name = "DateSentTb";
@@ -361,7 +356,6 @@
             // 
             // DateInTb
             // 
-            this.DateInTb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.DateInTb.BackColor = System.Drawing.Color.PapayaWhip;
             this.DateInTb.Location = new System.Drawing.Point(262, 155);
             this.DateInTb.Name = "DateInTb";
@@ -372,8 +366,6 @@
             // 
             // NameTb
             // 
-            this.NameTb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.NameTb.BackColor = System.Drawing.Color.PapayaWhip;
             this.NameTb.Location = new System.Drawing.Point(13, 155);
             this.NameTb.Name = "NameTb";
@@ -391,7 +383,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = global::POT.Properties.Resources.LoadDataOff;
             this.pictureBox1.Location = new System.Drawing.Point(809, 12);
             this.pictureBox1.Name = "pictureBox1";
@@ -402,6 +394,7 @@
             // 
             // button2
             // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.BackColor = System.Drawing.Color.Wheat;
             this.button2.Location = new System.Drawing.Point(838, 114);
             this.button2.Name = "button2";
@@ -413,8 +406,7 @@
             // 
             // listView1
             // 
-            this.listView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.listView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.listView1.BackColor = System.Drawing.Color.OldLace;
             this.listView1.FullRowSelect = true;
@@ -491,6 +483,7 @@
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.ISSSelectorCb);
             this.Name = "cISS";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Select ISS";
             this.Load += new System.EventHandler(this.cISS_Load);

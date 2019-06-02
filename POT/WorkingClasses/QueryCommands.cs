@@ -458,6 +458,60 @@ namespace POT
             return prs;
         }
 
+        public List<PartSifrarnik> GetPartsAllSifrarnikSortByFullName()
+        {
+            List<PartSifrarnik> prs = new List<PartSifrarnik>();
+
+            try
+            {
+                //SqlConnection cnn = cn.Connect(Uname, Pass);
+                cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+                query = "Select * from Sifrarnik order by FullName asc";
+                command = new SqlCommand(query, cnn);
+                command.ExecuteNonQuery();
+
+                using (SqlDataReader dataReader = command.ExecuteReader())
+                {
+                    dataReader.Read();
+
+                    if (dataReader.HasRows)
+                    {
+                        do
+                        {
+                            PartSifrarnik tempPart = new PartSifrarnik();
+
+                            tempPart.CategoryCode = long.Parse(dataReader["CategoryCode"].ToString());
+                            tempPart.CategoryName = dataReader["CategoryName"].ToString();
+                            tempPart.PartCode = long.Parse(dataReader["PartCode"].ToString());
+                            tempPart.PartName = dataReader["PartName"].ToString();
+                            tempPart.SubPartCode = long.Parse(dataReader["SubPartCode"].ToString());
+                            tempPart.SubPartName = dataReader["SubPartName"].ToString();
+                            tempPart.PartNumber = dataReader["PartNumber"].ToString();
+                            tempPart.PriceInKn = decimal.Parse(dataReader["PriceInKn"].ToString());
+                            tempPart.PriceOutKn = decimal.Parse(dataReader["PriceOutKn"].ToString());
+                            tempPart.PriceInEur = decimal.Parse(dataReader["PriceInEur"].ToString());
+                            tempPart.PriceOutEur = decimal.Parse(dataReader["PriceOutEur"].ToString());
+                            tempPart.FullCode = long.Parse(dataReader["FullCode"].ToString());
+                            tempPart.FullName = dataReader["FullName"].ToString();
+                            tempPart.Packing = dataReader["Packing"].ToString();
+                            prs.Add(tempPart);
+                        } while (dataReader.Read());
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                //new LogWriter(e1);
+                throw;
+            }
+            finally
+            {
+                if (cnn.State.ToString().Equals("Open"))
+                    cnn.Close();
+            }
+            return prs;
+        }
+
         public List<String> ListPartsByCodeRegionStateS(long mCodePartFull, long mStorageID, String mState)
         {
             List<String> arr = new List<String>();
@@ -1400,11 +1454,11 @@ namespace POT
             return arr;
         }
 
-        public List<String> CurrentExchangeRate(String Uname, String Pass)
+        public List<String> CurrentExchangeRate()
         {
             List<String> arr = new List<string>();
-            //SqlConnection cnn = cn.Connect(Uname, Pass);
-            cnn = cn.Connect(Uname, Pass);
+            
+            cnn = cn.Connect("admin", "0000");
             query = "SELECT * FROM TecajnaLista WHERE id = (SELECT MAX(id) FROM TecajnaLista)";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
@@ -4243,6 +4297,48 @@ namespace POT
             dataReader.Close();
             cnn.Close();
             return arr;
+        }
+
+        public long GetNewInvoiceID()
+        {
+            long invID = 0;
+
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "select Count(ID) from Racun where ID LIKE '" + DateTime.Now.ToString("yy") + "%'";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (!dataReader.GetValue(0).ToString().Equals("0"))
+                invID = long.Parse(dataReader.GetValue(0).ToString()) + 1;
+            else
+                invID = 1;
+
+            dataReader.Close();
+            cnn.Close();
+            return invID;
+        }
+
+        public long GetLastInvoiceID()
+        {
+            long invID = 0;
+
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "select Count(ID) from Racun where ID LIKE '" + DateTime.Now.ToString("yy") + "%'";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (!dataReader.GetValue(0).ToString().Equals("0"))
+                invID = long.Parse(dataReader.GetValue(0).ToString());
+            else
+                invID = 1;
+
+            dataReader.Close();
+            cnn.Close();
+            return invID;
         }
     }
 }

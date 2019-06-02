@@ -485,6 +485,7 @@
             // 
             // numericUpDown1
             // 
+            this.numericUpDown1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.numericUpDown1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.numericUpDown1.Location = new System.Drawing.Point(847, 113);
@@ -506,6 +507,7 @@
             // 
             // selectPrinterPrintBtn
             // 
+            this.selectPrinterPrintBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.selectPrinterPrintBtn.Location = new System.Drawing.Point(676, 585);
             this.selectPrinterPrintBtn.Name = "selectPrinterPrintBtn";
             this.selectPrinterPrintBtn.Size = new System.Drawing.Size(130, 50);
@@ -516,6 +518,8 @@
             // 
             // comboBox5
             // 
+            this.comboBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Location = new System.Drawing.Point(211, 85);
             this.comboBox5.Name = "comboBox5";
@@ -527,6 +531,8 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(207, 69);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -537,6 +543,7 @@
             // 
             // includeInOTP
             // 
+            this.includeInOTP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.includeInOTP.AutoSize = true;
             this.includeInOTP.Location = new System.Drawing.Point(389, 89);
             this.includeInOTP.Name = "includeInOTP";

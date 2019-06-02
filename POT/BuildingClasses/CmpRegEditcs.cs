@@ -56,6 +56,7 @@ namespace POT.BuildingClasses
                 }
                 catch (Exception e1)
                 {
+                    Program.LoadStop();
                     new LogWriter(e1);
                     MessageBox.Show(e1.Message);
                     return;
@@ -122,8 +123,10 @@ namespace POT.BuildingClasses
             }
             catch (Exception e1)
             {
+                Program.LoadStop();
                 new LogWriter(e1);
             }
+            Program.LoadStop();
         }
 
         private void comboBox1_Leave(object sender, EventArgs e)

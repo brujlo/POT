@@ -35,7 +35,6 @@ namespace POT
         public MainFR()
         {
             //For Testing DB BUILD
-
             Properties.Settings.Default.DBTabelsBuilded = false;
             Properties.Settings.Default.Save();
 
@@ -94,7 +93,7 @@ namespace POT
 
             try
             {
-                resultArr = qc.CurrentExchangeRate(WorkingUser.Username, WorkingUser.Password);
+                resultArr = qc.CurrentExchangeRate();
                 this.label15.Text = resultArr[2] + " kn";
                 this.label12.Text = resultArr[3] + " kn";
                 this.label11.Text = resultArr[4] + " kn";
@@ -189,6 +188,9 @@ namespace POT
             myThread.Start();
 
             new LogWriter(System.Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + "App started");
+
+            linkLabel5.UseMnemonic = true;
+            linkLabel5.Text = "&" + linkLabel5.Text;
         }
 
         private void backgroundWorker2_DoWork(object sender, DoWorkEventArgs e)
@@ -255,6 +257,8 @@ namespace POT
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            Program.LoadStart();
+
             try
             {
                 Form st = new State();
@@ -264,8 +268,8 @@ namespace POT
             catch (Exception e1)
             {
                 new LogWriter(e1);
-            }
-}
+            }        
+        }
 
         private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -349,6 +353,8 @@ namespace POT
         {
             try
             {
+                Program.LoadStart();
+
                 Primka pr = new Primka();
                 pr.Show();
             }
@@ -360,6 +366,8 @@ namespace POT
 
         private void linkLabel7_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            Program.LoadStart();
+
             CompanyInfo cmpInfo = new CompanyInfo();
             cmpInfo.ShowDialog();
 
@@ -378,6 +386,7 @@ namespace POT
             }
             catch (Exception e1)
             {
+                Program.LoadStop();
                 new LogWriter(e1);
             }
         }
@@ -455,6 +464,8 @@ namespace POT
         {
             try
             {
+                Program.LoadStart();
+
                 MainCmpSelector mfs = new MainCmpSelector();
                 mfs.ShowDialog();
 
@@ -479,6 +490,8 @@ namespace POT
         {
             try
             {
+                Program.LoadStart();
+
                 Otpremnica otp = new Otpremnica();
                 otp.Show();
             }
@@ -581,11 +594,14 @@ namespace POT
         {
             try
             {
+                Program.LoadStart();
+
                 OpenTicketList opl = new OpenTicketList(qc.openedTicketsList(WorkingUser.Username, WorkingUser.Password));
                 opl.Show();
             }
             catch (Exception e1)
             {
+                Program.LoadStop();
                 new LogWriter(e1);
             }
         }
@@ -703,6 +719,8 @@ namespace POT
         {
             try
             {
+                Program.LoadStart();
+
                 IUS ius = new IUS();
                 ius.Show();
             }
@@ -739,6 +757,8 @@ namespace POT
         {
             try
             {
+                Program.LoadStart();
+
                 Tickets tck = new Tickets();
                 tck.Show();
             }
@@ -805,6 +825,8 @@ namespace POT
         {
             try
             {
+                Program.LoadStart();
+
                 CmpRegEditcs cre = new CmpRegEditcs();
                 cre.Show();
             }
@@ -816,6 +838,8 @@ namespace POT
 
         private void linkLabel17_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            Program.LoadStart();
+
             cOTPcs doc = new cOTPcs();
             doc.Show();
 
@@ -823,30 +847,40 @@ namespace POT
 
         private void linkLabel18_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            Program.LoadStart();
+
             cPRIM doc = new cPRIM();
             doc.Show();
         }
 
         private void linkLabel19_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            Program.LoadStart();
+
             ISS iss = new ISS();
             iss.Show();
         }
 
         private void linkLabel21_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            Program.LoadStart();
+
             cISS ciss = new cISS();
             ciss.Show();
         }
 
         private void linkLabel20_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            //Program.LoadStart();
+
             //TODO
             MessageBox.Show("Za uredivanje work liste za ISS");
         }
 
         private void linkLabel22_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            Program.LoadStart();
+
             IIS iis = new IIS();
             iis.Show();
         }
@@ -855,6 +889,14 @@ namespace POT
         {
             AboutBox ab = new AboutBox();
             ab.ShowDialog();
+        }
+
+        private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Program.LoadStart();
+
+            Racun rc = new Racun();
+            rc.Show();
         }
     }
 }

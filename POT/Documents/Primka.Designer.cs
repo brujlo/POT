@@ -493,6 +493,7 @@
             // 
             // numericUpDown1
             // 
+            this.numericUpDown1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.numericUpDown1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.numericUpDown1.Location = new System.Drawing.Point(846, 116);
@@ -514,6 +515,7 @@
             // 
             // selectPrinterPrintBtn
             // 
+            this.selectPrinterPrintBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.selectPrinterPrintBtn.Location = new System.Drawing.Point(673, 582);
             this.selectPrinterPrintBtn.Name = "selectPrinterPrintBtn";
             this.selectPrinterPrintBtn.Size = new System.Drawing.Size(130, 50);

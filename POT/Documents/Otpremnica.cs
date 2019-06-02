@@ -111,8 +111,11 @@ namespace POT
             }
             catch (Exception e1)
             {
+                Program.LoadStop();
+
                 new LogWriter(e1);
             }
+            Program.LoadStop();
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
@@ -180,7 +183,7 @@ namespace POT
                 numericUpDown1.Value = 1;
             }
 
-            for (int i = 0; i < 6; i++)
+            for (int i = 0; i < listView1.Columns.Count; i++)
             {
                 listView1.AutoResizeColumn(i, ColumnHeaderAutoResizeStyle.ColumnContent);
                 listView1.AutoResizeColumn(i, ColumnHeaderAutoResizeStyle.HeaderSize);
