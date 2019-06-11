@@ -28,11 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Racun));
             this.CustomerCB = new System.Windows.Forms.ComboBox();
             this.OfferCB = new System.Windows.Forms.ComboBox();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.PriceINEURTB = new System.Windows.Forms.TextBox();
+            this.PriceINKNTB = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label21 = new System.Windows.Forms.Label();
             this.obrJedLB = new System.Windows.Forms.Label();
@@ -58,7 +66,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.CancelBT = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.PrintPrewBT = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.radioButtonENG = new System.Windows.Forms.RadioButton();
             this.radioButtonHRV = new System.Windows.Forms.RadioButton();
@@ -83,6 +91,9 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.printDocumentInvoice = new System.Drawing.Printing.PrintDocument();
+            this.printDialog1 = new System.Windows.Forms.PrintDialog();
+            this.printPreviewDialogInvoice = new System.Windows.Forms.PrintPreviewDialog();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -91,6 +102,8 @@
             // 
             // CustomerCB
             // 
+            this.CustomerCB.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.CustomerCB.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.CustomerCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.CustomerCB.FormattingEnabled = true;
             this.CustomerCB.Location = new System.Drawing.Point(6, 15);
@@ -112,7 +125,7 @@
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(709, 15);
+            this.monthCalendar1.Location = new System.Drawing.Point(747, 15);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.ShowWeekNumbers = true;
             this.monthCalendar1.TabIndex = 2;
@@ -131,6 +144,13 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.label23);
+            this.tabPage1.Controls.Add(this.label24);
+            this.tabPage1.Controls.Add(this.textBox4);
+            this.tabPage1.Controls.Add(this.label18);
+            this.tabPage1.Controls.Add(this.label22);
+            this.tabPage1.Controls.Add(this.PriceINEURTB);
+            this.tabPage1.Controls.Add(this.PriceINKNTB);
             this.tabPage1.Controls.Add(this.groupBox1);
             this.tabPage1.Controls.Add(this.button5);
             this.tabPage1.Controls.Add(this.listView1);
@@ -145,7 +165,7 @@
             this.tabPage1.Controls.Add(this.label8);
             this.tabPage1.Controls.Add(this.CancelBT);
             this.tabPage1.Controls.Add(this.button3);
-            this.tabPage1.Controls.Add(this.button2);
+            this.tabPage1.Controls.Add(this.PrintPrewBT);
             this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.radioButtonENG);
             this.tabPage1.Controls.Add(this.radioButtonHRV);
@@ -179,6 +199,87 @@
             this.tabPage1.Text = "Make";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // label23
+            // 
+            this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label23.AutoSize = true;
+            this.label23.ForeColor = System.Drawing.Color.Crimson;
+            this.label23.Location = new System.Drawing.Point(693, 518);
+            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(70, 20);
+            this.label23.TabIndex = 183;
+            this.label23.Text = "cnt / 200";
+            // 
+            // label24
+            // 
+            this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(9, 518);
+            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(43, 20);
+            this.label24.TabIndex = 182;
+            this.label24.Text = "Note";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox4.BackColor = System.Drawing.Color.LimeGreen;
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.textBox4.Location = new System.Drawing.Point(4, 535);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox4.MaxLength = 200;
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(802, 47);
+            this.textBox4.TabIndex = 181;
+            this.textBox4.TabStop = false;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(369, 153);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(99, 20);
+            this.label18.TabIndex = 180;
+            this.label18.Text = "Price in EUR";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(259, 152);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(85, 20);
+            this.label22.TabIndex = 179;
+            this.label22.Text = "Price in KN";
+            // 
+            // PriceINEURTB
+            // 
+            this.PriceINEURTB.BackColor = System.Drawing.Color.Moccasin;
+            this.PriceINEURTB.Location = new System.Drawing.Point(373, 166);
+            this.PriceINEURTB.Name = "PriceINEURTB";
+            this.PriceINEURTB.ReadOnly = true;
+            this.PriceINEURTB.Size = new System.Drawing.Size(90, 26);
+            this.PriceINEURTB.TabIndex = 178;
+            this.PriceINEURTB.TabStop = false;
+            this.PriceINEURTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // PriceINKNTB
+            // 
+            this.PriceINKNTB.BackColor = System.Drawing.Color.Moccasin;
+            this.PriceINKNTB.Location = new System.Drawing.Point(264, 166);
+            this.PriceINKNTB.Name = "PriceINKNTB";
+            this.PriceINKNTB.ReadOnly = true;
+            this.PriceINKNTB.Size = new System.Drawing.Size(90, 26);
+            this.PriceINKNTB.TabIndex = 177;
+            this.PriceINKNTB.TabStop = false;
+            this.PriceINKNTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label21);
@@ -192,9 +293,9 @@
             this.groupBox1.Controls.Add(this.label20);
             this.groupBox1.Controls.Add(this.label17);
             this.groupBox1.Controls.Add(this.label19);
-            this.groupBox1.Location = new System.Drawing.Point(501, 6);
+            this.groupBox1.Location = new System.Drawing.Point(561, 6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(201, 122);
+            this.groupBox1.Size = new System.Drawing.Size(174, 122);
             this.groupBox1.TabIndex = 176;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Info";
@@ -215,7 +316,7 @@
             // 
             this.obrJedLB.AutoSize = true;
             this.obrJedLB.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.obrJedLB.Location = new System.Drawing.Point(107, 76);
+            this.obrJedLB.Location = new System.Drawing.Point(88, 76);
             this.obrJedLB.Name = "obrJedLB";
             this.obrJedLB.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.obrJedLB.Size = new System.Drawing.Size(18, 20);
@@ -239,7 +340,7 @@
             // 
             this.ExchangeLB.AutoSize = true;
             this.ExchangeLB.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.ExchangeLB.Location = new System.Drawing.Point(107, 18);
+            this.ExchangeLB.Location = new System.Drawing.Point(88, 18);
             this.ExchangeLB.Name = "ExchangeLB";
             this.ExchangeLB.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.ExchangeLB.Size = new System.Drawing.Size(40, 20);
@@ -251,7 +352,7 @@
             // 
             this.InvNbrLB.AutoSize = true;
             this.InvNbrLB.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.InvNbrLB.Location = new System.Drawing.Point(107, 96);
+            this.InvNbrLB.Location = new System.Drawing.Point(88, 96);
             this.InvNbrLB.Name = "InvNbrLB";
             this.InvNbrLB.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.InvNbrLB.Size = new System.Drawing.Size(18, 20);
@@ -263,7 +364,7 @@
             // 
             this.CurrencyLB.AutoSize = true;
             this.CurrencyLB.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.CurrencyLB.Location = new System.Drawing.Point(140, 19);
+            this.CurrencyLB.Location = new System.Drawing.Point(121, 19);
             this.CurrencyLB.Name = "CurrencyLB";
             this.CurrencyLB.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.CurrencyLB.Size = new System.Drawing.Size(30, 20);
@@ -274,7 +375,7 @@
             // 
             this.ValutaLB.AutoSize = true;
             this.ValutaLB.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.ValutaLB.Location = new System.Drawing.Point(107, 56);
+            this.ValutaLB.Location = new System.Drawing.Point(88, 56);
             this.ValutaLB.Name = "ValutaLB";
             this.ValutaLB.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.ValutaLB.Size = new System.Drawing.Size(18, 20);
@@ -286,7 +387,7 @@
             // 
             this.EchDateLB.AutoSize = true;
             this.EchDateLB.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.EchDateLB.Location = new System.Drawing.Point(107, 35);
+            this.EchDateLB.Location = new System.Drawing.Point(88, 35);
             this.EchDateLB.Name = "EchDateLB";
             this.EchDateLB.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.EchDateLB.Size = new System.Drawing.Size(75, 20);
@@ -347,7 +448,7 @@
             this.listView1.ForeColor = System.Drawing.Color.White;
             this.listView1.Location = new System.Drawing.Point(4, 271);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(802, 303);
+            this.listView1.Size = new System.Drawing.Size(802, 244);
             this.listView1.TabIndex = 43;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
@@ -448,9 +549,9 @@
             // 
             // CancelBT
             // 
-            this.CancelBT.Location = new System.Drawing.Point(17, 589);
+            this.CancelBT.Location = new System.Drawing.Point(27, 598);
             this.CancelBT.Name = "CancelBT";
-            this.CancelBT.Size = new System.Drawing.Size(186, 29);
+            this.CancelBT.Size = new System.Drawing.Size(139, 29);
             this.CancelBT.TabIndex = 24;
             this.CancelBT.Text = "Cancel";
             this.CancelBT.UseVisualStyleBackColor = true;
@@ -458,30 +559,33 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(496, 589);
+            this.button3.Location = new System.Drawing.Point(496, 598);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(131, 29);
             this.button3.TabIndex = 23;
             this.button3.Text = "Select Printer";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button2
+            // PrintPrewBT
             // 
-            this.button2.Location = new System.Drawing.Point(647, 589);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(131, 29);
-            this.button2.TabIndex = 22;
-            this.button2.Text = "Print";
-            this.button2.UseVisualStyleBackColor = true;
+            this.PrintPrewBT.Location = new System.Drawing.Point(647, 598);
+            this.PrintPrewBT.Name = "PrintPrewBT";
+            this.PrintPrewBT.Size = new System.Drawing.Size(131, 29);
+            this.PrintPrewBT.TabIndex = 22;
+            this.PrintPrewBT.Text = "Print";
+            this.PrintPrewBT.UseVisualStyleBackColor = true;
+            this.PrintPrewBT.Click += new System.EventHandler(this.PrintPrewBT_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(839, 589);
+            this.button1.Location = new System.Drawing.Point(839, 598);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(131, 29);
             this.button1.TabIndex = 21;
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // radioButtonENG
             // 
@@ -565,7 +669,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(2, 168);
+            this.label2.Location = new System.Drawing.Point(2, 150);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 20);
             this.label2.TabIndex = 11;
@@ -574,7 +678,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(2, 122);
+            this.label1.Location = new System.Drawing.Point(2, 106);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 20);
             this.label1.TabIndex = 10;
@@ -587,6 +691,8 @@
             this.QuantityTB.Size = new System.Drawing.Size(128, 26);
             this.QuantityTB.TabIndex = 8;
             this.QuantityTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.QuantityTB.MouseClick += new System.Windows.Forms.MouseEventHandler(this.QuantityTB_MouseClick);
+            this.QuantityTB.Enter += new System.EventHandler(this.QuantityTB_Enter);
             // 
             // RebateTB
             // 
@@ -594,13 +700,18 @@
             this.RebateTB.Name = "RebateTB";
             this.RebateTB.Size = new System.Drawing.Size(129, 26);
             this.RebateTB.TabIndex = 7;
+            this.RebateTB.Text = "0";
             this.RebateTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.RebateTB.MouseClick += new System.Windows.Forms.MouseEventHandler(this.RebateTB_MouseClick);
+            this.RebateTB.Enter += new System.EventHandler(this.RebateTB_Enter);
             this.RebateTB.Leave += new System.EventHandler(this.RebateTB_Leave);
             // 
             // PartCodeTB
             // 
-            this.PartCodeTB.Location = new System.Drawing.Point(6, 184);
+            this.PartCodeTB.BackColor = System.Drawing.Color.Moccasin;
+            this.PartCodeTB.Location = new System.Drawing.Point(6, 166);
             this.PartCodeTB.Name = "PartCodeTB";
+            this.PartCodeTB.ReadOnly = true;
             this.PartCodeTB.Size = new System.Drawing.Size(197, 26);
             this.PartCodeTB.TabIndex = 4;
             // 
@@ -609,9 +720,9 @@
             this.PartNameCB.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.PartNameCB.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.PartNameCB.FormattingEnabled = true;
-            this.PartNameCB.Location = new System.Drawing.Point(6, 134);
+            this.PartNameCB.Location = new System.Drawing.Point(6, 118);
             this.PartNameCB.Name = "PartNameCB";
-            this.PartNameCB.Size = new System.Drawing.Size(518, 28);
+            this.PartNameCB.Size = new System.Drawing.Size(489, 28);
             this.PartNameCB.TabIndex = 3;
             this.PartNameCB.SelectedIndexChanged += new System.EventHandler(this.PartNameCB_SelectedIndexChanged);
             // 
@@ -621,7 +732,10 @@
             this.WorkTimeTB.Name = "WorkTimeTB";
             this.WorkTimeTB.Size = new System.Drawing.Size(128, 26);
             this.WorkTimeTB.TabIndex = 6;
+            this.WorkTimeTB.Text = "01:00";
             this.WorkTimeTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.WorkTimeTB.MouseClick += new System.Windows.Forms.MouseEventHandler(this.WorkTimeTB_MouseClick);
+            this.WorkTimeTB.Enter += new System.EventHandler(this.WorkTimeTB_Enter);
             this.WorkTimeTB.Leave += new System.EventHandler(this.WorkTimeTB_Leave);
             // 
             // PriceTB
@@ -672,7 +786,7 @@
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = global::POT.Properties.Resources.LoadDataOff;
-            this.pictureBox1.Location = new System.Drawing.Point(907, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(250, 577);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(137, 65);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -693,11 +807,31 @@
             // 
             this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
             // 
+            // printDocumentInvoice
+            // 
+            this.printDocumentInvoice.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocumentInvoice_PrintPage);
+            // 
+            // printDialog1
+            // 
+            this.printDialog1.AllowSomePages = true;
+            this.printDialog1.PrintToFile = true;
+            this.printDialog1.UseEXDialog = true;
+            // 
+            // printPreviewDialogInvoice
+            // 
+            this.printPreviewDialogInvoice.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialogInvoice.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialogInvoice.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialogInvoice.Enabled = true;
+            this.printPreviewDialogInvoice.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialogInvoice.Icon")));
+            this.printPreviewDialogInvoice.Name = "printPreviewDialog1";
+            this.printPreviewDialogInvoice.Visible = false;
+            // 
             // Racun
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1045, 662);
+            this.ClientSize = new System.Drawing.Size(1001, 662);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Racun";
@@ -739,7 +873,7 @@
         private System.Windows.Forms.Label CurencyLB;
         private System.Windows.Forms.Button CancelBT;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button PrintPrewBT;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.RadioButton radioButtonENG;
         private System.Windows.Forms.RadioButton radioButtonHRV;
@@ -772,5 +906,15 @@
         private System.Windows.Forms.Label obrJedLB;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox PriceINEURTB;
+        private System.Windows.Forms.TextBox PriceINKNTB;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Drawing.Printing.PrintDocument printDocumentInvoice;
+        private System.Windows.Forms.PrintDialog printDialog1;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialogInvoice;
     }
 }

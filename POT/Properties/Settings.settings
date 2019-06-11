@@ -125,5 +125,17 @@
     <Setting Name="MainFrSize" Type="System.Drawing.Size" Scope="User">
       <Value Profile="(Default)">0, 0</Value>
     </Setting>
+    <Setting Name="VAT" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">0.25</Value>
+    </Setting>
+    <Setting Name="NacinPlacanja" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Transakcijski račun</Value>
+    </Setting>
+    <Setting Name="PaymentForm" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Payment by transfer</Value>
+    </Setting>
+    <Setting Name="RadniSat" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

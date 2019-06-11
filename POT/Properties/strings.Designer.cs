@@ -61,6 +61,15 @@ namespace POT.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Please use this account:.
+        /// </summary>
+        internal static string ACCOUNTUSE {
+            get {
+                return ResourceManager.GetString("ACCOUNTUSE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Address.
         /// </summary>
         internal static string branchAddress {
@@ -205,6 +214,15 @@ namespace POT.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to InvoiceNumber.
+        /// </summary>
+        internal static string InvoiceNumber {
+            get {
+                return ResourceManager.GetString("InvoiceNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MADE.
         /// </summary>
         internal static string Made {
@@ -219,6 +237,15 @@ namespace POT.Properties {
         internal static string MadeBy {
             get {
                 return ResourceManager.GetString("MadeBy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Min.work time.
+        /// </summary>
+        internal static string MinWorkTime {
+            get {
+                return ResourceManager.GetString("MinWorkTime", resourceCulture);
             }
         }
         
@@ -268,11 +295,47 @@ namespace POT.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to PRICE.
+        /// </summary>
+        internal static string PRICE {
+            get {
+                return ResourceManager.GetString("PRICE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to QUA.
         /// </summary>
         internal static string QUA {
             get {
                 return ResourceManager.GetString("QUA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to REBATE.
+        /// </summary>
+        internal static string REBATE {
+            get {
+                return ResourceManager.GetString("REBATE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to REBATE.
+        /// </summary>
+        internal static string REBATEPRICE1 {
+            get {
+                return ResourceManager.GetString("REBATEPRICE1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PRICE.
+        /// </summary>
+        internal static string REBATEPRICE2 {
+            get {
+                return ResourceManager.GetString("REBATEPRICE2", resourceCulture);
             }
         }
         
@@ -376,6 +439,15 @@ namespace POT.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to TOTAL.
+        /// </summary>
+        internal static string TOTAL {
+            get {
+                return ResourceManager.GetString("TOTAL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to UserID.
         /// </summary>
         internal static string UserID {
@@ -390,6 +462,33 @@ namespace POT.Properties {
         internal static string VAT {
             get {
                 return ResourceManager.GetString("VAT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Work hour.
+        /// </summary>
+        internal static string WorkHour {
+            get {
+                return ResourceManager.GetString("WorkHour", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to WORK.
+        /// </summary>
+        internal static string WORKTIME1 {
+            get {
+                return ResourceManager.GetString("WORKTIME1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TIME.
+        /// </summary>
+        internal static string WORKTIME2 {
+            get {
+                return ResourceManager.GetString("WORKTIME2", resourceCulture);
             }
         }
     }

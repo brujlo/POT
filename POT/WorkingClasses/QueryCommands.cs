@@ -4304,7 +4304,7 @@ namespace POT
             long invID = 0;
 
             cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
-            query = "select Count(ID) from Racun where ID LIKE '" + DateTime.Now.ToString("yy") + "%'";
+            query = "select Count(ID) from Racun where ID LIKE '" + "%" + DateTime.Now.ToString("yy") + "'";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
             SqlDataReader dataReader = command.ExecuteReader();
@@ -4339,6 +4339,61 @@ namespace POT
             dataReader.Close();
             cnn.Close();
             return invID;
+        }
+
+        public Boolean SaveInvoice(List<InvoiceParts> mInvoiceList, Invoice mInvoice, int mStorno)
+        {
+            Boolean isExecuted = false;
+            long newInvId = mInvoice.GetNewInvoiceNumber();
+
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            command = cnn.CreateCommand();
+            SqlTransaction transaction = cnn.BeginTransaction();
+            command.Connection = cnn;
+            command.Transaction = transaction;
+
+            String eur = String.Format("{0:N4}", (double)mInvoice.Eur);
+            String iznos = String.Format("{0:N2}", (double)mInvoice.Iznos);
+            try
+            {
+                command.CommandText = "INSERT INTO Racun (ID, PonudaID, DatumIzdano, Iznos, DatumNaplaceno, Naplaceno, CustomerID, EUR, Napomena, VrijemeIzdano, Valuta, Operater, DanTecaja, NacinPlacanja, Storno) VALUES ("
+                    + newInvId + ", " + mInvoice.PonudaID + ", '" + mInvoice.DatumIzdano + "', '" + iznos + "', '" + mInvoice.DatumNaplaceno + "', " 
+                    + mInvoice.Naplaceno + ", " + mInvoice.CustomerID + ", '" + eur + "', '" + mInvoice.Napomena + "', '" + mInvoice.VrijemeIzdano + "', " 
+                    + mInvoice.Valuta + ", '" + mInvoice.Operater + "', '" + mInvoice.DanTecaja + "', '" + mInvoice.NacinPlacanja + "', " + mStorno + ")";
+                command.ExecuteNonQuery();
+
+                foreach (InvoiceParts prt in mInvoiceList)
+                {
+                    command.CommandText = "INSERT INTO RacunParts (RacunID, PartCode, VrijemeRada, Rabat, Kolicina, iznosRabat, iznosTotal, iznosPart) VALUES (" + newInvId + ", " + prt.PartCode + ", '" + prt.VrijemeRada + "', " + prt.Rabat + ", " + prt.Kolicina + ", '" + prt.IznosRabat + "', '" + prt.IznosTotal + "', '" + prt.IznosPart + "')";
+                    command.ExecuteNonQuery();
+                }
+
+                transaction.Commit();
+                isExecuted = true;
+            }
+            catch (Exception)
+            {
+                //new LogWriter(e1);
+                try
+                {
+                    transaction.Rollback();
+                    isExecuted = false;
+                    throw;
+                }
+                catch (Exception)
+                {
+                    //new LogWriter(e2);
+                    throw;
+                }
+            }
+            finally
+            {
+                if (cnn.State.ToString().Equals("Open"))
+                    cnn.Close();
+            }
+
+            cnn.Close();
+            return isExecuted;
         }
     }
 }

@@ -514,5 +514,53 @@ namespace POT.Properties {
                 this["MainFrSize"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0.25")]
+        public decimal VAT {
+            get {
+                return ((decimal)(this["VAT"]));
+            }
+            set {
+                this["VAT"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Transakcijski račun")]
+        public string NacinPlacanja {
+            get {
+                return ((string)(this["NacinPlacanja"]));
+            }
+            set {
+                this["NacinPlacanja"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Payment by transfer")]
+        public string PaymentForm {
+            get {
+                return ((string)(this["PaymentForm"]));
+            }
+            set {
+                this["PaymentForm"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int RadniSat {
+            get {
+                return ((int)(this["RadniSat"]));
+            }
+            set {
+                this["RadniSat"] = value;
+            }
+        }
     }
 }

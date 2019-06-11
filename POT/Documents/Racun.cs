@@ -3,13 +3,9 @@ using POT.WorkingClasses;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
 using System.Media;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Decoder = POT.WorkingClasses.Decoder;
 
@@ -24,7 +20,11 @@ namespace POT.Documents
         int valuta = 15;
         long racunID = 0;
         int rb = 0;
+
+        decimal vat = Properties.Settings.Default.VAT;
         decimal TOTAL = 0;
+        decimal TOTALTAXBASE = 0;
+        decimal TOTALTAX = 0;
 
         QueryCommands qc = new QueryCommands();
         ConnectionHelper cn = new ConnectionHelper();
@@ -46,7 +46,17 @@ namespace POT.Documents
 
         private void Racun_Load(object sender, EventArgs e)
         {
-            racunID = invoice.GetNewInvoiceNumber();
+            invoice.Naplaceno = 0;
+            invoice.Operater = WorkingUser.UserID.ToString();
+            invoice.PonudaID = 0;
+            invoice.Storno = 0;
+            if (radioButtonENG.Checked)
+                invoice.NacinPlacanja = Properties.Settings.Default.PaymentForm;
+            else
+                invoice.NacinPlacanja = Properties.Settings.Default.NacinPlacanja;
+
+
+            invoice.Id = racunID = invoice.GetNewInvoiceNumber();
             InvNbrLB.Text = invoice.IDLongtoString(racunID);
             obrJedLB.Text = Properties.Settings.Default.ObracunskaJedinica.ToString();
             QuantityTB.Text = "1";
@@ -58,15 +68,19 @@ namespace POT.Documents
 
             exchng = qc.CurrentExchangeRate();
 
-            ech =double.Parse(exchng[3]);
+            ech = double.Parse(exchng[3]);
+            invoice.Eur = (decimal)ech;
             echDate = exchng[1];
 
 
             ExchangeLB.Text = String.Format("{0,000:N3}", ech);
-            EchDateLB.Text = echDate;
+            invoice.DanTecaja = EchDateLB.Text = echDate;
+            invoice.DatumIzdano = DateTime.Now.ToString("dd.MM.yy.");
+            invoice.DatumNaplaceno = "01.01.01.";
 
             DateTime dt = DateTime.Today.AddDays(valuta);
             ValutaLB.Text = valuta.ToString() + " (" + dt.ToString("dd.MM.yy.") + ")";
+            invoice.Valuta = valuta;
 
             if (backgroundWorker1.IsBusy != true)
             {
@@ -166,46 +180,78 @@ namespace POT.Documents
 
         private void PartNameCB_SelectedIndexChanged(object sender, EventArgs e)
         {
-            indexPartCB = PartNameCB.SelectedIndex;
-
-            tempSifPart = sifrarnikList.ElementAt(indexPartCB);
-
-            String prtCod = String.Format("{0:000 000 000}", sifrarnikList.ElementAt(indexPartCB).FullCode);
-            PartCodeTB.Text = String.Format("{0:00}", mainCmp.Code) + String.Format("{0:00}" + " ", customerCmp.Code) + prtCod;
-
-            if (radioButtonHRV.Checked)
-                PriceTB.Text = CheckIfKNZero(sifrarnikList.ElementAt(indexPartCB));
+            if (CustomerCB.Text.Equals("") || CustomerCB.Text.Equals("Customer"))
+            {
+                MessageBox.Show("Please, select company first.","Caution", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
             else
-                PriceTB.Text = CheckIfKNZero(sifrarnikList.ElementAt(indexPartCB));
+            {
+                indexPartCB = PartNameCB.SelectedIndex;
+
+                tempSifPart = sifrarnikList.ElementAt(indexPartCB);
+
+                String prtCod = String.Format("{0:000 000 000}", sifrarnikList.ElementAt(indexPartCB).FullCode);
+                PartCodeTB.Text = String.Format("{0:00}", mainCmp.Code) + String.Format("{0:00}" + " ", customerCmp.Code) + prtCod;
+
+                if (radioButtonHRV.Checked)
+                    PriceTB.Text = CheckIfKNZero(sifrarnikList.ElementAt(indexPartCB));
+                else
+                    PriceTB.Text = CheckIfKNZero(sifrarnikList.ElementAt(indexPartCB));
+
+                PriceINEURTB.Text = String.Format("{0:N2}", sifrarnikList.ElementAt(indexPartCB).PriceInEur);
+                PriceINKNTB.Text = String.Format("{0:N2}", sifrarnikList.ElementAt(indexPartCB).PriceInKn);
+            }
         }
 
         private void CustomerCB_SelectedIndexChanged(object sender, EventArgs e)
         {
             customerCmp = cmpList.ElementAt(CustomerCB.SelectedIndex);
+            invoice.CustomerID = customerCmp.ID;
         }
 
         private void radioButtonENG_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButtonENG.Checked)
+            try
             {
-                CurencyLB.Text = "€";
-                CurrencyLB.Text = "€";
-                ExchangeLB.Text = String.Format( "{0:N3}",(1 / ech));
-            }
-            else
-            {
-                CurencyLB.Text = "KN";
-                CurrencyLB.Text = "KN";
-                ExchangeLB.Text = String.Format("{0:N3}", ech);
-            }
+                if (radioButtonENG.Checked)
+                {
+                    invoice.NacinPlacanja = Properties.Settings.Default.PaymentForm;
 
-            if (indexPartCB != -1)
-            {
-                if (radioButtonHRV.Checked)
-                    PriceTB.Text = CheckIfKNZero(sifrarnikList.ElementAt(indexPartCB));
+                    CurencyLB.Text = "€";
+                    CurrencyLB.Text = "€";
+                    ExchangeLB.Text = String.Format("{0:N3}", (1 / ech));
+
+                    TaxBaseLB.Text = String.Format("{0:0.00}", TOTALTAXBASE / (decimal)ech);
+                    VATLB.Text = String.Format("{0:0.00}", TOTALTAX / (decimal)ech);
+                }
                 else
-                    PriceTB.Text = CheckIfKNZero(sifrarnikList.ElementAt(indexPartCB));
+                {
+                    invoice.NacinPlacanja = Properties.Settings.Default.NacinPlacanja;
+
+                    CurencyLB.Text = "KN";
+                    CurrencyLB.Text = "KN";
+                    ExchangeLB.Text = String.Format("{0:N3}", ech);
+
+                    TaxBaseLB.Text = String.Format("{0:0.00}", TOTALTAXBASE);
+                    VATLB.Text = String.Format("{0:0.00}", TOTALTAX);
+                }
+
+                if (indexPartCB != -1)
+                {
+                    decimal kn = sifrarnikList.ElementAt(indexPartCB).PriceOutKn;
+                    decimal eur = sifrarnikList.ElementAt(indexPartCB).PriceOutEur;
+
+                    if (radioButtonENG.Checked)
+                    {
+                        PriceTB.Text = eur > 0 ? String.Format("{0:N2}", eur) : String.Format("{0:N2}", kn / (decimal)ech);
+                    }
+                    else
+                    {
+                        PriceTB.Text = kn > 0 ? String.Format("{0:N2}", kn) : String.Format("{0:N2}", eur * (decimal)ech);
+                    }
+                }
             }
+            catch { }
         }
 
         private String CheckIfKNZero(PartSifrarnik sprt)
@@ -277,9 +323,20 @@ namespace POT.Documents
             {
                 InvoiceParts invoicePart = new InvoiceParts(racunID, tempSifPart.FullCode, vrijemeRada, rabat, kolicina);
 
-                invoicePartsList.Add(invoicePart);
+                int indx = invoicePart.Compare(invoicePartsList, invoicePart);
+                if ( indx >= 0 )
+                {
+                    listView1.Items[indx].SubItems[6].Text = (invoicePartsList.ElementAt(indx).Kolicina += invoicePart.Kolicina).ToString();
+                    SystemSounds.Hand.Play();
+                }
+                else
+                {
+                    invoicePartsList.Add(invoicePart);
 
-                addToList(true, invoicePart);
+                    addToList(true, invoicePart);
+                }
+
+                PartNameCB.Focus();
             }
             catch (Exception e1)
             {
@@ -306,7 +363,12 @@ namespace POT.Documents
             decimal partTotal = invPrt.PartTotalPrice(cijena, popust, invPrt.VrijemeRada);
             decimal partsTotal = partTotal * invPrt.Kolicina;
 
-            TOTAL += partsTotal;
+            //TOTAL += partsTotal;
+            TOTALTAXBASE += partsTotal;
+            TOTALTAX = TOTALTAXBASE * vat;
+            TOTAL = TOTALTAX + TOTALTAXBASE;
+
+            invoice.Iznos = TOTAL;
 
             try
             {
@@ -315,7 +377,7 @@ namespace POT.Documents
                 lvi1.Text = rb.ToString();
                 
                 lvi1.SubItems.Add(tempSifPart.FullName);
-                lvi1.SubItems.Add(mainCmp.Code.ToString() + customerCmp.Code.ToString() + Decoder.GetFullPartCodeStr(tempSifPart.FullCode.ToString()));
+                lvi1.SubItems.Add(mainCmp.Code.ToString() + customerCmp.Code.ToString() + Decoder.GetFullPartCodeStr(tempSifPart.FullCode));
                 lvi1.SubItems.Add(String.Format("{0:0.00}", cijena));
                 lvi1.SubItems.Add(invPrt.VrijemeRada);
                 lvi1.SubItems.Add(String.Format("{0:0.00}", invPrt.Rabat));
@@ -329,14 +391,23 @@ namespace POT.Documents
                 listView1.Items.Add(lvi1);
 
                 String dd = tempSifPart.FullName + ", " + Decoder.GetFullPartCodeStr(tempSifPart.FullCode.ToString()) + ", " + tempSifPart.PriceInKn.ToString() + ", " + invPrt.VrijemeRada + ", " + invPrt.Rabat.ToString() + ", " + invPrt.Kolicina.ToString() + ", " + partTotal + ", " + partsTotal + ", " + TOTAL.ToString();
+                invPrt.IznosPart = String.Format("{0:N2}", cijena);
+                invPrt.IznosRabat = String.Format("{0:N2}", partTotal);
+                invPrt.IznosTotal = String.Format("{0:N2}", partsTotal);
 
                 if (radioButtonENG.Checked)
                 {
+                    TaxBaseLB.Text = String.Format("{0:0.00}", TOTALTAXBASE * (decimal)ech);
+                    VATLB.Text = String.Format("{0:0.00}", TOTALTAX * (decimal)ech);
+
                     TotalEURLB.Text = String.Format("{0:0.00}", TOTAL);
                     TotalKNLB.Text = String.Format("{0:0.00}", (TOTAL * (decimal)ech));
                 }
                 else
                 {
+                    TaxBaseLB.Text = String.Format("{0:0.00}", TOTALTAXBASE);
+                    VATLB.Text = String.Format("{0:0.00}", TOTALTAX);
+
                     TotalEURLB.Text = String.Format("{0:0.00}", TOTAL / (decimal)ech);
                     TotalKNLB.Text = String.Format("{0:0.00}", TOTAL);
                 }
@@ -395,6 +466,150 @@ namespace POT.Documents
 
             DateTime dt = DateTime.Today.AddDays(valuta);
             ValutaLB.Text = valuta.ToString() + " (" + dt.ToString("dd.MM.yy.") + ")";
+        }
+
+        private void WorkTimeTB_Enter(object sender, EventArgs e)
+        {
+            WorkTimeTB.Focus();
+            WorkTimeTB.SelectAll();
+        }
+
+        private void RebateTB_Enter(object sender, EventArgs e)
+        {
+            RebateTB.Focus();
+            RebateTB.SelectAll();
+        }
+
+        private void QuantityTB_Enter(object sender, EventArgs e)
+        {
+            QuantityTB.Focus();
+            QuantityTB.SelectAll();
+        }
+
+        private void QuantityTB_MouseClick(object sender, MouseEventArgs e)
+        {
+            QuantityTB.Focus();
+            QuantityTB.SelectAll();
+        }
+
+        private void RebateTB_MouseClick(object sender, MouseEventArgs e)
+        {
+            RebateTB.Focus();
+            RebateTB.SelectAll();
+        }
+
+        private void WorkTimeTB_MouseClick(object sender, MouseEventArgs e)
+        {
+            WorkTimeTB.Focus();
+            WorkTimeTB.SelectAll();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Program.SaveStart();
+
+            ///////////////// LogMe ////////////////////////
+            String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
+            String usedQC = "SaveInvoice";
+            String data = "";
+            String Result = "";
+            LogWriter lw = new LogWriter();
+            ////////////////////////////////////////////////
+            ///
+
+            invoice.VrijemeIzdano = DateTime.Now.ToString("hh:mm");
+            invoice.Napomena = textBox4.Text;
+
+            foreach (InvoiceParts prt in invoicePartsList)
+            {
+                prt.AddInvoiceToPart(invoice);
+            }
+            try
+            {
+                if (qc.SaveInvoice(invoicePartsList, invoice, invoice.Storno))
+                {
+                    Program.SaveStop();
+                    MessageBox.Show("SAVED");
+                }
+                else
+                {
+                    Program.SaveStop();
+                    MessageBox.Show("NOT SAVED");
+                }
+            }
+            catch(Exception e1)
+            {
+                Program.SaveStop();
+                data = invoice.Id.ToString() + Environment.NewLine;
+                Result = e1.Message;
+                lw.LogMe(function, usedQC, data, Result);
+                MessageBox.Show(Result, "NOT SAVED", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+            label23.Text = "Letters left " + (200 - textBox4.TextLength).ToString();
+        }
+
+        private void printDocumentInvoice_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            invoice.VrijemeIzdano = DateTime.Now.ToString("hh:mm");
+            invoice.Napomena = textBox4.Text;
+
+            foreach (InvoiceParts prt in invoicePartsList)
+            {
+                prt.AddInvoiceToPart(invoice);
+            }
+
+            ///////////////// LogMe ////////////////////////
+            String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
+            String usedQC = "Print";
+            String data = "";
+            String Result = "";
+            LogWriter lw = new LogWriter();
+            ////////////////////////////////////////////////
+            ///
+            
+            PrintMeInvoice pr = new PrintMeInvoice(invoicePartsList, invoice, 0,true);
+            pr.Print(e);
+            
+            //data = cmpS + ", " + cmpR + ", " + sifrarnikArr + ", " + partListPrint + ", " + IISNumber + ", " + napomenaIISPrint + ", IIS, customer, false";
+            Result = "Print page called";
+            lw.LogMe(function, usedQC, data, Result);
+        }
+
+        private void PrintPrewBT_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.pageNbr = 1;
+            Properties.Settings.Default.partRows = 0;
+            Properties.Settings.Default.printingSN = false;
+
+            int screenWidth = Screen.PrimaryScreen.Bounds.Width;
+            int screenHeight = Screen.PrimaryScreen.Bounds.Height;
+
+            printPreviewDialogInvoice.Document = printDocumentInvoice;
+
+            printPreviewDialogInvoice.Size = new System.Drawing.Size(screenWidth - ((screenWidth / 100) * 60), screenHeight - (screenHeight / 100) * 10);
+            printPreviewDialogInvoice.ShowDialog();
+
+            //textBox1.SelectAll();
+            //isFocused = true;
+            //textBox1.Focus();
+            //isFocused = false;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            PrintDialog printDialog1 = new PrintDialog();
+
+            printDialog1.Document = printDocumentInvoice;
+            DialogResult result = printDialog1.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                PrintPrewBT_Click(sender, e);
+                //printDocumentPrim.Print();
+            }
         }
     }
 }

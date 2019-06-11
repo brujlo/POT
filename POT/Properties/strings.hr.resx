@@ -253,4 +253,37 @@
   <data name="ServiceReport" xml:space="preserve">
     <value>IZVJEŠTAJ SERVISA</value>
   </data>
+  <data name="InvoiceNumber" xml:space="preserve">
+    <value>Broj računa</value>
+  </data>
+  <data name="MinWorkTime" xml:space="preserve">
+    <value>Obračunska jedinica</value>
+  </data>
+  <data name="WorkHour" xml:space="preserve">
+    <value>Radni sat</value>
+  </data>
+  <data name="PRICE" xml:space="preserve">
+    <value>CIJENA</value>
+  </data>
+  <data name="REBATE" xml:space="preserve">
+    <value>POPUST</value>
+  </data>
+  <data name="REBATEPRICE1" xml:space="preserve">
+    <value>CIJENA S</value>
+  </data>
+  <data name="TOTAL" xml:space="preserve">
+    <value>UKUPNO</value>
+  </data>
+  <data name="WORKTIME1" xml:space="preserve">
+    <value>VRIJ.</value>
+  </data>
+  <data name="REBATEPRICE2" xml:space="preserve">
+    <value>POPUSTOM</value>
+  </data>
+  <data name="WORKTIME2" xml:space="preserve">
+    <value>RADA</value>
+  </data>
+  <data name="ACCOUNTUSE" xml:space="preserve">
+    <value>Molimo platite na račun:</value>
+  </data>
 </root>

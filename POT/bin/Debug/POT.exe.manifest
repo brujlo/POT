@@ -43,26 +43,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="POT.exe" size="9377192">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="POT.exe" size="9408936">
       <assemblyIdentity name="POT" version="1.5.1.1" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>7xFPo9KnyOxKxCGvs3Pvr2sRyrgnnmd6PgbMQgOzcV8=</dsig:DigestValue>
+        <dsig:DigestValue>nKp6BsE3EW8fOI4JAe+WodI6wSFaGcZ/Gu+PUXyTNjA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="hr\POT.resources.dll" size="5632">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="hr\POT.resources.dll" size="6144">
       <assemblyIdentity name="POT.resources" version="1.5.1.1" language="hr" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>CpcidujpPKbyNA1r207IPMExJ6q5wFB6XmU6rPFi3yc=</dsig:DigestValue>
+        <dsig:DigestValue>QslNsNC0Qqb4UxLnKB/Us5J5CtdjnJhzSw/sRZHBV2c=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -75,13 +75,13 @@
       <dsig:DigestValue>VcLRYZwcu3z9pTglAU5ofa3USlMwRw7Z7NBaG6SeT6I=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="POT.exe.config" size="5559">
+  <file name="POT.exe.config" size="6074">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>tE3hx6x1yjX5LWSH8N3aCKEmFNQ1+/hDOFacJ6pDxpM=</dsig:DigestValue>
+      <dsig:DigestValue>tdZB5MCPaSUmH023Ye+/q4jO5YymIhEkLO3zVQXD6QI=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

@@ -21,14 +21,20 @@ namespace POT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
             load = new Loading();
             save = new Saving();
+
             Application.Run(new LoginFR());
         }
 
         public static void LoadStart()
         {
-            new Thread(() => load.ShowDialog()).Start();
+            try
+            {
+                new Thread(() => load.ShowDialog()).Start();
+            }
+            catch { }
         }
 
         public static void LoadStop()
@@ -45,7 +51,11 @@ namespace POT
 
         public static void SaveStart()
         {
-            new Thread(() => save.ShowDialog()).Start();
+            try
+            {
+                new Thread(() => save.ShowDialog()).Start();
+            }
+            catch { }
         }
 
         public static void SaveStop()

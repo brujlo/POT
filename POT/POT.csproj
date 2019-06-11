@@ -219,6 +219,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>strings.resx</DependentUpon>
     </Compile>
+    <Compile Include="WorkingClasses\PrintMeInvoice.cs" />
     <Compile Include="WorkingClasses\PrintMeISS.cs" />
     <Compile Include="WorkingClasses\PrintMeRac.cs" />
     <Compile Include="WorkingClasses\Selector.cs">

@@ -250,4 +250,37 @@
   <data name="ServiceReport" xml:space="preserve">
     <value>SERVICE REPORT</value>
   </data>
+  <data name="InvoiceNumber" xml:space="preserve">
+    <value>InvoiceNumber</value>
+  </data>
+  <data name="MinWorkTime" xml:space="preserve">
+    <value>Min.work time</value>
+  </data>
+  <data name="WorkHour" xml:space="preserve">
+    <value>Work hour</value>
+  </data>
+  <data name="PRICE" xml:space="preserve">
+    <value>PRICE</value>
+  </data>
+  <data name="REBATE" xml:space="preserve">
+    <value>REBATE</value>
+  </data>
+  <data name="REBATEPRICE1" xml:space="preserve">
+    <value>REBATE</value>
+  </data>
+  <data name="TOTAL" xml:space="preserve">
+    <value>TOTAL</value>
+  </data>
+  <data name="WORKTIME1" xml:space="preserve">
+    <value>WORK</value>
+  </data>
+  <data name="REBATEPRICE2" xml:space="preserve">
+    <value>PRICE</value>
+  </data>
+  <data name="WORKTIME2" xml:space="preserve">
+    <value>TIME</value>
+  </data>
+  <data name="ACCOUNTUSE" xml:space="preserve">
+    <value>Please use this account:</value>
+  </data>
 </root>
