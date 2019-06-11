@@ -50,7 +50,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>nKp6BsE3EW8fOI4JAe+WodI6wSFaGcZ/Gu+PUXyTNjA=</dsig:DigestValue>
+        <dsig:DigestValue>QcNZRxy1Jnptay/TRxg9jyXLhI6DpDtrcfbkEcKpeZg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -62,7 +62,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>QslNsNC0Qqb4UxLnKB/Us5J5CtdjnJhzSw/sRZHBV2c=</dsig:DigestValue>
+        <dsig:DigestValue>HxDYjMnMhewobD1PlEkn2qPk/YuWVFMcvHzILh9ws1g=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -75,13 +75,13 @@
       <dsig:DigestValue>VcLRYZwcu3z9pTglAU5ofa3USlMwRw7Z7NBaG6SeT6I=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="POT.exe.config" size="6074">
+  <file name="POT.exe.config" size="6192">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>tdZB5MCPaSUmH023Ye+/q4jO5YymIhEkLO3zVQXD6QI=</dsig:DigestValue>
+      <dsig:DigestValue>8vdeHFvvpsqai86KRuWAOFhrmREh7ZOCH79W9YcnCQM=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

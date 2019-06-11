@@ -14397,3 +14397,1402 @@ Parameter name: emSize
 
 - 10.06.19. 01:47 - App turned off
     *** BrunoBrckovic *** 
+
+- 11.06.19. 19:02
+    - LOGED change: POT.SetDBConnection - button2_Click
+     - Used: DB connection address and name save.
+     - Data: 192.168.100.101, dmd
+     - Result: Saved, no msgToUser
+    ***  *** 
+
+
+- 11.06.19. 19:02 - App started
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 19:02
+    - LOGED change: POT.MainCmpSelector - button1_Click
+     - Used: Main cmp select
+     - Data: 
+     - Result: Main cmp selected, please relog to see changes.
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:02 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 19:02 - App started
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 19:02
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:02
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:05
+    - LOGED change: POT.Primka - button1_Click
+     - Used: Add to list
+     - Data: 0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:05
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:05
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 47
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 47
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:05
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 58
+   at POT.Primka.button2_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 695
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 58
+   at POT.Primka.button2_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 695
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:05
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:05
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 47
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 47
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:05
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 58
+   at POT.Primka.button2_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 695
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 58
+   at POT.Primka.button2_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 695
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:05
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:05
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:05
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:05
+    - LOGED change: POT.Primka - button1_Click
+     - Used: Add to list
+     - Data: 0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:05
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:05
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 47
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 47
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:05
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 58
+   at POT.Primka.button2_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 695
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 58
+   at POT.Primka.button2_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 695
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:06
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:06
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 47
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 47
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:06
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 58
+   at POT.Primka.button2_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 695
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 58
+   at POT.Primka.button2_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 695
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:06
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:06
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 47
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 47
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:06
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 58
+   at POT.Primka.button2_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 695
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 58
+   at POT.Primka.button2_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 695
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:06
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:07
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 47
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 47
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:07
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 58
+   at POT.Primka.button2_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 695
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 58
+   at POT.Primka.button2_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 695
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:07
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:08
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 47
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 47
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:08
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 58
+   at POT.Primka.button2_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 695
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 58
+   at POT.Primka.button2_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 695
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:08
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:08
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 47
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 47
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:08
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 47
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 47
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:08
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 58
+   at POT.Primka.button2_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 695
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 58
+   at POT.Primka.button2_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 695
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:08
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:10
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 47
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 47
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:12
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 47
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 47
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:12
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 58
+   at POT.Primka.button2_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 695
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 58
+   at POT.Primka.button2_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 695
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:12
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:13
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 47
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 47
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:13
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 58
+   at POT.Primka.button2_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 695
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 58
+   at POT.Primka.button2_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 695
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:13
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:13
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 47
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 47
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:13
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 58
+   at POT.Primka.button2_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 695
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 58
+   at POT.Primka.button2_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 695
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:13
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:14
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 47
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 47
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:14
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 58
+   at POT.Primka.button2_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 695
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.MyTypes.PartSifrarnik.set_Packing(String value) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 188
+   at POT.MyTypes.PartSifrarnik.GetPart(String mCode) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\PartSifrarnik.cs:line 58
+   at POT.Primka.button2_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 695
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:14
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:14
+    - LOGED change: POT.Primka - button2_Click
+     - Used: Save to db
+     - Data: 19/017
+     - Result: DONE, document nbr. 'PRIM 19/017'.
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:15
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:20
+    - LOGED change: POT.Primka - button1_Click
+     - Used: Add to list
+     - Data: 0101001002006, , , ng
+             0101001002006, , , ng
+             0101001002006, , , ng
+             0101001002006, , , ng
+             0101001002006, , , ng
+             0101001002006, , , ng
+             0101001002006, , , ng
+             0101001002006, , , ng
+             0101001002006, , , ng
+             0101001002006, , , ng
+             0101001002006, , , ng
+             0101001002006, , , ng
+             0101001002006, , , ng
+             0101001002006, , , ng
+             0101001002006, , , ng
+             0101001002006, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:20
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:20
+    - LOGED change: POT.Primka - button2_Click
+     - Used: Save to db
+     - Data: 19/018
+     - Result: DONE, document nbr. 'PRIM 19/018'.
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:20
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 753
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 753
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:20
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 753
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 753
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:20
+    - LOGED change: POT.Otpremnica - button1_Click
+     - Used: Add to list
+     - Data: 0101001002006, , , ng
+             0101001002006, , , ng
+             0101001002006, , , ng
+             0101001002006, , , ng
+             0101001002006, , , ng
+             0101001002006, , , ng
+             0101001002006, , , ng
+             0101001002006, , , ng
+             0101001002006, , , ng
+             0101001002006, , , ng
+             0101001002006, , , ng
+             0101001002006, , , ng
+             0101001002006, , , ng
+             0101001002006, , , ng
+             0101001002006, , , ng
+             0101001002006, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:20
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 753
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 753
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:20
+    - LOGED change: POT.Otpremnica - button1_Click
+     - Used: Add to list
+     - Data: 0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+             0101001002007, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:20
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 753
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 753
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:20
+    - LOGED change: POT.Otpremnica - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. OTP '19/052'.
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:20
+    - LOGED change: POT.Otpremnica - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/052, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:20
+    - LOGED change: POT.Otpremnica - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/052, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:20
+    - LOGED change: POT.Otpremnica - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/052, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:20
+    - LOGED change: POT.Otpremnica - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/052, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:20
+    - LOGED change: POT.Otpremnica - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/052, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:20
+    - LOGED change: POT.Otpremnica - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/052, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:20
+    - LOGED change: POT.Otpremnica - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/052, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:20
+    - LOGED change: POT.Otpremnica - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/052, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:20
+    - LOGED change: POT.Otpremnica - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/052, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:23
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:23
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:23
+    - LOGED change: POT.Primka - button1_Click
+     - Used: Add to list
+     - Data: 0101001002006, , , ng
+             0101001002006, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:23
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:23
+    - LOGED change: POT.Primka - button2_Click
+     - Used: Save to db
+     - Data: 19/019
+     - Result: DONE, document nbr. 'PRIM 19/019'.
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:25
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:25
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:25
+    - LOGED change: POT.Primka - button1_Click
+     - Used: Add to list
+     - Data: 0101001002006, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:25
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Primka.cs:line 880
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:25
+    - LOGED change: POT.Primka - button2_Click
+     - Used: Save to db
+     - Data: 19/020
+     - Result: DONE, document nbr. 'PRIM 19/020'.
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:27 - App turned off
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 19:31 - App started
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 19:32
+    - LOGED change: POT.SetDBConnection - button2_Click
+     - Used: DB connection address and name save.
+     - Data: cphr.ddns.net, dmd
+     - Result: Saved, no msgToUser
+    ***  *** 
+
+
+- 11.06.19. 19:32 - App started
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 19:33
+    - LOGED change: POT.SetDBConnection - button2_Click
+     - Used: DB connection address and name save.
+     - Data: cphr.ddns.net, test
+     - Result: Saved, no msgToUser
+    ***  *** 
+
+
+- 11.06.19. 19:33 - App started
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 19:34 - App turned off
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 19:35 - App started
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 19:35 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 19:35
+    - LOGED change: POT.SetDBConnection - button2_Click
+     - Used: DB connection address and name save.
+     - Data: 192.168.100.101, test
+     - Result: Saved, no msgToUser
+    *** BrunoBrckovic *** 
+
+
+- 11.06.19. 19:35 - App started
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 19:37 - App turned off
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 19:40 - App started
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 19:43 - App turned off
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 19:44 - App started
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 19:48 - Waiting
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 19:48 - Waiting
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 19:48 - Waiting
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 19:48 - Waiting
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 19:49 - Waiting
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 19:51 - App turned off
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 19:54 - App started
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 19:54 - App turned off
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 19:54 - App started
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 19:54 - App turned off
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 19:56 - App started
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 19:57 - App turned off
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 20:00 - App started
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 20:00 - App turned off
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 20:00 - App started
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 20:01 - App turned off
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 20:01 - App started
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 20:01 - App turned off
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 20:01 - App started
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 20:01 - App turned off
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 20:04 - App started
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 20:04 - App turned off
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 20:05 - App started
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 20:05 - App turned off
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 20:05 - App started
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 20:05 - App turned off
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 20:06 - App started
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 20:07 - App turned off
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 20:12 - App started
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 20:13 - Waiting
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 20:14 - App turned off
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 20:15 - App started
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 20:15 - App turned off
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 20:15 - App started
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 20:16 - App turned off
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 20:16 - App started
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 20:16 - App turned off
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 20:16 - App started
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 20:17 - App turned off
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 20:20 - App started
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 20:20 - App turned off
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 20:20 - App started
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 20:21 - App started
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 20:21 - App turned off
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 20:23 - App started
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 20:23 - App turned off
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 20:24 - App started
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 20:24 - App turned off
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 20:26 - App started
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 20:26 - App turned off
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 20:26 - App started
+    *** BrunoBrckovic *** 
+
+- 11.06.19. 20:26 - App turned off
+    *** BrunoBrckovic *** 

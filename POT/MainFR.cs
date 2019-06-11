@@ -32,14 +32,27 @@ namespace POT
 
         Boolean pictureOn = false;
 
+        System.Windows.Forms.Timer t1 = new System.Windows.Forms.Timer();
+
+        void fadeIn(object sender, EventArgs e)
+        {
+            if (Opacity >= 1)
+                t1.Stop();   //this stops the timer if the form is completely displayed
+            else
+                Opacity += 0.02;
+        }
+
         public MainFR()
         {
             //For Testing DB BUILD
             Properties.Settings.Default.DBTabelsBuilded = false;
             Properties.Settings.Default.Save();
 
-            this.Location = Properties.Settings.Default.DisplayPoint; //Pamti zadnju poziciju forme
-            this.Size = Properties.Settings.Default.MainFrSize;
+            Opacity = 0;      //first the opacity is 0
+
+            t1.Interval = 10;  //we'll increase the opacity every 10ms
+            t1.Tick += new EventHandler(fadeIn);  //this calls the function that changes opacity 
+            t1.Start();
             ///
 
             InitializeComponent();
@@ -150,6 +163,9 @@ namespace POT
 
         private void MainFR_Load(object sender, EventArgs e)
         {
+            this.Location = Properties.Settings.Default.DisplayPoint; //Pamti zadnju poziciju forme
+            this.Size = Properties.Settings.Default.MainFrSize;
+
             backgroundWorker2.WorkerReportsProgress = true;
             backgroundWorker2.WorkerSupportsCancellation = true;
 
@@ -432,6 +448,9 @@ namespace POT
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
+            //this.Location = Properties.Settings.Default.DisplayPoint; //Pamti zadnju poziciju forme
+            //this.Size = Properties.Settings.Default.MainFrSize;
+
             try
             {
                 int pHgth = pictureBox4.Height; //(90,90);
@@ -446,7 +465,9 @@ namespace POT
                     //System.Threading.Thread.Sleep(10);
                 } while (pictureBox4.Height > 0);
 
+
                 Properties.Settings.Default.DisplayPoint = Screen.FromControl(this).WorkingArea.Location;
+
                 Properties.Settings.Default.MainFrSize = this.Size;
                 Properties.Settings.Default.Save();
 

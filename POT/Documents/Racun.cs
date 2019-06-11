@@ -45,7 +45,7 @@ namespace POT.Documents
         }
 
         private void Racun_Load(object sender, EventArgs e)
-        {
+        { 
             invoice.Naplaceno = 0;
             invoice.Operater = WorkingUser.UserID.ToString();
             invoice.PonudaID = 0;
