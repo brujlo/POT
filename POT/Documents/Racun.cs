@@ -21,7 +21,7 @@ namespace POT.Documents
         long racunID = 0;
         int rb = 0;
 
-        decimal vat = Properties.Settings.Default.VAT;
+        decimal vat;
         decimal TOTAL = 0;
         decimal TOTALTAXBASE = 0;
         decimal TOTALTAX = 0;
@@ -45,15 +45,20 @@ namespace POT.Documents
         }
 
         private void Racun_Load(object sender, EventArgs e)
-        { 
+        {  
             invoice.Naplaceno = 0;
             invoice.Operater = WorkingUser.UserID.ToString();
             invoice.PonudaID = 0;
             invoice.Storno = 0;
             if (radioButtonENG.Checked)
+            {
                 invoice.NacinPlacanja = Properties.Settings.Default.PaymentForm;
-            else
+                vat = Properties.Settings.Default.TAX2 / 100;
+            }
+            else{
                 invoice.NacinPlacanja = Properties.Settings.Default.NacinPlacanja;
+                vat = Properties.Settings.Default.TAX1 / 100;
+            }
 
 
             invoice.Id = racunID = invoice.GetNewInvoiceNumber();
@@ -215,6 +220,8 @@ namespace POT.Documents
             {
                 if (radioButtonENG.Checked)
                 {
+                    vat = Properties.Settings.Default.TAX2 / 100;
+
                     invoice.NacinPlacanja = Properties.Settings.Default.PaymentForm;
 
                     CurencyLB.Text = "€";
@@ -226,6 +233,8 @@ namespace POT.Documents
                 }
                 else
                 {
+                    vat = Properties.Settings.Default.TAX1 / 100;
+
                     invoice.NacinPlacanja = Properties.Settings.Default.NacinPlacanja;
 
                     CurencyLB.Text = "KN";
@@ -318,7 +327,10 @@ namespace POT.Documents
             String vrijemeRada = WorkTimeTB.Text;
             decimal rabat = decimal.Parse(RebateTB.Text);
             int kolicina = int.Parse(QuantityTB.Text);
-            
+
+            radioButtonENG.Enabled = false;
+            radioButtonHRV.Enabled = false;
+
             try
             {
                 InvoiceParts invoicePart = new InvoiceParts(racunID, tempSifPart.FullCode, vrijemeRada, rabat, kolicina);
@@ -518,7 +530,7 @@ namespace POT.Documents
             ////////////////////////////////////////////////
             ///
 
-            invoice.VrijemeIzdano = DateTime.Now.ToString("hh:mm");
+            invoice.VrijemeIzdano = DateTime.Now.ToString("HH:mm");
             invoice.Napomena = textBox4.Text;
 
             foreach (InvoiceParts prt in invoicePartsList)
@@ -555,7 +567,7 @@ namespace POT.Documents
 
         private void printDocumentInvoice_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            invoice.VrijemeIzdano = DateTime.Now.ToString("hh:mm");
+            invoice.VrijemeIzdano = DateTime.Now.ToString("HH:mm"); //TODO Delete provjeri da li se u racunu sprema
             invoice.Napomena = textBox4.Text;
 
             foreach (InvoiceParts prt in invoicePartsList)
@@ -572,7 +584,7 @@ namespace POT.Documents
             ////////////////////////////////////////////////
             ///
             
-            PrintMeInvoice pr = new PrintMeInvoice(invoicePartsList, invoice, 0,true);
+            PrintMeInvoice pr = new PrintMeInvoice(invoicePartsList, invoice, 0, radioButtonENG.Checked, TOTALTAXBASE, TOTALTAX, true);
             pr.Print(e);
             
             //data = cmpS + ", " + cmpR + ", " + sifrarnikArr + ", " + partListPrint + ", " + IISNumber + ", " + napomenaIISPrint + ", IIS, customer, false";

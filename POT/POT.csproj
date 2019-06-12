@@ -99,6 +99,12 @@
     <Compile Include="BuildingClasses\CompanyInfo.Designer.cs">
       <DependentUpon>CompanyInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="BuildingClasses\SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuildingClasses\SettingsForm.Designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CopyPrintForms\cISS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -277,6 +283,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BuildingClasses\DeleteDBUser.resx">
       <DependentUpon>DeleteDBUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuildingClasses\SettingsForm.resx">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CopyPrintForms\cISS.resx">
       <DependentUpon>cISS.cs</DependentUpon>

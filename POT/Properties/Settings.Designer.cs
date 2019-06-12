@@ -517,18 +517,6 @@ namespace POT.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0.25")]
-        public decimal VAT {
-            get {
-                return ((decimal)(this["VAT"]));
-            }
-            set {
-                this["VAT"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("Transakcijski račun")]
         public string NacinPlacanja {
             get {
@@ -560,6 +548,104 @@ namespace POT.Properties {
             }
             set {
                 this["RadniSat"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public decimal TAX1 {
+            get {
+                return ((decimal)(this["TAX1"]));
+            }
+            set {
+                this["TAX1"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public decimal TAX2 {
+            get {
+                return ((decimal)(this["TAX2"]));
+            }
+            set {
+                this["TAX2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("VAT is not calculated according to Article 17. of the Law on PDV")]
+        public string extraLine1ENGTB {
+            get {
+                return ((string)(this["extraLine1ENGTB"]));
+            }
+            set {
+                this["extraLine1ENGTB"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("The taxpayer is not in the VAT system, according to Article 90. of the Law on PDV" +
+            "")]
+        public string extraLine2ENGTB {
+            get {
+                return ((string)(this["extraLine2ENGTB"]));
+            }
+            set {
+                this["extraLine2ENGTB"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Thank you for your trust")]
+        public string thx1ENGTB {
+            get {
+                return ((string)(this["thx1ENGTB"]));
+            }
+            set {
+                this["thx1ENGTB"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Temeljem članka 9., st.3., Zakona o računovodstvu, račun je pravovaljan bez potpi" +
+            "sa i pečata")]
+        public string extraLine1HRTB {
+            get {
+                return ((string)(this["extraLine1HRTB"]));
+            }
+            set {
+                this["extraLine1HRTB"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Porezni obveznik nije u sustavu PDV-a, temeljem zakona o PDV-u čl. 90")]
+        public string extraLine2HRTB {
+            get {
+                return ((string)(this["extraLine2HRTB"]));
+            }
+            set {
+                this["extraLine2HRTB"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Hvala na ukazanom povjerenju")]
+        public string thx1HRTB {
+            get {
+                return ((string)(this["thx1HRTB"]));
+            }
+            set {
+                this["thx1HRTB"] = value;
             }
         }
     }

@@ -125,9 +125,6 @@
     <Setting Name="MainFrSize" Type="System.Drawing.Size" Scope="User">
       <Value Profile="(Default)">0, 0</Value>
     </Setting>
-    <Setting Name="VAT" Type="System.Decimal" Scope="User">
-      <Value Profile="(Default)">0.25</Value>
-    </Setting>
     <Setting Name="NacinPlacanja" Type="System.String" Scope="User">
       <Value Profile="(Default)">Transakcijski račun</Value>
     </Setting>
@@ -136,6 +133,30 @@
     </Setting>
     <Setting Name="RadniSat" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="TAX1" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="TAX2" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="extraLine1ENGTB" Type="System.String" Scope="User">
+      <Value Profile="(Default)">VAT is not calculated according to Article 17. of the Law on PDV</Value>
+    </Setting>
+    <Setting Name="extraLine2ENGTB" Type="System.String" Scope="User">
+      <Value Profile="(Default)">The taxpayer is not in the VAT system, according to Article 90. of the Law on PDV</Value>
+    </Setting>
+    <Setting Name="thx1ENGTB" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Thank you for your trust</Value>
+    </Setting>
+    <Setting Name="extraLine1HRTB" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Temeljem članka 9., st.3., Zakona o računovodstvu, račun je pravovaljan bez potpisa i pečata</Value>
+    </Setting>
+    <Setting Name="extraLine2HRTB" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Porezni obveznik nije u sustavu PDV-a, temeljem zakona o PDV-u čl. 90</Value>
+    </Setting>
+    <Setting Name="thx1HRTB" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Hvala na ukazanom povjerenju</Value>
     </Setting>
   </Settings>
 </SettingsFile>

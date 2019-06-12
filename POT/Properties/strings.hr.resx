@@ -286,4 +286,40 @@
   <data name="ACCOUNTUSE" xml:space="preserve">
     <value>Molimo platite na račun:</value>
   </data>
+  <data name="DateTime" xml:space="preserve">
+    <value>Datum i vrijeme</value>
+  </data>
+  <data name="ExcRate" xml:space="preserve">
+    <value>Tečaj za (1€)</value>
+  </data>
+  <data name="OfferConn" xml:space="preserve">
+    <value>Vezano uz ponudu</value>
+  </data>
+  <data name="Operater" xml:space="preserve">
+    <value>Šifra operatera</value>
+  </data>
+  <data name="PaymentForm" xml:space="preserve">
+    <value>Način plačanja</value>
+  </data>
+  <data name="PaymentTime" xml:space="preserve">
+    <value>Valuta plačanja</value>
+  </data>
+  <data name="ResPersone" xml:space="preserve">
+    <value>Odgovorna osoba</value>
+  </data>
+  <data name="TAX" xml:space="preserve">
+    <value>PDV</value>
+  </data>
+  <data name="TaxBase" xml:space="preserve">
+    <value>Porezna osnovica</value>
+  </data>
+  <data name="TotalSum" xml:space="preserve">
+    <value>UKUPNO ZA PLATITI</value>
+  </data>
+  <data name="Days" xml:space="preserve">
+    <value>dana</value>
+  </data>
+  <data name="OnDay" xml:space="preserve">
+    <value>na dan</value>
+  </data>
 </root>

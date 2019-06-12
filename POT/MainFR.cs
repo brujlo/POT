@@ -934,5 +934,10 @@ namespace POT
             Racun rc = new Racun();
             rc.Show();
         }
+
+        private void linkLabel23_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            new SettingsForm().ShowDialog();
+        }
     }
 }

@@ -16945,3 +16945,3946 @@ Parameter name: emSize
      - Result: Print page called
     *** BrunoBrckovic *** 
 
+
+- 12.06.19. 11:09 - App started
+    *** BrunoBrckovic *** 
+
+- 12.06.19. 11:09
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 Platforma za novac, 1002002, 0,00, 01:00, 0, 1, 0,00, 0,00, 0,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 11:09
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 11:19
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 Platforma za novac, 1002002, 0,00, 01:00, 1, 5, 247,797, 1238,985, 1548,73125
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 11:19
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 11:21
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 11:23
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 11:24
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 11:25
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 11:25
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 11:28
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 11:28
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 11:29
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 11:31
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 11:32
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 11:32
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 11:33
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 11:34
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 11:35
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 11:35 - App turned off
+    *** BrunoBrckovic *** 
+
+- 12.06.19. 11:36 - App started
+    *** BrunoBrckovic *** 
+
+- 12.06.19. 11:37
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-R1000 Baterija, 1001001, 0,00, 01:00, 0, 1, 296,95, 296,95, 371,1875
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 11:37
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-R1000 Baterija, 1001001, 0,00, 01:00, 5, 0, 282,1025, 0,0000, 371,187500
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 11:37
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 11:38
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 11:39
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-R1000 Platforma za novac, 1001003, 0,00, 01:00, 5, 10, 627,6745, 6276,7450, 8217,118750
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 11:39
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 11:41
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 11:42
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 11:43
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 11:43
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 11:44
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 11:45
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 11:45
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 11:46
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 11:46
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 11:48
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 11:48
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 11:52
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 11:53
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 11:53
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 11:54
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 11:55
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 11:57
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 11:58
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 11:59
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:00
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:01
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:03
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:05
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:07
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:07
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:08
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:08
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:11
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:15 - App started
+    *** BrunoBrckovic *** 
+
+- 12.06.19. 12:15
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 Platforma za novac, 1002002, 0,00, 01:00, 0, 1, 0,00, 0,00, 0,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:15
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-R1000 Platforma za novac, 1001003, 0,00, 01:00, 0, 1, 660,71, 660,71, 825,8875
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:15
+    - BaseEcp: System.ArgumentException: Value of '0' is not valid for 'emSize'. 'emSize' should be greater than 0 and less than or equal to System.Single.MaxValue.
+Parameter name: emSize
+   at System.Drawing.Font.Initialize(FontFamily family, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font.Initialize(String familyName, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font..ctor(String familyName, Single emSize, FontStyle style)
+   at POT.WorkingClasses.PrintMeInvoice.fitFontSizeBold(PrintPageEventArgs e, String _WorkingStr, Int32 _FontSize, Single _FieldWith) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PrintMeInvoice.cs:line 568
+   at POT.WorkingClasses.PrintMeInvoice.printParts(PrintPageEventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PrintMeInvoice.cs:line 278
+    - InnerEcp: 
+    - MessageEcp: Value of '0' is not valid for 'emSize'. 'emSize' should be greater than 0 and less than or equal to System.Single.MaxValue.
+Parameter name: emSize
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Font.Initialize(FontFamily family, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font.Initialize(String familyName, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font..ctor(String familyName, Single emSize, FontStyle style)
+   at POT.WorkingClasses.PrintMeInvoice.fitFontSizeBold(PrintPageEventArgs e, String _WorkingStr, Int32 _FontSize, Single _FieldWith) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PrintMeInvoice.cs:line 568
+   at POT.WorkingClasses.PrintMeInvoice.printParts(PrintPageEventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PrintMeInvoice.cs:line 278
+    - TypeNameEcp: System.ArgumentException
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:15
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:19
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:21
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:21
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:23
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:28
+    - BaseEcp: System.ArgumentException: Value of '0' is not valid for 'emSize'. 'emSize' should be greater than 0 and less than or equal to System.Single.MaxValue.
+Parameter name: emSize
+   at System.Drawing.Font.Initialize(FontFamily family, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font.Initialize(String familyName, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font..ctor(String familyName, Single emSize, FontStyle style)
+   at POT.WorkingClasses.PrintMeInvoice.fitFontSizeBold(PrintPageEventArgs e, String _WorkingStr, Int32 _FontSize, Single _FieldWith)
+   at POT.WorkingClasses.PrintMeInvoice.printParts(PrintPageEventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Value of '0' is not valid for 'emSize'. 'emSize' should be greater than 0 and less than or equal to System.Single.MaxValue.
+Parameter name: emSize
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Font.Initialize(FontFamily family, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font.Initialize(String familyName, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font..ctor(String familyName, Single emSize, FontStyle style)
+   at POT.WorkingClasses.PrintMeInvoice.fitFontSizeBold(PrintPageEventArgs e, String _WorkingStr, Int32 _FontSize, Single _FieldWith)
+   at POT.WorkingClasses.PrintMeInvoice.printParts(PrintPageEventArgs e)
+    - TypeNameEcp: System.ArgumentException
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:28
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:29
+    - BaseEcp: System.ArgumentException: Value of '0' is not valid for 'emSize'. 'emSize' should be greater than 0 and less than or equal to System.Single.MaxValue.
+Parameter name: emSize
+   at System.Drawing.Font.Initialize(FontFamily family, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font.Initialize(String familyName, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font..ctor(String familyName, Single emSize, FontStyle style)
+   at POT.WorkingClasses.PrintMeInvoice.fitFontSize(PrintPageEventArgs e, String _WorkingStr, Int32 _FontSize, Single _FieldWith)
+   at POT.WorkingClasses.PrintMeInvoice.printParts(PrintPageEventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Value of '0' is not valid for 'emSize'. 'emSize' should be greater than 0 and less than or equal to System.Single.MaxValue.
+Parameter name: emSize
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Font.Initialize(FontFamily family, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font.Initialize(String familyName, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font..ctor(String familyName, Single emSize, FontStyle style)
+   at POT.WorkingClasses.PrintMeInvoice.fitFontSize(PrintPageEventArgs e, String _WorkingStr, Int32 _FontSize, Single _FieldWith)
+   at POT.WorkingClasses.PrintMeInvoice.printParts(PrintPageEventArgs e)
+    - TypeNameEcp: System.ArgumentException
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:29
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:30
+    - BaseEcp: System.ArgumentException: Value of '0' is not valid for 'emSize'. 'emSize' should be greater than 0 and less than or equal to System.Single.MaxValue.
+Parameter name: emSize
+   at System.Drawing.Font.Initialize(FontFamily family, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font.Initialize(String familyName, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font..ctor(String familyName, Single emSize, FontStyle style)
+   at POT.WorkingClasses.PrintMeInvoice.fitFontSize(PrintPageEventArgs e, String _WorkingStr, Int32 _FontSize, Single _FieldWith)
+   at POT.WorkingClasses.PrintMeInvoice.printParts(PrintPageEventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Value of '0' is not valid for 'emSize'. 'emSize' should be greater than 0 and less than or equal to System.Single.MaxValue.
+Parameter name: emSize
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Font.Initialize(FontFamily family, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font.Initialize(String familyName, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font..ctor(String familyName, Single emSize, FontStyle style)
+   at POT.WorkingClasses.PrintMeInvoice.fitFontSize(PrintPageEventArgs e, String _WorkingStr, Int32 _FontSize, Single _FieldWith)
+   at POT.WorkingClasses.PrintMeInvoice.printParts(PrintPageEventArgs e)
+    - TypeNameEcp: System.ArgumentException
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:30
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:32
+    - BaseEcp: System.ArgumentException: Value of '0' is not valid for 'emSize'. 'emSize' should be greater than 0 and less than or equal to System.Single.MaxValue.
+Parameter name: emSize
+   at System.Drawing.Font.Initialize(FontFamily family, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font.Initialize(String familyName, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font..ctor(String familyName, Single emSize, FontStyle style)
+   at POT.WorkingClasses.PrintMeInvoice.fitFontSize(PrintPageEventArgs e, String _WorkingStr, Int32 _FontSize, Single _FieldWith)
+   at POT.WorkingClasses.PrintMeInvoice.printParts(PrintPageEventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Value of '0' is not valid for 'emSize'. 'emSize' should be greater than 0 and less than or equal to System.Single.MaxValue.
+Parameter name: emSize
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Font.Initialize(FontFamily family, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font.Initialize(String familyName, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font..ctor(String familyName, Single emSize, FontStyle style)
+   at POT.WorkingClasses.PrintMeInvoice.fitFontSize(PrintPageEventArgs e, String _WorkingStr, Int32 _FontSize, Single _FieldWith)
+   at POT.WorkingClasses.PrintMeInvoice.printParts(PrintPageEventArgs e)
+    - TypeNameEcp: System.ArgumentException
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:32
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:32
+    - BaseEcp: System.ArgumentException: Value of '0' is not valid for 'emSize'. 'emSize' should be greater than 0 and less than or equal to System.Single.MaxValue.
+Parameter name: emSize
+   at System.Drawing.Font.Initialize(FontFamily family, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font.Initialize(String familyName, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font..ctor(String familyName, Single emSize, FontStyle style)
+   at POT.WorkingClasses.PrintMeInvoice.fitFontSize(PrintPageEventArgs e, String _WorkingStr, Int32 _FontSize, Single _FieldWith)
+   at POT.WorkingClasses.PrintMeInvoice.printParts(PrintPageEventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Value of '0' is not valid for 'emSize'. 'emSize' should be greater than 0 and less than or equal to System.Single.MaxValue.
+Parameter name: emSize
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Font.Initialize(FontFamily family, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font.Initialize(String familyName, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font..ctor(String familyName, Single emSize, FontStyle style)
+   at POT.WorkingClasses.PrintMeInvoice.fitFontSize(PrintPageEventArgs e, String _WorkingStr, Int32 _FontSize, Single _FieldWith)
+   at POT.WorkingClasses.PrintMeInvoice.printParts(PrintPageEventArgs e)
+    - TypeNameEcp: System.ArgumentException
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:33
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:42
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:42
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:43
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:45
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:46
+    - BaseEcp: System.ArgumentException: Value of '0' is not valid for 'emSize'. 'emSize' should be greater than 0 and less than or equal to System.Single.MaxValue.
+Parameter name: emSize
+   at System.Drawing.Font.Initialize(FontFamily family, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font.Initialize(String familyName, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font..ctor(String familyName, Single emSize, FontStyle style)
+   at POT.WorkingClasses.PrintMeInvoice.fitFontSizeBold(PrintPageEventArgs e, String _WorkingStr, Int32 _FontSize, Single _FieldWith)
+   at POT.WorkingClasses.PrintMeInvoice.printParts(PrintPageEventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Value of '0' is not valid for 'emSize'. 'emSize' should be greater than 0 and less than or equal to System.Single.MaxValue.
+Parameter name: emSize
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Font.Initialize(FontFamily family, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font.Initialize(String familyName, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font..ctor(String familyName, Single emSize, FontStyle style)
+   at POT.WorkingClasses.PrintMeInvoice.fitFontSizeBold(PrintPageEventArgs e, String _WorkingStr, Int32 _FontSize, Single _FieldWith)
+   at POT.WorkingClasses.PrintMeInvoice.printParts(PrintPageEventArgs e)
+    - TypeNameEcp: System.ArgumentException
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:46
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:48
+    - BaseEcp: System.ArgumentException: Value of '0' is not valid for 'emSize'. 'emSize' should be greater than 0 and less than or equal to System.Single.MaxValue.
+Parameter name: emSize
+   at System.Drawing.Font.Initialize(FontFamily family, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font.Initialize(String familyName, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font..ctor(String familyName, Single emSize, FontStyle style)
+   at POT.WorkingClasses.PrintMeInvoice.fitFontSizeBold(PrintPageEventArgs e, String _WorkingStr, Int32 _FontSize, Single _FieldWith)
+   at POT.WorkingClasses.PrintMeInvoice.printParts(PrintPageEventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Value of '0' is not valid for 'emSize'. 'emSize' should be greater than 0 and less than or equal to System.Single.MaxValue.
+Parameter name: emSize
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Font.Initialize(FontFamily family, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font.Initialize(String familyName, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font..ctor(String familyName, Single emSize, FontStyle style)
+   at POT.WorkingClasses.PrintMeInvoice.fitFontSizeBold(PrintPageEventArgs e, String _WorkingStr, Int32 _FontSize, Single _FieldWith)
+   at POT.WorkingClasses.PrintMeInvoice.printParts(PrintPageEventArgs e)
+    - TypeNameEcp: System.ArgumentException
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:48
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:48
+    - BaseEcp: System.ArgumentException: Value of '0' is not valid for 'emSize'. 'emSize' should be greater than 0 and less than or equal to System.Single.MaxValue.
+Parameter name: emSize
+   at System.Drawing.Font.Initialize(FontFamily family, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font.Initialize(String familyName, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font..ctor(String familyName, Single emSize, FontStyle style)
+   at POT.WorkingClasses.PrintMeInvoice.fitFontSizeBold(PrintPageEventArgs e, String _WorkingStr, Int32 _FontSize, Single _FieldWith)
+   at POT.WorkingClasses.PrintMeInvoice.printParts(PrintPageEventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Value of '0' is not valid for 'emSize'. 'emSize' should be greater than 0 and less than or equal to System.Single.MaxValue.
+Parameter name: emSize
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Font.Initialize(FontFamily family, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font.Initialize(String familyName, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font..ctor(String familyName, Single emSize, FontStyle style)
+   at POT.WorkingClasses.PrintMeInvoice.fitFontSizeBold(PrintPageEventArgs e, String _WorkingStr, Int32 _FontSize, Single _FieldWith)
+   at POT.WorkingClasses.PrintMeInvoice.printParts(PrintPageEventArgs e)
+    - TypeNameEcp: System.ArgumentException
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:48
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:49
+    - BaseEcp: System.ArgumentException: Value of '0' is not valid for 'emSize'. 'emSize' should be greater than 0 and less than or equal to System.Single.MaxValue.
+Parameter name: emSize
+   at System.Drawing.Font.Initialize(FontFamily family, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font.Initialize(String familyName, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font..ctor(String familyName, Single emSize, FontStyle style)
+   at POT.WorkingClasses.PrintMeInvoice.fitFontSizeBold(PrintPageEventArgs e, String _WorkingStr, Int32 _FontSize, Single _FieldWith)
+   at POT.WorkingClasses.PrintMeInvoice.printParts(PrintPageEventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Value of '0' is not valid for 'emSize'. 'emSize' should be greater than 0 and less than or equal to System.Single.MaxValue.
+Parameter name: emSize
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Font.Initialize(FontFamily family, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font.Initialize(String familyName, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font..ctor(String familyName, Single emSize, FontStyle style)
+   at POT.WorkingClasses.PrintMeInvoice.fitFontSizeBold(PrintPageEventArgs e, String _WorkingStr, Int32 _FontSize, Single _FieldWith)
+   at POT.WorkingClasses.PrintMeInvoice.printParts(PrintPageEventArgs e)
+    - TypeNameEcp: System.ArgumentException
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:49
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:51
+    - BaseEcp: System.ArgumentException: Value of '0' is not valid for 'emSize'. 'emSize' should be greater than 0 and less than or equal to System.Single.MaxValue.
+Parameter name: emSize
+   at System.Drawing.Font.Initialize(FontFamily family, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font.Initialize(String familyName, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font..ctor(String familyName, Single emSize, FontStyle style)
+   at POT.WorkingClasses.PrintMeInvoice.fitFontSizeBold(PrintPageEventArgs e, String _WorkingStr, Int32 _FontSize, Single _FieldWith)
+   at POT.WorkingClasses.PrintMeInvoice.printParts(PrintPageEventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Value of '0' is not valid for 'emSize'. 'emSize' should be greater than 0 and less than or equal to System.Single.MaxValue.
+Parameter name: emSize
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Font.Initialize(FontFamily family, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font.Initialize(String familyName, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font..ctor(String familyName, Single emSize, FontStyle style)
+   at POT.WorkingClasses.PrintMeInvoice.fitFontSizeBold(PrintPageEventArgs e, String _WorkingStr, Int32 _FontSize, Single _FieldWith)
+   at POT.WorkingClasses.PrintMeInvoice.printParts(PrintPageEventArgs e)
+    - TypeNameEcp: System.ArgumentException
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:51
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:57
+    - BaseEcp: System.ArgumentException: Value of '0' is not valid for 'emSize'. 'emSize' should be greater than 0 and less than or equal to System.Single.MaxValue.
+Parameter name: emSize
+   at System.Drawing.Font.Initialize(FontFamily family, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font.Initialize(String familyName, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font..ctor(String familyName, Single emSize, FontStyle style)
+   at POT.WorkingClasses.PrintMeInvoice.fitFontSizeBold(PrintPageEventArgs e, String _WorkingStr, Int32 _FontSize, Single _FieldWith)
+   at POT.WorkingClasses.PrintMeInvoice.printParts(PrintPageEventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Value of '0' is not valid for 'emSize'. 'emSize' should be greater than 0 and less than or equal to System.Single.MaxValue.
+Parameter name: emSize
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Font.Initialize(FontFamily family, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font.Initialize(String familyName, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font..ctor(String familyName, Single emSize, FontStyle style)
+   at POT.WorkingClasses.PrintMeInvoice.fitFontSizeBold(PrintPageEventArgs e, String _WorkingStr, Int32 _FontSize, Single _FieldWith)
+   at POT.WorkingClasses.PrintMeInvoice.printParts(PrintPageEventArgs e)
+    - TypeNameEcp: System.ArgumentException
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 12:57
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:00
+    - BaseEcp: System.ArgumentException: Value of '0' is not valid for 'emSize'. 'emSize' should be greater than 0 and less than or equal to System.Single.MaxValue.
+Parameter name: emSize
+   at System.Drawing.Font.Initialize(FontFamily family, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font.Initialize(String familyName, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font..ctor(String familyName, Single emSize, FontStyle style)
+   at POT.WorkingClasses.PrintMeInvoice.fitFontSizeBold(PrintPageEventArgs e, String _WorkingStr, Int32 _FontSize, Single _FieldWith)
+   at POT.WorkingClasses.PrintMeInvoice.printParts(PrintPageEventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Value of '0' is not valid for 'emSize'. 'emSize' should be greater than 0 and less than or equal to System.Single.MaxValue.
+Parameter name: emSize
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Font.Initialize(FontFamily family, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font.Initialize(String familyName, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font..ctor(String familyName, Single emSize, FontStyle style)
+   at POT.WorkingClasses.PrintMeInvoice.fitFontSizeBold(PrintPageEventArgs e, String _WorkingStr, Int32 _FontSize, Single _FieldWith)
+   at POT.WorkingClasses.PrintMeInvoice.printParts(PrintPageEventArgs e)
+    - TypeNameEcp: System.ArgumentException
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:00
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:02
+    - BaseEcp: System.ArgumentException: Value of '0' is not valid for 'emSize'. 'emSize' should be greater than 0 and less than or equal to System.Single.MaxValue.
+Parameter name: emSize
+   at System.Drawing.Font.Initialize(FontFamily family, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font.Initialize(String familyName, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font..ctor(String familyName, Single emSize, FontStyle style)
+   at POT.WorkingClasses.PrintMeInvoice.fitFontSizeBold(PrintPageEventArgs e, String _WorkingStr, Int32 _FontSize, Single _FieldWith)
+   at POT.WorkingClasses.PrintMeInvoice.printParts(PrintPageEventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Value of '0' is not valid for 'emSize'. 'emSize' should be greater than 0 and less than or equal to System.Single.MaxValue.
+Parameter name: emSize
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Font.Initialize(FontFamily family, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font.Initialize(String familyName, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font..ctor(String familyName, Single emSize, FontStyle style)
+   at POT.WorkingClasses.PrintMeInvoice.fitFontSizeBold(PrintPageEventArgs e, String _WorkingStr, Int32 _FontSize, Single _FieldWith)
+   at POT.WorkingClasses.PrintMeInvoice.printParts(PrintPageEventArgs e)
+    - TypeNameEcp: System.ArgumentException
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:02
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:02
+    - BaseEcp: System.ArgumentException: Value of '0' is not valid for 'emSize'. 'emSize' should be greater than 0 and less than or equal to System.Single.MaxValue.
+Parameter name: emSize
+   at System.Drawing.Font.Initialize(FontFamily family, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font.Initialize(String familyName, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font..ctor(String familyName, Single emSize, FontStyle style)
+   at POT.WorkingClasses.PrintMeInvoice.fitFontSizeBold(PrintPageEventArgs e, String _WorkingStr, Int32 _FontSize, Single _FieldWith)
+   at POT.WorkingClasses.PrintMeInvoice.printParts(PrintPageEventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Value of '0' is not valid for 'emSize'. 'emSize' should be greater than 0 and less than or equal to System.Single.MaxValue.
+Parameter name: emSize
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Font.Initialize(FontFamily family, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font.Initialize(String familyName, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font..ctor(String familyName, Single emSize, FontStyle style)
+   at POT.WorkingClasses.PrintMeInvoice.fitFontSizeBold(PrintPageEventArgs e, String _WorkingStr, Int32 _FontSize, Single _FieldWith)
+   at POT.WorkingClasses.PrintMeInvoice.printParts(PrintPageEventArgs e)
+    - TypeNameEcp: System.ArgumentException
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:02
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:03
+    - BaseEcp: System.ArgumentException: Value of '0' is not valid for 'emSize'. 'emSize' should be greater than 0 and less than or equal to System.Single.MaxValue.
+Parameter name: emSize
+   at System.Drawing.Font.Initialize(FontFamily family, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font.Initialize(String familyName, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font..ctor(String familyName, Single emSize, FontStyle style)
+   at POT.WorkingClasses.PrintMeInvoice.fitFontSizeBold(PrintPageEventArgs e, String _WorkingStr, Int32 _FontSize, Single _FieldWith)
+   at POT.WorkingClasses.PrintMeInvoice.printParts(PrintPageEventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Value of '0' is not valid for 'emSize'. 'emSize' should be greater than 0 and less than or equal to System.Single.MaxValue.
+Parameter name: emSize
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Font.Initialize(FontFamily family, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font.Initialize(String familyName, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font..ctor(String familyName, Single emSize, FontStyle style)
+   at POT.WorkingClasses.PrintMeInvoice.fitFontSizeBold(PrintPageEventArgs e, String _WorkingStr, Int32 _FontSize, Single _FieldWith)
+   at POT.WorkingClasses.PrintMeInvoice.printParts(PrintPageEventArgs e)
+    - TypeNameEcp: System.ArgumentException
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:03
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:04
+    - BaseEcp: System.ArgumentException: Value of '0' is not valid for 'emSize'. 'emSize' should be greater than 0 and less than or equal to System.Single.MaxValue.
+Parameter name: emSize
+   at System.Drawing.Font.Initialize(FontFamily family, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font.Initialize(String familyName, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font..ctor(String familyName, Single emSize, FontStyle style)
+   at POT.WorkingClasses.PrintMeInvoice.fitFontSizeBold(PrintPageEventArgs e, String _WorkingStr, Int32 _FontSize, Single _FieldWith)
+   at POT.WorkingClasses.PrintMeInvoice.printParts(PrintPageEventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Value of '0' is not valid for 'emSize'. 'emSize' should be greater than 0 and less than or equal to System.Single.MaxValue.
+Parameter name: emSize
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Font.Initialize(FontFamily family, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font.Initialize(String familyName, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font..ctor(String familyName, Single emSize, FontStyle style)
+   at POT.WorkingClasses.PrintMeInvoice.fitFontSizeBold(PrintPageEventArgs e, String _WorkingStr, Int32 _FontSize, Single _FieldWith)
+   at POT.WorkingClasses.PrintMeInvoice.printParts(PrintPageEventArgs e)
+    - TypeNameEcp: System.ArgumentException
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:04
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:05
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:06
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:07
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:08
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:08
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:10
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:10
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:12
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:14
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:14
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:18
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:18
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:23 - App started
+    *** BrunoBrckovic *** 
+
+- 12.06.19. 13:24
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 Platforma za novac, 1002002, 0,00, 01:00, 0, 1, 500, 500, 625,00
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:24
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 Casice, 1002001, 162,00, 01:00, 0, 5, 300,00, 1500,00, 2500,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:24
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:25
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:27
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:28
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:29
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:30
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:30
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:30
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:31
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:31
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:32
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:33
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:36
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:37
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:38
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:38
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:39
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:43
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:44
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:46
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:48
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:48
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:54
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:55
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 13:57
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 14:02
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 14:03
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 14:03
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 14:04
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 14:06
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 14:06
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 14:07
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 14:07
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 14:08
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 14:09
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 14:15
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-R1000 Casice, 1001002, 162,00, 01:00, 5, 15, 38,0000, 570,0000, 3212,500000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 14:16
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 14:16
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 14:17
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 14:22
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 14:22
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 14:23
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 14:23
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 14:25
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 14:26
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 14:26
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 14:28
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 14:28
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 14:30
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 14:31
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 14:32
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 14:36
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 14:36
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 14:51
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 14:53
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 14:54 - App started
+    *** BrunoBrckovic *** 
+
+- 12.06.19. 14:54
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at POT.Documents.Racun.button4_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Racun.cs:line 320
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.PerformClick()
+   at System.Windows.Forms.Form.ProcessDialogKey(Keys keyData)
+   at System.Windows.Forms.Control.ProcessDialogKey(Keys keyData)
+   at System.Windows.Forms.Control.ProcessDialogKey(Keys keyData)
+   at System.Windows.Forms.Control.ProcessDialogKey(Keys keyData)
+   at System.Windows.Forms.Control.PreProcessMessage(Message& msg)
+   at System.Windows.Forms.Control.PreProcessControlMessageInternal(Control target, Message& msg)
+   at System.Windows.Forms.Application.ThreadContext.PreTranslateMessage(MSG& msg)
+   at System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FPreTranslateMessage(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\StartForm.cs:line 116
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at POT.Documents.Racun.button4_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Racun.cs:line 320
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.PerformClick()
+   at System.Windows.Forms.Form.ProcessDialogKey(Keys keyData)
+   at System.Windows.Forms.Control.ProcessDialogKey(Keys keyData)
+   at System.Windows.Forms.Control.ProcessDialogKey(Keys keyData)
+   at System.Windows.Forms.Control.ProcessDialogKey(Keys keyData)
+   at System.Windows.Forms.Control.PreProcessMessage(Message& msg)
+   at System.Windows.Forms.Control.PreProcessControlMessageInternal(Control target, Message& msg)
+   at System.Windows.Forms.Application.ThreadContext.PreTranslateMessage(MSG& msg)
+   at System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FPreTranslateMessage(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\StartForm.cs:line 116
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 14:54 - App started
+    *** BrunoBrckovic *** 
+
+- 12.06.19. 14:54
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE STP-103 , 1003000, 0,00, 01:00, 5, 10, 1332,9260, 13329,2600, 16661,575000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 14:54
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE STP-103 PS, 1003001, 0,00, 01:00, 5, 10, 317,3665, 3173,6650, 20628,656250
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 14:54
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 , 1002000, 2662,25, 01:00, 5, 10, 3313,1250, 33131,2500, 62042,718750
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 14:55
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 14:56
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 14:57
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+    - InnerEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+    - MessageEcp: A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.)
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password)
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 14:59
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 15:00
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 15:01
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 15:01
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 15:03
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 15:04
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 15:05
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 15:06
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 15:06
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 15:07
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 15:09
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 15:09
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 15:11
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 15:23
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 15:23
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 15:26
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 15:26
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 15:29
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 15:29
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 15:30
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 15:31
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 15:32
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 15:32
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 15:33
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 15:35
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 15:36
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 15:37
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 15:37
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:17
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:19
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:22
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:22
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:22
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:22
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:22
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:22
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:23
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:23
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:23
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:23
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:23
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:23
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:23
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:23
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:23
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:23
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:23
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:23
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:23
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:24
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:24
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:24
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:24
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:24
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:24
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:24
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:24
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:24
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:24
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:24
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:24
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:24
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:24
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:24
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:24
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:24
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:25
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:26
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 Platforma za novac, 1002002, 0,00, 01:00, 6, 10, 0,0000, 0,0000, 62042,718750
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:26
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 PS, 1002003, 0,00, 01:00, 6, 10, 0,0000, 0,0000, 62042,718750
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:26
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 Univerzalna Salica, 1002005, 0,00, 01:00, 6, 10, 0,0000, 0,0000, 62042,718750
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:26
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-R1000 , 1001000, 1462,50, 01:00, 6, 10, 2079,7500, 20797,5000, 88039,593750
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:26
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-R1000 Baterija, 1001001, 0,00, 01:00, 6, 10, 279,1330, 2791,3300, 91528,756250
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:26
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-R1000 Casice, 1001002, 162,00, 01:00, 6, 10, 282,0000, 2820,0000, 95053,756250
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:26
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-R1000 Platforma za novac, 1001003, 0,00, 01:00, 6, 10, 621,0674, 6210,6740, 102817,098750
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:26
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-R1000 PS, 1001004, 0,00, 01:00, 6, 10, 314,0258, 3140,2580, 106742,421250
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:26
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-R1000 Univerzalna Salica, 1001005, 0,00, 01:00, 6, 10, 244,2402, 2442,4020, 109795,423750
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:26
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: CIJENA PRIJEVOZA Prijevoz , 2001000, 0,00, 01:00, 6, 10, 0,0000, 0,0000, 109795,423750
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:27
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:27
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: CIJENA PRIJEVOZA Prijevoz Dostava IT opreme, 2001001, 262,50, 01:00, 6, 10, 246,7500, 2467,5000, 112879,798750
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:27
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:28
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: CITAC KARTICA DESK READER AIR 575 , 3001000, 0,00, 01:00, 6, 10, 0,0000, 0,0000, 112879,798750
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:28
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel RJ11 , 4001000, 0,00, 01:00, 6, 10, 0,0000, 0,0000, 112879,798750
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:28
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel RJ11 1,5m, 4001001, 9,00, 01:00, 6, 10, 12,2388, 122,3880, 113032,783750
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:28
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:30
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:33
+    - BaseEcp: System.ArgumentOutOfRangeException: Length cannot be less than zero.
+Parameter name: length
+   at System.String.Substring(Int32 startIndex, Int32 length)
+   at POT.WorkingClasses.PrintMeInvoice.printParts(PrintPageEventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Length cannot be less than zero.
+Parameter name: length
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.String.Substring(Int32 startIndex, Int32 length)
+   at POT.WorkingClasses.PrintMeInvoice.printParts(PrintPageEventArgs e)
+    - TypeNameEcp: System.ArgumentOutOfRangeException
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:33
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:33
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:33
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:35
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:35
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:36
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:37
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:37
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:37
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:38
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:38
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:38
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:38
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:39
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:39
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:40
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:40
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:43
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:43
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:44
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:44
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:44
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:44
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:47
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:47
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:47
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:47
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:48
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:48
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:49
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:49
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:50
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:50
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:52
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:53
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:53
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:54
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel strujni  , 4008000, 0,00, 01:00, 6, 10, 0,0000, 0,0000, 113032,783750
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:55
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel strujni  Euro konektor, 4008001, 36,20, 01:00, 6, 10, 67,3510, 673,5100, 113874,671250
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:55
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel strujni  Euro produzni (UPS), 4008002, 25,14, 01:00, 6, 10, 46,7744, 467,7440, 114459,351250
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:55
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel strujni  J-Y(St)Y 2x2x0,8 100m, 4008003, 308,70, 01:00, 6, 10, 574,3212, 5743,2120, 121638,366250
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:55
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel UTP cat6, bijeli , 4004000, 0,00, 01:00, 6, 10, 0,0000, 0,0000, 121638,366250
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:55
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel UTP cat6, bijeli 1m, 4004002, 8,60, 01:00, 6, 10, 11,7030, 117,0300, 121784,653750
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:55
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel UTP cat6, bijeli 2m, 4004001, 8,40, 01:00, 6, 10, 11,4304, 114,3040, 121927,533750
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:55
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel UTP cat6, bijeli 3m, 4004003, 11,70, 01:00, 6, 10, 15,9142, 159,1420, 122126,461250
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:55
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 16:55
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:23
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:23
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:24
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:24
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:27
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:27
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:29
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:29
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:29
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:29
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:30
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:30
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:31
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:31
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:34
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:34
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:34
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:34
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:36
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:36
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:36
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:36
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:37
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:37
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:37
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel UTP cat6, bijeli 5m, 4004004, 16,50, 01:00, 6, 10, 22,4472, 224,4720, 122407,051250
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:37
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel UTP cat6, crni , 4003000, 0,00, 01:00, 6, 10, 0,0000, 0,0000, 122407,051250
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:37
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:37
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:38
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel UTP cat6, crni 10m, 4003001, 28,50, 01:00, 6, 10, 38,7750, 387,7500, 122891,738750
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:38
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:38
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:38
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel UTP cat6, crni 1m, 4003004, 6,53, 01:00, 6, 10, 8,8830, 88,8300, 123002,776250
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:38
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:38
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:39
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:39
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:40
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:40
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:40
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:40
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:42
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:42
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:42
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:43
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:43
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:44
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:45
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE STP-103 , 1003000, 0,00, 01:00, 0, 1, 1403,08, 1403,08, 1753,8500
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:45
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE STP-103 PS, 1003001, 0,00, 01:00, 0, 1, 334,07, 334,07, 2171,4375
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:45
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 , 1002000, 2662,25, 01:00, 0, 1, 3487,50, 3487,50, 6530,8125
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:45
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 Baterija, 1002004, 0,00, 01:00, 0, 1, 0,00, 0,00, 6530,8125
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:45
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 Casice, 1002001, 162,00, 01:00, 0, 1, 300,00, 300,00, 6905,8125
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:45
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 Platforma za novac, 1002002, 0,00, 01:00, 0, 1, 0,00, 0,00, 6905,8125
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:45
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 PS, 1002003, 0,00, 01:00, 0, 1, 0,00, 0,00, 6905,8125
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:45
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 Univerzalna Salica, 1002005, 0,00, 01:00, 0, 1, 0,00, 0,00, 6905,8125
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:45
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-R1000 , 1001000, 1462,50, 01:00, 0, 1, 2212,50, 2212,50, 9671,4375
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:45
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:46
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-R1000 Baterija, 1001001, 0,00, 01:00, 0, 1, 296,95, 296,95, 10042,6250
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:46
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-R1000 Casice, 1001002, 162,00, 01:00, 0, 1, 300,00, 300,00, 10417,6250
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:46
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-R1000 Platforma za novac, 1001003, 0,00, 01:00, 0, 1, 660,71, 660,71, 11243,5125
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:46
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-R1000 PS, 1001004, 0,00, 01:00, 0, 1, 334,07, 334,07, 11661,1000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:46
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:46
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:46
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-R1000 Univerzalna Salica, 1001005, 0,00, 01:00, 0, 1, 259,83, 259,83, 11985,8875
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:46
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: CIJENA PRIJEVOZA Prijevoz , 2001000, 0,00, 01:00, 0, 1, 0,00, 0,00, 11985,8875
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:46
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:47
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: CIJENA PRIJEVOZA Prijevoz Dostava IT opreme, 2001001, 262,50, 01:00, 0, 1, 262,50, 262,50, 12314,0125
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:47
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:47
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: CITAC KARTICA DESK READER AIR 575 , 3001000, 0,00, 01:00, 0, 1, 0,00, 0,00, 12314,0125
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:47
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:47
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel RJ11 , 4001000, 0,00, 01:00, 0, 1, 0,00, 0,00, 12314,0125
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:47
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:47
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:48
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel RJ11 1,5m, 4001001, 9,00, 01:00, 0, 1, 13,02, 13,02, 12330,2875
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:48
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel strujni  , 4008000, 0,00, 01:00, 0, 1, 0,00, 0,00, 12330,2875
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:48
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel strujni  Euro konektor, 4008001, 36,20, 01:00, 0, 1, 71,65, 71,65, 12419,8500
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:48
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:48
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:49
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:49
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:49
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel strujni  Euro produzni (UPS), 4008002, 25,14, 01:00, 0, 1, 49,76, 49,76, 12482,0500
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:49
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:49
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:49
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel strujni  J-Y(St)Y 2x2x0,8 100m, 4008003, 308,70, 01:00, 0, 1, 610,98, 610,98, 13245,7750
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:49
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:49
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:50
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:50
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:50
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel UTP cat6, bijeli , 4004000, 0,00, 01:00, 0, 1, 0,00, 0,00, 13245,7750
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:50
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:50
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:52
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:52
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:54
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:54
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:55
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:55
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:57
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:57
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:58
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:59
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:59
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE PRC 950 , 1004000, 845,22, 01:00, 0, 1, 1672,86, 1672,86, 2091,0750
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:59
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE STP-103 , 1003000, 0,00, 01:00, 0, 1, 1403,08, 1403,08, 3844,9250
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 17:59
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 18:00
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE PRC 950 , 1004000, 845,22, 01:00, 0, 1, 1672,86, 1672,86, 2091,0750
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 18:00
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE STP-103 , 1003000, 0,00, 01:00, 0, 1, 1403,08, 1403,08, 3844,9250
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 18:01
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 18:02
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 18:02
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 18:02
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 18:03
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 18:04
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 19:37 - App started
+    *** BrunoBrckovic *** 
+
+- 12.06.19. 19:37
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 Casice, 1002001, 162,00, 01:00, 7,5, 15, 277,50000, 4162,50000, 5203,1250000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 19:37
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-R1000 , 1001000, 1462,50, 01:00, 8,42, 15, 2026,207500, 30393,112500, 43194,51562500
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 19:37
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 19:38
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 19:39
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 19:39
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 19:40
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 19:42
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 19:43
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 19:52
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 19:52
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 19:53
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 19:54
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 19:55 - App turned off
+    *** BrunoBrckovic *** 
+
+- 12.06.19. 20:37 - App started
+    *** BrunoBrckovic *** 
+
+- 12.06.19. 20:38 - App turned off
+    *** BrunoBrckovic *** 
+
+- 12.06.19. 20:44 - App started
+    *** BrunoBrckovic *** 
+
+- 12.06.19. 20:44
+    - LOGED change: POT.BuildingClasses.SettingsForm - SaveBT_Click
+     - Used: Print
+     - Data: 25; 0; 15; VAT is not calculated according to Article 17. of the Law on PDV; The taxpayer is not in the VAT system, according to Article 90. of the Law on PDV; Thank you for your trust; Temeljem članka 9., st.3., Zakona o računovodstvu, račun je pravovaljan bez potpisa i pečata; Porezni obveznik nije u sustavu PDV-a, temeljem zakona o PDV-u čl. 90; Hvala na ukazanom povjerenju
+     - Result: 
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 20:47 - App started
+    *** BrunoBrckovic *** 
+
+- 12.06.19. 20:47
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 Casice, 1002001, 162,00, 01:00, 0, 1, 300,00, 300,00, 375,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 20:47
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 20:47
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 20:48 - App turned off
+    *** BrunoBrckovic *** 
+
+- 12.06.19. 20:59 - App started
+    *** BrunoBrckovic *** 
+
+- 12.06.19. 20:59
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE PRC 950 , 1004000, 845,22, 01:00, 0, 1, 1672,86, 1672,86, 1672,86
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 20:59
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE STP-103 , 1003000, 0,00, 01:00, 0, 1, 1403,08, 1403,08, 3075,94
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 20:59
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 20:59 - App turned off
+    *** BrunoBrckovic *** 
+
+- 12.06.19. 21:00 - App started
+    *** BrunoBrckovic *** 
+
+- 12.06.19. 21:01 - App started
+    *** BrunoBrckovic *** 
+
+- 12.06.19. 21:01
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE STP-103 , 1003000, 0,00, 01:00, 0, 1, 1403,08, 1403,08, 1753,8500
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 21:01
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE STP-103 PS, 1003001, 0,00, 01:00, 0, 1, 334,07, 334,07, 2171,4375
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 21:02
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 21:02
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 21:04 - App started
+    *** BrunoBrckovic *** 
+
+- 12.06.19. 21:05
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE STP-103 , 1003000, 0,00, 01:00, 0, 1, 189,00, 189,00, 189,00
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 21:05
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 21:07 - App started
+    *** BrunoBrckovic *** 
+
+- 12.06.19. 21:07
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 Casice, 1002001, 162,00, 01:00, 0, 1, 300,00, 300,00, 375,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 21:07
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 21:07
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE PRC 950 , 1004000, 845,22, 01:00, 0, 1, 225,34, 225,34, 225,34
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 21:07
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 21:10
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 21:11
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 21:13
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 21:14
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 21:15 - App turned off
+    *** BrunoBrckovic *** 

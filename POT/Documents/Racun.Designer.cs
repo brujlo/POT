@@ -696,6 +696,7 @@
             // 
             // RebateTB
             // 
+            this.RebateTB.BackColor = System.Drawing.Color.White;
             this.RebateTB.Location = new System.Drawing.Point(366, 229);
             this.RebateTB.Name = "RebateTB";
             this.RebateTB.Size = new System.Drawing.Size(129, 26);

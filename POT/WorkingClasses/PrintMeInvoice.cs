@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Printing;
 using System.Globalization;
-using System.Linq;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -14,10 +13,6 @@ namespace POT.WorkingClasses
     {
         int partRows;
         int pageNbr;
-        static int rbInner = 1;
-        static int partRowsInner = 0;
-        static Boolean signatureInitiated = false;
-        List<Part> partListPrint = new List<Part>();
         
         Company cmpR = new Company();
         QueryCommands qc = new QueryCommands();
@@ -25,12 +20,16 @@ namespace POT.WorkingClasses
         Invoice inv = new Invoice();
         int storno;
         Boolean hrv = true;
+        Boolean racun;
         String brojRacuna;
+        decimal taxBase;
+        decimal totalTax;
 
         public String datumIzrade = "";
         public String datumIspisa = "";
         public String izradioUser = "";
         public String izradioRegija = "";
+        decimal eurDjelitelj = 0;
 
         int headerpointVer;
         int headerpointHor;
@@ -45,13 +44,17 @@ namespace POT.WorkingClasses
 
         PrintMeInvoice() { }
 
-        public PrintMeInvoice(List<InvoiceParts> _invPrtList, Invoice _inv, int _storno, Boolean _hrvJezik)
+        public PrintMeInvoice(List<InvoiceParts> _invPrtList, Invoice _inv, int _storno, Boolean _hrvJezik, decimal _taxBase, decimal _totalTax, Boolean _racun)
         {
             invPrtList = _invPrtList;
             inv = _inv;
             storno = _storno;
-            hrv = _hrvJezik;
-            
+            hrv = !_hrvJezik;
+
+            taxBase = _taxBase;
+            totalTax = _totalTax;
+            racun = _racun;
+
             brojRacuna = inv.Id.ToString();
 
             if (brojRacuna.Length < 9)
@@ -95,12 +98,14 @@ namespace POT.WorkingClasses
                 Properties.Settings.Default.LanguageStt = "hrv";
                 Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("hr-HR");
                 oznakaValute = "kn";
+                eurDjelitelj = 1;
             }
             else
             {
                 Properties.Settings.Default.LanguageStt = "eng";
                 Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("en-US");
                 oznakaValute = "€";
+                eurDjelitelj = inv.Eur;
             }
 
             partRows = Properties.Settings.Default.partRows;
@@ -129,7 +134,6 @@ namespace POT.WorkingClasses
 
             headerpointVer = margins.Top;
             headerpointHor = bounds.Right - margins.Right;
-            int napomenaHeight = bounds.Bottom - margins.Bottom - moveBy * 5;
 
             try
             {
@@ -139,11 +143,28 @@ namespace POT.WorkingClasses
 
                 using (img)
                 {
-                    //var groupedPartsList = partListPrint.GroupBy(c => c.PartialCode).Select(grp => grp.ToList()).ToList();
+                    int dodatak = 15;
+                    int rowHeight = 20;
+                    int total = bounds.Right - margins.Right - margins.Left;
+
+                    int kraj = bounds.Right - margins.Right;
+                    int polje = total / 30;
+                    int pocetak = margins.Left - (polje * 1);
+                    int rb = pocetak + (polje * 1);
+                    int name = margins.Left + (polje * 10); //8
+                    int code = margins.Left + (polje * 14); //4
+
+                    int price = margins.Left + (polje * 17); //3
+                    int workTime = margins.Left + (polje * 19); //3
+                    int rebate = margins.Left + (polje * 21); //3
+                    int amount = margins.Left + (polje * 23); //2
+                    int rebatePrice = margins.Left + (polje * 27); //3
+
                     if (pageNbr == 1)
                     {
                         //Sender/Receiver Company Info
                         int razmakZaCustomera = 0;
+
                         e.Graphics.DrawString(Properties.strings.customer + ": ", new Font("Calibri light", fontSizeS - 1, FontStyle.Underline | FontStyle.Italic), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy / 2)));
                         e.Graphics.DrawString(cmpR.Name, new Font("Calibri light", fontSizeS, FontStyle.Bold), Brushes.Black, new Point(margins.Left, razmakZaCustomera + margins.Top + (moveBy * 2)));
                         razmakZaCustomera += 6;
@@ -155,22 +176,59 @@ namespace POT.WorkingClasses
                         razmakZaCustomera += 2;
                         e.Graphics.DrawString(Properties.strings.SWIFT + ": " + cmpR.BIC, new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, razmakZaCustomera + margins.Top + (moveBy * 6)));
                         razmakZaCustomera += 4;
-                        e.Graphics.DrawString(Properties.strings.WorkHour + ": " + cmpR.KN + " " + oznakaValute, new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, razmakZaCustomera + margins.Top + (moveBy * 7)));
+                        e.Graphics.DrawString(Properties.strings.WorkHour + ": " + String.Format("{0:N2}", cmpR.KN / eurDjelitelj) + " " + oznakaValute, new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, razmakZaCustomera + margins.Top + (moveBy * 7)));
                         razmakZaCustomera += 2;
-                        e.Graphics.DrawString(Properties.strings.MinWorkTime + ": " + Properties.Settings.Default.RadniSat, new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, razmakZaCustomera + margins.Top + (moveBy * 8)));
+                        e.Graphics.DrawString(Properties.strings.MinWorkTime + ": " + Properties.Settings.Default.ObracunskaJedinica.ToString() + " min", new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, razmakZaCustomera + margins.Top + (moveBy * 8)));
                         razmakZaCustomera += 2;
                         e.Graphics.DrawString(Environment.NewLine, new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, razmakZaCustomera + margins.Top + (moveBy * 9 / 2)));
                         
+                        headerpointVer = headerpointVer + (moveBy * 9);
+
+                        //NAPOMENA
                         if (!inv.Napomena.Equals(""))
                         {
                             if (hrv)
                                 workingStr = "Napomena: ";
                             else
                                 workingStr = "Note: ";
-                            
-                            measureStr = e.Graphics.MeasureString(workingStr, getFont(10)).Width;
-                            e.Graphics.DrawString(workingStr, new Font("Calibri light", fontSizeS, FontStyle.Bold), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * 11)));
-                            e.Graphics.DrawString(inv.Napomena, new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left + (int)measureStr + 10, margins.Top + (moveBy * 11)));
+
+                            headerpointVer = headerpointVer + (moveBy * 2);
+
+                            Font ft1 = getFont(8);
+                            measureStr = e.Graphics.MeasureString(workingStr, ft1).Width;
+                            e.Graphics.DrawString(workingStr, new Font("Calibri light", ft1.Size, FontStyle.Bold), Brushes.Black, new Point(rb, headerpointVer + moveBy));
+
+                            measureField = workTime - (rb + (int)measureStr + 4);
+
+                            workingStr = inv.Napomena;
+                            measureStr = e.Graphics.MeasureString(workingStr, ft1).Width;
+
+                            int ii = 1;
+                            int secondLine = 0;
+                            int wsNAPOMENAw = (int)e.Graphics.MeasureString(Properties.strings.NOTE + ":", ft1).Width;
+                            String ws1 = "";
+
+                            while (measureStr > measureField)
+                            {
+                                ws1 = workingStr;
+                                int ws1Lenght = (int)e.Graphics.MeasureString(ws1, ft1).Width;
+                                while (ws1Lenght > measureField)
+                                {
+                                    ws1 = ws1.Substring(0, ws1.Length - 1);
+                                    ws1Lenght = (int)e.Graphics.MeasureString(ws1, ft1).Width;
+                                }
+
+                                if(headerpointVer + moveBy * ii < margins.Top + imgH + (moveBy * 7) + 75)
+                                {
+                                    e.Graphics.DrawString(ws1, new Font("Calibri light", ft1.Size, FontStyle.Regular), Brushes.Black, new Point(rb + wsNAPOMENAw + 4, headerpointVer + moveBy * ii));
+                                    ii++;
+                                    secondLine = wsNAPOMENAw;
+                                    workingStr = workingStr.Substring(ws1.Length);
+                                    measureStr = e.Graphics.MeasureString(workingStr, ft1).Width;
+                                    measureField =  workTime - rb - (secondLine);
+                                }
+                            }
+                            e.Graphics.DrawString(workingStr, new Font("Calibri light", ft1.Size, FontStyle.Regular), Brushes.Black, new Point(rb + wsNAPOMENAw + 4, headerpointVer + moveBy * ii));
                         }
 
                         //MyCompany Info
@@ -189,16 +247,21 @@ namespace POT.WorkingClasses
                         headerpointVer = margins.Top + imgH + (moveBy * 7) + 100;
                         headerpointHor = bounds.Right - margins.Right - imgW;
 
-                        if (hrv)
-                            workingStr = "Račun br.";
+                        if (racun)
+                        {
+                            if (hrv)
+                                workingStr = "Račun br.";
+                            else
+                                workingStr = "Invoice nbr.";
+                        }
                         else
-                            workingStr = "Invoice nbr.";
+                        {
+                            if (hrv)
+                                workingStr = "Pounda br.";
+                            else
+                                workingStr = "Offer nbr.";
+                        }
 
-                        //measureStr = e.Graphics.MeasureString(workingStr, new Font("Calibri light", fontSizeS + 5, FontStyle.Bold)).Width;
-                        //e.Graphics.DrawString(workingStr, new Font("Calibri light", fontSizeS + 2, FontStyle.Bold), Brushes.Black, new Point((bounds.Right / 2) - ((int)measureStr / 2), headerpointVer));
-
-                        //headerpointVer += (moveBy * 2);
-                        //e.Graphics.DrawString(Properties.strings.DocumentNbr + "  " + brojRacuna, new Font("Calibri light", fontSizeS, FontStyle.Bold), Brushes.Black, new Point(margins.Left, headerpointVer + (moveBy * 2)));
                         e.Graphics.DrawString(workingStr + "  " + brojRacuna, new Font("Calibri light", fontSizeS, FontStyle.Bold), Brushes.Black, new Point(margins.Left, headerpointVer + (moveBy * 2)));
 
                         workingStr = Properties.strings.ACCOUNTUSE;
@@ -209,13 +272,7 @@ namespace POT.WorkingClasses
                         measureStr = e.Graphics.MeasureString(workingStr, getFont(10)).Width;
                         e.Graphics.DrawString(workingStr, new Font("Calibri light", fontSizeS, FontStyle.Bold), Brushes.Black, new Point(bounds.Right - margins.Left - (int)measureStr, headerpointVer + (moveBy * 2)));
 
-
-                        //(((int)measureField - (int)measureStr) / 2), headerpointVer + moveBy)
-                        //measureStr = e.Graphics.MeasureString(workingStr, getFont(8)).Width;
-                        //measureField = amount - rebate;
-                        //e.Graphics.DrawString(workingStr, getFont(8), Brushes.Black, new Point(rebate + (((int)measureField - (int)measureStr) / 2), headerpointVer + rowHeight));
-
-                        headerpointVer = headerpointVer + (moveBy * 4);
+                        headerpointVer = headerpointVer + (moveBy * 6);
                     }
                     else
                     {
@@ -225,128 +282,100 @@ namespace POT.WorkingClasses
                         headerpointVer = bounds.Top + margins.Top + imgH + 50;
                     }
 
-                    //int rb = margins.Left + 40;
-                    //int name = margins.Left + 200;
-                    //int code = margins.Left + 280;
-
-                    //int price = margins.Left + 340;
-                    //int workTime = margins.Left + 400;
-                    //int rebate = margins.Left + 460;
-                    //int amount = margins.Left + 500;
-                    //int rebatePrice = margins.Left + 560;
-                    int dodatak = 15;
-                    int rowHeight = 20;
-
-                    //e.Graphics.DrawRectangle(new Pen(Brushes.Black), margins.Left, headerpointVer, bounds.Right - margins.Right - margins.Left, rowHeight + dodatak);
-                    e.Graphics.FillRectangle(new SolidBrush(Color.AliceBlue), margins.Left + 1, headerpointVer + 1, bounds.Right - margins.Right - margins.Left - 2, 33);
-                    e.Graphics.DrawLine(new Pen(Brushes.Black), margins.Left, headerpointVer + rowHeight + dodatak, bounds.Right - margins.Right, headerpointVer + rowHeight + dodatak);
-                    
-                    int total = bounds.Right - margins.Right - margins.Left;
-                    int polje = total / 30;
-                    int rb = margins.Left + (polje * 1);
-                    int name = margins.Left + (polje * 12); //8
-                    int code = margins.Left + (polje * 16); //4
-
-                    int price = margins.Left + (polje * 19); //3
-                    int workTime = margins.Left + (polje * 21); //3
-                    int rebate = margins.Left + (polje * 23); //3
-                    int amount = margins.Left + (polje * 25); //2
-                    int rebatePrice = margins.Left + (polje * 28); //3
-                    //int totalPart = margins.Left + 620;
-
-                    int mes = name + total / 9;
-
-                    //GRID
-                    //e.Graphics.DrawLine(new Pen(Brushes.Black), new Point(rb, headerpointVer), new Point(rb, headerpointVer + rowHeight + dodatak));
-                    //e.Graphics.DrawLine(new Pen(Brushes.Black), new Point(name, headerpointVer), new Point(name, headerpointVer + rowHeight + dodatak));
-                    //e.Graphics.DrawLine(new Pen(Brushes.Black), new Point(code, headerpointVer), new Point(code, headerpointVer + rowHeight + dodatak));
-                    //e.Graphics.DrawLine(new Pen(Brushes.Black), new Point(price, headerpointVer), new Point(price, headerpointVer + rowHeight + dodatak));
-
-                    //e.Graphics.DrawLine(new Pen(Brushes.Black), new Point(workTime, headerpointVer), new Point(workTime, headerpointVer + rowHeight + dodatak));
-                    //e.Graphics.DrawLine(new Pen(Brushes.Black), new Point(rebate, headerpointVer), new Point(rebate, headerpointVer + rowHeight + dodatak));
-                    //e.Graphics.DrawLine(new Pen(Brushes.Black), new Point(amount, headerpointVer), new Point(amount, headerpointVer + rowHeight + dodatak));
-                    //e.Graphics.DrawLine(new Pen(Brushes.Black), new Point(rebatePrice, headerpointVer), new Point(rebatePrice, headerpointVer + rowHeight + dodatak));
-
                     Font fnt = getFont(fontSizeR);
 
-                    workingStr = "RB";
-                    fnt = fitFontSizeBold(e, workingStr, fontSizeR, rb - margins.Left);
-                    measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
-                    measureField = rb - margins.Left;
-                    e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, code - rb), Brushes.Black, new Point(margins.Left + (((int)measureField - (int)measureStr) / 2), headerpointVer + rowHeight / 2));
+                    if (partRows < invPrtList.Count)
+                    {
+                        e.Graphics.DrawRectangle(new Pen(Brushes.Black), rb, headerpointVer, total, rowHeight + dodatak);
+                        e.Graphics.FillRectangle(new SolidBrush(Color.DeepSkyBlue), rb, headerpointVer + 1 , total, 33);
 
-                    workingStr = Properties.strings.NAME;
-                    fnt = fitFontSizeBold(e, workingStr, fontSizeR, name - rb);
-                    measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
-                    measureField = name - rb;
-                    e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, code - rb), Brushes.Black, new Point(rb + (((int)measureField - (int)measureStr) / 2), headerpointVer + rowHeight / 2));
+                        //GRID
+                        e.Graphics.DrawLine(new Pen(Brushes.Black), new Point(name, headerpointVer), new Point(name, headerpointVer + rowHeight + dodatak));
+                        e.Graphics.DrawLine(new Pen(Brushes.Black), new Point(code, headerpointVer), new Point(code, headerpointVer + rowHeight + dodatak));
+                        e.Graphics.DrawLine(new Pen(Brushes.Black), new Point(price, headerpointVer), new Point(price, headerpointVer + rowHeight + dodatak));
 
-                    workingStr = Properties.strings.CODE;
-                    fnt = fitFontSizeBold(e, workingStr, fontSizeR, code - name);
-                    measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
-                    measureField = code - name;
-                    e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, code - rb), Brushes.Black, new Point(name + (((int)measureField - (int)measureStr) / 2), headerpointVer + rowHeight / 2));
+                        e.Graphics.DrawLine(new Pen(Brushes.Black), new Point(workTime, headerpointVer), new Point(workTime, headerpointVer + rowHeight + dodatak));
+                        e.Graphics.DrawLine(new Pen(Brushes.Black), new Point(rebate, headerpointVer), new Point(rebate, headerpointVer + rowHeight + dodatak));
+                        e.Graphics.DrawLine(new Pen(Brushes.Black), new Point(amount, headerpointVer), new Point(amount, headerpointVer + rowHeight + dodatak));
+                        e.Graphics.DrawLine(new Pen(Brushes.Black), new Point(rebatePrice, headerpointVer), new Point(rebatePrice, headerpointVer + rowHeight + dodatak));
 
-                    workingStr = Properties.strings.PRICE;
-                    fnt = fitFontSizeBold(e, workingStr, fontSizeR, price - code);
-                    measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
-                    measureField = price - code;
-                    e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, code - rb), Brushes.Black, new Point(code + (((int)measureField - (int)measureStr) / 2), headerpointVer + rowHeight / 2));
+                        workingStr = "RB";
+                        fnt = fitFontSizeBold(e, workingStr, fontSizeR, polje);
+                        measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
+                        measureField = polje;
+                        e.Graphics.DrawString(workingStr, getFont(6), Brushes.Black, new Point(pocetak + (((int)measureField - (int)measureStr) / 2), headerpointVer + rowHeight));
 
-                    /////////////////////
-                    workingStr = Properties.strings.WORKTIME1;
-                    fnt = fitFontSizeBold(e, workingStr, fontSizeR, workTime - price);
-                    measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
-                    measureField = workTime - price;
-                    e.Graphics.DrawString(workingStr, getFont(8), Brushes.Black, new Point(price + (((int)measureField - (int)measureStr) / 2), headerpointVer + rowHeight / 4));
+                        workingStr = Properties.strings.NAME;
+                        fnt = fitFontSizeBold(e, workingStr, fontSizeR, name - rb);
+                        measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
+                        measureField = name - rb;
+                        e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(rb + (((int)measureField - (int)measureStr) / 2), headerpointVer + rowHeight / 2));
 
-                    workingStr = Properties.strings.WORKTIME2;
-                    fnt = fitFontSizeBold(e, workingStr, fontSizeR, workTime - price);
-                    measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
-                    measureField = workTime - price;
-                    e.Graphics.DrawString(workingStr, getFont(8), Brushes.Black, new Point(price + (((int)measureField - (int)measureStr) / 2), headerpointVer + rowHeight));
-                    /////////////////////
+                        workingStr = Properties.strings.CODE;
+                        fnt = fitFontSizeBold(e, workingStr, fontSizeR, code - name);
+                        measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
+                        measureField = code - name;
+                        e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(name + (((int)measureField - (int)measureStr) / 2), headerpointVer + rowHeight / 2));
 
-                    workingStr = Properties.strings.REBATE;
-                    fnt = fitFontSizeBold(e, workingStr, fontSizeR, rebate - workTime);
-                    measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
-                    measureField = rebate - workTime;
-                    e.Graphics.DrawString(workingStr, getFont(8), Brushes.Black, new Point(workTime + (((int)measureField - (int)measureStr) / 2), headerpointVer + rowHeight / 2));
+                        workingStr = Properties.strings.PRICE;
+                        fnt = fitFontSizeBold(e, workingStr, fontSizeR, price - code);
+                        measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
+                        measureField = price - code;
+                        e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(code + (((int)measureField - (int)measureStr) / 2), headerpointVer + rowHeight / 2));
 
-                    workingStr = Properties.strings.QUA + ".";
-                    fnt = fitFontSizeBold(e, workingStr, fontSizeR, amount - rebate);
-                    measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
-                    measureField = amount - rebate;
-                    e.Graphics.DrawString(workingStr, getFont(8), Brushes.Black, new Point(rebate + (((int)measureField - (int)measureStr) / 2), headerpointVer + rowHeight / 2));
+                        /////////////////////
+                        workingStr = Properties.strings.WORKTIME1;
+                        fnt = fitFontSizeBold(e, workingStr, fontSizeR, workTime - price);
+                        measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
+                        measureField = workTime - price;
+                        e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(price + (((int)measureField - (int)measureStr) / 2), headerpointVer + rowHeight / 4));
 
-                    /////////////////////
-                    workingStr = Properties.strings.REBATEPRICE1;
-                    fnt = fitFontSizeBold(e, workingStr, fontSizeR, rebatePrice - amount);
-                    measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
-                    measureField = rebatePrice - amount;
-                    e.Graphics.DrawString(workingStr, getFont(8), Brushes.Black, new Point(amount + (((int)measureField - (int)measureStr) / 2), headerpointVer + rowHeight / 4));
+                        workingStr = Properties.strings.WORKTIME2;
+                        fnt = fitFontSizeBold(e, workingStr, fontSizeR, workTime - price);
+                        measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
+                        measureField = workTime - price;
+                        e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(price + (((int)measureField - (int)measureStr) / 2), headerpointVer + rowHeight));
+                        /////////////////////
 
-                    workingStr = Properties.strings.REBATEPRICE2;
-                    fnt = fitFontSizeBold(e, workingStr, fontSizeR, rebatePrice - amount);
-                    measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
-                    measureField = rebatePrice - amount;
-                    e.Graphics.DrawString(workingStr, getFont(8), Brushes.Black, new Point(amount + (((int)measureField - (int)measureStr) / 2), headerpointVer + rowHeight));
-                    /////////////////////
+                        workingStr = Properties.strings.REBATE;
+                        fnt = fitFontSizeBold(e, workingStr, fontSizeR, rebate - workTime);
+                        measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
+                        measureField = rebate - workTime;
+                        e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(workTime + (((int)measureField - (int)measureStr) / 2), headerpointVer + rowHeight / 2));
 
-                    workingStr = Properties.strings.TOTAL;
-                    fnt = fitFontSizeBold(e, workingStr, fontSizeR, total + margins.Left - rebatePrice);
-                    measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
-                    measureField = total + margins.Left - rebatePrice;
-                    e.Graphics.DrawString(workingStr, getFont(8), Brushes.Black, new Point(rebatePrice + (((int)measureField - (int)measureStr) / 2), headerpointVer + rowHeight / 2));
+                        workingStr = Properties.strings.QUA + ".";
+                        fnt = fitFontSizeBold(e, workingStr, fontSizeR, amount - rebate);
+                        measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
+                        measureField = amount - rebate;
+                        e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(rebate + (((int)measureField - (int)measureStr) / 2), headerpointVer + rowHeight / 2));
 
-                    //var groupedPartsList = partListPrint.GroupBy(c => c.PartialCode).Select(grp => grp.ToList()).ToList();
-                    //for (; partRows < 35; partRows++)
+                        /////////////////////
+                        workingStr = Properties.strings.REBATEPRICE1;
+                        fnt = fitFontSizeBold(e, workingStr, fontSizeR, rebatePrice - amount);
+                        measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
+                        measureField = rebatePrice - amount;
+                        e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(amount + (((int)measureField - (int)measureStr) / 2), headerpointVer + rowHeight / 4));
+
+                        workingStr = Properties.strings.REBATEPRICE2;
+                        fnt = fitFontSizeBold(e, workingStr, fontSizeR, rebatePrice - amount);
+                        measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
+                        measureField = rebatePrice - amount;
+                        e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(amount + (((int)measureField - (int)measureStr) / 2), headerpointVer + rowHeight));
+                        /////////////////////
+
+                        workingStr = Properties.strings.TOTAL;
+                        fnt = fitFontSizeBold(e, workingStr, fontSizeR, kraj - rebatePrice);
+                        measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
+                        measureField = kraj - rebatePrice;
+                        e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(rebatePrice + (((int)measureField - (int)measureStr) / 2), headerpointVer + rowHeight / 2));
+                    }
+
                     headerpointVer += moveBy;
 
                     for (; partRows < invPrtList.Count; partRows++)
                     {
 
-                        if (headerpointVer + (moveBy * 4) + 20 > napomenaHeight)
+                        if (headerpointVer + (moveBy * 4) + 20 > bounds.Bottom - margins.Bottom - 20)
                         {
                             e.HasMorePages = true;
                             break;
@@ -358,16 +387,15 @@ namespace POT.WorkingClasses
                         headerpointVer = headerpointVer + (moveBy * 2);
 
                         workingStr = (partRows + 1).ToString();//tu
-                        measureField = rb - margins.Left;
+                        measureField = polje;
                         fnt = fitFontSize(e, workingStr, fontSizeR, measureField);
                         measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
-                        e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(margins.Left + (((int)measureField - (int)measureStr) / 2), headerpointVer + moveBy));
+                        e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(pocetak + (((int)measureField - (int)measureStr) / 2), headerpointVer + moveBy));
 
                         workingStr = tmpPart.FullName;//tu partRows
                         measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
                         measureField = name - rb;
                         fnt = fitFontSize(e, workingStr, fontSizeR, measureField);
-                        //e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, code - rb), Brushes.Black, new Point(rb, headerpointVer + moveBy));
                         e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(rb, headerpointVer + moveBy));
 
                         workingStr = partCode;//tu partRows
@@ -376,7 +404,7 @@ namespace POT.WorkingClasses
                         measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
                         e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(name + (((int)measureField - (int)measureStr) / 2), headerpointVer + moveBy));
 
-                        workingStr = invPrtList[partRows].IznosPart + " " + oznakaValute;
+                        workingStr = String.Format("{0:N2}", decimal.Parse(invPrtList[partRows].IznosPart) / eurDjelitelj) + " " + oznakaValute;
                         measureField = price - code;
                         fnt = fitFontSize(e, workingStr, fontSizeR, measureField);
                         measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
@@ -392,7 +420,7 @@ namespace POT.WorkingClasses
                         measureField = rebate - workTime;
                         fnt = fitFontSize(e, workingStr, fontSizeR, measureField);
                         measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
-                        e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(workTime + (((int)measureField - (int)measureStr) / 2), headerpointVer + moveBy));
+                        e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(workTime + ((int)measureField - (int)measureStr), headerpointVer + moveBy));
 
                         workingStr = invPrtList[partRows].Kolicina.ToString();
                         measureField = amount - rebate;
@@ -400,56 +428,174 @@ namespace POT.WorkingClasses
                         measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
                         e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(rebate + (((int)measureField - (int)measureStr) / 2), headerpointVer + moveBy));
 
-                        workingStr = invPrtList[partRows].IznosRabat + " " + oznakaValute;
+                        workingStr = String.Format("{0:N2}", decimal.Parse(invPrtList[partRows].IznosRabat) / eurDjelitelj) + " " + oznakaValute;
                         measureField = rebatePrice - amount;
                         fnt = fitFontSize(e, workingStr, fontSizeR, measureField);
                         measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
                         e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(rebatePrice - (int)measureStr, headerpointVer + moveBy));
 
-                        workingStr = invPrtList[partRows].IznosTotal + " " + oznakaValute;
-                        measureField = total + margins.Left - rebatePrice;
+                        workingStr = String.Format("{0:N2}", decimal.Parse(invPrtList[partRows].IznosTotal) / eurDjelitelj) + " " + oznakaValute;
+                        measureField = kraj - rebatePrice;
                         fnt = fitFontSize(e, workingStr, fontSizeR, measureField); ; //tu
                         measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
-                        e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(total + margins.Left - (int)measureStr, headerpointVer + moveBy));
+                        e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(kraj - (int)measureStr, headerpointVer + moveBy));
+
+                        if(partRows >= invPrtList.Count - 1)
+                        {
+                            headerpointVer = headerpointVer + (moveBy * 2);
+                            e.Graphics.DrawLine(new Pen(Brushes.Black), rb, headerpointVer + moveBy, kraj, headerpointVer + moveBy);
+                        }
+
                     }
 
                     Properties.Settings.Default.partRows = partRows;
 
                     if (invPrtList.Count > partRows)
-                        e.HasMorePages = true;
-                    else
-                        e.HasMorePages = false;
-
-                    //NAPOMENA
-                    if (pageNbr == 1)
                     {
-                        napomenaHeight = 0;
-                        workingStr = Properties.strings.NOTE + ":  " + inv.Napomena;//Bruno TEST
-                        measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
-                        measureField = bounds.Right - margins.Right - margins.Left;
+                        e.HasMorePages = true;
+                    }
+                    else
+                    {
+                        Font ft = getFont(10); //tu
 
-                        int ii = 5;
-                        int secondLine = 0;
-                        int wsNAPOMENAw = (int)e.Graphics.MeasureString(Properties.strings.NOTE + ":", fnt).Width;
-                        String ws1 = "";
-
-                        while (measureStr > measureField)
+                        if (headerpointVer + 120 > bounds.Bottom - margins.Bottom - 20)
                         {
-                            ws1 = workingStr;
-                            int ws1Lenght = (int)e.Graphics.MeasureString(ws1, fnt).Width;
-                            while (ws1Lenght > measureField)
-                            {
-                                ws1 = ws1.Substring(0, ws1.Length - 1);
-                                ws1Lenght = (int)e.Graphics.MeasureString(ws1, fnt).Width;
-                            }
-
-                            e.Graphics.DrawString(ws1, fnt, Brushes.Black, new Point(margins.Left + secondLine, bounds.Bottom - margins.Bottom - moveBy * ii--));
-                            secondLine = wsNAPOMENAw;
-                            workingStr = workingStr.Substring(ws1.Length);
-                            measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
-                            measureField = bounds.Right - margins.Right - margins.Left - wsNAPOMENAw;
+                            e.HasMorePages = true;
                         }
-                        e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(margins.Left + secondLine, bounds.Bottom - margins.Bottom - moveBy * ii--));
+                        else
+                        {
+                            headerpointVer = headerpointVer + (moveBy * 2);
+                            workingStr = Properties.strings.TaxBase + ":";
+                            measureField = rebatePrice - workTime;
+                            measureStr = e.Graphics.MeasureString(workingStr, ft).Width;
+                            e.Graphics.DrawString(workingStr, ft, Brushes.Black, new Point(amount + ((rebatePrice - amount) / 2) - (int)measureStr, headerpointVer + moveBy));
+
+                            workingStr = String.Format("{0:N2}", taxBase / eurDjelitelj) + " " + oznakaValute;
+                            measureField = total - rebatePrice;
+                            measureStr = e.Graphics.MeasureString(workingStr, ft).Width;
+                            e.Graphics.DrawString(workingStr, ft, Brushes.Black, new Point(kraj - (int)measureStr, headerpointVer + moveBy));
+
+
+                            headerpointVer = headerpointVer + (moveBy * 2);
+                            workingStr = Properties.strings.TAX + "(" + (hrv ? Properties.Settings.Default.TAX1.ToString() : Properties.Settings.Default.TAX2.ToString()) + "%):";
+                            measureField = rebatePrice - workTime;
+                            measureStr = e.Graphics.MeasureString(workingStr, ft).Width;
+                            e.Graphics.DrawString(workingStr, ft, Brushes.Black, new Point(amount + ((rebatePrice - amount) / 2) - (int)measureStr, headerpointVer + moveBy));
+
+                            workingStr = String.Format("{0:N2}", totalTax / eurDjelitelj) + " " + oznakaValute;
+                            measureField = total - rebatePrice;
+                            measureStr = e.Graphics.MeasureString(workingStr, ft).Width;
+                            e.Graphics.DrawString(workingStr, ft, Brushes.Black, new Point(kraj - (int)measureStr, headerpointVer + moveBy));
+
+
+                            headerpointVer = headerpointVer + (moveBy * 2);
+                            workingStr = Properties.strings.TotalSum + ":";
+                            measureField = rebatePrice - workTime;
+                            measureStr = e.Graphics.MeasureString(workingStr, ft).Width;
+                            e.Graphics.DrawString(workingStr, new Font("Calibri light", ft.Size, FontStyle.Bold), Brushes.Black, new Point(amount + ((rebatePrice - amount) / 2) - (int)measureStr, headerpointVer + moveBy));
+
+                            workingStr = String.Format("{0:N2}", inv.Iznos / eurDjelitelj) + " " + oznakaValute;
+                            measureField = total - rebatePrice;
+                            measureStr = e.Graphics.MeasureString(workingStr, ft).Width;
+                            e.Graphics.DrawString(workingStr, new Font("Calibri light", ft.Size, FontStyle.Bold), Brushes.Black, new Point(kraj - (int)measureStr, headerpointVer + moveBy));
+
+                            headerpointVer = headerpointVer + (moveBy * 2);
+                            workingStr = Properties.strings.TotalSum + ":";
+                            measureField = rebatePrice - workTime;
+                            measureStr = e.Graphics.MeasureString(workingStr, ft).Width;
+                            e.Graphics.DrawString(workingStr, new Font("Calibri light", ft.Size, FontStyle.Regular), Brushes.Black, new Point(amount + ((rebatePrice - amount) / 2) - (int)measureStr, headerpointVer + moveBy));
+
+                            workingStr = String.Format("{0:N2}", inv.Iznos) + " kn";
+                            measureField = total - rebatePrice;
+                            measureStr = e.Graphics.MeasureString(workingStr, ft).Width;
+                            e.Graphics.DrawString(workingStr, new Font("Calibri light", ft.Size, FontStyle.Regular), Brushes.Black, new Point(kraj - (int)measureStr, headerpointVer + moveBy));
+
+                            headerpointVer = headerpointVer - (moveBy * 2);
+                        }
+
+                        ///////////////////////////////////////////////////////
+
+                        if (headerpointVer + 200 > bounds.Bottom - margins.Bottom - 20 || e.HasMorePages)
+                        {
+                            e.HasMorePages = true;
+                        }
+                        else
+                        {
+                            ft = getFont(8);
+
+                            headerpointVer = headerpointVer + (moveBy * 3);
+                            workingStr = Properties.strings.DateTime + ":";
+                            measureStr = e.Graphics.MeasureString(workingStr, ft).Width;
+                            e.Graphics.DrawString(workingStr, new Font("Calibri light", ft.Size, FontStyle.Bold), Brushes.Black, new Point(rb, headerpointVer + moveBy));
+
+                            workingStr = inv.DatumIzdano + " " + inv.VrijemeIzdano;
+                            e.Graphics.DrawString(workingStr, new Font("Calibri light", ft.Size, FontStyle.Regular), Brushes.Black, new Point(rb + (int)measureStr + 25, headerpointVer + moveBy));
+
+
+                            headerpointVer = headerpointVer + moveBy + 4;
+                            workingStr = Properties.strings.PaymentForm + ":";
+                            e.Graphics.DrawString(workingStr, new Font("Calibri light", ft.Size, FontStyle.Bold), Brushes.Black, new Point(rb, headerpointVer + moveBy));
+
+                            workingStr = inv.NacinPlacanja;
+                            e.Graphics.DrawString(workingStr, new Font("Calibri light", ft.Size, FontStyle.Regular), Brushes.Black, new Point(rb + (int)measureStr + 25, headerpointVer + moveBy));
+
+
+                            headerpointVer = headerpointVer + moveBy + 4;
+                            workingStr = Properties.strings.PaymentTime + ":";
+                            e.Graphics.DrawString(workingStr, new Font("Calibri light", ft.Size, FontStyle.Bold), Brushes.Black, new Point(rb, headerpointVer + moveBy));
+
+                            workingStr = inv.Valuta.ToString() + " " + Properties.strings.Days;
+                            e.Graphics.DrawString(workingStr, new Font("Calibri light", ft.Size, FontStyle.Regular), Brushes.Black, new Point(rb + (int)measureStr + 25, headerpointVer + moveBy));
+
+
+                            headerpointVer = headerpointVer + moveBy + 4;
+                            workingStr = Properties.strings.ExcRate + ":";
+                            e.Graphics.DrawString(workingStr, new Font("Calibri light", ft.Size, FontStyle.Bold), Brushes.Black, new Point(rb, headerpointVer + moveBy));
+
+                            workingStr = inv.Eur.ToString() + " kn " + Properties.strings.OnDay + " " + inv.DanTecaja;
+                            e.Graphics.DrawString(workingStr, new Font("Calibri light", ft.Size, FontStyle.Regular), Brushes.Black, new Point(rb + (int)measureStr + 25, headerpointVer + moveBy));
+
+
+                            headerpointVer = headerpointVer + moveBy + 4;
+                            workingStr = Properties.strings.Operater + ":";
+                            e.Graphics.DrawString(workingStr, new Font("Calibri light", ft.Size, FontStyle.Bold), Brushes.Black, new Point(rb, headerpointVer + moveBy));
+
+                            workingStr = WorkingUser.Name[0].ToString() + WorkingUser.Surename[0].ToString() + WorkingUser.UserID.ToString();
+                            e.Graphics.DrawString(workingStr, new Font("Calibri light", ft.Size, FontStyle.Regular), Brushes.Black, new Point(rb + (int)measureStr + 25, headerpointVer + moveBy));
+
+                        
+                            String workingStrOsoba = Properties.strings.ResPersone;
+                            float measureStrOsoba = e.Graphics.MeasureString(workingStrOsoba, ft).Width;
+                            e.Graphics.DrawString(workingStrOsoba, new Font("Calibri light", ft.Size, FontStyle.Bold), Brushes.Black, new Point(rebatePrice - ((int)measureStrOsoba / 2), headerpointVer + moveBy));
+
+                            workingStrOsoba = "Bruno Brcković";
+                            measureStrOsoba = e.Graphics.MeasureString(workingStrOsoba, ft).Width;
+                            e.Graphics.DrawString(workingStrOsoba, new Font("Calibri light", ft.Size, FontStyle.Regular), Brushes.Black, new Point(rebatePrice - ((int)measureStrOsoba / 2), headerpointVer + (moveBy * 2)));
+
+
+                            headerpointVer = headerpointVer + moveBy + 4;
+                            workingStr = Properties.strings.OfferConn + ":";
+                            e.Graphics.DrawString(workingStr, new Font("Calibri light", ft.Size, FontStyle.Bold), Brushes.Black, new Point(rb, headerpointVer + moveBy));
+
+                            workingStr = inv.PonudaID.ToString();
+                            e.Graphics.DrawString(workingStr, new Font("Calibri light", ft.Size, FontStyle.Regular), Brushes.Black, new Point(rb + (int)measureStr + 25, headerpointVer + moveBy));
+
+                            headerpointVer = headerpointVer + (moveBy * 4);
+                            if (hrv)
+                                workingStr = Properties.Settings.Default.extraLine1HRTB;
+                            else
+                                workingStr = Properties.Settings.Default.extraLine1ENGTB;
+                            measureStr = e.Graphics.MeasureString(workingStr, ft).Width;
+                            e.Graphics.DrawString(workingStr, new Font("Calibri light", ft.Size - 2, FontStyle.Regular), Brushes.Black, new Point(rb, headerpointVer + moveBy));
+
+                            headerpointVer = headerpointVer + moveBy +4;
+                            if (hrv)
+                                workingStr = Properties.Settings.Default.extraLine2HRTB;
+                            else
+                                workingStr = Properties.Settings.Default.extraLine2ENGTB;
+                            measureStr = e.Graphics.MeasureString(workingStr, ft).Width;
+                            e.Graphics.DrawString(workingStr, new Font("Calibri light", ft.Size - 2, FontStyle.Regular), Brushes.Black, new Point(rb, headerpointVer + moveBy));
+                        }
                     }
 
                     e.Graphics.DrawString(Properties.strings.Page + " : " + pageNbr, getFont(8), Brushes.Black, new Point(margins.Left, bounds.Bottom - margins.Bottom));
@@ -464,16 +610,20 @@ namespace POT.WorkingClasses
                         Properties.Settings.Default.partRows = partRows = 0;
                     }
 
-                    fnt = fitFontSize(e, (partRows + 1).ToString(), fontSizeR, code - rb);
-                    
-                    workingStr = "Hvala na ukazanom povjerenju";
+
+                    if (hrv)
+                        workingStr = Properties.Settings.Default.thx1HRTB;
+                    else
+                        workingStr = Properties.Settings.Default.thx1ENGTB;
                     Font fntT = new Font("Ink Free", 14, FontStyle.Regular);
                     measureStr = e.Graphics.MeasureString(workingStr, fntT).Width;
                     measureField = bounds.Right - margins.Right - margins.Left;
-                    e.Graphics.DrawString(workingStr, fntT, Brushes.DodgerBlue, new Point(margins.Left + (((int)measureField - (int)measureStr) / 2), bounds.Bottom - margins.Bottom));
+                    e.Graphics.DrawString(workingStr, fntT, Brushes.DeepSkyBlue, new Point(margins.Left + (((int)measureField - (int)measureStr) / 2), bounds.Bottom - margins.Bottom - 20));
+
+                    fnt = fitFontSize(e, (partRows + 1).ToString(), fontSizeR, code - pocetak);
 
                     workingStr = Properties.Settings.Default.CmpWWW;
-                    fnt = fitFontSize(e, workingStr, fontSizeR, code - rb);
+                    fnt = fitFontSize(e, workingStr, fontSizeR, code - pocetak);
                     measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
                     e.Graphics.DrawString(workingStr, getFont(8), Brushes.Black, new Point(bounds.Right - margins.Right - (int)measureStr, bounds.Bottom - margins.Bottom));
                 }

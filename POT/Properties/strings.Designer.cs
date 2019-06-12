@@ -151,6 +151,24 @@ namespace POT.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Date and time.
+        /// </summary>
+        internal static string DateTime {
+            get {
+                return ResourceManager.GetString("DateTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to days.
+        /// </summary>
+        internal static string Days {
+            get {
+                return ResourceManager.GetString("Days", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Delete DB user.
         /// </summary>
         internal static string DeleteDBUser {
@@ -214,6 +232,15 @@ namespace POT.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Exchange rate (1€).
+        /// </summary>
+        internal static string ExcRate {
+            get {
+                return ResourceManager.GetString("ExcRate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to InvoiceNumber.
         /// </summary>
         internal static string InvoiceNumber {
@@ -268,6 +295,33 @@ namespace POT.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Offer connection.
+        /// </summary>
+        internal static string OfferConn {
+            get {
+                return ResourceManager.GetString("OfferConn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to on day.
+        /// </summary>
+        internal static string OnDay {
+            get {
+                return ResourceManager.GetString("OnDay", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Made by.
+        /// </summary>
+        internal static string Operater {
+            get {
+                return ResourceManager.GetString("Operater", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to PACK.
         /// </summary>
         internal static string PACK {
@@ -291,6 +345,24 @@ namespace POT.Properties {
         internal static string PARTLIST {
             get {
                 return ResourceManager.GetString("PARTLIST", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Payment form.
+        /// </summary>
+        internal static string PaymentForm {
+            get {
+                return ResourceManager.GetString("PaymentForm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Payment time.
+        /// </summary>
+        internal static string PaymentTime {
+            get {
+                return ResourceManager.GetString("PaymentTime", resourceCulture);
             }
         }
         
@@ -367,6 +439,15 @@ namespace POT.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Responsible person.
+        /// </summary>
+        internal static string ResPersone {
+            get {
+                return ResourceManager.GetString("ResPersone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Select main region.
         /// </summary>
         internal static string SelectMainRegion {
@@ -430,6 +511,24 @@ namespace POT.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Tax.
+        /// </summary>
+        internal static string TAX {
+            get {
+                return ResourceManager.GetString("TAX", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tax base.
+        /// </summary>
+        internal static string TaxBase {
+            get {
+                return ResourceManager.GetString("TaxBase", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Date print.
         /// </summary>
         internal static string Time {
@@ -444,6 +543,15 @@ namespace POT.Properties {
         internal static string TOTAL {
             get {
                 return ResourceManager.GetString("TOTAL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TOTAL SUM.
+        /// </summary>
+        internal static string TotalSum {
+            get {
+                return ResourceManager.GetString("TotalSum", resourceCulture);
             }
         }
         
