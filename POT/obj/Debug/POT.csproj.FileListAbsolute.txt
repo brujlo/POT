@@ -106,3 +106,6 @@ F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.application
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.exe
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.pdb
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.csprojAssemblyReference.cache
+D:\PROJECTS\VS\POT\POT\POT\obj\Debug\POT.Documents.Racun.resources
+D:\PROJECTS\VS\POT\POT\POT\obj\Debug\POT.Loading.resources
+D:\PROJECTS\VS\POT\POT\POT\obj\Debug\POT.Saving.resources

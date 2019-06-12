@@ -15796,3 +15796,1152 @@ Parameter name: emSize
 
 - 11.06.19. 20:26 - App turned off
     *** BrunoBrckovic *** 
+
+- 12.06.19. 00:44
+    - LOGED change: POT.SetDBConnection - button2_Click
+     - Used: DB connection address and name save.
+     - Data: 192.168.100.101, test
+     - Result: Saved, no msgToUser
+    ***  *** 
+
+
+- 12.06.19. 00:44 - App started
+    *** BrunoBrckovic *** 
+
+- 12.06.19. 00:45
+    - LOGED change: POT.SetDBConnection - button2_Click
+     - Used: DB connection address and name save.
+     - Data: 192.168.100.101, test
+     - Result: Saved, no msgToUser
+    ***  *** 
+
+
+- 12.06.19. 00:45
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The network path was not found
+    - InnerEcp: System.ComponentModel.Win32Exception (0x80004005): The network path was not found
+    - MessageEcp: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in D:\PROJECTS\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    ***  *** 
+
+
+- 12.06.19. 00:45
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The network path was not found
+    - InnerEcp: System.ComponentModel.Win32Exception (0x80004005): The network path was not found
+    - MessageEcp: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in D:\PROJECTS\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 27
+   at POT.QueryCommands.SetWorkingDBUser(String Uname, String Pass) in D:\PROJECTS\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 115
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\StartForm.cs:line 61
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    ***  *** 
+
+
+- 12.06.19. 00:46 - App started
+    *** BrunoBrckovic *** 
+
+- 12.06.19. 00:57 - App started
+    *** BrunoBrckovic *** 
+
+- 12.06.19. 00:58 - App started
+    *** BrunoBrckovic *** 
+
+- 12.06.19. 00:59 - App turned off
+    *** BrunoBrckovic *** 
+
+- 12.06.19. 01:08 - App started
+    *** BrunoBrckovic *** 
+
+- 12.06.19. 01:08 - App turned off
+    *** BrunoBrckovic *** 
+
+- 12.06.19. 01:08 - App started
+    *** BrunoBrckovic *** 
+
+- 12.06.19. 01:08
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Pausal EXE mjesecno odrzavanje, 20004004, 168,00, 01:00, 0, 10, 168,00, 1680,00, 2100,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:09
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Pausal EXE mjesecno odrzavanje, 20004004, 168,00, 01:00, 5, 10, 159,6000, 1596,0000, 4095,000000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:09
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:09
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:11
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:13
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:14
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:15
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:16
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:27
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:28
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:28
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE PRC 950 , 1004000, 845,22, 01:00, 5, 10, 1589,2170, 15892,1700, 23960,212500
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:29
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE STP-103 , 1003000, 0,00, 01:00, 5, 10, 1332,9260, 13329,2600, 40621,787500
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:29
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE STP-103 PS, 1003001, 0,00, 01:00, 5, 10, 317,3665, 3173,6650, 44588,868750
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:29
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 , 1002000, 2662,25, 01:00, 5, 10, 3313,1250, 33131,2500, 86002,931250
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:29
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 Baterija, 1002004, 0,00, 01:00, 5, 10, 0,0000, 0,0000, 86002,931250
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:29
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 Casice, 1002001, 162,00, 01:00, 5, 10, 285,0000, 2850,0000, 89565,431250
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:29
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 Platforma za novac, 1002002, 0,00, 01:00, 5, 10, 0,0000, 0,0000, 89565,431250
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:29
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 PS, 1002003, 0,00, 01:00, 5, 10, 0,0000, 0,0000, 89565,431250
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:29
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 Univerzalna Salica, 1002005, 0,00, 01:00, 5, 10, 0,0000, 0,0000, 89565,431250
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:29
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-R1000 , 1001000, 1462,50, 01:00, 5, 10, 2101,8750, 21018,7500, 115838,868750
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:29
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-R1000 Baterija, 1001001, 0,00, 01:00, 5, 10, 282,1025, 2821,0250, 119365,150000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:29
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-R1000 Casice, 1001002, 162,00, 01:00, 5, 10, 285,0000, 2850,0000, 122927,650000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:29
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-R1000 Platforma za novac, 1001003, 0,00, 01:00, 5, 10, 627,6745, 6276,7450, 130773,581250
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:29
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-R1000 PS, 1001004, 0,00, 01:00, 5, 10, 317,3665, 3173,6650, 134740,662500
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:29
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-R1000 Univerzalna Salica, 1001005, 0,00, 01:00, 5, 10, 246,8385, 2468,3850, 137826,143750
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:30
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: CIJENA PRIJEVOZA Prijevoz , 2001000, 0,00, 01:00, 5, 10, 0,0000, 0,0000, 137826,143750
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:30
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: CIJENA PRIJEVOZA Prijevoz Dostava IT opreme, 2001001, 262,50, 01:00, 5, 10, 249,3750, 2493,7500, 140943,331250
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:30
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: CITAC KARTICA DESK READER AIR 575 , 3001000, 0,00, 01:00, 5, 10, 0,0000, 0,0000, 140943,331250
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:30
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:31
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel RJ11 , 4001000, 0,00, 01:00, 5, 10, 0,0000, 0,0000, 140943,331250
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:31
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel RJ11 1,5m, 4001001, 9,00, 01:00, 5, 10, 12,3690, 123,6900, 141097,943750
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:31
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel strujni  , 4008000, 0,00, 01:00, 5, 10, 0,0000, 0,0000, 141097,943750
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:31
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel strujni  Euro konektor, 4008001, 36,20, 01:00, 5, 10, 68,0675, 680,6750, 141948,787500
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:31
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel strujni  Euro produzni (UPS), 4008002, 25,14, 01:00, 5, 10, 47,2720, 472,7200, 142539,687500
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:31
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel strujni  J-Y(St)Y 2x2x0,8 100m, 4008003, 308,70, 01:00, 5, 10, 580,4310, 5804,3100, 149795,075000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:31
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel UTP cat6, bijeli , 4004000, 0,00, 01:00, 5, 10, 0,0000, 0,0000, 149795,075000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:31
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel UTP cat6, bijeli 1m, 4004002, 8,60, 01:00, 5, 10, 11,8275, 118,2750, 149942,918750
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:31
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel UTP cat6, bijeli 2m, 4004001, 8,40, 01:00, 5, 10, 11,5520, 115,5200, 150087,318750
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:31
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel UTP cat6, bijeli 3m, 4004003, 11,70, 01:00, 5, 10, 16,0835, 160,8350, 150288,362500
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:31
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel UTP cat6, bijeli 5m, 4004004, 16,50, 01:00, 5, 10, 22,6860, 226,8600, 150571,937500
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:31
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel UTP cat6, crni , 4003000, 0,00, 01:00, 5, 10, 0,0000, 0,0000, 150571,937500
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:31
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel UTP cat6, crni 10m, 4003001, 28,50, 01:00, 5, 10, 39,1875, 391,8750, 151061,781250
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:31
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel UTP cat6, crni 1m, 4003004, 6,53, 01:00, 5, 10, 8,9775, 89,7750, 151174,000000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:31
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:32
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel UTP cat6, crni 2m, 4003002, 8,40, 01:00, 5, 10, 11,5520, 115,5200, 151318,400000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:32
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel UTP cat6, crni 5m, 4003003, 16,50, 01:00, 5, 10, 22,6860, 226,8600, 151601,975000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:32
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel UTP cat6, crveni , 4005000, 0,00, 01:00, 5, 10, 0,0000, 0,0000, 151601,975000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:32
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:34
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:36
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:36
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:37
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:37
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:38
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:38
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:39
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:39
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:41
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:42
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:42
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:42
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:43
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:43
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:43
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:49
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:49
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:49
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:53
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:53
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:53
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:54
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:56
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:56
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:56
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:56
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 01:58
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:05
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:05
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:07
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:07
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:07
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:08
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:26
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:27
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:27
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:28 - App started
+    *** BrunoBrckovic *** 
+
+- 12.06.19. 02:28
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: , 000000000, 0, 01:00, 0, 1, 0,00, 0,00, 0,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:30
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+    - InnerEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+    - MessageEcp: A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.)
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in D:\PROJECTS\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:30
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:30
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-R1000 Univerzalna Salica, 1001005, 0,00, 01:00, 0, 1, 259,83, 259,83, 324,7875
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:33
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:33
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:34
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:35
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel RJ11 1,5m, 4001001, 9,00, 01:00, 0, 1, 13,02, 13,02, 341,0625
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:35
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel strujni  , 4008000, 0,00, 01:00, 0, 1, 0,00, 0,00, 341,0625
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:35
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel strujni  Euro konektor, 4008001, 36,20, 01:00, 0, 1, 71,65, 71,65, 430,6250
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:35
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-R1000 Platforma za novac, 1001003, 0,00, 01:00, 0, 1, 660,71, 660,71, 1256,5125
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:35
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:37
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel RJ11 , 4001000, 0,00, 01:00, 0, 1, 0,00, 0,00, 1256,5125
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:38
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:38
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:38
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel UTP cat6, sivi 0,5m, 4002005, 6,53, 01:00, 0, 1, 6,53, 6,53, 1264,6750
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:39
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:41
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:42
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:43
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:44
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:46
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:46
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:48
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:48
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:49
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:49
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:49
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:50
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:52
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:53
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:53
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:54
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:55
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 PS, 1002003, 0,00, 01:00, 0, 1, 0,00, 0,00, 0,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:55
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:56
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:58
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 02:59
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 03:00
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 03:01
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 03:02
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 PS, 1002003, 0,00, 00:00, 0, 1, 0,00, 0,00, 0,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 03:03
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 PS, 1002003, 0,00, 99:00, 0, 1, 0,00, 0,00, 0,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 03:10 - App started
+    *** BrunoBrckovic *** 
+
+- 12.06.19. 03:11
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 Casice, 1002001, 162,00, 01:00, 0, 1, 500,22, 500,22, 625,2750
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.06.19. 03:11
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+

@@ -163,8 +163,23 @@ namespace POT
 
         private void MainFR_Load(object sender, EventArgs e)
         {
-            this.Location = Properties.Settings.Default.DisplayPoint; //Pamti zadnju poziciju forme
-            this.Size = Properties.Settings.Default.MainFrSize;
+            int kk = 0;
+            foreach (var screen in Screen.AllScreens)
+            {
+                kk++;
+            }
+
+            if (kk < 2 && Properties.Settings.Default.DisplayPoint.X > Screen.PrimaryScreen.Bounds.Width)
+            {
+                this.Location = new Point(0, 0);
+                this.Size = new Size(1008, 720);
+            }
+            else
+            {
+                this.Location = Properties.Settings.Default.DisplayPoint; //Pamti zadnju poziciju forme
+                this.Size = Properties.Settings.Default.MainFrSize;
+            }
+
 
             backgroundWorker2.WorkerReportsProgress = true;
             backgroundWorker2.WorkerSupportsCancellation = true;

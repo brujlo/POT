@@ -356,7 +356,8 @@ namespace POT.Documents
             ////////////////////////////////////////////////
             ///
 
-            decimal cijena = decimal.Parse(CheckIfKNZero(tempSifPart));
+            //decimal cijena = decimal.Parse(CheckIfKNZero(tempSifPart));
+            decimal cijena = decimal.Parse(PriceTB.Text);
             decimal popust = invPrt.Rabat;
            
 
