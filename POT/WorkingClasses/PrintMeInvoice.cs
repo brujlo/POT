@@ -286,18 +286,23 @@ namespace POT.WorkingClasses
 
                     if (partRows < invPrtList.Count)
                     {
+                        e.Graphics.FillRectangle(new SolidBrush(Color.DeepSkyBlue), rb, headerpointVer, total, rowHeight + dodatak);
                         e.Graphics.DrawRectangle(new Pen(Brushes.Black), rb, headerpointVer, total, rowHeight + dodatak);
-                        e.Graphics.FillRectangle(new SolidBrush(Color.DeepSkyBlue), rb, headerpointVer + 1 , total, 33);
+
+                        float[] dashValues = { 1, 1, 1, 1 };
+                        Pen blackPen = new Pen(Color.Black, 1);
+                        //blackPen.DashPattern = dashValues;
+                        blackPen.DashStyle = System.Drawing.Drawing2D.DashStyle.Dot;
 
                         //GRID
-                        e.Graphics.DrawLine(new Pen(Brushes.Black), new Point(name, headerpointVer), new Point(name, headerpointVer + rowHeight + dodatak));
-                        e.Graphics.DrawLine(new Pen(Brushes.Black), new Point(code, headerpointVer), new Point(code, headerpointVer + rowHeight + dodatak));
-                        e.Graphics.DrawLine(new Pen(Brushes.Black), new Point(price, headerpointVer), new Point(price, headerpointVer + rowHeight + dodatak));
-
-                        e.Graphics.DrawLine(new Pen(Brushes.Black), new Point(workTime, headerpointVer), new Point(workTime, headerpointVer + rowHeight + dodatak));
-                        e.Graphics.DrawLine(new Pen(Brushes.Black), new Point(rebate, headerpointVer), new Point(rebate, headerpointVer + rowHeight + dodatak));
-                        e.Graphics.DrawLine(new Pen(Brushes.Black), new Point(amount, headerpointVer), new Point(amount, headerpointVer + rowHeight + dodatak));
-                        e.Graphics.DrawLine(new Pen(Brushes.Black), new Point(rebatePrice, headerpointVer), new Point(rebatePrice, headerpointVer + rowHeight + dodatak));
+                        e.Graphics.DrawLine(blackPen, new Point(name, headerpointVer), new Point(name, headerpointVer + rowHeight + dodatak));
+                        e.Graphics.DrawLine(blackPen, new Point(code, headerpointVer), new Point(code, headerpointVer + rowHeight + dodatak));
+                        e.Graphics.DrawLine(blackPen, new Point(price, headerpointVer), new Point(price, headerpointVer + rowHeight + dodatak));
+                                            
+                        e.Graphics.DrawLine(blackPen, new Point(workTime, headerpointVer), new Point(workTime, headerpointVer + rowHeight + dodatak));
+                        e.Graphics.DrawLine(blackPen, new Point(rebate, headerpointVer), new Point(rebate, headerpointVer + rowHeight + dodatak));
+                        e.Graphics.DrawLine(blackPen, new Point(amount, headerpointVer), new Point(amount, headerpointVer + rowHeight + dodatak));
+                        e.Graphics.DrawLine(blackPen, new Point(rebatePrice, headerpointVer), new Point(rebatePrice, headerpointVer + rowHeight + dodatak)); //new Pen(Brushes.Black)
 
                         workingStr = "RB";
                         fnt = fitFontSizeBold(e, workingStr, fontSizeR, polje);
@@ -499,16 +504,19 @@ namespace POT.WorkingClasses
                             measureStr = e.Graphics.MeasureString(workingStr, ft).Width;
                             e.Graphics.DrawString(workingStr, new Font("Calibri light", ft.Size, FontStyle.Bold), Brushes.Black, new Point(kraj - (int)measureStr, headerpointVer + moveBy));
 
-                            headerpointVer = headerpointVer + (moveBy * 2);
-                            workingStr = Properties.strings.TotalSum + ":";
-                            measureField = rebatePrice - workTime;
-                            measureStr = e.Graphics.MeasureString(workingStr, ft).Width;
-                            e.Graphics.DrawString(workingStr, new Font("Calibri light", ft.Size, FontStyle.Regular), Brushes.Black, new Point(amount + ((rebatePrice - amount) / 2) - (int)measureStr, headerpointVer + moveBy));
+                            if (!hrv)
+                            {
+                                headerpointVer = headerpointVer + (moveBy * 2);
+                                workingStr = Properties.strings.TotalSum + ":";
+                                measureField = rebatePrice - workTime;
+                                measureStr = e.Graphics.MeasureString(workingStr, ft).Width;
+                                e.Graphics.DrawString(workingStr, new Font("Calibri light", ft.Size, FontStyle.Regular), Brushes.Black, new Point(amount + ((rebatePrice - amount) / 2) - (int)measureStr, headerpointVer + moveBy));
 
-                            workingStr = String.Format("{0:N2}", inv.Iznos) + " kn";
-                            measureField = total - rebatePrice;
-                            measureStr = e.Graphics.MeasureString(workingStr, ft).Width;
-                            e.Graphics.DrawString(workingStr, new Font("Calibri light", ft.Size, FontStyle.Regular), Brushes.Black, new Point(kraj - (int)measureStr, headerpointVer + moveBy));
+                                workingStr = String.Format("{0:N2}", inv.Iznos) + " kn";
+                                measureField = total - rebatePrice;
+                                measureStr = e.Graphics.MeasureString(workingStr, ft).Width;
+                                e.Graphics.DrawString(workingStr, new Font("Calibri light", ft.Size, FontStyle.Regular), Brushes.Black, new Point(kraj - (int)measureStr, headerpointVer + moveBy));
+                            }
 
                             headerpointVer = headerpointVer - (moveBy * 2);
                         }
@@ -568,7 +576,7 @@ namespace POT.WorkingClasses
                             float measureStrOsoba = e.Graphics.MeasureString(workingStrOsoba, ft).Width;
                             e.Graphics.DrawString(workingStrOsoba, new Font("Calibri light", ft.Size, FontStyle.Bold), Brushes.Black, new Point(rebatePrice - ((int)measureStrOsoba / 2), headerpointVer + moveBy));
 
-                            workingStrOsoba = "Bruno Brcković";
+                            workingStrOsoba = Properties.Settings.Default.odgovornaOsoba;
                             measureStrOsoba = e.Graphics.MeasureString(workingStrOsoba, ft).Width;
                             e.Graphics.DrawString(workingStrOsoba, new Font("Calibri light", ft.Size, FontStyle.Regular), Brushes.Black, new Point(rebatePrice - ((int)measureStrOsoba / 2), headerpointVer + (moveBy * 2)));
 

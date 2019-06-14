@@ -158,5 +158,8 @@
     <Setting Name="thx1HRTB" Type="System.String" Scope="User">
       <Value Profile="(Default)">Hvala na ukazanom povjerenju</Value>
     </Setting>
+    <Setting Name="odgovornaOsoba" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
   </Settings>
 </SettingsFile>

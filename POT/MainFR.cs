@@ -69,6 +69,7 @@ namespace POT
                 this.linkLabel15.Enabled = true;
                 this.linkLabel16.Enabled = true;
                 this.linkLabel20.Enabled = true;
+                this.linkLabel23.Enabled = true;
             }
             else
             {
@@ -81,6 +82,7 @@ namespace POT
                 this.linkLabel15.Enabled = false;
                 this.linkLabel16.Enabled = false;
                 this.linkLabel20.Enabled = false;
+                this.linkLabel23.Enabled = false;
             }
 
             if (WorkingUser.AdminRights.ToString().Contains("2") || WorkingUser.AdminRights.ToString().Contains("1"))

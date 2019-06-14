@@ -38,6 +38,7 @@ namespace POT.Documents
 
         Invoice invoice = new Invoice();
         List<InvoiceParts> invoicePartsList = new List<InvoiceParts>();
+        InvoiceParts recalculateInvPart = new InvoiceParts();
 
         public Racun()
         {
@@ -339,13 +340,19 @@ namespace POT.Documents
                 if ( indx >= 0 )
                 {
                     listView1.Items[indx].SubItems[6].Text = (invoicePartsList.ElementAt(indx).Kolicina += invoicePart.Kolicina).ToString();
+                    invoicePartsList[indx].IznosTotal = String.Format("{0:N2}", decimal.Parse(invoicePartsList[indx].IznosTotal) + invoicePart.Kolicina * decimal.Parse(invoicePartsList[indx].IznosRabat));
+                    listView1.Items[indx].SubItems[8].Text = invoicePartsList.ElementAt(indx).IznosTotal;
+                    addToList(false, true, invoicePart);
+
                     SystemSounds.Hand.Play();
                 }
                 else
                 {
                     invoicePartsList.Add(invoicePart);
 
-                    addToList(true, invoicePart);
+                    addToList(false, false, invoicePart);
+
+                    recalculateInvPart = invoicePart;
                 }
 
                 PartNameCB.Focus();
@@ -357,7 +364,7 @@ namespace POT.Documents
             }
         }
 
-        private void addToList(Boolean clear, InvoiceParts invPrt)
+        private void addToList(Boolean remove, Boolean update, InvoiceParts invPrt)
         {
             ///////////////// LogMe ////////////////////////
             String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
@@ -368,45 +375,84 @@ namespace POT.Documents
             ////////////////////////////////////////////////
             ///
 
+            decimal cijena = 0;
+            decimal popust = 0;
+
+
+            decimal partTotal = 0;
+            decimal partsTotal = 0;
+
             //decimal cijena = decimal.Parse(CheckIfKNZero(tempSifPart));
-            decimal cijena = decimal.Parse(PriceTB.Text);
-            decimal popust = invPrt.Rabat;
+            if (!remove)
+            {
+                cijena = decimal.Parse(PriceTB.Text);
+                popust = invPrt.Rabat;
            
 
-            decimal partTotal = invPrt.PartTotalPrice(cijena, popust, invPrt.VrijemeRada);
-            decimal partsTotal = partTotal * invPrt.Kolicina;
+                partTotal = invPrt.PartTotalPrice(cijena, popust, invPrt.VrijemeRada);
+                partsTotal = partTotal * invPrt.Kolicina;
 
-            //TOTAL += partsTotal;
-            TOTALTAXBASE += partsTotal;
-            TOTALTAX = TOTALTAXBASE * vat;
-            TOTAL = TOTALTAX + TOTALTAXBASE;
+                //TOTAL += partsTotal;
+                TOTALTAXBASE += partsTotal;
+                TOTALTAX = TOTALTAXBASE * vat;
+                TOTAL = TOTALTAX + TOTALTAXBASE;
 
-            invoice.Iznos = TOTAL;
+                invoice.Iznos = TOTAL;
+            }
+            else
+            {
+                cijena = decimal.Parse(invPrt.IznosTotal);
+
+                //TOTAL += partsTotal;
+                TOTALTAXBASE -= cijena;
+                TOTALTAX = TOTALTAXBASE * vat;
+                TOTAL = TOTALTAX + TOTALTAXBASE;
+
+                invoice.Iznos = TOTAL;
+            }
 
             try
             {
-                ListViewItem lvi1 = new ListViewItem();
-                rb = listView1.Items.Count + 1;
-                lvi1.Text = rb.ToString();
+                String dd;
+
+                if (!remove && !update)
+                {
+                    ListViewItem lvi1 = new ListViewItem();
+                    rb = listView1.Items.Count + 1;
+                    lvi1.Text = rb.ToString();
                 
-                lvi1.SubItems.Add(tempSifPart.FullName);
-                lvi1.SubItems.Add(mainCmp.Code.ToString() + customerCmp.Code.ToString() + Decoder.GetFullPartCodeStr(tempSifPart.FullCode));
-                lvi1.SubItems.Add(String.Format("{0:0.00}", cijena));
-                lvi1.SubItems.Add(invPrt.VrijemeRada);
-                lvi1.SubItems.Add(String.Format("{0:0.00}", invPrt.Rabat));
-                lvi1.SubItems.Add(String.Format("{0:#0}", invPrt.Kolicina));
-                lvi1.SubItems.Add(String.Format("{0:0.00}", partTotal));
-                lvi1.SubItems.Add(String.Format("{0:0.00}", partsTotal));
+                    lvi1.SubItems.Add(tempSifPart.FullName);
+                    lvi1.SubItems.Add(mainCmp.Code.ToString() + customerCmp.Code.ToString() + Decoder.GetFullPartCodeStr(tempSifPart.FullCode));
+                    lvi1.SubItems.Add(String.Format("{0:0.00}", cijena));
+                    lvi1.SubItems.Add(invPrt.VrijemeRada);
+                    lvi1.SubItems.Add(String.Format("{0:0.00}", invPrt.Rabat));
+                    lvi1.SubItems.Add(String.Format("{0:#0}", invPrt.Kolicina));
+                    lvi1.SubItems.Add(String.Format("{0:0.00}", partTotal));
+                    lvi1.SubItems.Add(String.Format("{0:0.00}", partsTotal));
 
-                if (listView1.Items.Count > 1)
-                    listView1.EnsureVisible(listView1.Items.Count - 1);
+                    if (listView1.Items.Count > 1)
+                        listView1.EnsureVisible(listView1.Items.Count - 1);
 
-                listView1.Items.Add(lvi1);
+                    listView1.Items.Add(lvi1);
 
-                String dd = tempSifPart.FullName + ", " + Decoder.GetFullPartCodeStr(tempSifPart.FullCode.ToString()) + ", " + tempSifPart.PriceInKn.ToString() + ", " + invPrt.VrijemeRada + ", " + invPrt.Rabat.ToString() + ", " + invPrt.Kolicina.ToString() + ", " + partTotal + ", " + partsTotal + ", " + TOTAL.ToString();
-                invPrt.IznosPart = String.Format("{0:N2}", cijena);
-                invPrt.IznosRabat = String.Format("{0:N2}", partTotal);
-                invPrt.IznosTotal = String.Format("{0:N2}", partsTotal);
+                    dd = tempSifPart.FullName + ", " + Decoder.GetFullPartCodeStr(tempSifPart.FullCode.ToString()) + ", " + tempSifPart.PriceInKn.ToString() + ", " + invPrt.VrijemeRada + ", " + invPrt.Rabat.ToString() + ", " + invPrt.Kolicina.ToString() + ", " + partTotal + ", " + partsTotal + ", " + TOTAL.ToString();
+                    invPrt.IznosPart = String.Format("{0:N2}", cijena);
+                    invPrt.IznosRabat = String.Format("{0:N2}", partTotal);
+                    invPrt.IznosTotal = String.Format("{0:N2}", partsTotal);
+
+                    if (data.Equals(""))
+                        data = dd;
+                    else
+                        data = data + Environment.NewLine + "             " + dd;
+                }
+                else
+                {
+                    dd = tempSifPart.FullName + ", " + Decoder.GetFullPartCodeStr(tempSifPart.FullCode.ToString()) + ", " + tempSifPart.PriceInKn.ToString() + ", " + invPrt.VrijemeRada + ", " + invPrt.Rabat.ToString() + ", " + invPrt.Kolicina.ToString() + ", " + partTotal + ", " + partsTotal + ", " + TOTAL.ToString();
+                    if (data.Equals(""))
+                        data = dd;
+                    else
+                        data = data + Environment.NewLine + "             " + dd;
+                }
 
                 if (radioButtonENG.Checked)
                 {
@@ -425,10 +471,6 @@ namespace POT.Documents
                     TotalKNLB.Text = String.Format("{0:0.00}", TOTAL);
                 }
 
-                if (data.Equals(""))
-                    data = dd;
-                else
-                    data = data + Environment.NewLine + "             " + dd;
             }
             catch (Exception e1)
             {
@@ -462,6 +504,44 @@ namespace POT.Documents
 
         private void button5_Click(object sender, EventArgs e)
         {
+            ///////////////// LogMe ////////////////////////
+            String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
+            String usedQC = "Remove selected";
+            String data = "";
+            String Result = "";
+            LogWriter lw = new LogWriter();
+            ////////////////////////////////////////////////
+            ///
+            
+            if (listView1.SelectedItems.Count <= 0)
+                return;
+
+            var itemIndx = listView1.SelectedIndices[0];
+            int k = 1;
+            
+            foreach (ListViewItem item in listView1.SelectedItems)
+            {
+                listView1.Items.Remove(item);
+                if (data.Equals(""))
+                    data = item.SubItems[0] + ", " + item.SubItems[1] + ", " + item.SubItems[2] + ", " + item.SubItems[3] + ", " + item.SubItems[4] + ", " + item.SubItems[5] + ", " + item.SubItems[6] + ", " + item.SubItems[7] + ", " + item.SubItems[8];
+                else
+                    data = data + Environment.NewLine + "             " + item.SubItems[0] + ", " + item.SubItems[1] + ", " + item.SubItems[2] + ", " + item.SubItems[3] + ", " + item.SubItems[4] + ", " + item.SubItems[5] + ", " + item.SubItems[6] + ", " + item.SubItems[7] + ", " + item.SubItems[8];
+            }
+
+            foreach (ListViewItem item in listView1.Items)
+            {
+                if (listView1.SelectedItems != null && listView1.Items.Count != 0)
+                {
+                    item.SubItems[0].Text = k.ToString();
+                    k++;
+                }
+            }
+            
+            addToList(true, false, invoicePartsList[itemIndx]);
+            invoicePartsList.RemoveAt(itemIndx);
+
+            Result = "Removed";
+            lw.LogMe(function, usedQC, data, Result);
 
         }
 
@@ -519,8 +599,6 @@ namespace POT.Documents
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Program.SaveStart();
-
             ///////////////// LogMe ////////////////////////
             String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
             String usedQC = "SaveInvoice";
@@ -529,6 +607,18 @@ namespace POT.Documents
             LogWriter lw = new LogWriter();
             ////////////////////////////////////////////////
             ///
+
+            if (qc.IfInvoiceExist(invoice.Id))
+            {
+                data = invoice.Id.ToString() + Environment.NewLine;
+                Result = "Invoice is already saved in DB, please make new one.";
+                lw.LogMe(function, usedQC, data, Result);
+                MessageBox.Show(Result, "NOTHING DONE", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            Program.SaveStart();
+
 
             invoice.VrijemeIzdano = DateTime.Now.ToString("HH:mm");
             invoice.Napomena = textBox4.Text;
@@ -623,6 +713,71 @@ namespace POT.Documents
                 PrintPrewBT_Click(sender, e);
                 //printDocumentPrim.Print();
             }
+        }
+
+        private void WorkTimeTB_TextChanged(object sender, EventArgs e)
+        {
+            cijneaPrimjer();
+        }
+
+        private void RebateTB_TextChanged(object sender, EventArgs e)
+        {
+            cijneaPrimjer();
+        }
+
+        private void QuantityTB_TextChanged(object sender, EventArgs e)
+        {
+            cijneaPrimjer();
+        }
+
+        private void PriceTB_TextChanged(object sender, EventArgs e)
+        {
+            cijneaPrimjer();
+        }
+
+        private void cijneaPrimjer()
+        {
+            try
+            {
+                decimal priceTime = (decimal.Parse(PriceTB.Text) * workTimeToNumber(WorkTimeTB.Text));
+                decimal rebatePrice = (priceTime * (decimal.Parse(RebateTB.Text) / 100));
+                int qnt = int.Parse(QuantityTB.Text);
+
+                decimal partPrice = (priceTime - rebatePrice) * qnt;
+                PriceInfoLB.Text = String.Format("{0:N2}", partPrice);
+                FullPriceInfoLB.Text = String.Format("{0:N2}", partPrice * vat + partPrice);
+            }
+            catch { }
+        }
+
+        private decimal workTimeToNumber(String wrk)
+        {
+            decimal rez = 1;
+
+            if (!wrk.Equals("00:00"))
+            {
+                try
+                {
+                    decimal obrJed = Properties.Settings.Default.ObracunskaJedinica;
+
+                    var spl = wrk.Split(':');
+                    int sati = int.Parse(spl[0]);
+                    int min = int.Parse(spl[1]);
+                    decimal mm = (int)(min / obrJed);
+
+                    if (min % obrJed > 0)
+                        mm++;
+                    mm = mm * obrJed / 60;
+
+                    rez = sati + (mm);
+                }
+                catch
+                {
+                    return 1;
+                }
+            }
+
+            return rez;
         }
     }
 }

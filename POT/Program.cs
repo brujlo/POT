@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -15,6 +16,9 @@ namespace POT
 
         public static Loading load;
         public static Saving save;
+
+        public static Thread saveTh;
+        //public static Thread loadTh;
 
         [STAThread]
         static void Main()
@@ -45,29 +49,66 @@ namespace POT
                 {
                     load.Close();
                 });
+
             }
             catch { }
         }
+
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
         public static void SaveStart()
         {
             try
             {
-                new Thread(() => save.ShowDialog()).Start();
+                // new Thread(() => load.ShowDialog()).Start();
+
+                if (saveTh == null)
+                {
+                    saveTh = new Thread(new ThreadStart(metodSaveShow));
+                    String name = saveTh.Name = "SaveThName";
+                    saveTh.Start();
+                }
+                else if (saveTh.Name.Equals("SaveThName"))
+                {
+                    saveTh.Abort();
+                    saveTh = null;
+                }
             }
-            catch { }
+            catch (Exception e)
+            {
+                //MessageBox.Show(e.ToString());
+            }
         }
+        public static void metodSaveShow()
+        {
+            if (saveTh != null)
+            {
+                save.ShowDialog();
+            }
+        }
+
 
         public static void SaveStop()
         {
             try
             {
-                save.Invoke((MethodInvoker)delegate
+                if (saveTh != null && saveTh.Name.Equals("SaveThName"))
                 {
-                    save.Close();
-                });
+                    save.Invoke((MethodInvoker)delegate
+                    {
+                        save.Close();
+                    });
+
+                    saveTh.Abort();
+                    saveTh = null;
+                }
             }
-            catch { }
+            catch (Exception e)
+            {
+                //MessageBox.Show(e.ToString());
+            }
         }
     }
 }

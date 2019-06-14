@@ -34,6 +34,9 @@
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.FullPriceInfoLB = new System.Windows.Forms.Label();
+            this.PriceInfoLB = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -96,6 +99,7 @@
             this.printPreviewDialogInvoice = new System.Windows.Forms.PrintPreviewDialog();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -144,6 +148,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.groupBox2);
             this.tabPage1.Controls.Add(this.label23);
             this.tabPage1.Controls.Add(this.label24);
             this.tabPage1.Controls.Add(this.textBox4);
@@ -198,6 +203,42 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Make";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.FullPriceInfoLB);
+            this.groupBox2.Controls.Add(this.PriceInfoLB);
+            this.groupBox2.Location = new System.Drawing.Point(564, 136);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(114, 71);
+            this.groupBox2.TabIndex = 177;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Price info";
+            // 
+            // FullPriceInfoLB
+            // 
+            this.FullPriceInfoLB.AutoSize = true;
+            this.FullPriceInfoLB.ForeColor = System.Drawing.Color.Crimson;
+            this.FullPriceInfoLB.Location = new System.Drawing.Point(61, 41);
+            this.FullPriceInfoLB.Name = "FullPriceInfoLB";
+            this.FullPriceInfoLB.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.FullPriceInfoLB.Size = new System.Drawing.Size(44, 20);
+            this.FullPriceInfoLB.TabIndex = 31;
+            this.FullPriceInfoLB.Text = "0,00 ";
+            this.FullPriceInfoLB.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // PriceInfoLB
+            // 
+            this.PriceInfoLB.AutoSize = true;
+            this.PriceInfoLB.ForeColor = System.Drawing.Color.Crimson;
+            this.PriceInfoLB.Location = new System.Drawing.Point(60, 19);
+            this.PriceInfoLB.Name = "PriceInfoLB";
+            this.PriceInfoLB.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.PriceInfoLB.Size = new System.Drawing.Size(44, 20);
+            this.PriceInfoLB.TabIndex = 30;
+            this.PriceInfoLB.Text = "0,00 ";
+            this.PriceInfoLB.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label23
             // 
@@ -446,7 +487,9 @@
             // 
             this.listView1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.listView1.ForeColor = System.Drawing.Color.White;
+            this.listView1.FullRowSelect = true;
             this.listView1.Location = new System.Drawing.Point(4, 271);
+            this.listView1.MultiSelect = false;
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(802, 244);
             this.listView1.TabIndex = 43;
@@ -692,6 +735,7 @@
             this.QuantityTB.TabIndex = 8;
             this.QuantityTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.QuantityTB.MouseClick += new System.Windows.Forms.MouseEventHandler(this.QuantityTB_MouseClick);
+            this.QuantityTB.TextChanged += new System.EventHandler(this.QuantityTB_TextChanged);
             this.QuantityTB.Enter += new System.EventHandler(this.QuantityTB_Enter);
             // 
             // RebateTB
@@ -704,6 +748,7 @@
             this.RebateTB.Text = "0";
             this.RebateTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.RebateTB.MouseClick += new System.Windows.Forms.MouseEventHandler(this.RebateTB_MouseClick);
+            this.RebateTB.TextChanged += new System.EventHandler(this.RebateTB_TextChanged);
             this.RebateTB.Enter += new System.EventHandler(this.RebateTB_Enter);
             this.RebateTB.Leave += new System.EventHandler(this.RebateTB_Leave);
             // 
@@ -736,6 +781,7 @@
             this.WorkTimeTB.Text = "01:00";
             this.WorkTimeTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.WorkTimeTB.MouseClick += new System.Windows.Forms.MouseEventHandler(this.WorkTimeTB_MouseClick);
+            this.WorkTimeTB.TextChanged += new System.EventHandler(this.WorkTimeTB_TextChanged);
             this.WorkTimeTB.Enter += new System.EventHandler(this.WorkTimeTB_Enter);
             this.WorkTimeTB.Leave += new System.EventHandler(this.WorkTimeTB_Leave);
             // 
@@ -746,6 +792,7 @@
             this.PriceTB.Size = new System.Drawing.Size(128, 26);
             this.PriceTB.TabIndex = 5;
             this.PriceTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.PriceTB.TextChanged += new System.EventHandler(this.PriceTB_TextChanged);
             // 
             // label12
             // 
@@ -843,6 +890,8 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -917,5 +966,8 @@
         private System.Drawing.Printing.PrintDocument printDocumentInvoice;
         private System.Windows.Forms.PrintDialog printDialog1;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialogInvoice;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label FullPriceInfoLB;
+        private System.Windows.Forms.Label PriceInfoLB;
     }
 }

@@ -648,5 +648,17 @@ namespace POT.Properties {
                 this["thx1HRTB"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string odgovornaOsoba {
+            get {
+                return ((string)(this["odgovornaOsoba"]));
+            }
+            set {
+                this["odgovornaOsoba"] = value;
+            }
+        }
     }
 }

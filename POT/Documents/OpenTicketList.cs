@@ -55,7 +55,8 @@ namespace POT
             {
                 if (!resultArr[0].Equals("nok"))
                 {
-                    for (int i = 0; i < resultArr.Count(); i = i + 27)
+                    int ii = 0;
+                    for (int i = 0; i < resultArr.Count(); i = i + 27, ii++)
                     {
                         ListViewItem lvi1 = new ListViewItem();
 
@@ -88,6 +89,8 @@ namespace POT
                         lvi1.SubItems.Add(resultArr[i + 26]);
                         listView1.Items.Add(lvi1);
                     }
+
+                    label1.Text = "cnt " + ii;
                 }
             }
             catch (Exception e1)

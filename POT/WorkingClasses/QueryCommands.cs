@@ -4395,5 +4395,40 @@ namespace POT
             cnn.Close();
             return isExecuted;
         }
+
+        public Boolean IfInvoiceExist(long _InvocieID)
+        {
+            Boolean exist = true;
+
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "select Count(ID) from Racun where ID = " + _InvocieID;
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            try
+            {
+
+                if (!dataReader.GetValue(0).ToString().Equals("0"))
+                    exist = true;
+                else
+                    exist = false;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                dataReader.Close();
+                if (cnn.State.ToString().Equals("Open"))
+                    cnn.Close();
+            }
+
+            dataReader.Close();
+            cnn.Close();
+            return exist;
+        }
     }
 }

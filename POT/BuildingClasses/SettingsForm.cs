@@ -27,6 +27,8 @@ namespace POT.BuildingClasses
             extraLine1HRTB.Text = Properties.Settings.Default.extraLine1HRTB.ToString();
             extraLine2HRTB.Text = Properties.Settings.Default.extraLine2HRTB.ToString();
             thx1HRTB.Text = Properties.Settings.Default.thx1HRTB.ToString();
+
+            odgOsobaTB.Text = Properties.Settings.Default.odgovornaOsoba;
         }
 
         private void SaveBT_Click(object sender, EventArgs e)
@@ -55,11 +57,13 @@ namespace POT.BuildingClasses
                 Properties.Settings.Default.extraLine2HRTB = extraLine2HRTB.Text;
                 Properties.Settings.Default.thx1HRTB = thx1HRTB.Text;
 
+                Properties.Settings.Default.odgovornaOsoba = odgOsobaTB.Text;
+
                 Properties.Settings.Default.Save();
 
                 data = tax1TB.Text + "; " + tax2TB.Text + "; " + obrJedTB.Text
                      + "; " + extraLine1ENGTB.Text + "; " + extraLine2ENGTB.Text + "; " + thx1ENGTB.Text
-                      + "; " + extraLine1HRTB.Text + "; " + extraLine2HRTB.Text + "; " + thx1HRTB.Text;
+                      + "; " + extraLine1HRTB.Text + "; " + extraLine2HRTB.Text + "; " + thx1HRTB.Text + "; " + odgOsobaTB.Text;
                 lw.LogMe(function, usedQC, data, Result);
 
                 MessageBox.Show("Saved.");
@@ -69,7 +73,7 @@ namespace POT.BuildingClasses
             {
                 data = tax1TB.Text + "; " + tax2TB.Text + "; " + obrJedTB.Text
                      + "; " + extraLine1ENGTB.Text + "; " + extraLine2ENGTB.Text + "; " + thx1ENGTB.Text
-                      + "; " + extraLine1HRTB.Text + "; " + extraLine2HRTB.Text + "; " + thx1HRTB.Text;
+                      + "; " + extraLine1HRTB.Text + "; " + extraLine2HRTB.Text + "; " + thx1HRTB.Text + "; " + odgOsobaTB.Text;
                 Result = e1.Message;
                 lw.LogMe(function, usedQC, data, Result);
                 MessageBox.Show(Result, "NOT SAVED", MessageBoxButtons.OK, MessageBoxIcon.Warning);
