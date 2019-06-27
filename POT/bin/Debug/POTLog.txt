@@ -169,3 +169,1193 @@ Parameter name: index
 
 - 14.06.19. 15:34 - App turned off
     *** BrunoBrckovic *** 
+
+- 27.06.19. 20:01
+    - LOGED change: POT.SetDBConnection - button2_Click
+     - Used: DB connection address and name save.
+     - Data: 192.168.100.101, exe
+     - Result: Saved, no msgToUser
+    ***  *** 
+
+
+- 27.06.19. 20:01 - App started
+    *** BrunoBrckovic *** 
+
+- 27.06.19. 20:02
+    - LOGED change: POT.CompanyInfo - button2_Click
+     - Used: Saving MainCmp info
+     - Data: Exception, Dunavska 31, Zagreb, 10040, HR, 0.00, 0.00, PBZGHR2X, PBZGHR2X, 97768138, HR9323400091160480462, 4, 1, www.exception.hr, +385914456454, Bruno Brckovic, info@exception.hr, support@exception.hr, 2
+     - Result: Saved.
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:04
+    - LOGED change: POT.MainCmpSelector - button1_Click
+     - Used: Main cmp select
+     - Data: 
+     - Result: Main cmp selected, please relog to see changes.
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:04 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 27.06.19. 20:04 - App started
+    *** BrunoBrckovic *** 
+
+- 27.06.19. 20:04
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: 190001
+
+     - Result: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:04
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: 190002
+
+     - Result: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:04
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: 190003
+
+     - Result: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:04
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: 190002
+
+     - Result: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:05
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: DATE
+     - Data: 15.05.19.
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:05
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: 190001
+
+     - Result: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:05
+    - LOGED change: POT.CopyPrintForms.cISS - listView1_DoubleClick
+     - Used: OTP Selected
+     - Data: 
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:05 - App turned off
+    *** BrunoBrckovic *** 
+
+- 27.06.19. 20:05 - App started
+    *** BrunoBrckovic *** 
+
+- 27.06.19. 20:06
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: 190001
+
+     - Result: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:06
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: 190002
+
+     - Result: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:06
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: 190001
+
+     - Result: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:07
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: 190002
+
+     - Result: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:12 - App started
+    *** BrunoBrckovic *** 
+
+- 27.06.19. 20:12
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: 190001
+
+     - Result: There is already an open DataReader associated with this Command which must be closed first.
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:12
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: 190001
+
+     - Result: There is already an open DataReader associated with this Command which must be closed first.
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:13
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 5, 190002, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190002
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:21
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 01:30, 0, 5, 252,000, 1260,000, 1575,00000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:22
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 01:45, 0, 14, 294,0000, 4116,0000, 6720,000000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:22
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 02:00, 0, 1, 336,00, 336,00, 7140,000000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:23
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 01:30, 0, 1, 252,000, 252,000, 7455,000000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:23
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: DATE
+     - Data: 14.05.19.
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:23
+    - BaseEcp: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at POT.CopyPrintForms.cPRIM.listView1_DoubleClick(Object sender, EventArgs e)
+   at System.Windows.Forms.Control.OnDoubleClick(EventArgs e)
+   at System.Windows.Forms.ListView.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at POT.CopyPrintForms.cPRIM.listView1_DoubleClick(Object sender, EventArgs e)
+   at System.Windows.Forms.Control.OnDoubleClick(EventArgs e)
+   at System.Windows.Forms.ListView.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e)
+    - TypeNameEcp: System.ArgumentOutOfRangeException
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:23
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: DATE
+     - Data: 21.05.19.
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:23
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 19007
+     - Result: Selected PRIM (19007) does not exist or do not have parts.
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:23
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: ID
+     - Data: 19072
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:24
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: ID
+     - Data: 19071
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:24
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: ID
+     - Data: 19070
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:24
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: ID
+     - Data: 19069
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:24
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: ID
+     - Data: 19007
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:24
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: ID
+     - Data: 19006
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:24
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: ID
+     - Data: 19005
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:24
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: ID
+     - Data: 18068
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:24
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: ID
+     - Data: 19005
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:24
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: ID
+     - Data: 19006
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:24
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: ID
+     - Data: 19007
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:24
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: ID
+     - Data: 19069
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:24
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: ID
+     - Data: 19070
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:24
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: ID
+     - Data: 19071
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:24
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: ID
+     - Data: 19072
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:24
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 19072
+     - Result: Selected PRIM (19072) does not exist or do not have parts.
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:24
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: NAME
+     - Data: 8
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:24
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 19007
+     - Result: Selected PRIM (19007) does not exist or do not have parts.
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:24
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 19006
+     - Result: Selected PRIM (19006) does not exist or do not have parts.
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:28
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 19006
+     - Result: Selected PRIM (19006) does not exist or do not have parts.
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:29
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: NAME
+     - Data: 179
+     - Result: Selected PRIM does not exist.
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:30
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: NAME
+     - Data: 8
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:30
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 19006
+     - Result: Selected PRIM (19006) does not exist or do not have parts.
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:34
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 19006
+     - Result: Selected PRIM (19006) does not exist or do not have parts.
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:34
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 19006
+     - Result: Selected PRIM (19006) does not exist or do not have parts.
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:34
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 19006
+     - Result: Selected PRIM (19006) does not exist or do not have parts.
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:34
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 19006
+     - Result: Selected PRIM (19006) does not exist or do not have parts.
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:35
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 19006
+     - Result: Selected PRIM (19006) does not exist or do not have parts.
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:35
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 19006
+     - Result: Selected PRIM (19006) does not exist or do not have parts.
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:36
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 19006
+     - Result: Selected PRIM (19006) does not exist or do not have parts.
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:37
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 19006
+     - Result: Selected PRIM (19006) does not exist or do not have parts.
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:38
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 19006
+     - Result: Selected PRIM (19006) does not exist or do not have parts.
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:38
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 19006
+     - Result: Selected PRIM (19006) does not exist or do not have parts.
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:39
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 19006
+     - Result: Selected PRIM (19006) does not exist or do not have parts.
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:40 - App started
+    *** BrunoBrckovic *** 
+
+- 27.06.19. 20:41
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 01:30, 0, 6, 252,000, 1512,000, 1890,00000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:41
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 01:45, 0, 14, 294,0000, 4116,0000, 7035,000000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:41
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 02:00, 0, 1, 336,00, 336,00, 7455,000000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:42
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 Bushing, Platen, 13002003, 0,00, 00:00, 0, 21, 41,32, 867,72, 8539,650000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:44
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 Auto Cutter ACS-541-1N, 13002001, 390,00, 00:00, 0, 3, 677,48, 2032,44, 11080,200000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:45
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 Holder, Platen, 13002030, 0,00, 00:00, 0, 1, 67,20, 67,20, 11164,200000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:45
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:46
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 20:47 - App turned off
+    *** BrunoBrckovic *** 
+
+- 27.06.19. 21:46 - App started
+    *** BrunoBrckovic *** 
+
+- 27.06.19. 21:46
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: ID
+     - Data: 18001
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 21:46
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 18001
+     - Result: Selected PRIM (18001) does not exist or do not have parts.
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 21:46
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+    - InnerEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+    - MessageEcp: A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.)
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 21:46
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+    - InnerEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+    - MessageEcp: A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.)
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 27
+   at POT.QueryCommands.MainCmpInfoByName(String mName) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 3557
+   at POT.MyTypes.MainCmp.GetMainCmpByName(String mName) in F:\PROJEKTI\VS\POT\POT\POT\MyTypes\MainCmp.cs:line 42
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 21:46
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+    - InnerEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+    - MessageEcp: A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.)
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 21:47
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+    - InnerEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+    - MessageEcp: A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.)
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password)
+   at POT.QueryCommands.MainCmpInfoByName(String mName)
+   at POT.MyTypes.MainCmp.GetMainCmpByName(String mName)
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 21:47
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 18001
+     - Result: Selected PRIM (18001) does not exist or do not have parts.
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 21:47
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: NAME
+     - Data: 129
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 21:47
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 19071
+     - Result: Selected PRIM (19071) does not exist or do not have parts.
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 21:48
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: NAME
+     - Data: 8
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 21:48
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 101013002001, , 
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 21:48
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 101013002003, , 
+             101013002003, , 
+             101013002003, , 
+             101013002003, , 
+             101013002003, , 
+             101013002003, , 
+             101013002003, , 
+             101013002003, , 
+             101013002003, , 
+             101013002003, , 
+             101013002003, , 
+             101013002003, , 
+             101013002003, , 
+             101013002003, , 
+             101013002003, , 
+             101013002003, , 
+             101013002003, , 
+             101013002003, , 
+             101013002003, , 
+             101013002003, , 
+             101013002003, , 
+             101013002003, , 
+             101013002003, , 
+             101013002003, , 
+             101013002003, , 
+             101013002003, , 
+             101013002003, , 
+             101013002003, , 
+             101013002003, , 
+             101013002003, , 
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 21:49
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 5, 190003, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190003
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 21:49
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 5, 190002, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190002
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 21:49 - App turned off
+    *** BrunoBrckovic *** 
+
+- 27.06.19. 22:42 - App started
+    *** BrunoBrckovic *** 
+
+- 27.06.19. 22:42
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: NAME
+     - Data: 129
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 22:42
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 6, 190022, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190022
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 22:42
+    - LOGED change: POT.CopyPrintForms.cISS - listView1_DoubleClick
+     - Used: OTP Selected
+     - Data: 
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 23:03 - App started
+    *** BrunoBrckovic *** 
+
+- 27.06.19. 23:03
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: NAME
+     - Data: 129
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 23:03
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 6, 190022, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190022
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 23:03
+    - LOGED change: POT.CopyPrintForms.cISS - listView1_DoubleClick
+     - Used: OTP Selected
+     - Data: 
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 23:03
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 6, 190022, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 23:05 - App started
+    *** BrunoBrckovic *** 
+
+- 27.06.19. 23:05
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: NAME
+     - Data: 129
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 23:05
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 6, 190022, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190022
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 23:05
+    - LOGED change: POT.CopyPrintForms.cISS - listView1_DoubleClick
+     - Used: OTP Selected
+     - Data: 
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 23:06
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 6, 190022, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 23:08
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 6, 190022, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 23:11
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 6, 190022, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 23:12
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 6, 190022, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 23:14
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 6, 190022, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 23:15
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 6, 190022, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 23:19
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 6, 190022, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 23:20
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 6, 190022, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 23:21
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 6, 190022, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 23:22
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 6, 190022, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 23:22
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 6, 190022, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 23:23
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 6, 190022, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 23:23
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 6, 190022, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 23:27 - App started
+    *** BrunoBrckovic *** 
+
+- 27.06.19. 23:27
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: NAME
+     - Data: 129
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 23:27
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 6, 190022, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190022
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 23:27
+    - LOGED change: POT.CopyPrintForms.cISS - listView1_DoubleClick
+     - Used: OTP Selected
+     - Data: 
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 23:28
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 6, 190022, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 23:28
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 6, 190022, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 23:30
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 6, 190022, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 23:30
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 6, 190022, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 23:32
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 6, 190022, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 23:34
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 6, 190022, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 23:34
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 6, 190022, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 23:39
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 6, 190022, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 23:40
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 6, 190022, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 23:42
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 6, 190022, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 23:50 - App started
+    *** BrunoBrckovic *** 
+
+- 27.06.19. 23:50
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE STP-103 PS, 1003001, 0,00, 01:00, 0, 10, 332,65, 3326,50, 4158,1250
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 23:50
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 23:51
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 23:52
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 23:54 - App started
+    *** BrunoBrckovic *** 
+
+- 27.06.19. 23:54
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 , 1002000, 2662,25, 01:00, 0, 10, 3487,50, 34875,00, 43593,7500
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 23:54
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 Casice, 1002001, 162,00, 01:00, 0, 10, 300,00, 3000,00, 47343,7500
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 23:55
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel RJ11 1,5m, 4001001, 9,00, 01:00, 0, 10, 13,02, 130,20, 47506,5000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 23:55
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 27.06.19. 23:56 - App turned off
+    *** BrunoBrckovic *** 

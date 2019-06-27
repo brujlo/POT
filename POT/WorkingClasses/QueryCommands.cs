@@ -776,6 +776,26 @@ namespace POT
             SqlDataReader dataReader = command.ExecuteReader();
             dataReader.Read();
 
+            if (!dataReader.HasRows)
+            {
+                dataReader.Close();
+                query = "Select * from PartsPoslano where PartID = " + mPartID;
+                command = new SqlCommand(query, cnn);
+                command.ExecuteNonQuery();
+                dataReader = command.ExecuteReader();
+                dataReader.Read();
+
+                if (!dataReader.HasRows)
+                {
+                    dataReader.Close();
+                    query = "Select * from PartsZamijenjeno where PartID = " + mPartID;
+                    command = new SqlCommand(query, cnn);
+                    command.ExecuteNonQuery();
+                    dataReader = command.ExecuteReader();
+                    dataReader.Read();
+                }
+            }
+
             if (dataReader.HasRows)
             {
                 do

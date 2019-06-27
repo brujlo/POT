@@ -264,8 +264,31 @@ namespace POT.CopyPrintForms
             DialogResult result = printDialog1.ShowDialog();
             if (result == DialogResult.OK)
             {
-                printPrewBT_Click(sender, e);
-                //printDocumentPrim.Print();
+                SaveFileDialog pdfSaveDialog = new SaveFileDialog();
+
+                if (printDialog1.PrinterSettings.PrinterName == "Microsoft Print to PDF")
+                {   // force a reasonable filename
+                    string basename = System.IO.Path.GetFileNameWithoutExtension("PRIM " + PRIMNumber.ToString());
+                    string directory = System.IO.Path.GetDirectoryName("PRIM " + PRIMNumber.ToString());
+                    printDocumentPrim.PrinterSettings.PrintToFile = true;
+                    // confirm the user wants to use that name
+                    pdfSaveDialog.InitialDirectory = directory;
+                    pdfSaveDialog.FileName = basename + ".pdf";
+                    pdfSaveDialog.Filter = "PDF File|*.pdf";
+                    result = pdfSaveDialog.ShowDialog();
+                    if (result != DialogResult.Cancel)
+                        printDocumentPrim.PrinterSettings.PrintFileName = pdfSaveDialog.FileName;
+                }
+
+                if (result != DialogResult.Cancel)  // in case they canceled the save as dialog
+                {
+                    printDocumentPrim.Print();
+                    MessageBox.Show("Saved to location: " + Environment.NewLine + pdfSaveDialog.FileName, "SAVED", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    printPrewBT_Click(sender, e);
+                }
             }
         }
 
@@ -449,7 +472,16 @@ namespace POT.CopyPrintForms
             datumIzradeM = userArr[(5 * index) + 2];
             izradioUserM = userArr[(5 * index) + 4];
             QueryCommands qc4 = new QueryCommands();
-            izradioRegijaM = qc4.User(WorkingUser.Username, WorkingUser.Password, izradioUserM)[7];
+            List<String> test = qc4.User(WorkingUser.Username, WorkingUser.Password, izradioUserM);
+            if (!test[0].Equals("nok"))
+            {
+                izradioRegijaM = test[7];
+            }
+            else
+            {
+                MessageBox.Show("I cant find user. Provjeri sto ne radi dobro na primci od germanie");
+                return;
+            }
 
             if (prtList[0] == -1)
             {

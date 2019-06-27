@@ -94,7 +94,7 @@ namespace POT.MyTypes
 
                     if (resultArr[0].Equals("nok"))
                     {
-                        pr.Clear();
+                        //pr.Clear(); 
                         return pr;
                     }
 

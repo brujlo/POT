@@ -235,7 +235,7 @@ namespace POT.CopyPrintForms
                         return;
 
                     totalTime = allISSInfo[6] + ":00";
-
+                    
                     mainPart = qc.SearchPartsInAllTablesBYPartID(long.Parse(allISSInfo[4]))[0];
 
                     PartTb.Text = mainPart.CodePartFull.ToString();
@@ -586,7 +586,7 @@ namespace POT.CopyPrintForms
             int m = int.Parse(totalTime.Split(':')[1]);
 
             totalTime = String.Format("{0:00}:{1:00}", h, m);
-
+           
             PrintMeISS pr = new PrintMeISS(cmpCust, cmpM, sifrarnikArr, mainPart, listIssParts, ISSid.ToString(), Properties.strings.ServiceReport, Properties.strings.customer, false, allISSInfo[1], totalTime);
             pr.Print(e);
 
@@ -610,7 +610,7 @@ namespace POT.CopyPrintForms
 
             int screenWidth = Screen.PrimaryScreen.Bounds.Width;
             int screenHeight = Screen.PrimaryScreen.Bounds.Height;
-
+            
             printPreviewDialog1.Document = printDocument1;
             printPreviewDialog1.Size = new System.Drawing.Size(screenWidth - ((screenWidth / 100) * 60), screenHeight - (screenHeight / 100) * 10);
             printPreviewDialog1.ShowDialog();
@@ -619,14 +619,37 @@ namespace POT.CopyPrintForms
         private void selectPrinterPrintBtn_Click(object sender, EventArgs e)
         {
             onlyOneTime = true;
-
+            
             PrintDialog printDialog1 = new PrintDialog();
             printDialog1.Document = printDocument1;
             DialogResult result = printDialog1.ShowDialog();
             if (result == DialogResult.OK)
             {
-                printPrewBT_Click(sender, e);
-                //printDocumentPrim.Print();
+                SaveFileDialog pdfSaveDialog = new SaveFileDialog();
+
+                if (printDialog1.PrinterSettings.PrinterName == "Microsoft Print to PDF")
+                {   // force a reasonable filename
+                    string basename = System.IO.Path.GetFileNameWithoutExtension("ISS " + ISSid.ToString());
+                    string directory = System.IO.Path.GetDirectoryName("ISS " + ISSid.ToString());
+                    printDocument1.PrinterSettings.PrintToFile = true;
+                    // confirm the user wants to use that name
+                    pdfSaveDialog.InitialDirectory = directory;
+                    pdfSaveDialog.FileName = basename + ".pdf";
+                    pdfSaveDialog.Filter = "PDF File|*.pdf";
+                    result = pdfSaveDialog.ShowDialog();
+                    if (result != DialogResult.Cancel)
+                        printDocument1.PrinterSettings.PrintFileName = pdfSaveDialog.FileName;
+                }
+
+                if (result != DialogResult.Cancel)  // in case they canceled the save as dialog
+                {
+                    printDocument1.Print();
+                    MessageBox.Show("Saved to location: " + Environment.NewLine + pdfSaveDialog.FileName, "SAVED", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    printPrewBT_Click(sender, e);
+                }
             }
         }
 

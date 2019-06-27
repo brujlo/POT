@@ -710,8 +710,32 @@ namespace POT.Documents
             DialogResult result = printDialog1.ShowDialog();
             if (result == DialogResult.OK)
             {
-                PrintPrewBT_Click(sender, e);
-                //printDocumentPrim.Print();
+                SaveFileDialog pdfSaveDialog = new SaveFileDialog();
+
+                if (printDialog1.PrinterSettings.PrinterName == "Microsoft Print to PDF")
+                {   // force a reasonable filename
+                    string fileName = invoice.IDLongtoString(invoice.Id).Replace("-", "");
+                    string basename = System.IO.Path.GetFileNameWithoutExtension("EXE " + fileName);
+                    string directory = System.IO.Path.GetDirectoryName("EXE " + fileName);
+                    printDocumentInvoice.PrinterSettings.PrintToFile = true;
+                    // confirm the user wants to use that name
+                    pdfSaveDialog.InitialDirectory = directory;
+                    pdfSaveDialog.FileName = basename + ".pdf";
+                    pdfSaveDialog.Filter = "PDF File|*.pdf";
+                    result = pdfSaveDialog.ShowDialog();
+                    if (result != DialogResult.Cancel)
+                        printDocumentInvoice.PrinterSettings.PrintFileName = pdfSaveDialog.FileName;
+                }
+
+                if (result != DialogResult.Cancel)  // in case they canceled the save as dialog
+                {
+                    printDocumentInvoice.Print();
+                    MessageBox.Show("Saved to location: " + Environment.NewLine + pdfSaveDialog.FileName, "SAVED", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    PrintPrewBT_Click(sender, e);
+                }
             }
         }
 
