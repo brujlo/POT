@@ -2,7 +2,6 @@
 using POT.WorkingClasses;
 using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Media;
 using System.Linq;
 using System.Threading;
@@ -545,7 +544,7 @@ namespace POT.CopyPrintForms
                 listView2.AutoResizeColumn(i, ColumnHeaderAutoResizeStyle.HeaderSize);
             }
 
-            OTPNumber = otpID.ToString();
+            OTPNumber = string.Format("{0:00/000}", otpID); 
             partListPrint = parts;
             napomenaOTPPrint = item[0].SubItems[4].Text;
             if (!item[0].SubItems[7].Text.Equals(""))

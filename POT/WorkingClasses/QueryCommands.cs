@@ -2274,7 +2274,7 @@ namespace POT
             return executed;
         }
 
-        public String OTPUnesiUredajeDaSuPrimljeniInner(String Uname, String Pass, List<Part> ListOfParts, Company cmpR, Company cmpS, String napomena)
+        public String OTPUnesiUredajeDaSuPrimljeniInner(String Uname, String Pass, List<Part> ListOfParts, Company cmpR, Company cmpS, String napomena, long mBranchID)
         {
             String executed = "nok";
             long otpCnt = 0;
@@ -2305,7 +2305,8 @@ namespace POT
 
                 try
                 {
-                    command.CommandText = "INSERT INTO OTP (otpID, customerID, dateCreated, napomena, userID, branchID) VALUES (" + otpCnt + ", " + cmpR.ID + ", '" + DateTime.Now.ToString("dd.MM.yy.") + "', '" + napomena + "', " + WorkingUser.UserID + ")";
+
+                    command.CommandText = "INSERT INTO OTP (otpID, customerID, dateCreated, napomena, userID, branchID) VALUES (" + otpCnt + ", " + cmpR.ID + ", '" + DateTime.Now.ToString("dd.MM.yy.") + "', '" + napomena + "', " + WorkingUser.UserID + ", " + mBranchID + ")";
                     command.ExecuteNonQuery();
 
                     for (int i = 0; i < ListOfParts.Count; i++)

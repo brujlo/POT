@@ -549,7 +549,7 @@ namespace POT.CopyPrintForms
                 listView2.AutoResizeColumn(i, ColumnHeaderAutoResizeStyle.HeaderSize);
             }
 
-            PRIMNumber = primID.ToString();
+            PRIMNumber = string.Format("{0:00/000}", primID);
             partListPrint = parts;
             napomenaPRIMPrint = item[0].SubItems[4].Text;
 
