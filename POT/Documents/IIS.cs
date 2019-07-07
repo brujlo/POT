@@ -3,6 +3,7 @@ using POT.WorkingClasses;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.IO;
 using System.Linq;
 using System.Media;
 using System.Threading;
@@ -565,6 +566,8 @@ namespace POT.Documents
                                         }
                                     }
 
+                                    if (Program.SaveDocumentsPDF) saveToPDF();
+
                                     if (saved)
                                     {
                                         Result = "DONE, document nbr. IIS '" + IISNumber + "'.";
@@ -686,8 +689,8 @@ namespace POT.Documents
 
                 if (printDialog1.PrinterSettings.PrinterName == "Microsoft Print to PDF")
                 {   // force a reasonable filename
-                    string basename = System.IO.Path.GetFileNameWithoutExtension("IIS " + IISNumber.ToString());
-                    string directory = System.IO.Path.GetDirectoryName("IIS " + IISNumber.ToString());
+                    string basename = Path.GetFileNameWithoutExtension("IIS " + IISNumber.ToString());
+                    string directory = Path.GetDirectoryName("IIS " + IISNumber.ToString());
                     printDocumentIIS.PrinterSettings.PrintToFile = true;
                     // confirm the user wants to use that name
                     pdfSaveDialog.InitialDirectory = directory;
@@ -707,6 +710,33 @@ namespace POT.Documents
                 {
                     printPrewBT_Click(sender, e);
                 }
+            }
+        }
+
+        private void saveToPDF()
+        {
+            try
+            {
+                PrintDialog printDialog1 = new PrintDialog();
+                printDialog1.Document = printDocumentIIS;
+
+                printDialog1.PrinterSettings.PrinterName = "Microsoft Print to PDF";
+
+                if (!Directory.Exists(Properties.Settings.Default.DefaultFolder + "\\IIS"))
+                    return;
+
+                string fileName = "\\IIS " + IISNumber.ToString().Replace("/", "") + ".pdf";
+                string directory = Properties.Settings.Default.DefaultFolder + "\\IIS";
+
+                printDialog1.PrinterSettings.PrintToFile = true;
+                printDocumentIIS.PrinterSettings.PrintFileName = directory + fileName;
+                printDocumentIIS.PrinterSettings.PrintToFile = true;
+                printDocumentIIS.Print();
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
+                MessageBox.Show(e1.Message + Environment.NewLine + "PDF file not saved.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

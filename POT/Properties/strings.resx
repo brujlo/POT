@@ -266,7 +266,7 @@
     <value>REBATE</value>
   </data>
   <data name="REBATEPRICE1" xml:space="preserve">
-    <value>REBATE</value>
+    <value>CHARGE</value>
   </data>
   <data name="TOTAL" xml:space="preserve">
     <value>TOTAL</value>

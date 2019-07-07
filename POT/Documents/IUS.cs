@@ -3,6 +3,7 @@ using POT.WorkingClasses;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.IO;
 using System.Linq;
 using System.Media;
 using System.Threading;
@@ -552,6 +553,8 @@ namespace POT
 
                                     PovijestLog pl = new PovijestLog();
 
+                                    if (Program.SaveDocumentsPDF) saveToPDF();
+
                                     if (pl.SaveToPovijestLog(partList, DateTime.Now.ToString("dd.MM.yy."), napomenaIUS, cmpS.Name, "", "", "IUS " + Properties.Settings.Default.ShareDocumentName, "sng"))
                                     {
                                         Properties.Settings.Default.ShareDocumentName = "";
@@ -675,8 +678,8 @@ namespace POT
 
                 if (printDialog1.PrinterSettings.PrinterName == "Microsoft Print to PDF")
                 {   // force a reasonable filename
-                    string basename = System.IO.Path.GetFileNameWithoutExtension("IUS " + IUSNumber.ToString());
-                    string directory = System.IO.Path.GetDirectoryName("IUS " + IUSNumber.ToString());
+                    string basename = Path.GetFileNameWithoutExtension("IUS " + IUSNumber.ToString());
+                    string directory = Path.GetDirectoryName("IUS " + IUSNumber.ToString());
                     printDocumentIUS.PrinterSettings.PrintToFile = true;
                     // confirm the user wants to use that name
                     pdfSaveDialog.InitialDirectory = directory;
@@ -696,6 +699,33 @@ namespace POT
                 {
                     printPrewBT_Click(sender, e);
                 }
+            }
+        }
+
+        private void saveToPDF()
+        {
+            try
+            {
+                PrintDialog printDialog1 = new PrintDialog();
+                printDialog1.Document = printDocumentIUS;
+
+                printDialog1.PrinterSettings.PrinterName = "Microsoft Print to PDF";
+
+                if (!Directory.Exists(Properties.Settings.Default.DefaultFolder + "\\IUS"))
+                    return;
+
+                string fileName = "\\IUS " + IUSNumber.ToString().Replace("/", "") + ".pdf";
+                string directory = Properties.Settings.Default.DefaultFolder + "\\IUS";
+
+                printDialog1.PrinterSettings.PrintToFile = true;
+                printDocumentIUS.PrinterSettings.PrintFileName = directory + fileName;
+                printDocumentIUS.PrinterSettings.PrintToFile = true;
+                printDocumentIUS.Print();
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
+                MessageBox.Show(e1.Message + Environment.NewLine + "PDF file not saved.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

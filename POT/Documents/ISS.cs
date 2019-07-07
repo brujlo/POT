@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Printing;
+using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Windows.Forms;
@@ -825,6 +826,8 @@ namespace POT.Documents
 
                 long IISidPL = ISSid;
 
+                if (Program.SaveDocumentsPDF) saveToPDF();
+
                 if ( qc.ISSUnesiISS(issExist, allDone, ISSid, _date, cmpCust, mainPart, listIssParts, WorkingUser.UserID, totalTime) )
                 {
 
@@ -1131,8 +1134,8 @@ namespace POT.Documents
 
                 if (printDialog1.PrinterSettings.PrinterName == "Microsoft Print to PDF")
                 {   // force a reasonable filename
-                    string basename = System.IO.Path.GetFileNameWithoutExtension("ISS " + ISSid.ToString());
-                    string directory = System.IO.Path.GetDirectoryName("ISS " + ISSid.ToString());
+                    string basename = Path.GetFileNameWithoutExtension("ISS " + ISSid.ToString());
+                    string directory = Path.GetDirectoryName("ISS " + ISSid.ToString());
                     printDocument1.PrinterSettings.PrintToFile = true;
                     // confirm the user wants to use that name
                     pdfSaveDialog.InitialDirectory = directory;
@@ -1167,7 +1170,7 @@ namespace POT.Documents
             int screenHeight = Screen.PrimaryScreen.Bounds.Height;
 
             printPreviewDialog1.Document = printDocument1;
-            printPreviewDialog1.Size = new System.Drawing.Size(screenWidth - ((screenWidth / 100) * 60), screenHeight - (screenHeight / 100) * 10);
+            printPreviewDialog1.Size = new Size(screenWidth - ((screenWidth / 100) * 60), screenHeight - (screenHeight / 100) * 10);
             printPreviewDialog1.ShowDialog();
 
             textBox1.SelectAll();
@@ -1323,6 +1326,33 @@ namespace POT.Documents
                 Result = e1.Message;
                 lw.LogMe(function, usedQC, data, Result);
                 MessageBox.Show(Result, "NOT SAVED", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void saveToPDF()
+        {
+            try
+            {
+                PrintDialog printDialog1 = new PrintDialog();
+                printDialog1.Document = printDocument1;
+
+                printDialog1.PrinterSettings.PrinterName = "Microsoft Print to PDF";
+
+                if (!Directory.Exists(Properties.Settings.Default.DefaultFolder + "\\ISS"))
+                    return;
+
+                string fileName = "\\ISS " + ISSid.ToString().Replace("/", "") + ".pdf";
+                string directory = Properties.Settings.Default.DefaultFolder + "\\ISS";
+
+                printDialog1.PrinterSettings.PrintToFile = true;
+                printDocument1.PrinterSettings.PrintFileName = directory + fileName;
+                printDocument1.PrinterSettings.PrintToFile = true;
+                printDocument1.Print();
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
+                MessageBox.Show(e1.Message + Environment.NewLine + "PDF file not saved.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

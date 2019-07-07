@@ -3783,3 +3783,2637 @@ Error Number:109,State:1,Class:15
 
 - 01.07.19. 23:24 - App turned off
     *** BrunoBrckovic *** 
+
+- 06.07.19. 10:46
+    - LOGED change: POT.SetDBConnection - button2_Click
+     - Used: DB connection address and name save.
+     - Data: 192.168.100.101, exe
+     - Result: Saved, no msgToUser
+    ***  *** 
+
+
+- 06.07.19. 10:46 - App started
+    *** BrunoBrckovic *** 
+
+- 06.07.19. 10:47
+    - LOGED change: POT.CompanyInfo - button1_Click
+     - Used: dlg.ShowDialog()
+     - Data: Change logo
+     - Result: D:\IconsPictures\Exeption_logo - Odrezan.jpg
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 10:47
+    - LOGED change: POT.CompanyInfo - button2_Click
+     - Used: Saving MainCmp info
+     - Data: Exception, Dunavska 31, Zagreb, 10040, HR, 0.00, 0.00, 76737454770, PBZGHR2X, 97768138, HR9323400091160480462, 4, 1, www.exception.hr, +385914456454, Bruno Brckovic, info@exception.hr, support@exception.hr, 2
+     - Result: Saved.
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 10:47
+    - LOGED change: POT.MainCmpSelector - button1_Click
+     - Used: Main cmp select
+     - Data: 
+     - Result: Main cmp selected, please relog to see changes.
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 10:47 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 06.07.19. 10:47 - App started
+    *** BrunoBrckovic *** 
+
+- 06.07.19. 10:49
+    - LOGED change: POT.BuildingClasses.SettingsForm - SaveBT_Click
+     - Used: Print
+     - Data: 0; 0; 15; VAT is not calculated according to Article 17. of the Law on PDV; The taxpayer is not in the VAT system, according to Article 90. of the Law on PDV; Thank you for your trust; Temeljem članka 9., st.3., Zakona o računovodstvu, račun je pravovaljan bez potpisa i pečata; Porezni obveznik nije u sustavu PDV-a, temeljem zakona o PDV-u čl. 90; Hvala na ukazanom povjerenju; 
+     - Result: 
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 10:49
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE servis opreme, 20004007, 220,00, 03:00, 5, 5, 627,0000, 3135,0000, 3135,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 10:50
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE servis opreme, 20004007, 220,00, 01:30, 5, 2, 313,50000, 627,00000, 3762,00000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 10:50
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE postavljanje aplikacija, 20004008, 220,00, 01:30, 5, 3, 313,50000, 940,50000, 4702,50000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 10:51
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 10:52
+    - LOGED change: POT.BuildingClasses.SettingsForm - SaveBT_Click
+     - Used: Print
+     - Data: 0; 0; 15; VAT is not calculated according to Article 17. of the Law on PDV; The taxpayer is not in the VAT system, according to Article 90. of the Law on PDV; Thank you for your trust; Temeljem članka 9., st.3., Zakona o računovodstvu, račun je pravovaljan bez potpisa i pečata; Porezni obveznik nije u sustavu PDV-a, temeljem zakona o PDV-u čl. 90; Hvala na ukazanom povjerenju; Bruno Brcković
+     - Result: 
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 10:52 - App turned off
+    *** BrunoBrckovic *** 
+
+- 06.07.19. 10:59 - App started
+    *** BrunoBrckovic *** 
+
+- 06.07.19. 11:00 - App turned off
+    *** BrunoBrckovic *** 
+
+- 06.07.19. 11:01 - App started
+    *** BrunoBrckovic *** 
+
+- 06.07.19. 11:03
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE servis opreme, 20004007, 220,00, 03:00, 5, 5, 627,0000, 3135,0000, 3135,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 11:03
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE servis opreme, 20004007, 220,00, 01:30, 5, 2, 313,50000, 627,00000, 3762,00000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 11:03
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE postavljanje aplikacija, 20004008, 220,00, 01:30, 5, 3, 313,50000, 940,50000, 4702,50000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 11:03
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 11:05
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 01:30, 0, 6, 252,000, 1512,000, 1512,000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 11:05
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 01:45, 0, 14, 294,0000, 4116,0000, 5628,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 11:05
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 02:00, 0, 1, 336,00, 336,00, 5964,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 11:06
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 Bushing, Platen, 13002003, 0,00, 01:00, 0, 21, 41,34, 868,14, 6832,1400
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 11:06
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 Auto Cutter ACS-541-1N, 13002001, 390,00, 01:00, 0, 3, 677,48, 2032,44, 8864,5800
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 11:07
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 01:30, 0, 6, 252,000, 1512,000, 1512,000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 11:07
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 01:45, 0, 14, 294,0000, 4116,0000, 5628,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 11:08
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 02:00, 0, 1, 336,00, 336,00, 5964,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 11:08
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 Bushing, Platen, 13002003, 0,00, 00:00, 0, 21, 41,34, 868,14, 6832,1400
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 11:08
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 Auto Cutter ACS-541-1N, 13002001, 390,00, 00:00, 0, 3, 677,48, 2032,44, 8864,5800
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 11:08
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 Holder, Platen, 13002030, 0,00, 00:00, 0, 1, 67,22, 67,22, 8931,8000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 11:09
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 11:14 - App turned off
+    *** BrunoBrckovic *** 
+
+- 06.07.19. 11:20 - App started
+    *** BrunoBrckovic *** 
+
+- 06.07.19. 11:21 - App turned off
+    *** BrunoBrckovic *** 
+
+- 06.07.19. 11:22 - App started
+    *** BrunoBrckovic *** 
+
+- 06.07.19. 11:26 - App started
+    *** BrunoBrckovic *** 
+
+- 06.07.19. 11:26 - App turned off
+    *** BrunoBrckovic *** 
+
+- 06.07.19. 12:53 - App started
+    *** BrunoBrckovic *** 
+
+- 06.07.19. 12:55
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE servis opreme, 20004007, 220,00, 03:00, 5, 5, 627,0000, 3135,0000, 3135,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 12:55
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE servis opreme, 20004007, 220,00, 01:30, 5, 2, 313,50000, 627,00000, 3762,00000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 12:55
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE servis opreme, 20004007, 220,00, 01:30, 5, 3, 313,50000, 940,50000, 4702,50000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 12:56
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 12:57
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE servis opreme, 20004007, 220,00, 03:00, 5, 5, 627,0000, 3135,0000, 3135,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 12:57
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE servis opreme, 20004007, 220,00, 01:30, 5, 3, 313,50000, 940,50000, 4075,50000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 12:58
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE postavljanje aplikacija, 20004008, 220,00, 01:30, 5, 2, 313,50000, 627,00000, 4702,50000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 12:58
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 13:00
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 01:30, 0, 6, 252,000, 1512,000, 1512,000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 13:00
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 01:45, 0, 14, 294,0000, 4116,0000, 5628,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 13:00
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 02:00, 0, 1, 336,00, 336,00, 5964,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 13:00
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 Auto Cutter ACS-541-1N, 13002001, 390,00, 00:00, 0, 3, 677,48, 2032,44, 7996,4400
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 13:01
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 Bushing, Platen, 13002003, 0,00, 00:00, 0, 21, 41,34, 868,14, 8864,5800
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 13:01
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 Holder, Platen, 13002030, 0,00, 00:00, 0, 1, 67,22, 67,22, 8931,8000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 13:01
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 13:04 - App turned off
+    *** BrunoBrckovic *** 
+
+- 06.07.19. 13:04 - App started
+    *** BrunoBrckovic *** 
+
+- 06.07.19. 13:09
+    - LOGED change: POT.MainCmpSelector - button1_Click
+     - Used: Main cmp select
+     - Data: Exception
+     - Result: Main cmp selected, please relog to see changes.
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 13:11 - App turned off
+    *** BrunoBrckovic *** 
+
+- 06.07.19. 13:26 - App started
+    *** BrunoBrckovic *** 
+
+- 06.07.19. 13:29
+    - LOGED change: POT.BuildingClasses.SettingsForm - SaveBT_Click
+     - Used: Print
+     - Data: 0; 0; 15; VAT is not calculated according to Article 17. of the Law on PDV; The taxpayer is not in the VAT system, according to Article 90. of the Law on PDV; Thank you for your trust; Temeljem članka 9., st.3., Zakona o računovodstvu, račun je pravovaljan bez potpisa i pečata; Porezni obveznik nije u sustavu PDV-a, temeljem zakona o PDV-u čl. 90; Hvala na ukazanom povjerenju; Bruno Brcković
+     - Result: 
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 13:29 - App turned off
+    *** BrunoBrckovic *** 
+
+- 06.07.19. 13:30 - App started
+    *** BrunoBrckovic *** 
+
+- 06.07.19. 13:47 - App turned off
+    *** BrunoBrckovic *** 
+
+- 06.07.19. 13:56
+    - LOGED change: POT.SetDBConnection - button2_Click
+     - Used: DB connection address and name save.
+     - Data: 192.168.100.101, test
+     - Result: Saved, no msgToUser
+    ***  *** 
+
+
+- 06.07.19. 13:56 - App started
+    *** BrunoBrckovic *** 
+
+- 06.07.19. 13:56
+    - LOGED change: POT.CompanyInfo - button2_Click
+     - Used: Saving MainCmp info
+     - Data: Exception d.o.o., Dunavska 31, Zagreb, 10000, HR, 0.00, 0.00, PBZGHR2X, 02647369817, 080182296, HR8323400091100157894, 4, 1, www.ces-pos.hr, +38512307973, Bruno Brckovic, info@exception.hr, support@ces-pos.hr, 2
+     - Result: Saved.
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 13:56
+    - LOGED change: POT.MainCmpSelector - button1_Click
+     - Used: Main cmp select
+     - Data: Exception d.o.o.
+     - Result: Main cmp selected, please relog to see changes.
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 13:56 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 06.07.19. 13:56 - App started
+    *** BrunoBrckovic *** 
+
+- 06.07.19. 13:56
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 910
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 910
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 13:57
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 910
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 910
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 13:57
+    - LOGED change: POT.Primka - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: There is no items in list, nothing done.
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 13:57
+    - LOGED change: POT.Primka - button1_Click
+     - Used: Add to list
+     - Data: 0101001003000, 1313, 123123, ng
+             0101001003000, 1313, 123123, ng
+             0101001003000, 1313, 123123, ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 13:57
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 910
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 910
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 13:57
+    - LOGED change: POT.Primka - button2_Click
+     - Used: Save to db
+     - Data: 19/009
+     - Result: DONE, document nbr. 'PRIM 19/009'.
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:01
+    - LOGED change: POT.SetDBConnection - button2_Click
+     - Used: DB connection address and name save.
+     - Data: 192.168.100.101, test
+     - Result: Saved, no msgToUser
+    ***  *** 
+
+
+- 06.07.19. 14:01 - App started
+    *** BrunoBrckovic *** 
+
+- 06.07.19. 14:01
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 911
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 911
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:01
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 911
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 911
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:01
+    - LOGED change: POT.Primka - button1_Click
+     - Used: Add to list
+     - Data: 0101001002002, , , ng
+             0101001002002, , , ng
+             0101001002002, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:01
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 911
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 911
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:01
+    - LOGED change: POT.Primka - button2_Click
+     - Used: Save to db
+     - Data: 19/010
+     - Result: DONE, document nbr. 'PRIM 19/010'.
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:04
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/010, , PRIMKA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:04
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/010, , PRIMKA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:07
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The system cannot find the path specified
+   at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Primka.button4_Click(Object sender, EventArgs e)
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: The system cannot find the path specified
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Primka.button4_Click(Object sender, EventArgs e)
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e)
+    - TypeNameEcp: System.ComponentModel.Win32Exception
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:13 - App started
+    *** BrunoBrckovic *** 
+
+- 06.07.19. 14:13
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 911
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 911
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:13
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 911
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 911
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:13
+    - LOGED change: POT.Primka - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: There is no items in list, nothing done.
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:13
+    - LOGED change: POT.Primka - button1_Click
+     - Used: Add to list
+     - Data: 0101001002002, , , ng
+             0101001002002, , , ng
+             0101001002002, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:13
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 911
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 911
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:13
+    - LOGED change: POT.Primka - button2_Click
+     - Used: Save to db
+     - Data: 19/011
+     - Result: DONE, document nbr. 'PRIM 19/011'.
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:14
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The system cannot find the path specified
+   at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Primka.button4_Click(Object sender, EventArgs e)
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: The system cannot find the path specified
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Primka.button4_Click(Object sender, EventArgs e)
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e)
+    - TypeNameEcp: System.ComponentModel.Win32Exception
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:20
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The system cannot find the path specified
+   at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Primka.button4_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: The system cannot find the path specified
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Primka.button4_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.ComponentModel.Win32Exception
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:21
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The system cannot find the path specified
+   at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Primka.button4_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: The system cannot find the path specified
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Primka.button4_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.ComponentModel.Win32Exception
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:24
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/011, , PRIMKA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:24
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/011, , PRIMKA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:25
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The system cannot find the path specified
+   at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Primka.button4_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: The system cannot find the path specified
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Primka.button4_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.ComponentModel.Win32Exception
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:25
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/011, , PRIMKA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:25
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/011, , PRIMKA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:26
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e)
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:29
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The system cannot find the path specified
+   at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Primka.button4_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: The system cannot find the path specified
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Primka.button4_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.ComponentModel.Win32Exception
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:29
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The system cannot find the path specified
+   at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Primka.button4_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: The system cannot find the path specified
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Primka.button4_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.ComponentModel.Win32Exception
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:30 - App started
+    *** BrunoBrckovic *** 
+
+- 06.07.19. 14:30
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 911
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 911
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:30
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 911
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 911
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:30
+    - LOGED change: POT.Primka - button1_Click
+     - Used: Add to list
+     - Data: 0101001002004, , , ng
+             0101001002004, , , ng
+             0101001002004, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:30
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 911
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 911
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:30
+    - LOGED change: POT.Primka - button2_Click
+     - Used: Save to db
+     - Data: 19/012
+     - Result: DONE, document nbr. 'PRIM 19/012'.
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:30
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): Access is denied
+   at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Primka.selectPrinterPrintBtn_Click(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 897
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\StartForm.cs:line 116
+    - InnerEcp: 
+    - MessageEcp: Access is denied
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Primka.selectPrinterPrintBtn_Click(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 897
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\StartForm.cs:line 116
+    - TypeNameEcp: System.ComponentModel.Win32Exception
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:31
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/012, , PRIMKA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:31
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/012, , PRIMKA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:31
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/012, , PRIMKA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:31
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/012, , PRIMKA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:33
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/012, , PRIMKA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:33
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/012, , PRIMKA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:35
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The system cannot find the path specified
+   at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Primka.button4_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: The system cannot find the path specified
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Primka.button4_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.ComponentModel.Win32Exception
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:36
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/012, , PRIMKA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:36
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/012, , PRIMKA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:37
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/012, , PRIMKA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:37
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/012, , PRIMKA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:39
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/012, , PRIMKA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:39
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/012, , PRIMKA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:40
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): Access is denied
+   at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Primka.button4_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Access is denied
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Primka.button4_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.ComponentModel.Win32Exception
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:40
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): Access is denied
+   at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Primka.button4_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Access is denied
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Primka.button4_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.ComponentModel.Win32Exception
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:40
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): Access is denied
+   at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Primka.button4_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Access is denied
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Primka.button4_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.ComponentModel.Win32Exception
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:41
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): Access is denied
+   at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Primka.button4_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Access is denied
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Primka.button4_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.ComponentModel.Win32Exception
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:44
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): Access is denied
+   at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Primka.button4_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Access is denied
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Primka.button4_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.ComponentModel.Win32Exception
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:44
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): Access is denied
+   at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Primka.button4_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Access is denied
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Primka.button4_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.ComponentModel.Win32Exception
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:46
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): Access is denied
+   at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Primka.button4_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Access is denied
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Primka.button4_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.ComponentModel.Win32Exception
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:47
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): Access is denied
+   at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Primka.button4_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Access is denied
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Primka.button4_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.ComponentModel.Win32Exception
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:48
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): Access is denied
+   at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Primka.button4_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Access is denied
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Primka.button4_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.ComponentModel.Win32Exception
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:48
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): Access is denied
+   at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Primka.button4_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Access is denied
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Primka.button4_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.ComponentModel.Win32Exception
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:48
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): Access is denied
+   at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Primka.button4_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Access is denied
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Primka.button4_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.ComponentModel.Win32Exception
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:50
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): Access is denied
+   at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Primka.button4_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Access is denied
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Primka.button4_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.ComponentModel.Win32Exception
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:51
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/012, , PRIMKA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:51
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/012, , PRIMKA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:52
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/012, , PRIMKA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:52
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/012, , PRIMKA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:54 - App started
+    *** BrunoBrckovic *** 
+
+- 06.07.19. 14:54
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 907
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 907
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:54
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 907
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 907
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:54
+    - LOGED change: POT.Primka - button1_Click
+     - Used: Add to list
+     - Data: 0101001004000, , , ng
+             0101001004000, , , ng
+             0101001004000, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:54
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 907
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 907
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:54
+    - LOGED change: POT.Primka - button1_Click
+     - Used: Add to list
+     - Data: 0101001001001, , , ng
+             0101001001001, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:54
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 907
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 907
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:54
+    - LOGED change: POT.Primka - button2_Click
+     - Used: Save to db
+     - Data: 19/013
+     - Result: DONE, document nbr. 'PRIM 19/013'.
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:56
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 907
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 907
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:56
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 907
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 907
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:56
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 907
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 907
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:56
+    - LOGED change: POT.Primka - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: There is no items in list, nothing done.
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:56
+    - LOGED change: POT.Primka - button1_Click
+     - Used: Add to list
+     - Data: 0101001001001, , , ng
+             0101001001001, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:56
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 907
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 907
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:56
+    - LOGED change: POT.Primka - button2_Click
+     - Used: Save to db
+     - Data: 19/014
+     - Result: DONE, document nbr. 'PRIM 19/014'.
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:57
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 907
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 907
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:57
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 907
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 907
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:57
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 907
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 907
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:57
+    - LOGED change: POT.Primka - button1_Click
+     - Used: Add to list
+     - Data: 0101001002000, , , ng
+             0101001002000, , , ng
+             0101001002000, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:57
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 907
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 907
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:57
+    - LOGED change: POT.Primka - button2_Click
+     - Used: Save to db
+     - Data: 19/015
+     - Result: DONE, document nbr. 'PRIM 19/015'.
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:57
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/015, , PRIMKA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:57
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/015, , PRIMKA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:57
+    - LOGED change: POT.Primka - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: There is no items in list, nothing done.
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:57
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 907
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 907
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:57
+    - LOGED change: POT.Primka - button1_Click
+     - Used: Add to list
+     - Data: 0101001001000, , , ng
+             0101001001000, , , ng
+             0101001001000, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:57
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 907
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 907
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 14:57
+    - LOGED change: POT.Primka - button2_Click
+     - Used: Save to db
+     - Data: 19/016
+     - Result: DONE, document nbr. 'PRIM 19/016'.
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 15:00
+    - LOGED change: POT.Primka - button1_Click
+     - Used: Add to list
+     - Data: 0101001001003, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 15:00
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e)
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 15:00
+    - LOGED change: POT.Primka - button2_Click
+     - Used: Save to db
+     - Data: 19/017
+     - Result: DONE, document nbr. 'PRIM 19/017'.
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 15:01 - App started
+    *** BrunoBrckovic *** 
+
+- 06.07.19. 15:01
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 907
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 907
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 15:01
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 907
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 907
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 15:01
+    - LOGED change: POT.Primka - button1_Click
+     - Used: Add to list
+     - Data: 0101001002000, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 15:01
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 907
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 907
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 15:01
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.Primka.button4_Click(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 957
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.Primka.button4_Click(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 957
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 15:01
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.Primka.button4_Click(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 957
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.Primka.button4_Click(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 957
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 15:02
+    - LOGED change: POT.Primka - button2_Click
+     - Used: Save to db
+     - Data: 19/018
+     - Result: DONE, document nbr. 'PRIM 19/018'.
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 15:05 - App started
+    *** BrunoBrckovic *** 
+
+- 06.07.19. 15:05
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 911
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 911
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 15:05
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 911
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 911
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 15:05
+    - LOGED change: POT.Primka - button1_Click
+     - Used: Add to list
+     - Data: 0101001002004, , , ng
+             0101001002004, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 15:05
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 911
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 911
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 15:05
+    - LOGED change: POT.Primka - button2_Click
+     - Used: Save to db
+     - Data: 19/019
+     - Result: DONE, document nbr. 'PRIM 19/019'.
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 15:06 - App started
+    *** BrunoBrckovic *** 
+
+- 06.07.19. 15:06
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 911
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 911
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 15:06
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 911
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 911
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 15:06
+    - LOGED change: POT.Primka - button1_Click
+     - Used: Add to list
+     - Data: 0101001001004, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 15:06
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 911
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 911
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 15:06
+    - LOGED change: POT.Primka - button2_Click
+     - Used: Save to db
+     - Data: 19/020
+     - Result: DONE, document nbr. 'PRIM 19/020'.
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:20
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/020, , PRIMKA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:20
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/020, , PRIMKA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:22
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/020, , PRIMKA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:22
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/020, , PRIMKA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:23
+    - BaseEcp: System.NotSupportedException: The given path's format is not supported.
+   at System.Security.Permissions.FileIOPermission.EmulateFileIOPermissionChecks(String fullPath)
+   at System.Security.Permissions.FileIOPermission.QuickDemand(FileIOPermissionAccess access, String fullPath, Boolean checkForDuplicates, Boolean needFullPath)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandWriteFileIO(String fileName)
+   at System.Drawing.Printing.PrinterSettings.set_PrintFileName(String value)
+   at POT.Primka.button4_Click_1(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: The given path's format is not supported.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Security.Permissions.FileIOPermission.EmulateFileIOPermissionChecks(String fullPath)
+   at System.Security.Permissions.FileIOPermission.QuickDemand(FileIOPermissionAccess access, String fullPath, Boolean checkForDuplicates, Boolean needFullPath)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandWriteFileIO(String fileName)
+   at System.Drawing.Printing.PrinterSettings.set_PrintFileName(String value)
+   at POT.Primka.button4_Click_1(Object sender, EventArgs e)
+    - TypeNameEcp: System.NotSupportedException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:24
+    - BaseEcp: System.NotSupportedException: The given path's format is not supported.
+   at System.Security.Permissions.FileIOPermission.EmulateFileIOPermissionChecks(String fullPath)
+   at System.Security.Permissions.FileIOPermission.QuickDemand(FileIOPermissionAccess access, String fullPath, Boolean checkForDuplicates, Boolean needFullPath)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandWriteFileIO(String fileName)
+   at System.Drawing.Printing.PrinterSettings.set_PrintFileName(String value)
+   at POT.Primka.button4_Click_1(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: The given path's format is not supported.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Security.Permissions.FileIOPermission.EmulateFileIOPermissionChecks(String fullPath)
+   at System.Security.Permissions.FileIOPermission.QuickDemand(FileIOPermissionAccess access, String fullPath, Boolean checkForDuplicates, Boolean needFullPath)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandWriteFileIO(String fileName)
+   at System.Drawing.Printing.PrinterSettings.set_PrintFileName(String value)
+   at POT.Primka.button4_Click_1(Object sender, EventArgs e)
+    - TypeNameEcp: System.NotSupportedException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:30 - App started
+    *** BrunoBrckovic *** 
+
+- 06.07.19. 16:30
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 911
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 911
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:30
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 911
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 911
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:30
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 911
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 911
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:30
+    - LOGED change: POT.Primka - button1_Click
+     - Used: Add to list
+     - Data: 0101001002000, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:30
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 911
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 911
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:30
+    - LOGED change: POT.Primka - button2_Click
+     - Used: Save to db
+     - Data: 19/021
+     - Result: DONE, document nbr. 'PRIM 19/021'.
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:30
+    - BaseEcp: System.NotSupportedException: The given path's format is not supported.
+   at System.Security.Permissions.FileIOPermission.EmulateFileIOPermissionChecks(String fullPath)
+   at System.Security.Permissions.FileIOPermission.QuickDemand(FileIOPermissionAccess access, String fullPath, Boolean checkForDuplicates, Boolean needFullPath)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandWriteFileIO(String fileName)
+   at System.Drawing.Printing.PrinterSettings.set_PrintFileName(String value)
+   at POT.Primka.button4_Click_1(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 941
+    - InnerEcp: 
+    - MessageEcp: The given path's format is not supported.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Security.Permissions.FileIOPermission.EmulateFileIOPermissionChecks(String fullPath)
+   at System.Security.Permissions.FileIOPermission.QuickDemand(FileIOPermissionAccess access, String fullPath, Boolean checkForDuplicates, Boolean needFullPath)
+   at System.IO.Path.GetFullPath(String path)
+   at System.Drawing.IntSecurity.UnsafeGetFullPath(String fileName)
+   at System.Drawing.IntSecurity.DemandWriteFileIO(String fileName)
+   at System.Drawing.Printing.PrinterSettings.set_PrintFileName(String value)
+   at POT.Primka.button4_Click_1(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 941
+    - TypeNameEcp: System.NotSupportedException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:35
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.Primka.button4_Click_1(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.Primka.button4_Click_1(Object sender, EventArgs e)
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:38
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/021, , PRIMKA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:38
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/021, , PRIMKA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:39
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/021, , PRIMKA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:39
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/021, , PRIMKA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:39
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/021, , PRIMKA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:39
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/021, , PRIMKA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:40
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/021, , PRIMKA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:40
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/021, , PRIMKA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:40
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/021, , PRIMKA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:40
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/021, , PRIMKA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:42 - App started
+    *** BrunoBrckovic *** 
+
+- 06.07.19. 16:42
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 908
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 908
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:42
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 908
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 908
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:42
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 908
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 908
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:42
+    - LOGED change: POT.Primka - button1_Click
+     - Used: Add to list
+     - Data: 0101001001000, , , ng
+             0101001001000, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:42
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 908
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 908
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:43
+    - LOGED change: POT.Primka - button1_Click
+     - Used: Add to list
+     - Data: 0101004004002, , , ng
+             0101004004002, , , ng
+             0101004004002, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:43
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 908
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 908
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:43
+    - LOGED change: POT.Primka - button1_Click
+     - Used: Add to list
+     - Data: 0101004002005, , , ng
+             0101004002005, , , ng
+             0101004002005, , , ng
+             0101004002005, , , ng
+             0101004002005, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:43
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 908
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 908
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:43
+    - LOGED change: POT.Primka - button1_Click
+     - Used: Add to list
+     - Data: 0101005005000, , , ng
+             0101005005000, , , ng
+             0101005005000, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:43
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 908
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 908
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:43
+    - LOGED change: POT.Primka - button2_Click
+     - Used: Save to db
+     - Data: 19/022
+     - Result: DONE, document nbr. 'PRIM 19/022'.
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:43
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/022, , PRIMKA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:43
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/022, , PRIMKA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:49 - App started
+    *** BrunoBrckovic *** 
+
+- 06.07.19. 16:49
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 907
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 907
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:49
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 907
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 907
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:49
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 907
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 907
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:49
+    - LOGED change: POT.Primka - button1_Click
+     - Used: Add to list
+     - Data: 0101001004000, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:49
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 907
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Primka.textBox1_Leave(Object sender, EventArgs e) in D:\PROJECTS\VS\POT\POT\POT\Documents\Primka.cs:line 907
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:49
+    - LOGED change: POT.Primka - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/023, , PRIMKA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:49
+    - LOGED change: POT.Primka - button2_Click
+     - Used: Save to db
+     - Data: 19/023
+     - Result: DONE, document nbr. 'PRIM 19/023'.
+    *** BrunoBrckovic *** 
+
+
+- 06.07.19. 16:50 - App turned off
+    *** BrunoBrckovic *** 

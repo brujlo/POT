@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using POT.WorkingClasses;
 using System.Media;
 using System.Drawing;
+using System.IO;
 
 namespace POT
 {
@@ -730,6 +731,8 @@ namespace POT
                                             }
                                         }
 
+                                        if (Program.SaveDocumentsPDF) saveToPDF();
+
                                         if (saved)
                                         {
                                             data = PrimkaNumber;
@@ -863,6 +866,7 @@ namespace POT
 
         private void selectPrinterPrintBtn_Click(object sender, EventArgs e)
         {
+            
             PrintDialog printDialog1 = new PrintDialog();
             printDialog1.Document = printDocumentPrim;
             DialogResult result = printDialog1.ShowDialog();
@@ -872,12 +876,12 @@ namespace POT
 
                 if (printDialog1.PrinterSettings.PrinterName == "Microsoft Print to PDF")
                 {   // force a reasonable filename
-                    string basename = System.IO.Path.GetFileNameWithoutExtension("PRIM " + PrimkaNumber.ToString());
-                    string directory = System.IO.Path.GetDirectoryName("PRIM " + PrimkaNumber.ToString());
+                    string basename = Path.GetFileNameWithoutExtension("PRIM " + PrimkaNumber.ToString());
+                    string directory = Path.GetDirectoryName("PRIM " + PrimkaNumber.ToString());
                     printDocumentPrim.PrinterSettings.PrintToFile = true;
                     // confirm the user wants to use that name
                     pdfSaveDialog.InitialDirectory = directory;
-                    pdfSaveDialog.FileName = basename + ".pdf";
+                    pdfSaveDialog.FileName = directory + ".pdf";
                     pdfSaveDialog.Filter = "PDF File|*.pdf";
                     result = pdfSaveDialog.ShowDialog();
                     if (result != DialogResult.Cancel)
@@ -906,6 +910,33 @@ namespace POT
             catch (Exception e1)
             {
                 new LogWriter(e1);
+            }
+        }
+
+        private void saveToPDF()
+        {
+            try
+            {
+                PrintDialog printDialog1 = new PrintDialog();
+                printDialog1.Document = printDocumentPrim;
+
+                printDialog1.PrinterSettings.PrinterName = "Microsoft Print to PDF";
+
+                if (!Directory.Exists(Properties.Settings.Default.DefaultFolder + "\\PRIM"))
+                    return;
+
+                string fileName = "\\PRIM " + PrimkaNumber.ToString().Replace("/", "") + ".pdf";
+                string directory = Properties.Settings.Default.DefaultFolder + "\\PRIM";
+
+                printDialog1.PrinterSettings.PrintToFile = true;
+                printDocumentPrim.PrinterSettings.PrintFileName = directory + fileName;
+                printDocumentPrim.PrinterSettings.PrintToFile = true;
+                printDocumentPrim.Print();
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
+                MessageBox.Show(e1.Message + Environment.NewLine + "PDF file not saved.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

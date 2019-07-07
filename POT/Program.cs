@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -14,6 +13,7 @@ namespace POT
         /// </summary>
         /// 
 
+        public static Boolean SaveDocumentsPDF;
         public static Loading load;
         public static Saving save;
 

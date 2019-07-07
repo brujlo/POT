@@ -48,6 +48,8 @@ namespace POT
             Properties.Settings.Default.DBTabelsBuilded = false;
             Properties.Settings.Default.Save();
 
+            Program.SaveDocumentsPDF = Properties.Settings.Default.SaveToPDF;
+
             Opacity = 0;      //first the opacity is 0
 
             t1.Interval = 10;  //we'll increase the opacity every 10ms
@@ -222,8 +224,8 @@ namespace POT
 
             new LogWriter(System.Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + "App started");
 
-            linkLabel5.UseMnemonic = true;
-            linkLabel5.Text = "&" + linkLabel5.Text;
+            //linkLabel5.UseMnemonic = true;
+            //linkLabel5.Text = "&" + linkLabel5.Text;
         }
 
         private void backgroundWorker2_DoWork(object sender, DoWorkEventArgs e)

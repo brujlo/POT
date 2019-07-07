@@ -269,7 +269,7 @@
     <value>POPUST</value>
   </data>
   <data name="REBATEPRICE1" xml:space="preserve">
-    <value>CIJENA S</value>
+    <value>CIJENA ZA</value>
   </data>
   <data name="TOTAL" xml:space="preserve">
     <value>UKUPNO</value>
@@ -278,7 +278,7 @@
     <value>VRIJ.</value>
   </data>
   <data name="REBATEPRICE2" xml:space="preserve">
-    <value>POPUSTOM</value>
+    <value>NAPLATU</value>
   </data>
   <data name="WORKTIME2" xml:space="preserve">
     <value>RADA</value>

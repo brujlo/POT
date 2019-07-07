@@ -49,6 +49,7 @@ namespace POT
                     Properties.Settings.Default.Remember = true;
                     Properties.Settings.Default.Save();
 
+                    data = comboBox1.Text;
                     Result = "Main cmp selected, please relog to see changes.";
                 }
                 else

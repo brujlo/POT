@@ -394,7 +394,7 @@ namespace POT.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to REBATE.
+        ///   Looks up a localized string similar to CHARGE.
         /// </summary>
         internal static string REBATEPRICE1 {
             get {

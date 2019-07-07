@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Drawing.Printing;
+using System.IO;
 using System.Linq;
 using System.Media;
 using System.Threading;
@@ -605,6 +606,8 @@ namespace POT
                                             }
                                         }
 
+                                        if (Program.SaveDocumentsPDF) saveToPDF();
+
                                         if (saved)
                                         {
                                             Result = "DONE, document nbr. OTP '" + OTPNumber + "'.";
@@ -739,8 +742,8 @@ namespace POT
 
                 if (printDialog1.PrinterSettings.PrinterName == "Microsoft Print to PDF")
                 {   // force a reasonable filename
-                    string basename = System.IO.Path.GetFileNameWithoutExtension("OTP " + OTPNumber.ToString());
-                    string directory = System.IO.Path.GetDirectoryName("OTP " + OTPNumber.ToString());
+                    string basename = Path.GetFileNameWithoutExtension("OTP " + OTPNumber.ToString());
+                    string directory = Path.GetDirectoryName("OTP " + OTPNumber.ToString());
                     printDocumentOtp.PrinterSettings.PrintToFile = true;
                     // confirm the user wants to use that name
                     pdfSaveDialog.InitialDirectory = directory;
@@ -779,6 +782,33 @@ namespace POT
             catch (Exception e1)
             {
                 new LogWriter(e1);
+            }
+        }
+
+        private void saveToPDF()
+        {
+            try
+            {
+                PrintDialog printDialog1 = new PrintDialog();
+                printDialog1.Document = printDocumentOtp;
+
+                printDialog1.PrinterSettings.PrinterName = "Microsoft Print to PDF";
+
+                if (!Directory.Exists(Properties.Settings.Default.DefaultFolder + "\\OTP"))
+                    return;
+
+                string fileName = "\\OTP " + OTPNumber.ToString().Replace("/", "") + ".pdf";
+                string directory = Properties.Settings.Default.DefaultFolder + "\\OTP";
+
+                printDialog1.PrinterSettings.PrintToFile = true;
+                printDocumentOtp.PrinterSettings.PrintFileName = directory + fileName;
+                printDocumentOtp.PrinterSettings.PrintToFile = true;
+                printDocumentOtp.Print();
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
+                MessageBox.Show(e1.Message + Environment.NewLine + "PDF file not saved.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

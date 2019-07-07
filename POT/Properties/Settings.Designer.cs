@@ -660,5 +660,29 @@ namespace POT.Properties {
                 this["odgovornaOsoba"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string DefaultFolder {
+            get {
+                return ((string)(this["DefaultFolder"]));
+            }
+            set {
+                this["DefaultFolder"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SaveToPDF {
+            get {
+                return ((bool)(this["SaveToPDF"]));
+            }
+            set {
+                this["SaveToPDF"] = value;
+            }
+        }
     }
 }

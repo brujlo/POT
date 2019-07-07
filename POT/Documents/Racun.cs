@@ -3,6 +3,7 @@ using POT.WorkingClasses;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.IO;
 using System.Linq;
 using System.Media;
 using System.Threading;
@@ -631,6 +632,8 @@ namespace POT.Documents
             {
                 if (qc.SaveInvoice(invoicePartsList, invoice, invoice.Storno))
                 {
+                    if (Program.SaveDocumentsPDF) saveToPDF();
+
                     Program.SaveStop();
                     MessageBox.Show("SAVED");
                 }
@@ -715,8 +718,8 @@ namespace POT.Documents
                 if (printDialog1.PrinterSettings.PrinterName == "Microsoft Print to PDF")
                 {   // force a reasonable filename
                     string fileName = invoice.IDLongtoString(invoice.Id).Replace("-", "");
-                    string basename = System.IO.Path.GetFileNameWithoutExtension("EXE " + fileName);
-                    string directory = System.IO.Path.GetDirectoryName("EXE " + fileName);
+                    string basename = Path.GetFileNameWithoutExtension("EXE " + fileName);
+                    string directory = Path.GetDirectoryName("EXE " + fileName);
                     printDocumentInvoice.PrinterSettings.PrintToFile = true;
                     // confirm the user wants to use that name
                     pdfSaveDialog.InitialDirectory = directory;
@@ -802,6 +805,33 @@ namespace POT.Documents
             }
 
             return rez;
+        }
+
+        private void saveToPDF()
+        {
+            try
+            {
+                PrintDialog printDialog1 = new PrintDialog();
+                printDialog1.Document = printDocumentInvoice;
+
+                printDialog1.PrinterSettings.PrinterName = "Microsoft Print to PDF";
+
+                if (!Directory.Exists(Properties.Settings.Default.DefaultFolder + "\\RAC"))
+                    return;
+
+                string fileName = "\\EXE " + invoice.IDLongtoString(invoice.Id).Replace("-", "");
+                string directory = Properties.Settings.Default.DefaultFolder + "\\RAC";
+
+                printDialog1.PrinterSettings.PrintToFile = true;
+                printDocumentInvoice.PrinterSettings.PrintFileName = directory + fileName;
+                printDocumentInvoice.PrinterSettings.PrintToFile = true;
+                printDocumentInvoice.Print();
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
+                MessageBox.Show(e1.Message + Environment.NewLine + "PDF file not saved.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
