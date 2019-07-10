@@ -113,7 +113,7 @@
             this.CustomerCB.Location = new System.Drawing.Point(6, 15);
             this.CustomerCB.MaxDropDownItems = 15;
             this.CustomerCB.Name = "CustomerCB";
-            this.CustomerCB.Size = new System.Drawing.Size(351, 33);
+            this.CustomerCB.Size = new System.Drawing.Size(351, 28);
             this.CustomerCB.TabIndex = 1;
             this.CustomerCB.Text = "Customer";
             this.CustomerCB.SelectedIndexChanged += new System.EventHandler(this.CustomerCB_SelectedIndexChanged);
@@ -123,7 +123,7 @@
             this.OfferCB.FormattingEnabled = true;
             this.OfferCB.Location = new System.Drawing.Point(6, 56);
             this.OfferCB.Name = "OfferCB";
-            this.OfferCB.Size = new System.Drawing.Size(230, 33);
+            this.OfferCB.Size = new System.Drawing.Size(230, 28);
             this.OfferCB.TabIndex = 2;
             this.OfferCB.Text = "Offer";
             // 
@@ -196,10 +196,10 @@
             this.tabPage1.Controls.Add(this.label14);
             this.tabPage1.Controls.Add(this.label13);
             this.tabPage1.Controls.Add(this.pictureBox1);
-            this.tabPage1.Location = new System.Drawing.Point(8, 39);
+            this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1032, 619);
+            this.tabPage1.Size = new System.Drawing.Size(1040, 633);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Make";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -223,7 +223,7 @@
             this.FullPriceInfoLB.Location = new System.Drawing.Point(61, 41);
             this.FullPriceInfoLB.Name = "FullPriceInfoLB";
             this.FullPriceInfoLB.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.FullPriceInfoLB.Size = new System.Drawing.Size(60, 25);
+            this.FullPriceInfoLB.Size = new System.Drawing.Size(44, 20);
             this.FullPriceInfoLB.TabIndex = 31;
             this.FullPriceInfoLB.Text = "0,00 ";
             this.FullPriceInfoLB.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -235,7 +235,7 @@
             this.PriceInfoLB.Location = new System.Drawing.Point(60, 19);
             this.PriceInfoLB.Name = "PriceInfoLB";
             this.PriceInfoLB.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.PriceInfoLB.Size = new System.Drawing.Size(60, 25);
+            this.PriceInfoLB.Size = new System.Drawing.Size(44, 20);
             this.PriceInfoLB.TabIndex = 30;
             this.PriceInfoLB.Text = "0,00 ";
             this.PriceInfoLB.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -246,10 +246,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label23.AutoSize = true;
             this.label23.ForeColor = System.Drawing.Color.Crimson;
-            this.label23.Location = new System.Drawing.Point(685, 518);
+            this.label23.Location = new System.Drawing.Point(693, 518);
             this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(95, 25);
+            this.label23.Size = new System.Drawing.Size(70, 20);
             this.label23.TabIndex = 183;
             this.label23.Text = "cnt / 200";
             // 
@@ -258,10 +258,10 @@
             this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(1, 518);
+            this.label24.Location = new System.Drawing.Point(9, 518);
             this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(57, 25);
+            this.label24.Size = new System.Drawing.Size(43, 20);
             this.label24.TabIndex = 182;
             this.label24.Text = "Note";
             // 
@@ -271,12 +271,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox4.BackColor = System.Drawing.Color.LimeGreen;
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox4.Location = new System.Drawing.Point(-4, 535);
+            this.textBox4.Location = new System.Drawing.Point(4, 535);
             this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.MaxLength = 200;
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(802, 33);
+            this.textBox4.Size = new System.Drawing.Size(802, 47);
             this.textBox4.TabIndex = 181;
             this.textBox4.TabStop = false;
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
@@ -286,7 +286,7 @@
             this.label18.AutoSize = true;
             this.label18.Location = new System.Drawing.Point(369, 153);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(134, 25);
+            this.label18.Size = new System.Drawing.Size(99, 20);
             this.label18.TabIndex = 180;
             this.label18.Text = "Price in EUR";
             // 
@@ -295,7 +295,7 @@
             this.label22.AutoSize = true;
             this.label22.Location = new System.Drawing.Point(259, 152);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(119, 25);
+            this.label22.Size = new System.Drawing.Size(85, 20);
             this.label22.TabIndex = 179;
             this.label22.Text = "Price in KN";
             // 
@@ -305,7 +305,7 @@
             this.PriceINEURTB.Location = new System.Drawing.Point(373, 166);
             this.PriceINEURTB.Name = "PriceINEURTB";
             this.PriceINEURTB.ReadOnly = true;
-            this.PriceINEURTB.Size = new System.Drawing.Size(90, 31);
+            this.PriceINEURTB.Size = new System.Drawing.Size(90, 26);
             this.PriceINEURTB.TabIndex = 178;
             this.PriceINEURTB.TabStop = false;
             this.PriceINEURTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -316,7 +316,7 @@
             this.PriceINKNTB.Location = new System.Drawing.Point(264, 166);
             this.PriceINKNTB.Name = "PriceINKNTB";
             this.PriceINKNTB.ReadOnly = true;
-            this.PriceINKNTB.Size = new System.Drawing.Size(90, 31);
+            this.PriceINKNTB.Size = new System.Drawing.Size(90, 26);
             this.PriceINKNTB.TabIndex = 177;
             this.PriceINKNTB.TabStop = false;
             this.PriceINKNTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -348,7 +348,7 @@
             this.label21.ForeColor = System.Drawing.Color.OrangeRed;
             this.label21.Location = new System.Drawing.Point(10, 75);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(130, 29);
+            this.label21.Size = new System.Drawing.Size(101, 22);
             this.label21.TabIndex = 174;
             this.label21.Text = "OBR.JED.";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -360,7 +360,7 @@
             this.obrJedLB.Location = new System.Drawing.Point(88, 76);
             this.obrJedLB.Name = "obrJedLB";
             this.obrJedLB.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.obrJedLB.Size = new System.Drawing.Size(24, 25);
+            this.obrJedLB.Size = new System.Drawing.Size(18, 20);
             this.obrJedLB.TabIndex = 175;
             this.obrJedLB.Text = "0";
             this.obrJedLB.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -372,7 +372,7 @@
             this.label16.ForeColor = System.Drawing.Color.OrangeRed;
             this.label16.Location = new System.Drawing.Point(10, 17);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(62, 29);
+            this.label16.Size = new System.Drawing.Size(49, 22);
             this.label16.TabIndex = 37;
             this.label16.Text = "E.R.";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -384,7 +384,7 @@
             this.ExchangeLB.Location = new System.Drawing.Point(88, 18);
             this.ExchangeLB.Name = "ExchangeLB";
             this.ExchangeLB.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ExchangeLB.Size = new System.Drawing.Size(54, 25);
+            this.ExchangeLB.Size = new System.Drawing.Size(40, 20);
             this.ExchangeLB.TabIndex = 38;
             this.ExchangeLB.Text = "0,00";
             this.ExchangeLB.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -396,7 +396,7 @@
             this.InvNbrLB.Location = new System.Drawing.Point(88, 96);
             this.InvNbrLB.Name = "InvNbrLB";
             this.InvNbrLB.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.InvNbrLB.Size = new System.Drawing.Size(24, 25);
+            this.InvNbrLB.Size = new System.Drawing.Size(18, 20);
             this.InvNbrLB.TabIndex = 173;
             this.InvNbrLB.Text = "0";
             this.InvNbrLB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -408,7 +408,7 @@
             this.CurrencyLB.Location = new System.Drawing.Point(121, 19);
             this.CurrencyLB.Name = "CurrencyLB";
             this.CurrencyLB.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.CurrencyLB.Size = new System.Drawing.Size(41, 25);
+            this.CurrencyLB.Size = new System.Drawing.Size(30, 20);
             this.CurrencyLB.TabIndex = 39;
             this.CurrencyLB.Text = "KN";
             // 
@@ -419,7 +419,7 @@
             this.ValutaLB.Location = new System.Drawing.Point(88, 56);
             this.ValutaLB.Name = "ValutaLB";
             this.ValutaLB.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ValutaLB.Size = new System.Drawing.Size(24, 25);
+            this.ValutaLB.Size = new System.Drawing.Size(18, 20);
             this.ValutaLB.TabIndex = 171;
             this.ValutaLB.Text = "0";
             this.ValutaLB.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -431,7 +431,7 @@
             this.EchDateLB.Location = new System.Drawing.Point(88, 35);
             this.EchDateLB.Name = "EchDateLB";
             this.EchDateLB.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.EchDateLB.Size = new System.Drawing.Size(102, 25);
+            this.EchDateLB.Size = new System.Drawing.Size(75, 20);
             this.EchDateLB.TabIndex = 41;
             this.EchDateLB.Text = "21.12.79.";
             this.EchDateLB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -443,7 +443,7 @@
             this.label20.ForeColor = System.Drawing.Color.OrangeRed;
             this.label20.Location = new System.Drawing.Point(10, 94);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(89, 29);
+            this.label20.Size = new System.Drawing.Size(68, 22);
             this.label20.TabIndex = 172;
             this.label20.Text = "InvNbr";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -455,7 +455,7 @@
             this.label17.ForeColor = System.Drawing.Color.OrangeRed;
             this.label17.Location = new System.Drawing.Point(10, 55);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(110, 29);
+            this.label17.Size = new System.Drawing.Size(87, 22);
             this.label17.TabIndex = 1;
             this.label17.Text = "VALUTA";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -467,7 +467,7 @@
             this.label19.ForeColor = System.Drawing.Color.OrangeRed;
             this.label19.Location = new System.Drawing.Point(10, 35);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(112, 29);
+            this.label19.Size = new System.Drawing.Size(87, 22);
             this.label19.TabIndex = 40;
             this.label19.Text = "er DATE";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -512,7 +512,7 @@
             this.TotalEURLB.Location = new System.Drawing.Point(921, 495);
             this.TotalEURLB.Name = "TotalEURLB";
             this.TotalEURLB.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.TotalEURLB.Size = new System.Drawing.Size(60, 25);
+            this.TotalEURLB.Size = new System.Drawing.Size(44, 20);
             this.TotalEURLB.TabIndex = 32;
             this.TotalEURLB.Text = "0,00 ";
             this.TotalEURLB.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -523,7 +523,7 @@
             this.TotalKNLB.Location = new System.Drawing.Point(921, 431);
             this.TotalKNLB.Name = "TotalKNLB";
             this.TotalKNLB.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.TotalKNLB.Size = new System.Drawing.Size(60, 25);
+            this.TotalKNLB.Size = new System.Drawing.Size(44, 20);
             this.TotalKNLB.TabIndex = 31;
             this.TotalKNLB.Text = "0,00 ";
             this.TotalKNLB.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -534,7 +534,7 @@
             this.VATLB.Location = new System.Drawing.Point(921, 367);
             this.VATLB.Name = "VATLB";
             this.VATLB.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.VATLB.Size = new System.Drawing.Size(60, 25);
+            this.VATLB.Size = new System.Drawing.Size(44, 20);
             this.VATLB.TabIndex = 30;
             this.VATLB.Text = "0,00 ";
             this.VATLB.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -545,7 +545,7 @@
             this.TaxBaseLB.Location = new System.Drawing.Point(921, 303);
             this.TaxBaseLB.Name = "TaxBaseLB";
             this.TaxBaseLB.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.TaxBaseLB.Size = new System.Drawing.Size(60, 25);
+            this.TaxBaseLB.Size = new System.Drawing.Size(44, 20);
             this.TaxBaseLB.TabIndex = 29;
             this.TaxBaseLB.Text = "0,00 ";
             this.TaxBaseLB.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -556,7 +556,7 @@
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label11.Location = new System.Drawing.Point(820, 472);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(118, 29);
+            this.label11.Size = new System.Drawing.Size(92, 22);
             this.label11.TabIndex = 28;
             this.label11.Text = "TOTAL €";
             // 
@@ -566,7 +566,7 @@
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label10.Location = new System.Drawing.Point(820, 408);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(140, 29);
+            this.label10.Size = new System.Drawing.Size(108, 22);
             this.label10.TabIndex = 27;
             this.label10.Text = "TOTAL KN";
             // 
@@ -576,7 +576,7 @@
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label9.Location = new System.Drawing.Point(820, 344);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(62, 29);
+            this.label9.Size = new System.Drawing.Size(49, 22);
             this.label9.TabIndex = 26;
             this.label9.Text = "VAT";
             // 
@@ -586,7 +586,7 @@
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label8.Location = new System.Drawing.Point(820, 280);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(138, 29);
+            this.label8.Size = new System.Drawing.Size(107, 22);
             this.label8.TabIndex = 25;
             this.label8.Text = "TAX BASE";
             // 
@@ -635,7 +635,7 @@
             this.radioButtonENG.AutoSize = true;
             this.radioButtonENG.Location = new System.Drawing.Point(395, 48);
             this.radioButtonENG.Name = "radioButtonENG";
-            this.radioButtonENG.Size = new System.Drawing.Size(88, 29);
+            this.radioButtonENG.Size = new System.Drawing.Size(69, 24);
             this.radioButtonENG.TabIndex = 19;
             this.radioButtonENG.Text = "ENG";
             this.radioButtonENG.UseVisualStyleBackColor = true;
@@ -647,7 +647,7 @@
             this.radioButtonHRV.Checked = true;
             this.radioButtonHRV.Location = new System.Drawing.Point(395, 18);
             this.radioButtonHRV.Name = "radioButtonHRV";
-            this.radioButtonHRV.Size = new System.Drawing.Size(87, 29);
+            this.radioButtonHRV.Size = new System.Drawing.Size(69, 24);
             this.radioButtonHRV.TabIndex = 18;
             this.radioButtonHRV.TabStop = true;
             this.radioButtonHRV.Text = "HRV";
@@ -659,7 +659,7 @@
             this.label7.ForeColor = System.Drawing.Color.DarkGray;
             this.label7.Location = new System.Drawing.Point(497, 237);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(31, 25);
+            this.label7.Size = new System.Drawing.Size(23, 20);
             this.label7.TabIndex = 17;
             this.label7.Text = "%";
             // 
@@ -669,7 +669,7 @@
             this.CurencyLB.ForeColor = System.Drawing.Color.DarkGray;
             this.CurencyLB.Location = new System.Drawing.Point(136, 237);
             this.CurencyLB.Name = "CurencyLB";
-            this.CurencyLB.Size = new System.Drawing.Size(41, 25);
+            this.CurencyLB.Size = new System.Drawing.Size(30, 20);
             this.CurencyLB.TabIndex = 16;
             this.CurencyLB.Text = "KN";
             // 
@@ -678,7 +678,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(541, 216);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(92, 25);
+            this.label6.Size = new System.Drawing.Size(68, 20);
             this.label6.TabIndex = 15;
             this.label6.Text = "Quantity";
             // 
@@ -687,7 +687,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(362, 216);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(81, 25);
+            this.label5.Size = new System.Drawing.Size(62, 20);
             this.label5.TabIndex = 14;
             this.label5.Text = "Rebate";
             // 
@@ -696,7 +696,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(181, 215);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(108, 25);
+            this.label4.Size = new System.Drawing.Size(80, 20);
             this.label4.TabIndex = 13;
             this.label4.Text = "Work time";
             // 
@@ -705,7 +705,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(2, 216);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 25);
+            this.label3.Size = new System.Drawing.Size(44, 20);
             this.label3.TabIndex = 12;
             this.label3.Text = "Price";
             // 
@@ -714,7 +714,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(2, 150);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 25);
+            this.label2.Size = new System.Drawing.Size(77, 20);
             this.label2.TabIndex = 11;
             this.label2.Text = "Part code";
             // 
@@ -723,7 +723,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(2, 106);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 25);
+            this.label1.Size = new System.Drawing.Size(82, 20);
             this.label1.TabIndex = 10;
             this.label1.Text = "Part name";
             // 
@@ -731,7 +731,7 @@
             // 
             this.QuantityTB.Location = new System.Drawing.Point(547, 229);
             this.QuantityTB.Name = "QuantityTB";
-            this.QuantityTB.Size = new System.Drawing.Size(128, 31);
+            this.QuantityTB.Size = new System.Drawing.Size(128, 26);
             this.QuantityTB.TabIndex = 8;
             this.QuantityTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.QuantityTB.MouseClick += new System.Windows.Forms.MouseEventHandler(this.QuantityTB_MouseClick);
@@ -743,7 +743,7 @@
             this.RebateTB.BackColor = System.Drawing.Color.White;
             this.RebateTB.Location = new System.Drawing.Point(366, 229);
             this.RebateTB.Name = "RebateTB";
-            this.RebateTB.Size = new System.Drawing.Size(129, 31);
+            this.RebateTB.Size = new System.Drawing.Size(129, 26);
             this.RebateTB.TabIndex = 7;
             this.RebateTB.Text = "0";
             this.RebateTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -758,7 +758,7 @@
             this.PartCodeTB.Location = new System.Drawing.Point(6, 166);
             this.PartCodeTB.Name = "PartCodeTB";
             this.PartCodeTB.ReadOnly = true;
-            this.PartCodeTB.Size = new System.Drawing.Size(197, 31);
+            this.PartCodeTB.Size = new System.Drawing.Size(197, 26);
             this.PartCodeTB.TabIndex = 4;
             // 
             // PartNameCB
@@ -768,7 +768,7 @@
             this.PartNameCB.FormattingEnabled = true;
             this.PartNameCB.Location = new System.Drawing.Point(6, 118);
             this.PartNameCB.Name = "PartNameCB";
-            this.PartNameCB.Size = new System.Drawing.Size(489, 33);
+            this.PartNameCB.Size = new System.Drawing.Size(489, 28);
             this.PartNameCB.TabIndex = 3;
             this.PartNameCB.SelectedIndexChanged += new System.EventHandler(this.PartNameCB_SelectedIndexChanged);
             // 
@@ -776,7 +776,7 @@
             // 
             this.WorkTimeTB.Location = new System.Drawing.Point(186, 229);
             this.WorkTimeTB.Name = "WorkTimeTB";
-            this.WorkTimeTB.Size = new System.Drawing.Size(128, 31);
+            this.WorkTimeTB.Size = new System.Drawing.Size(128, 26);
             this.WorkTimeTB.TabIndex = 6;
             this.WorkTimeTB.Text = "01:00";
             this.WorkTimeTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -789,7 +789,7 @@
             // 
             this.PriceTB.Location = new System.Drawing.Point(6, 229);
             this.PriceTB.Name = "PriceTB";
-            this.PriceTB.Size = new System.Drawing.Size(128, 31);
+            this.PriceTB.Size = new System.Drawing.Size(128, 26);
             this.PriceTB.TabIndex = 5;
             this.PriceTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.PriceTB.TextChanged += new System.EventHandler(this.PriceTB_TextChanged);
@@ -799,7 +799,7 @@
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(812, 284);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(276, 25);
+            this.label12.Size = new System.Drawing.Size(207, 20);
             this.label12.TabIndex = 33;
             this.label12.Text = "______________________";
             // 
@@ -808,7 +808,7 @@
             this.label15.AutoSize = true;
             this.label15.Location = new System.Drawing.Point(812, 476);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(276, 25);
+            this.label15.Size = new System.Drawing.Size(207, 20);
             this.label15.TabIndex = 36;
             this.label15.Text = "______________________";
             // 
@@ -817,7 +817,7 @@
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(812, 412);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(276, 25);
+            this.label14.Size = new System.Drawing.Size(207, 20);
             this.label14.TabIndex = 35;
             this.label14.Text = "______________________";
             // 
@@ -826,7 +826,7 @@
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(812, 348);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(276, 25);
+            this.label13.Size = new System.Drawing.Size(207, 20);
             this.label13.TabIndex = 34;
             this.label13.Text = "______________________";
             // 
@@ -834,7 +834,7 @@
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = global::POT.Properties.Resources.LoadDataOff;
-            this.pictureBox1.Location = new System.Drawing.Point(242, 563);
+            this.pictureBox1.Location = new System.Drawing.Point(250, 577);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(137, 65);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -843,10 +843,10 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Location = new System.Drawing.Point(8, 39);
+            this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1032, 619);
+            this.tabPage2.Size = new System.Drawing.Size(1040, 633);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Check";
             this.tabPage2.UseVisualStyleBackColor = true;

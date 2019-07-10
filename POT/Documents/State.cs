@@ -385,7 +385,8 @@ namespace POT
         {
             textBox1.Focus();
             textBox1.Text = comboBox2.Text + comboBox3.Text + string.Format("{0:000000000}", int.Parse(resultArrSearchCode.ElementAt(comboBox1.SelectedIndex)));
-            SendKeys.Send("{ENTER}");
+            textBox1_KeyDown(sender, new KeyEventArgs(Keys.Enter));
+            //SendKeys.Send("{ENTER}");
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

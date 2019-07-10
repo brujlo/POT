@@ -816,6 +816,8 @@ namespace POT.Documents
 
                 printDialog1.PrinterSettings.PrinterName = "Microsoft Print to PDF";
 
+                if (!printDialog1.PrinterSettings.IsValid) return;
+
                 if (!Directory.Exists(Properties.Settings.Default.DefaultFolder + "\\RAC"))
                     return;
 
