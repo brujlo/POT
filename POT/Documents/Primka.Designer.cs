@@ -65,7 +65,6 @@
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.selectPrinterPrintBtn = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,7 +80,7 @@
             this.comboBox1.Location = new System.Drawing.Point(10, 34);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(544, 39);
+            this.comboBox1.Size = new System.Drawing.Size(544, 33);
             this.comboBox1.TabIndex = 0;
             this.comboBox1.TabStop = false;
             this.comboBox1.Text = "Search by company name";
@@ -95,7 +94,7 @@
             this.label2.Location = new System.Drawing.Point(608, 17);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 25);
+            this.label2.Size = new System.Drawing.Size(51, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Name";
             // 
@@ -107,7 +106,7 @@
             this.label3.Location = new System.Drawing.Point(608, 40);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 25);
+            this.label3.Size = new System.Drawing.Size(68, 20);
             this.label3.TabIndex = 3;
             this.label3.Text = "Address";
             // 
@@ -119,7 +118,7 @@
             this.label4.Location = new System.Drawing.Point(608, 65);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(47, 25);
+            this.label4.Size = new System.Drawing.Size(37, 20);
             this.label4.TabIndex = 4;
             this.label4.Text = "OIB";
             // 
@@ -131,7 +130,7 @@
             this.label5.Location = new System.Drawing.Point(608, 89);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(42, 25);
+            this.label5.Size = new System.Drawing.Size(32, 20);
             this.label5.TabIndex = 5;
             this.label5.Text = "NR";
             // 
@@ -140,10 +139,10 @@
             this.radioButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.radioButton1.AutoSize = true;
             this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(658, 120);
+            this.radioButton1.Location = new System.Drawing.Point(679, 120);
             this.radioButton1.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(95, 29);
+            this.radioButton1.Size = new System.Drawing.Size(74, 24);
             this.radioButton1.TabIndex = 6;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Good";
@@ -154,10 +153,10 @@
             // 
             this.radioButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(702, 120);
+            this.radioButton2.Location = new System.Drawing.Point(732, 120);
             this.radioButton2.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(128, 29);
+            this.radioButton2.Size = new System.Drawing.Size(98, 24);
             this.radioButton2.TabIndex = 7;
             this.radioButton2.Text = "No Good";
             this.radioButton2.UseVisualStyleBackColor = true;
@@ -171,7 +170,7 @@
             this.textBox1.Location = new System.Drawing.Point(568, 165);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(361, 38);
+            this.textBox1.Size = new System.Drawing.Size(361, 30);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
@@ -184,7 +183,7 @@
             this.label6.Location = new System.Drawing.Point(572, 148);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(63, 25);
+            this.label6.Size = new System.Drawing.Size(47, 20);
             this.label6.TabIndex = 9;
             this.label6.Text = "Code";
             // 
@@ -195,7 +194,7 @@
             this.label7.Location = new System.Drawing.Point(572, 196);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(41, 25);
+            this.label7.Size = new System.Drawing.Size(31, 20);
             this.label7.TabIndex = 11;
             this.label7.Text = "SN";
             // 
@@ -207,7 +206,7 @@
             this.textBox2.Location = new System.Drawing.Point(568, 213);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(361, 38);
+            this.textBox2.Size = new System.Drawing.Size(361, 30);
             this.textBox2.TabIndex = 1;
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox2_KeyDown);
@@ -219,7 +218,7 @@
             this.label8.Location = new System.Drawing.Point(571, 247);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(232, 25);
+            this.label8.Size = new System.Drawing.Size(171, 20);
             this.label8.TabIndex = 13;
             this.label8.Text = "Customer nbr. (RMA...)";
             // 
@@ -231,7 +230,7 @@
             this.textBox3.Location = new System.Drawing.Point(568, 264);
             this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(360, 38);
+            this.textBox3.Size = new System.Drawing.Size(360, 30);
             this.textBox3.TabIndex = 2;
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox3_KeyDown);
@@ -288,7 +287,7 @@
             this.label9.Location = new System.Drawing.Point(571, 296);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(57, 25);
+            this.label9.Size = new System.Drawing.Size(43, 20);
             this.label9.TabIndex = 18;
             this.label9.Text = "Note";
             // 
@@ -317,7 +316,7 @@
             this.label10.Location = new System.Drawing.Point(860, 297);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(95, 25);
+            this.label10.Size = new System.Drawing.Size(70, 20);
             this.label10.TabIndex = 19;
             this.label10.Text = "cnt / 200";
             // 
@@ -327,7 +326,7 @@
             this.label11.Location = new System.Drawing.Point(8, 163);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(91, 25);
+            this.label11.Size = new System.Drawing.Size(67, 20);
             this.label11.TabIndex = 20;
             this.label11.Text = "Part List";
             // 
@@ -344,7 +343,7 @@
             this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox2.MaxDropDownItems = 15;
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(544, 39);
+            this.comboBox2.Size = new System.Drawing.Size(544, 33);
             this.comboBox2.TabIndex = 21;
             this.comboBox2.TabStop = false;
             this.comboBox2.Text = "Search by company part";
@@ -356,7 +355,7 @@
             this.label36.Location = new System.Drawing.Point(90, 71);
             this.label36.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(104, 25);
+            this.label36.Size = new System.Drawing.Size(78, 20);
             this.label36.TabIndex = 37;
             this.label36.Text = "Customer";
             // 
@@ -366,7 +365,7 @@
             this.label35.Location = new System.Drawing.Point(16, 71);
             this.label35.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(74, 25);
+            this.label35.Size = new System.Drawing.Size(55, 20);
             this.label35.TabIndex = 36;
             this.label35.Text = "Owner";
             // 
@@ -380,7 +379,7 @@
             this.comboBox3.Location = new System.Drawing.Point(93, 88);
             this.comboBox3.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(50, 33);
+            this.comboBox3.Size = new System.Drawing.Size(50, 28);
             this.comboBox3.TabIndex = 35;
             this.comboBox3.TabStop = false;
             this.comboBox3.Text = "01";
@@ -396,7 +395,7 @@
             this.comboBox4.Location = new System.Drawing.Point(19, 88);
             this.comboBox4.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(50, 33);
+            this.comboBox4.Size = new System.Drawing.Size(50, 28);
             this.comboBox4.TabIndex = 34;
             this.comboBox4.TabStop = false;
             this.comboBox4.Text = "01";
@@ -422,7 +421,7 @@
             this.label13.Location = new System.Drawing.Point(562, 17);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(74, 25);
+            this.label13.Size = new System.Drawing.Size(55, 20);
             this.label13.TabIndex = 39;
             this.label13.Text = "Name:";
             // 
@@ -433,7 +432,7 @@
             this.label14.Location = new System.Drawing.Point(562, 40);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(97, 25);
+            this.label14.Size = new System.Drawing.Size(72, 20);
             this.label14.TabIndex = 40;
             this.label14.Text = "Address:";
             // 
@@ -444,7 +443,7 @@
             this.label15.Location = new System.Drawing.Point(562, 65);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(59, 25);
+            this.label15.Size = new System.Drawing.Size(44, 20);
             this.label15.TabIndex = 41;
             this.label15.Text = "VAT:";
             // 
@@ -455,7 +454,7 @@
             this.label16.Location = new System.Drawing.Point(562, 87);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(48, 25);
+            this.label16.Size = new System.Drawing.Size(36, 20);
             this.label16.TabIndex = 42;
             this.label16.Text = "NR:";
             // 
@@ -504,7 +503,7 @@
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(84, 38);
+            this.numericUpDown1.Size = new System.Drawing.Size(84, 30);
             this.numericUpDown1.TabIndex = 44;
             this.numericUpDown1.TabStop = false;
             this.numericUpDown1.Value = new decimal(new int[] {
@@ -525,22 +524,12 @@
             this.selectPrinterPrintBtn.UseVisualStyleBackColor = true;
             this.selectPrinterPrintBtn.Click += new System.EventHandler(this.selectPrinterPrintBtn_Click);
             // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(753, 41);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 46;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
             // Primka
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(958, 644);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.selectPrinterPrintBtn);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.printPrewBT);
@@ -625,6 +614,5 @@
         private System.Windows.Forms.PrintDialog printDialog1;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Button selectPrinterPrintBtn;
-        private System.Windows.Forms.Button button4;
     }
 }
