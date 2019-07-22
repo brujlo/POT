@@ -304,6 +304,15 @@ namespace POT.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Offer is valid.
+        /// </summary>
+        internal static string OfferValid {
+            get {
+                return ResourceManager.GetString("OfferValid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to on day.
         /// </summary>
         internal static string OnDay {

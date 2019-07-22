@@ -20,7 +20,6 @@ namespace POT.WorkingClasses
         Invoice inv = new Invoice();
         int storno;
         Boolean hrv = true;
-        Boolean racun;
         String brojRacuna;
         decimal taxBase;
         decimal totalTax;
@@ -44,7 +43,7 @@ namespace POT.WorkingClasses
 
         PrintMeInvoice() { }
 
-        public PrintMeInvoice(List<InvoiceParts> _invPrtList, Invoice _inv, int _storno, Boolean _hrvJezik, decimal _taxBase, decimal _totalTax, Boolean _racun)
+        public PrintMeInvoice(List<InvoiceParts> _invPrtList, Invoice _inv, int _storno, Boolean _hrvJezik, decimal _taxBase, decimal _totalTax)
         {
             invPrtList = _invPrtList;
             inv = _inv;
@@ -53,7 +52,6 @@ namespace POT.WorkingClasses
 
             taxBase = _taxBase;
             totalTax = _totalTax;
-            racun = _racun;
 
             brojRacuna = inv.Id.ToString();
 
@@ -247,21 +245,12 @@ namespace POT.WorkingClasses
                         headerpointVer = margins.Top + imgH + (moveBy * 7) + 100;
                         headerpointHor = bounds.Right - margins.Right - imgW;
 
-                        if (racun)
-                        {
-                            if (hrv)
-                                workingStr = "Račun br.";
-                            else
-                                workingStr = "Invoice nbr.";
-                        }
+                        
+                        if (hrv)
+                            workingStr = "Račun br.";
                         else
-                        {
-                            if (hrv)
-                                workingStr = "Pounda br.";
-                            else
-                                workingStr = "Offer nbr.";
-                        }
-
+                            workingStr = "Invoice nbr.";
+ 
                         e.Graphics.DrawString(workingStr + "  " + brojRacuna, new Font("Calibri light", fontSizeS, FontStyle.Bold), Brushes.Black, new Point(margins.Left, headerpointVer + (moveBy * 2)));
 
                         workingStr = Properties.strings.ACCOUNTUSE;

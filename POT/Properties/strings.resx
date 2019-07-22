@@ -319,4 +319,7 @@
   <data name="OnDay" xml:space="preserve">
     <value>on day</value>
   </data>
+  <data name="OfferValid" xml:space="preserve">
+    <value>Offer is valid</value>
+  </data>
 </root>

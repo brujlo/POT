@@ -322,4 +322,7 @@
   <data name="OnDay" xml:space="preserve">
     <value>na dan</value>
   </data>
+  <data name="OfferValid" xml:space="preserve">
+    <value>Ponuda vrijedi</value>
+  </data>
 </root>

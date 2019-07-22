@@ -45,7 +45,7 @@ namespace POT.Documents
         {
             InitializeComponent();
         }
-
+        
         private void Racun_Load(object sender, EventArgs e)
         {  
             invoice.Naplaceno = 0;
@@ -677,7 +677,7 @@ namespace POT.Documents
             ////////////////////////////////////////////////
             ///
             
-            PrintMeInvoice pr = new PrintMeInvoice(invoicePartsList, invoice, 0, radioButtonENG.Checked, TOTALTAXBASE, TOTALTAX, true);
+            PrintMeInvoice pr = new PrintMeInvoice(invoicePartsList, invoice, 0, radioButtonENG.Checked, TOTALTAXBASE, TOTALTAX);
             pr.Print(e);
             
             //data = cmpS + ", " + cmpR + ", " + sifrarnikArr + ", " + partListPrint + ", " + IISNumber + ", " + napomenaIISPrint + ", IIS, customer, false";

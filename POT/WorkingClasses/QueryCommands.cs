@@ -4451,5 +4451,140 @@ namespace POT
             cnn.Close();
             return exist;
         }
+
+        ////////////////////////////////////////////////////
+        ///
+
+        public long GetNewOfferID()
+        {
+            long offID = 0;
+
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "select Count(ID) from Ponuda where ID LIKE '" + "%" + DateTime.Now.ToString("yy") + "'";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (!dataReader.GetValue(0).ToString().Equals("0"))
+                offID = long.Parse(dataReader.GetValue(0).ToString()) + 1;
+            else
+                offID = 1;
+
+            dataReader.Close();
+            cnn.Close();
+            return offID;
+        }
+
+        public long GetLastOfferID()
+        {
+            long offID = 0;
+
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "select Count(ID) from Ponuda where ID LIKE '" + DateTime.Now.ToString("yy") + "%'";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (!dataReader.GetValue(0).ToString().Equals("0"))
+                offID = long.Parse(dataReader.GetValue(0).ToString());
+            else
+                offID = 1;
+
+            dataReader.Close();
+            cnn.Close();
+            return offID;
+        }
+
+        public Boolean SaveOffer(List<OfferParts> mOfferList, Offer mOffer, int mStorno)
+        {
+            Boolean isExecuted = false;
+            long newInvId = mOffer.GetNewOfferNumber();
+
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            command = cnn.CreateCommand();
+            SqlTransaction transaction = cnn.BeginTransaction();
+            command.Connection = cnn;
+            command.Transaction = transaction;
+
+            String eur = String.Format("{0:N4}", (double)mOffer.Eur);
+            String iznos = String.Format("{0:N2}", (double)mOffer.Iznos);
+            try
+            {
+                command.CommandText = "INSERT INTO Ponuda (ID, RacunID, DatumIzdano, Iznos, DatumNaplaceno, Naplaceno, CustomerID, EUR, Napomena, VrijemeIzdano, Valuta, Operater, DanTecaja, NacinPlacanja, Storno) VALUES ("
+                    + newInvId + ", " + mOffer.RacunID + ", '" + mOffer.DatumIzdano + "', '" + iznos + "', '" + mOffer.DatumNaplaceno + "', "
+                    + mOffer.Naplaceno + ", " + mOffer.CustomerID + ", '" + eur + "', '" + mOffer.Napomena + "', '" + mOffer.VrijemeIzdano + "', "
+                    + mOffer.Valuta + ", '" + mOffer.Operater + "', '" + mOffer.DanTecaja + "', '" + mOffer.NacinPlacanja + "', " + mStorno + ")";
+                command.ExecuteNonQuery();
+
+                foreach (OfferParts prt in mOfferList)
+                {
+                    command.CommandText = "INSERT INTO PonudaParts (PonudaID, PartCode, VrijemeRada, Rabat, Kolicina, iznosRabat, iznosTotal, iznosPart) VALUES (" + newInvId + ", " + prt.PartCode + ", '" + prt.VrijemeRada + "', " + prt.Rabat + ", " + prt.Kolicina + ", '" + prt.IznosRabat + "', '" + prt.IznosTotal + "', '" + prt.IznosPart + "')";
+                    command.ExecuteNonQuery();
+                }
+
+                transaction.Commit();
+                isExecuted = true;
+            }
+            catch (Exception)
+            {
+                //new LogWriter(e1);
+                try
+                {
+                    transaction.Rollback();
+                    isExecuted = false;
+                    throw;
+                }
+                catch (Exception)
+                {
+                    //new LogWriter(e2);
+                    throw;
+                }
+            }
+            finally
+            {
+                if (cnn.State.ToString().Equals("Open"))
+                    cnn.Close();
+            }
+
+            cnn.Close();
+            return isExecuted;
+        }
+
+        public Boolean IfOfferExist(long _InvocieID)
+        {
+            Boolean exist = true;
+
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "select Count(ID) from Ponuda where ID = " + _InvocieID;
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            try
+            {
+
+                if (!dataReader.GetValue(0).ToString().Equals("0"))
+                    exist = true;
+                else
+                    exist = false;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                dataReader.Close();
+                if (cnn.State.ToString().Equals("Open"))
+                    cnn.Close();
+            }
+
+            dataReader.Close();
+            cnn.Close();
+            return exist;
+        }
     }
 }

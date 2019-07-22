@@ -135,6 +135,12 @@
     <Compile Include="Documents\ISS.Designer.cs">
       <DependentUpon>ISS.cs</DependentUpon>
     </Compile>
+    <Compile Include="Documents\Ponuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Documents\Ponuda.Designer.cs">
+      <DependentUpon>Ponuda.cs</DependentUpon>
+    </Compile>
     <Compile Include="Documents\Racun.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +164,8 @@
     <Compile Include="MyTypes\InvoiceParts.cs" />
     <Compile Include="MyTypes\ISSparts.cs" />
     <Compile Include="MyTypes\MainCmp.cs" />
+    <Compile Include="MyTypes\Offer.cs" />
+    <Compile Include="MyTypes\OfferParts.cs" />
     <Compile Include="Saving.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -227,6 +235,7 @@
     </Compile>
     <Compile Include="WorkingClasses\PrintMeInvoice.cs" />
     <Compile Include="WorkingClasses\PrintMeISS.cs" />
+    <Compile Include="WorkingClasses\PrintMeOffer.cs" />
     <Compile Include="WorkingClasses\PrintMeRac.cs" />
     <Compile Include="WorkingClasses\Selector.cs">
       <SubType>Form</SubType>
@@ -304,6 +313,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Documents\IUS.resx">
       <DependentUpon>IUS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documents\Ponuda.resx">
+      <DependentUpon>Ponuda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Documents\Racun.resx">
       <DependentUpon>Racun.cs</DependentUpon>

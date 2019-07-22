@@ -943,5 +943,13 @@ namespace POT
         {
             new SettingsForm().ShowDialog();
         }
+
+        private void linkLabel24_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Program.LoadStart();
+
+            Ponuda p = new Ponuda();
+            p.Show();
+        }
     }
 }
