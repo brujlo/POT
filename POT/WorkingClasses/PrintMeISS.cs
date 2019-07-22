@@ -125,7 +125,7 @@ namespace POT.WorkingClasses
                         e.Graphics.DrawString(cmpCust.Name, new Font("Calibri light", fontSizeS, FontStyle.Bold), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * 2)));
                         e.Graphics.DrawString(cmpCust.Address, new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * 3)));
                         e.Graphics.DrawString(cmpCust.Country + " - " + cmpCust.City + ", " + cmpCust.PB, new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * 4)));
-                        e.Graphics.DrawString(Properties.strings.VAT + ": " + cmpM.OIB, new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * 5)));
+                        e.Graphics.DrawString(Properties.strings.VAT + ": " + cmpCust.OIB, new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * 5)));
                         e.Graphics.DrawString(Environment.NewLine, new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * 6 / 2)));
 
                         int pomak = 6;
