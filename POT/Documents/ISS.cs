@@ -896,6 +896,8 @@ namespace POT.Documents
 
         private void ISSSelectorCb_SelectedIndexChanged(object sender, EventArgs e)
         {
+            Program.LoadStart();
+
             selectISS = (ComboBox)sender;
 
             ///////////////// LogMe ////////////////////////
@@ -1035,13 +1037,18 @@ namespace POT.Documents
                 Result = "ISS selected " + ISSid;
                 AppendTextBox(Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + Result);
                 lw.LogMe(function, usedQC, data, Result);
+
+                Program.LoadStop();
             }
             catch(Exception e1)
             {
                 data = ISSid + Environment.NewLine;
                 Result = e1.Message;
                 lw.LogMe(function, usedQC, data, Result);
-                MessageBox.Show(Result, "NOT SAVED", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                Program.LoadStop();
+
+                MessageBox.Show(Result, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 

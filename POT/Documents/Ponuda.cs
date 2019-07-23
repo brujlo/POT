@@ -678,8 +678,6 @@ namespace POT.Documents
             ////////////////////////////////////////////////
             ///
 
-            // FALI PRINT ME TODO
-
             PrintMeOffer pr = new PrintMeOffer(offerPartsList, offer, 0, radioButtonENG.Checked, TOTALTAXBASE, TOTALTAX);
             pr.Print(e);
 

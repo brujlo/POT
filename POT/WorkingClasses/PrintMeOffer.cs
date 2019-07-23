@@ -127,10 +127,8 @@ namespace POT.WorkingClasses
             Margins margins = page.Margins;
 
             //Podesavanje pocetka ispisa za prvi list od vrha (default = 100)
-            margins.Bottom = margins.Bottom / 2;
+            //margins.Bottom = margins.Bottom / 2;
             margins.Top = margins.Top / 2;
-            //margins.Bottom = margins.Bottom;
-            //margins.Top = margins.Top;
 
             headerpointVer = margins.Top;
             headerpointHor = bounds.Right - margins.Right;
@@ -604,7 +602,7 @@ namespace POT.WorkingClasses
                         }
                     }
 
-                    e.Graphics.DrawString(Properties.strings.Page + " : " + pageNbr, getFont(8), Brushes.Black, new Point(margins.Left, bounds.Bottom - margins.Bottom));
+                    e.Graphics.DrawString(Properties.strings.Page + " : " + pageNbr, getFont(8), Brushes.Black, new Point(margins.Left, bounds.Bottom - margins.Bottom ));
 
                     if (e.HasMorePages)
                     {
@@ -621,6 +619,7 @@ namespace POT.WorkingClasses
                         workingStr = Properties.Settings.Default.thx1HRTB;
                     else
                         workingStr = Properties.Settings.Default.thx1ENGTB;
+
                     Font fntT = new Font("Ink Free", 14, FontStyle.Regular);
                     measureStr = e.Graphics.MeasureString(workingStr, fntT).Width;
                     measureField = bounds.Right - margins.Right - margins.Left;

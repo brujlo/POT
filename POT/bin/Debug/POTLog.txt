@@ -7400,3 +7400,567 @@ Error Number:109,State:1,Class:15
 
 - 22.07.19. 22:30 - App turned off
     *** BrunoBrckovic *** 
+
+- 23.07.19. 10:00
+    - LOGED change: POT.SetDBConnection - button2_Click
+     - Used: DB connection address and name save.
+     - Data: cphr.ddns.net, exe
+     - Result: Saved, no msgToUser
+    ***  *** 
+
+
+- 23.07.19. 10:00 - App started
+    *** BrunoBrckovic *** 
+
+- 23.07.19. 10:02
+    - LOGED change: POT.MainCmpSelector - button1_Click
+     - Used: Main cmp select
+     - Data: Exception
+     - Result: Main cmp selected, please relog to see changes.
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 10:02 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 23.07.19. 10:02 - App started
+    *** BrunoBrckovic *** 
+
+- 23.07.19. 10:03
+    - LOGED change: POT.CompanyInfo - button2_Click
+     - Used: Saving MainCmp info
+     - Data: Exception, Dunavska 31, Zagreb, 10040, HR, 0.00, 0.00, 76737454770, PBZGHR2X, 97768138, HR9323400091160480462, 4, 1, www.exception.hr, +38515814315, Bruno Brckovic, info@exception.hr, support@exception.hr, 2
+     - Result: Saved.
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 10:04
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 3, 190023, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190023
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 10:04 - App turned off
+    *** BrunoBrckovic *** 
+
+- 23.07.19. 10:07 - App started
+    *** BrunoBrckovic *** 
+
+- 23.07.19. 10:08
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 3, 190023, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190023
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 10:08
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 3, 190024, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190024
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 10:08
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 2, 190025, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190025
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 10:08
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 3, 190026, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190026
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 10:08
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 4, 190027, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190027
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 10:08
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 4, 190028, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190028
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 10:08
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 3, 190029, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190029
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 10:09
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 3, 190030, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190030
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 10:09
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 2, 190031, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190031
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 10:09
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 4, 190032, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190032
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 10:09
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 4, 190033, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190033
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 10:09
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 2, 190034, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190034
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 10:09
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 4, 190033, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190033
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 10:09
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 2, 190034, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190034
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 10:09
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 2, 190035, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190035
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 10:10
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 2, 190036, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190036
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 10:10
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 2, 190037, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190037
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 10:10
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 4, 190038, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190038
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 10:10
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 2, 190039, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190039
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 10:10
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 4, 190038, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190038
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 10:11
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 2, 190039, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190039
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 10:14 - App started
+    *** BrunoBrckovic *** 
+
+- 23.07.19. 10:22
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 Auto Cutter ACS-541-1N, 13002001, 390,00, 00:00, 0, 2, 677,48, 1354,96, 1354,96
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 10:47
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 SA, Cover Open Sensor & Sub PCB, 13002040, 0,00, 00:00, 0, 1, 192,40, 192,40, 1547,36
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 10:49
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 10:50
+    - LOGED change: POT.Documents.Ponuda - button1_Click
+     - Used: Saveoffer
+     - Data: 400400119
+
+     - Result: offer is already saved in DB, please make new one.
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 10:56 - App turned off
+    *** BrunoBrckovic *** 
+
+- 23.07.19. 10:56
+    - LOGED change: POT.SetDBConnection - button2_Click
+     - Used: DB connection address and name save.
+     - Data: cphr.ddns.net, test
+     - Result: Saved, no msgToUser
+    ***  *** 
+
+
+- 23.07.19. 10:56 - App started
+    *** BrunoBrckovic *** 
+
+- 23.07.19. 10:56
+    - LOGED change: POT.MainCmpSelector - button1_Click
+     - Used: Main cmp select
+     - Data: CES-POS d.o.o.
+     - Result: Main cmp selected, please relog to see changes.
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 10:57
+    - LOGED change: POT.CompanyInfo - button2_Click
+     - Used: Saving MainCmp info
+     - Data: CES-POS d.o.o., 2.Poljanice 6, Zagreb, 10000, HR, 0.00, 0.00, PBZGHR2X, 02647369817, 080182296, HR8323400091100157894, 4, 1, www.ces-pos.hr, +38512307973, Bruno Brckovic, info@ces-pos.hr, support@ces-pos.hr, 2
+     - Result: Saved.
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 10:57 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 23.07.19. 10:57 - App started
+    *** BrunoBrckovic *** 
+
+- 23.07.19. 10:58
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 , 1002000, 2662,25, 01:00, 0, 1, 3487,50, 3487,50, 3487,50
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 10:58
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 10:58
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 10:59
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 11:04
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 11:04
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 11:06
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 11:06
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 11:06
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 Casice, 1002001, 162,00, 01:00, 0, 1, 300,00, 300,00, 300,00
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 11:06
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 11:07
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 11:08
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 11:08
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 11:09
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-R1000 Casice, 1001002, 162,00, 01:00, 0, 1, 300,00, 300,00, 300,00
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 11:09
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-R1000 Casice, 1001002, 162,00, 01:00, 0, 1, 300,00, 300,00, 600,00
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 11:09
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 11:10
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 11:25 - App started
+    *** BrunoBrckovic *** 
+
+- 23.07.19. 11:25
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 Casice, 1002001, 162,00, 01:00, 0, 1, 300,00, 300,00, 300,00
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 11:27
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 11:27
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 Casice, 1002001, 162,00, 01:00, 0, 1, 300,00, 300,00, 300,00
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 11:27
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): Access is denied
+   at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Documents.Racun.saveToPDF() in D:\PROJECTS\VS\POT\POT\POT\Documents\Racun.cs:line 830
+    - InnerEcp: 
+    - MessageEcp: Access is denied
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Documents.Racun.saveToPDF() in D:\PROJECTS\VS\POT\POT\POT\Documents\Racun.cs:line 830
+    - TypeNameEcp: System.ComponentModel.Win32Exception
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 11:32
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 11:32
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+    - InnerEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+    - MessageEcp: Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=2767; handshake=2535; 
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in D:\PROJECTS\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 11:33
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 11:35 - App started
+    *** BrunoBrckovic *** 
+
+- 23.07.19. 11:35
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 Casice, 1002001, 162,00, 01:00, 0, 1, 300,00, 300,00, 300,00
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 11:35
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 11:35
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 11:36
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 Casice, 1002001, 162,00, 01:00, 0, 1, 300,00, 300,00, 300,00
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 11:36
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 11:36
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 23.07.19. 11:37 - App turned off
+    *** BrunoBrckovic *** 

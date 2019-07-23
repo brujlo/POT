@@ -127,7 +127,7 @@ namespace POT.WorkingClasses
             Margins margins = page.Margins;
 
             //Podesavanje pocetka ispisa za prvi list od vrha (default = 100)
-            margins.Bottom = margins.Bottom / 2;
+            //margins.Bottom = margins.Bottom / 2;
             margins.Top = margins.Top / 2;
 
             headerpointVer = margins.Top;
