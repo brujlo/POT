@@ -299,10 +299,10 @@
     <value>Šifra operatera</value>
   </data>
   <data name="PaymentForm" xml:space="preserve">
-    <value>Način plačanja</value>
+    <value>Način plaćanja</value>
   </data>
   <data name="PaymentTime" xml:space="preserve">
-    <value>Valuta plačanja</value>
+    <value>Valuta plaćanja</value>
   </data>
   <data name="ResPersone" xml:space="preserve">
     <value>Odgovorna osoba</value>

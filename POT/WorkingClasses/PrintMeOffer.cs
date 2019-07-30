@@ -576,13 +576,14 @@ namespace POT.WorkingClasses
                             measureStrOsoba = e.Graphics.MeasureString(workingStrOsoba, ft).Width;
                             e.Graphics.DrawString(workingStrOsoba, new Font("Calibri light", ft.Size, FontStyle.Regular), Brushes.Black, new Point(rebatePrice - ((int)measureStrOsoba / 2), headerpointVer + (moveBy * 2)));
 
-
+                            /*
                             headerpointVer = headerpointVer + moveBy + 4;
                             workingStr = Properties.strings.OfferConn + ":";
                             e.Graphics.DrawString(workingStr, new Font("Calibri light", ft.Size, FontStyle.Bold), Brushes.Black, new Point(rb, headerpointVer + moveBy));
 
                             workingStr = off.RacunID.ToString();
                             e.Graphics.DrawString(workingStr, new Font("Calibri light", ft.Size, FontStyle.Regular), Brushes.Black, new Point(rb + (int)measureStr + 25, headerpointVer + moveBy));
+                            */
 
                             headerpointVer = headerpointVer + (moveBy * 4);
                             if (hrv)

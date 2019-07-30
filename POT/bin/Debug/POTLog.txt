@@ -7964,3 +7964,157 @@ Error Number:109,State:1,Class:15
 
 - 23.07.19. 11:37 - App turned off
     *** BrunoBrckovic *** 
+
+- 28.07.19. 08:33 - App started
+    *** BrunoBrckovic *** 
+
+- 28.07.19. 08:33 - App turned off
+    *** BrunoBrckovic *** 
+
+- 30.07.19. 21:55
+    - LOGED change: POT.SetDBConnection - button2_Click
+     - Used: DB connection address and name save.
+     - Data: 192.168.100.101, exe
+     - Result: Saved, no msgToUser
+    ***  *** 
+
+
+- 30.07.19. 21:55 - App started
+    *** BrunoBrckovic *** 
+
+- 30.07.19. 21:56
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 Auto Cutter ACS-541-1N, 13002001, 390,00, 01:00, 0, 2, 677,48, 1354,96, 1693,7000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 30.07.19. 21:56
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 SA, Cover Open Sensor & Sub PCB, 13002040, 0,00, 01:00, 0, 2, 0, 0, 0,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 30.07.19. 21:56
+    - LOGED change: POT.Documents.Ponuda - button5_Click
+     - Used: Remove selected
+     - Data: ListViewSubItem: {1}, ListViewSubItem: {PRINTER Citizen CTS4000 Auto Cutter ACS-541-1N}, ListViewSubItem: {0107013002001}, ListViewSubItem: {677,48}, ListViewSubItem: {01:00}, ListViewSubItem: {0,00}, ListViewSubItem: {2}, ListViewSubItem: {677,48}, ListViewSubItem: {1354,96}
+     - Result: Removed
+    *** BrunoBrckovic *** 
+
+
+- 30.07.19. 21:57
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 SA, Cover Open Sensor & Sub PCB, 13002040, 0,00, 00:00, 0, 1, 192,27, 192,27, 240,3375
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 30.07.19. 21:57
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 Auto Cutter ACS-541-1N, 13002001, 390,00, 00:00, 0, 2, 677,48, 1354,96, 1934,0375
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 30.07.19. 21:58
+    - LOGED change: POT.BuildingClasses.SettingsForm - SaveBT_Click
+     - Used: Print
+     - Data: 0; 0; 15; VAT is not calculated according to Article 17. of the Law on PDV; The taxpayer is not in the VAT system, according to Article 90. of the Law on PDV; Thank you for your trust; Temeljem članka 9., st.3., Zakona o računovodstvu, račun je pravovaljan bez potpisa i pečata; Porezni obveznik nije u sustavu PDV-a, temeljem zakona o PDV-u čl. 90; Hvala na ukazanom povjerenju; Bruno Brcković; D:\Dropbox (Personal)\EXCEPTION\POT DOKUMENTI; Save_to_PDF => True
+     - Result: 
+    *** BrunoBrckovic *** 
+
+
+- 30.07.19. 21:58
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 Auto Cutter ACS-541-1N, 13002001, 390,00, 00:00, 0, 2, 677,48, 1354,96, 1354,96
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 30.07.19. 21:58
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 SA, Cover Open Sensor & Sub PCB, 13002040, 0,00, 00:00, 0, 1, 192,27, 192,27, 1547,23
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 30.07.19. 22:01
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 30.07.19. 22:02 - App turned off
+    *** BrunoBrckovic *** 
+
+- 30.07.19. 22:06 - App started
+    *** BrunoBrckovic *** 
+
+- 30.07.19. 22:06
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 Auto Cutter ACS-541-1N, 13002001, 390,00, 00:00, 0, 2, 677,48, 1354,96, 1354,96
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 30.07.19. 22:06
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 SA, Cover Open Sensor & Sub PCB, 13002040, 0,00, 00:00, 0, 1, 192,27, 192,27, 1547,23
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 30.07.19. 22:06
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 30.07.19. 22:07
+    - LOGED change: POT.CompanyInfo - button2_Click
+     - Used: Saving MainCmp info
+     - Data: Exception, Dunavska 31, Zagreb, 10040, HR, 0.00, 0.00, 76737454770, PBZGHR2X, 97768138, HR9323400091160480462, 4, 1, www.exception.hr, +38515814315, Bruno Brckovic, info@exception.hr, support@exception.hr, 2
+     - Result: Saved.
+    *** BrunoBrckovic *** 
+
+
+- 30.07.19. 22:07
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 Auto Cutter ACS-541-1N, 13002001, 390,00, 00:00, 0, 2, 677,48, 1354,96, 1354,96
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 30.07.19. 22:07
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 SA, Cover Open Sensor & Sub PCB, 13002040, 0,00, 00:00, 0, 1, 192,27, 192,27, 1547,23
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 30.07.19. 22:07
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 30.07.19. 22:08 - App turned off
+    *** BrunoBrckovic *** 
