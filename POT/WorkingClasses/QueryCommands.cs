@@ -4452,6 +4452,48 @@ namespace POT
             return exist;
         }
 
+        public List<Invoice> GetAllInvoices()
+        {
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "select * from Racun";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            List<Invoice> tempList = new List<Invoice>();
+
+            if (dataReader.HasRows)
+            {
+                do
+                {
+                    Invoice tempInv = new Invoice(
+                    long.Parse(dataReader["ID"].ToString()),
+                    long.Parse(dataReader["PonudaID"].ToString()),
+                    dataReader["DatumIzdano"].ToString(),
+                    decimal.Parse(dataReader["Iznos"].ToString()),
+                    dataReader["DatumNaplaceno"].ToString(),
+                    decimal.Parse(dataReader["Naplaceno"].ToString()),
+                    long.Parse(dataReader["CustomerID"].ToString()),
+                    decimal.Parse(dataReader["Eur"].ToString()),
+                    dataReader["Napomena"].ToString(),
+                    dataReader["VrijemeIzdano"].ToString(),
+                    int.Parse(dataReader["Valuta"].ToString()),
+                    dataReader["Operater"].ToString(),
+                    dataReader["DanTecaja"].ToString(),
+                    dataReader["NacinPlacanja"].ToString(),
+                    int.Parse(dataReader["Storno"].ToString()));
+
+                    tempList.Add(tempInv);
+
+                } while (dataReader.Read());
+            }
+
+            dataReader.Close();
+            cnn.Close();
+            return tempList;
+        }
+
         ////////////////////////////////////////////////////
         ///
 
@@ -4585,6 +4627,154 @@ namespace POT
             dataReader.Close();
             cnn.Close();
             return exist;
+        }
+
+        public List<Offer> GetAllOffers()
+        {
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "select * from Ponuda";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            List<Offer> tempList = new List<Offer>();
+
+            if (dataReader.HasRows)
+            {
+                do
+                {
+                    Offer tempOff = new Offer(
+                    long.Parse(dataReader["ID"].ToString()),
+                    long.Parse(dataReader["RacunID"].ToString()),
+                    dataReader["DatumIzdano"].ToString(),
+                    decimal.Parse(dataReader["Iznos"].ToString()),
+                    dataReader["DatumNaplaceno"].ToString(),
+                    decimal.Parse(dataReader["Naplaceno"].ToString()),
+                    long.Parse(dataReader["CustomerID"].ToString()),
+                    decimal.Parse(dataReader["Eur"].ToString()),
+                    dataReader["Napomena"].ToString(),
+                    dataReader["VrijemeIzdano"].ToString(),
+                    int.Parse(dataReader["Valuta"].ToString()),
+                    dataReader["Operater"].ToString(),
+                    dataReader["DanTecaja"].ToString(),
+                    dataReader["NacinPlacanja"].ToString(),
+                    int.Parse(dataReader["Storno"].ToString()));
+
+                    tempList.Add(tempOff);
+
+                } while (dataReader.Read()) ;
+            }
+
+            dataReader.Close();
+            cnn.Close();
+            return tempList;
+        }
+
+        public Boolean UpdateInvoicePaid(long m_invID, decimal m_Iznos, string m_date)
+        {
+            Boolean executed = false;
+            
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "select Count(ID) from Racun";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                dataReader.Close();
+                command = cnn.CreateCommand();
+                SqlTransaction transaction = cnn.BeginTransaction();
+                command.Connection = cnn;
+                command.Transaction = transaction;
+
+                try
+                {
+                    command.CommandText = "UPDATE Racun SET Naplaceno = '" + m_Iznos + "', DatumNaplaceno = '" + m_date + "' where ID = " + m_invID;
+                    command.ExecuteNonQuery();
+                    
+                    transaction.Commit();
+                    executed = true;
+                }
+                catch (Exception)
+                {
+                    //new LogWriter(e1);
+                    try
+                    {
+                        transaction.Rollback();
+                        executed = false;
+                        throw;
+                    }
+                    catch (Exception)
+                    {
+                        //new LogWriter(e2);
+                        throw;
+                    }
+                }
+                finally
+                {
+                    if (cnn.State.ToString().Equals("Open"))
+                        cnn.Close();
+                }
+            }
+            dataReader.Close();
+            cnn.Close();
+            return executed;
+        }
+
+        public Boolean UpdateInvoicePaidTo0(long m_invID)
+        {
+            Boolean executed = false;
+
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "select Count(ID) from Racun";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                dataReader.Close();
+                command = cnn.CreateCommand();
+                SqlTransaction transaction = cnn.BeginTransaction();
+                command.Connection = cnn;
+                command.Transaction = transaction;
+
+                try
+                {
+                    command.CommandText = "UPDATE Racun SET Naplaceno = '0' , DatumNaplaceno = '01.01.01.' where ID = " + m_invID;
+                    command.ExecuteNonQuery();
+
+                    transaction.Commit();
+                    executed = true;
+                }
+                catch (Exception)
+                {
+                    //new LogWriter(e1);
+                    try
+                    {
+                        transaction.Rollback();
+                        executed = false;
+                        throw;
+                    }
+                    catch (Exception)
+                    {
+                        //new LogWriter(e2);
+                        throw;
+                    }
+                }
+                finally
+                {
+                    if (cnn.State.ToString().Equals("Open"))
+                        cnn.Close();
+                }
+            }
+            dataReader.Close();
+            cnn.Close();
+            return executed;
         }
     }
 }

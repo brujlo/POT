@@ -3,6 +3,8 @@ using POT.WorkingClasses;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Media;
@@ -40,6 +42,9 @@ namespace POT.Documents
         Invoice invoice = new Invoice();
         List<InvoiceParts> invoicePartsList = new List<InvoiceParts>();
         InvoiceParts recalculateInvPart = new InvoiceParts();
+
+        List<Offer> ponudeList = new List<Offer>();
+        List<Invoice> invList = new List<Invoice>();
 
         public Racun()
         {
@@ -106,6 +111,25 @@ namespace POT.Documents
             listView1.Columns.Add("REBATE PRICE");
             listView1.Columns.Add("TOTAL");
 
+            listView2.View = View.Details;
+
+            listView2.Columns.Add("RB");
+            listView2.Columns.Add("ID");
+            listView2.Columns.Add("PonudaID");
+            listView2.Columns.Add("DatumIzdano");
+            listView2.Columns.Add("Iznos");
+            listView2.Columns.Add("DatumNaplaceno");
+            listView2.Columns.Add("Naplaceno");
+            listView2.Columns.Add("CustomerID");
+            listView2.Columns.Add("EUR");
+            listView2.Columns.Add("Napomena");
+            listView2.Columns.Add("VrijemeIzdano");
+            listView2.Columns.Add("Valuta");
+            listView2.Columns.Add("Operater");
+            listView2.Columns.Add("DanTecaja");
+            listView2.Columns.Add("NacinPlacanja");
+            listView2.Columns.Add("Storno");
+
             for (int i = 0; i < listView1.Columns.Count; i++)
             {
                 listView1.AutoResizeColumn(i, ColumnHeaderAutoResizeStyle.ColumnContent);
@@ -133,6 +157,17 @@ namespace POT.Documents
                     foreach (PartSifrarnik sif in sifrarnikList)
                     {
                         PartNameCB.Items.Add(sif.FullName);
+                    }
+                }
+
+
+                ponudeList = qc.GetAllOffers();
+
+                if (ponudeList.Count > 0)
+                {
+                    foreach (Offer off in ponudeList)
+                    {
+                        OfferCB.Items.Add(off.Id);
                     }
                 }
             }
@@ -624,6 +659,8 @@ namespace POT.Documents
             invoice.VrijemeIzdano = DateTime.Now.ToString("HH:mm");
             invoice.Napomena = textBox4.Text;
 
+            invoice.PonudaID = (OfferCB.Text.Equals("") || OfferCB.Text.Equals("Offer")) ? 0 : long.Parse(OfferCB.Text);
+
             foreach (InvoiceParts prt in invoicePartsList)
             {
                 prt.AddInvoiceToPart(invoice);
@@ -821,7 +858,7 @@ namespace POT.Documents
                 if (!Directory.Exists(Properties.Settings.Default.DefaultFolder + "\\RAC"))
                     return;
 
-                string fileName = "\\EXE " + invoice.IDLongtoString(invoice.Id).Replace("-", "");
+                string fileName = "\\EXE " + invoice.IDLongtoString(invoice.Id).Replace("-", "") + ".pdf";
                 string directory = Properties.Settings.Default.DefaultFolder + "\\RAC";
 
                 printDialog1.PrinterSettings.PrintToFile = true;
@@ -833,6 +870,145 @@ namespace POT.Documents
             {
                 new LogWriter(e1);
                 MessageBox.Show(e1.Message + Environment.NewLine + "PDF file not saved.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            listView2.Items.Clear();
+
+            if (tabControl1.SelectedTab == tabControl1.TabPages["tabPage2"])
+            {
+                Program.LoadStart();
+
+                invList = qc.GetAllInvoices();
+
+                if (invList.Count > 0)
+                {
+                    foreach (Invoice inv in invList)
+                    {
+
+                        ListViewItem lvi2 = new ListViewItem();
+                        rb = listView2.Items.Count + 1;
+
+                        lvi2.Text = rb.ToString();
+
+                        if (inv.Naplaceno > 0)
+                            lvi2.ForeColor = Color.Green;
+                        else
+                            lvi2.ForeColor = Color.Red;
+
+                           
+                        lvi2.SubItems.Add(inv.Id.ToString());
+                        lvi2.SubItems.Add(inv.PonudaID.ToString());
+                        lvi2.SubItems.Add(inv.DatumIzdano.ToString());
+                        lvi2.SubItems.Add(inv.Iznos.ToString());
+                        lvi2.SubItems.Add(inv.DatumNaplaceno.ToString());
+                        lvi2.SubItems.Add(inv.Naplaceno.ToString());
+                        lvi2.SubItems.Add(inv.CustomerID.ToString());
+                        lvi2.SubItems.Add(inv.Eur.ToString());
+                        lvi2.SubItems.Add(inv.Napomena.ToString());
+                        lvi2.SubItems.Add(inv.VrijemeIzdano.ToString());
+                        lvi2.SubItems.Add(inv.Valuta.ToString());
+                        lvi2.SubItems.Add(inv.Operater.ToString());
+                        lvi2.SubItems.Add(inv.DanTecaja.ToString());
+                        lvi2.SubItems.Add(inv.NacinPlacanja.ToString());
+                        lvi2.SubItems.Add(inv.Storno.ToString());
+
+                        if (listView2.Items.Count > 0)
+                            listView2.EnsureVisible(listView2.Items.Count - 1);
+
+                        listView2.Items.Add(lvi2);
+                    }
+                }
+
+                for (int i = 0; i < listView2.Columns.Count; i++)
+                {
+                    listView2.AutoResizeColumn(i, ColumnHeaderAutoResizeStyle.ColumnContent);
+                    listView2.AutoResizeColumn(i, ColumnHeaderAutoResizeStyle.HeaderSize);
+                }
+
+                Program.LoadStop();
+            }
+        }
+
+        private void listView2_DoubleClick(object sender, EventArgs e)
+        {
+            ///////////////// LogMe ////////////////////////
+            String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
+            String usedQC = "Chage payed - selected";
+            String data = "";
+            String Result = "";
+            LogWriter lw = new LogWriter();
+            ////////////////////////////////////////////////
+            ///
+
+            try
+            {
+                Program.SaveStart();
+
+                if (listView2.SelectedItems == null)
+                    return;
+
+                var itemIndx = listView2.SelectedIndices[0];
+
+                ListViewItem item = listView2.SelectedItems[0];
+
+                if (decimal.Parse(item.SubItems[6].Text) > 0)
+                {
+                    qc.UpdateInvoicePaidTo0(invList[itemIndx].Id);
+                    item.SubItems[5].Text = "01.01.01.";
+                    item.SubItems[6].Text = "0";
+                    item.ForeColor = Color.Red;
+                }
+                else
+                {
+                    qc.UpdateInvoicePaid(invList[itemIndx].Id, invList[itemIndx].Iznos, DateTime.Now.ToString("dd.MM.yy."));
+                    item.SubItems[5].Text = DateTime.Now.ToString("dd.MM.yy.");
+                    item.SubItems[6].Text = invList[itemIndx].Iznos.ToString();
+                    item.ForeColor = Color.Green;
+                }
+
+                data = item.SubItems[0] + ", " + item.SubItems[1] + ", " + item.SubItems[2] + ", " + item.SubItems[3] + ", " + item.SubItems[4] + ", " + item.SubItems[5] + ", " + item.SubItems[6] + ", " + item.SubItems[7] + ", " + item.SubItems[8];
+
+                Result = "Changed";
+                lw.LogMe(function, usedQC, data, Result);
+
+                Program.SaveStop();
+            }
+            catch(Exception e1)
+            {
+                Program.SaveStop();
+                data = invoice.Id.ToString() + Environment.NewLine;
+                Result = e1.Message;
+                lw.LogMe(function, usedQC, data, Result);
+                MessageBox.Show(Result, "NOT CHANGED", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void PDFOpen_Click(object sender, EventArgs e)
+        {
+            var itemIndx = listView2.SelectedIndices[0];
+
+            String id = String.Format( "{0:00000000000}", invList[itemIndx].Id);
+
+
+            String filePath = Properties.Settings.Default.DefaultFolder + "\\RAC\\EXE " + id + ".pdf";
+
+            try
+            {
+                Process.Start(filePath);
+
+                /*
+                Process myProcess = new Process();
+                myProcess.StartInfo.FileName = "acroRd32.exe"; //not the full application path
+                myProcess.StartInfo.Arguments = "/A \"page=2=OpenActions\" " + filePath;
+                myProcess.Start();
+                */
+            }catch(Exception e1)
+            {
+                new LogWriter(e1);
+                MessageBox.Show(e1.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

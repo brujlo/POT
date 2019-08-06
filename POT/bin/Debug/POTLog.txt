@@ -8118,3 +8118,461 @@ Error Number:109,State:1,Class:15
 
 - 30.07.19. 22:08 - App turned off
     *** BrunoBrckovic *** 
+
+- 06.08.19. 12:23 - App started
+    *** BrunoBrckovic *** 
+
+- 06.08.19. 12:23 - App turned off
+    *** BrunoBrckovic *** 
+
+- 06.08.19. 12:24 - App started
+    *** BrunoBrckovic *** 
+
+- 06.08.19. 12:25 - App turned off
+    *** BrunoBrckovic *** 
+
+- 06.08.19. 12:46 - App started
+    *** BrunoBrckovic *** 
+
+- 06.08.19. 12:46 - App turned off
+    *** BrunoBrckovic *** 
+
+- 06.08.19. 12:51 - App started
+    *** BrunoBrckovic *** 
+
+- 06.08.19. 13:06 - App started
+    *** BrunoBrckovic *** 
+
+- 06.08.19. 13:16 - App started
+    *** BrunoBrckovic *** 
+
+- 06.08.19. 13:17 - App turned off
+    *** BrunoBrckovic *** 
+
+- 06.08.19. 13:18 - App started
+    *** BrunoBrckovic *** 
+
+- 06.08.19. 13:20 - App started
+    *** BrunoBrckovic *** 
+
+- 06.08.19. 13:20 - App turned off
+    *** BrunoBrckovic *** 
+
+- 06.08.19. 13:21 - App started
+    *** BrunoBrckovic *** 
+
+- 06.08.19. 13:21
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at POT.Documents.Racun.addToList(Boolean remove, Boolean update, InvoiceParts invPrt) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Racun.cs:line 422
+   at POT.Documents.Racun.button4_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Racun.cs:line 387
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseDecimal(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Decimal.Parse(String s)
+   at POT.Documents.Racun.addToList(Boolean remove, Boolean update, InvoiceParts invPrt) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Racun.cs:line 422
+   at POT.Documents.Racun.button4_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Racun.cs:line 387
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 06.08.19. 13:21
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 Casice, 1002001, 162,00, 01:00, 0, 1, 300,00, 300,00, 300,00
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.08.19. 13:21
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 Platforma za novac, 1002002, 0,00, 01:00, 0, 1, 0,00, 0,00, 300,00
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.08.19. 13:21
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 PS, 1002003, 0,00, 01:00, 0, 1, 0,00, 0,00, 300,00
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.08.19. 13:21 - App turned off
+    *** BrunoBrckovic *** 
+
+- 06.08.19. 13:22 - App started
+    *** BrunoBrckovic *** 
+
+- 06.08.19. 13:23 - App turned off
+    *** BrunoBrckovic *** 
+
+- 06.08.19. 13:23 - App started
+    *** BrunoBrckovic *** 
+
+- 06.08.19. 13:24 - App turned off
+    *** BrunoBrckovic *** 
+
+- 06.08.19. 13:43 - App started
+    *** BrunoBrckovic *** 
+
+- 06.08.19. 13:43
+    - LOGED change: POT.Documents.Racun - listView2_DoubleClick
+     - Used: Chage payed - selected
+     - Data: 
+     - Result: Changed
+    *** BrunoBrckovic *** 
+
+
+- 06.08.19. 13:47 - App started
+    *** BrunoBrckovic *** 
+
+- 06.08.19. 13:47
+    - LOGED change: POT.Documents.Racun - listView2_DoubleClick
+     - Used: Chage payed - selected
+     - Data: 400400819
+
+     - Result: Incorrect syntax near '00'.
+    *** BrunoBrckovic *** 
+
+
+- 06.08.19. 13:48
+    - LOGED change: POT.Documents.Racun - listView2_DoubleClick
+     - Used: Chage payed - selected
+     - Data: 400400819
+
+     - Result: Incorrect syntax near '00'.
+    *** BrunoBrckovic *** 
+
+
+- 06.08.19. 13:50 - App turned off
+    *** BrunoBrckovic *** 
+
+- 06.08.19. 14:06 - App started
+    *** BrunoBrckovic *** 
+
+- 06.08.19. 14:06
+    - LOGED change: POT.Documents.Racun - listView2_DoubleClick
+     - Used: Chage payed - selected
+     - Data: 400400819
+
+     - Result: Incorrect syntax near '00'.
+    *** BrunoBrckovic *** 
+
+
+- 06.08.19. 14:06
+    - LOGED change: POT.Documents.Racun - listView2_DoubleClick
+     - Used: Chage payed - selected
+     - Data: ListViewSubItem: {5}, ListViewSubItem: {400400519}, ListViewSubItem: {0}, ListViewSubItem: {08.06.19.}, ListViewSubItem: {4116,00}, ListViewSubItem: {01.01.01.}, ListViewSubItem: {4116,00}, ListViewSubItem: {6}, ListViewSubItem: {7,4237}
+     - Result: Changed
+    *** BrunoBrckovic *** 
+
+
+- 06.08.19. 14:07
+    - LOGED change: POT.Documents.Racun - listView2_DoubleClick
+     - Used: Chage payed - selected
+     - Data: ListViewSubItem: {6}, ListViewSubItem: {400400619}, ListViewSubItem: {0}, ListViewSubItem: {06.07.19.}, ListViewSubItem: {4702,50}, ListViewSubItem: {01.01.01.}, ListViewSubItem: {4702,50}, ListViewSubItem: {150}, ListViewSubItem: {7,3946}
+     - Result: Changed
+    *** BrunoBrckovic *** 
+
+
+- 06.08.19. 14:08 - App started
+    *** BrunoBrckovic *** 
+
+- 06.08.19. 14:24 - App started
+    *** BrunoBrckovic *** 
+
+- 06.08.19. 14:28 - App started
+    *** BrunoBrckovic *** 
+
+- 06.08.19. 14:29 - App started
+    *** BrunoBrckovic *** 
+
+- 06.08.19. 14:30 - App started
+    *** BrunoBrckovic *** 
+
+- 06.08.19. 14:31 - App started
+    *** BrunoBrckovic *** 
+
+- 06.08.19. 14:32
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The system cannot find the file specified
+   at System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start()
+   at POT.Documents.Racun.PDFOpen_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Racun.cs:line 988
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\StartForm.cs:line 116
+    - InnerEcp: 
+    - MessageEcp: The system cannot find the file specified
+    - SourceEcp: System
+    - StackTrqceEcp:    at System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start()
+   at POT.Documents.Racun.PDFOpen_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Racun.cs:line 988
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\StartForm.cs:line 116
+    - TypeNameEcp: System.ComponentModel.Win32Exception
+    *** BrunoBrckovic *** 
+
+
+- 06.08.19. 14:34 - App started
+    *** BrunoBrckovic *** 
+
+- 06.08.19. 14:34
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The system cannot find the file specified
+   at System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start()
+   at POT.Documents.Racun.PDFOpen_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Racun.cs:line 990
+    - InnerEcp: 
+    - MessageEcp: The system cannot find the file specified
+    - SourceEcp: System
+    - StackTrqceEcp:    at System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start()
+   at POT.Documents.Racun.PDFOpen_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Racun.cs:line 990
+    - TypeNameEcp: System.ComponentModel.Win32Exception
+    *** BrunoBrckovic *** 
+
+
+- 06.08.19. 14:37
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The system cannot find the file specified
+   at System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start()
+   at POT.Documents.Racun.PDFOpen_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Racun.cs:line 990
+    - InnerEcp: 
+    - MessageEcp: The system cannot find the file specified
+    - SourceEcp: System
+    - StackTrqceEcp:    at System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start()
+   at POT.Documents.Racun.PDFOpen_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Racun.cs:line 990
+    - TypeNameEcp: System.ComponentModel.Win32Exception
+    *** BrunoBrckovic *** 
+
+
+- 06.08.19. 14:37
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The system cannot find the file specified
+   at System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start()
+   at POT.Documents.Racun.PDFOpen_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Racun.cs:line 990
+    - InnerEcp: 
+    - MessageEcp: The system cannot find the file specified
+    - SourceEcp: System
+    - StackTrqceEcp:    at System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start()
+   at POT.Documents.Racun.PDFOpen_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Racun.cs:line 990
+    - TypeNameEcp: System.ComponentModel.Win32Exception
+    *** BrunoBrckovic *** 
+
+
+- 06.08.19. 14:39 - App started
+    *** BrunoBrckovic *** 
+
+- 06.08.19. 14:39
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The system cannot find the file specified
+   at System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start()
+   at POT.Documents.Racun.PDFOpen_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Racun.cs:line 990
+    - InnerEcp: 
+    - MessageEcp: The system cannot find the file specified
+    - SourceEcp: System
+    - StackTrqceEcp:    at System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start()
+   at POT.Documents.Racun.PDFOpen_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Racun.cs:line 990
+    - TypeNameEcp: System.ComponentModel.Win32Exception
+    *** BrunoBrckovic *** 
+
+
+- 06.08.19. 14:46
+    - LOGED change: POT.Documents.Racun - listView2_DoubleClick
+     - Used: Chage payed - selected
+     - Data: ListViewSubItem: {7}, ListViewSubItem: {400400719}, ListViewSubItem: {0}, ListViewSubItem: {06.07.19.}, ListViewSubItem: {8931,80}, ListViewSubItem: {01.01.01.}, ListViewSubItem: {8931,80}, ListViewSubItem: {129}, ListViewSubItem: {7,3946}
+     - Result: Changed
+    *** BrunoBrckovic *** 
+
+
+- 06.08.19. 14:46
+    - LOGED change: POT.Documents.Racun - listView2_DoubleClick
+     - Used: Chage payed - selected
+     - Data: ListViewSubItem: {7}, ListViewSubItem: {400400719}, ListViewSubItem: {0}, ListViewSubItem: {06.07.19.}, ListViewSubItem: {8931,80}, ListViewSubItem: {01.01.01.}, ListViewSubItem: {8931,80}, ListViewSubItem: {129}, ListViewSubItem: {7,3946}
+     - Result: Changed
+    *** BrunoBrckovic *** 
+
+
+- 06.08.19. 14:49
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The system cannot find the file specified
+   at System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start()
+   at System.Diagnostics.Process.Start(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start(String fileName)
+   at POT.Documents.Racun.PDFOpen_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: The system cannot find the file specified
+    - SourceEcp: System
+    - StackTrqceEcp:    at System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start()
+   at System.Diagnostics.Process.Start(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start(String fileName)
+   at POT.Documents.Racun.PDFOpen_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.ComponentModel.Win32Exception
+    *** BrunoBrckovic *** 
+
+
+- 06.08.19. 14:53 - App started
+    *** BrunoBrckovic *** 
+
+- 06.08.19. 14:53
+    - LOGED change: POT.Documents.Racun - listView2_DoubleClick
+     - Used: Chage payed - selected
+     - Data: ListViewSubItem: {7}, ListViewSubItem: {400400719}, ListViewSubItem: {0}, ListViewSubItem: {06.07.19.}, ListViewSubItem: {8931,80}, ListViewSubItem: {01.01.01.}, ListViewSubItem: {8931,80}, ListViewSubItem: {129}, ListViewSubItem: {7,3946}
+     - Result: Changed
+    *** BrunoBrckovic *** 
+
+
+- 06.08.19. 14:53
+    - LOGED change: POT.Documents.Racun - listView2_DoubleClick
+     - Used: Chage payed - selected
+     - Data: ListViewSubItem: {7}, ListViewSubItem: {400400719}, ListViewSubItem: {0}, ListViewSubItem: {06.07.19.}, ListViewSubItem: {8931,80}, ListViewSubItem: {01.01.01.}, ListViewSubItem: {0}, ListViewSubItem: {129}, ListViewSubItem: {7,3946}
+     - Result: Changed
+    *** BrunoBrckovic *** 
+
+
+- 06.08.19. 14:55 - App turned off
+    *** BrunoBrckovic *** 
+
+- 06.08.19. 14:59 - App started
+    *** BrunoBrckovic *** 
+
+- 06.08.19. 15:00
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE odrzavanje IT opreme, 20004006, 220,00, 03:15, 6, 1, 672,100000, 672,100000, 672,100000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.08.19. 15:00
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.08.19. 15:01
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The system cannot find the file specified
+   at System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start()
+   at System.Diagnostics.Process.Start(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start(String fileName)
+   at POT.Documents.Racun.PDFOpen_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Racun.cs:line 998
+    - InnerEcp: 
+    - MessageEcp: The system cannot find the file specified
+    - SourceEcp: System
+    - StackTrqceEcp:    at System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start()
+   at System.Diagnostics.Process.Start(ProcessStartInfo startInfo)
+   at System.Diagnostics.Process.Start(String fileName)
+   at POT.Documents.Racun.PDFOpen_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Racun.cs:line 998
+    - TypeNameEcp: System.ComponentModel.Win32Exception
+    *** BrunoBrckovic *** 
+
+
+- 06.08.19. 15:03
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.08.19. 15:03 - App turned off
+    *** BrunoBrckovic *** 
+
+- 06.08.19. 15:06 - App started
+    *** BrunoBrckovic *** 
+
+- 06.08.19. 15:06
+    - LOGED change: POT.Documents.Racun - listView2_DoubleClick
+     - Used: Chage payed - selected
+     - Data: ListViewSubItem: {5}, ListViewSubItem: {400400519}, ListViewSubItem: {0}, ListViewSubItem: {08.06.19.}, ListViewSubItem: {4116,00}, ListViewSubItem: {01.01.01.}, ListViewSubItem: {0}, ListViewSubItem: {150}, ListViewSubItem: {7,4237}
+     - Result: Changed
+    *** BrunoBrckovic *** 
+
+
+- 06.08.19. 15:07
+    - LOGED change: POT.Documents.Racun - listView2_DoubleClick
+     - Used: Chage payed - selected
+     - Data: ListViewSubItem: {5}, ListViewSubItem: {400400519}, ListViewSubItem: {0}, ListViewSubItem: {08.06.19.}, ListViewSubItem: {4116,00}, ListViewSubItem: {01.01.01.}, ListViewSubItem: {4116,00}, ListViewSubItem: {150}, ListViewSubItem: {7,4237}
+     - Result: Changed
+    *** BrunoBrckovic *** 
+
+
+- 06.08.19. 15:07
+    - LOGED change: POT.Documents.Racun - listView2_DoubleClick
+     - Used: Chage payed - selected
+     - Data: ListViewSubItem: {5}, ListViewSubItem: {400400519}, ListViewSubItem: {0}, ListViewSubItem: {08.06.19.}, ListViewSubItem: {4116,00}, ListViewSubItem: {01.01.01.}, ListViewSubItem: {0}, ListViewSubItem: {150}, ListViewSubItem: {7,4237}
+     - Result: Changed
+    *** BrunoBrckovic *** 
+
+
+- 06.08.19. 15:07
+    - LOGED change: POT.Documents.Racun - listView2_DoubleClick
+     - Used: Chage payed - selected
+     - Data: ListViewSubItem: {5}, ListViewSubItem: {400400519}, ListViewSubItem: {0}, ListViewSubItem: {08.06.19.}, ListViewSubItem: {4116,00}, ListViewSubItem: {06.08.19.}, ListViewSubItem: {4116,00}, ListViewSubItem: {150}, ListViewSubItem: {7,4237}
+     - Result: Changed
+    *** BrunoBrckovic *** 
+
+
+- 06.08.19. 15:07
+    - LOGED change: POT.Documents.Racun - listView2_DoubleClick
+     - Used: Chage payed - selected
+     - Data: ListViewSubItem: {6}, ListViewSubItem: {400400619}, ListViewSubItem: {0}, ListViewSubItem: {06.07.19.}, ListViewSubItem: {4702,50}, ListViewSubItem: {01.01.01.}, ListViewSubItem: {0}, ListViewSubItem: {150}, ListViewSubItem: {7,3946}
+     - Result: Changed
+    *** BrunoBrckovic *** 
+
+
+- 06.08.19. 15:07
+    - LOGED change: POT.Documents.Racun - listView2_DoubleClick
+     - Used: Chage payed - selected
+     - Data: ListViewSubItem: {6}, ListViewSubItem: {400400619}, ListViewSubItem: {0}, ListViewSubItem: {06.07.19.}, ListViewSubItem: {4702,50}, ListViewSubItem: {06.08.19.}, ListViewSubItem: {4702,50}, ListViewSubItem: {150}, ListViewSubItem: {7,3946}
+     - Result: Changed
+    *** BrunoBrckovic *** 
+
+
+- 06.08.19. 15:08 - App turned off
+    *** BrunoBrckovic *** 
