@@ -373,6 +373,8 @@ namespace POT.WorkingClasses
 
                     headerpointVer += moveBy;
 
+                    Boolean konverzija = invPrtList[partRows].Konverzija.ToString().Equals("0") ? false : true;
+
                     for (; partRows < invPrtList.Count; partRows++)
                     {
 
@@ -405,7 +407,10 @@ namespace POT.WorkingClasses
                         measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
                         e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(name + (((int)measureField - (int)measureStr) / 2), headerpointVer + moveBy));
 
-                        workingStr = String.Format("{0:N2}", decimal.Parse(invPrtList[partRows].IznosPart) / eurDjelitelj) + " " + oznakaValute;
+                        if(konverzija)
+                            workingStr = String.Format("{0:N2}", decimal.Parse(invPrtList[partRows].IznosPart) / eurDjelitelj) + " " + oznakaValute;
+                        else
+                            workingStr = String.Format("{0:N2}", decimal.Parse(invPrtList[partRows].IznosPart)) + " " + oznakaValute;
                         measureField = price - code;
                         fnt = fitFontSize(e, workingStr, fontSizeR, measureField);
                         measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
@@ -429,13 +434,19 @@ namespace POT.WorkingClasses
                         measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
                         e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(rebate + (((int)measureField - (int)measureStr) / 2), headerpointVer + moveBy));
 
-                        workingStr = String.Format("{0:N2}", decimal.Parse(invPrtList[partRows].IznosRabat) / eurDjelitelj) + " " + oznakaValute;
+                        if(konverzija)
+                            workingStr = String.Format("{0:N2}", decimal.Parse(invPrtList[partRows].IznosRabat) / eurDjelitelj) + " " + oznakaValute;
+                        else
+                            workingStr = String.Format("{0:N2}", decimal.Parse(invPrtList[partRows].IznosRabat)) + " " + oznakaValute;
                         measureField = rebatePrice - amount;
                         fnt = fitFontSize(e, workingStr, fontSizeR, measureField);
                         measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
                         e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(rebatePrice - (int)measureStr, headerpointVer + moveBy));
 
-                        workingStr = String.Format("{0:N2}", decimal.Parse(invPrtList[partRows].IznosTotal) / eurDjelitelj) + " " + oznakaValute;
+                        if(konverzija)
+                            workingStr = String.Format("{0:N2}", decimal.Parse(invPrtList[partRows].IznosTotal) / eurDjelitelj) + " " + oznakaValute;
+                        else
+                            workingStr = String.Format("{0:N2}", decimal.Parse(invPrtList[partRows].IznosTotal)) + " " + oznakaValute;
                         measureField = kraj - rebatePrice;
                         fnt = fitFontSize(e, workingStr, fontSizeR, measureField); ; //tu
                         measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
@@ -471,7 +482,11 @@ namespace POT.WorkingClasses
                             measureStr = e.Graphics.MeasureString(workingStr, ft).Width;
                             e.Graphics.DrawString(workingStr, ft, Brushes.Black, new Point(amount + ((rebatePrice - amount) / 2) - (int)measureStr, headerpointVer + moveBy));
 
-                            workingStr = String.Format("{0:N2}", taxBase / eurDjelitelj) + " " + oznakaValute;
+
+                            if (konverzija)
+                                workingStr = String.Format("{0:N2}", taxBase / eurDjelitelj) + " " + oznakaValute;
+                            else
+                                workingStr = String.Format("{0:N2}", taxBase) + " " + oznakaValute;
                             measureField = total - rebatePrice;
                             measureStr = e.Graphics.MeasureString(workingStr, ft).Width;
                             e.Graphics.DrawString(workingStr, ft, Brushes.Black, new Point(kraj - (int)measureStr, headerpointVer + moveBy));
@@ -483,7 +498,10 @@ namespace POT.WorkingClasses
                             measureStr = e.Graphics.MeasureString(workingStr, ft).Width;
                             e.Graphics.DrawString(workingStr, ft, Brushes.Black, new Point(amount + ((rebatePrice - amount) / 2) - (int)measureStr, headerpointVer + moveBy));
 
-                            workingStr = String.Format("{0:N2}", totalTax / eurDjelitelj) + " " + oznakaValute;
+                            if(konverzija)
+                                workingStr = String.Format("{0:N2}", totalTax / eurDjelitelj) + " " + oznakaValute;
+                            else
+                                workingStr = String.Format("{0:N2}", totalTax) + " " + oznakaValute;
                             measureField = total - rebatePrice;
                             measureStr = e.Graphics.MeasureString(workingStr, ft).Width;
                             e.Graphics.DrawString(workingStr, ft, Brushes.Black, new Point(kraj - (int)measureStr, headerpointVer + moveBy));
@@ -495,7 +513,10 @@ namespace POT.WorkingClasses
                             measureStr = e.Graphics.MeasureString(workingStr, ft).Width;
                             e.Graphics.DrawString(workingStr, new Font("Calibri light", ft.Size, FontStyle.Bold), Brushes.Black, new Point(amount + ((rebatePrice - amount) / 2) - (int)measureStr, headerpointVer + moveBy));
 
-                            workingStr = String.Format("{0:N2}", off.Iznos / eurDjelitelj) + " " + oznakaValute;
+                            if(konverzija)
+                                workingStr = String.Format("{0:N2}", off.Iznos / eurDjelitelj) + " " + oznakaValute;
+                            else
+                                workingStr = String.Format("{0:N2}", off.Iznos) + " " + oznakaValute;
                             measureField = total - rebatePrice;
                             measureStr = e.Graphics.MeasureString(workingStr, ft).Width;
                             e.Graphics.DrawString(workingStr, new Font("Calibri light", ft.Size, FontStyle.Bold), Brushes.Black, new Point(kraj - (int)measureStr, headerpointVer + moveBy));

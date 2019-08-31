@@ -52,6 +52,7 @@ namespace POT.Documents
             offer.Operater = WorkingUser.UserID.ToString();
             offer.RacunID = 0;
             offer.Storno = 0;
+            offer.Konverzija = 1;
             if (radioButtonENG.Checked)
             {
                 offer.NacinPlacanja = Properties.Settings.Default.PaymentForm;
@@ -226,6 +227,7 @@ namespace POT.Documents
                     vat = Properties.Settings.Default.TAX2 / 100;
 
                     offer.NacinPlacanja = Properties.Settings.Default.PaymentForm;
+                    offer.Konverzija = 0;
 
                     CurencyLB.Text = "€";
                     CurrencyLB.Text = "€";
@@ -239,6 +241,7 @@ namespace POT.Documents
                     vat = Properties.Settings.Default.TAX1 / 100;
 
                     offer.NacinPlacanja = Properties.Settings.Default.NacinPlacanja;
+                    offer.Konverzija = 1;
 
                     CurencyLB.Text = "KN";
                     CurrencyLB.Text = "KN";

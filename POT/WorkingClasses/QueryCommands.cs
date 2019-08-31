@@ -4377,10 +4377,10 @@ namespace POT
             String iznos = String.Format("{0:N2}", (double)mInvoice.Iznos);
             try
             {
-                command.CommandText = "INSERT INTO Racun (ID, PonudaID, DatumIzdano, Iznos, DatumNaplaceno, Naplaceno, CustomerID, EUR, Napomena, VrijemeIzdano, Valuta, Operater, DanTecaja, NacinPlacanja, Storno) VALUES ("
+                command.CommandText = "INSERT INTO Racun (ID, PonudaID, DatumIzdano, Iznos, DatumNaplaceno, Naplaceno, CustomerID, EUR, Napomena, VrijemeIzdano, Valuta, Operater, DanTecaja, NacinPlacanja, Storno, Konverzija) VALUES ("
                     + newInvId + ", " + mInvoice.PonudaID + ", '" + mInvoice.DatumIzdano + "', '" + iznos + "', '" + mInvoice.DatumNaplaceno + "', " 
                     + mInvoice.Naplaceno + ", " + mInvoice.CustomerID + ", '" + eur + "', '" + mInvoice.Napomena + "', '" + mInvoice.VrijemeIzdano + "', " 
-                    + mInvoice.Valuta + ", '" + mInvoice.Operater + "', '" + mInvoice.DanTecaja + "', '" + mInvoice.NacinPlacanja + "', " + mStorno + ")";
+                    + mInvoice.Valuta + ", '" + mInvoice.Operater + "', '" + mInvoice.DanTecaja + "', '" + mInvoice.NacinPlacanja + "', " + mStorno + ", " + mInvoice.Konverzija + ")";
                 command.ExecuteNonQuery();
 
                 foreach (InvoiceParts prt in mInvoiceList)
@@ -4482,7 +4482,8 @@ namespace POT
                     dataReader["Operater"].ToString(),
                     dataReader["DanTecaja"].ToString(),
                     dataReader["NacinPlacanja"].ToString(),
-                    int.Parse(dataReader["Storno"].ToString()));
+                    int.Parse(dataReader["Storno"].ToString()),
+                    int.Parse(dataReader["Konverzija"].ToString()));
 
                     tempList.Add(tempInv);
 
@@ -4554,10 +4555,10 @@ namespace POT
             String iznos = String.Format("{0:N2}", (double)mOffer.Iznos);
             try
             {
-                command.CommandText = "INSERT INTO Ponuda (ID, RacunID, DatumIzdano, Iznos, DatumNaplaceno, Naplaceno, CustomerID, EUR, Napomena, VrijemeIzdano, Valuta, Operater, DanTecaja, NacinPlacanja, Storno) VALUES ("
+                command.CommandText = "INSERT INTO Ponuda (ID, RacunID, DatumIzdano, Iznos, DatumNaplaceno, Naplaceno, CustomerID, EUR, Napomena, VrijemeIzdano, Valuta, Operater, DanTecaja, NacinPlacanja, Storno, Konverzija) VALUES ("
                     + newInvId + ", " + mOffer.RacunID + ", '" + mOffer.DatumIzdano + "', '" + iznos + "', '" + mOffer.DatumNaplaceno + "', "
                     + mOffer.Naplaceno + ", " + mOffer.CustomerID + ", '" + eur + "', '" + mOffer.Napomena + "', '" + mOffer.VrijemeIzdano + "', "
-                    + mOffer.Valuta + ", '" + mOffer.Operater + "', '" + mOffer.DanTecaja + "', '" + mOffer.NacinPlacanja + "', " + mStorno + ")";
+                    + mOffer.Valuta + ", '" + mOffer.Operater + "', '" + mOffer.DanTecaja + "', '" + mOffer.NacinPlacanja + "', " + mStorno + ", " + mOffer.Konverzija + ")";
                 command.ExecuteNonQuery();
 
                 foreach (OfferParts prt in mOfferList)
@@ -4659,7 +4660,8 @@ namespace POT
                     dataReader["Operater"].ToString(),
                     dataReader["DanTecaja"].ToString(),
                     dataReader["NacinPlacanja"].ToString(),
-                    int.Parse(dataReader["Storno"].ToString()));
+                    int.Parse(dataReader["Storno"].ToString()),
+                    int.Parse(dataReader["Konverzija"].ToString()));
 
                     tempList.Add(tempOff);
 

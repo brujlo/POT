@@ -57,6 +57,8 @@ namespace POT.Documents
             invoice.Operater = WorkingUser.UserID.ToString();
             invoice.PonudaID = 0;
             invoice.Storno = 0;
+            invoice.Konverzija = 1;
+
             if (radioButtonENG.Checked)
             {
                 invoice.NacinPlacanja = Properties.Settings.Default.PaymentForm;
@@ -260,6 +262,7 @@ namespace POT.Documents
                     vat = Properties.Settings.Default.TAX2 / 100;
 
                     invoice.NacinPlacanja = Properties.Settings.Default.PaymentForm;
+                    invoice.Konverzija = 0;
 
                     CurencyLB.Text = "€";
                     CurrencyLB.Text = "€";
@@ -273,6 +276,7 @@ namespace POT.Documents
                     vat = Properties.Settings.Default.TAX1 / 100;
 
                     invoice.NacinPlacanja = Properties.Settings.Default.NacinPlacanja;
+                    invoice.Konverzija = 1;
 
                     CurencyLB.Text = "KN";
                     CurrencyLB.Text = "KN";
@@ -733,7 +737,7 @@ namespace POT.Documents
 
             printPreviewDialogInvoice.Document = printDocumentInvoice;
 
-            printPreviewDialogInvoice.Size = new System.Drawing.Size(screenWidth - ((screenWidth / 100) * 60), screenHeight - (screenHeight / 100) * 10);
+            printPreviewDialogInvoice.Size = new Size(screenWidth - ((screenWidth / 100) * 60), screenHeight - (screenHeight / 100) * 10);
             printPreviewDialogInvoice.ShowDialog();
 
             //textBox1.SelectAll();

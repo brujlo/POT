@@ -25,10 +25,11 @@ namespace POT.MyTypes
         private String danTecaja;
         private String nacinPlacanja;
         private int storno;
+        private int konverzija;
 
         public Offer() { }
 
-        public Offer(long id, long racunID, string datumIzdano, decimal iznos, string datumNaplaceno, decimal naplaceno, long customerID, decimal eur, string napomena, string vrijemeIzdano, int valuta, string operater, string danTecaja, string nacinPlacanja, int storno)
+        public Offer(long id, long racunID, string datumIzdano, decimal iznos, string datumNaplaceno, decimal naplaceno, long customerID, decimal eur, string napomena, string vrijemeIzdano, int valuta, string operater, string danTecaja, string nacinPlacanja, int storno, int konverzija)
         {
             this.id = id;
             this.racunID = racunID;
@@ -45,6 +46,7 @@ namespace POT.MyTypes
             this.danTecaja = danTecaja;
             this.nacinPlacanja = nacinPlacanja;
             this.storno = storno;
+            this.konverzija = konverzija;
         }
 
         public long GetNewOfferNumber()
@@ -200,6 +202,13 @@ namespace POT.MyTypes
             get => storno;
 
             set => storno = value;
+        }
+
+        public int Konverzija
+        {
+            get => konverzija;
+
+            set => konverzija = value;
         }
     }
 }

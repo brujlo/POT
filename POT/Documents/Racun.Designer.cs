@@ -93,12 +93,13 @@
             this.label13 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.PDFOpen = new System.Windows.Forms.Button();
             this.listView2 = new System.Windows.Forms.ListView();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.printDocumentInvoice = new System.Drawing.Printing.PrintDocument();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.printPreviewDialogInvoice = new System.Windows.Forms.PrintPreviewDialog();
-            this.PDFOpen = new System.Windows.Forms.Button();
+            this.label25 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -847,6 +848,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.label25);
             this.tabPage2.Controls.Add(this.PDFOpen);
             this.tabPage2.Controls.Add(this.listView2);
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
@@ -856,6 +858,16 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Check";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // PDFOpen
+            // 
+            this.PDFOpen.Location = new System.Drawing.Point(839, 566);
+            this.PDFOpen.Name = "PDFOpen";
+            this.PDFOpen.Size = new System.Drawing.Size(128, 51);
+            this.PDFOpen.TabIndex = 1;
+            this.PDFOpen.Text = "Open (PDF) invoice";
+            this.PDFOpen.UseVisualStyleBackColor = true;
+            this.PDFOpen.Click += new System.EventHandler(this.PDFOpen_Click);
             // 
             // listView2
             // 
@@ -892,15 +904,14 @@
             this.printPreviewDialogInvoice.Name = "printPreviewDialog1";
             this.printPreviewDialogInvoice.Visible = false;
             // 
-            // PDFOpen
+            // label25
             // 
-            this.PDFOpen.Location = new System.Drawing.Point(839, 566);
-            this.PDFOpen.Name = "PDFOpen";
-            this.PDFOpen.Size = new System.Drawing.Size(128, 51);
-            this.PDFOpen.TabIndex = 1;
-            this.PDFOpen.Text = "Open (PDF) invoice";
-            this.PDFOpen.UseVisualStyleBackColor = true;
-            this.PDFOpen.Click += new System.EventHandler(this.PDFOpen_Click);
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(7, 566);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(258, 20);
+            this.label25.TabIndex = 2;
+            this.label25.Text = "Double click to mark as paid/unpaid";
             // 
             // Racun
             // 
@@ -923,6 +934,7 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -999,5 +1011,6 @@
         private System.Windows.Forms.Label PriceInfoLB;
         private System.Windows.Forms.ListView listView2;
         private System.Windows.Forms.Button PDFOpen;
+        private System.Windows.Forms.Label label25;
     }
 }
