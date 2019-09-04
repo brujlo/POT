@@ -325,4 +325,7 @@
   <data name="OfferValid" xml:space="preserve">
     <value>Ponuda vrijedi</value>
   </data>
+  <data name="Closed" xml:space="preserve">
+    <value>Zatvoren</value>
+  </data>
 </root>

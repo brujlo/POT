@@ -50,40 +50,39 @@ namespace POT
 
         private void FindPart()
         {
-            Program.LoadStart();
-
-            QueryCommands qc = new QueryCommands();
-            QueryCommands qc1 = new QueryCommands();
-            QueryCommands qc2 = new QueryCommands();
-            List<String> sendArr = new List<string>();
-            List<String> resultArr = new List<string>();
-            List<String> resultArr1 = new List<string>();
-            List<String> resultArr2 = new List<string>();
-            List<String> resultArr3 = new List<string>();
-            List<String> resultArrG = new List<string>();
-            List<String> resultArrNG = new List<string>();
-
-            for (int i = 1; i <= regionCnt; i++)
-            {
-                Control ctn1 = this.Controls["lblAdd_" + i];
-                Control ctn2 = this.Controls["txtBoxAddNG_" + i];
-                Control ctn3 = this.Controls["txtBoxAddG_" + i];
-
-                this.Controls.Remove(ctn1);
-                this.Controls.Remove(ctn2);
-                this.Controls.Remove(ctn3);
-            }
-
-            positionX = 20;
-            //positionY = 100;
-            positionPlusY = 0;
-
             if (this.textBox1.TextLength > 12)
             {
-                ConnectionHelper cn = new ConnectionHelper();
-
                 try
                 {
+                    Program.LoadStart();
+
+                    QueryCommands qc = new QueryCommands();
+                    QueryCommands qc1 = new QueryCommands();
+                    QueryCommands qc2 = new QueryCommands();
+                    List<String> sendArr = new List<string>();
+                    List<String> resultArr = new List<string>();
+                    List<String> resultArr1 = new List<string>();
+                    List<String> resultArr2 = new List<string>();
+                    List<String> resultArr3 = new List<string>();
+                    List<String> resultArrG = new List<string>();
+                    List<String> resultArrNG = new List<string>();
+
+                    ConnectionHelper cn = new ConnectionHelper();
+
+                    for (int i = 1; i <= regionCnt; i++)
+                    {
+                        Control ctn1 = this.Controls["lblAdd_" + i];
+                        Control ctn2 = this.Controls["txtBoxAddNG_" + i];
+                        Control ctn3 = this.Controls["txtBoxAddG_" + i];
+
+                        this.Controls.Remove(ctn1);
+                        this.Controls.Remove(ctn2);
+                        this.Controls.Remove(ctn3);
+                    }
+
+                    positionX = 20;
+                    //positionY = 100;
+                    positionPlusY = 0;
 
                     resultArr3 = qc.GetAllRegions();
 
@@ -203,7 +202,7 @@ namespace POT
                                 resultArrNG.Clear();
                                 sendArr.Clear();
 
-                                if(resultArr3[jj + 1].Equals("S"))
+                                if (resultArr3[jj + 1].Equals("S"))
                                     resultArrNG = qc.PartsCntNGS(WorkingUser.Username, WorkingUser.Password, long.Parse(label18.Text.Trim()));
                                 else
                                     resultArrNG = qc.PartsCntNG(WorkingUser.Username, WorkingUser.Password, long.Parse(label18.Text.Trim()), long.Parse(resultArr3[jj].Trim()));
@@ -221,7 +220,7 @@ namespace POT
 
                                 positionX = positionX + 80;
 
-                                if((positionX + 150) >= ClientRectangle.Width)
+                                if ((positionX + 150) >= ClientRectangle.Width)
                                 {
                                     positionPlusY = positionPlusY + 50;
                                     positionX = 20;
@@ -391,9 +390,10 @@ namespace POT
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Program.LoadStart();
             try
             {
+                Program.LoadStart();
+
                 int pHgth = pictureBox1.Height; //(90,90);
                 Point pPos = pictureBox1.Location; 
 
@@ -432,6 +432,11 @@ namespace POT
                 new LogWriter(e1);
                 MessageBox.Show(e1.Message);
             }
+            finally
+            {
+                Program.LoadStop();
+            }
         }
+
     }
 }

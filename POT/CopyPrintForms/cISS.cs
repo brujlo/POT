@@ -587,7 +587,7 @@ namespace POT.CopyPrintForms
 
             totalTime = String.Format("{0:00}:{1:00}", h, m);
            
-            PrintMeISS pr = new PrintMeISS(cmpCust, cmpM, sifrarnikArr, mainPart, listIssParts, ISSid.ToString(), Properties.strings.ServiceReport, Properties.strings.customer, false, allISSInfo[1], totalTime);
+            PrintMeISS pr = new PrintMeISS(cmpCust, cmpM, sifrarnikArr, mainPart, listIssParts, ISSid.ToString(), Properties.strings.ServiceReport, Properties.strings.customer, false, allISSInfo[1], totalTime, true);
             pr.Print(e);
 
             if (onlyOneTime)

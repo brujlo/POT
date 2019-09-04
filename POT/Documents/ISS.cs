@@ -55,6 +55,7 @@ namespace POT.Documents
 
         int uvecajGroupPart = 0;
         Boolean onlyOneTime = true;
+        Boolean allDonePrint = false;
 
         ComboBox selectISS = null;
         int obrJed = Properties.Settings.Default.ObracunskaJedinica;
@@ -142,6 +143,7 @@ namespace POT.Documents
             listView1.Columns.Add("Time");
             listView1.Columns.Add("Work done");
             listView1.Columns.Add("Comment");
+            listView1.Columns.Add("User ID");
 
             for (int i = 0; i < listView1.Columns.Count; i++)
             {
@@ -558,6 +560,7 @@ namespace POT.Documents
                 String CNO = OldPartCNTb.Text.Trim().ToUpper();
                 String CodeN = NewPartCodeTb.Text.Trim();
                 String SNN = NewPartSNCb.Text.Trim().ToUpper();
+                String wuID = WorkingUser.UserID.ToString();
 
                 String CNN = NewPartCNTb.Text.Trim().ToUpper();
 
@@ -628,6 +631,7 @@ namespace POT.Documents
                 lvi1.SubItems.Add(time);
                 lvi1.SubItems.Add(work);
                 lvi1.SubItems.Add(koment);
+                lvi1.SubItems.Add(wuID);
 
                 if (listView1.Items.Count > 1)
                     listView1.EnsureVisible(listView1.Items.Count - 1);
@@ -636,7 +640,7 @@ namespace POT.Documents
                 
                 rb = listView1.Items.Count + 1;
 
-                data = name + ", " + CodeO + ", " + SNO + ", " + CNO + ", " + CodeN + ", " + SNN + ", " + CNN + ", " + date + ", " + time + ", " + work + ", " + koment;
+                data = name + ", " + CodeO + ", " + SNO + ", " + CNO + ", " + CodeN + ", " + SNN + ", " + CNN + ", " + date + ", " + time + ", " + work + ", " + koment + ", " + wuID;
 
                 for (int i = 0; i < listView1.Columns.Count; i++)
                 {
@@ -757,10 +761,12 @@ namespace POT.Documents
             try
             {
                 long testMe = qc.ISSExistIfNotReturnNewID(ISSid);
-                
+
+                List<long> partsIDpokupi = new List<long>();
                 if (ISSid == testMe)
                 {
                     issExist = true;
+                    partsIDpokupi = qc.ISSExistReturnPartsIDs(ISSid);
                 }
                 else
                 {
@@ -785,7 +791,7 @@ namespace POT.Documents
                         listView1.Items[i].SubItems[10].Text, 
                         listView1.Items[i].SubItems[11].Text, 
                         listView1.Items[i].SubItems[9].Text,
-                        WorkingUser.UserID);
+                        long.Parse(listView1.Items[i].SubItems[12].Text));
                     
                     listIssParts.Add(issp);
 
@@ -826,10 +832,19 @@ namespace POT.Documents
 
                 long IISidPL = ISSid;
 
-                if (Program.SaveDocumentsPDF) saveToPDF();
+                //da mi ne upisuje nule ako je vec snimljeno
+                if( issExist && partsIDpokupi.Count > 0 )
+                {
+                    for(int i = 0; i < partsIDpokupi.Count; i++)
+                    {
+                        listIssParts[i].PrtO.PartID = partsIDpokupi[i];
+                    }
+                }
 
+                allDonePrint = allDone;
                 if ( qc.ISSUnesiISS(issExist, allDone, ISSid, _date, cmpCust, mainPart, listIssParts, WorkingUser.UserID, totalTime) )
                 {
+                    if (Program.SaveDocumentsPDF) saveToPDF(); 
 
                     if (allDone)
                     {
@@ -928,6 +943,7 @@ namespace POT.Documents
                 listView1.Columns.Add("Time");
                 listView1.Columns.Add("Work done");
                 listView1.Columns.Add("Comment");
+                listView1.Columns.Add("UserID");
 
                 totalTime = "00:00";
 
@@ -1018,6 +1034,7 @@ namespace POT.Documents
                     lvi1.SubItems.Add(listIssParts[i].Time.ToString());
                     lvi1.SubItems.Add(listIssParts[i].Work.ToString());
                     lvi1.SubItems.Add(listIssParts[i].Comment.ToString());
+                    lvi1.SubItems.Add(listIssParts[i].UserID.ToString());
 
                     if (listView1.Items.Count > 1)
                         listView1.EnsureVisible(listView1.Items.Count - 1);
@@ -1195,7 +1212,7 @@ namespace POT.Documents
             ////////////////////////////////////////////////
             ///
 
-            PrintMeISS pr = new PrintMeISS(cmpCust, cmpM, sifrarnikArr, mainPart, listIssParts, ISSid.ToString(), Properties.strings.ServiceReport, Properties.strings.customer, false, "", totalTime);
+            PrintMeISS pr = new PrintMeISS(cmpCust, cmpM, sifrarnikArr, mainPart, listIssParts, ISSid.ToString(), Properties.strings.ServiceReport, Properties.strings.customer, false, "", totalTime, allDonePrint);
             pr.Print(e);
 
             if (onlyOneTime)

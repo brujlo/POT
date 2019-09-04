@@ -37,6 +37,7 @@ namespace POT.WorkingClasses
         int fontSizeS = 10;
         double imgScale = 0;
         float spaceSize = 0;
+        Boolean allDonePrint;
 
         PageSettings page;
         RectangleF area;
@@ -47,7 +48,7 @@ namespace POT.WorkingClasses
 
         PrintMeISS() { }
         
-        public PrintMeISS(Company _cmpCust, Company _cmpM, List<String>  _sifrarnikArr, Part _mainPart, List<ISSparts> _listIssParts, String _ISSid, String _DocumentName, String _recipientSender, Boolean _Signature, String _date, String _totalTIme)
+        public PrintMeISS(Company _cmpCust, Company _cmpM, List<String>  _sifrarnikArr, Part _mainPart, List<ISSparts> _listIssParts, String _ISSid, String _DocumentName, String _recipientSender, Boolean _Signature, String _date, String _totalTIme, Boolean _allDonePrint)
         {
             cmpCust = _cmpCust;
             cmpM = _cmpM;
@@ -60,6 +61,7 @@ namespace POT.WorkingClasses
             signature = _Signature;
             date = _date;
             totalTIme = _totalTIme;
+            allDonePrint = _allDonePrint;
 
             CLogo logoImage = new CLogo();
             img = logoImage.GetImage();
@@ -129,18 +131,19 @@ namespace POT.WorkingClasses
                         e.Graphics.DrawString(Environment.NewLine, new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * 6 / 2)));
 
                         int pomak = 6;
-
+                        String gotov = allDonePrint ? "1" : "0"; //koristim samo ovdje
                         //PRVI RED JE NASLOV ZA IZRADIO
                         e.Graphics.DrawString(Properties.strings.MadeBy.ToUpper() + ": ", new Font("Calibri light", fontSizeS - 1, FontStyle.Underline | FontStyle.Italic), Brushes.Black, new Point(margins.Left, margins.Top - 5 + (moveBy * (pomak + 3))));
                         e.Graphics.DrawString(Properties.strings.Date + ": " + datumIzrade, new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * (pomak + 4))));
                         e.Graphics.DrawString(Properties.strings.Time + ": " + datumIspisa, new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * (pomak + 5))));
                         e.Graphics.DrawString(Properties.strings.UserID + ": " + izradioUser, new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * (pomak + 6))));
                         e.Graphics.DrawString(Properties.strings.RegionID + ": " + izradioRegija, new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * (pomak + 7))));
+                        e.Graphics.DrawString(Properties.strings.Closed + ": " + gotov, new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * (pomak + 8))));
 
                         //KORISNIK - da se ne vidi ime i prezime, odkomentiraj da se vidi
                         //e.Graphics.DrawString(Properties.strings.MadeBy + ": " + WorkingUser.Name + " " + WorkingUser.Surename, new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * 13)));
 
-                        
+
                         //MyCompany Info
                         e.Graphics.DrawImage(img, bounds.Right - imgW - margins.Right, bounds.Top + margins.Top, imgW, imgH);
                         
@@ -320,7 +323,7 @@ namespace POT.WorkingClasses
                             fnt = fitFontSizeBold(e, workingStr, fontSizeR, code - rb);
                             e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(margins.Left + 20, headerpointVer + moveBy));
 
-                            partNewName = sifrarnikArr[(sifrarnikArr.IndexOf((listIssParts[partRows].PrtO.PartialCode).ToString())) - 1];
+                            partNewName = sifrarnikArr[(sifrarnikArr.IndexOf((listIssParts[partRows].PrtN.PartialCode).ToString())) - 1];
                             workingStr = listIssParts[partRows].PrtN.PartID.ToString() + " - " + partNewName;
                             measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
                             toBig(saljiSize, measureStr, workingStr, e, fnt, code - rb);

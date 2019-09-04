@@ -322,4 +322,7 @@
   <data name="OfferValid" xml:space="preserve">
     <value>Offer is valid</value>
   </data>
+  <data name="Closed" xml:space="preserve">
+    <value>Closed</value>
+  </data>
 </root>

@@ -157,6 +157,7 @@ namespace POT.WorkingClasses
                     int rebate = margins.Left + (polje * 21); //3
                     int amount = margins.Left + (polje * 23); //2
                     int rebatePrice = margins.Left + (polje * 27); //3
+                    Boolean konverzija = invPrtList[partRows].Konverzija.ToString().Equals("0") ? false : true;
 
                     if (pageNbr == 1)
                     {
@@ -237,7 +238,10 @@ namespace POT.WorkingClasses
                         e.Graphics.DrawString(Properties.Settings.Default.CmpName, new Font("Calibri light", fontSizeR, FontStyle.Bold), Brushes.Black, new Point(bounds.Right - margins.Right - (imgW - imgW / 7), margins.Top + imgH + (moveBy)));
                         e.Graphics.DrawString(MainCmpPrintAddress, new Font("Calibri light", fontSizeR, FontStyle.Regular), Brushes.Black, new Point(bounds.Right - margins.Right - (imgW - imgW / 7), margins.Top + imgH + (moveBy * 2)));
                         e.Graphics.DrawString("MB: " + Properties.Settings.Default.CmpMB, new Font("Calibri light", fontSizeR, FontStyle.Regular), Brushes.Black, new Point(bounds.Right - margins.Right - (imgW - imgW / 7), margins.Top + imgH + (moveBy * 3)));
-                        e.Graphics.DrawString(Properties.strings.VAT + ": " + Properties.Settings.Default.CmpVAT, new Font("Calibri light", fontSizeR, FontStyle.Regular), Brushes.Black, new Point(bounds.Right - margins.Right - (imgW - imgW / 7), margins.Top + imgH + (moveBy * 4)));
+                        if(konverzija)
+                            e.Graphics.DrawString(Properties.strings.VAT + ": " + Properties.Settings.Default.CmpVAT, new Font("Calibri light", fontSizeR, FontStyle.Regular), Brushes.Black, new Point(bounds.Right - margins.Right - (imgW - imgW / 7), margins.Top + imgH + (moveBy * 4)));
+                        else
+                            e.Graphics.DrawString(Properties.strings.VAT + ": HR" + Properties.Settings.Default.CmpVAT, new Font("Calibri light", fontSizeR, FontStyle.Regular), Brushes.Black, new Point(bounds.Right - margins.Right - (imgW - imgW / 7), margins.Top + imgH + (moveBy * 4)));
                         e.Graphics.DrawString("Tel: " + Properties.Settings.Default.CmpPhone, new Font("Calibri light", fontSizeR, FontStyle.Regular), Brushes.Black, new Point(bounds.Right - margins.Right - (imgW - imgW / 7), margins.Top + imgH + (moveBy * 5)));
                         e.Graphics.DrawString("IBAN: " + Properties.Settings.Default.CmpIBAN, new Font("Calibri light", fontSizeR, FontStyle.Regular), Brushes.Black, new Point(bounds.Right - margins.Right - (imgW - imgW / 7), margins.Top + imgH + (moveBy * 6)));
                         e.Graphics.DrawString(Properties.strings.SWIFT + ": " + Properties.Settings.Default.CmpSWIFT, new Font("Calibri light", fontSizeR, FontStyle.Regular), Brushes.Black, new Point(bounds.Right - margins.Right - (imgW - imgW / 7), margins.Top + imgH + (moveBy * 7)));
@@ -372,8 +376,6 @@ namespace POT.WorkingClasses
                     }
 
                     headerpointVer += moveBy;
-
-                    Boolean konverzija = invPrtList[partRows].Konverzija.ToString().Equals("0") ? false : true;
 
                     for (; partRows < invPrtList.Count; partRows++)
                     {

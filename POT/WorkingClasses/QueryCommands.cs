@@ -3808,6 +3808,30 @@ namespace POT
             return executed;
         }
 
+        public List<long> ISSExistReturnPartsIDs(long mISSid)
+        {
+            List<long> listOfIDs = new List<long>();
+
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "select OldPartID from ISSparts where ISSid = " + mISSid + " ORDER BY RB";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                do
+                {
+                    listOfIDs.Add(long.Parse(dataReader.GetValue(0).ToString()));
+                } while (dataReader.Read());
+            }
+
+            dataReader.Close();
+            cnn.Close();
+            return listOfIDs;
+        }
+
         public long ISSExistIfNotReturnNewID(long mISSid)
         {
             long ISSCnt = 0;
