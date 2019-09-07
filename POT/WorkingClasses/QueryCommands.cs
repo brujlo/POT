@@ -612,6 +612,67 @@ namespace POT
             return arr;
         }
 
+        public List<Part> ListPartsByRegionStatesP(long mStorageID, List<String> mStates)
+        {
+            List<Part> arr = new List<Part>();
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+
+            query = "Select * from Parts where StorageID = " + mStorageID + " and State = '" + mStates[0] + "'";
+
+            if (mStates.Count > 0)
+            {
+                for(int i = 1; i < mStates.Count; i++)
+                {
+                    query += " or State = '" + mStates[i] + "'";
+
+                }
+
+                command = new SqlCommand(query, cnn);
+                command.ExecuteNonQuery();
+                SqlDataReader dataReader = command.ExecuteReader();
+                dataReader.Read();
+
+                try
+                {
+                    if (dataReader.HasRows)
+                    {
+                        do
+                        {
+                            Part tempPart = new Part();
+
+                            tempPart.PartID = long.Parse(dataReader["PartID"].ToString());
+                            tempPart.CodePartFull = long.Parse(dataReader["CodePartFull"].ToString());
+                            tempPart.PartialCode = long.Parse(dataReader["PartialCode"].ToString());
+                            tempPart.SN = dataReader["SN"].ToString();
+                            tempPart.CN = dataReader["CN"].ToString();
+                            tempPart.DateIn = dataReader["DateIn"].ToString();
+                            tempPart.DateOut = dataReader["DateOut"].ToString();
+                            tempPart.DateSend = dataReader["DateSend"].ToString();
+                            tempPart.StorageID = long.Parse(dataReader["StorageID"].ToString());
+                            tempPart.State = dataReader["State"].ToString();
+                            tempPart.CompanyO = dataReader["CompanyO"].ToString();
+                            tempPart.CompanyC = dataReader["CompanyC"].ToString();
+
+                            arr.Add(tempPart);
+                        } while (dataReader.Read());
+                    }
+                }
+                catch (Exception)
+                {
+                    //new LogWriter(e1);
+                    throw;
+                }
+                finally
+                {
+                    if (cnn.State.ToString().Equals("Open"))
+                        cnn.Close();
+                }
+                dataReader.Close();
+            }
+            cnn.Close();
+            return arr;
+        }
+
         public List<String> GetListPartsByPartIDFromParts(long mPartID)
         {
             List<String> arr = new List<string>();
@@ -3966,9 +4027,9 @@ namespace POT
                             listIssParts[i].PrtO.PartID = long.Parse(retVal.ToString());
                         }
 
-                        command.CommandText = "INSERT INTO ISSparts (ISSid, RB, oldPartID, newPartID, Work, Comment, Time, UserID) " +
+                        command.CommandText = "INSERT INTO ISSparts (ISSid, RB, oldPartID, newPartID, Work, Comment, Time, UserID, Date) " +
                             "VALUES (" +
-                            mISSid + ", " + listIssParts[i].RB + ", " + listIssParts[i].PrtO.PartID + ", " + listIssParts[i].PrtN.PartID + ", '" + listIssParts[i].Work + "', '" + listIssParts[i].Comment + "', '" + listIssParts[i].Time + "', " + mUserID + ")";
+                            mISSid + ", " + listIssParts[i].RB + ", " + listIssParts[i].PrtO.PartID + ", " + listIssParts[i].PrtN.PartID + ", '" + listIssParts[i].Work + "', '" + listIssParts[i].Comment + "', '" + listIssParts[i].Time + "', " + mUserID + ", '" + listIssParts[i].Time + "')";
                         command.ExecuteNonQuery();
                     
                         if (listIssParts[i].PrtN.PartialCode != 0)
@@ -4038,6 +4099,58 @@ namespace POT
             return arr;
         }
 
+        public List<ISSparts> GetAllISSStillWorkingOn(List<long> mISSids)
+        {
+            List<ISSparts> arr = new List<ISSparts>();
+
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+
+            if(mISSids.Count > 0)
+            {
+                query = "select * from ISSparts where ISSid = " + mISSids[0];
+
+                for (int i = 1; i  < mISSids.Count; i++)
+                {
+                    query += " or ISSid = " + mISSids[i];
+                }
+
+                query += " order by ISSid asc";
+                
+                command = new SqlCommand(query, cnn);
+                command.ExecuteNonQuery();
+                SqlDataReader dataReader = command.ExecuteReader();
+                dataReader.Read();
+
+                if (dataReader.HasRows)
+                {
+                    do
+                    {
+                        ISSparts tempPrt = new ISSparts();
+                        Part prt = new Part();
+
+                        tempPrt.ISSid = long.Parse(dataReader["ISSid"].ToString());
+                        tempPrt.RB = long.Parse(dataReader["RB"].ToString());
+
+                        tempPrt.PrtO = prt.GetPartFromPartsPartsPoslanoPartsZamijenjenoByID(long.Parse(dataReader["oldPartID"].ToString()));
+                        tempPrt.PrtN = prt.GetPartFromPartsPartsPoslanoPartsZamijenjenoByID(long.Parse(dataReader["newPartID"].ToString()));
+
+                        tempPrt.Comment = dataReader["Comment"].ToString();
+                        tempPrt.Work = dataReader["Work"].ToString();
+                        tempPrt.Time = dataReader["Time"].ToString();
+                        tempPrt.UserID = long.Parse(dataReader["UserID"].ToString());
+                        tempPrt.Date = dataReader["Date"].ToString();
+
+                        arr.Add(tempPrt);
+                    } while (dataReader.Read());
+                }
+
+                dataReader.Close();
+            }
+
+            cnn.Close();
+            return arr;
+        }
+
         public List<ISSparts> GetAllISSPartsByISSid(long mISSid)
         {
             List<ISSparts> arr = new List<ISSparts>();
@@ -4066,6 +4179,7 @@ namespace POT
                     tempPrt.Work = dataReader["Work"].ToString();
                     tempPrt.Time = dataReader["Time"].ToString();
                     tempPrt.UserID = long.Parse(dataReader["UserID"].ToString());
+                    tempPrt.Date = dataReader["Date"].ToString();
 
                     arr.Add(tempPrt);
                 } while (dataReader.Read());
@@ -4094,6 +4208,26 @@ namespace POT
             dataReader.Close();
             cnn.Close();
             return partID;
+        }
+
+        public long GetISSidByPartID(long mISSid)
+        {
+            long ISSid = 0;
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "select ID from ISS where PartID = " + mISSid;
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                ISSid = long.Parse(dataReader["ID"].ToString());
+            }
+
+            dataReader.Close();
+            cnn.Close();
+            return ISSid;
         }
 
         public List<String> GetAllISSInfoById(long mISSid)

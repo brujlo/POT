@@ -569,8 +569,8 @@ namespace POT
                                         for (int ii = 0; ii < counterLV; ii++)
                                         {
                                             if (listOfOtpPartsFromOTP[i].CodePartFull == long.Parse(listView1.Items[ii].SubItems[2].Text)
-                                                && listOfOtpPartsFromOTP[i].SN.Equals(listView1.Items[ii].SubItems[3].Text)
-                                                && listOfOtpPartsFromOTP[i].CN.Equals(listView1.Items[ii].SubItems[4].Text))
+                                                && listOfOtpPartsFromOTP[i].SN.ToUpper().Equals(listView1.Items[ii].SubItems[3].Text.ToUpper())
+                                                && listOfOtpPartsFromOTP[i].CN.ToUpper().Equals(listView1.Items[ii].SubItems[4].Text.ToUpper()))
                                             {
                                                 same = true;
                                                 break;
@@ -579,7 +579,7 @@ namespace POT
                                             {
                                                 same = false;
                                                 data = listOfOtpPartsFromOTP[i].CodePartFull.ToString() + ", " + long.Parse(listView1.Items[ii].SubItems[2].Text).ToString() + ", " +
-                                                        listOfOtpPartsFromOTP[i].SN.Equals(listView1.Items[ii].SubItems[3].Text).ToString() + ", " + listOfOtpPartsFromOTP[i].CN.Equals(listView1.Items[ii].SubItems[4].Text).ToString();
+                                                        listOfOtpPartsFromOTP[i].SN.ToUpper().Equals(listView1.Items[ii].SubItems[3].Text.ToUpper()).ToString() + ", " + listOfOtpPartsFromOTP[i].CN.ToUpper().Equals(listView1.Items[ii].SubItems[4].Text.ToUpper()).ToString();
                                             }
                                         }
                                         if (!same)

@@ -94,6 +94,7 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
+            this.linkLabel24 = new System.Windows.Forms.LinkLabel();
             this.linkLabel23 = new System.Windows.Forms.LinkLabel();
             this.linkLabel5 = new System.Windows.Forms.LinkLabel();
             this.label37 = new System.Windows.Forms.Label();
@@ -116,7 +117,7 @@
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
-            this.linkLabel24 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel25 = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -151,7 +152,7 @@
             this.label1.Location = new System.Drawing.Point(4, 10);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 25);
+            this.label1.Size = new System.Drawing.Size(55, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Name:";
             // 
@@ -163,7 +164,7 @@
             this.label2.Location = new System.Drawing.Point(4, 30);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(119, 25);
+            this.label2.Size = new System.Drawing.Size(89, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "SureName:";
             // 
@@ -190,7 +191,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.version);
-            this.panel1.Location = new System.Drawing.Point(45, 118);
+            this.panel1.Location = new System.Drawing.Point(48, 118);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(196, 273);
@@ -204,7 +205,7 @@
             this.label28.Location = new System.Drawing.Point(70, 171);
             this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(0, 25);
+            this.label28.Size = new System.Drawing.Size(0, 20);
             this.label28.TabIndex = 16;
             // 
             // label29
@@ -215,7 +216,7 @@
             this.label29.Location = new System.Drawing.Point(4, 171);
             this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(118, 25);
+            this.label29.Size = new System.Drawing.Size(88, 20);
             this.label29.TabIndex = 15;
             this.label29.Text = "CmpName:";
             // 
@@ -227,7 +228,7 @@
             this.label26.Location = new System.Drawing.Point(70, 147);
             this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(0, 25);
+            this.label26.Size = new System.Drawing.Size(0, 20);
             this.label26.TabIndex = 14;
             // 
             // label27
@@ -238,7 +239,7 @@
             this.label27.Location = new System.Drawing.Point(4, 149);
             this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(113, 25);
+            this.label27.Size = new System.Drawing.Size(84, 20);
             this.label27.TabIndex = 13;
             this.label27.Text = "CmpCode:";
             // 
@@ -250,7 +251,7 @@
             this.label24.Location = new System.Drawing.Point(70, 111);
             this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(0, 25);
+            this.label24.Size = new System.Drawing.Size(0, 20);
             this.label24.TabIndex = 12;
             // 
             // label25
@@ -261,7 +262,7 @@
             this.label25.Location = new System.Drawing.Point(4, 111);
             this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(92, 25);
+            this.label25.Size = new System.Drawing.Size(68, 20);
             this.label25.TabIndex = 11;
             this.label25.Text = "Catalog:";
             // 
@@ -273,7 +274,7 @@
             this.linkLabel4.Location = new System.Drawing.Point(4, 208);
             this.linkLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel4.Name = "linkLabel4";
-            this.linkLabel4.Size = new System.Drawing.Size(98, 25);
+            this.linkLabel4.Size = new System.Drawing.Size(73, 20);
             this.linkLabel4.TabIndex = 10;
             this.linkLabel4.TabStop = true;
             this.linkLabel4.Text = "Log OUT";
@@ -287,7 +288,7 @@
             this.label10.Location = new System.Drawing.Point(70, 90);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(0, 25);
+            this.label10.Size = new System.Drawing.Size(0, 20);
             this.label10.TabIndex = 9;
             // 
             // label9
@@ -298,7 +299,7 @@
             this.label9.Location = new System.Drawing.Point(70, 70);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(0, 25);
+            this.label9.Size = new System.Drawing.Size(0, 20);
             this.label9.TabIndex = 8;
             // 
             // label8
@@ -309,7 +310,7 @@
             this.label8.Location = new System.Drawing.Point(4, 90);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(106, 25);
+            this.label8.Size = new System.Drawing.Size(81, 20);
             this.label8.TabIndex = 7;
             this.label8.Text = "RegionID:";
             // 
@@ -321,7 +322,7 @@
             this.label7.Location = new System.Drawing.Point(4, 70);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(83, 25);
+            this.label7.Size = new System.Drawing.Size(64, 20);
             this.label7.TabIndex = 6;
             this.label7.Text = "UserID:";
             // 
@@ -333,7 +334,7 @@
             this.label6.Location = new System.Drawing.Point(70, 50);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(0, 25);
+            this.label6.Size = new System.Drawing.Size(0, 20);
             this.label6.TabIndex = 5;
             // 
             // label5
@@ -344,7 +345,7 @@
             this.label5.Location = new System.Drawing.Point(70, 30);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 25);
+            this.label5.Size = new System.Drawing.Size(0, 20);
             this.label5.TabIndex = 4;
             // 
             // label4
@@ -355,7 +356,7 @@
             this.label4.Location = new System.Drawing.Point(70, 10);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(0, 25);
+            this.label4.Size = new System.Drawing.Size(0, 20);
             this.label4.TabIndex = 3;
             // 
             // label3
@@ -366,7 +367,7 @@
             this.label3.Location = new System.Drawing.Point(4, 50);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(116, 25);
+            this.label3.Size = new System.Drawing.Size(87, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "Username:";
             // 
@@ -380,7 +381,7 @@
             this.version.Location = new System.Drawing.Point(4, 241);
             this.version.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.version.Name = "version";
-            this.version.Size = new System.Drawing.Size(82, 26);
+            this.version.Size = new System.Drawing.Size(59, 20);
             this.version.TabIndex = 16;
             this.version.Text = "version";
             // 
@@ -395,7 +396,7 @@
             this.linkLabel1.Location = new System.Drawing.Point(54, 35);
             this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(206, 31);
+            this.linkLabel1.Size = new System.Drawing.Size(149, 25);
             this.linkLabel1.TabIndex = 3;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Create DB User";
@@ -412,7 +413,7 @@
             this.linkLabel2.Location = new System.Drawing.Point(54, 71);
             this.linkLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(203, 31);
+            this.linkLabel2.Size = new System.Drawing.Size(146, 25);
             this.linkLabel2.TabIndex = 4;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Delete DB User";
@@ -429,7 +430,7 @@
             this.linkLabel3.Location = new System.Drawing.Point(54, 267);
             this.linkLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(176, 31);
+            this.linkLabel3.Size = new System.Drawing.Size(128, 25);
             this.linkLabel3.TabIndex = 5;
             this.linkLabel3.TabStop = true;
             this.linkLabel3.Text = "Storage state";
@@ -443,10 +444,10 @@
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label11.ForeColor = System.Drawing.Color.DimGray;
-            this.label11.Location = new System.Drawing.Point(316, 79);
+            this.label11.Location = new System.Drawing.Point(316, 82);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(0, 26);
+            this.label11.Size = new System.Drawing.Size(0, 20);
             this.label11.TabIndex = 9;
             // 
             // label12
@@ -457,10 +458,10 @@
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label12.ForeColor = System.Drawing.Color.DimGray;
-            this.label12.Location = new System.Drawing.Point(316, 58);
+            this.label12.Location = new System.Drawing.Point(316, 61);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(0, 26);
+            this.label12.Size = new System.Drawing.Size(0, 20);
             this.label12.TabIndex = 8;
             // 
             // label13
@@ -471,10 +472,10 @@
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label13.ForeColor = System.Drawing.Color.DimGray;
-            this.label13.Location = new System.Drawing.Point(222, 79);
+            this.label13.Location = new System.Drawing.Point(222, 82);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(179, 26);
+            this.label13.Size = new System.Drawing.Size(130, 20);
             this.label13.TabIndex = 7;
             this.label13.Text = "Exchange rate P:";
             // 
@@ -486,10 +487,10 @@
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label14.ForeColor = System.Drawing.Color.DimGray;
-            this.label14.Location = new System.Drawing.Point(222, 58);
+            this.label14.Location = new System.Drawing.Point(222, 61);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(179, 26);
+            this.label14.Size = new System.Drawing.Size(131, 20);
             this.label14.TabIndex = 6;
             this.label14.Text = "Exchange rate S:";
             // 
@@ -501,10 +502,10 @@
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label15.ForeColor = System.Drawing.Color.DimGray;
-            this.label15.Location = new System.Drawing.Point(316, 39);
+            this.label15.Location = new System.Drawing.Point(316, 42);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(0, 26);
+            this.label15.Size = new System.Drawing.Size(0, 20);
             this.label15.TabIndex = 5;
             // 
             // label16
@@ -515,10 +516,10 @@
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label16.ForeColor = System.Drawing.Color.DimGray;
-            this.label16.Location = new System.Drawing.Point(76, 60);
+            this.label16.Location = new System.Drawing.Point(76, 63);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(0, 26);
+            this.label16.Size = new System.Drawing.Size(0, 20);
             this.label16.TabIndex = 4;
             // 
             // label17
@@ -529,10 +530,10 @@
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label17.ForeColor = System.Drawing.Color.DimGray;
-            this.label17.Location = new System.Drawing.Point(76, 39);
+            this.label17.Location = new System.Drawing.Point(76, 42);
             this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(0, 26);
+            this.label17.Size = new System.Drawing.Size(0, 20);
             this.label17.TabIndex = 3;
             // 
             // label18
@@ -543,10 +544,10 @@
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label18.ForeColor = System.Drawing.Color.DimGray;
-            this.label18.Location = new System.Drawing.Point(222, 39);
+            this.label18.Location = new System.Drawing.Point(222, 42);
             this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(179, 26);
+            this.label18.Size = new System.Drawing.Size(130, 20);
             this.label18.TabIndex = 2;
             this.label18.Text = "Exchange rate K:";
             // 
@@ -558,10 +559,10 @@
             this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label19.ForeColor = System.Drawing.Color.DimGray;
-            this.label19.Location = new System.Drawing.Point(4, 39);
+            this.label19.Location = new System.Drawing.Point(4, 42);
             this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(138, 26);
+            this.label19.Size = new System.Drawing.Size(100, 20);
             this.label19.TabIndex = 0;
             this.label19.Text = "Current time:";
             // 
@@ -573,10 +574,10 @@
             this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label20.ForeColor = System.Drawing.Color.DimGray;
-            this.label20.Location = new System.Drawing.Point(4, 60);
+            this.label20.Location = new System.Drawing.Point(4, 63);
             this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(138, 26);
+            this.label20.Size = new System.Drawing.Size(102, 20);
             this.label20.TabIndex = 1;
             this.label20.Text = "Current date:";
             // 
@@ -596,7 +597,7 @@
             this.panel3.Controls.Add(this.oib);
             this.panel3.Controls.Add(this.adresa);
             this.panel3.Controls.Add(this.infomail);
-            this.panel3.Location = new System.Drawing.Point(0, 1);
+            this.panel3.Location = new System.Drawing.Point(0, 4);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(988, 33);
@@ -612,7 +613,7 @@
             this.www.Location = new System.Drawing.Point(27, 6);
             this.www.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.www.Name = "www";
-            this.www.Size = new System.Drawing.Size(74, 31);
+            this.www.Size = new System.Drawing.Size(54, 25);
             this.www.TabIndex = 0;
             this.www.Text = "www";
             // 
@@ -626,7 +627,7 @@
             this.tel.Location = new System.Drawing.Point(834, 6);
             this.tel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tel.Name = "tel";
-            this.tel.Size = new System.Drawing.Size(43, 31);
+            this.tel.Size = new System.Drawing.Size(32, 25);
             this.tel.TabIndex = 12;
             this.tel.Text = "tel";
             // 
@@ -640,7 +641,7 @@
             this.oib.Location = new System.Drawing.Point(641, 6);
             this.oib.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.oib.Name = "oib";
-            this.oib.Size = new System.Drawing.Size(50, 31);
+            this.oib.Size = new System.Drawing.Size(38, 25);
             this.oib.TabIndex = 15;
             this.oib.Text = "oib";
             // 
@@ -654,7 +655,7 @@
             this.adresa.Location = new System.Drawing.Point(192, 6);
             this.adresa.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.adresa.Name = "adresa";
-            this.adresa.Size = new System.Drawing.Size(97, 31);
+            this.adresa.Size = new System.Drawing.Size(72, 25);
             this.adresa.TabIndex = 14;
             this.adresa.Text = "adresa";
             // 
@@ -668,7 +669,7 @@
             this.infomail.Location = new System.Drawing.Point(476, 6);
             this.infomail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.infomail.Name = "infomail";
-            this.infomail.Size = new System.Drawing.Size(107, 31);
+            this.infomail.Size = new System.Drawing.Size(78, 25);
             this.infomail.TabIndex = 13;
             this.infomail.Text = "infomail";
             // 
@@ -683,7 +684,7 @@
             this.linkLabel7.Location = new System.Drawing.Point(548, 35);
             this.linkLabel7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel7.Name = "linkLabel7";
-            this.linkLabel7.Size = new System.Drawing.Size(181, 31);
+            this.linkLabel7.Size = new System.Drawing.Size(133, 25);
             this.linkLabel7.TabIndex = 8;
             this.linkLabel7.TabStop = true;
             this.linkLabel7.Text = "Company info";
@@ -697,7 +698,7 @@
             this.label21.Location = new System.Drawing.Point(48, 12);
             this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(86, 25);
+            this.label21.Size = new System.Drawing.Size(65, 20);
             this.label21.TabIndex = 7;
             this.label21.Text = "Set app";
             // 
@@ -709,7 +710,7 @@
             this.label22.Location = new System.Drawing.Point(45, 238);
             this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(73, 25);
+            this.label22.Size = new System.Drawing.Size(54, 20);
             this.label22.TabIndex = 7;
             this.label22.Text = "Check";
             // 
@@ -724,7 +725,7 @@
             this.linkLabel6.Location = new System.Drawing.Point(302, 33);
             this.linkLabel6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel6.Name = "linkLabel6";
-            this.linkLabel6.Size = new System.Drawing.Size(107, 31);
+            this.linkLabel6.Size = new System.Drawing.Size(77, 25);
             this.linkLabel6.TabIndex = 5;
             this.linkLabel6.TabStop = true;
             this.linkLabel6.Text = "Receipt";
@@ -738,7 +739,7 @@
             this.label23.Location = new System.Drawing.Point(292, 13);
             this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(39, 25);
+            this.label23.Size = new System.Drawing.Size(30, 20);
             this.label23.TabIndex = 7;
             this.label23.Text = "Do";
             // 
@@ -753,7 +754,7 @@
             this.linkLabel8.Location = new System.Drawing.Point(302, 70);
             this.linkLabel8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel8.Name = "linkLabel8";
-            this.linkLabel8.Size = new System.Drawing.Size(113, 31);
+            this.linkLabel8.Size = new System.Drawing.Size(82, 25);
             this.linkLabel8.TabIndex = 22;
             this.linkLabel8.TabStop = true;
             this.linkLabel8.Text = "Delivery";
@@ -770,7 +771,7 @@
             this.linkLabel9.Location = new System.Drawing.Point(548, 71);
             this.linkLabel9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel9.Name = "linkLabel9";
-            this.linkLabel9.Size = new System.Drawing.Size(241, 31);
+            this.linkLabel9.Size = new System.Drawing.Size(176, 25);
             this.linkLabel9.TabIndex = 23;
             this.linkLabel9.TabStop = true;
             this.linkLabel9.Text = "Select MainRegion";
@@ -786,7 +787,7 @@
             this.label30.ForeColor = System.Drawing.Color.White;
             this.label30.Location = new System.Drawing.Point(902, 9);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(105, 30);
+            this.label30.Size = new System.Drawing.Size(75, 21);
             this.label30.TabIndex = 24;
             this.label30.Text = "Loading...";
             // 
@@ -814,10 +815,10 @@
             this.label31.BackColor = System.Drawing.Color.Transparent;
             this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label31.ForeColor = System.Drawing.Color.DimGray;
-            this.label31.Location = new System.Drawing.Point(76, 79);
+            this.label31.Location = new System.Drawing.Point(76, 82);
             this.label31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(0, 26);
+            this.label31.Size = new System.Drawing.Size(0, 20);
             this.label31.TabIndex = 27;
             // 
             // label32
@@ -828,10 +829,10 @@
             this.label32.BackColor = System.Drawing.Color.Transparent;
             this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label32.ForeColor = System.Drawing.Color.DimGray;
-            this.label32.Location = new System.Drawing.Point(4, 79);
+            this.label32.Location = new System.Drawing.Point(4, 82);
             this.label32.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(146, 26);
+            this.label32.Size = new System.Drawing.Size(105, 20);
             this.label32.TabIndex = 26;
             this.label32.Text = "Working time:";
             // 
@@ -846,7 +847,7 @@
             this.linkLabel10.Location = new System.Drawing.Point(54, 301);
             this.linkLabel10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel10.Name = "linkLabel10";
-            this.linkLabel10.Size = new System.Drawing.Size(196, 31);
+            this.linkLabel10.Size = new System.Drawing.Size(143, 25);
             this.linkLabel10.TabIndex = 28;
             this.linkLabel10.TabStop = true;
             this.linkLabel10.Text = "Opened tickets";
@@ -863,7 +864,7 @@
             this.linkLabel11.Location = new System.Drawing.Point(54, 107);
             this.linkLabel11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel11.Name = "linkLabel11";
-            this.linkLabel11.Size = new System.Drawing.Size(134, 31);
+            this.linkLabel11.Size = new System.Drawing.Size(98, 25);
             this.linkLabel11.TabIndex = 29;
             this.linkLabel11.TabStop = true;
             this.linkLabel11.Text = "CreateDB";
@@ -885,7 +886,7 @@
             this.linkLabel12.Location = new System.Drawing.Point(301, 270);
             this.linkLabel12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel12.Name = "linkLabel12";
-            this.linkLabel12.Size = new System.Drawing.Size(60, 31);
+            this.linkLabel12.Size = new System.Drawing.Size(45, 25);
             this.linkLabel12.TabIndex = 30;
             this.linkLabel12.TabStop = true;
             this.linkLabel12.Text = "IUS";
@@ -899,7 +900,7 @@
             this.label33.Location = new System.Drawing.Point(291, 242);
             this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(84, 25);
+            this.label33.Size = new System.Drawing.Size(61, 20);
             this.label33.TabIndex = 32;
             this.label33.Text = "Service";
             // 
@@ -914,7 +915,7 @@
             this.linkLabel13.Location = new System.Drawing.Point(302, 107);
             this.linkLabel13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel13.Name = "linkLabel13";
-            this.linkLabel13.Size = new System.Drawing.Size(102, 31);
+            this.linkLabel13.Size = new System.Drawing.Size(75, 25);
             this.linkLabel13.TabIndex = 34;
             this.linkLabel13.TabStop = true;
             this.linkLabel13.Text = "Tickets";
@@ -931,7 +932,7 @@
             this.linkLabel14.Location = new System.Drawing.Point(54, 143);
             this.linkLabel14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel14.Name = "linkLabel14";
-            this.linkLabel14.Size = new System.Drawing.Size(101, 31);
+            this.linkLabel14.Size = new System.Drawing.Size(74, 25);
             this.linkLabel14.TabIndex = 35;
             this.linkLabel14.TabStop = true;
             this.linkLabel14.Text = "Log file";
@@ -948,7 +949,7 @@
             this.linkLabel15.Location = new System.Drawing.Point(133, 143);
             this.linkLabel15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel15.Name = "linkLabel15";
-            this.linkLabel15.Size = new System.Drawing.Size(83, 31);
+            this.linkLabel15.Size = new System.Drawing.Size(62, 25);
             this.linkLabel15.TabIndex = 36;
             this.linkLabel15.TabStop = true;
             this.linkLabel15.Text = "- path";
@@ -965,7 +966,7 @@
             this.linkLabel16.Location = new System.Drawing.Point(548, 143);
             this.linkLabel16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel16.Name = "linkLabel16";
-            this.linkLabel16.Size = new System.Drawing.Size(224, 31);
+            this.linkLabel16.Size = new System.Drawing.Size(164, 25);
             this.linkLabel16.TabIndex = 37;
             this.linkLabel16.TabStop = true;
             this.linkLabel16.Text = "Company/Region";
@@ -982,7 +983,7 @@
             this.linkLabel17.Location = new System.Drawing.Point(54, 369);
             this.linkLabel17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel17.Name = "linkLabel17";
-            this.linkLabel17.Size = new System.Drawing.Size(70, 31);
+            this.linkLabel17.Size = new System.Drawing.Size(54, 25);
             this.linkLabel17.TabIndex = 38;
             this.linkLabel17.TabStop = true;
             this.linkLabel17.Text = "OTP";
@@ -1066,6 +1067,7 @@
             // 
             this.splitContainer3.Panel1.AutoScroll = true;
             this.splitContainer3.Panel1.BackColor = System.Drawing.Color.Transparent;
+            this.splitContainer3.Panel1.Controls.Add(this.linkLabel25);
             this.splitContainer3.Panel1.Controls.Add(this.linkLabel24);
             this.splitContainer3.Panel1.Controls.Add(this.linkLabel23);
             this.splitContainer3.Panel1.Controls.Add(this.linkLabel5);
@@ -1112,6 +1114,23 @@
             this.splitContainer3.TabIndex = 0;
             this.splitContainer3.TabStop = false;
             // 
+            // linkLabel24
+            // 
+            this.linkLabel24.AutoSize = true;
+            this.linkLabel24.BackColor = System.Drawing.Color.Black;
+            this.linkLabel24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.linkLabel24.ForeColor = System.Drawing.Color.Transparent;
+            this.linkLabel24.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.linkLabel24.LinkColor = System.Drawing.Color.Yellow;
+            this.linkLabel24.Location = new System.Drawing.Point(300, 183);
+            this.linkLabel24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.linkLabel24.Name = "linkLabel24";
+            this.linkLabel24.Size = new System.Drawing.Size(55, 25);
+            this.linkLabel24.TabIndex = 48;
+            this.linkLabel24.TabStop = true;
+            this.linkLabel24.Text = "Offer";
+            this.linkLabel24.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel24_LinkClicked);
+            // 
             // linkLabel23
             // 
             this.linkLabel23.AutoSize = true;
@@ -1123,7 +1142,7 @@
             this.linkLabel23.Location = new System.Drawing.Point(54, 184);
             this.linkLabel23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel23.Name = "linkLabel23";
-            this.linkLabel23.Size = new System.Drawing.Size(113, 31);
+            this.linkLabel23.Size = new System.Drawing.Size(83, 25);
             this.linkLabel23.TabIndex = 47;
             this.linkLabel23.TabStop = true;
             this.linkLabel23.Text = "Settings";
@@ -1140,7 +1159,7 @@
             this.linkLabel5.Location = new System.Drawing.Point(301, 143);
             this.linkLabel5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel5.Name = "linkLabel5";
-            this.linkLabel5.Size = new System.Drawing.Size(101, 31);
+            this.linkLabel5.Size = new System.Drawing.Size(74, 25);
             this.linkLabel5.TabIndex = 46;
             this.linkLabel5.TabStop = true;
             this.linkLabel5.Text = "Invoice";
@@ -1154,7 +1173,7 @@
             this.label37.Location = new System.Drawing.Point(535, 13);
             this.label37.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(49, 25);
+            this.label37.Size = new System.Drawing.Size(37, 20);
             this.label37.TabIndex = 45;
             this.label37.Text = "Edit";
             // 
@@ -1180,7 +1199,7 @@
             this.linkLabel22.Location = new System.Drawing.Point(301, 342);
             this.linkLabel22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel22.Name = "linkLabel22";
-            this.linkLabel22.Size = new System.Drawing.Size(48, 31);
+            this.linkLabel22.Size = new System.Drawing.Size(36, 25);
             this.linkLabel22.TabIndex = 43;
             this.linkLabel22.TabStop = true;
             this.linkLabel22.Text = "IIS";
@@ -1197,7 +1216,7 @@
             this.linkLabel21.Location = new System.Drawing.Point(54, 403);
             this.linkLabel21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel21.Name = "linkLabel21";
-            this.linkLabel21.Size = new System.Drawing.Size(58, 31);
+            this.linkLabel21.Size = new System.Drawing.Size(45, 25);
             this.linkLabel21.TabIndex = 42;
             this.linkLabel21.TabStop = true;
             this.linkLabel21.Text = "ISS";
@@ -1214,7 +1233,7 @@
             this.linkLabel20.Location = new System.Drawing.Point(548, 107);
             this.linkLabel20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel20.Name = "linkLabel20";
-            this.linkLabel20.Size = new System.Drawing.Size(118, 31);
+            this.linkLabel20.Size = new System.Drawing.Size(87, 25);
             this.linkLabel20.TabIndex = 41;
             this.linkLabel20.TabStop = true;
             this.linkLabel20.Text = "Work list";
@@ -1231,7 +1250,7 @@
             this.linkLabel19.Location = new System.Drawing.Point(301, 306);
             this.linkLabel19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel19.Name = "linkLabel19";
-            this.linkLabel19.Size = new System.Drawing.Size(58, 31);
+            this.linkLabel19.Size = new System.Drawing.Size(45, 25);
             this.linkLabel19.TabIndex = 40;
             this.linkLabel19.TabStop = true;
             this.linkLabel19.Text = "ISS";
@@ -1248,7 +1267,7 @@
             this.linkLabel18.Location = new System.Drawing.Point(54, 335);
             this.linkLabel18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel18.Name = "linkLabel18";
-            this.linkLabel18.Size = new System.Drawing.Size(82, 31);
+            this.linkLabel18.Size = new System.Drawing.Size(60, 25);
             this.linkLabel18.TabIndex = 39;
             this.linkLabel18.TabStop = true;
             this.linkLabel18.Text = "PRIM";
@@ -1303,7 +1322,7 @@
             this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.InitialImage = null;
-            this.pictureBox3.Location = new System.Drawing.Point(11, 11);
+            this.pictureBox3.Location = new System.Drawing.Point(14, 11);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(230, 100);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1316,7 +1335,7 @@
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Image = global::POT.Properties.Resources.ExitApp;
-            this.pictureBox4.Location = new System.Drawing.Point(168, 398);
+            this.pictureBox4.Location = new System.Drawing.Point(171, 398);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(72, 82);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1332,10 +1351,10 @@
             this.label36.BackColor = System.Drawing.Color.Transparent;
             this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label36.ForeColor = System.Drawing.Color.DimGray;
-            this.label36.Location = new System.Drawing.Point(474, 69);
+            this.label36.Location = new System.Drawing.Point(474, 72);
             this.label36.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(187, 26);
+            this.label36.Size = new System.Drawing.Size(137, 20);
             this.label36.TabIndex = 44;
             this.label36.Text = "Server connection";
             // 
@@ -1347,10 +1366,10 @@
             this.label34.BackColor = System.Drawing.Color.Transparent;
             this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.label34.ForeColor = System.Drawing.Color.DimGray;
-            this.label34.Location = new System.Drawing.Point(475, 39);
+            this.label34.Location = new System.Drawing.Point(475, 42);
             this.label34.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(163, 26);
+            this.label34.Size = new System.Drawing.Size(120, 20);
             this.label34.TabIndex = 28;
             this.label34.Text = "Exchange date:";
             // 
@@ -1362,10 +1381,10 @@
             this.label35.BackColor = System.Drawing.Color.Transparent;
             this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label35.ForeColor = System.Drawing.Color.DimGray;
-            this.label35.Location = new System.Drawing.Point(569, 39);
+            this.label35.Location = new System.Drawing.Point(569, 42);
             this.label35.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(0, 26);
+            this.label35.Size = new System.Drawing.Size(0, 20);
             this.label35.TabIndex = 29;
             // 
             // pictureBox2
@@ -1373,7 +1392,7 @@
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::POT.Properties.Resources.allRightsReserved;
-            this.pictureBox2.Location = new System.Drawing.Point(779, 40);
+            this.pictureBox2.Location = new System.Drawing.Point(779, 43);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(95, 28);
@@ -1385,7 +1404,7 @@
             // 
             this.pictureBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.pictureBox9.Image = global::POT.Properties.Resources.MainConnectionOn;
-            this.pictureBox9.Location = new System.Drawing.Point(531, 46);
+            this.pictureBox9.Location = new System.Drawing.Point(531, 49);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(149, 66);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1397,7 +1416,7 @@
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::POT.Properties.Resources.Exeption_logo;
-            this.pictureBox1.Location = new System.Drawing.Point(888, 31);
+            this.pictureBox1.Location = new System.Drawing.Point(888, 34);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 81);
@@ -1410,22 +1429,22 @@
             // 
             this.backgroundWorker2.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker2_DoWork);
             // 
-            // linkLabel24
+            // linkLabel25
             // 
-            this.linkLabel24.AutoSize = true;
-            this.linkLabel24.BackColor = System.Drawing.Color.Black;
-            this.linkLabel24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.linkLabel24.ForeColor = System.Drawing.Color.Transparent;
-            this.linkLabel24.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.linkLabel24.LinkColor = System.Drawing.Color.Yellow;
-            this.linkLabel24.Location = new System.Drawing.Point(300, 183);
-            this.linkLabel24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.linkLabel24.Name = "linkLabel24";
-            this.linkLabel24.Size = new System.Drawing.Size(75, 31);
-            this.linkLabel24.TabIndex = 48;
-            this.linkLabel24.TabStop = true;
-            this.linkLabel24.Text = "Offer";
-            this.linkLabel24.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel24_LinkClicked);
+            this.linkLabel25.AutoSize = true;
+            this.linkLabel25.BackColor = System.Drawing.Color.Black;
+            this.linkLabel25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.linkLabel25.ForeColor = System.Drawing.Color.Transparent;
+            this.linkLabel25.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.linkLabel25.LinkColor = System.Drawing.Color.Yellow;
+            this.linkLabel25.Location = new System.Drawing.Point(548, 183);
+            this.linkLabel25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.linkLabel25.Name = "linkLabel25";
+            this.linkLabel25.Size = new System.Drawing.Size(100, 25);
+            this.linkLabel25.TabIndex = 49;
+            this.linkLabel25.TabStop = true;
+            this.linkLabel25.Text = "Part editor";
+            this.linkLabel25.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel25_LinkClicked);
             // 
             // MainFR
             // 
@@ -1566,5 +1585,6 @@
         private System.Windows.Forms.LinkLabel linkLabel5;
         private System.Windows.Forms.LinkLabel linkLabel23;
         private System.Windows.Forms.LinkLabel linkLabel24;
+        private System.Windows.Forms.LinkLabel linkLabel25;
     }
 }

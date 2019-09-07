@@ -951,5 +951,10 @@ namespace POT
             Ponuda p = new Ponuda();
             p.Show();
         }
+
+        private void linkLabel25_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }

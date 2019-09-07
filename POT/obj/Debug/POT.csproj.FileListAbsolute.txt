@@ -113,3 +113,4 @@ F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.csprojAssemblyReference.cache
 D:\PROJECTS\VS\POT\POT\POT\obj\Debug\POT.BuildingClasses.SettingsForm.resources
 D:\PROJECTS\VS\POT\POT\POT\obj\Debug\POT.Documents.Ponuda.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.Documents.Ponuda.resources
+F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.WorkingClasses.PartEditor.resources

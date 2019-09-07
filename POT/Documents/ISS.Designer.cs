@@ -86,6 +86,10 @@
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.PartSelectorCb = new System.Windows.Forms.ComboBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.ISSIDlb = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -588,7 +592,7 @@
             this.SAVEbt.TabIndex = 8;
             this.SAVEbt.Text = "Save";
             this.SAVEbt.UseVisualStyleBackColor = false;
-            this.SAVEbt.Click += new System.EventHandler(this.button1_Click);
+            this.SAVEbt.Click += new System.EventHandler(this.SAVEbt_Click);
             // 
             // CANCELBt
             // 
@@ -618,8 +622,9 @@
             // 
             // button2
             // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.button2.Location = new System.Drawing.Point(3, 183);
+            this.button2.Location = new System.Drawing.Point(589, 622);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(116, 35);
             this.button2.TabIndex = 164;
@@ -717,18 +722,64 @@
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = global::POT.Properties.Resources.LoadDataOff;
-            this.pictureBox1.Location = new System.Drawing.Point(496, 585);
+            this.pictureBox1.Location = new System.Drawing.Point(459, 585);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(137, 65);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 167;
             this.pictureBox1.TabStop = false;
             // 
+            // PartSelectorCb
+            // 
+            this.PartSelectorCb.FormattingEnabled = true;
+            this.PartSelectorCb.Location = new System.Drawing.Point(3, 188);
+            this.PartSelectorCb.Name = "PartSelectorCb";
+            this.PartSelectorCb.Size = new System.Drawing.Size(238, 28);
+            this.PartSelectorCb.TabIndex = 168;
+            this.PartSelectorCb.TabStop = false;
+            this.PartSelectorCb.SelectedIndexChanged += new System.EventHandler(this.PartSelectorCb_SelectedIndexChanged);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.ForeColor = System.Drawing.Color.Gray;
+            this.label19.Location = new System.Drawing.Point(-1, 170);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(86, 20);
+            this.label19.TabIndex = 169;
+            this.label19.Text = "Select part";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label20.ForeColor = System.Drawing.Color.DarkRed;
+            this.label20.Location = new System.Drawing.Point(535, 6);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(57, 37);
+            this.label20.TabIndex = 170;
+            this.label20.Text = "ID:";
+            // 
+            // ISSIDlb
+            // 
+            this.ISSIDlb.AutoSize = true;
+            this.ISSIDlb.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ISSIDlb.ForeColor = System.Drawing.Color.DarkRed;
+            this.ISSIDlb.Location = new System.Drawing.Point(567, 6);
+            this.ISSIDlb.Name = "ISSIDlb";
+            this.ISSIDlb.Size = new System.Drawing.Size(35, 37);
+            this.ISSIDlb.TabIndex = 171;
+            this.ISSIDlb.Text = "0";
+            // 
             // ISS
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(978, 662);
+            this.Controls.Add(this.ISSIDlb);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.PartSelectorCb);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.SelectPrinterbt);
             this.Controls.Add(this.PRINTbt);
@@ -851,5 +902,9 @@
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
         private System.Windows.Forms.PrintDialog printDialog1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox PartSelectorCb;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label ISSIDlb;
     }
 }

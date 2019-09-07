@@ -406,7 +406,7 @@ namespace POT
 
             foreach (Part part in partsArr)
             {
-                if (part.CodePartFull == long.Parse(fCode) && part.SN.Equals(fSN) && part.CN.Equals(fCN))
+                if (part.CodePartFull == long.Parse(fCode) && part.SN.ToUpper().Equals(fSN.ToUpper()) && part.CN.ToUpper().Equals(fCN.ToUpper()))
                 {
                     comboBox6.Items.Add(part.CodePartFull.ToString() + " # " + part.SN + " # " + part.CN);
                     partsArrCB5.Add(part);
@@ -513,7 +513,7 @@ namespace POT
                                     {
                                         tempSifPart.GetPart(Decoder.GetFullPartCodeStr(listView1.Items[i].SubItems[2].Text));
 
-                                        if (part.PartialCode == tempSifPart.FullCode && part.SN.Equals(listView1.Items[i].SubItems[3].Text) && part.CN.Equals(listView1.Items[i].SubItems[4].Text) && !partList.Contains(part))
+                                        if (part.PartialCode == tempSifPart.FullCode && part.SN.ToUpper().Equals(listView1.Items[i].SubItems[3].Text.ToUpper()) && part.CN.ToUpper().Equals(listView1.Items[i].SubItems[4].Text.ToUpper()) && !partList.Contains(part))
                                         {
                                             tempPart = part;
                                             tempPart.StorageID = WorkingUser.RegionID;
