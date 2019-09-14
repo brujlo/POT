@@ -38,3 +38,127 @@ File name: 'F:\PROJEKTI\VS\POT\POT\POT\bin\Release\Logo.resx'
 
 - 21.05.19. 20:49 - App turned off
     *** BrunoBrckovic *** 
+
+- 07.09.19. 17:22
+    - LOGED change: POT.SetDBConnection - button2_Click
+     - Used: DB connection address and name save.
+     - Data: 192.168.100.101, exe
+     - Result: Saved, no msgToUser
+    ***  *** 
+
+
+- 07.09.19. 17:22
+    - BaseEcp: System.IO.FileNotFoundException: Could not find file 'F:\PROJEKTI\VS\POT\POT\POT\bin\Release\Logo.resx'.
+File name: 'F:\PROJEKTI\VS\POT\POT\POT\bin\Release\Logo.resx'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Resources.ResXResourceReader.EnsureResData()
+   at System.Resources.ResXResourceReader.GetEnumerator()
+   at System.Resources.ResourceSet.ReadResources()
+   at System.Resources.ResXResourceSet..ctor(String fileName)
+   at POT.WorkingClasses.CLogo.GetImage() in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\CLogo.cs:line 18
+    - InnerEcp: 
+    - MessageEcp: Could not find file 'F:\PROJEKTI\VS\POT\POT\POT\bin\Release\Logo.resx'.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Resources.ResXResourceReader.EnsureResData()
+   at System.Resources.ResXResourceReader.GetEnumerator()
+   at System.Resources.ResourceSet.ReadResources()
+   at System.Resources.ResXResourceSet..ctor(String fileName)
+   at POT.WorkingClasses.CLogo.GetImage() in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\CLogo.cs:line 18
+    - TypeNameEcp: System.IO.FileNotFoundException
+    *** BrunoBrckovic *** 
+
+
+- 07.09.19. 17:22 - App started
+    *** BrunoBrckovic *** 
+
+- 07.09.19. 17:22
+    - BaseEcp: System.IO.FileNotFoundException: Could not find file 'F:\PROJEKTI\VS\POT\POT\POT\bin\Release\Logo.resx'.
+File name: 'F:\PROJEKTI\VS\POT\POT\POT\bin\Release\Logo.resx'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Resources.ResXResourceReader.EnsureResData()
+   at System.Resources.ResXResourceReader.GetEnumerator()
+   at System.Resources.ResourceSet.ReadResources()
+   at System.Resources.ResXResourceSet..ctor(String fileName)
+   at POT.WorkingClasses.CLogo.GetImage() in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\CLogo.cs:line 18
+    - InnerEcp: 
+    - MessageEcp: Could not find file 'F:\PROJEKTI\VS\POT\POT\POT\bin\Release\Logo.resx'.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Resources.ResXResourceReader.EnsureResData()
+   at System.Resources.ResXResourceReader.GetEnumerator()
+   at System.Resources.ResourceSet.ReadResources()
+   at System.Resources.ResXResourceSet..ctor(String fileName)
+   at POT.WorkingClasses.CLogo.GetImage() in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\CLogo.cs:line 18
+    - TypeNameEcp: System.IO.FileNotFoundException
+    *** BrunoBrckovic *** 
+
+
+- 07.09.19. 17:22
+    - BaseEcp: System.IO.FileNotFoundException: Could not find file 'F:\PROJEKTI\VS\POT\POT\POT\bin\Release\Logo.resx'.
+File name: 'F:\PROJEKTI\VS\POT\POT\POT\bin\Release\Logo.resx'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Resources.ResXResourceReader.EnsureResData()
+   at System.Resources.ResXResourceReader.GetEnumerator()
+   at System.Resources.ResourceSet.ReadResources()
+   at System.Resources.ResXResourceSet..ctor(String fileName)
+   at POT.MainFR.linkLabel7_LinkClicked(Object sender, LinkLabelLinkClickedEventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\MainFR.cs:line 417
+    - InnerEcp: 
+    - MessageEcp: Could not find file 'F:\PROJEKTI\VS\POT\POT\POT\bin\Release\Logo.resx'.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Resources.ResXResourceReader.EnsureResData()
+   at System.Resources.ResXResourceReader.GetEnumerator()
+   at System.Resources.ResourceSet.ReadResources()
+   at System.Resources.ResXResourceSet..ctor(String fileName)
+   at POT.MainFR.linkLabel7_LinkClicked(Object sender, LinkLabelLinkClickedEventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\MainFR.cs:line 417
+    - TypeNameEcp: System.IO.FileNotFoundException
+    *** BrunoBrckovic *** 
+
+
+- 07.09.19. 17:22 - App turned off
+    *** BrunoBrckovic *** 
+
+- 07.09.19. 17:24
+    - BaseEcp: System.IO.FileNotFoundException: Could not find file 'F:\PROJEKTI\VS\POT\POT\POT\bin\Release\Logo.resx'.
+File name: 'F:\PROJEKTI\VS\POT\POT\POT\bin\Release\Logo.resx'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Resources.ResXResourceReader.EnsureResData()
+   at System.Resources.ResXResourceReader.GetEnumerator()
+   at System.Resources.ResourceSet.ReadResources()
+   at System.Resources.ResXResourceSet..ctor(String fileName)
+   at POT.WorkingClasses.CLogo.GetImage() in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\CLogo.cs:line 18
+    - InnerEcp: 
+    - MessageEcp: Could not find file 'F:\PROJEKTI\VS\POT\POT\POT\bin\Release\Logo.resx'.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Resources.ResXResourceReader.EnsureResData()
+   at System.Resources.ResXResourceReader.GetEnumerator()
+   at System.Resources.ResourceSet.ReadResources()
+   at System.Resources.ResXResourceSet..ctor(String fileName)
+   at POT.WorkingClasses.CLogo.GetImage() in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\CLogo.cs:line 18
+    - TypeNameEcp: System.IO.FileNotFoundException
+    *** BrunoBrckovic *** 
+
+
+- 07.09.19. 17:24 - App started
+    *** BrunoBrckovic *** 
+
+- 07.09.19. 17:24 - App turned off
+    *** BrunoBrckovic *** 

@@ -4,7 +4,6 @@ F:\PROJEKTI\VS\POT\POT\POT\bin\Release\POT.application
 F:\PROJEKTI\VS\POT\POT\POT\bin\Release\POT.exe
 F:\PROJEKTI\VS\POT\POT\POT\bin\Release\POT.pdb
 F:\PROJEKTI\VS\POT\POT\POT\obj\Release\POT.csprojAssemblyReference.cache
-F:\PROJEKTI\VS\POT\POT\POT\obj\Release\POT.AddRegion.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Release\POT.DeleteDBUser.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Release\POT.LoginForm.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Release\POT.SetDBConnection.resources
@@ -38,3 +37,10 @@ F:\PROJEKTI\VS\POT\POT\POT\obj\Release\POT.Properties.strings.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Release\POT.Selector.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Release\POT.Properties.strings.hr.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Release\hr\POT.resources.dll
+F:\PROJEKTI\VS\POT\POT\POT\obj\Release\POT.AboutBox.resources
+F:\PROJEKTI\VS\POT\POT\POT\obj\Release\POT.BuildingClasses.SettingsForm.resources
+F:\PROJEKTI\VS\POT\POT\POT\obj\Release\POT.Documents.Ponuda.resources
+F:\PROJEKTI\VS\POT\POT\POT\obj\Release\POT.Documents.Racun.resources
+F:\PROJEKTI\VS\POT\POT\POT\obj\Release\POT.Loading.resources
+F:\PROJEKTI\VS\POT\POT\POT\obj\Release\POT.Saving.resources
+F:\PROJEKTI\VS\POT\POT\POT\obj\Release\POT.WorkingClasses.PartEditor.resources

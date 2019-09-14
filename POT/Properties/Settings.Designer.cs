@@ -684,5 +684,17 @@ namespace POT.Properties {
                 this["SaveToPDF"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string APIweb {
+            get {
+                return ((string)(this["APIweb"]));
+            }
+            set {
+                this["APIweb"] = value;
+            }
+        }
     }
 }

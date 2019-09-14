@@ -93,13 +93,17 @@
             this.label13 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label25 = new System.Windows.Forms.Label();
             this.PDFOpen = new System.Windows.Forms.Button();
             this.listView2 = new System.Windows.Forms.ListView();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.printDocumentInvoice = new System.Drawing.Printing.PrintDocument();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.printPreviewDialogInvoice = new System.Windows.Forms.PrintPreviewDialog();
-            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.PriceOUTEURTB = new System.Windows.Forms.TextBox();
+            this.PriceOUTKNTB = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -153,6 +157,10 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.label26);
+            this.tabPage1.Controls.Add(this.label27);
+            this.tabPage1.Controls.Add(this.PriceOUTEURTB);
+            this.tabPage1.Controls.Add(this.PriceOUTKNTB);
             this.tabPage1.Controls.Add(this.groupBox2);
             this.tabPage1.Controls.Add(this.label23);
             this.tabPage1.Controls.Add(this.label24);
@@ -289,7 +297,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(369, 153);
+            this.label18.Location = new System.Drawing.Point(369, 140);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(99, 20);
             this.label18.TabIndex = 180;
@@ -298,7 +306,7 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(259, 152);
+            this.label22.Location = new System.Drawing.Point(259, 139);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(85, 20);
             this.label22.TabIndex = 179;
@@ -307,7 +315,7 @@
             // PriceINEURTB
             // 
             this.PriceINEURTB.BackColor = System.Drawing.Color.Moccasin;
-            this.PriceINEURTB.Location = new System.Drawing.Point(373, 166);
+            this.PriceINEURTB.Location = new System.Drawing.Point(373, 153);
             this.PriceINEURTB.Name = "PriceINEURTB";
             this.PriceINEURTB.ReadOnly = true;
             this.PriceINEURTB.Size = new System.Drawing.Size(90, 26);
@@ -318,7 +326,7 @@
             // PriceINKNTB
             // 
             this.PriceINKNTB.BackColor = System.Drawing.Color.Moccasin;
-            this.PriceINKNTB.Location = new System.Drawing.Point(264, 166);
+            this.PriceINKNTB.Location = new System.Drawing.Point(264, 153);
             this.PriceINKNTB.Name = "PriceINKNTB";
             this.PriceINKNTB.ReadOnly = true;
             this.PriceINKNTB.Size = new System.Drawing.Size(90, 26);
@@ -717,7 +725,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(2, 150);
+            this.label2.Location = new System.Drawing.Point(2, 146);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 20);
             this.label2.TabIndex = 11;
@@ -726,7 +734,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(2, 106);
+            this.label1.Location = new System.Drawing.Point(2, 102);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 20);
             this.label1.TabIndex = 10;
@@ -760,7 +768,7 @@
             // PartCodeTB
             // 
             this.PartCodeTB.BackColor = System.Drawing.Color.Moccasin;
-            this.PartCodeTB.Location = new System.Drawing.Point(6, 166);
+            this.PartCodeTB.Location = new System.Drawing.Point(6, 162);
             this.PartCodeTB.Name = "PartCodeTB";
             this.PartCodeTB.ReadOnly = true;
             this.PartCodeTB.Size = new System.Drawing.Size(197, 26);
@@ -771,7 +779,7 @@
             this.PartNameCB.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.PartNameCB.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.PartNameCB.FormattingEnabled = true;
-            this.PartNameCB.Location = new System.Drawing.Point(6, 118);
+            this.PartNameCB.Location = new System.Drawing.Point(6, 114);
             this.PartNameCB.Name = "PartNameCB";
             this.PartNameCB.Size = new System.Drawing.Size(489, 28);
             this.PartNameCB.TabIndex = 3;
@@ -859,6 +867,15 @@
             this.tabPage2.Text = "Check";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(7, 566);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(258, 20);
+            this.label25.TabIndex = 2;
+            this.label25.Text = "Double click to mark as paid/unpaid";
+            // 
             // PDFOpen
             // 
             this.PDFOpen.Location = new System.Drawing.Point(839, 566);
@@ -904,14 +921,45 @@
             this.printPreviewDialogInvoice.Name = "printPreviewDialog1";
             this.printPreviewDialogInvoice.Visible = false;
             // 
-            // label25
+            // label26
             // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(7, 566);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(258, 20);
-            this.label25.TabIndex = 2;
-            this.label25.Text = "Double click to mark as paid/unpaid";
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(370, 178);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(110, 20);
+            this.label26.TabIndex = 187;
+            this.label26.Text = "Price out EUR";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(260, 177);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(96, 20);
+            this.label27.TabIndex = 186;
+            this.label27.Text = "Price out KN";
+            // 
+            // PriceOUTEURTB
+            // 
+            this.PriceOUTEURTB.BackColor = System.Drawing.Color.Moccasin;
+            this.PriceOUTEURTB.Location = new System.Drawing.Point(374, 191);
+            this.PriceOUTEURTB.Name = "PriceOUTEURTB";
+            this.PriceOUTEURTB.ReadOnly = true;
+            this.PriceOUTEURTB.Size = new System.Drawing.Size(90, 26);
+            this.PriceOUTEURTB.TabIndex = 185;
+            this.PriceOUTEURTB.TabStop = false;
+            this.PriceOUTEURTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // PriceOUTKNTB
+            // 
+            this.PriceOUTKNTB.BackColor = System.Drawing.Color.Moccasin;
+            this.PriceOUTKNTB.Location = new System.Drawing.Point(265, 191);
+            this.PriceOUTKNTB.Name = "PriceOUTKNTB";
+            this.PriceOUTKNTB.ReadOnly = true;
+            this.PriceOUTKNTB.Size = new System.Drawing.Size(90, 26);
+            this.PriceOUTKNTB.TabIndex = 184;
+            this.PriceOUTKNTB.TabStop = false;
+            this.PriceOUTKNTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Racun
             // 
@@ -1012,5 +1060,9 @@
         private System.Windows.Forms.ListView listView2;
         private System.Windows.Forms.Button PDFOpen;
         private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.TextBox PriceOUTEURTB;
+        private System.Windows.Forms.TextBox PriceOUTKNTB;
     }
 }

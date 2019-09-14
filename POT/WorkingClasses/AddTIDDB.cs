@@ -135,10 +135,10 @@ namespace POT.WorkingClasses
                         "<b>Prijavio:</b> " + Prijavio + "<br>" +
                         "<b>Uredaj:</b> " + NazivUredaja + "<br>" +
                         "<b>Opis:</b> " + Opis + "<br>" + "<br>" + "<br>" + "</p>" +
-                        "<br>TID action: " + "<A href=http://" + Properties.Settings.Default.DataSource + ":9090/takenWF?field1=" + idNumber + "&field2=" + arr[i] + ">Take me</A >" + "<br>" + "<br>" +
-                        "<br>TID action: " + "<A href=http://" + Properties.Settings.Default.DataSource + ":9090/driveWF?field1=" + idNumber + "&field2=" + arr[i] + ">Start driving</A >" + "<br>" + "<br>" +
-                        "<br>TID action: " + "<A href=http://" + Properties.Settings.Default.DataSource + ":9090/startWF?field1=" + idNumber + "&field2=" + arr[i] + ">Start working</A >" + "<br>" + "<br>" +
-                        "<br>TID action: " + "<A href=http://" + Properties.Settings.Default.DataSource + ":9090/endWF?field1=" + idNumber + "&field2=" + arr[i] + ">End working</A >" + "<br>" + "<br>" +
+                        "<br>TID action: " + "<A href=http://" + Properties.Settings.Default.APIweb + ":9090/takenWF?field1=" + idNumber + "&field2=" + arr[i] + ">Take me</A >" + "<br>" + "<br>" +
+                        "<br>TID action: " + "<A href=http://" + Properties.Settings.Default.APIweb + ":9090/driveWF?field1=" + idNumber + "&field2=" + arr[i] + ">Start driving</A >" + "<br>" + "<br>" +
+                        "<br>TID action: " + "<A href=http://" + Properties.Settings.Default.APIweb + ":9090/startWF?field1=" + idNumber + "&field2=" + arr[i] + ">Start working</A >" + "<br>" + "<br>" +
+                        "<br>TID action: " + "<A href=http://" + Properties.Settings.Default.APIweb + ":9090/endWF?field1=" + idNumber + "&field2=" + arr[i] + ">End working</A >" + "<br>" + "<br>" +
                         "<p style=''font-family:calibri;font-size:12''>" +
                         "--------------------------------------" + "<br>" +
                         setAutoFooter();

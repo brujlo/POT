@@ -531,7 +531,7 @@ namespace POT.WorkingClasses
                                 measureStr = e.Graphics.MeasureString(workingStr, ft).Width;
                                 e.Graphics.DrawString(workingStr, new Font("Calibri light", ft.Size, FontStyle.Regular), Brushes.Black, new Point(amount + ((rebatePrice - amount) / 2) - (int)measureStr, headerpointVer + moveBy));
 
-                                workingStr = String.Format("{0:N2}", off.Iznos) + " kn";
+                                workingStr = String.Format("{0:N2}", off.Iznos * eurDjelitelj) + " kn";
                                 measureField = total - rebatePrice;
                                 measureStr = e.Graphics.MeasureString(workingStr, ft).Width;
                                 e.Graphics.DrawString(workingStr, new Font("Calibri light", ft.Size, FontStyle.Regular), Brushes.Black, new Point(kraj - (int)measureStr, headerpointVer + moveBy));

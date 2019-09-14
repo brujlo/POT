@@ -33,6 +33,7 @@ namespace POT.BuildingClasses
             odgOsobaTB.Text = Properties.Settings.Default.odgovornaOsoba;
 
             DefaultFolder.Text = Properties.Settings.Default.DefaultFolder;
+            APIwebTB.Text = Properties.Settings.Default.APIweb;
         }
 
         private void SaveBT_Click(object sender, EventArgs e)
@@ -64,6 +65,7 @@ namespace POT.BuildingClasses
 
                 Properties.Settings.Default.odgovornaOsoba = odgOsobaTB.Text;
                 Properties.Settings.Default.DefaultFolder = DefaultFolder.Text;
+                Properties.Settings.Default.APIweb = APIwebTB.Text;
 
                 Properties.Settings.Default.Save();
 

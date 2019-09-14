@@ -64,14 +64,14 @@ namespace POT
         {
             this.Close();
 
-            //Application.Exit();
+            Application.Exit();
         }
 
         private void LoginForm_Load(object sender, EventArgs e)
         {
             this.checkBox1.Checked = false;
             this.UsernameBX.Text = Properties.Settings.Default.Username;
-            this.PasswordBX.Text = Properties.Settings.Default.Password;
+            //this.PasswordBX.Text = Properties.Settings.Default.Password;
 
             Properties.Settings.Default.Remember = true;
             checkBox2.Checked = Properties.Settings.Default.AutoLogin ? true : false;

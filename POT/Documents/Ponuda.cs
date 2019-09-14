@@ -189,6 +189,8 @@ namespace POT.Documents
 
         private void PartNameCB_SelectedIndexChanged(object sender, EventArgs e)
         {
+            tempSifPart = null;
+
             if (CustomerCB.Text.Equals("") || CustomerCB.Text.Equals("Customer"))
             {
                 MessageBox.Show("Please, select company first.", "Caution", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -199,16 +201,18 @@ namespace POT.Documents
 
                 tempSifPart = sifrarnikList.ElementAt(indexPartCB);
 
-                String prtCod = String.Format("{0:000 000 000}", sifrarnikList.ElementAt(indexPartCB).FullCode);
+                String prtCod = String.Format("{0:000 000 000}", tempSifPart.FullCode);
                 PartCodeTB.Text = String.Format("{0:00}", mainCmp.Code) + String.Format("{0:00}" + " ", customerCmp.Code) + prtCod;
 
                 if (radioButtonHRV.Checked)
-                    PriceTB.Text = CheckIfKNZero(sifrarnikList.ElementAt(indexPartCB));
+                    PriceTB.Text = CheckIfKNZero(tempSifPart);
                 else
-                    PriceTB.Text = CheckIfKNZero(sifrarnikList.ElementAt(indexPartCB));
+                    PriceTB.Text = CheckIfKNZero(tempSifPart);
 
-                PriceINEURTB.Text = String.Format("{0:N2}", sifrarnikList.ElementAt(indexPartCB).PriceInEur);
-                PriceINKNTB.Text = String.Format("{0:N2}", sifrarnikList.ElementAt(indexPartCB).PriceInKn);
+                PriceINEURTB.Text = String.Format("{0:N2}", tempSifPart.PriceInEur);
+                PriceINKNTB.Text = String.Format("{0:N2}", tempSifPart.PriceInKn);
+                PriceOUTEURTB.Text = String.Format("{0:N2}", tempSifPart.PriceOutEur);
+                PriceOUTKNTB.Text = String.Format("{0:N2}", tempSifPart.PriceOutKn);
             }
         }
 
@@ -253,8 +257,8 @@ namespace POT.Documents
 
                 if (indexPartCB != -1)
                 {
-                    decimal kn = sifrarnikList.ElementAt(indexPartCB).PriceOutKn;
-                    decimal eur = sifrarnikList.ElementAt(indexPartCB).PriceOutEur;
+                    decimal kn = tempSifPart.PriceOutKn;
+                    decimal eur = tempSifPart.PriceOutEur;
 
                     if (radioButtonENG.Checked)
                     {
@@ -275,9 +279,9 @@ namespace POT.Documents
             decimal eur = sprt.PriceOutEur;
 
             if (radioButtonENG.Checked)
-                return String.Format("{0:N2}", eur);
+                return String.Format("{0:N2}", eur <= 0 ? kn / (decimal)ech : eur);
             else
-                return kn <= 0 ? String.Format("{0:N2}", eur * (decimal)ech) : String.Format("{0:N2}", kn);
+                return String.Format("{0:N2}", kn <= 0 ? eur * (decimal)ech : kn);
         }
 
         private void WorkTimeTB_Leave(object sender, EventArgs e)
@@ -390,7 +394,11 @@ namespace POT.Documents
             //decimal cijena = decimal.Parse(CheckIfKNZero(tempSifPart));
             if (!remove)
             {
-                cijena = decimal.Parse(PriceTB.Text);
+                if(radioButtonHRV.Checked)
+                    cijena = tempSifPart.PriceOutKn;
+                else
+                    cijena = tempSifPart.PriceOutEur;
+
                 popust = invPrt.Rabat;
 
 
@@ -770,7 +778,13 @@ namespace POT.Documents
         {
             try
             {
-                decimal priceTime = (decimal.Parse(PriceTB.Text) * workTimeToNumber(WorkTimeTB.Text));
+                decimal priceTime = 0;
+
+                if (radioButtonHRV.Checked)
+                    priceTime = ((tempSifPart.PriceOutKn == 0 ? tempSifPart.PriceOutEur * (decimal)ech : tempSifPart.PriceOutKn) * workTimeToNumber(WorkTimeTB.Text));
+                else
+                    priceTime = ((tempSifPart.PriceOutEur == 0 ? tempSifPart.PriceOutKn / (decimal)ech : tempSifPart.PriceOutEur) * workTimeToNumber(WorkTimeTB.Text));
+
                 decimal rebatePrice = (priceTime * (decimal.Parse(RebateTB.Text) / 100));
                 int qnt = int.Parse(QuantityTB.Text);
 

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace POT.MyTypes
 {
-    class Part
+    public class Part
     {
         private long partID;
         private long codePartFull;

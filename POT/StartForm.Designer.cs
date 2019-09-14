@@ -128,24 +128,24 @@
             // rbHrv
             // 
             this.rbHrv.AutoSize = true;
+            this.rbHrv.Checked = true;
             this.rbHrv.ForeColor = System.Drawing.Color.Red;
             this.rbHrv.Location = new System.Drawing.Point(439, 156);
             this.rbHrv.Name = "rbHrv";
             this.rbHrv.Size = new System.Drawing.Size(58, 24);
             this.rbHrv.TabIndex = 7;
+            this.rbHrv.TabStop = true;
             this.rbHrv.Text = "Hrv";
             this.rbHrv.UseVisualStyleBackColor = true;
             // 
             // rbEng
             // 
             this.rbEng.AutoSize = true;
-            this.rbEng.Checked = true;
             this.rbEng.ForeColor = System.Drawing.Color.Red;
             this.rbEng.Location = new System.Drawing.Point(439, 195);
             this.rbEng.Name = "rbEng";
             this.rbEng.Size = new System.Drawing.Size(63, 24);
             this.rbEng.TabIndex = 8;
-            this.rbEng.TabStop = true;
             this.rbEng.Text = "Eng";
             this.rbEng.UseVisualStyleBackColor = true;
             // 

@@ -4210,11 +4210,11 @@ namespace POT
             return partID;
         }
 
-        public long GetISSidByPartID(long mISSid)
+        public long GetISSidByPartID(long mPartID)
         {
-            long ISSid = 0;
+            long issID= 0;
             cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
-            query = "select ID from ISS where PartID = " + mISSid;
+            query = "select ID from ISS where PartID = " + mPartID;
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
             SqlDataReader dataReader = command.ExecuteReader();
@@ -4222,12 +4222,12 @@ namespace POT
 
             if (dataReader.HasRows)
             {
-                ISSid = long.Parse(dataReader["ID"].ToString());
+                issID = long.Parse(dataReader["ID"].ToString());
             }
 
             dataReader.Close();
             cnn.Close();
-            return ISSid;
+            return issID;
         }
 
         public List<String> GetAllISSInfoById(long mISSid)

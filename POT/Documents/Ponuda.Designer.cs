@@ -89,7 +89,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.QuantityTB = new System.Windows.Forms.TextBox();
-            this.OfferCB = new System.Windows.Forms.ComboBox();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.CustomerCB = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -97,6 +96,10 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.PriceOUTEURTB = new System.Windows.Forms.TextBox();
+            this.PriceOUTKNTB = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -220,7 +223,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(370, 159);
+            this.label18.Location = new System.Drawing.Point(370, 132);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(99, 20);
             this.label18.TabIndex = 180;
@@ -260,7 +263,7 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(260, 158);
+            this.label22.Location = new System.Drawing.Point(260, 131);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(85, 20);
             this.label22.TabIndex = 179;
@@ -269,7 +272,7 @@
             // PriceINEURTB
             // 
             this.PriceINEURTB.BackColor = System.Drawing.Color.Moccasin;
-            this.PriceINEURTB.Location = new System.Drawing.Point(374, 172);
+            this.PriceINEURTB.Location = new System.Drawing.Point(374, 145);
             this.PriceINEURTB.Name = "PriceINEURTB";
             this.PriceINEURTB.ReadOnly = true;
             this.PriceINEURTB.Size = new System.Drawing.Size(90, 26);
@@ -280,7 +283,7 @@
             // PriceINKNTB
             // 
             this.PriceINKNTB.BackColor = System.Drawing.Color.Moccasin;
-            this.PriceINKNTB.Location = new System.Drawing.Point(265, 172);
+            this.PriceINKNTB.Location = new System.Drawing.Point(265, 145);
             this.PriceINKNTB.Name = "PriceINKNTB";
             this.PriceINKNTB.ReadOnly = true;
             this.PriceINKNTB.Size = new System.Drawing.Size(90, 26);
@@ -633,7 +636,7 @@
             // PartCodeTB
             // 
             this.PartCodeTB.BackColor = System.Drawing.Color.Moccasin;
-            this.PartCodeTB.Location = new System.Drawing.Point(7, 172);
+            this.PartCodeTB.Location = new System.Drawing.Point(7, 151);
             this.PartCodeTB.Name = "PartCodeTB";
             this.PartCodeTB.ReadOnly = true;
             this.PartCodeTB.Size = new System.Drawing.Size(197, 26);
@@ -644,7 +647,7 @@
             this.PartNameCB.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.PartNameCB.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.PartNameCB.FormattingEnabled = true;
-            this.PartNameCB.Location = new System.Drawing.Point(7, 124);
+            this.PartNameCB.Location = new System.Drawing.Point(7, 103);
             this.PartNameCB.Name = "PartNameCB";
             this.PartNameCB.Size = new System.Drawing.Size(489, 28);
             this.PartNameCB.TabIndex = 3;
@@ -684,6 +687,10 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.label26);
+            this.tabPage1.Controls.Add(this.label27);
+            this.tabPage1.Controls.Add(this.PriceOUTEURTB);
+            this.tabPage1.Controls.Add(this.PriceOUTKNTB);
             this.tabPage1.Controls.Add(this.groupBox2);
             this.tabPage1.Controls.Add(this.label23);
             this.tabPage1.Controls.Add(this.label24);
@@ -724,7 +731,6 @@
             this.tabPage1.Controls.Add(this.PartNameCB);
             this.tabPage1.Controls.Add(this.WorkTimeTB);
             this.tabPage1.Controls.Add(this.PriceTB);
-            this.tabPage1.Controls.Add(this.OfferCB);
             this.tabPage1.Controls.Add(this.monthCalendar1);
             this.tabPage1.Controls.Add(this.CustomerCB);
             this.tabPage1.Controls.Add(this.label12);
@@ -770,7 +776,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 156);
+            this.label2.Location = new System.Drawing.Point(3, 135);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 20);
             this.label2.TabIndex = 11;
@@ -779,7 +785,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 112);
+            this.label1.Location = new System.Drawing.Point(3, 91);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 20);
             this.label1.TabIndex = 10;
@@ -795,15 +801,6 @@
             this.QuantityTB.MouseClick += new System.Windows.Forms.MouseEventHandler(this.QuantityTB_MouseClick);
             this.QuantityTB.TextChanged += new System.EventHandler(this.QuantityTB_TextChanged);
             this.QuantityTB.Enter += new System.EventHandler(this.QuantityTB_Enter);
-            // 
-            // OfferCB
-            // 
-            this.OfferCB.FormattingEnabled = true;
-            this.OfferCB.Location = new System.Drawing.Point(7, 62);
-            this.OfferCB.Name = "OfferCB";
-            this.OfferCB.Size = new System.Drawing.Size(230, 28);
-            this.OfferCB.TabIndex = 2;
-            this.OfferCB.Text = "Offer";
             // 
             // monthCalendar1
             // 
@@ -874,6 +871,46 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 168;
             this.pictureBox1.TabStop = false;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(370, 175);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(110, 20);
+            this.label26.TabIndex = 191;
+            this.label26.Text = "Price out EUR";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(260, 174);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(96, 20);
+            this.label27.TabIndex = 190;
+            this.label27.Text = "Price out KN";
+            // 
+            // PriceOUTEURTB
+            // 
+            this.PriceOUTEURTB.BackColor = System.Drawing.Color.Moccasin;
+            this.PriceOUTEURTB.Location = new System.Drawing.Point(374, 188);
+            this.PriceOUTEURTB.Name = "PriceOUTEURTB";
+            this.PriceOUTEURTB.ReadOnly = true;
+            this.PriceOUTEURTB.Size = new System.Drawing.Size(90, 26);
+            this.PriceOUTEURTB.TabIndex = 189;
+            this.PriceOUTEURTB.TabStop = false;
+            this.PriceOUTEURTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // PriceOUTKNTB
+            // 
+            this.PriceOUTKNTB.BackColor = System.Drawing.Color.Moccasin;
+            this.PriceOUTKNTB.Location = new System.Drawing.Point(265, 188);
+            this.PriceOUTKNTB.Name = "PriceOUTKNTB";
+            this.PriceOUTKNTB.ReadOnly = true;
+            this.PriceOUTKNTB.Size = new System.Drawing.Size(90, 26);
+            this.PriceOUTKNTB.TabIndex = 188;
+            this.PriceOUTKNTB.TabStop = false;
+            this.PriceOUTKNTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Ponuda
             // 
@@ -959,7 +996,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox QuantityTB;
-        private System.Windows.Forms.ComboBox OfferCB;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.ComboBox CustomerCB;
         private System.Windows.Forms.Label label12;
@@ -967,5 +1003,9 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.TextBox PriceOUTEURTB;
+        private System.Windows.Forms.TextBox PriceOUTKNTB;
     }
 }

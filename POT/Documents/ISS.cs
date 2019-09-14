@@ -1410,7 +1410,6 @@ namespace POT.Documents
 
         private void PartSelectorCb_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Program.LoadStart();
 
             selectPart = (ComboBox)sender;
 
@@ -1425,6 +1424,8 @@ namespace POT.Documents
 
             try
             {
+                Program.LoadStart();
+
                 CleanMe(null);
                 listView1.Clear();
 
@@ -1449,13 +1450,40 @@ namespace POT.Documents
                 String splitMe = PartSelectorCb.SelectedItem.ToString();
                 var partData = splitMe.Split('#');
                 long issID = qc.GetISSidByPartID( long.Parse(partData[0].Trim()) );
+
+                if (issID == 0)
+                {
+                    Part tmpPart = new Part();
+                    tmpPart = qc.SearchPartsInAllTablesBYPartID(long.Parse(partData[0]))[0];
+
+
+                    if (selectPart.SelectedIndex < 0)
+                    {
+                        return;
+                    }
+                    else
+                    {
+                        ISSIDlb.Text = "0";
+                        PartCb.Text = tmpPart.CodePartFull.ToString();
+
+                        if (PartCb.SelectedIndex >= 0)
+                            NameTb.Text = Decoder.ConnectCodeName(sifrarnikArr, tmpPart.PartialCode);
+
+                        SNTb.Text = tmpPart.SN;
+                        CNTb.Text = tmpPart.CN;
+                        DateInTb.Text = tmpPart.DateIn;
+                        DateSentTb.Text = tmpPart.DateSend;
+                        IDTb.Text = tmpPart.PartID.ToString();
+                        mainPart = tmpPart;
+                    }
+                }
+
                 ISSIDlb.Text = issID.ToString();
 
                 IISIDforThread = issID;
                 Thread myThread = new Thread(bckpISSPartsFill);
                 myThread.Start();
 
-                Part mainPr = new Part();
                 List<String> allISSInfo = new List<String>();
 
                 ISSid = issID;
@@ -1463,7 +1491,13 @@ namespace POT.Documents
                 allISSInfo = qc.GetAllISSInfoById(issID);
 
                 if (allISSInfo[0].Equals("nok"))
+                {
+                    data = cmpCust.Name + ", " + cmpM.Name + ", " + "Sifrarnik arr cnt " + sifrarnikArr.Count + ", " + mainPart.CodePartFull + ", " + "listIssParts cnt " + listIssParts.Count + ", " + ISSid.ToString() + ", " + Properties.strings.ServiceReport + ", " + Properties.strings.customer + ", false";
+                    Result = "No ISS part selected " + partData[0];
+                    AppendTextBox(Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + Result);
+                    lw.LogMe(function, usedQC, data, Result);
                     return;
+                }
 
                 totalTime = allISSInfo[6] + ":00";
 
@@ -1552,7 +1586,7 @@ namespace POT.Documents
                 rb = listView1.Items.Count + 1;
 
                 data = cmpCust.Name + ", " + cmpM.Name + ", " + "Sifrarnik arr cnt " + sifrarnikArr.Count + ", " + mainPart.CodePartFull + ", " + "listIssParts cnt " + listIssParts.Count + ", " + ISSid.ToString() + ", " + Properties.strings.ServiceReport + ", " + Properties.strings.customer + ", false";
-                Result = "ISS selected " + ISSid;
+                Result = "ISS part selected " + partData[0];
                 AppendTextBox(Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + Result);
                 lw.LogMe(function, usedQC, data, Result);
 
@@ -1564,9 +1598,11 @@ namespace POT.Documents
                 Result = e1.Message;
                 lw.LogMe(function, usedQC, data, Result);
 
-                Program.LoadStop();
-
                 MessageBox.Show(Result, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            finally
+            {
+                Program.LoadStop();
             }
         }
     }
