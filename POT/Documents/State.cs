@@ -247,6 +247,7 @@ namespace POT
                 finally
                 {
                     Program.LoadStop();
+                    this.Focus();
                 }
             }
         }
@@ -370,6 +371,7 @@ namespace POT
             catch (Exception e1)
             {
                 Program.LoadStop();
+                this.Focus();
 
                 new LogWriter(e1);
                 MessageBox.Show(e1.Message);
@@ -378,6 +380,7 @@ namespace POT
             }
 
             Program.LoadStop();
+            this.Focus();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -428,6 +431,7 @@ namespace POT
             catch (Exception e1)
             {
                 Program.LoadStop();
+                this.Focus();
 
                 new LogWriter(e1);
                 MessageBox.Show(e1.Message);
@@ -435,6 +439,7 @@ namespace POT
             finally
             {
                 Program.LoadStop();
+                this.Focus();
             }
         }
 

@@ -106,9 +106,12 @@ namespace POT
             catch (Exception e1)
             {
                 Program.LoadStop();
+                this.Focus(); 
+
                 new LogWriter(e1);
             }
             Program.LoadStop();
+            this.Focus();
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)

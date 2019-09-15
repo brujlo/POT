@@ -177,6 +177,7 @@ namespace POT.Documents
             STARTbt_Click(sender, e);
 
             Program.LoadStop();
+            this.Focus();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -1082,6 +1083,7 @@ namespace POT.Documents
                 lw.LogMe(function, usedQC, data, Result);
 
                 Program.LoadStop();
+                this.Focus();
             }
             catch(Exception e1)
             {
@@ -1090,6 +1092,7 @@ namespace POT.Documents
                 lw.LogMe(function, usedQC, data, Result);
 
                 Program.LoadStop();
+                this.Focus();
 
                 MessageBox.Show(Result, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
@@ -1591,6 +1594,7 @@ namespace POT.Documents
                 lw.LogMe(function, usedQC, data, Result);
 
                 Program.LoadStop();
+                this.Focus();
             }
             catch (Exception e1)
             {
@@ -1603,6 +1607,7 @@ namespace POT.Documents
             finally
             {
                 Program.LoadStop();
+                this.Focus();
             }
         }
     }

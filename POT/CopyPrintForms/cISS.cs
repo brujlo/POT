@@ -138,6 +138,7 @@ namespace POT.CopyPrintForms
             }
 
             Program.LoadStop();
+            this.Focus();
         }
 
         private void listView1_DoubleClick(object sender, EventArgs e)

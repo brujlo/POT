@@ -104,7 +104,9 @@ namespace POT.CopyPrintForms
                 }
 
             }
+
             Program.LoadStop();
+            this.Focus();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

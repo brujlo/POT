@@ -355,6 +355,33 @@ namespace POT
             return arr;
         }
 
+        public List<String> GetTableColumnNames(String tableName)
+        {
+            List<String> arr = new List<string>();
+
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = '" + tableName + "'";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                do
+                {
+                    arr.Add(dataReader.GetString(0));
+                } while (dataReader.Read());
+            }
+            else
+            {
+                arr.Add("nok");
+            }
+            dataReader.Close();
+            cnn.Close();
+            return arr;
+        }
+
         public PartSifrarnik PartInfoByFullCodeSifrarnik(long mFullCode)
         {
             PartSifrarnik tempPart = new PartSifrarnik();
@@ -467,6 +494,60 @@ namespace POT
                 //SqlConnection cnn = cn.Connect(Uname, Pass);
                 cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
                 query = "Select * from Sifrarnik order by FullName asc";
+                command = new SqlCommand(query, cnn);
+                command.ExecuteNonQuery();
+
+                using (SqlDataReader dataReader = command.ExecuteReader())
+                {
+                    dataReader.Read();
+
+                    if (dataReader.HasRows)
+                    {
+                        do
+                        {
+                            PartSifrarnik tempPart = new PartSifrarnik();
+
+                            tempPart.CategoryCode = long.Parse(dataReader["CategoryCode"].ToString());
+                            tempPart.CategoryName = dataReader["CategoryName"].ToString();
+                            tempPart.PartCode = long.Parse(dataReader["PartCode"].ToString());
+                            tempPart.PartName = dataReader["PartName"].ToString();
+                            tempPart.SubPartCode = long.Parse(dataReader["SubPartCode"].ToString());
+                            tempPart.SubPartName = dataReader["SubPartName"].ToString();
+                            tempPart.PartNumber = dataReader["PartNumber"].ToString();
+                            tempPart.PriceInKn = decimal.Parse(dataReader["PriceInKn"].ToString());
+                            tempPart.PriceOutKn = decimal.Parse(dataReader["PriceOutKn"].ToString());
+                            tempPart.PriceInEur = decimal.Parse(dataReader["PriceInEur"].ToString());
+                            tempPart.PriceOutEur = decimal.Parse(dataReader["PriceOutEur"].ToString());
+                            tempPart.FullCode = long.Parse(dataReader["FullCode"].ToString());
+                            tempPart.FullName = dataReader["FullName"].ToString();
+                            tempPart.Packing = dataReader["Packing"].ToString();
+                            prs.Add(tempPart);
+                        } while (dataReader.Read());
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                //new LogWriter(e1);
+                throw;
+            }
+            finally
+            {
+                if (cnn.State.ToString().Equals("Open"))
+                    cnn.Close();
+            }
+            return prs;
+        }
+
+        public List<PartSifrarnik> GetPartsAllSifrarnikSortByFullCode()
+        {
+            List<PartSifrarnik> prs = new List<PartSifrarnik>();
+
+            try
+            {
+                //SqlConnection cnn = cn.Connect(Uname, Pass);
+                cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+                query = "Select * from Sifrarnik order by FullCode asc";
                 command = new SqlCommand(query, cnn);
                 command.ExecuteNonQuery();
 
@@ -856,6 +937,45 @@ namespace POT
                     dataReader.Read();
                 }
             }
+
+            if (dataReader.HasRows)
+            {
+                do
+                {
+                    Part tempPart = new Part();
+
+                    tempPart.PartID = long.Parse(dataReader["PartID"].ToString());
+                    tempPart.CodePartFull = long.Parse(dataReader["CodePartFull"].ToString());
+                    tempPart.PartialCode = long.Parse(dataReader["PartialCode"].ToString());
+                    tempPart.SN = dataReader["SN"].ToString();
+                    tempPart.CN = dataReader["CN"].ToString();
+                    tempPart.DateIn = dataReader["DateIn"].ToString();
+                    tempPart.DateOut = dataReader["DateOut"].ToString();
+                    tempPart.DateSend = dataReader["DateSend"].ToString();
+                    tempPart.StorageID = long.Parse(dataReader["StorageID"].ToString());
+                    tempPart.State = dataReader["State"].ToString();
+                    tempPart.CompanyO = dataReader["CompanyO"].ToString();
+                    tempPart.CompanyC = dataReader["CompanyC"].ToString();
+
+                    arr.Add(tempPart);
+                } while (dataReader.Read());
+            }
+
+            dataReader.Close();
+            cnn.Close();
+            return arr;
+        }
+
+        public List<Part> GetAllParts()
+        {
+            List<Part> arr = new List<Part>();
+
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "Select * from Parts";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
 
             if (dataReader.HasRows)
             {

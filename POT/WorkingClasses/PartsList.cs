@@ -72,6 +72,7 @@ namespace POT
             catch (Exception e1)
             {
                 Program.LoadStop();
+                this.Focus();
 
                 new LogWriter(e1);
                 MessageBox.Show(e1.Message);
@@ -84,6 +85,7 @@ namespace POT
             }
 
             Program.LoadStop();
+            this.Focus();
         }
 
         private void button1_Click(object sender, EventArgs e)

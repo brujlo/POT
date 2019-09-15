@@ -11669,3 +11669,2397 @@ Object name: 'MainFR'.
 
 - 14.09.19. 15:25 - App turned off
     *** BrunoBrckovic *** 
+
+- 15.09.19. 14:13 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 14:13 - App turned off
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 14:14 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 14:14 - App turned off
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 14:15
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'bruno'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+ClientConnectionId:24f2c996-0e71-4ae5-b378-47ac6035dd5c
+Error Number:18456,State:1,Class:14
+    - InnerEcp: 
+    - MessageEcp: Login failed for user 'bruno'.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    ***  *** 
+
+
+- 15.09.19. 14:15
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'bruno'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 27
+   at POT.QueryCommands.SetWorkingDBUser(String Uname, String Pass) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 115
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\StartForm.cs:line 78
+ClientConnectionId:24f2c996-0e71-4ae5-b378-47ac6035dd5c
+Error Number:18456,State:1,Class:14
+    - InnerEcp: 
+    - MessageEcp: Login failed for user 'bruno'.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 27
+   at POT.QueryCommands.SetWorkingDBUser(String Uname, String Pass) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 115
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\StartForm.cs:line 78
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    ***  *** 
+
+
+- 15.09.19. 14:16
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'bruno'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+ClientConnectionId:0aa78df9-118e-43ef-aa6b-28a60e1f8332
+Error Number:18456,State:1,Class:14
+    - InnerEcp: 
+    - MessageEcp: Login failed for user 'bruno'.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    ***  *** 
+
+
+- 15.09.19. 14:16
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'bruno'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 27
+   at POT.QueryCommands.SetWorkingDBUser(String Uname, String Pass) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 115
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\StartForm.cs:line 78
+ClientConnectionId:0aa78df9-118e-43ef-aa6b-28a60e1f8332
+Error Number:18456,State:1,Class:14
+    - InnerEcp: 
+    - MessageEcp: Login failed for user 'bruno'.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 27
+   at POT.QueryCommands.SetWorkingDBUser(String Uname, String Pass) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 115
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\StartForm.cs:line 78
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    ***  *** 
+
+
+- 15.09.19. 14:18
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'bruno'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+ClientConnectionId:73c3cc97-4196-4e67-a4a0-ab4356155bb2
+Error Number:18456,State:1,Class:14
+    - InnerEcp: 
+    - MessageEcp: Login failed for user 'bruno'.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    ***  *** 
+
+
+- 15.09.19. 14:18
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'bruno'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 27
+   at POT.QueryCommands.SetWorkingDBUser(String Uname, String Pass) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 115
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\StartForm.cs:line 78
+ClientConnectionId:73c3cc97-4196-4e67-a4a0-ab4356155bb2
+Error Number:18456,State:1,Class:14
+    - InnerEcp: 
+    - MessageEcp: Login failed for user 'bruno'.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 27
+   at POT.QueryCommands.SetWorkingDBUser(String Uname, String Pass) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 115
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\StartForm.cs:line 78
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    ***  *** 
+
+
+- 15.09.19. 14:18
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'bruno'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+ClientConnectionId:09eb90e5-0268-4866-b216-f3b101690001
+Error Number:18456,State:1,Class:14
+    - InnerEcp: 
+    - MessageEcp: Login failed for user 'bruno'.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    ***  *** 
+
+
+- 15.09.19. 14:18
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'bruno'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 27
+   at POT.QueryCommands.SetWorkingDBUser(String Uname, String Pass) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 115
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\StartForm.cs:line 78
+ClientConnectionId:09eb90e5-0268-4866-b216-f3b101690001
+Error Number:18456,State:1,Class:14
+    - InnerEcp: 
+    - MessageEcp: Login failed for user 'bruno'.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 27
+   at POT.QueryCommands.SetWorkingDBUser(String Uname, String Pass) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 115
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\StartForm.cs:line 78
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    ***  *** 
+
+
+- 15.09.19. 14:19 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 14:19 - App turned off
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 14:19 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 14:19 - App turned off
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 14:19
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'bruno'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+ClientConnectionId:6ad586a8-bfe8-443c-9252-b9a063682bab
+Error Number:18456,State:1,Class:14
+    - InnerEcp: 
+    - MessageEcp: Login failed for user 'bruno'.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    ***  *** 
+
+
+- 15.09.19. 14:19
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'bruno'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 27
+   at POT.QueryCommands.SetWorkingDBUser(String Uname, String Pass) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 115
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\StartForm.cs:line 78
+ClientConnectionId:6ad586a8-bfe8-443c-9252-b9a063682bab
+Error Number:18456,State:1,Class:14
+    - InnerEcp: 
+    - MessageEcp: Login failed for user 'bruno'.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 27
+   at POT.QueryCommands.SetWorkingDBUser(String Uname, String Pass) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 115
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\StartForm.cs:line 78
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    ***  *** 
+
+
+- 15.09.19. 14:20
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'bruno'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+ClientConnectionId:c58e19a8-a3e1-49f9-a0d0-95834bc36f24
+Error Number:18456,State:1,Class:14
+    - InnerEcp: 
+    - MessageEcp: Login failed for user 'bruno'.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    ***  *** 
+
+
+- 15.09.19. 14:20
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'bruno'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 27
+   at POT.QueryCommands.SetWorkingDBUser(String Uname, String Pass) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 115
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\StartForm.cs:line 78
+ClientConnectionId:c58e19a8-a3e1-49f9-a0d0-95834bc36f24
+Error Number:18456,State:1,Class:14
+    - InnerEcp: 
+    - MessageEcp: Login failed for user 'bruno'.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 27
+   at POT.QueryCommands.SetWorkingDBUser(String Uname, String Pass) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 115
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\StartForm.cs:line 78
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    ***  *** 
+
+
+- 15.09.19. 14:21
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'bruno'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+ClientConnectionId:d33aa397-88c2-46e3-8994-2492d1a0d2e9
+Error Number:18456,State:1,Class:14
+    - InnerEcp: 
+    - MessageEcp: Login failed for user 'bruno'.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    ***  *** 
+
+
+- 15.09.19. 14:21
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'bruno'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 27
+   at POT.QueryCommands.SetWorkingDBUser(String Uname, String Pass) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 115
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\StartForm.cs:line 78
+ClientConnectionId:d33aa397-88c2-46e3-8994-2492d1a0d2e9
+Error Number:18456,State:1,Class:14
+    - InnerEcp: 
+    - MessageEcp: Login failed for user 'bruno'.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 27
+   at POT.QueryCommands.SetWorkingDBUser(String Uname, String Pass) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 115
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\StartForm.cs:line 78
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    ***  *** 
+
+
+- 15.09.19. 14:21 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 14:21 - App turned off
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 14:21
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'bruno'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+ClientConnectionId:15183b7c-44ca-40bf-8765-1375f0b4b889
+Error Number:18456,State:1,Class:14
+    - InnerEcp: 
+    - MessageEcp: Login failed for user 'bruno'.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    ***  *** 
+
+
+- 15.09.19. 14:21
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'bruno'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 27
+   at POT.QueryCommands.SetWorkingDBUser(String Uname, String Pass) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 115
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\StartForm.cs:line 78
+ClientConnectionId:15183b7c-44ca-40bf-8765-1375f0b4b889
+Error Number:18456,State:1,Class:14
+    - InnerEcp: 
+    - MessageEcp: Login failed for user 'bruno'.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 27
+   at POT.QueryCommands.SetWorkingDBUser(String Uname, String Pass) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 115
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\StartForm.cs:line 78
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    ***  *** 
+
+
+- 15.09.19. 14:21
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'bruno'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+ClientConnectionId:bb6d4cc6-cf60-46dc-b58b-673654c67178
+Error Number:18456,State:1,Class:14
+    - InnerEcp: 
+    - MessageEcp: Login failed for user 'bruno'.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    ***  *** 
+
+
+- 15.09.19. 14:21
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'bruno'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 27
+   at POT.QueryCommands.SetWorkingDBUser(String Uname, String Pass) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 115
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\StartForm.cs:line 78
+ClientConnectionId:bb6d4cc6-cf60-46dc-b58b-673654c67178
+Error Number:18456,State:1,Class:14
+    - InnerEcp: 
+    - MessageEcp: Login failed for user 'bruno'.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 27
+   at POT.QueryCommands.SetWorkingDBUser(String Uname, String Pass) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 115
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\StartForm.cs:line 78
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    ***  *** 
+
+
+- 15.09.19. 14:22
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'bruno'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+ClientConnectionId:3a57958b-c0d9-4896-9a25-8cd1169f88c9
+Error Number:18456,State:1,Class:14
+    - InnerEcp: 
+    - MessageEcp: Login failed for user 'bruno'.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    ***  *** 
+
+
+- 15.09.19. 14:22
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'bruno'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 27
+   at POT.QueryCommands.SetWorkingDBUser(String Uname, String Pass) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 115
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\StartForm.cs:line 78
+ClientConnectionId:3a57958b-c0d9-4896-9a25-8cd1169f88c9
+Error Number:18456,State:1,Class:14
+    - InnerEcp: 
+    - MessageEcp: Login failed for user 'bruno'.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 27
+   at POT.QueryCommands.SetWorkingDBUser(String Uname, String Pass) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 115
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\StartForm.cs:line 78
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    ***  *** 
+
+
+- 15.09.19. 14:26 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 14:26 - App turned off
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 14:27 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 14:27 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 14:27 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 14:27 - App turned off
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 14:27 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 14:27 - App turned off
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 14:27 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 14:27 - App turned off
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 14:28 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 14:38 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 14:42 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 14:51 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 14:52 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 14:54 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 14:57 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 14:57 - App turned off
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 14:59 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 15:10 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 15:11 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 15:13 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 15:15 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 15:24 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 15:25 - App turned off
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 15:32 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 15:34 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 15:36 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 15:39 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 15:41 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 15:42 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 15:43 - App turned off
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 16:39 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 16:40 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 16:47 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 16:48 - App turned off
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 16:48 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 16:50 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 16:51 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 16:52 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 17:08 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 17:08 - App turned off
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 17:09 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 17:11 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 17:12 - App turned off
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 17:15 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 18:06 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 18:29 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 18:44 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 18:55 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 19:05 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 19:21 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 19:21
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.WorkingClasses.PartEditor.selectValue(String what, String value) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 257
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 189
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.WorkingClasses.PartEditor.selectValue(String what, String value) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 257
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 189
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 19:23 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 19:24
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 189
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 189
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 19:24 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 19:25 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 19:25
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: sifranovi; sifrastari; ; 707013002000; 707013002000; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 19:32 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 19:33
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 707013002000; 12X0144; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 19:33
+    - BaseEcp: System.ArgumentOutOfRangeException: InvalidArgument=Value of '-1' is not valid for 'index'.
+Parameter name: index
+   at System.Windows.Forms.ListView.EnsureVisible(Int32 index)
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 228
+    - InnerEcp: 
+    - MessageEcp: InvalidArgument=Value of '-1' is not valid for 'index'.
+Parameter name: index
+    - SourceEcp: System.Windows.Forms
+    - StackTrqceEcp:    at System.Windows.Forms.ListView.EnsureVisible(Int32 index)
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 228
+    - TypeNameEcp: System.ArgumentOutOfRangeException
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 19:33
+    - BaseEcp: System.ArgumentOutOfRangeException: InvalidArgument=Value of '-1' is not valid for 'index'.
+Parameter name: index
+   at System.Windows.Forms.ListView.EnsureVisible(Int32 index)
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 228
+    - InnerEcp: 
+    - MessageEcp: InvalidArgument=Value of '-1' is not valid for 'index'.
+Parameter name: index
+    - SourceEcp: System.Windows.Forms
+    - StackTrqceEcp:    at System.Windows.Forms.ListView.EnsureVisible(Int32 index)
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 228
+    - TypeNameEcp: System.ArgumentOutOfRangeException
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 19:33
+    - BaseEcp: System.ArgumentOutOfRangeException: InvalidArgument=Value of '-1' is not valid for 'index'.
+Parameter name: index
+   at System.Windows.Forms.ListView.EnsureVisible(Int32 index)
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 228
+    - InnerEcp: 
+    - MessageEcp: InvalidArgument=Value of '-1' is not valid for 'index'.
+Parameter name: index
+    - SourceEcp: System.Windows.Forms
+    - StackTrqceEcp:    at System.Windows.Forms.ListView.EnsureVisible(Int32 index)
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 228
+    - TypeNameEcp: System.ArgumentOutOfRangeException
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 19:34
+    - BaseEcp: System.ArgumentOutOfRangeException: InvalidArgument=Value of '-1' is not valid for 'index'.
+Parameter name: index
+   at System.Windows.Forms.ListView.EnsureVisible(Int32 index)
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 228
+    - InnerEcp: 
+    - MessageEcp: InvalidArgument=Value of '-1' is not valid for 'index'.
+Parameter name: index
+    - SourceEcp: System.Windows.Forms
+    - StackTrqceEcp:    at System.Windows.Forms.ListView.EnsureVisible(Int32 index)
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 228
+    - TypeNameEcp: System.ArgumentOutOfRangeException
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 19:34
+    - BaseEcp: System.ArgumentOutOfRangeException: InvalidArgument=Value of '0' is not valid for 'index'.
+Parameter name: index
+   at System.Windows.Forms.ListView.EnsureVisible(Int32 index)
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: InvalidArgument=Value of '0' is not valid for 'index'.
+Parameter name: index
+    - SourceEcp: System.Windows.Forms
+    - StackTrqceEcp:    at System.Windows.Forms.ListView.EnsureVisible(Int32 index)
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.ArgumentOutOfRangeException
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 19:35
+    - BaseEcp: System.ArgumentOutOfRangeException: InvalidArgument=Value of '0' is not valid for 'index'.
+Parameter name: index
+   at System.Windows.Forms.ListView.EnsureVisible(Int32 index)
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: InvalidArgument=Value of '0' is not valid for 'index'.
+Parameter name: index
+    - SourceEcp: System.Windows.Forms
+    - StackTrqceEcp:    at System.Windows.Forms.ListView.EnsureVisible(Int32 index)
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.ArgumentOutOfRangeException
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 19:36
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 707013002003; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 19:36
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 707013002003; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 19:36
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 707013002003; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 19:37
+    - BaseEcp: System.ArgumentOutOfRangeException: InvalidArgument=Value of '1' is not valid for 'index'.
+Parameter name: index
+   at System.Windows.Forms.ListView.EnsureVisible(Int32 index)
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: InvalidArgument=Value of '1' is not valid for 'index'.
+Parameter name: index
+    - SourceEcp: System.Windows.Forms
+    - StackTrqceEcp:    at System.Windows.Forms.ListView.EnsureVisible(Int32 index)
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.ArgumentOutOfRangeException
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 19:37
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 707013002003; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 19:38
+    - BaseEcp: System.ArgumentOutOfRangeException: InvalidArgument=Value of '1' is not valid for 'index'.
+Parameter name: index
+   at System.Windows.Forms.ListView.EnsureVisible(Int32 index)
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: InvalidArgument=Value of '1' is not valid for 'index'.
+Parameter name: index
+    - SourceEcp: System.Windows.Forms
+    - StackTrqceEcp:    at System.Windows.Forms.ListView.EnsureVisible(Int32 index)
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.ArgumentOutOfRangeException
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 19:39
+    - BaseEcp: System.ArgumentOutOfRangeException: InvalidArgument=Value of '1' is not valid for 'index'.
+Parameter name: index
+   at System.Windows.Forms.ListView.EnsureVisible(Int32 index)
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: InvalidArgument=Value of '1' is not valid for 'index'.
+Parameter name: index
+    - SourceEcp: System.Windows.Forms
+    - StackTrqceEcp:    at System.Windows.Forms.ListView.EnsureVisible(Int32 index)
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.ArgumentOutOfRangeException
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 19:39
+    - BaseEcp: System.ArgumentOutOfRangeException: InvalidArgument=Value of '1' is not valid for 'index'.
+Parameter name: index
+   at System.Windows.Forms.ListView.EnsureVisible(Int32 index)
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: InvalidArgument=Value of '1' is not valid for 'index'.
+Parameter name: index
+    - SourceEcp: System.Windows.Forms
+    - StackTrqceEcp:    at System.Windows.Forms.ListView.EnsureVisible(Int32 index)
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.ArgumentOutOfRangeException
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 19:39
+    - BaseEcp: System.ArgumentOutOfRangeException: InvalidArgument=Value of '1' is not valid for 'index'.
+Parameter name: index
+   at System.Windows.Forms.ListView.EnsureVisible(Int32 index)
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: InvalidArgument=Value of '1' is not valid for 'index'.
+Parameter name: index
+    - SourceEcp: System.Windows.Forms
+    - StackTrqceEcp:    at System.Windows.Forms.ListView.EnsureVisible(Int32 index)
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.ArgumentOutOfRangeException
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 19:40
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 707013002000; 12X0144; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 19:40
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 101013002030; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 19:41
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 707013002000; 12X0144; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 19:41
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 707013002000; 12X0151; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 19:41
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 707013002001; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 19:41
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 707013002003; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 19:41
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 707013002003; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 19:42
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 707013002003; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 19:42
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 707013002000; 12X0197; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 19:44 - App turned off
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 19:57 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 19:58 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 20:03 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 20:03
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 707013002000; 12X0144; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 20:03
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 707013002000; 12X0144; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 20:03
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 707013002000; 12X0151; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 20:03
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 707013002001; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 20:04
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 707013002003; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 20:04
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 707013002003; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 20:04
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 707013002003; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 20:04
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 707013002001; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 20:04
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 707013002003; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 20:04
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 707013002030; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 20:04
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 707013002000; 12X0197; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 20:04
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 707013002000; 12X0197; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 20:06 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 20:07 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 20:09 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 20:10 - App turned off
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 20:11 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 20:11
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 201
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 201
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 20:12 - App turned off
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 20:15 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 20:16
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 707013002000; 12X0076; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 20:17
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: SifraNovi; ; ; 707013002000; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 20:17
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: SifraNovi; gNg; ; 707013002000; g; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 20:17
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: SifraNovi; gNg; SNNovi; 707013002000; g; 12X0076
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 20:18
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: SifraNovi; SNNovi; ; 707013002000; 1810256; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 20:19 - App turned off
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 20:20 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 20:20 - App turned off
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 21:02 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 21:02
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 707013002000; 12X0197; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 21:11 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 21:11
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 707013002000; 12X0197; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 21:12
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 101013002030; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 21:12
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 101013002030; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 21:12
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 101013002030; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 21:12
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 707013002003; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 21:12
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 707013002003; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 21:12
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 707013002003; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 21:12
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 707013002003; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 21:12
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 707013002003; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 21:13
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 707013002000; 12X0144; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 21:13
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 707013002000; 12X0151; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 21:13
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 707013002003; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 21:13
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: SNNovi; ; ; 1851286; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 21:14
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: SNNovi; ; ; 1851286; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 21:14
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: SNNovi; ; ; 1851286; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 21:14
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: SNNovi; ; ; 1851286; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 21:15
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: SNNovi; ; ; 1851286; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 21:15
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: SNNovi; ; ; 1851286; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 21:15
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: SNNovi; ; ; 1851286; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 21:15
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: SNNovi; ; ; 1851286; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 21:15
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: SNNovi; ; ; 1851286; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 21:15
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: SNNovi; ; ; 12X0138; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 21:16
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: SNNovi; SNStari; ; 12X0138; 12X0138; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 21:17 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 21:17 - App turned off
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 21:19 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 21:19
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 707013002003; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 21:19
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 707013002001; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 21:20 - App turned off
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 21:26 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 21:26
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 101013002030; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 21:27
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 5, 190011, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190011
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 21:27
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: CMP
+     - Data: 129
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 21:27
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 4, 190036, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190036
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 21:27
+    - LOGED change: POT.CopyPrintForms.cISS - listView1_DoubleClick
+     - Used: OTP Selected
+     - Data: 
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 21:27
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 4, 190031, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190031
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 21:27
+    - LOGED change: POT.CopyPrintForms.cISS - listView1_DoubleClick
+     - Used: OTP Selected
+     - Data: 
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 21:27
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: DATE
+     - Data: 13.07.19.
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 21:27
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 4, 190034, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190034
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 21:27
+    - LOGED change: POT.CopyPrintForms.cISS - listView1_DoubleClick
+     - Used: OTP Selected
+     - Data: 
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 21:27
+    - LOGED change: POT.CopyPrintForms.cOTPcs - getOTPList
+     - Used: ID
+     - Data: 19002
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 21:27
+    - LOGED change: POT.CopyPrintForms.cOTPcs - listView1_DoubleClick
+     - Used: OTP Selected
+     - Data: 707013002000, 12X0107, 1013756
+             707013002000, 1690262, 1013865
+             707013002000, 12X0200, 1013828
+             707013002000, 1280148, 1013698
+             707013002000, 12X0087, 1013767
+             707013002000, 12X0042, 1013702
+             707013002000, 12X0205, 1013639
+             707013002000, 12X0103, 1013772
+             707013002000, 12X0169, 1013650
+             707013002000, 12X0212, 1013656
+             707013002000, 1270249, 1013774
+             707013002000, 12X0062, 1013855
+             707013002000, 12X0211, 1013657
+             707013002000, 12X0180, 1013813
+             707013002000, 12X0213, 1013611
+             707013002000, 12X0057, 1013794
+             707013002000, 1690255, 1021929
+             707013002000, 1690212, 1022487
+             707013002000, 1270248, 1013846
+             707013002000, 1690283, 1021255
+             707013002000, 12X0143, 1021263
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 21:27
+    - LOGED change: POT.CopyPrintForms.cOTPcs - getOTPList
+     - Used: CMP
+     - Data: 129
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 21:27
+    - LOGED change: POT.CopyPrintForms.cOTPcs - listView1_DoubleClick
+     - Used: OTP Selected
+     - Data: 707013002000, 1810152, 1025075
+             707013002000, 1280146, 1013790
+             707013002000, 1690253, 1021889
+             707013002000, 13Y0283, 1013873
+             707013002000, 1390184, 1013677
+             707013002000, 1810256, 1025789
+             707013002000, 12X0175, 1013748
+             707013002000, 12X0052, 1013628
+             707013002000, 12X0138, 1013798
+             707013002000, 12X0171, 1013707
+             707013002000, 12X0037, 1013724
+             707013002000, 12X0066, 1013775
+             707013002000, 12X0035, 1013829
+             707013002000, 12X0209, 1013642
+             707013002000, 1851286, 
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 21:28 - App turned off
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 21:31 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 21:31 - App turned off
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 21:38 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 21:40 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 21:41 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 21:41 - App turned off
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 21:43 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 21:44 - App turned off
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 22:06 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 22:06
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: DatumUpisa; ; ; 01.02.19.; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 22:07 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 22:08
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.WorkingClasses.PartEditor.selectValue(String what, String value) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 293
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 195
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.WorkingClasses.PartEditor.selectValue(String what, String value) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 293
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 195
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 22:08
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.WorkingClasses.PartEditor.selectValue(String what, String value)
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.WorkingClasses.PartEditor.selectValue(String what, String value)
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 22:09
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: DatumUpisa; ; ; 15.09.19.; 04.09.19.; 13.02.19.
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 22:10 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 22:11
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: NazivNovi; SNStari; DatumUpisa; ; ; 15.09.19.
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 22:11 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 22:12
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.WorkingClasses.PartEditor.selectValue(String what, String value) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 298
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 197
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.WorkingClasses.PartEditor.selectValue(String what, String value) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 298
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 197
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 22:12
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.WorkingClasses.PartEditor.selectValue(String what, String value) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 298
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 197
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.WorkingClasses.PartEditor.selectValue(String what, String value) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 298
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 197
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 22:12
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.WorkingClasses.PartEditor.selectValue(String what, String value) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 298
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 197
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.WorkingClasses.PartEditor.selectValue(String what, String value) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 298
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 197
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 22:13
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.WorkingClasses.PartEditor.selectValue(String what, String value) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 298
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 197
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.WorkingClasses.PartEditor.selectValue(String what, String value) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 298
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 197
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 22:13
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.WorkingClasses.PartEditor.selectValue(String what, String value) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 298
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 197
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.WorkingClasses.PartEditor.selectValue(String what, String value) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 298
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 197
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 22:14
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.WorkingClasses.PartEditor.selectValue(String what, String value)
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.WorkingClasses.PartEditor.selectValue(String what, String value)
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 22:14
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.WorkingClasses.PartEditor.selectValue(String what, String value)
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.WorkingClasses.PartEditor.selectValue(String what, String value)
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 22:14
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.WorkingClasses.PartEditor.selectValue(String what, String value)
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.WorkingClasses.PartEditor.selectValue(String what, String value)
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 22:18
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.MyTypes.PovijestLog.PretraziPL(String byWhat1, String byWhat2, String byWhat3, Object value1, Object value2, Object value3, String AndOr, Boolean selection)
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.MyTypes.PovijestLog.PretraziPL(String byWhat1, String byWhat2, String byWhat3, Object value1, Object value2, Object value3, String AndOr, Boolean selection)
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 22:18
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.MyTypes.PovijestLog.PretraziPL(String byWhat1, String byWhat2, String byWhat3, Object value1, Object value2, Object value3, String AndOr, Boolean selection)
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.MyTypes.PovijestLog.PretraziPL(String byWhat1, String byWhat2, String byWhat3, Object value1, Object value2, Object value3, String AndOr, Boolean selection)
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 22:19 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 22:19
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: 
+     - Result: 
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 22:19
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 215
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 215
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 22:20
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: 
+     - Result: 
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 22:20
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 215
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 215
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 22:20
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: 
+     - Result: 
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 22:20
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 215
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 215
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 22:21
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: NazivNovi; DatumUpisa; DatumRada; ; 15.09.19.; 15.09.19.
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 22:24
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: NazivNovi; DatumUpisa; DatumRada; ; 15.09.19.; 15.09.19.; And
+     - Result: 
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 22:24
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.MyTypes.PovijestLog.PretraziPL(String byWhat1, String byWhat2, String byWhat3, Object value1, Object value2, Object value3, String AndOr, Boolean selection)
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.MyTypes.PovijestLog.PretraziPL(String byWhat1, String byWhat2, String byWhat3, Object value1, Object value2, Object value3, String AndOr, Boolean selection)
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 22:25
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: NazivNovi; DatumUpisa; DatumRada; null; 15.09.19.; 15.09.19.; And
+     - Result: 
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 22:25
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.MyTypes.PovijestLog.PretraziPL(String byWhat1, String byWhat2, String byWhat3, Object value1, Object value2, Object value3, String AndOr, Boolean selection)
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.MyTypes.PovijestLog.PretraziPL(String byWhat1, String byWhat2, String byWhat3, Object value1, Object value2, Object value3, String AndOr, Boolean selection)
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 22:25 - App turned off
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 22:26 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 22:26
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: DatumUpisa; ; ; 15.09.19.; null; null; And
+     - Result: 
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 22:26
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 287
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 287
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 22:26
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: DatumUpisa; ; ; 15.09.19.; null; null; And
+     - Result: 
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 22:26
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 287
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 287
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 22:26
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: DatumUpisa; ; ; 01.02.19.; null; null; And
+     - Result: 
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 22:26
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 287
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.WorkingClasses.PartEditor.PretraziBT_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 287
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 22:27
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: DatumUpisa; ; ; 01.02.19.; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 22:27
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: NazivNovi; DatumUpisa; DatumRada; ; 15.09.19.; 15.09.19.
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 22:35 - App started
+    *** BrunoBrckovic *** 
+
+- 15.09.19. 22:35
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: DatumUpisa; ; ; 01.02.19.; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 22:36
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: DatumUpisa; ; ; 01.02.19.; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 15.09.19. 22:36 - App turned off
+    *** BrunoBrckovic *** 

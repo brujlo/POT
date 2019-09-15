@@ -422,6 +422,8 @@ namespace POT
             catch (Exception e1)
             {
                 Program.LoadStop();
+                this.Focus();
+
                 new LogWriter(e1);
             }
         }
@@ -642,6 +644,8 @@ namespace POT
             catch (Exception e1)
             {
                 Program.LoadStop();
+                this.Focus();
+
                 new LogWriter(e1);
             }
         }
@@ -954,7 +958,10 @@ namespace POT
 
         private void linkLabel25_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            Program.LoadStart();
 
+            PartEditor p = new PartEditor();
+            p.Show();
         }
     }
 }

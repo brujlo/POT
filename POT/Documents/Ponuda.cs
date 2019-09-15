@@ -140,10 +140,13 @@ namespace POT.Documents
             }
             catch (Exception e1)
             {
-                Program.LoadStop();
                 new LogWriter(e1);
+
+                Program.LoadStop();
+                this.Focus();
             }
             Program.LoadStop();
+            this.Focus();
         }
 
         private void CancelBT_Click(object sender, EventArgs e)

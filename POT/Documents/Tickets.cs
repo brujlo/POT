@@ -47,10 +47,13 @@ namespace POT.Documents
             catch (Exception e1)
             {
                 Program.LoadStop();
+                this.Focus();
+
                 new LogWriter(e1);
             }
 
             Program.LoadStop();
+            this.Focus();
         }
 
         ///////////////////////////////////////////////////////////

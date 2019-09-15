@@ -178,7 +178,11 @@ namespace POT.Documents
                 Program.LoadStop();
                 new LogWriter(e1);
             }
-            Program.LoadStop();
+            finally
+            {
+                Program.LoadStop();
+                this.Focus();
+            }
         }
 
         private void CancelBT_Click(object sender, EventArgs e)
@@ -948,6 +952,7 @@ namespace POT.Documents
                 }
 
                 Program.LoadStop();
+                this.Focus();
             }
         }
 

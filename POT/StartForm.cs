@@ -98,9 +98,13 @@ namespace POT
                     {
                         if (this.checkBox1.Checked)
                         {
-                            Properties.Settings.Default.Remember = true;
-                            Properties.Settings.Default.Username = this.UsernameBX.Text;
-                            Properties.Settings.Default.Password = this.PasswordBX.Text;
+                            if (Properties.Settings.Default.AutoLogin == false)
+                            {
+                                Properties.Settings.Default.Remember = true;
+                                Properties.Settings.Default.Username = this.UsernameBX.Text;
+                                Properties.Settings.Default.Password = this.PasswordBX.Text;
+                            }
+
                             Properties.Settings.Default.AutoLogin = checkBox2.Checked ? true : false;
 
                             //Properties.Settings.Default.DefaultLogoName = "DefaultLogoPOT";
@@ -124,7 +128,9 @@ namespace POT
                                 Properties.Settings.Default.LanguageStt = "other";
                                 Properties.Settings.Default.Save();
                             }
-                            Properties.Settings.Default.Save();
+
+                            if (Properties.Settings.Default.AutoLogin == false)
+                                Properties.Settings.Default.Save();
                         }
 
                         loginCNt = 1;
