@@ -14063,3 +14063,36 @@ Parameter name: index
 
 - 15.09.19. 22:36 - App turned off
     *** BrunoBrckovic *** 
+
+- 16.09.19. 01:05 - App started
+    *** BrunoBrckovic *** 
+
+- 16.09.19. 01:13 - App started
+    *** BrunoBrckovic *** 
+
+- 16.09.19. 01:14
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 SA, Cover Open Sensor & Sub PCB, 13002040, 0,00, 01:00, 0, 1, 192,601642, 192,601642, 192,601642
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 16.09.19. 01:14
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 Auto Cutter ACS-541-1N, 13002001, 390,00, 01:00, 0, 5, 677,48, 3387,40, 3580,001642
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 16.09.19. 01:15
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 16.09.19. 01:23 - App turned off
+    *** BrunoBrckovic *** 

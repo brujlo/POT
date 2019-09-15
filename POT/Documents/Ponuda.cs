@@ -397,10 +397,17 @@ namespace POT.Documents
             //decimal cijena = decimal.Parse(CheckIfKNZero(tempSifPart));
             if (!remove)
             {
-                if(radioButtonHRV.Checked)
-                    cijena = tempSifPart.PriceOutKn;
+                decimal kn = tempSifPart.PriceOutKn;
+                decimal eur = tempSifPart.PriceOutEur;
+
+                if (radioButtonENG.Checked)
+                {
+                    cijena = eur > 0 ?  eur : kn / (decimal)ech;
+                }
                 else
-                    cijena = tempSifPart.PriceOutEur;
+                {
+                    cijena = kn > 0 ? kn : eur * (decimal)ech;
+                }
 
                 popust = invPrt.Rabat;
 
