@@ -1072,29 +1072,34 @@ namespace POT
 
         public List<String> SelectNameCodeFromSifrarnik(String Uname, String Pass)
         {
+            SqlCommand commandBT; //back thread
+            String queryBT;
+            ConnectionHelper cnBT = new ConnectionHelper();
+            SqlConnection cnnBT = new SqlConnection();
+
             List<String> arr = new List<string>();
             //SqlConnection cnn = cn.Connect(Uname, Pass);
-            cnn = cn.Connect(Uname, Pass);
-            query = "Select FullName, FullCode from Sifrarnik order by FullName asc";
-            command = new SqlCommand(query, cnn);
-            command.ExecuteNonQuery();
-            SqlDataReader dataReader = command.ExecuteReader();
-            dataReader.Read();
+            cnnBT = cnBT.Connect(Uname, Pass);
+            queryBT = "Select FullName, FullCode from Sifrarnik order by FullName asc";
+            commandBT = new SqlCommand(queryBT, cnnBT);
+            commandBT.ExecuteNonQuery();
+            SqlDataReader dataReaderBT = commandBT.ExecuteReader();
+            dataReaderBT.Read();
 
-            if (dataReader.HasRows)
+            if (dataReaderBT.HasRows)
             {
                 do
                 {
-                    arr.Add(dataReader["FullName"].ToString());
-                    arr.Add(dataReader["FullCode"].ToString());
-                } while (dataReader.Read());
+                    arr.Add(dataReaderBT["FullName"].ToString());
+                    arr.Add(dataReaderBT["FullCode"].ToString());
+                } while (dataReaderBT.Read());
             }
             else
             {
                 arr.Add("nok");
             }
-            dataReader.Close();
-            cnn.Close();
+            dataReaderBT.Close();
+            cnnBT.Close();
             return arr;
         }
 

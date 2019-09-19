@@ -14096,3 +14096,140 @@ Parameter name: index
 
 - 16.09.19. 01:23 - App turned off
     *** BrunoBrckovic *** 
+
+- 19.09.19. 08:54 - App started
+    *** BrunoBrckovic *** 
+
+- 19.09.19. 08:54
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: ID
+     - Data: 19072
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.09.19. 08:54
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 19072
+     - Result: Selected PRIM (19072) does not exist or do not have parts.
+    *** BrunoBrckovic *** 
+
+
+- 19.09.19. 08:54
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: CMP
+     - Data: 186
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.09.19. 08:54
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: DATE
+     - Data: 07.09.19.
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.09.19. 08:54
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 707013002000, 12X0141, 1013688
+             707013002000, 1270249, 1013774
+             707013002000, 13Y0325, 1013746
+             707013002000, 12X0203, 1013636
+             707013002000, 12X0056, 1013789
+             707013002000, 13Y0255, 1013614
+             707013002000, 13Y0315, 1013631
+             707013002000, 13Y0281, 1013694
+             707013002000, 12X0076, 1013770
+             707013002000, 12X0192, 1013812
+             707013002000, 12X0105, 1013859
+             707013002000, 12X0074, 1013786
+             707013002000, 12X0197, 1013834
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.09.19. 08:55
+    - LOGED change: POT.CopyPrintForms.cPRIM - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/011, , OTPREMNICA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 19.09.19. 08:55
+    - LOGED change: POT.CopyPrintForms.cPRIM - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/011, , OTPREMNICA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 19.09.19. 08:55
+    - LOGED change: POT.CopyPrintForms.cOTPcs - getOTPList
+     - Used: CMP
+     - Data: 143
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.09.19. 08:55
+    - LOGED change: POT.CopyPrintForms.cOTPcs - listView1_DoubleClick
+     - Used: OTP Selected
+     - Data: 101001002001, , 
+             101001002001, , 
+             101001002001, , 
+             101001002001, , 
+             101001002001, , 
+             101001002001, , 
+             101001002001, , 
+             101001002001, , 
+             101001002001, , 
+             101001002001, , 
+             101001002001, , 
+             101001002001, , 
+             101001002001, , 
+             101001002001, , 
+             101001002001, , 
+             101001002001, , 
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.09.19. 08:55
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: DATE
+     - Data: 16.07.19.
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.09.19. 08:55
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 918, 707013002000, listIssParts cnt 5, 190039, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190039
+    *** BrunoBrckovic *** 
+
+
+- 19.09.19. 08:55
+    - LOGED change: POT.CopyPrintForms.cISS - listView1_DoubleClick
+     - Used: OTP Selected
+     - Data: 
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.09.19. 08:56
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: NAME
+     - Data: 129
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.09.19. 08:56 - App turned off
+    *** BrunoBrckovic *** 
