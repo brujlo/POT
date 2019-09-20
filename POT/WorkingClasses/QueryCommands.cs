@@ -593,6 +593,175 @@ namespace POT
             return prs;
         }
 
+        public Dictionary<long, String> GetCategoryNamesAllSifrarnikSortByName()
+        {
+            Dictionary<long, String> prs = new Dictionary<long, String>();
+
+            try
+            {
+                //SqlConnection cnn = cn.Connect(Uname, Pass);
+                cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+                query = "Select DISTINCT CategoryCode, CategoryName from Sifrarnik ORDER BY CategoryName asc";
+                command = new SqlCommand(query, cnn);
+                command.ExecuteNonQuery();
+
+                using (SqlDataReader dataReader = command.ExecuteReader())
+                {
+                    dataReader.Read();
+
+                    if (dataReader.HasRows)
+                    {
+                        do
+                        {
+                            if ( !prs.ContainsKey(long.Parse(dataReader["CategoryCode"].ToString())) )
+                                prs.Add(long.Parse(dataReader["CategoryCode"].ToString()), dataReader["CategoryName"].ToString());
+                        } while (dataReader.Read());
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                //new LogWriter(e1);
+                throw;
+            }
+            finally
+            {
+                if (cnn.State.ToString().Equals("Open"))
+                    cnn.Close();
+            }
+            return prs;
+        }
+
+        public Dictionary<long, String> GetPartNamesAllSifrarnikSortByName(String mNaziv)
+        {
+            Dictionary<long, String> prs = new Dictionary<long, String>();
+
+            try
+            {
+                //SqlConnection cnn = cn.Connect(Uname, Pass);
+                cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+                query = "Select DISTINCT PartCode, PartName  from Sifrarnik where CategoryName = '" + mNaziv + "' ORDER BY PartName asc";
+                command = new SqlCommand(query, cnn);
+                command.ExecuteNonQuery();
+
+                using (SqlDataReader dataReader = command.ExecuteReader())
+                {
+                    dataReader.Read();
+
+                    if (dataReader.HasRows)
+                    {
+                        do
+                        {
+                            prs.Add(long.Parse(dataReader["PartCode"].ToString()), dataReader["PartName"].ToString());
+                        } while (dataReader.Read());
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                //new LogWriter(e1);
+                throw;
+            }
+            finally
+            {
+                if (cnn.State.ToString().Equals("Open"))
+                    cnn.Close();
+            }
+            return prs;
+        }
+
+        public Dictionary<long, String> GetSubPartNamesAllSifrarnikSortByName(String mNaziv)
+        {
+            Dictionary<long, String> prs = new Dictionary<long, String>();
+
+            try
+            {
+                //SqlConnection cnn = cn.Connect(Uname, Pass);
+                cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+                query = "Select DISTINCT SubPartName, SubPartCode from Sifrarnik where PartName = '" + mNaziv + "' ORDER BY SubPartName asc";
+                command = new SqlCommand(query, cnn);
+                command.ExecuteNonQuery();
+
+                using (SqlDataReader dataReader = command.ExecuteReader())
+                {
+                    dataReader.Read();
+
+                    if (dataReader.HasRows)
+                    {
+                        do
+                        {
+                            prs.Add(long.Parse(dataReader["SubPartCode"].ToString()), dataReader["SubPartName"].ToString());
+                        } while (dataReader.Read());
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                //new LogWriter(e1);
+                throw;
+            }
+            finally
+            {
+                if (cnn.State.ToString().Equals("Open"))
+                    cnn.Close();
+            }
+            return prs;
+        }
+
+        public List<PartSifrarnik> GetPartsAllSifrarnikSortByFullCodeDistinct()
+        {
+            List<PartSifrarnik> prs = new List<PartSifrarnik>();
+
+            try
+            {
+                //SqlConnection cnn = cn.Connect(Uname, Pass);
+                cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+                query = "Select * from Sifrarnik order by FullCode asc";
+                command = new SqlCommand(query, cnn);
+                command.ExecuteNonQuery();
+
+                using (SqlDataReader dataReader = command.ExecuteReader())
+                {
+                    dataReader.Read();
+
+                    if (dataReader.HasRows)
+                    {
+                        do
+                        {
+                            PartSifrarnik tempPart = new PartSifrarnik();
+
+                            tempPart.CategoryCode = long.Parse(dataReader["CategoryCode"].ToString());
+                            tempPart.CategoryName = dataReader["CategoryName"].ToString();
+                            tempPart.PartCode = long.Parse(dataReader["PartCode"].ToString());
+                            tempPart.PartName = dataReader["PartName"].ToString();
+                            tempPart.SubPartCode = long.Parse(dataReader["SubPartCode"].ToString());
+                            tempPart.SubPartName = dataReader["SubPartName"].ToString();
+                            tempPart.PartNumber = dataReader["PartNumber"].ToString();
+                            tempPart.PriceInKn = decimal.Parse(dataReader["PriceInKn"].ToString());
+                            tempPart.PriceOutKn = decimal.Parse(dataReader["PriceOutKn"].ToString());
+                            tempPart.PriceInEur = decimal.Parse(dataReader["PriceInEur"].ToString());
+                            tempPart.PriceOutEur = decimal.Parse(dataReader["PriceOutEur"].ToString());
+                            tempPart.FullCode = long.Parse(dataReader["FullCode"].ToString());
+                            tempPart.FullName = dataReader["FullName"].ToString();
+                            tempPart.Packing = dataReader["Packing"].ToString();
+                            prs.Add(tempPart);
+                        } while (dataReader.Read());
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                //new LogWriter(e1);
+                throw;
+            }
+            finally
+            {
+                if (cnn.State.ToString().Equals("Open"))
+                    cnn.Close();
+            }
+            return prs;
+        }
+
         public List<String> ListPartsByCodeRegionStateS(long mCodePartFull, long mStorageID, String mState)
         {
             List<String> arr = new List<String>();

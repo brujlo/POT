@@ -44,3 +44,4 @@ F:\PROJEKTI\VS\POT\POT\POT\obj\Release\POT.Documents.Racun.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Release\POT.Loading.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Release\POT.Saving.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Release\POT.WorkingClasses.PartEditor.resources
+F:\PROJEKTI\VS\POT\POT\POT\obj\Release\POT.TestForm.resources

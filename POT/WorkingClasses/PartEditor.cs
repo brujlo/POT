@@ -16,6 +16,13 @@ namespace POT.WorkingClasses
 
         List<Part> partList = new List<Part>();
         List<PartSifrarnik> partListSifrarnik = new List<PartSifrarnik>();
+
+        Dictionary<long, String> categorySifrarnik = new Dictionary<long, String>();
+        Dictionary<long, String> partSifrarnik = new Dictionary<long, String>();
+        Dictionary<long, String> subpartSifrarnik = new Dictionary<long, String>();
+        long[] arr = new long[1000];
+        PartSifrarnik prtSif = new PartSifrarnik();
+
         List<Company> cmp = new List<Company>();
         List<PovijestLog> plList = new List<PovijestLog>();
 
@@ -33,10 +40,17 @@ namespace POT.WorkingClasses
 
         private void PartEditor_Load(object sender, EventArgs e)
         {
+            if (WorkingUser.AdminRights == 1 || WorkingUser.AdminRights == 2)
+                tabPage2.Enabled = true;
+            else
+                tabPage2.Enabled = false;
+
             CntLbl.Text = "Cnt: 0";
 
             partList = qc.GetAllParts();
             partListSifrarnik = qc.GetPartsAllSifrarnikSortByFullCode();
+            categorySifrarnik = qc.GetCategoryNamesAllSifrarnikSortByName();
+
             Company tempCmp = new Company();
             cmp = tempCmp.GetAllCompanyInfoSortCode();
 
@@ -61,6 +75,26 @@ namespace POT.WorkingClasses
                     What1.Items.Add(name);
             }
 
+            long bigest = 0;
+            foreach (KeyValuePair<long, String> key in categorySifrarnik)
+            {
+                sCategory.Items.Add(key.Value);
+
+                if (bigest < (key.Key / 1000000))
+                    if ((key.Key / 1000000) != 999 )
+                        bigest = key.Key / 1000000;
+            }
+            lastIDCategory.Text = bigest.ToString();
+
+            for (i = 0; i < 1000; i++)
+            {
+                if( i > bigest)
+                    sCategoryCodeNew.Items.Add(String.Format("{0:000}", i));
+                sPartNameCodeNew.Items.Add(String.Format("{0:000}", i));
+                sSubPartNameCodeNew.Items.Add(String.Format("{0:000}", i));
+                arr[i] = i;
+            }
+
             listView1.View = View.Details;
 
             listView1.Columns.Add("LogID");
@@ -82,36 +116,6 @@ namespace POT.WorkingClasses
             listView1.Columns.Add("GNG");
 
             Program.LoadStop();
-        }
-
-        private void IDsearch_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            selectedIndex = IDsearch.SelectedIndex;
-            workingPart = partList[selectedIndex];
-            workingPartSifrarnik = partListSifrarnik.Find(x => x.FullCode == workingPart.PartialCode);
-            cmpO = cmp.Find(x => x.Code == workingPart.CompanyO);
-            cmpC = cmp.Find(x => x.Code == workingPart.CompanyC);
-            popuniPolja(workingPart, workingPartSifrarnik);
-        }
-
-        private void SNsearch_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            selectedIndex = SNsearch.SelectedIndex;
-            workingPart = partList[selectedIndex];
-            workingPartSifrarnik = partListSifrarnik.Find(x => x.FullCode == workingPart.PartialCode);
-            cmpO = cmp.Find(x => x.Code == workingPart.CompanyO);
-            cmpC = cmp.Find(x => x.Code == workingPart.CompanyC);
-            popuniPolja(workingPart, workingPartSifrarnik);
-        }
-
-        private void CNsearch_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            selectedIndex = CNsearch.SelectedIndex;
-            workingPart = partList[selectedIndex];
-            workingPartSifrarnik = partListSifrarnik.Find(x => x.FullCode == workingPart.PartialCode);
-            cmpO = cmp.Find(x => x.Code == workingPart.CompanyO);
-            cmpC = cmp.Find(x => x.Code == workingPart.CompanyC);
-            popuniPolja(workingPart, workingPartSifrarnik);
         }
 
         private void popuniPolja(Part part, PartSifrarnik partSf)
@@ -142,7 +146,152 @@ namespace POT.WorkingClasses
             Packaging.Text = workingPartSifrarnik.Packing;
         }
 
-        private void PretraziBT_Click(object sender, EventArgs e)
+        private Object selectValue(String what, String value)
+        {
+            Object retValue;
+
+            //if (value.Equals(""))
+            //    return null;
+
+            switch (what.ToLower())
+            {
+                case "logid":
+                    retValue = long.Parse(value);
+                    break;
+                case "sifranovi":
+                    retValue = long.Parse(value);
+                    break;
+                case "sifrastari":
+                    retValue = long.Parse(value);
+                    break;
+                case "userid":
+                    retValue = long.Parse(value);
+                    break;
+                default:
+                    retValue = value.ToString();
+                    break;
+            }
+
+            return retValue;
+        }
+
+        private void IDsearch_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            selectedIndex = IDsearch.SelectedIndex;
+            workingPart = partList[selectedIndex];
+            workingPartSifrarnik = partListSifrarnik.Find(x => x.FullCode == workingPart.PartialCode);
+            cmpO = cmp.Find(x => x.Code == workingPart.CompanyO);
+            cmpC = cmp.Find(x => x.Code == workingPart.CompanyC);
+            popuniPolja(workingPart, workingPartSifrarnik);
+        }
+
+        private void SNsearch_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            selectedIndex = SNsearch.SelectedIndex;
+            workingPart = partList[selectedIndex];
+            workingPartSifrarnik = partListSifrarnik.Find(x => x.FullCode == workingPart.PartialCode);
+            cmpO = cmp.Find(x => x.Code == workingPart.CompanyO);
+            cmpC = cmp.Find(x => x.Code == workingPart.CompanyC);
+            popuniPolja(workingPart, workingPartSifrarnik);
+        }
+
+        private void CNsearch_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            selectedIndex = CNsearch.SelectedIndex;
+            workingPart = partList[selectedIndex];
+            workingPartSifrarnik = partListSifrarnik.Find(x => x.FullCode == workingPart.PartialCode);
+            cmpO = cmp.Find(x => x.Code == workingPart.CompanyO);
+            cmpC = cmp.Find(x => x.Code == workingPart.CompanyC);
+            popuniPolja(workingPart, workingPartSifrarnik);
+        }
+
+        private void What1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            AndRB.Checked = true;
+
+            dateTimePicker2.Visible = false;
+            Value2.Visible = true;
+
+            dateTimePicker3.Visible = false;
+            Value3.Visible = true;
+
+            What2.ResetText();
+            What3.ResetText();
+
+            Value2.ResetText();
+            Value3.ResetText();
+
+            What2.Items.Clear();
+            What3.Items.Clear();
+
+            if (!What1.Text.Equals(""))
+            {
+                foreach (String name in whatList1)
+                {
+                    if (!name.ToLower().Equals("logid") && !name.ToLower().Equals(What1.Text.ToLower()))
+                        What2.Items.Add(name);
+                }
+            }
+
+            if (What1.Text.ToLower().Equals("datumrada") || What1.Text.ToLower().Equals("datumupisa"))
+            {
+                dateTimePicker1.Visible = true;
+                Value1.Visible = false;
+            }
+            else
+            {
+                dateTimePicker1.Visible = false;
+                Value1.Visible = true;
+            }
+        }
+
+        private void What2_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            dateTimePicker3.Visible = false;
+            Value3.Visible = true;
+
+            What3.ResetText();
+
+            Value3.ResetText();
+
+            What3.Items.Clear();
+
+            if (!What1.Text.Equals(""))
+            {
+                foreach (String name in whatList1)
+                {
+                    if (!name.ToLower().Equals("logid") && !name.ToLower().Equals(What1.Text.ToLower()) && !name.ToLower().Equals(What2.Text.ToLower()))
+                        What3.Items.Add(name);
+                }
+            }
+
+            if (What2.Text.ToLower().Equals("datumrada") || What2.Text.ToLower().Equals("datumupisa"))
+            {
+                dateTimePicker2.Visible = true;
+                Value2.Visible = false;
+            }
+            else
+            {
+                dateTimePicker2.Visible = false;
+                Value2.Visible = true;
+            }
+        }
+
+        private void What3_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            if (What3.Text.ToLower().Equals("datumrada") || What3.Text.ToLower().Equals("datumupisa"))
+            {
+                dateTimePicker3.Visible = true;
+                Value3.Visible = false;
+            }
+            else
+            {
+                dateTimePicker3.Visible = false;
+                Value3.Visible = true;
+            }
+        }
+
+        private void PretraziBT_Click_1(object sender, EventArgs e)
         {
             Program.LoadStart();
 
@@ -305,122 +454,6 @@ namespace POT.WorkingClasses
                 Program.LoadStop();
                 this.Focus();
             }
-
-        }
-
-        private Object selectValue(String what, String value)
-        {
-            Object retValue;
-
-            //if (value.Equals(""))
-            //    return null;
-
-            switch (what.ToLower())
-            {
-                case "logid":
-                    retValue = long.Parse(value);
-                    break;
-                case "sifranovi":
-                    retValue = long.Parse(value);
-                    break;
-                case "sifrastari":
-                    retValue = long.Parse(value);
-                    break;
-                case "userid":
-                    retValue = long.Parse(value);
-                    break;
-                default:
-                    retValue = value.ToString();
-                    break;
-            }
-
-            return retValue;
-        }
-
-        private void What1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            AndRB.Checked = true;
-
-            dateTimePicker2.Visible = false;
-            Value2.Visible = true;
-
-            dateTimePicker3.Visible = false;
-            Value3.Visible = true;
-
-            What2.ResetText();
-            What3.ResetText();
-
-            Value2.ResetText();
-            Value3.ResetText();
-
-            What2.Items.Clear();
-            What3.Items.Clear();
-            
-            if (!What1.Text.Equals(""))
-            {
-                foreach (String name in whatList1)
-                {
-                    if (!name.ToLower().Equals("logid") && !name.ToLower().Equals(What1.Text.ToLower()))
-                        What2.Items.Add(name);
-                }
-            }
-
-            if (What1.Text.ToLower().Equals("datumrada") || What1.Text.ToLower().Equals("datumupisa"))
-            {
-                dateTimePicker1.Visible = true;
-                Value1.Visible = false;
-            }
-            else
-            {
-                dateTimePicker1.Visible = false;
-                Value1.Visible = true;
-            }
-        }
-
-        private void What2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            dateTimePicker3.Visible = false;
-            Value3.Visible = true;
-
-            What3.ResetText();
-
-            Value3.ResetText();
-
-            What3.Items.Clear();
-
-            if (!What1.Text.Equals(""))
-            {
-                foreach (String name in whatList1)
-                {
-                    if (!name.ToLower().Equals("logid") && !name.ToLower().Equals(What1.Text.ToLower()) && !name.ToLower().Equals(What2.Text.ToLower()))
-                        What3.Items.Add(name);
-                }
-            }
-
-            if (What2.Text.ToLower().Equals("datumrada") || What2.Text.ToLower().Equals("datumupisa"))
-            {
-                dateTimePicker2.Visible = true;
-                Value2.Visible = false;
-            }
-            else
-            {
-                dateTimePicker2.Visible = false;
-                Value2.Visible = true;
-            }
-        }
-
-        private void What3_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (What3.Text.ToLower().Equals("datumrada") || What3.Text.ToLower().Equals("datumupisa"))
-            {
-                dateTimePicker3.Visible = true;
-                Value3.Visible = false;
-            }
-            else
-            {
-                dateTimePicker3.Visible = false;
-                Value3.Visible = true;
-            }
         }
 
         private void listView1_DoubleClick(object sender, EventArgs e)
@@ -451,15 +484,15 @@ namespace POT.WorkingClasses
             {
                 var allFiles = Directory.GetFiles(Properties.Settings.Default.DefaultFolder, "*.pdf", SearchOption.AllDirectories);
 
-                foreach(String dir in allFiles)
+                foreach (String dir in allFiles)
                 {
-                    if(dir.Contains(document + " " + id + ".pdf"))
+                    if (dir.Contains(document + " " + id + ".pdf"))
                     {
                         filePath = dir;
                         break;
                     }
                 }
-                if(!filePath.Equals(""))
+                if (!filePath.Equals(""))
                     Process.Start(filePath);
                 else
                     MessageBox.Show("I cant find requested document!");
@@ -469,6 +502,249 @@ namespace POT.WorkingClasses
                 new LogWriter(e1);
                 MessageBox.Show(e1.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        
+        ///////////////////////////////  Pocinje Drugi tab //////////////////////////////////////////////////////////////////
+
+        private void sCategory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Program.LoadStart();
+
+                prtSif = null;
+
+                sCategoryCode.ResetText();
+                lastIDPart.ResetText();
+
+                sCategoryCodeNew.Enabled = true;
+                sCategoryNew.Enabled = true;
+
+                button1_Click(sender, e);
+
+                foreach (KeyValuePair<long, String> item in categorySifrarnik)
+                {
+                    if (item.Value.Equals(sCategory.SelectedItem.ToString()))
+                    {
+                        sCategoryCode.Text = item.Key.ToString();
+                        prtSif = partListSifrarnik.Find(x => x.CategoryCode == item.Key && x.PartCode == 0 && x.SubPartCode == 0);
+
+                        sCategoryCodeNew.Items.Clear();
+                        sCategoryCodeNew.ResetText();
+                        sCategoryCodeNew.Items.Add(String.Format( "{0:000}", item.Key / 1000000) );
+                        sCategoryCodeNew.SelectedIndex = 0;
+                        sCategoryCodeNew.Enabled = false;
+
+                        sCategoryNew.Items.Clear();
+                        sCategoryNew.ResetText();
+                        sCategoryNew.Items.Add(item.Value);
+                        sCategoryNew.SelectedIndex = 0;
+                        sCategoryNew.Enabled = false;
+
+                        break;
+                    }
+                }
+
+
+                partSifrarnik.Clear();
+                partSifrarnik = qc.GetPartNamesAllSifrarnikSortByName(sCategory.SelectedItem.ToString());
+
+                sPartName.ResetText();
+                sPartName.Items.Clear();
+                
+                long bigest = 0;
+                foreach (KeyValuePair<long, String> key in partSifrarnik)
+                {
+                    sPartName.Items.Add(key.Value);
+                    if (bigest < (key.Key / 1000))
+                        bigest = key.Key / 1000;
+                }
+                lastIDPart.Text = bigest.ToString();
+
+               
+                sPartNameCodeNew.Items.Clear();
+
+                lastIDPart.Text = bigest.ToString();
+                for (long i = bigest + 1; i < 1000; i++)
+                {
+                    sPartNameCodeNew.Items.Add(i);
+                }
+            }
+            catch (Exception e1)
+            {
+                Program.LoadStop();
+                MessageBox.Show(e1.Message);
+            }
+            finally
+            {
+                PostaviFullCode();
+                Program.LoadStop();
+            }
+        }
+
+        private void sPartName_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Program.LoadStart();
+
+                sPartNameCode.ResetText();
+                lastIDSubPart.ResetText();
+
+                sPartNameCodeNew.Enabled = true;
+                sPartNameNew.Enabled = true;
+
+                foreach (KeyValuePair<long, String> item in partSifrarnik)
+                {
+                    if (item.Value.Equals(sPartName.SelectedItem.ToString()))
+                    {
+                        sPartNameCode.Text = item.Key.ToString();
+                        prtSif = partListSifrarnik.Find(x => x.CategoryCode == long.Parse(sCategoryCode.Text) && x.PartCode == item.Key && x.SubPartCode == 0);
+
+                        sPartNameCodeNew.Items.Clear();
+                        sPartNameCodeNew.ResetText();
+                        sPartNameCodeNew.Items.Add(String.Format("{0:000}", item.Key / 1000));
+                        sPartNameCodeNew.SelectedIndex = 0;
+                        sPartNameCodeNew.Enabled = false;
+
+                        sPartNameNew.Items.Clear();
+                        sPartNameNew.ResetText();
+                        sPartNameNew.Items.Add(item.Value);
+                        sPartNameNew.SelectedIndex = 0;
+                        sPartNameNew.Enabled = false;
+
+                        break;
+                    }
+                }
+
+                subpartSifrarnik.Clear();
+                subpartSifrarnik = qc.GetSubPartNamesAllSifrarnikSortByName(sPartName.SelectedItem.ToString()); 
+
+                sSubPartName.ResetText();
+                sSubPartName.Items.Clear();
+
+                long bigest = 0;
+                foreach (KeyValuePair<long, String> key in subpartSifrarnik)
+                {
+                    sSubPartName.Items.Add(key.Value);
+                    if (bigest < key.Key)
+                        bigest = key.Key;
+                }
+                lastIDSubPart.Text = bigest.ToString();
+
+                for (long i = bigest + 1; i < 1000; i++)
+                {
+                    sSubPartNameCodeNew.Items.Add(i);
+                }
+            }
+            catch (Exception e1)
+            {
+                Program.LoadStop();
+                MessageBox.Show(e1.Message);
+            }
+            finally
+            {
+                PostaviFullCode();
+                Program.LoadStop();
+            }
+        }
+
+        private void sSubPartName_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Program.LoadStart();
+
+                sSubPartNameCode.ResetText();
+
+                sSubPartNameCodeNew.Enabled = true;
+                sSubPartNameNew.Enabled = true;
+
+                foreach (KeyValuePair<long, String> item in subpartSifrarnik)
+                {
+                    if (item.Value.Equals(sSubPartName.SelectedItem.ToString()))
+                    {
+                        sSubPartNameCode.Text = item.Key.ToString();
+                        prtSif = partListSifrarnik.Find(x => x.CategoryCode == long.Parse(sCategoryCode.Text) && x.PartCode == long.Parse(sPartNameCode.Text) && x.SubPartCode == item.Key);
+
+                        sSubPartNameCodeNew.Items.Clear();
+                        sSubPartNameCodeNew.ResetText();
+                        sSubPartNameCodeNew.Items.Add(String.Format("{0:000}", item.Key));
+                        sSubPartNameCodeNew.SelectedIndex = 0;
+                        sSubPartNameCodeNew.Enabled = false;
+
+                        sSubPartNameNew.Items.Clear();
+                        sSubPartNameNew.ResetText();
+                        sSubPartNameNew.Items.Add(item.Value);
+                        sSubPartNameNew.SelectedIndex = 0;
+                        sSubPartNameNew.Enabled = false;
+
+                        break;
+                    }
+                }
+            }
+            catch (Exception e1)
+            {
+                Program.LoadStop();
+                MessageBox.Show(e1.Message);
+            }
+            finally
+            {
+                PostaviFullCode();
+                Program.LoadStop();
+            }
+        }
+
+        private void PostaviFullCode()
+        {
+            try
+            {
+                //if (!sSubPartNameCode.Text.Equals(""))
+                //{
+                //    sFullCode.Text = String.Format("{0: 000 000 000}", long.Parse(sCategoryCode.Text) + long.Parse(sPartNameCode.Text) + long.Parse(sSubPartNameCode.Text));
+                //}
+                //else if (!sPartNameCode.Text.Equals(""))
+                //{
+                //    sFullCode.Text = String.Format("{0: 000 000 000}", long.Parse(sCategoryCode.Text) + long.Parse(sPartNameCode.Text) );
+                //}
+                //else
+                //{
+                //    sFullCode.Text = String.Format("{0: 000 000 000}", long.Parse(sCategoryCode.Text) );
+                //}
+
+                sFullCode.Text = String.Format("{0: 000 000 000}", prtSif.FullCode);
+                sFullName.Text = prtSif.FullName;
+            }
+            catch
+            {
+                sFullCode.Text = "000 000 000";
+                sFullName.Text = sCategory.Text;
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            sCategoryCode.ResetText();
+            sCategory.ResetText();
+            sPartNameCode.ResetText();
+            sPartName.ResetText();
+            sSubPartNameCode.ResetText();
+            sSubPartName.ResetText();
+
+            sCategoryCodeNew.ResetText();
+            sCategoryNew.ResetText();
+            sPartNameCodeNew.ResetText();
+            sPartNameNew.ResetText();
+            sSubPartNameCodeNew.ResetText();
+            sSubPartNameNew.ResetText();
+
+            sCategoryCodeNew.Enabled = true;
+            sCategoryNew.Enabled = true;
+            sPartNameCodeNew.Enabled = true;
+            sPartNameNew.Enabled = true;
+            sSubPartNameCodeNew.Enabled = true;
+            sSubPartNameNew.Enabled = true;
         }
     }
 }

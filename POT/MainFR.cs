@@ -963,5 +963,11 @@ namespace POT
             PartEditor p = new PartEditor();
             p.Show();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            TestForm tf = new TestForm();
+            tf.Show();
+        }
     }
 }

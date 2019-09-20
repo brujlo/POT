@@ -25,7 +25,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ProductName>POT</ProductName>
     <PublisherName>Exception</PublisherName>
-    <ApplicationRevision>83</ApplicationRevision>
+    <ApplicationRevision>84</ApplicationRevision>
     <ApplicationVersion>1.3.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -171,6 +171,12 @@
     </Compile>
     <Compile Include="Saving.Designer.cs">
       <DependentUpon>Saving.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestForm.Designer.cs">
+      <DependentUpon>TestForm.cs</DependentUpon>
     </Compile>
     <Compile Include="WorkingClasses\AddTIDDB.cs" />
     <Compile Include="WorkingClasses\ConnectionHelper.cs" />
@@ -338,6 +344,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Saving.resx">
       <DependentUpon>Saving.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestForm.resx">
+      <DependentUpon>TestForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WorkingClasses\MainCmpSelector.resx">
       <DependentUpon>MainCmpSelector.cs</DependentUpon>

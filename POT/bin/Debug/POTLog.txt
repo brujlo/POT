@@ -14233,3 +14233,306 @@ Parameter name: index
 
 - 19.09.19. 08:56 - App turned off
     *** BrunoBrckovic *** 
+
+- 20.09.19. 19:47 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 19:48
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: ; ; ; 707013002003; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 20.09.19. 19:48
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click
+     - Used: PovijsetLog search
+     - Data: SNNovi; ; ; ; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 20.09.19. 19:48 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 19:51 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 19:52 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 19:57 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 19:57 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 19:58 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 20:00 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 20:00 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 20:07 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 20:08 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 20:10 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 20:13 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 20:14 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 20:16 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 20:17
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click_1
+     - Used: PovijsetLog search
+     - Data: DatumRada; SNNovi; Customer; 20.09.19.; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 20.09.19. 20:17
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click_1
+     - Used: PovijsetLog search
+     - Data: ; ; ; ; ; ; Or
+     - Result: 
+    *** BrunoBrckovic *** 
+
+
+- 20.09.19. 20:17
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.WorkingClasses.PartEditor.PretraziBT_Click_1(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 394
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.WorkingClasses.PartEditor.PretraziBT_Click_1(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 394
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 20.09.19. 20:18
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click_1
+     - Used: PovijsetLog search
+     - Data: ; ; ; 101013002030; ; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 20.09.19. 20:18 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 20:23 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 20:24 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 20:27 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 20:27 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 20:29 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 20:30 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 20:30 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 20:30 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 20:31 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 20:51 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 20:51 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 20:55 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 21:03 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 21:04 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 21:05 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 21:14 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 21:14 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 21:15 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 21:16 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 21:18 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 21:18 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 21:28 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 21:29 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 21:33 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 21:34 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 21:41 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 21:47 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 21:53 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 21:55 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 21:56 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 21:56 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 22:04 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 22:05 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 22:06 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 22:11 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 22:11 - Waiting
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 22:12 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 22:18 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 22:25 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 22:37 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 22:40 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 22:43 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 22:44 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 22:46 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 22:47 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 22:51 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 22:54 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 22:54 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 22:54 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 22:55 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 22:57 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 22:59 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 23:00 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 23:21 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 23:22 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 23:34 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 23:55 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 23:57 - App started
+    *** BrunoBrckovic *** 
+
+- 20.09.19. 23:59 - App started
+    *** BrunoBrckovic *** 
+
+- 21.09.19. 00:00 - App turned off
+    *** BrunoBrckovic *** 
+
+- 21.09.19. 00:06 - App started
+    *** BrunoBrckovic *** 
+
+- 21.09.19. 00:08 - App started
+    *** BrunoBrckovic *** 
+
+- 21.09.19. 00:08 - App started
+    *** BrunoBrckovic *** 
+
+- 21.09.19. 00:14 - App started
+    *** BrunoBrckovic *** 
+
+- 21.09.19. 00:20 - App started
+    *** BrunoBrckovic *** 
+
+- 21.09.19. 00:34 - App started
+    *** BrunoBrckovic *** 
+
+- 21.09.19. 00:41 - App started
+    *** BrunoBrckovic *** 
+
+- 21.09.19. 00:43 - App started
+    *** BrunoBrckovic *** 
