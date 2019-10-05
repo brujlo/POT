@@ -2778,6 +2778,49 @@ namespace POT
             return executed;
         }
 
+        public Boolean ISSPrebaciPartUWorking(Part _part)
+        {
+            Boolean executed = false;
+
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            command = cnn.CreateCommand();
+            SqlTransaction transaction = cnn.BeginTransaction();
+            command.Connection = cnn;
+            command.Transaction = transaction;
+
+            try
+            {
+                    command.CommandText = "UPDATE Parts SET State = 'wng' WHERE PartID = " + _part.PartID;
+                    command.ExecuteNonQuery();
+
+                transaction.Commit();
+                executed = true;
+            }
+            catch (Exception)
+            {
+                //new LogWriter(e1);
+                try
+                {
+                    transaction.Rollback();
+                    executed = false;
+                    throw;
+                }
+                catch (Exception)
+                {
+                    //new LogWriter(e2);
+                    throw;
+                }
+            }
+            finally
+            {
+                if (cnn.State.ToString().Equals("Open"))
+                    cnn.Close();
+            }
+ 
+            cnn.Close();
+            return executed;
+        }
+
         public String IISPrebaciIzServisa(String Uname, String Pass, List<Part> ListOfParts, long RegionIDSender, long CustomerID, String mNapomenaIUS)
         {
             String executed = "nok";
@@ -4323,7 +4366,7 @@ namespace POT
 
                         command.CommandText = "INSERT INTO ISSparts (ISSid, RB, oldPartID, newPartID, Work, Comment, Time, UserID, Date) " +
                             "VALUES (" +
-                            mISSid + ", " + listIssParts[i].RB + ", " + listIssParts[i].PrtO.PartID + ", " + listIssParts[i].PrtN.PartID + ", '" + listIssParts[i].Work + "', '" + listIssParts[i].Comment + "', '" + listIssParts[i].Time + "', " + mUserID + ", '" + listIssParts[i].Time + "')";
+                            mISSid + ", " + listIssParts[i].RB + ", " + listIssParts[i].PrtO.PartID + ", " + listIssParts[i].PrtN.PartID + ", '" + listIssParts[i].Work + "', '" + listIssParts[i].Comment + "', '" + listIssParts[i].Time + "', " + mUserID + ", '" + listIssParts[i].Date + "')";
                         command.ExecuteNonQuery();
                     
                         if (listIssParts[i].PrtN.PartialCode != 0)
@@ -4385,6 +4428,41 @@ namespace POT
                 do
                 {
                     arr.Add(long.Parse(dataReader["ID"].ToString()));
+                } while (dataReader.Read());
+            }
+
+            dataReader.Close();
+            cnn.Close();
+            return arr;
+        }
+
+        public List<ISSreport> GetAllISSInfoOpenClose(long mDone)
+        {
+            List<ISSreport> arr = new List<ISSreport>();
+
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "select * from ISS where Closed = " + mDone;
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                do
+                {
+                    ISSreport tmpissr = new ISSreport();
+
+                    tmpissr.ISSid = long.Parse(dataReader["ID"].ToString());
+                    tmpissr.Date = dataReader["Date"].ToString();
+                    tmpissr.UserIDmaked = long.Parse(dataReader["UserID"].ToString());
+                    tmpissr.CustomerID = long.Parse(dataReader["CustomerID"].ToString());
+                    tmpissr.PartID = long.Parse(dataReader["PartID"].ToString());
+                    tmpissr.Closed = long.Parse(dataReader["Closed"].ToString());
+                    tmpissr.TotalTIme = dataReader["TotalTIme"].ToString();
+
+                    arr.Add(tmpissr);
+
                 } while (dataReader.Read());
             }
 
@@ -4837,7 +4915,7 @@ namespace POT
 
                 foreach (InvoiceParts prt in mInvoiceList)
                 {
-                    command.CommandText = "INSERT INTO RacunParts (RacunID, PartCode, VrijemeRada, Rabat, Kolicina, iznosRabat, iznosTotal, iznosPart) VALUES (" + newInvId + ", " + prt.PartCode + ", '" + prt.VrijemeRada + "', " + prt.Rabat + ", " + prt.Kolicina + ", '" + prt.IznosRabat + "', '" + prt.IznosTotal + "', '" + prt.IznosPart + "')";
+                    command.CommandText = "INSERT INTO RacunParts (RacunID, PartCode, VrijemeRada, Rabat, Kolicina, iznosRabat, iznosTotal, iznosPart) VALUES (" + newInvId + ", " + prt.PartCode + ", '" + prt.VrijemeRada + "', " + prt.Rabat.ToString().Replace(',','.') + ", " + prt.Kolicina + ", '" + prt.IznosRabat + "', '" + prt.IznosTotal + "', '" + prt.IznosPart + "')";
                     command.ExecuteNonQuery();
                 }
 
@@ -5015,7 +5093,7 @@ namespace POT
 
                 foreach (OfferParts prt in mOfferList)
                 {
-                    command.CommandText = "INSERT INTO PonudaParts (PonudaID, PartCode, VrijemeRada, Rabat, Kolicina, iznosRabat, iznosTotal, iznosPart) VALUES (" + newInvId + ", " + prt.PartCode + ", '" + prt.VrijemeRada + "', " + prt.Rabat + ", " + prt.Kolicina + ", '" + prt.IznosRabat + "', '" + prt.IznosTotal + "', '" + prt.IznosPart + "')";
+                    command.CommandText = "INSERT INTO PonudaParts (PonudaID, PartCode, VrijemeRada, Rabat, Kolicina, iznosRabat, iznosTotal, iznosPart) VALUES (" + newInvId + ", " + prt.PartCode + ", '" + prt.VrijemeRada + "', " + prt.Rabat.ToString().Replace(',', '.') + ", " + prt.Kolicina + ", '" + prt.IznosRabat + "', '" + prt.IznosTotal + "', '" + prt.IznosPart + "')";
                     command.ExecuteNonQuery();
                 }
 
@@ -5229,6 +5307,95 @@ namespace POT
             dataReader.Close();
             cnn.Close();
             return executed;
+        }
+
+        public Boolean SetStornoInvoice0Or1(Invoice inv)
+        {
+            Boolean executed = false;
+
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "select Count(ID) from Racun";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                dataReader.Close();
+                command = cnn.CreateCommand();
+                SqlTransaction transaction = cnn.BeginTransaction();
+                command.Connection = cnn;
+                command.Transaction = transaction;
+
+                try
+                {
+                    command.CommandText = "UPDATE Racun SET Storno = " + inv.Storno + ", DatumNaplaceno = '" + DateTime.Now.ToString("dd.MM.yy.") + "' where ID = " + inv.Id;
+                    command.ExecuteNonQuery();
+
+                    transaction.Commit();
+                    executed = true;
+                }
+                catch (Exception)
+                {
+                    //new LogWriter(e1);
+                    try
+                    {
+                        transaction.Rollback();
+                        executed = false;
+                        throw;
+                    }
+                    catch (Exception)
+                    {
+                        //new LogWriter(e2);
+                        throw;
+                    }
+                }
+                finally
+                {
+                    if (cnn.State.ToString().Equals("Open"))
+                        cnn.Close();
+                }
+            }
+            dataReader.Close();
+            cnn.Close();
+            return executed;
+        }
+
+        public List<InvoiceParts> GetAllPartsByInvoiceId(long _invID)
+        {
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "select * from RacunParts where RacunID = " + _invID;
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            List<InvoiceParts> tempList = new List<InvoiceParts>();
+
+            if (dataReader.HasRows)
+            {
+                do
+                {
+                    InvoiceParts tmpInvoiceParts = new InvoiceParts();
+
+                    tmpInvoiceParts.RacunID = long.Parse(dataReader["RacunID"].ToString());
+                    tmpInvoiceParts.PartCode = long.Parse(dataReader["PartCode"].ToString());
+                    tmpInvoiceParts.VrijemeRada = dataReader["VrijemeRada"].ToString();
+                    tmpInvoiceParts.Rabat = decimal.Parse(dataReader["Rabat"].ToString());
+                    tmpInvoiceParts.Kolicina = int.Parse(dataReader["Kolicina"].ToString());
+                    tmpInvoiceParts.IznosRabat = dataReader["IznosRabat"].ToString();
+                    tmpInvoiceParts.IznosTotal = dataReader["IznosTotal"].ToString();
+                    tmpInvoiceParts.IznosPart = dataReader["IznosPart"].ToString();
+
+                    tempList.Add(tmpInvoiceParts);
+
+                } while (dataReader.Read());
+            }
+
+            dataReader.Close();
+            cnn.Close();
+            return tempList;
         }
     }
 }

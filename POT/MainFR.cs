@@ -858,7 +858,7 @@ namespace POT
         private void MainFR_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (!isClosePicClicked && !logOutClicked)
-                new LogWriter(System.Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + "App turned off");
+                new LogWriter(Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + "App turned off");
 
             Properties.Settings.Default.DisplayPoint = Screen.FromControl(this).WorkingArea.Location;
             Properties.Settings.Default.MainFrSize = this.Size;

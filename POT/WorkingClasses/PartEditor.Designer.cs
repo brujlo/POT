@@ -103,48 +103,48 @@
             this.SNsearch = new System.Windows.Forms.ComboBox();
             this.IDsearch = new System.Windows.Forms.ComboBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.sCategory = new System.Windows.Forms.ComboBox();
-            this.sPartName = new System.Windows.Forms.ComboBox();
-            this.sSubPartName = new System.Windows.Forms.ComboBox();
-            this.sCategoryCode = new System.Windows.Forms.TextBox();
-            this.sSubPartNameCode = new System.Windows.Forms.TextBox();
-            this.sPartNameCode = new System.Windows.Forms.TextBox();
-            this.sFullCode = new System.Windows.Forms.TextBox();
-            this.lastIDCategory = new System.Windows.Forms.Label();
-            this.lastIDPart = new System.Windows.Forms.Label();
-            this.lastIDSubPart = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.AddNewPart = new System.Windows.Forms.Button();
-            this.label35 = new System.Windows.Forms.Label();
-            this.sFullName = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.sCategoryNew = new System.Windows.Forms.ComboBox();
-            this.sPartNameNew = new System.Windows.Forms.ComboBox();
-            this.sSubPartNameNew = new System.Windows.Forms.ComboBox();
-            this.sPartNameCodeNew = new System.Windows.Forms.ComboBox();
-            this.sSubPartNameCodeNew = new System.Windows.Forms.ComboBox();
-            this.sCategoryCodeNew = new System.Windows.Forms.ComboBox();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.UpdatePart = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
+            this.UpdatePart = new System.Windows.Forms.Button();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.sCategoryCodeNew = new System.Windows.Forms.ComboBox();
+            this.sSubPartNameCodeNew = new System.Windows.Forms.ComboBox();
+            this.sPartNameCodeNew = new System.Windows.Forms.ComboBox();
+            this.sSubPartNameNew = new System.Windows.Forms.ComboBox();
+            this.sPartNameNew = new System.Windows.Forms.ComboBox();
+            this.sCategoryNew = new System.Windows.Forms.ComboBox();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.sFullName = new System.Windows.Forms.TextBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.AddNewPart = new System.Windows.Forms.Button();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.lastIDSubPart = new System.Windows.Forms.Label();
+            this.lastIDPart = new System.Windows.Forms.Label();
+            this.lastIDCategory = new System.Windows.Forms.Label();
+            this.sFullCode = new System.Windows.Forms.TextBox();
+            this.sPartNameCode = new System.Windows.Forms.TextBox();
+            this.sSubPartNameCode = new System.Windows.Forms.TextBox();
+            this.sCategoryCode = new System.Windows.Forms.TextBox();
+            this.sSubPartName = new System.Windows.Forms.ComboBox();
+            this.sPartName = new System.Windows.Forms.ComboBox();
+            this.sCategory = new System.Windows.Forms.ComboBox();
             this.tabPage1.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dateTimePicker3
             // 
             this.dateTimePicker3.Location = new System.Drawing.Point(986, 248);
             this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(200, 26);
+            this.dateTimePicker3.Size = new System.Drawing.Size(210, 26);
             this.dateTimePicker3.TabIndex = 147;
             this.dateTimePicker3.Visible = false;
             // 
@@ -152,7 +152,7 @@
             // 
             this.dateTimePicker2.Location = new System.Drawing.Point(986, 184);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 26);
+            this.dateTimePicker2.Size = new System.Drawing.Size(210, 26);
             this.dateTimePicker2.TabIndex = 146;
             this.dateTimePicker2.Visible = false;
             // 
@@ -160,7 +160,7 @@
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(986, 125);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 26);
+            this.dateTimePicker1.Size = new System.Drawing.Size(210, 26);
             this.dateTimePicker1.TabIndex = 145;
             this.dateTimePicker1.Visible = false;
             // 
@@ -337,6 +337,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.listView1.FullRowSelect = true;
+            this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(417, 371);
             this.listView1.MultiSelect = false;
             this.listView1.Name = "listView1";
@@ -911,289 +912,6 @@
             this.tabControl1.Size = new System.Drawing.Size(1226, 836);
             this.tabControl1.TabIndex = 1;
             // 
-            // sCategory
-            // 
-            this.sCategory.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.sCategory.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.sCategory.FormattingEnabled = true;
-            this.sCategory.Location = new System.Drawing.Point(95, 90);
-            this.sCategory.Name = "sCategory";
-            this.sCategory.Size = new System.Drawing.Size(447, 28);
-            this.sCategory.TabIndex = 0;
-            this.sCategory.SelectedIndexChanged += new System.EventHandler(this.sCategory_SelectedIndexChanged);
-            // 
-            // sPartName
-            // 
-            this.sPartName.FormattingEnabled = true;
-            this.sPartName.Location = new System.Drawing.Point(95, 136);
-            this.sPartName.Name = "sPartName";
-            this.sPartName.Size = new System.Drawing.Size(447, 28);
-            this.sPartName.TabIndex = 1;
-            this.sPartName.SelectedIndexChanged += new System.EventHandler(this.sPartName_SelectedIndexChanged);
-            // 
-            // sSubPartName
-            // 
-            this.sSubPartName.FormattingEnabled = true;
-            this.sSubPartName.Location = new System.Drawing.Point(95, 183);
-            this.sSubPartName.Name = "sSubPartName";
-            this.sSubPartName.Size = new System.Drawing.Size(447, 28);
-            this.sSubPartName.TabIndex = 2;
-            this.sSubPartName.SelectedIndexChanged += new System.EventHandler(this.sSubPartName_SelectedIndexChanged);
-            // 
-            // sCategoryCode
-            // 
-            this.sCategoryCode.Location = new System.Drawing.Point(562, 92);
-            this.sCategoryCode.Name = "sCategoryCode";
-            this.sCategoryCode.Size = new System.Drawing.Size(143, 26);
-            this.sCategoryCode.TabIndex = 3;
-            // 
-            // sSubPartNameCode
-            // 
-            this.sSubPartNameCode.Location = new System.Drawing.Point(562, 186);
-            this.sSubPartNameCode.Name = "sSubPartNameCode";
-            this.sSubPartNameCode.Size = new System.Drawing.Size(143, 26);
-            this.sSubPartNameCode.TabIndex = 4;
-            // 
-            // sPartNameCode
-            // 
-            this.sPartNameCode.Location = new System.Drawing.Point(562, 139);
-            this.sPartNameCode.Name = "sPartNameCode";
-            this.sPartNameCode.Size = new System.Drawing.Size(143, 26);
-            this.sPartNameCode.TabIndex = 5;
-            // 
-            // sFullCode
-            // 
-            this.sFullCode.BackColor = System.Drawing.Color.PapayaWhip;
-            this.sFullCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.sFullCode.Location = new System.Drawing.Point(29, 26);
-            this.sFullCode.Name = "sFullCode";
-            this.sFullCode.ReadOnly = true;
-            this.sFullCode.Size = new System.Drawing.Size(237, 35);
-            this.sFullCode.TabIndex = 6;
-            this.sFullCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // lastIDCategory
-            // 
-            this.lastIDCategory.AutoSize = true;
-            this.lastIDCategory.ForeColor = System.Drawing.Color.Red;
-            this.lastIDCategory.Location = new System.Drawing.Point(787, 99);
-            this.lastIDCategory.Name = "lastIDCategory";
-            this.lastIDCategory.Size = new System.Drawing.Size(18, 20);
-            this.lastIDCategory.TabIndex = 7;
-            this.lastIDCategory.Text = "0";
-            // 
-            // lastIDPart
-            // 
-            this.lastIDPart.AutoSize = true;
-            this.lastIDPart.ForeColor = System.Drawing.Color.Red;
-            this.lastIDPart.Location = new System.Drawing.Point(787, 146);
-            this.lastIDPart.Name = "lastIDPart";
-            this.lastIDPart.Size = new System.Drawing.Size(18, 20);
-            this.lastIDPart.TabIndex = 8;
-            this.lastIDPart.Text = "0";
-            // 
-            // lastIDSubPart
-            // 
-            this.lastIDSubPart.AutoSize = true;
-            this.lastIDSubPart.ForeColor = System.Drawing.Color.Red;
-            this.lastIDSubPart.Location = new System.Drawing.Point(787, 193);
-            this.lastIDSubPart.Name = "lastIDSubPart";
-            this.lastIDSubPart.Size = new System.Drawing.Size(18, 20);
-            this.lastIDSubPart.TabIndex = 9;
-            this.lastIDSubPart.Text = "0";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.ForeColor = System.Drawing.Color.Red;
-            this.label33.Location = new System.Drawing.Point(720, 192);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(61, 20);
-            this.label33.TabIndex = 10;
-            this.label33.Text = "Last ID";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.ForeColor = System.Drawing.Color.Red;
-            this.label34.Location = new System.Drawing.Point(720, 99);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(61, 20);
-            this.label34.TabIndex = 11;
-            this.label34.Text = "Last ID";
-            // 
-            // AddNewPart
-            // 
-            this.AddNewPart.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.AddNewPart.ForeColor = System.Drawing.Color.Black;
-            this.AddNewPart.Location = new System.Drawing.Point(724, 465);
-            this.AddNewPart.Name = "AddNewPart";
-            this.AddNewPart.Size = new System.Drawing.Size(155, 42);
-            this.AddNewPart.TabIndex = 14;
-            this.AddNewPart.Text = "Add new part";
-            this.AddNewPart.UseVisualStyleBackColor = false;
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.ForeColor = System.Drawing.Color.Red;
-            this.label35.Location = new System.Drawing.Point(720, 145);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(61, 20);
-            this.label35.TabIndex = 12;
-            this.label35.Text = "Last ID";
-            // 
-            // sFullName
-            // 
-            this.sFullName.BackColor = System.Drawing.Color.PapayaWhip;
-            this.sFullName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.sFullName.Location = new System.Drawing.Point(272, 26);
-            this.sFullName.Name = "sFullName";
-            this.sFullName.ReadOnly = true;
-            this.sFullName.Size = new System.Drawing.Size(912, 35);
-            this.sFullName.TabIndex = 13;
-            this.sFullName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.groupBox1.Controls.Add(this.sCategoryCodeNew);
-            this.groupBox1.Controls.Add(this.sSubPartNameCodeNew);
-            this.groupBox1.Controls.Add(this.sPartNameCodeNew);
-            this.groupBox1.Controls.Add(this.sSubPartNameNew);
-            this.groupBox1.Controls.Add(this.sPartNameNew);
-            this.groupBox1.Controls.Add(this.sCategoryNew);
-            this.groupBox1.Controls.Add(this.label40);
-            this.groupBox1.Controls.Add(this.label41);
-            this.groupBox1.Controls.Add(this.label36);
-            this.groupBox1.Location = new System.Drawing.Point(14, 293);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(688, 214);
-            this.groupBox1.TabIndex = 16;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "New part info";
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(6, 111);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(38, 20);
-            this.label36.TabIndex = 17;
-            this.label36.Text = "Part";
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(6, 49);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(73, 20);
-            this.label41.TabIndex = 22;
-            this.label41.Text = "Category";
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(6, 170);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(67, 20);
-            this.label40.TabIndex = 21;
-            this.label40.Text = "SubPart";
-            // 
-            // sCategoryNew
-            // 
-            this.sCategoryNew.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.sCategoryNew.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.sCategoryNew.FormattingEnabled = true;
-            this.sCategoryNew.Location = new System.Drawing.Point(85, 41);
-            this.sCategoryNew.Name = "sCategoryNew";
-            this.sCategoryNew.Size = new System.Drawing.Size(447, 28);
-            this.sCategoryNew.TabIndex = 23;
-            // 
-            // sPartNameNew
-            // 
-            this.sPartNameNew.FormattingEnabled = true;
-            this.sPartNameNew.Location = new System.Drawing.Point(85, 103);
-            this.sPartNameNew.Name = "sPartNameNew";
-            this.sPartNameNew.Size = new System.Drawing.Size(447, 28);
-            this.sPartNameNew.TabIndex = 24;
-            // 
-            // sSubPartNameNew
-            // 
-            this.sSubPartNameNew.FormattingEnabled = true;
-            this.sSubPartNameNew.Location = new System.Drawing.Point(85, 162);
-            this.sSubPartNameNew.Name = "sSubPartNameNew";
-            this.sSubPartNameNew.Size = new System.Drawing.Size(447, 28);
-            this.sSubPartNameNew.TabIndex = 25;
-            // 
-            // sPartNameCodeNew
-            // 
-            this.sPartNameCodeNew.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.sPartNameCodeNew.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.sPartNameCodeNew.FormattingEnabled = true;
-            this.sPartNameCodeNew.Location = new System.Drawing.Point(550, 103);
-            this.sPartNameCodeNew.Name = "sPartNameCodeNew";
-            this.sPartNameCodeNew.Size = new System.Drawing.Size(119, 28);
-            this.sPartNameCodeNew.TabIndex = 27;
-            // 
-            // sSubPartNameCodeNew
-            // 
-            this.sSubPartNameCodeNew.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.sSubPartNameCodeNew.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.sSubPartNameCodeNew.FormattingEnabled = true;
-            this.sSubPartNameCodeNew.Location = new System.Drawing.Point(550, 162);
-            this.sSubPartNameCodeNew.Name = "sSubPartNameCodeNew";
-            this.sSubPartNameCodeNew.Size = new System.Drawing.Size(119, 28);
-            this.sSubPartNameCodeNew.TabIndex = 28;
-            // 
-            // sCategoryCodeNew
-            // 
-            this.sCategoryCodeNew.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.sCategoryCodeNew.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.sCategoryCodeNew.FormattingEnabled = true;
-            this.sCategoryCodeNew.Location = new System.Drawing.Point(550, 41);
-            this.sCategoryCodeNew.Name = "sCategoryCodeNew";
-            this.sCategoryCodeNew.Size = new System.Drawing.Size(119, 28);
-            this.sCategoryCodeNew.TabIndex = 26;
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(10, 146);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(38, 20);
-            this.label39.TabIndex = 23;
-            this.label39.Text = "Part";
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(10, 99);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(73, 20);
-            this.label38.TabIndex = 25;
-            this.label38.Text = "Category";
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(10, 193);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(67, 20);
-            this.label37.TabIndex = 24;
-            this.label37.Text = "SubPart";
-            // 
-            // UpdatePart
-            // 
-            this.UpdatePart.BackColor = System.Drawing.Color.Red;
-            this.UpdatePart.ForeColor = System.Drawing.Color.Black;
-            this.UpdatePart.Location = new System.Drawing.Point(550, 230);
-            this.UpdatePart.Name = "UpdatePart";
-            this.UpdatePart.Size = new System.Drawing.Size(155, 42);
-            this.UpdatePart.TabIndex = 26;
-            this.UpdatePart.Text = "Change part info";
-            this.UpdatePart.UseVisualStyleBackColor = false;
-            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.button1);
@@ -1237,6 +955,289 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // UpdatePart
+            // 
+            this.UpdatePart.BackColor = System.Drawing.Color.Red;
+            this.UpdatePart.ForeColor = System.Drawing.Color.Black;
+            this.UpdatePart.Location = new System.Drawing.Point(550, 230);
+            this.UpdatePart.Name = "UpdatePart";
+            this.UpdatePart.Size = new System.Drawing.Size(155, 42);
+            this.UpdatePart.TabIndex = 26;
+            this.UpdatePart.Text = "Change part info";
+            this.UpdatePart.UseVisualStyleBackColor = false;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(10, 193);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(67, 20);
+            this.label37.TabIndex = 24;
+            this.label37.Text = "SubPart";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(10, 99);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(73, 20);
+            this.label38.TabIndex = 25;
+            this.label38.Text = "Category";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(10, 146);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(38, 20);
+            this.label39.TabIndex = 23;
+            this.label39.Text = "Part";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.groupBox1.Controls.Add(this.sCategoryCodeNew);
+            this.groupBox1.Controls.Add(this.sSubPartNameCodeNew);
+            this.groupBox1.Controls.Add(this.sPartNameCodeNew);
+            this.groupBox1.Controls.Add(this.sSubPartNameNew);
+            this.groupBox1.Controls.Add(this.sPartNameNew);
+            this.groupBox1.Controls.Add(this.sCategoryNew);
+            this.groupBox1.Controls.Add(this.label40);
+            this.groupBox1.Controls.Add(this.label41);
+            this.groupBox1.Controls.Add(this.label36);
+            this.groupBox1.Location = new System.Drawing.Point(14, 293);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(688, 214);
+            this.groupBox1.TabIndex = 16;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "New part info";
+            // 
+            // sCategoryCodeNew
+            // 
+            this.sCategoryCodeNew.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.sCategoryCodeNew.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.sCategoryCodeNew.FormattingEnabled = true;
+            this.sCategoryCodeNew.Location = new System.Drawing.Point(550, 41);
+            this.sCategoryCodeNew.Name = "sCategoryCodeNew";
+            this.sCategoryCodeNew.Size = new System.Drawing.Size(119, 28);
+            this.sCategoryCodeNew.TabIndex = 26;
+            // 
+            // sSubPartNameCodeNew
+            // 
+            this.sSubPartNameCodeNew.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.sSubPartNameCodeNew.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.sSubPartNameCodeNew.FormattingEnabled = true;
+            this.sSubPartNameCodeNew.Location = new System.Drawing.Point(550, 162);
+            this.sSubPartNameCodeNew.Name = "sSubPartNameCodeNew";
+            this.sSubPartNameCodeNew.Size = new System.Drawing.Size(119, 28);
+            this.sSubPartNameCodeNew.TabIndex = 28;
+            // 
+            // sPartNameCodeNew
+            // 
+            this.sPartNameCodeNew.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.sPartNameCodeNew.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.sPartNameCodeNew.FormattingEnabled = true;
+            this.sPartNameCodeNew.Location = new System.Drawing.Point(550, 103);
+            this.sPartNameCodeNew.Name = "sPartNameCodeNew";
+            this.sPartNameCodeNew.Size = new System.Drawing.Size(119, 28);
+            this.sPartNameCodeNew.TabIndex = 27;
+            // 
+            // sSubPartNameNew
+            // 
+            this.sSubPartNameNew.FormattingEnabled = true;
+            this.sSubPartNameNew.Location = new System.Drawing.Point(85, 162);
+            this.sSubPartNameNew.Name = "sSubPartNameNew";
+            this.sSubPartNameNew.Size = new System.Drawing.Size(447, 28);
+            this.sSubPartNameNew.TabIndex = 25;
+            // 
+            // sPartNameNew
+            // 
+            this.sPartNameNew.FormattingEnabled = true;
+            this.sPartNameNew.Location = new System.Drawing.Point(85, 103);
+            this.sPartNameNew.Name = "sPartNameNew";
+            this.sPartNameNew.Size = new System.Drawing.Size(447, 28);
+            this.sPartNameNew.TabIndex = 24;
+            // 
+            // sCategoryNew
+            // 
+            this.sCategoryNew.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.sCategoryNew.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.sCategoryNew.FormattingEnabled = true;
+            this.sCategoryNew.Location = new System.Drawing.Point(85, 41);
+            this.sCategoryNew.Name = "sCategoryNew";
+            this.sCategoryNew.Size = new System.Drawing.Size(447, 28);
+            this.sCategoryNew.TabIndex = 23;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(6, 170);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(67, 20);
+            this.label40.TabIndex = 21;
+            this.label40.Text = "SubPart";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(6, 49);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(73, 20);
+            this.label41.TabIndex = 22;
+            this.label41.Text = "Category";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(6, 111);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(38, 20);
+            this.label36.TabIndex = 17;
+            this.label36.Text = "Part";
+            // 
+            // sFullName
+            // 
+            this.sFullName.BackColor = System.Drawing.Color.PapayaWhip;
+            this.sFullName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.sFullName.Location = new System.Drawing.Point(272, 26);
+            this.sFullName.Name = "sFullName";
+            this.sFullName.ReadOnly = true;
+            this.sFullName.Size = new System.Drawing.Size(912, 35);
+            this.sFullName.TabIndex = 13;
+            this.sFullName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.ForeColor = System.Drawing.Color.Red;
+            this.label35.Location = new System.Drawing.Point(720, 145);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(61, 20);
+            this.label35.TabIndex = 12;
+            this.label35.Text = "Last ID";
+            // 
+            // AddNewPart
+            // 
+            this.AddNewPart.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.AddNewPart.ForeColor = System.Drawing.Color.Black;
+            this.AddNewPart.Location = new System.Drawing.Point(724, 465);
+            this.AddNewPart.Name = "AddNewPart";
+            this.AddNewPart.Size = new System.Drawing.Size(155, 42);
+            this.AddNewPart.TabIndex = 14;
+            this.AddNewPart.Text = "Add new part";
+            this.AddNewPart.UseVisualStyleBackColor = false;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.ForeColor = System.Drawing.Color.Red;
+            this.label34.Location = new System.Drawing.Point(720, 99);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(61, 20);
+            this.label34.TabIndex = 11;
+            this.label34.Text = "Last ID";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.ForeColor = System.Drawing.Color.Red;
+            this.label33.Location = new System.Drawing.Point(720, 192);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(61, 20);
+            this.label33.TabIndex = 10;
+            this.label33.Text = "Last ID";
+            // 
+            // lastIDSubPart
+            // 
+            this.lastIDSubPart.AutoSize = true;
+            this.lastIDSubPart.ForeColor = System.Drawing.Color.Red;
+            this.lastIDSubPart.Location = new System.Drawing.Point(787, 193);
+            this.lastIDSubPart.Name = "lastIDSubPart";
+            this.lastIDSubPart.Size = new System.Drawing.Size(18, 20);
+            this.lastIDSubPart.TabIndex = 9;
+            this.lastIDSubPart.Text = "0";
+            // 
+            // lastIDPart
+            // 
+            this.lastIDPart.AutoSize = true;
+            this.lastIDPart.ForeColor = System.Drawing.Color.Red;
+            this.lastIDPart.Location = new System.Drawing.Point(787, 146);
+            this.lastIDPart.Name = "lastIDPart";
+            this.lastIDPart.Size = new System.Drawing.Size(18, 20);
+            this.lastIDPart.TabIndex = 8;
+            this.lastIDPart.Text = "0";
+            // 
+            // lastIDCategory
+            // 
+            this.lastIDCategory.AutoSize = true;
+            this.lastIDCategory.ForeColor = System.Drawing.Color.Red;
+            this.lastIDCategory.Location = new System.Drawing.Point(787, 99);
+            this.lastIDCategory.Name = "lastIDCategory";
+            this.lastIDCategory.Size = new System.Drawing.Size(18, 20);
+            this.lastIDCategory.TabIndex = 7;
+            this.lastIDCategory.Text = "0";
+            // 
+            // sFullCode
+            // 
+            this.sFullCode.BackColor = System.Drawing.Color.PapayaWhip;
+            this.sFullCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.sFullCode.Location = new System.Drawing.Point(29, 26);
+            this.sFullCode.Name = "sFullCode";
+            this.sFullCode.ReadOnly = true;
+            this.sFullCode.Size = new System.Drawing.Size(237, 35);
+            this.sFullCode.TabIndex = 6;
+            this.sFullCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // sPartNameCode
+            // 
+            this.sPartNameCode.Location = new System.Drawing.Point(562, 139);
+            this.sPartNameCode.Name = "sPartNameCode";
+            this.sPartNameCode.Size = new System.Drawing.Size(143, 26);
+            this.sPartNameCode.TabIndex = 5;
+            // 
+            // sSubPartNameCode
+            // 
+            this.sSubPartNameCode.Location = new System.Drawing.Point(562, 186);
+            this.sSubPartNameCode.Name = "sSubPartNameCode";
+            this.sSubPartNameCode.Size = new System.Drawing.Size(143, 26);
+            this.sSubPartNameCode.TabIndex = 4;
+            // 
+            // sCategoryCode
+            // 
+            this.sCategoryCode.Location = new System.Drawing.Point(562, 92);
+            this.sCategoryCode.Name = "sCategoryCode";
+            this.sCategoryCode.Size = new System.Drawing.Size(143, 26);
+            this.sCategoryCode.TabIndex = 3;
+            // 
+            // sSubPartName
+            // 
+            this.sSubPartName.FormattingEnabled = true;
+            this.sSubPartName.Location = new System.Drawing.Point(95, 183);
+            this.sSubPartName.Name = "sSubPartName";
+            this.sSubPartName.Size = new System.Drawing.Size(447, 28);
+            this.sSubPartName.TabIndex = 2;
+            this.sSubPartName.SelectedIndexChanged += new System.EventHandler(this.sSubPartName_SelectedIndexChanged);
+            // 
+            // sPartName
+            // 
+            this.sPartName.FormattingEnabled = true;
+            this.sPartName.Location = new System.Drawing.Point(95, 136);
+            this.sPartName.Name = "sPartName";
+            this.sPartName.Size = new System.Drawing.Size(447, 28);
+            this.sPartName.TabIndex = 1;
+            this.sPartName.SelectedIndexChanged += new System.EventHandler(this.sPartName_SelectedIndexChanged);
+            // 
+            // sCategory
+            // 
+            this.sCategory.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.sCategory.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.sCategory.FormattingEnabled = true;
+            this.sCategory.Location = new System.Drawing.Point(95, 90);
+            this.sCategory.Name = "sCategory";
+            this.sCategory.Size = new System.Drawing.Size(447, 28);
+            this.sCategory.TabIndex = 0;
+            this.sCategory.SelectedIndexChanged += new System.EventHandler(this.sCategory_SelectedIndexChanged);
+            // 
             // PartEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -1253,10 +1254,10 @@
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }

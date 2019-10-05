@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace POT.MyTypes
 {
@@ -43,6 +44,67 @@ namespace POT.MyTypes
             this.NacinPlacanja = nacinPlacanja;
             this.Storno = storno;
             this.Konverzija = konverzija;
+        }
+
+        public void Clear()
+        {
+            this.Id = 0;
+            this.PonudaID = 0;
+            this.DatumIzdano = "";
+            this.Iznos = 0;
+            this.DatumNaplaceno = "";
+            this.Naplaceno = 0;
+            this.CustomerID = 0;
+            this.Eur = 0;
+            this.Napomena = "";
+            this.VrijemeIzdano = "";
+            this.Valuta = 0;
+            this.Operater = "";
+            this.DanTecaja = "";
+            this.NacinPlacanja = "";
+            this.Storno = 0;
+            this.Konverzija = 0;
+        }
+
+        public List<InvoiceParts> StornoGetAllParts(Invoice inv)
+        {
+            //this.Id = inv.Id;
+            this.PonudaID = inv.ponudaID;
+            this.DatumIzdano = inv.DatumIzdano;
+            this.Iznos = inv.Iznos;
+            this.DatumNaplaceno = inv.DatumNaplaceno;
+            this.Naplaceno = inv.Naplaceno;
+            this.CustomerID = inv.CustomerID;
+            this.Eur = inv.Eur;
+            this.Napomena = inv.Napomena;
+            this.VrijemeIzdano = inv.VrijemeIzdano;
+            this.Valuta = inv.Valuta;
+            this.Operater = inv.Operater;
+            this.DanTecaja = inv.DanTecaja;
+            this.NacinPlacanja = inv.NacinPlacanja;
+            this.Storno = inv.Storno;
+            this.Konverzija = inv.Konverzija;
+
+            List<InvoiceParts> tmp = new List<InvoiceParts>();
+
+            try
+            {
+                tmp = qc.GetAllPartsByInvoiceId(inv.id);
+
+                foreach (InvoiceParts prt in tmp)
+                {
+                    prt.IznosRabat = String.Format("{0:N2}", "-" + prt.IznosRabat);
+                    prt.IznosTotal = "-" + prt.IznosTotal;
+                    prt.IznosPart = "-" + prt.IznosPart;
+
+                    prt.AddInvoiceToPart(this);
+                }
+            }
+            catch
+            {
+                return tmp;
+            }
+            return tmp;
         }
 
         public long GetNewInvoiceNumber()

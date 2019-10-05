@@ -34,6 +34,10 @@
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.PriceOUTEURTB = new System.Windows.Forms.TextBox();
+            this.PriceOUTKNTB = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.FullPriceInfoLB = new System.Windows.Forms.Label();
             this.PriceInfoLB = new System.Windows.Forms.Label();
@@ -100,10 +104,7 @@
             this.printDocumentInvoice = new System.Drawing.Printing.PrintDocument();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.printPreviewDialogInvoice = new System.Windows.Forms.PrintPreviewDialog();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.PriceOUTEURTB = new System.Windows.Forms.TextBox();
-            this.PriceOUTKNTB = new System.Windows.Forms.TextBox();
+            this.StornoBT = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -216,6 +217,46 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Make";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(370, 178);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(110, 20);
+            this.label26.TabIndex = 187;
+            this.label26.Text = "Price out EUR";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(260, 177);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(96, 20);
+            this.label27.TabIndex = 186;
+            this.label27.Text = "Price out KN";
+            // 
+            // PriceOUTEURTB
+            // 
+            this.PriceOUTEURTB.BackColor = System.Drawing.Color.Moccasin;
+            this.PriceOUTEURTB.Location = new System.Drawing.Point(374, 191);
+            this.PriceOUTEURTB.Name = "PriceOUTEURTB";
+            this.PriceOUTEURTB.ReadOnly = true;
+            this.PriceOUTEURTB.Size = new System.Drawing.Size(90, 26);
+            this.PriceOUTEURTB.TabIndex = 185;
+            this.PriceOUTEURTB.TabStop = false;
+            this.PriceOUTEURTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // PriceOUTKNTB
+            // 
+            this.PriceOUTKNTB.BackColor = System.Drawing.Color.Moccasin;
+            this.PriceOUTKNTB.Location = new System.Drawing.Point(265, 191);
+            this.PriceOUTKNTB.Name = "PriceOUTKNTB";
+            this.PriceOUTKNTB.ReadOnly = true;
+            this.PriceOUTKNTB.Size = new System.Drawing.Size(90, 26);
+            this.PriceOUTKNTB.TabIndex = 184;
+            this.PriceOUTKNTB.TabStop = false;
+            this.PriceOUTKNTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // groupBox2
             // 
@@ -501,6 +542,7 @@
             this.listView1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.listView1.ForeColor = System.Drawing.Color.White;
             this.listView1.FullRowSelect = true;
+            this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(4, 271);
             this.listView1.MultiSelect = false;
             this.listView1.Name = "listView1";
@@ -856,6 +898,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.StornoBT);
             this.tabPage2.Controls.Add(this.label25);
             this.tabPage2.Controls.Add(this.PDFOpen);
             this.tabPage2.Controls.Add(this.listView2);
@@ -889,6 +932,7 @@
             // listView2
             // 
             this.listView2.FullRowSelect = true;
+            this.listView2.HideSelection = false;
             this.listView2.Location = new System.Drawing.Point(3, 6);
             this.listView2.MultiSelect = false;
             this.listView2.Name = "listView2";
@@ -921,45 +965,16 @@
             this.printPreviewDialogInvoice.Name = "printPreviewDialog1";
             this.printPreviewDialogInvoice.Visible = false;
             // 
-            // label26
+            // StornoBT
             // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(370, 178);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(110, 20);
-            this.label26.TabIndex = 187;
-            this.label26.Text = "Price out EUR";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(260, 177);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(96, 20);
-            this.label27.TabIndex = 186;
-            this.label27.Text = "Price out KN";
-            // 
-            // PriceOUTEURTB
-            // 
-            this.PriceOUTEURTB.BackColor = System.Drawing.Color.Moccasin;
-            this.PriceOUTEURTB.Location = new System.Drawing.Point(374, 191);
-            this.PriceOUTEURTB.Name = "PriceOUTEURTB";
-            this.PriceOUTEURTB.ReadOnly = true;
-            this.PriceOUTEURTB.Size = new System.Drawing.Size(90, 26);
-            this.PriceOUTEURTB.TabIndex = 185;
-            this.PriceOUTEURTB.TabStop = false;
-            this.PriceOUTEURTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // PriceOUTKNTB
-            // 
-            this.PriceOUTKNTB.BackColor = System.Drawing.Color.Moccasin;
-            this.PriceOUTKNTB.Location = new System.Drawing.Point(265, 191);
-            this.PriceOUTKNTB.Name = "PriceOUTKNTB";
-            this.PriceOUTKNTB.ReadOnly = true;
-            this.PriceOUTKNTB.Size = new System.Drawing.Size(90, 26);
-            this.PriceOUTKNTB.TabIndex = 184;
-            this.PriceOUTKNTB.TabStop = false;
-            this.PriceOUTKNTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.StornoBT.BackColor = System.Drawing.Color.Red;
+            this.StornoBT.Location = new System.Drawing.Point(668, 566);
+            this.StornoBT.Name = "StornoBT";
+            this.StornoBT.Size = new System.Drawing.Size(128, 51);
+            this.StornoBT.TabIndex = 3;
+            this.StornoBT.Text = "Storno";
+            this.StornoBT.UseVisualStyleBackColor = false;
+            this.StornoBT.Click += new System.EventHandler(this.StornoBT_Click);
             // 
             // Racun
             // 
@@ -1064,5 +1079,6 @@
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.TextBox PriceOUTEURTB;
         private System.Windows.Forms.TextBox PriceOUTKNTB;
+        private System.Windows.Forms.Button StornoBT;
     }
 }

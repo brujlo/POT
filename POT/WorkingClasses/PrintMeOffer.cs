@@ -617,12 +617,15 @@ namespace POT.WorkingClasses
                             e.Graphics.DrawString(workingStr, new Font("Calibri light", ft.Size - 2, FontStyle.Regular), Brushes.Black, new Point(rb, headerpointVer + moveBy));
 
                             headerpointVer = headerpointVer + moveBy + 4;
-                            if (hrv)
-                                workingStr = Properties.Settings.Default.extraLine2HRTB;
-                            else
-                                workingStr = Properties.Settings.Default.extraLine2ENGTB;
-                            measureStr = e.Graphics.MeasureString(workingStr, ft).Width;
-                            e.Graphics.DrawString(workingStr, new Font("Calibri light", ft.Size - 2, FontStyle.Regular), Brushes.Black, new Point(rb, headerpointVer + moveBy));
+                            if (Properties.Settings.Default.TAX1 == 0)
+                            {
+                                if (hrv)
+                                    workingStr = Properties.Settings.Default.extraLine2HRTB;
+                                else
+                                    workingStr = Properties.Settings.Default.extraLine2ENGTB;
+                                measureStr = e.Graphics.MeasureString(workingStr, ft).Width;
+                                e.Graphics.DrawString(workingStr, new Font("Calibri light", ft.Size - 2, FontStyle.Regular), Brushes.Black, new Point(rb, headerpointVer + moveBy));
+                            }
                         }
                     }
 

@@ -696,5 +696,17 @@ namespace POT.Properties {
                 this["APIweb"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string StornoInvoiceNumber {
+            get {
+                return ((string)(this["StornoInvoiceNumber"]));
+            }
+            set {
+                this["StornoInvoiceNumber"] = value;
+            }
+        }
     }
 }

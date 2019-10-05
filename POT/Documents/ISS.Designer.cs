@@ -34,7 +34,6 @@
             this.PAUSEbt = new System.Windows.Forms.Button();
             this.STARTbt = new System.Windows.Forms.Button();
             this.STOPbt = new System.Windows.Forms.Button();
-            this.PartCb = new System.Windows.Forms.ComboBox();
             this.NameTb = new System.Windows.Forms.TextBox();
             this.DateInTb = new System.Windows.Forms.TextBox();
             this.DateSentTb = new System.Windows.Forms.TextBox();
@@ -47,7 +46,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
             this.WorkDoneCb = new System.Windows.Forms.ComboBox();
@@ -90,6 +88,7 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.ISSIDlb = new System.Windows.Forms.Label();
+            this.NewISSBT = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -137,26 +136,15 @@
             this.STOPbt.UseVisualStyleBackColor = false;
             this.STOPbt.Click += new System.EventHandler(this.STOPbt_Click);
             // 
-            // PartCb
-            // 
-            this.PartCb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.PartCb.FormattingEnabled = true;
-            this.PartCb.Location = new System.Drawing.Point(279, 23);
-            this.PartCb.Name = "PartCb";
-            this.PartCb.Size = new System.Drawing.Size(238, 28);
-            this.PartCb.TabIndex = 0;
-            this.PartCb.SelectedIndexChanged += new System.EventHandler(this.PartCb_SelectedIndexChanged);
-            // 
             // NameTb
             // 
             this.NameTb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.NameTb.BackColor = System.Drawing.Color.PapayaWhip;
-            this.NameTb.Location = new System.Drawing.Point(279, 78);
+            this.NameTb.Location = new System.Drawing.Point(246, 78);
             this.NameTb.Name = "NameTb";
             this.NameTb.ReadOnly = true;
-            this.NameTb.Size = new System.Drawing.Size(243, 26);
+            this.NameTb.Size = new System.Drawing.Size(320, 26);
             this.NameTb.TabIndex = 106;
             this.NameTb.TabStop = false;
             // 
@@ -164,7 +152,7 @@
             // 
             this.DateInTb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.DateInTb.BackColor = System.Drawing.Color.PapayaWhip;
-            this.DateInTb.Location = new System.Drawing.Point(558, 78);
+            this.DateInTb.Location = new System.Drawing.Point(583, 78);
             this.DateInTb.Name = "DateInTb";
             this.DateInTb.ReadOnly = true;
             this.DateInTb.Size = new System.Drawing.Size(96, 26);
@@ -175,7 +163,7 @@
             // 
             this.DateSentTb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.DateSentTb.BackColor = System.Drawing.Color.PapayaWhip;
-            this.DateSentTb.Location = new System.Drawing.Point(558, 140);
+            this.DateSentTb.Location = new System.Drawing.Point(583, 140);
             this.DateSentTb.Name = "DateSentTb";
             this.DateSentTb.ReadOnly = true;
             this.DateSentTb.Size = new System.Drawing.Size(96, 26);
@@ -187,10 +175,10 @@
             this.SNTb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.SNTb.BackColor = System.Drawing.Color.PapayaWhip;
-            this.SNTb.Location = new System.Drawing.Point(279, 140);
+            this.SNTb.Location = new System.Drawing.Point(384, 140);
             this.SNTb.Name = "SNTb";
             this.SNTb.ReadOnly = true;
-            this.SNTb.Size = new System.Drawing.Size(243, 26);
+            this.SNTb.Size = new System.Drawing.Size(182, 26);
             this.SNTb.TabIndex = 109;
             this.SNTb.TabStop = false;
             // 
@@ -199,10 +187,10 @@
             this.CNTb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.CNTb.BackColor = System.Drawing.Color.PapayaWhip;
-            this.CNTb.Location = new System.Drawing.Point(279, 202);
+            this.CNTb.Location = new System.Drawing.Point(384, 190);
             this.CNTb.Name = "CNTb";
             this.CNTb.ReadOnly = true;
-            this.CNTb.Size = new System.Drawing.Size(243, 26);
+            this.CNTb.Size = new System.Drawing.Size(182, 26);
             this.CNTb.TabIndex = 110;
             this.CNTb.TabStop = false;
             // 
@@ -210,7 +198,7 @@
             // 
             this.IDTb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.IDTb.BackColor = System.Drawing.Color.PapayaWhip;
-            this.IDTb.Location = new System.Drawing.Point(558, 202);
+            this.IDTb.Location = new System.Drawing.Point(583, 190);
             this.IDTb.Name = "IDTb";
             this.IDTb.ReadOnly = true;
             this.IDTb.Size = new System.Drawing.Size(96, 26);
@@ -221,18 +209,18 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(275, 59);
+            this.label1.Location = new System.Drawing.Point(243, 59);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 20);
+            this.label1.Size = new System.Drawing.Size(82, 20);
             this.label1.TabIndex = 112;
-            this.label1.Text = "Name";
+            this.label1.Text = "Part name";
             // 
             // label2
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(554, 59);
+            this.label2.Location = new System.Drawing.Point(579, 59);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(60, 20);
             this.label2.TabIndex = 113;
@@ -242,7 +230,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.Gray;
-            this.label3.Location = new System.Drawing.Point(275, 121);
+            this.label3.Location = new System.Drawing.Point(377, 121);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(31, 20);
             this.label3.TabIndex = 114;
@@ -252,7 +240,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.Gray;
-            this.label4.Location = new System.Drawing.Point(275, 183);
+            this.label4.Location = new System.Drawing.Point(377, 171);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(31, 20);
             this.label4.TabIndex = 115;
@@ -263,7 +251,7 @@
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.Gray;
-            this.label5.Location = new System.Drawing.Point(554, 121);
+            this.label5.Location = new System.Drawing.Point(579, 121);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(79, 20);
             this.label5.TabIndex = 116;
@@ -274,21 +262,11 @@
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.Color.Gray;
-            this.label6.Location = new System.Drawing.Point(554, 183);
+            this.label6.Location = new System.Drawing.Point(579, 171);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(26, 20);
             this.label6.TabIndex = 117;
             this.label6.Text = "ID";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.Color.Gray;
-            this.label7.Location = new System.Drawing.Point(275, 4);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(77, 20);
-            this.label7.TabIndex = 118;
-            this.label7.Text = "Part code";
             // 
             // label11
             // 
@@ -308,6 +286,7 @@
             this.listView1.BackColor = System.Drawing.Color.Pink;
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
+            this.listView1.HideSelection = false;
             this.listView1.ImeMode = System.Windows.Forms.ImeMode.On;
             this.listView1.Location = new System.Drawing.Point(13, 286);
             this.listView1.Margin = new System.Windows.Forms.Padding(4);
@@ -568,16 +547,16 @@
             this.label18.ForeColor = System.Drawing.Color.Gray;
             this.label18.Location = new System.Drawing.Point(-1, 121);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(85, 20);
+            this.label18.Size = new System.Drawing.Size(105, 20);
             this.label18.TabIndex = 160;
-            this.label18.Text = "Select ISS";
+            this.label18.Text = "Select by ISS";
             // 
             // ISSSelectorCb
             // 
             this.ISSSelectorCb.FormattingEnabled = true;
             this.ISSSelectorCb.Location = new System.Drawing.Point(3, 140);
             this.ISSSelectorCb.Name = "ISSSelectorCb";
-            this.ISSSelectorCb.Size = new System.Drawing.Size(238, 28);
+            this.ISSSelectorCb.Size = new System.Drawing.Size(351, 28);
             this.ISSSelectorCb.TabIndex = 159;
             this.ISSSelectorCb.TabStop = false;
             this.ISSSelectorCb.SelectedIndexChanged += new System.EventHandler(this.ISSSelectorCb_SelectedIndexChanged);
@@ -734,7 +713,7 @@
             this.PartSelectorCb.FormattingEnabled = true;
             this.PartSelectorCb.Location = new System.Drawing.Point(3, 188);
             this.PartSelectorCb.Name = "PartSelectorCb";
-            this.PartSelectorCb.Size = new System.Drawing.Size(238, 28);
+            this.PartSelectorCb.Size = new System.Drawing.Size(351, 28);
             this.PartSelectorCb.TabIndex = 168;
             this.PartSelectorCb.TabStop = false;
             this.PartSelectorCb.SelectedIndexChanged += new System.EventHandler(this.PartSelectorCb_SelectedIndexChanged);
@@ -745,9 +724,9 @@
             this.label19.ForeColor = System.Drawing.Color.Gray;
             this.label19.Location = new System.Drawing.Point(-1, 170);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(86, 20);
+            this.label19.Size = new System.Drawing.Size(106, 20);
             this.label19.TabIndex = 169;
-            this.label19.Text = "Select part";
+            this.label19.Text = "Select by part";
             // 
             // label20
             // 
@@ -771,11 +750,23 @@
             this.ISSIDlb.TabIndex = 171;
             this.ISSIDlb.Text = "0";
             // 
+            // NewISSBT
+            // 
+            this.NewISSBT.BackColor = System.Drawing.Color.Tomato;
+            this.NewISSBT.Location = new System.Drawing.Point(279, 12);
+            this.NewISSBT.Name = "NewISSBT";
+            this.NewISSBT.Size = new System.Drawing.Size(169, 35);
+            this.NewISSBT.TabIndex = 172;
+            this.NewISSBT.Text = "Open new ISS";
+            this.NewISSBT.UseVisualStyleBackColor = false;
+            this.NewISSBT.Click += new System.EventHandler(this.NewISSBT_Click);
+            // 
             // ISS
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(978, 662);
+            this.Controls.Add(this.NewISSBT);
             this.Controls.Add(this.ISSIDlb);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label19);
@@ -814,7 +805,6 @@
             this.Controls.Add(this.WorkDoneCb);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.listView1);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -827,7 +817,6 @@
             this.Controls.Add(this.DateSentTb);
             this.Controls.Add(this.DateInTb);
             this.Controls.Add(this.NameTb);
-            this.Controls.Add(this.PartCb);
             this.Controls.Add(this.STOPbt);
             this.Controls.Add(this.STARTbt);
             this.Controls.Add(this.PAUSEbt);
@@ -850,7 +839,6 @@
         private System.Windows.Forms.Button PAUSEbt;
         private System.Windows.Forms.Button STARTbt;
         private System.Windows.Forms.Button STOPbt;
-        private System.Windows.Forms.ComboBox PartCb;
         private System.Windows.Forms.TextBox NameTb;
         private System.Windows.Forms.TextBox DateInTb;
         private System.Windows.Forms.TextBox DateSentTb;
@@ -863,7 +851,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ComboBox WorkDoneCb;
@@ -906,5 +893,6 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label ISSIDlb;
+        private System.Windows.Forms.Button NewISSBT;
     }
 }

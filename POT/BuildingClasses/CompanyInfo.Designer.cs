@@ -312,10 +312,11 @@
             this.LogoSize.TabIndex = 27;
             this.LogoSize.TabStop = false;
             this.LogoSize.Value = new decimal(new int[] {
-            1,
+            2,
             0,
             0,
             0});
+            this.LogoSize.ValueChanged += new System.EventHandler(this.LogoSize_ValueChanged);
             // 
             // label14
             // 

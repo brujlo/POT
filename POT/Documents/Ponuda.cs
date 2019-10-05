@@ -837,11 +837,12 @@ namespace POT.Documents
 
         private void saveToPDF()
         {
+            String printerName = printDialog1.PrinterSettings.PrinterName;
+
             try
             {
                 PrintDialog printDialog1 = new PrintDialog();
                 printDialog1.Document = printDocumentOffer;
-
                 printDialog1.PrinterSettings.PrinterName = "Microsoft Print to PDF";
 
                 if (!printDialog1.PrinterSettings.IsValid) return;
@@ -856,6 +857,11 @@ namespace POT.Documents
                 printDocumentOffer.PrinterSettings.PrintFileName = directory + fileName;
                 printDocumentOffer.PrinterSettings.PrintToFile = true;
                 printDocumentOffer.Print();
+
+                printDialog1.PrinterSettings.PrintToFile = false;
+                printDocumentOffer.PrinterSettings.PrintToFile = false;
+                printDialog1.PrinterSettings.PrinterName = printerName;
+                printDocumentOffer.PrinterSettings.PrinterName = printerName;
             }
             catch (Exception e1)
             {

@@ -66,6 +66,8 @@ D:\PROJECTS\VS\POT\POT\POT\obj\Debug\POT.Documents.IIS.resources
 D:\PROJECTS\VS\POT\POT\POT\obj\Debug\POT.Documents.Racun.resources
 D:\PROJECTS\VS\POT\POT\POT\obj\Debug\POT.Loading.resources
 D:\PROJECTS\VS\POT\POT\POT\obj\Debug\POT.Saving.resources
+D:\PROJECTS\VS\POT\POT\POT\obj\Debug\POT.BuildingClasses.SettingsForm.resources
+D:\PROJECTS\VS\POT\POT\POT\obj\Debug\POT.Documents.Ponuda.resources
 F:\PROJEKTI\VS\POT\POT\POT\bin\Debug\POT.exe.config
 F:\PROJEKTI\VS\POT\POT\POT\bin\Debug\POT.exe.manifest
 F:\PROJEKTI\VS\POT\POT\POT\bin\Debug\POT.application
@@ -83,14 +85,18 @@ F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.CopyPrintForms.cPRIM.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.Documents.IIS.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.Documents.ISS.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.IUS.resources
+F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.Documents.Ponuda.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.Documents.Racun.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.Documents.Tickets.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.Loading.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.LoginForm.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.Saving.resources
+F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.TestForm.resources
+F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.WorkingClasses.ISSSelector.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.MainCmpSelector.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.OpenTicketList.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.Otpremnica.resources
+F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.WorkingClasses.PartEditor.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.PartsList.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.Primka.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.Properties.strings.resources
@@ -110,8 +116,3 @@ F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.application
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.exe
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.pdb
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.csprojAssemblyReference.cache
-D:\PROJECTS\VS\POT\POT\POT\obj\Debug\POT.BuildingClasses.SettingsForm.resources
-D:\PROJECTS\VS\POT\POT\POT\obj\Debug\POT.Documents.Ponuda.resources
-F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.Documents.Ponuda.resources
-F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.WorkingClasses.PartEditor.resources
-F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.TestForm.resources

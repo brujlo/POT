@@ -707,6 +707,8 @@ namespace POT
 
         private void saveToPDF()
         {
+            String printerName = printDialog1.PrinterSettings.PrinterName;
+
             try
             {
                 PrintDialog printDialog1 = new PrintDialog();
@@ -726,6 +728,11 @@ namespace POT
                 printDocumentIUS.PrinterSettings.PrintFileName = directory + fileName;
                 printDocumentIUS.PrinterSettings.PrintToFile = true;
                 printDocumentIUS.Print();
+
+                printDialog1.PrinterSettings.PrintToFile = false;
+                printDocumentIUS.PrinterSettings.PrintToFile = false;
+                printDialog1.PrinterSettings.PrinterName = printerName;
+                printDocumentIUS.PrinterSettings.PrinterName = printerName;
             }
             catch (Exception e1)
             {

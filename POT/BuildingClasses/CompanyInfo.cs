@@ -296,5 +296,10 @@ namespace POT
                 textBox1.ResetText();
             }
         }
+
+        private void LogoSize_ValueChanged(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.LogoSize = int.Parse(LogoSize.Value.ToString());
+        }
     }
 }

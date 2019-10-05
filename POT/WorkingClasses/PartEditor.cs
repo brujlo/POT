@@ -574,7 +574,7 @@ namespace POT.WorkingClasses
             catch (Exception e1)
             {
                 Program.LoadStop();
-                MessageBox.Show(e1.Message);
+                //MessageBox.Show(e1.Message);
             }
             finally
             {
@@ -641,7 +641,7 @@ namespace POT.WorkingClasses
             catch (Exception e1)
             {
                 Program.LoadStop();
-                MessageBox.Show(e1.Message);
+                //MessageBox.Show(e1.Message);
             }
             finally
             {
@@ -687,7 +687,7 @@ namespace POT.WorkingClasses
             catch (Exception e1)
             {
                 Program.LoadStop();
-                MessageBox.Show(e1.Message);
+                //MessageBox.Show(e1.Message);
             }
             finally
             {
@@ -725,6 +725,10 @@ namespace POT.WorkingClasses
 
         private void button1_Click(object sender, EventArgs e)
         {
+            sPartName.Items.Clear();
+            sSubPartName.Items.Clear();
+
+
             sCategoryCode.ResetText();
             sCategory.ResetText();
             sPartNameCode.ResetText();
@@ -745,6 +749,9 @@ namespace POT.WorkingClasses
             sPartNameNew.Enabled = true;
             sSubPartNameCodeNew.Enabled = true;
             sSubPartNameNew.Enabled = true;
+
+            prtSif = null;
+            PostaviFullCode();
         }
     }
 }

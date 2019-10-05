@@ -91,7 +91,7 @@ namespace POT.WorkingClasses
             }
 
             String oznakaValute = "";
-            if (hrv)
+            if (hrv && inv.Konverzija == 1)
             {
                 Properties.Settings.Default.LanguageStt = "hrv";
                 Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("hr-HR");
@@ -258,6 +258,13 @@ namespace POT.WorkingClasses
  
                         e.Graphics.DrawString(workingStr + "  " + brojRacuna, new Font("Calibri light", fontSizeS, FontStyle.Bold), Brushes.Black, new Point(margins.Left, headerpointVer + (moveBy * 2)));
 
+                        if ( storno == 1)
+                        {
+                            workingStr = "STORNO - " + Properties.Settings.Default.StornoInvoiceNumber;
+                            measureStr = e.Graphics.MeasureString(workingStr, getFontBold(12)).Width;
+                            e.Graphics.DrawString(workingStr, new Font("Calibri light", 12, FontStyle.Bold), Brushes.Black, new Point( (bounds.Right / 2) - ((int)measureStr / 2), headerpointVer + moveBy * 2));
+                        }
+
                         workingStr = Properties.strings.ACCOUNTUSE;
                         measureStr = e.Graphics.MeasureString(workingStr, getFont(10)).Width;
                         e.Graphics.DrawString(workingStr, new Font("Calibri light", fontSizeS, FontStyle.Bold), Brushes.Black, new Point(bounds.Right - margins.Left - (int)measureStr, headerpointVer + moveBy - 4));
@@ -390,7 +397,13 @@ namespace POT.WorkingClasses
                         measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
                         e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(pocetak + (((int)measureField - (int)measureStr) / 2), headerpointVer + moveBy));
 
-                        workingStr = tmpPart.FullName;//tu partRows
+                        if( storno == 1 )
+                            workingStr = tmpPart.FullName + String.Format("{0:00000000000}", long.Parse(Properties.Settings.Default.StornoInvoiceNumber));//tu partRows
+                        else
+                            workingStr = tmpPart.FullName;//tu partRows
+
+                        Properties.Settings.Default.StornoInvoiceNumber = "";
+
                         measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
                         measureField = name - rb;
                         fnt = fitFontSize(e, workingStr, fontSizeR, measureField);
@@ -430,9 +443,20 @@ namespace POT.WorkingClasses
                         e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(rebate + (((int)measureField - (int)measureStr) / 2), headerpointVer + moveBy));
 
                         if (konverzija)
-                            workingStr = String.Format("{0:N2}", decimal.Parse(invPrtList[partRows].IznosRabat) / eurDjelitelj) + " " + oznakaValute;
+                        {
+                            if( storno == 1 )
+                                workingStr = String.Format("{0:N2}", decimal.Parse(invPrtList[partRows].IznosRabat) / eurDjelitelj) + " " + oznakaValute;
+                            else
+                                workingStr = String.Format("{0:N2}", decimal.Parse(invPrtList[partRows].IznosRabat) / eurDjelitelj) + " " + oznakaValute;
+                        }
                         else
-                            workingStr = String.Format("{0:N2}", decimal.Parse(invPrtList[partRows].IznosRabat)) + " " + oznakaValute;
+                        {
+                            if ( storno == 1 )
+                                workingStr = String.Format("{0:N2}", decimal.Parse(invPrtList[partRows].IznosRabat)) + " " + oznakaValute;
+                            else
+                                workingStr = String.Format("{0:N2}", decimal.Parse(invPrtList[partRows].IznosRabat)) + " " + oznakaValute;
+                        }
+
                         measureField = rebatePrice - amount;
                         fnt = fitFontSize(e, workingStr, fontSizeR, measureField);
                         measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
@@ -600,7 +624,7 @@ namespace POT.WorkingClasses
                             e.Graphics.DrawString(workingStr, new Font("Calibri light", ft.Size, FontStyle.Regular), Brushes.Black, new Point(rb + (int)measureStr + 25, headerpointVer + moveBy));
 
                             headerpointVer = headerpointVer + (moveBy * 4);
-                            if (hrv)
+                            if (hrv && konverzija)
                                 workingStr = Properties.Settings.Default.extraLine1HRTB;
                             else
                                 workingStr = Properties.Settings.Default.extraLine1ENGTB;
@@ -608,7 +632,7 @@ namespace POT.WorkingClasses
                             e.Graphics.DrawString(workingStr, new Font("Calibri light", ft.Size - 2, FontStyle.Regular), Brushes.Black, new Point(rb, headerpointVer + moveBy));
 
                             headerpointVer = headerpointVer + moveBy +4;
-                            if (hrv)
+                            if (hrv && konverzija)
                                 workingStr = Properties.Settings.Default.extraLine2HRTB;
                             else
                                 workingStr = Properties.Settings.Default.extraLine2ENGTB;
@@ -693,6 +717,11 @@ namespace POT.WorkingClasses
         private Font getFont(int _FontSize)
         {
             return new Font("Calibri light", _FontSize, FontStyle.Regular);
+        }
+
+        private Font getFontBold(int _FontSize)
+        {
+            return new Font("Calibri light", _FontSize, FontStyle.Bold);
         }
 
         private Font fitFontSize(PrintPageEventArgs e, String _WorkingStr, int _FontSize, float _FieldWith)

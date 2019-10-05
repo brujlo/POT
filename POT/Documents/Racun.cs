@@ -17,6 +17,8 @@ namespace POT.Documents
     public partial class Racun : Form
     {
         Boolean pictureOn = false;
+        Boolean storno = false;
+        
         double ech = 0;
         String echDate = "";
         int indexPartCB = -1;
@@ -42,6 +44,10 @@ namespace POT.Documents
         Invoice invoice = new Invoice();
         List<InvoiceParts> invoicePartsList = new List<InvoiceParts>();
         InvoiceParts recalculateInvPart = new InvoiceParts();
+
+        Invoice stornoInvoice = new Invoice();
+        List<InvoiceParts> stornoPartsList = new List<InvoiceParts>();
+        Invoice newInvoice = new Invoice();
 
         List<Offer> ponudeList = new List<Offer>();
         List<Invoice> invList = new List<Invoice>();
@@ -737,8 +743,22 @@ namespace POT.Documents
             LogWriter lw = new LogWriter();
             ////////////////////////////////////////////////
             ///
-            
-            PrintMeInvoice pr = new PrintMeInvoice(invoicePartsList, invoice, 0, radioButtonENG.Checked, TOTALTAXBASE, TOTALTAX);
+
+            List<InvoiceParts> tempLst = new List<InvoiceParts>();
+            Invoice tmpInv = new Invoice();
+
+            if ( storno)
+            {
+                tempLst = stornoPartsList;
+                tmpInv = newInvoice;
+            }
+            else
+            {
+                tempLst = invoicePartsList;
+                tmpInv = invoice;
+            }
+
+            PrintMeInvoice pr = new PrintMeInvoice(tempLst, tmpInv, storno ? 1 : 0, radioButtonENG.Checked, TOTALTAXBASE, TOTALTAX);
             pr.Print(e);
             
             //data = cmpS + ", " + cmpR + ", " + sifrarnikArr + ", " + partListPrint + ", " + IISNumber + ", " + napomenaIISPrint + ", IIS, customer, false";
@@ -876,6 +896,8 @@ namespace POT.Documents
 
         private void saveToPDF()
         {
+            String printerName = printDialog1.PrinterSettings.PrinterName;
+
             try
             {
                 PrintDialog printDialog1 = new PrintDialog();
@@ -888,18 +910,32 @@ namespace POT.Documents
                 if (!Directory.Exists(Properties.Settings.Default.DefaultFolder + "\\RAC"))
                     return;
 
-                string fileName = "\\EXE " + invoice.IDLongtoString(invoice.Id).Replace("-", "") + ".pdf";
+                string fileName;
+                if ( storno )
+                    fileName = "\\EXE " + newInvoice.IDLongtoString(newInvoice.Id).Replace("-", "") + ".pdf";
+                else
+                    fileName = "\\EXE " + invoice.IDLongtoString(invoice.Id).Replace("-", "") + ".pdf";
+
                 string directory = Properties.Settings.Default.DefaultFolder + "\\RAC";
 
                 printDialog1.PrinterSettings.PrintToFile = true;
                 printDocumentInvoice.PrinterSettings.PrintFileName = directory + fileName;
                 printDocumentInvoice.PrinterSettings.PrintToFile = true;
                 printDocumentInvoice.Print();
+                
+                printDialog1.PrinterSettings.PrintToFile = false;
+                printDocumentInvoice.PrinterSettings.PrintToFile = false;
+                printDialog1.PrinterSettings.PrinterName = printerName;
+                printDocumentInvoice.PrinterSettings.PrinterName = printerName;
             }
             catch (Exception e1)
             {
                 new LogWriter(e1);
                 MessageBox.Show(e1.Message + Environment.NewLine + "PDF file not saved.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Program.LoadStop();
             }
         }
 
@@ -1041,6 +1077,115 @@ namespace POT.Documents
                 new LogWriter(e1);
                 MessageBox.Show(e1.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void StornoBT_Click(object sender, EventArgs e)
+        {
+            storno = true;
+
+            ///////////////// LogMe ////////////////////////
+            String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
+            String usedQC = "Storno invoice selected";
+            String data = "";
+            String Result = "";
+            LogWriter lw = new LogWriter();
+            ////////////////////////////////////////////////
+            ///
+
+            stornoInvoice = new Invoice();
+            newInvoice = new Invoice();
+            stornoPartsList.Clear();
+
+            try
+            {
+                Program.LoadStart();
+
+                var itemIndx = listView2.SelectedIndices[0];
+
+                long stornoId = invList[itemIndx].Id;
+
+                
+                if (invList.Exists( x => x.Id == stornoId) && invList.Exists(x => x.Storno != 1))
+                {
+                    stornoInvoice = invList.First(x => x.Id == stornoId);
+
+                    
+                    newInvoice.GetNewInvoiceNumber();
+                    if (qc.IfInvoiceExist(newInvoice.Id))
+                    {
+                        data = invoice.Id.ToString() + Environment.NewLine;
+                        Result = "Invoice is already saved in DB, please make new one.";
+                        lw.LogMe(function, usedQC, data, Result);
+                        MessageBox.Show(Result, "NOTHING DONE", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+
+                    stornoInvoice.Storno = 1;
+                    stornoInvoice.Storno = 0;
+
+                    stornoPartsList = newInvoice.StornoGetAllParts(stornoInvoice);
+
+                    if ( qc.SetStornoInvoice0Or1(stornoInvoice) )
+                    {
+                        Properties.Settings.Default.StornoInvoiceNumber = String.Format("{0:00000000000}", stornoId);
+
+                        TOTAL = stornoInvoice.Iznos;
+                        TOTALTAX = vat == 0 ? 0 : TOTAL * vat;
+                        TOTALTAXBASE = TOTAL - TOTALTAX;
+
+                        invoice.Iznos = TOTAL;
+
+                        try
+                        {
+                            String poruka = "";
+                            if (qc.SaveInvoice(stornoPartsList, newInvoice, newInvoice.Storno))
+                            {
+                                if (Program.SaveDocumentsPDF) saveToPDF();
+
+                                poruka = "Invoice " + stornoId + " is storned, new storno invoice made with number " + newInvoice.Id;
+                            }
+                            else
+                            {
+                                poruka = "NOTHING DONE";
+                            }
+
+                            Properties.Settings.Default.StornoInvoiceNumber = "";
+
+                            Program.SaveStop();
+                            MessageBox.Show(poruka);
+                        }
+                        catch (Exception e1)
+                        {
+                            Program.SaveStop();
+                            data = newInvoice.Id.ToString() + Environment.NewLine;
+                            Result = e1.Message;
+                            lw.LogMe(function, usedQC, data, Result);
+                            MessageBox.Show(Result, "NOT SAVED", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
+                        finally
+                        {
+                            Properties.Settings.Default.StornoInvoiceNumber = "";
+                            Program.LoadStop();
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Already storned.");
+                    }
+                }
+            }
+            catch(Exception e1)
+            {
+                storno = false;
+                Program.SaveStop();
+                MessageBox.Show(e1.Message);
+            }
+            finally
+            {
+                storno = false;
+                Program.SaveStop();
+            }
+            
         }
     }
 }

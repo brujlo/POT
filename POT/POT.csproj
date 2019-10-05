@@ -25,7 +25,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ProductName>POT</ProductName>
     <PublisherName>Exception</PublisherName>
-    <ApplicationRevision>84</ApplicationRevision>
+    <ApplicationRevision>86</ApplicationRevision>
     <ApplicationVersion>1.3.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -199,6 +199,13 @@
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="WorkingClasses\DateConverter.cs" />
+    <Compile Include="WorkingClasses\ISSreport.cs" />
+    <Compile Include="WorkingClasses\ISSSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingClasses\ISSSelector.Designer.cs">
+      <DependentUpon>ISSSelector.cs</DependentUpon>
+    </Compile>
     <Compile Include="WorkingClasses\LogWriter.cs" />
     <Compile Include="WorkingClasses\MainCmpSelector.cs">
       <SubType>Form</SubType>
@@ -347,6 +354,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TestForm.resx">
       <DependentUpon>TestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingClasses\ISSSelector.resx">
+      <DependentUpon>ISSSelector.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WorkingClasses\MainCmpSelector.resx">
       <DependentUpon>MainCmpSelector.cs</DependentUpon>

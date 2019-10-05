@@ -7,7 +7,6 @@ using System.Drawing;
 using System.Drawing.Printing;
 using System.IO;
 using System.Linq;
-using System.Threading;
 using System.Windows.Forms;
 using Decoder = POT.WorkingClasses.Decoder;
 
@@ -22,7 +21,6 @@ namespace POT.Documents
         int rb = 0;
         int doNotRepeatMsg = 0;
 
-        long ISSid = 0;
         static long IISIDforThread = 0;
 
         DateTime startDate = DateTime.Now;
@@ -32,40 +30,33 @@ namespace POT.Documents
         Boolean timerEnabled = true;
         int stopClicked = 0;
 
+        List<ISSreport> ISSall = new List<ISSreport>();
+        ISSreport tmpISS = new ISSreport();
+
         QueryCommands qc = new QueryCommands();
-        List<Part> partList = new List<Part>();
+        public static List<Part> partList = new List<Part>();
         List<PartSifrarnik> allParts = new List<PartSifrarnik>();
         List<String> sifrarnikArr = new List<String>();
         List<String> workDone = new List<String>();
         Boolean dataLoaded = false;
         List<List<Part>> groupedGoodPartsCode = new List<List<Part>>();
-        List<ISSparts> listIssParts = new List<ISSparts>();
 
-        static List<ISSparts> listIssBckpParts = new List<ISSparts>();
-        static Boolean isBckpFilled = false;
+        static long ISSPartsCounter = 0;
+        static Boolean isSaved = false;
 
-        List<long> ISSids = new List<long>();
-        List<Part> PartsInService = new List<Part>();
         Part newSendPart = new Part();
         List<Part> newSendPartList = new List<Part>();
         Part mainPart = new Part();
 
         Company cmpCust = new Company();
         Company cmpM = new Company();
-        MainCmp mm = new MainCmp();
 
         int uvecajGroupPart = 0;
         Boolean onlyOneTime = true;
         Boolean allDonePrint = false;
 
-        ComboBox selectISS = null;
-        ComboBox selectPart = null;
-
         int obrJed = Properties.Settings.Default.ObracunskaJedinica;
         String totalTime;
-        //Boolean itemRemoved = false;
-
-        //Boolean pictureOn = false;
 
         int partIndex = -1; //sluzi za grupiranu listu podataka da izvucem podpodatak za po SN da dobijem cn
 
@@ -77,106 +68,99 @@ namespace POT.Documents
 
         private void ISS_Load(object sender, EventArgs e)
         {
-            mm.GetMainCmpInfoByID(Properties.Settings.Default.CmpID);
-            cmpM = mm.MainCmpToCompany();
-
-            partList = qc.ListPartsByRegionStateP(WorkingUser.RegionID, "sng");
-
-            List<Part> goodParts = new List<Part>();
-            goodParts = qc.ListPartsByRegionStateP(WorkingUser.RegionID, "g");
-
-            allParts = qc.GetPartsAllSifrarnik();
-
-            if (partList.Count > 0)
+            try
             {
-                for (int i = 0; i < partList.Count(); i++)
+                ISSreport tmp = new ISSreport();
+
+                ISSall = tmp.GetAllIIS();
+
+                MainCmp mmtmp = new MainCmp();
+                mmtmp.GetMainCmpInfoByID(Properties.Settings.Default.CmpID);
+                cmpM = mmtmp.MainCmpToCompany();
+                
+                partList = qc.ListPartsByRegionStateP(WorkingUser.RegionID, "sng");
+
+                List<Part> goodParts = new List<Part>();
+                goodParts = qc.ListPartsByRegionStateP(WorkingUser.RegionID, "g");
+
+                allParts = qc.GetPartsAllSifrarnik();
+
+                if (ISSall.Count > 0) //(partList.Count > 0)
                 {
-                    PartCb.Items.Add(partList[i].CodePartFull);
+                    foreach(ISSreport iss in ISSall)
+                    {
+                        ISSSelectorCb.Items.Add(iss.ISSid);
+
+                        PartSelectorCb.Items.Add(iss.MainPart.PartID.ToString() + " # " + iss.MainPart.SN.ToUpper().ToString() + " # " + iss.MainPart.CN.ToUpper().ToString() + " # " + iss.MainPart.CodePartFull.ToString());
+                    }
                 }
 
-            }
+                fillSifrarnik();
 
-            fillSifrarnik();
+                groupedGoodPartsCode = goodParts.GroupBy(c => c.CodePartFull).Select(grp => grp.ToList()).ToList();
 
-            groupedGoodPartsCode = goodParts.GroupBy(c => c.CodePartFull).Select(grp => grp.ToList()).ToList();
-
-            if (groupedGoodPartsCode.Count > 0)
-            {
-                for (int i = 0; i < groupedGoodPartsCode.Count(); i++)
+                if (groupedGoodPartsCode.Count > 0)
                 {
-                    NewPartCb.Items.Add(Decoder.ConnectCodeName(sifrarnikArr, groupedGoodPartsCode[i][0]));
+                    for (int i = 0; i < groupedGoodPartsCode.Count(); i++)
+                    {
+                        NewPartCb.Items.Add(Decoder.ConnectCodeName(sifrarnikArr, groupedGoodPartsCode[i][0]));
+                    }
                 }
 
-            }
-
-            if (allParts.Count > 0)
-            {
-                for (int i = 0; i < allParts.Count(); i++)
+                if (allParts.Count > 0)
                 {
-                    OldPartCb.Items.Add(allParts[i].FullName);
+                    for (int i = 0; i < allParts.Count(); i++)
+                    {
+                        OldPartCb.Items.Add(allParts[i].FullName);
+                    }
                 }
 
-            }
+                if (Properties.Settings.Default.LanguageStt.Equals("hrv"))
+                    workDone = qc.GetAllFromWorkHR();
+                else if (Properties.Settings.Default.LanguageStt.Equals("eng"))
+                    workDone = qc.GetAllFromWorkENG();
 
-            if (Properties.Settings.Default.LanguageStt.Equals("hrv"))
-                workDone = qc.GetAllFromWorkHR();
-            else if (Properties.Settings.Default.LanguageStt.Equals("eng"))
-                workDone = qc.GetAllFromWorkENG();
-
-            if (workDone.Count > 0)
-            {
-                for (int i = 0; i < workDone.Count(); i++)
+                if (workDone.Count > 0)
                 {
-                    WorkDoneCb.Items.Add(workDone[i]);
+                    for (int i = 0; i < workDone.Count(); i++)
+                    {
+                        WorkDoneCb.Items.Add(workDone[i]);
+                    }
                 }
 
-            }
+                listView1.View = View.Details;
 
-            listView1.View = View.Details;
+                listView1.Columns.Add("RB");
+                listView1.Columns.Add("Name");
+                listView1.Columns.Add("CodeO");
+                listView1.Columns.Add("SNO");
+                listView1.Columns.Add("CNO");
+                listView1.Columns.Add("CodeN");
+                listView1.Columns.Add("SNN");
+                listView1.Columns.Add("CNN");
+                listView1.Columns.Add("Date");
+                listView1.Columns.Add("Time");
+                listView1.Columns.Add("Work done");
+                listView1.Columns.Add("Comment");
+                listView1.Columns.Add("User ID");
 
-            listView1.Columns.Add("RB");
-            listView1.Columns.Add("Name");
-            listView1.Columns.Add("CodeO");
-            listView1.Columns.Add("SNO");
-            listView1.Columns.Add("CNO");
-            listView1.Columns.Add("CodeN");
-            listView1.Columns.Add("SNN");
-            listView1.Columns.Add("CNN");
-            listView1.Columns.Add("Date");
-            listView1.Columns.Add("Time");
-            listView1.Columns.Add("Work done");
-            listView1.Columns.Add("Comment");
-            listView1.Columns.Add("User ID");
+                for (int i = 0; i < listView1.Columns.Count; i++)
+                {
+                    listView1.AutoResizeColumn(i, ColumnHeaderAutoResizeStyle.ColumnContent);
+                    listView1.AutoResizeColumn(i, ColumnHeaderAutoResizeStyle.HeaderSize);
+                }
 
-            for (int i = 0; i < listView1.Columns.Count; i++)
+                STARTbt_Click(sender, e);
+            }catch(Exception e1)
             {
-                listView1.AutoResizeColumn(i, ColumnHeaderAutoResizeStyle.ColumnContent);
-                listView1.AutoResizeColumn(i, ColumnHeaderAutoResizeStyle.HeaderSize);
+                Program.LoadStop();
+                MessageBox.Show(e1.Message);
             }
-
-            ISSids = qc.GetAllISSOpenClose(0);
-
-            for (int i = 0; i < ISSids.Count; i++)
+            finally
             {
-                ISSSelectorCb.Items.Add(ISSids[i]);
+                Program.LoadStop();
             }
 
-            List<String> states = new List<String>(new String[] {"sg", "sng", "sgg"});
-            PartsInService = qc.ListPartsByRegionStatesP(WorkingUser.RegionID, states);
-            
-
-            for (int i = 0; i < PartsInService.Count; i++)
-            {
-                PartSelectorCb.Items.Add(PartsInService[i].PartID.ToString() + " # " + PartsInService[i].SN.ToUpper().ToString() + " # " + PartsInService[i].CN.ToUpper().ToString());
-            }
-
-            //TODO
-            //PRINTbt.Enabled = false;
-            //SelectPrinterbt.Enabled = false;
-
-            STARTbt_Click(sender, e);
-
-            Program.LoadStop();
             this.Focus();
         }
 
@@ -191,7 +175,6 @@ namespace POT.Documents
         public void AppendTextBox(String value)
         {
             this.textBox1.AppendText(value + System.Environment.NewLine);
-            //new LogWriter(value);
         }
 
         private void PAUSEbt_Click(object sender, EventArgs e)
@@ -203,7 +186,7 @@ namespace POT.Documents
                 STOPbt.Enabled = false;
                 return;
             }
-            //stopClicked = 0;
+
             if (stopClicked == 0)
             {
                 if (timerPaused)
@@ -249,6 +232,12 @@ namespace POT.Documents
 
         private void STOPbt_Click(object sender, EventArgs e)
         {
+            if (WorkDoneCb.Text == "")
+            {
+                MessageBox.Show("Please fill in what is done!", "Missing data", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             if (!dataLoaded)
             {
                 PAUSEbt.Enabled = false;
@@ -279,7 +268,7 @@ namespace POT.Documents
                         PAUSEbt.BackColor = Color.AliceBlue;
                         STARTbt.BackColor = Color.AliceBlue;
                         STOPbt.BackColor = Color.AliceBlue;
-                        if (!PartCb.Equals(""))
+                        if (mainPart != null)
                             AddToWorkList();
                         h = 0; m = 0; s = 0;
                         this.TIMERtb.Text = String.Format("{0:00}", h) + ":" + String.Format("{0:00}", m) + ":" + String.Format("{0:00}", s);
@@ -319,7 +308,6 @@ namespace POT.Documents
 
                     if (stop == 100)
                     {
-                        //MessageBox.Show("Cant load 'sifrarnik'.");
                         String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
                         String usedQC = "Loading sifrarnik";
                         String data = "Break limit reached, arr cnt = " + tresultArr.Count;
@@ -330,7 +318,6 @@ namespace POT.Documents
                         lw.LogMe(function, usedQC, data, Result);
 
                         pictureBox1.Image = Properties.Resources.LoadDataOff;
-                        //pictureOn = false;
 
                         this.Refresh();
 
@@ -345,14 +332,12 @@ namespace POT.Documents
                     pictureBox1.Image = Properties.Resources.LoadDataOn;
                     dataLoaded = true;
                     STARTbt_Click(null, null);
-                    //pictureOn = true;
                 }
                 else
                 {
                     pictureBox1.Image = Properties.Resources.LoadDataOff;
                     dataLoaded = false;
                     STARTbt_Click(null, null);
-                    //pictureOn = false;
                 }
             }
             catch (Exception e1)
@@ -362,26 +347,8 @@ namespace POT.Documents
             }
         }
 
-        /*
-        public void ChangeColor(string color)
-        {
-            if (InvokeRequired)
-            {
-                this.Invoke(new Action<string>(ChangeColor), new object[] { color });
-                return;
-            }
-
-            if (color.Equals("Green"))
-                this.button4.BackColor = Color.Green;
-            else
-                this.button4.BackColor = Color.Red;
-        }
-        */
-
         private void CleanMe(object sender)
         {
-            ISSid = 0;
-
             Button btn = null;
             Boolean btnYN = false;
 
@@ -403,7 +370,6 @@ namespace POT.Documents
             if (btnYN || checkBox1.Checked == true)
             {
                 checkBox1.Checked = false;
-                PartCb.ResetText();
                 listView1.Clear();
                 
                 listView1.View = View.Details;
@@ -446,6 +412,7 @@ namespace POT.Documents
             ComentTb.ResetText();
 
             ISSSelectorCb.ResetText();
+            PartSelectorCb.ResetText();
 
             NewPartSNCb.ResetText();
             NewPartSNCb.Items.Clear();
@@ -461,32 +428,11 @@ namespace POT.Documents
             NewPartCb.SelectedIndex = -1;
         }
 
-        private void PartCb_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (PartCb.SelectedIndex >= 0)
-                NameTb.Text = Decoder.ConnectCodeName(sifrarnikArr, partList[PartCb.SelectedIndex]);
-
-            if (selectISS != null && selectISS.Name.Equals("ISSSelectorCb"))
-            {
-                return;
-            }
-            else
-            {
-                SNTb.Text = partList[PartCb.SelectedIndex].SN;
-                CNTb.Text = partList[PartCb.SelectedIndex].CN;
-                DateInTb.Text = partList[PartCb.SelectedIndex].DateIn;
-                DateSentTb.Text = partList[PartCb.SelectedIndex].DateSend;
-                IDTb.Text = partList[PartCb.SelectedIndex].PartID.ToString();
-                mainPart = partList[PartCb.SelectedIndex];
-            }
-
-        }
-
         private void OldPartCb_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (OldPartCb.SelectedIndex > -1)
             {
-                if (PartCb.Text.Equals(""))
+                if (tmpISS.MainPart.CodePartFull == 0)
                 {
                     OldPartCodeTb.ResetText();
                     OldPartCb.ResetText();
@@ -503,7 +449,7 @@ namespace POT.Documents
                 }
                 else
                 {
-                    OldPartCodeTb.Text = Decoder.GetOwnerCode(PartCb.Text) + Decoder.GetCustomerCode(PartCb.Text) + Decoder.GetFullPartCodeStr(allParts[OldPartCb.SelectedIndex].FullCode); 
+                    OldPartCodeTb.Text = Decoder.GetOwnerCode(tmpISS.MainPart.CodePartFull.ToString()) + Decoder.GetCustomerCode(tmpISS.MainPart.CodePartFull.ToString()) + Decoder.GetFullPartCodeStr(allParts[OldPartCb.SelectedIndex].FullCode); 
                 }
             }
         }
@@ -538,10 +484,13 @@ namespace POT.Documents
 
         private void NewPartSNCb_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int snIndex = NewPartSNCb.SelectedIndex;
+            if (partIndex < 0)
+                return;
+
+            int snIndex = groupedGoodPartsCode[partIndex].FindIndex(x => x.SN == NewPartSNCb.Text);
             NewPartCNTb.ResetText();
             if (!NewPartSNCb.Items[0].Equals(""))
-            {
+            {    
                 NewPartCNTb.Text = groupedGoodPartsCode[partIndex][snIndex].CN.ToString();
                 newSendPart = groupedGoodPartsCode[partIndex][snIndex];
             }
@@ -549,7 +498,7 @@ namespace POT.Documents
             {
                 if (!NewPartSNCb.Text.Equals("") && NewPartSNCb.SelectedIndex != -1)
                 {
-                    NewPartCNTb.Text = groupedGoodPartsCode[partIndex][0].CN.ToString();
+                    NewPartCNTb.Text = groupedGoodPartsCode[partIndex][snIndex].CN.ToString();
                     newSendPart = groupedGoodPartsCode[partIndex][snIndex];
                 }
             }
@@ -571,7 +520,7 @@ namespace POT.Documents
                 rb = listView1.Items.Count + 1;
 
                 String name = NameTb.Text.Trim();
-                String partCode = PartCb.Text.Trim();
+                String partCode = tmpISS.MainPart.CodePartFull.ToString().Trim();// PartCbTT.Text.Trim();
                 String CodeO = OldPartCodeTb.Text.Trim();
                 String SNO = OLDPartSNTb.Text.Trim().ToUpper();
                 String CNO = OldPartCNTb.Text.Trim().ToUpper();
@@ -593,6 +542,10 @@ namespace POT.Documents
                     if (!newSendPartList.Contains(newSendPart))
                     {
                         newSendPartList.Add(newSendPart);
+
+                        int indexRemove = groupedGoodPartsCode.FindIndex(x => x.Exists(y => y.PartID == newSendPart.PartID));
+                        groupedGoodPartsCode[indexRemove].Remove(newSendPart);
+                        //MessageBox.Show("Obrisano: " + groupedGoodPartsCode[indexRemove].Remove(newSendPart));
                         uvecajGroupPart++;
                     }
                     else
@@ -604,13 +557,14 @@ namespace POT.Documents
                             {
                                 newSendPartList.Add(groupedGoodPartsCode[partIndex][i]);
                                 uvecajGroupPart++;
+                                groupedGoodPartsCode.RemoveAt(partIndex);
                                 break;
                             }
                         }
 
                         if (i >= groupedGoodPartsCode[partIndex].Count)
                         {
-                            data = "ISSid - " + ISSid.ToString();
+                            data = "ISSid - " + tmpISS.ISSid.ToString();
                             Result = "There is a error with adding part, I cant find requested part" + Environment.NewLine + "Please contact your administrator.";
                             lw.LogMe(function, usedQC, data, Result);
                             MessageBox.Show(Result, "NOT SAVED", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -629,6 +583,7 @@ namespace POT.Documents
                     m = 0;
                     h++;
                 }
+
 
                 String time = string.Format("{0:00}", h) + ":" + string.Format("{0:00}", m);
 
@@ -654,7 +609,9 @@ namespace POT.Documents
                     listView1.EnsureVisible(listView1.Items.Count - 1);
 
                 listView1.Items.Add(lvi1);
-                
+
+                tmpISS.ListIssParts.Add(AddNewChangedPartTotmpISS(lvi1, newSendPart));
+
                 rb = listView1.Items.Count + 1;
 
                 data = name + ", " + CodeO + ", " + SNO + ", " + CNO + ", " + CodeN + ", " + SNN + ", " + CNN + ", " + date + ", " + time + ", " + work + ", " + koment + ", " + wuID;
@@ -690,6 +647,8 @@ namespace POT.Documents
 
                 NewPartCb.ResetText();
                 NewPartCb.SelectedIndex = -1;
+
+                isSaved = false;
             }
             catch (Exception e1)
             {
@@ -736,6 +695,8 @@ namespace POT.Documents
 
         private void SAVEbt_Click(object sender, EventArgs e)
         {
+            isSaved = false;
+
             ///////////////// LogMe ////////////////////////
             String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
             String usedQC = "Save to db";
@@ -765,70 +726,58 @@ namespace POT.Documents
 
             this.Refresh();
 
-            //TODO
-            //PRINTbt.Enabled = checkBox1.Checked;
-            //SelectPrinterbt.Enabled = checkBox1.Checked;
-
-            DateConverter dt = new DateConverter();
-            String _date = dt.ConvertDDMMYY(DateTime.Now.ToString());
+            //DateConverter dt = new DateConverter();
+            //String _date = dt.ConvertDDMMYY(DateTime.Now.ToString());
+            String _date = DateTime.Now.ToString("dd.MM.yy.");
             Boolean issExist = false;
-
-            listIssParts.Clear();
 
             try
             {
-                long testMe = qc.ISSExistIfNotReturnNewID(ISSid);
+                long testMe = qc.ISSExistIfNotReturnNewID(tmpISS == null ? 0 : tmpISS.ISSid);
 
                 List<long> partsIDpokupi = new List<long>();
-                if (ISSid == testMe)
+                if (tmpISS != null && tmpISS.ISSid == testMe)
                 {
+                    foreach(ISSparts part in tmpISS.ListIssParts)
+                    {
+                        if (part.PrtO.PartID != 0)
+                            partsIDpokupi.Add(part.PrtO.PartID);
+                    }
+
                     issExist = true;
-                    partsIDpokupi = qc.ISSExistReturnPartsIDs(ISSid);
                 }
                 else
                 {
-                    ISSid = testMe;
+                    tmpISS = null;
+                    tmpISS = new ISSreport();
+                    tmpISS.ISSid = testMe;
                 }
+
+                tmpISS.ListIssParts.Clear();
 
                 for (int i = 0; i < listView1.Items.Count; i++)
                 {
-                    long CodeO = 0;
-
-                    if (!listView1.Items[i].SubItems[2].Text.Trim().Equals(""))
-                        CodeO = long.Parse(listView1.Items[i].SubItems[2].Text.Trim());
-                    //CodeO = 0101023003001;
-
-                    ISSparts issp = new ISSparts(
-                        ISSid,
-                        long.Parse(listView1.Items[i].SubItems[0].Text.Trim()),
-                        CodeO, 
-                        listView1.Items[i].SubItems[3].Text, 
-                        listView1.Items[i].SubItems[4].Text,
-                        newSendPartList[i], 
-                        listView1.Items[i].SubItems[10].Text, 
-                        listView1.Items[i].SubItems[11].Text, 
-                        listView1.Items[i].SubItems[9].Text,
-                        long.Parse(listView1.Items[i].SubItems[12].Text),
-                        listView1.Items[i].SubItems[8].Text);
-                    
-                    listIssParts.Add(issp);
+                    tmpISS.ListIssParts.Add(AddNewChangedPartTotmpISS(listView1.Items[i], newSendPartList[i]));
 
                     data = data + listView1.Items[i].SubItems[0].Text + ". / " + listView1.Items[i].SubItems[1].Text + " / " + listView1.Items[i].SubItems[2].Text + " / " + listView1.Items[i].SubItems[3].Text + " / " +
                         listView1.Items[i].SubItems[4].Text + " / " + listView1.Items[i].SubItems[5].Text + " / " + listView1.Items[i].SubItems[6].Text + " / " + listView1.Items[i].SubItems[7].Text + " / " +
                         listView1.Items[i].SubItems[8].Text + "h / " + listView1.Items[i].SubItems[9].Text + " / " + listView1.Items[i].SubItems[10].Text + Environment.NewLine;
                 }
-                
-                cmpCust.GetCompanyInfoByCode(Decoder.GetCustomerCode(mainPart.CodePartFull));
 
-               /*
-                if (itemRemoved)
+                if (issExist)
+                    cmpCust.GetCompanyInfoByCode(Decoder.GetCustomerCode(tmpISS.MainPart.CodePartFull));
+                else
                 {
-                    if (!qc.RemoveAllISSParts(ISSid))
-                        return;
-                    itemRemoved = false;
-                }*/
+                    cmpCust.GetCompanyInfoByCode(Decoder.GetCustomerCode(mainPart.CodePartFull));
+                    tmpISS.CustomerID = cmpCust.ID;
+                    tmpISS.Date = DateTime.Now.ToString("dd.mm.yy.");
+                    tmpISS.MainPart = mainPart;
+                    tmpISS.PartID = mainPart.PartID;
+                    tmpISS.UserIDmaked = WorkingUser.UserID;
+                }
                 
-                totalTime = calculateTime(listIssParts).Substring(0,5);
+
+                tmpISS.TotalTIme = totalTime = calculateTime(tmpISS.ListIssParts).Substring(0, 5);
 
                 if (checkBox1.Checked)
                 {
@@ -848,35 +797,39 @@ namespace POT.Documents
                     totalTime = String.Format("{0:00}:{1:00}", th, tm);
                 }
 
-                long ISSidPL = ISSid;
+                long ISSidPL = tmpISS.ISSid;
 
                 //da mi ne upisuje nule ako je vec snimljeno
                 if( issExist && partsIDpokupi.Count > 0 )
                 {
                     for(int i = 0; i < partsIDpokupi.Count; i++)
                     {
-                        listIssParts[i].PrtO.PartID = partsIDpokupi[i];
+                        tmpISS.ListIssParts[i].PrtO.PartID = partsIDpokupi[i];
                     }
                 }
 
                 allDonePrint = allDone;
-                if ( qc.ISSUnesiISS(issExist, allDone, ISSid, _date, cmpCust, mainPart, listIssParts, WorkingUser.UserID, totalTime) )
+
+                if (qc.ISSUnesiISS(issExist, allDone, tmpISS.ISSid, _date, cmpCust, mainPart, tmpISS.ListIssParts, WorkingUser.UserID, totalTime))
                 {
+                    isSaved = true;
+
                     if (Program.SaveDocumentsPDF) saveToPDF(); 
 
                     if (allDone)
                     {
                         PovijestLog pl = new PovijestLog();
-                        List<Part> plParts = new List<Part>();
-
-                        plParts.Add(listIssParts[0].PrtN);
-                        plParts.Add(listIssParts[0].PrtO);
 
                         Boolean plGreska = false;
 
-                        for(int i = 0; i < listIssParts.Count; i++)
+                        for (int i = 0; i < tmpISS.ListIssParts.Count; i++)
                         {
-                            plGreska = !pl.SaveToPovijestLog(plParts, listIssParts[i].Date, listIssParts[i].Work + " - " + listIssParts[i].Comment, cmpCust.Name, "", "", "ISS " + ISSidPL.ToString(), "sgg");
+                            List<Part> plParts = new List<Part>();
+                            plParts.Add(tmpISS.ListIssParts[i].PrtN);
+                            plParts.Add(tmpISS.ListIssParts[i].PrtO);
+
+                            String tekst = tmpISS.ListIssParts[i].Comment;
+                            plGreska = !pl.SaveToPovijestLog(plParts, tmpISS.ListIssParts[i].Date, tmpISS.ListIssParts[i].Work + (tekst.Equals("") ? "" : " - " + tekst), cmpCust.Name, "", "", "ISS " + ISSidPL.ToString(), "wsg");
                         }
 
                         if(plGreska)
@@ -889,33 +842,47 @@ namespace POT.Documents
                             doNotRepeatMsg = 1;
                         }
 
-                        PartCb.Items.RemoveAt(PartCb.SelectedIndex);
+                        ISSall.Remove(tmpISS);
+
                         partList.Remove(mainPart);
                     }
+                    else
+                    {
+                        if (!ISSall.Exists(x => x.ISSid == tmpISS.ISSid))
+                            ISSall.Add(tmpISS);
+                    }
 
-                    Result = "ISS saved with ID " + ISSid;
+                    ISSIDlb.Text = tmpISS.ISSid.ToString();
+
+                    Result = "ISS saved with ID " + tmpISS.ISSid;
                     lw.LogMe(function, usedQC, data, Result);
                     MessageBox.Show(Result, "SAVED", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    //ISSSelectorCb.Items.Clear();
-                    //ISSSelectorCb.ResetText();
 
-                    ISSids = qc.GetAllISSOpenClose(0);
+                    if (!ISSall.Exists(x => x.ISSid == tmpISS.ISSid))
+                        partList.Remove(mainPart);
 
                     ISSSelectorCb.Items.Clear();
+                    PartSelectorCb.Items.Clear();
 
-                    for (int i = 0; i < ISSids.Count; i++)
+                    if (ISSall.Count > 0) //(partList.Count > 0)
                     {
-                        ISSSelectorCb.Items.Add(ISSids[i]);
+                        foreach (ISSreport iss in ISSall)
+                        {
+                            ISSSelectorCb.Items.Add(iss.ISSid);
+
+                            PartSelectorCb.Items.Add(iss.MainPart.PartID.ToString() + " # " + iss.MainPart.SN.ToUpper().ToString() + " # " + iss.MainPart.CN.ToUpper().ToString());
+                        }
                     }
+
+                    ISSSelectorCb.SelectedIndex = ISSSelectorCb.FindStringExact(tmpISS.ISSid.ToString());
+                    ISSSelectorCb.Text = tmpISS.ISSid.ToString();
 
                     if (checkBox1.Checked)
                         CleanMe(null);
-
-                    isBckpFilled = false;
                 }
                 else
                 {
-                    isBckpFilled = true;
+                    isSaved = false;
                     Result = "ISS not saved";
                     lw.LogMe(function, usedQC, data, Result);
                     MessageBox.Show(Result, "NOT SAVED", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -923,23 +890,17 @@ namespace POT.Documents
 
                 AppendTextBox(Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + Result);
                 doNotRepeatMsg = 1;
-
             }
             catch (Exception e1)
             {
                 new LogWriter(e1);
                 MessageBox.Show("Error" + Environment.NewLine + Environment.NewLine + e1.ToString(), "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                isBckpFilled = false;
+                isSaved = false;
             }
-            //CleanMe();
         }
     
         private void ISSSelectorCb_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Program.LoadStart();
-
-            selectISS = (ComboBox)sender;
-
             ///////////////// LogMe ////////////////////////
             String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
             String usedQC = "ISS loaded";
@@ -949,8 +910,12 @@ namespace POT.Documents
             ////////////////////////////////////////////////
             ///
 
+            tmpISS = null;
+
             try
             {
+                Program.LoadStart();
+
                 CleanMe(null);
                 listView1.Clear();
 
@@ -974,94 +939,75 @@ namespace POT.Documents
 
                 long issID = long.Parse(ISSSelectorCb.SelectedItem.ToString());
 
-                IISIDforThread = issID;
+                tmpISS = ISSall.Find(x => x.ISSid == issID);
+
                 ISSIDlb.Text = issID.ToString();
 
-                Thread myThread = new Thread(bckpISSPartsFill);
-                myThread.Start();
+                totalTime = tmpISS.TotalTIme + ":00";
 
-                Part mainPr = new Part();
-                List<String> allISSInfo = new List<String>();
+                mainPart = tmpISS.MainPart;
 
-                ISSid = issID;
+                SNTb.Text = tmpISS.MainPart.SN;
+                CNTb.Text = tmpISS.MainPart.CN;
+                DateInTb.Text = tmpISS.MainPart.DateIn;
+                DateSentTb.Text = tmpISS.MainPart.DateSend;
+                IDTb.Text = tmpISS.MainPart.PartID.ToString();
+                NameTb.Text = Decoder.ConnectCodeName(sifrarnikArr, tmpISS.MainPart.CodePartFull);
 
-                allISSInfo = qc.GetAllISSInfoById(issID);
-
-                if (allISSInfo[0].Equals("nok"))
-                    return;
-
-                totalTime = allISSInfo[6] + ":00";
-
-                mainPart = qc.SearchPartsInAllTablesBYPartID(long.Parse(allISSInfo[4]))[0];
-
-                PartCb.Text = mainPart.CodePartFull.ToString();
-
-                SNTb.Text = mainPart.SN;
-                CNTb.Text = mainPart.CN;
-                DateInTb.Text = mainPart.DateIn;
-                DateSentTb.Text = mainPart.DateSend;
-                IDTb.Text = mainPart.PartID.ToString();
-                NameTb.Text = Decoder.ConnectCodeName(sifrarnikArr, mainPart.CodePartFull);
-
-                selectISS = null;
-
-                cmpCust.GetCompanyInfoByCode(Decoder.GetCustomerCode(mainPart.CodePartFull));
-
-                listIssParts.Clear();
-                listIssParts = qc.GetAllISSPartsByISSid(issID);
+                cmpCust.GetCompanyInfoByCode(Decoder.GetCustomerCode(tmpISS.MainPart.CodePartFull));
 
                 newSendPartList.Clear();
 
-                for (int i = 0; i < listIssParts.Count; i++)
+                for (int i = 0; i < tmpISS.ListIssParts.Count; i++)
                 {
-                    newSendPartList.Add(listIssParts[i].PrtN);
+                    newSendPartList.Add(tmpISS.ListIssParts[i].PrtN);
 
-                    ListViewItem lvi1 = new ListViewItem(listIssParts[i].RB.ToString().ToString());
+                    ListViewItem lvi1 = new ListViewItem(tmpISS.ListIssParts[i].RB.ToString().ToString());
 
-                    lvi1.SubItems.Add(qc.PartInfoByFullCodeSifrarnik(mainPart.PartialCode).FullName);
-
-                    //////////////////////////////////////////////////////////////
-                
-                    if (listIssParts[i].PrtO.CodePartFull == 0)
-                        lvi1.SubItems.Add("");
-                    else
-                        lvi1.SubItems.Add(listIssParts[i].PrtO.CodePartFull.ToString());
-
-                    if (listIssParts[i].PrtO.SN == null)
-                        lvi1.SubItems.Add("");
-                    else
-                        lvi1.SubItems.Add(listIssParts[i].PrtO.SN.ToString());
-
-                    if (listIssParts[i].PrtO.CN == null)
-                        lvi1.SubItems.Add("");
-                    else
-                        lvi1.SubItems.Add(listIssParts[i].PrtO.CN.ToString());
-
-                    //////////////////////////////////////////////////////////////
-                
-                    if (listIssParts[i].PrtN.CodePartFull == 0)
-                        lvi1.SubItems.Add("");
-                    else
-                        lvi1.SubItems.Add(listIssParts[i].PrtN.CodePartFull.ToString());
-
-                    if (listIssParts[i].PrtN.SN == null)
-                        lvi1.SubItems.Add("");
-                    else
-                        lvi1.SubItems.Add(listIssParts[i].PrtN.SN.ToString());
-
-                    if (listIssParts[i].PrtN.CN == null)
-                        lvi1.SubItems.Add("");
-                    else
-                        lvi1.SubItems.Add(listIssParts[i].PrtN.CN.ToString());
+                    lvi1.SubItems.Add(qc.PartInfoByFullCodeSifrarnik(tmpISS.MainPart.PartialCode).FullName);
 
                     //////////////////////////////////////////////////////////////
 
-                    lvi1.SubItems.Add(listIssParts[i].Date.ToString());
+                    if (tmpISS.ListIssParts[i].PrtO.CodePartFull == 0)
+                        lvi1.SubItems.Add("");
+                    else
+                        lvi1.SubItems.Add(tmpISS.ListIssParts[i].PrtO.CodePartFull.ToString());
 
-                    lvi1.SubItems.Add(listIssParts[i].Time.ToString());
-                    lvi1.SubItems.Add(listIssParts[i].Work.ToString());
-                    lvi1.SubItems.Add(listIssParts[i].Comment.ToString());
-                    lvi1.SubItems.Add(listIssParts[i].UserID.ToString());
+                    if (tmpISS.ListIssParts[i].PrtO.SN == null)
+                        lvi1.SubItems.Add("");
+                    else
+                        lvi1.SubItems.Add(tmpISS.ListIssParts[i].PrtO.SN.ToString());
+
+                    if (tmpISS.ListIssParts[i].PrtO.CN == null)
+                        lvi1.SubItems.Add("");
+                    else
+                        lvi1.SubItems.Add(tmpISS.ListIssParts[i].PrtO.CN.ToString());
+
+                    //////////////////////////////////////////////////////////////
+
+                    if (tmpISS.ListIssParts[i].PrtN.CodePartFull == 0)
+                        lvi1.SubItems.Add("");
+                    else
+                        lvi1.SubItems.Add(tmpISS.ListIssParts[i].PrtN.CodePartFull.ToString());
+
+                    if (tmpISS.ListIssParts[i].PrtN.SN == null)
+                        lvi1.SubItems.Add("");
+                    else
+                        lvi1.SubItems.Add(tmpISS.ListIssParts[i].PrtN.SN.ToString());
+
+                    if (tmpISS.ListIssParts[i].PrtN.CN == null)
+                        lvi1.SubItems.Add("");
+                    else
+                        lvi1.SubItems.Add(tmpISS.ListIssParts[i].PrtN.CN.ToString());
+
+                    //////////////////////////////////////////////////////////////
+
+                    lvi1.SubItems.Add(tmpISS.ListIssParts[i].Date.ToString());
+
+                    lvi1.SubItems.Add(tmpISS.ListIssParts[i].Time.ToString());
+                    lvi1.SubItems.Add(tmpISS.ListIssParts[i].Work.ToString());
+                    lvi1.SubItems.Add(tmpISS.ListIssParts[i].Comment.ToString());
+                    lvi1.SubItems.Add(tmpISS.ListIssParts[i].UserID.ToString());
 
                     if (listView1.Items.Count > 1)
                         listView1.EnsureVisible(listView1.Items.Count - 1);
@@ -1077,8 +1023,10 @@ namespace POT.Documents
 
                 rb = listView1.Items.Count + 1;
 
-                data = cmpCust.Name + ", " + cmpM.Name + ", " + "Sifrarnik arr cnt " + sifrarnikArr.Count + ", " + mainPart.CodePartFull + ", " + "listIssParts cnt " + listIssParts.Count + ", " + ISSid.ToString() + ", " + Properties.strings.ServiceReport + ", " + Properties.strings.customer + ", false";
-                Result = "ISS selected " + ISSid;
+                ISSPartsCounter = tmpISS.ListIssParts.Count();
+
+                data = cmpCust.Name + ", " + cmpM.Name + ", " + "Sifrarnik arr cnt " + sifrarnikArr.Count + ", " + mainPart.CodePartFull + ", " + "listIssParts cnt " + tmpISS.ListIssParts.Count + ", " + tmpISS.ISSid.ToString() + ", " + Properties.strings.ServiceReport + ", " + Properties.strings.customer + ", false";
+                Result = "ISS selected " + tmpISS.ISSid;
                 AppendTextBox(Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + Result);
                 lw.LogMe(function, usedQC, data, Result);
 
@@ -1087,7 +1035,7 @@ namespace POT.Documents
             }
             catch(Exception e1)
             {
-                data = ISSid + Environment.NewLine;
+                data = tmpISS.ISSid + Environment.NewLine;
                 Result = e1.Message;
                 lw.LogMe(function, usedQC, data, Result);
 
@@ -1096,21 +1044,10 @@ namespace POT.Documents
 
                 MessageBox.Show(Result, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-        }
-
-        static void bckpISSPartsFill()
-        {
-            QueryCommands qc = new QueryCommands();
-
-            try
+            finally
             {
-                listIssBckpParts = qc.GetAllISSPartsByISSid(IISIDforThread);
-                isBckpFilled = true;
-            }
-            catch (Exception e1)
-            {
-                new LogWriter(e1);
-                isBckpFilled = false;
+                Program.LoadStop();
+                this.Focus();
             }
         }
 
@@ -1187,8 +1124,8 @@ namespace POT.Documents
 
                 if (printDialog1.PrinterSettings.PrinterName == "Microsoft Print to PDF")
                 {   // force a reasonable filename
-                    string basename = Path.GetFileNameWithoutExtension("ISS " + ISSid.ToString());
-                    string directory = Path.GetDirectoryName("ISS " + ISSid.ToString());
+                    string basename = Path.GetFileNameWithoutExtension("ISS " + tmpISS.ISSid.ToString());
+                    string directory = Path.GetDirectoryName("ISS " + tmpISS.ISSid.ToString());
                     printDocument1.PrinterSettings.PrintToFile = true;
                     // confirm the user wants to use that name
                     pdfSaveDialog.InitialDirectory = directory;
@@ -1240,13 +1177,13 @@ namespace POT.Documents
             LogWriter lw = new LogWriter();
             ////////////////////////////////////////////////
             ///
-
-            PrintMeISS pr = new PrintMeISS(cmpCust, cmpM, sifrarnikArr, mainPart, listIssParts, ISSid.ToString(), Properties.strings.ServiceReport, Properties.strings.customer, false, "", totalTime, allDonePrint);
+            
+            PrintMeISS pr = new PrintMeISS(cmpCust, cmpM, sifrarnikArr, mainPart, tmpISS.ListIssParts, tmpISS.ISSid.ToString(), Properties.strings.ServiceReport, Properties.strings.customer, false, "", totalTime, allDonePrint);
             pr.Print(e);
 
             if (onlyOneTime)
             {
-                data = cmpCust.Name + ", " + cmpM.Name + ", " + "Sifrarnik arr cnt " + sifrarnikArr.Count + ", " + mainPart.CodePartFull + ", " + "listIssParts cnt " + listIssParts.Count + ", " + ISSid.ToString() + ", " + Properties.strings.ServiceReport + ", " + Properties.strings.customer + ", false";
+                data = cmpCust.Name + ", " + cmpM.Name + ", " + "Sifrarnik arr cnt " + sifrarnikArr.Count + ", " + mainPart.CodePartFull + ", " + "listIssParts cnt " + tmpISS.ListIssParts.Count + ", " + tmpISS.ISSid.ToString() + ", " + Properties.strings.ServiceReport + ", " + Properties.strings.customer + ", false";
                 Result = "Print page called";
                 AppendTextBox(Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + Result);
                 lw.LogMe(function, usedQC, data, Result);
@@ -1274,20 +1211,21 @@ namespace POT.Documents
             
             foreach (ListViewItem item in listView1.SelectedItems)
             {
-                mRB = int.Parse(item.SubItems[0].Text) - 1;
+                mRB = int.Parse(item.SubItems[0].Text);
 
-                if ( isBckpFilled && mRB <= listIssBckpParts.Count - 1 )
+                if ( !isSaved && mRB <= ISSPartsCounter )
                 {
                     MessageBox.Show("I cant delete the item that have already been recorded!" + Environment.NewLine + "Please contact you administrator.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                     return;
                 }
-                else if ( !isBckpFilled )
+                else if ( isSaved )
                 {
                     MessageBox.Show("Sorry I can check if part can be removed." + Environment.NewLine + "I did not load parts correctly." + Environment.NewLine + "Please try again later or try to reload ISS, if the problem is persistent, contact you administrator.", "Parts error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     return;
                 }
                 
-                newSendPartList.RemoveAt(mRB);
+                tmpISS.ListIssParts.RemoveAt(mRB - 1);
+                newSendPartList.RemoveAt(mRB - 1);
                 uvecajGroupPart--;
                 listView1.Items.Remove(item);
                 showItem = item.SubItems[0].Text;
@@ -1311,8 +1249,6 @@ namespace POT.Documents
             AppendTextBox(Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + Result);
 
             rb = listView1.Items.Count + 1;
-
-            //itemRemoved = true;
         }
 
         private void listView1_DoubleClick(object sender, EventArgs e)
@@ -1328,13 +1264,13 @@ namespace POT.Documents
 
             try
             {
+                //return;
+
                 var items = listView1.SelectedItems;
 
-                long issID = long.Parse(ISSSelectorCb.SelectedItem.ToString());
+                long issID = long.Parse(tmpISS.ISSid.ToString());
                 Part mainPr = new Part();
                 List<String> allISSInfo = new List<String>();
-
-                ISSid = issID;
 
                 allISSInfo = qc.GetAllISSInfoById(issID);
 
@@ -1361,21 +1297,15 @@ namespace POT.Documents
 
                 WorkDoneCb.Text = items[0].SubItems[10].Text;
                 ComentTb.Text = items[0].SubItems[11].Text;
-
-                mainPart = qc.SearchPartsInAllTablesBYPartID(long.Parse(allISSInfo[4]))[0];
-
-                PartCb.Text = mainPart.CodePartFull.ToString();
-
-                cmpCust.GetCompanyInfoByCode(Decoder.GetCustomerCode(mainPart.CodePartFull));
-
-                data = cmpCust.Name + ", " + cmpM.Name + ", " + "Sifrarnik arr cnt " + sifrarnikArr.Count + ", " + mainPart.CodePartFull + ", " + "listIssParts cnt " + listIssParts.Count + ", " + ISSid.ToString() + ", " + Properties.strings.ServiceReport + ", " + Properties.strings.customer + ", false";
-                Result = "ISS selected " + ISSid;
+                
+                data = cmpCust.Name + ", " + cmpM.Name + ", " + "Sifrarnik arr cnt " + sifrarnikArr.Count + ", " + mainPart.CodePartFull + ", " + "listIssParts cnt " + tmpISS.ListIssParts.Count + ", " + tmpISS.ISSid.ToString() + ", " + Properties.strings.ServiceReport + ", " + Properties.strings.customer + ", false";
+                Result = "ISS selected " + tmpISS.ISSid;
                 AppendTextBox(Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + Result);
                 lw.LogMe(function, usedQC, data, Result);
             }
             catch (Exception e1)
             {
-                data = ISSid + Environment.NewLine;
+                data = tmpISS.ISSid + Environment.NewLine;
                 Result = e1.Message;
                 lw.LogMe(function, usedQC, data, Result);
                 MessageBox.Show(Result, "NOT SAVED", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -1384,6 +1314,8 @@ namespace POT.Documents
 
         private void saveToPDF()
         {
+            String printerName = printDialog1.PrinterSettings.PrinterName;
+
             try
             {
                 PrintDialog printDialog1 = new PrintDialog();
@@ -1396,13 +1328,18 @@ namespace POT.Documents
                 if (!Directory.Exists(Properties.Settings.Default.DefaultFolder + "\\ISS"))
                     return;
 
-                string fileName = "\\ISS " + ISSid.ToString().Replace("/", "") + ".pdf";
+                string fileName = "\\ISS " + tmpISS.ISSid.ToString().Replace("/", "") + ".pdf";
                 string directory = Properties.Settings.Default.DefaultFolder + "\\ISS";
 
                 printDialog1.PrinterSettings.PrintToFile = true;
                 printDocument1.PrinterSettings.PrintFileName = directory + fileName;
                 printDocument1.PrinterSettings.PrintToFile = true;
                 printDocument1.Print();
+
+                printDialog1.PrinterSettings.PrintToFile = false;
+                printDocument1.PrinterSettings.PrintToFile = false;
+                printDialog1.PrinterSettings.PrinterName = printerName;
+                printDocument1.PrinterSettings.PrinterName = printerName;
             }
             catch (Exception e1)
             {
@@ -1413,9 +1350,6 @@ namespace POT.Documents
 
         private void PartSelectorCb_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-            selectPart = (ComboBox)sender;
-
             ///////////////// LogMe ////////////////////////
             String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
             String usedQC = "ISS part loaded";
@@ -1452,127 +1386,109 @@ namespace POT.Documents
 
                 String splitMe = PartSelectorCb.SelectedItem.ToString();
                 var partData = splitMe.Split('#');
-                long issID = qc.GetISSidByPartID( long.Parse(partData[0].Trim()) );
+
+                tmpISS = null;
+                tmpISS = ISSall.Find(x => x.MainPart.PartID == long.Parse(partData[0].Trim()));
+
+                long issID = tmpISS.ISSid;
 
                 if (issID == 0)
                 {
-                    Part tmpPart = new Part();
-                    tmpPart = qc.SearchPartsInAllTablesBYPartID(long.Parse(partData[0]))[0];
-
-
-                    if (selectPart.SelectedIndex < 0)
+                    if (PartSelectorCb.SelectedIndex < 0)
                     {
                         return;
                     }
                     else
                     {
                         ISSIDlb.Text = "0";
-                        PartCb.Text = tmpPart.CodePartFull.ToString();
 
-                        if (PartCb.SelectedIndex >= 0)
-                            NameTb.Text = Decoder.ConnectCodeName(sifrarnikArr, tmpPart.PartialCode);
+                        NameTb.Text = Decoder.ConnectCodeName(sifrarnikArr, tmpISS.MainPart.PartialCode);
 
-                        SNTb.Text = tmpPart.SN;
-                        CNTb.Text = tmpPart.CN;
-                        DateInTb.Text = tmpPart.DateIn;
-                        DateSentTb.Text = tmpPart.DateSend;
-                        IDTb.Text = tmpPart.PartID.ToString();
-                        mainPart = tmpPart;
+                        SNTb.Text = tmpISS.MainPart.SN;
+                        CNTb.Text = tmpISS.MainPart.CN;
+                        DateInTb.Text = tmpISS.MainPart.DateIn;
+                        DateSentTb.Text = tmpISS.MainPart.DateSend;
+                        IDTb.Text = tmpISS.MainPart.PartID.ToString();
+                        mainPart = tmpISS.MainPart;
                     }
                 }
 
                 ISSIDlb.Text = issID.ToString();
 
-                IISIDforThread = issID;
-                Thread myThread = new Thread(bckpISSPartsFill);
-                myThread.Start();
-
-                List<String> allISSInfo = new List<String>();
-
-                ISSid = issID;
-
-                allISSInfo = qc.GetAllISSInfoById(issID);
-
-                if (allISSInfo[0].Equals("nok"))
+                if (tmpISS == null)
                 {
-                    data = cmpCust.Name + ", " + cmpM.Name + ", " + "Sifrarnik arr cnt " + sifrarnikArr.Count + ", " + mainPart.CodePartFull + ", " + "listIssParts cnt " + listIssParts.Count + ", " + ISSid.ToString() + ", " + Properties.strings.ServiceReport + ", " + Properties.strings.customer + ", false";
+                    data = cmpCust.Name + ", " + cmpM.Name + ", " + "Sifrarnik arr cnt " + sifrarnikArr.Count + ", " + mainPart.CodePartFull + ", " + "listIssParts cnt " + tmpISS.ListIssParts.Count + ", " + tmpISS.ISSid.ToString() + ", " + Properties.strings.ServiceReport + ", " + Properties.strings.customer + ", false";
                     Result = "No ISS part selected " + partData[0];
                     AppendTextBox(Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + Result);
                     lw.LogMe(function, usedQC, data, Result);
                     return;
                 }
 
-                totalTime = allISSInfo[6] + ":00";
+                totalTime = tmpISS.TotalTIme + ":00";
 
-                mainPart = qc.SearchPartsInAllTablesBYPartID(long.Parse(allISSInfo[4]))[0];
+                mainPart = tmpISS.MainPart;
 
-                PartCb.Text = mainPart.CodePartFull.ToString();
+                SNTb.Text = tmpISS.MainPart.SN;
+                CNTb.Text = tmpISS.MainPart.CN;
+                DateInTb.Text = tmpISS.MainPart.DateIn;
+                DateSentTb.Text = tmpISS.MainPart.DateSend;
+                IDTb.Text = tmpISS.MainPart.PartID.ToString();
+                NameTb.Text = Decoder.ConnectCodeName(sifrarnikArr, tmpISS.MainPart.CodePartFull);
 
-                SNTb.Text = mainPart.SN;
-                CNTb.Text = mainPart.CN;
-                DateInTb.Text = mainPart.DateIn;
-                DateSentTb.Text = mainPart.DateSend;
-                IDTb.Text = mainPart.PartID.ToString();
-                NameTb.Text = Decoder.ConnectCodeName(sifrarnikArr, mainPart.CodePartFull);
-
-                selectISS = null;
-
-                cmpCust.GetCompanyInfoByCode(Decoder.GetCustomerCode(mainPart.CodePartFull));
-
-                listIssParts.Clear();
-                listIssParts = qc.GetAllISSPartsByISSid(issID);
+                cmpCust.GetCompanyInfoByCode(Decoder.GetCustomerCode(tmpISS.MainPart.CodePartFull));
 
                 newSendPartList.Clear();
 
-                for (int i = 0; i < listIssParts.Count; i++)
+                for (int i = 0; i < tmpISS.ListIssParts.Count; i++)
                 {
-                    newSendPartList.Add(listIssParts[i].PrtN);
+                    newSendPartList.Add(tmpISS.ListIssParts[i].PrtN);
 
-                    ListViewItem lvi1 = new ListViewItem(listIssParts[i].RB.ToString().ToString());
+                    ListViewItem lvi1 = new ListViewItem(tmpISS.ListIssParts[i].RB.ToString().ToString());
 
-                    lvi1.SubItems.Add(qc.PartInfoByFullCodeSifrarnik(mainPart.PartialCode).FullName);
-
-                    //////////////////////////////////////////////////////////////
-
-                    if (listIssParts[i].PrtO.CodePartFull == 0)
-                        lvi1.SubItems.Add("");
-                    else
-                        lvi1.SubItems.Add(listIssParts[i].PrtO.CodePartFull.ToString());
-
-                    if (listIssParts[i].PrtO.SN == null)
-                        lvi1.SubItems.Add("");
-                    else
-                        lvi1.SubItems.Add(listIssParts[i].PrtO.SN.ToString());
-
-                    if (listIssParts[i].PrtO.CN == null)
-                        lvi1.SubItems.Add("");
-                    else
-                        lvi1.SubItems.Add(listIssParts[i].PrtO.CN.ToString());
+                    lvi1.SubItems.Add(qc.PartInfoByFullCodeSifrarnik(tmpISS.MainPart.PartialCode).FullName);
 
                     //////////////////////////////////////////////////////////////
 
-                    if (listIssParts[i].PrtN.CodePartFull == 0)
+                    if (tmpISS.ListIssParts[i].PrtO.CodePartFull == 0)
                         lvi1.SubItems.Add("");
                     else
-                        lvi1.SubItems.Add(listIssParts[i].PrtN.CodePartFull.ToString());
+                        lvi1.SubItems.Add(tmpISS.ListIssParts[i].PrtO.CodePartFull.ToString());
 
-                    if (listIssParts[i].PrtN.SN == null)
+                    if (tmpISS.ListIssParts[i].PrtO.SN == null)
                         lvi1.SubItems.Add("");
                     else
-                        lvi1.SubItems.Add(listIssParts[i].PrtN.SN.ToString());
+                        lvi1.SubItems.Add(tmpISS.ListIssParts[i].PrtO.SN.ToString());
 
-                    if (listIssParts[i].PrtN.CN == null)
+                    if (tmpISS.ListIssParts[i].PrtO.CN == null)
                         lvi1.SubItems.Add("");
                     else
-                        lvi1.SubItems.Add(listIssParts[i].PrtN.CN.ToString());
+                        lvi1.SubItems.Add(tmpISS.ListIssParts[i].PrtO.CN.ToString());
 
                     //////////////////////////////////////////////////////////////
 
-                    lvi1.SubItems.Add(listIssParts[i].Date.ToString());
-                    lvi1.SubItems.Add(listIssParts[i].Time.ToString());
-                    lvi1.SubItems.Add(listIssParts[i].Work.ToString());
-                    lvi1.SubItems.Add(listIssParts[i].Comment.ToString());
-                    lvi1.SubItems.Add(listIssParts[i].UserID.ToString());
+                    if (tmpISS.ListIssParts[i].PrtN.CodePartFull == 0)
+                        lvi1.SubItems.Add("");
+                    else
+                        lvi1.SubItems.Add(tmpISS.ListIssParts[i].PrtN.CodePartFull.ToString());
+
+                    if (tmpISS.ListIssParts[i].PrtN.SN == null)
+                        lvi1.SubItems.Add("");
+                    else
+                        lvi1.SubItems.Add(tmpISS.ListIssParts[i].PrtN.SN.ToString());
+
+                    if (tmpISS.ListIssParts[i].PrtN.CN == null)
+                        lvi1.SubItems.Add("");
+                    else
+                        lvi1.SubItems.Add(tmpISS.ListIssParts[i].PrtN.CN.ToString());
+
+                    //////////////////////////////////////////////////////////////
+
+                    lvi1.SubItems.Add(tmpISS.ListIssParts[i].Date.ToString());
+
+                    lvi1.SubItems.Add(tmpISS.ListIssParts[i].Time.ToString());
+                    lvi1.SubItems.Add(tmpISS.ListIssParts[i].Work.ToString());
+                    lvi1.SubItems.Add(tmpISS.ListIssParts[i].Comment.ToString());
+                    lvi1.SubItems.Add(tmpISS.ListIssParts[i].UserID.ToString());
 
                     if (listView1.Items.Count > 1)
                         listView1.EnsureVisible(listView1.Items.Count - 1);
@@ -1588,7 +1504,9 @@ namespace POT.Documents
 
                 rb = listView1.Items.Count + 1;
 
-                data = cmpCust.Name + ", " + cmpM.Name + ", " + "Sifrarnik arr cnt " + sifrarnikArr.Count + ", " + mainPart.CodePartFull + ", " + "listIssParts cnt " + listIssParts.Count + ", " + ISSid.ToString() + ", " + Properties.strings.ServiceReport + ", " + Properties.strings.customer + ", false";
+                ISSPartsCounter = tmpISS.ListIssParts.Count();
+
+                data = cmpCust.Name + ", " + cmpM.Name + ", " + "Sifrarnik arr cnt " + sifrarnikArr.Count + ", " + mainPart.CodePartFull + ", " + "listIssParts cnt " + tmpISS.ListIssParts.Count + ", " + tmpISS.ISSid.ToString() + ", " + Properties.strings.ServiceReport + ", " + Properties.strings.customer + ", false";
                 Result = "ISS part selected " + partData[0];
                 AppendTextBox(Environment.NewLine + "- " + DateTime.Now.ToString("dd.MM.yy. HH:mm - ") + Result);
                 lw.LogMe(function, usedQC, data, Result);
@@ -1598,7 +1516,7 @@ namespace POT.Documents
             }
             catch (Exception e1)
             {
-                data = ISSid + Environment.NewLine;
+                data = tmpISS.ISSid + Environment.NewLine;
                 Result = e1.Message;
                 lw.LogMe(function, usedQC, data, Result);
 
@@ -1608,6 +1526,130 @@ namespace POT.Documents
             {
                 Program.LoadStop();
                 this.Focus();
+            }
+        }
+
+        private void NewISSBT_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ISSSelector issSelector = new ISSSelector();
+                issSelector.ShowDialog();
+
+                if (ISSSelector.selectedIndex < 0)
+                {
+                    if (ISSall.Count > 0) //(partList.Count > 0)
+                    {
+                        ISSSelectorCb.Text = "";
+                        PartSelectorCb.Text = "";
+
+                        ISSSelectorCb.Items.Clear();
+                        PartSelectorCb.Items.Clear();
+                        listView1.Items.Clear();
+
+                        foreach (ISSreport iss in ISSall)
+                        {
+                            ISSSelectorCb.Items.Add(iss.ISSid);
+
+                            PartSelectorCb.Items.Add(iss.MainPart.PartID.ToString() + " # " + iss.MainPart.SN.ToUpper().ToString() + " # " + iss.MainPart.CN.ToUpper().ToString() + " # " + iss.MainPart.CodePartFull.ToString());
+                        }
+                    }
+                    return;
+                }
+                mainPart = null;
+                tmpISS = null;
+
+                FillTmpISSIManiPart(ISSSelector.selectedIndex);
+
+                ISSSelectorCb.Text = "";
+                PartSelectorCb.Text = "";
+
+                ISSSelectorCb.Items.Clear();
+                PartSelectorCb.Items.Clear();
+                listView1.Items.Clear();
+
+
+                Boolean allDone = checkBox1.Checked;
+
+                if (qc.ISSUnesiISS(false, allDone, tmpISS.ISSid, tmpISS.Date, cmpCust, mainPart, tmpISS.ListIssParts, WorkingUser.UserID, totalTime))
+                {
+                    if (Program.SaveDocumentsPDF) saveToPDF();
+                }
+
+                qc.ISSPrebaciPartUWorking(tmpISS.MainPart);
+
+                partList.RemoveAt(ISSSelector.selectedIndex);
+
+                ISSall.Add(tmpISS);
+                if (ISSall.Count > 0) //(partList.Count > 0)
+                {
+                    foreach (ISSreport iss in ISSall)
+                    {
+                        ISSSelectorCb.Items.Add(iss.ISSid);
+
+                        PartSelectorCb.Items.Add(iss.MainPart.PartID.ToString() + " # " + iss.MainPart.SN.ToUpper().ToString() + " # " + iss.MainPart.CN.ToUpper().ToString() + " # " + iss.MainPart.CodePartFull.ToString());
+                    }
+                }
+
+                MessageBox.Show("New ISS is opened, with number, " + tmpISS.ISSid.ToString());
+
+                mainPart = null;
+                tmpISS = null;
+            }
+            catch(Exception e1)
+            {
+                MessageBox.Show(e1.Message);
+            }
+        }
+
+        private void FillTmpISSIManiPart(int _selectedIndex)
+        {
+            mainPart = partList[_selectedIndex];
+
+            tmpISS = new ISSreport();
+            tmpISS.ISSid = qc.ISSExistIfNotReturnNewID(0);
+
+            cmpCust.GetCompanyInfoByCode(Decoder.GetCustomerCode(mainPart.CodePartFull));
+            tmpISS.CustomerID = cmpCust.ID;
+            tmpISS.Date = DateTime.Now.ToString("dd.mm.yy.");
+            tmpISS.MainPart = mainPart;
+            tmpISS.PartID = mainPart.PartID;
+            tmpISS.UserIDmaked = WorkingUser.UserID;
+
+            tmpISS.TotalTIme = totalTime = "00:00";
+        }
+
+        private ISSparts AddNewChangedPartTotmpISS(ListViewItem _item, Part _part)
+        {
+            try
+            {
+                long CodeO = 0;
+
+                if (!_item.SubItems[2].Text.Trim().Equals(""))
+                    CodeO = long.Parse(_item.SubItems[2].Text.Trim());
+
+                ISSparts issp = new ISSparts(
+                            tmpISS.ISSid,
+                            long.Parse(_item.SubItems[0].Text.Trim()),
+                            CodeO,
+                            _item.SubItems[3].Text,
+                            _item.SubItems[4].Text,
+                            _part,
+                            _item.SubItems[10].Text,
+                            _item.SubItems[11].Text,
+                            _item.SubItems[9].Text,
+                            long.Parse(_item.SubItems[12].Text),
+                            _item.SubItems[8].Text);
+                return issp;
+            }
+            catch(Exception e1)
+            {
+                MessageBox.Show(e1.Message);
+                return null;
+            }
+            finally
+            {
+                //Program.LoadStop();
             }
         }
     }

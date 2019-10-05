@@ -36,6 +36,7 @@ namespace POT.MyTypes
             using (SqlConnection cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password))
             {
                 datumRada = mDatumRada;
+                DatumUpisa = DateTime.Now.ToString("dd.MM.yy.");
 
                 try
                 {
