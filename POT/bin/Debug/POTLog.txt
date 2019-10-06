@@ -21362,3 +21362,763 @@ Parameter name: index
 
 - 05.10.19. 15:07 - App turned off
     *** BrunoBrckovic *** 
+
+- 05.10.19. 15:18 - App started
+    *** BrunoBrckovic *** 
+
+- 05.10.19. 15:18 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 05.10.19. 15:19
+    - LOGED change: POT.SetDBConnection - button2_Click
+     - Used: DB connection address and name save.
+     - Data: cphr.ddns.net, test
+     - Result: Saved, no msgToUser
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 15:19
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The network path was not found
+    - InnerEcp: System.ComponentModel.Win32Exception (0x80004005): The network path was not found
+    - MessageEcp: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 15:19
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The network path was not found
+    - InnerEcp: System.ComponentModel.Win32Exception (0x80004005): The network path was not found
+    - MessageEcp: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 27
+   at POT.QueryCommands.SetWorkingDBUser(String Uname, String Pass) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 115
+   at POT.LoginForm.OkBT_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\LoginForm.cs:line 28
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 15:19
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The network path was not found
+    - InnerEcp: System.ComponentModel.Win32Exception (0x80004005): The network path was not found
+    - MessageEcp: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 15:19
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The network path was not found
+    - InnerEcp: System.ComponentModel.Win32Exception (0x80004005): The network path was not found
+    - MessageEcp: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 27
+   at POT.QueryCommands.CurrentExchangeRate() in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 1836
+   at POT.MainFR..ctor() in F:\PROJEKTI\VS\POT\POT\POT\MainFR.cs:line 113
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 15:19 - App started
+    *** BrunoBrckovic *** 
+
+- 05.10.19. 15:19
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The network path was not found
+    - InnerEcp: System.ComponentModel.Win32Exception (0x80004005): The network path was not found
+    - MessageEcp: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 15:19Error writing log error message in LogWriter constructor with exception value
+    - ErrorMSg:The process cannot access the file 'F:\PROJEKTI\VS\POT\POT\POT\bin\Debug\POTLog.txt' because it is being used by another process.
+    *** BrunoBrckovic *** 
+
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 15:19
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The network path was not found
+    - InnerEcp: System.ComponentModel.Win32Exception (0x80004005): The network path was not found
+    - MessageEcp: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 27
+   at POT.QueryCommands.openedTickets(String Uname, String Pass) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 2900
+   at POT.MainFR.getOpenedTasks() in F:\PROJEKTI\VS\POT\POT\POT\MainFR.cs:line 607
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 15:19 - App turned off
+    *** BrunoBrckovic *** 
+
+- 05.10.19. 15:19
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The network path was not found
+    - InnerEcp: System.ComponentModel.Win32Exception (0x80004005): The network path was not found
+    - MessageEcp: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    ***  *** 
+
+
+- 05.10.19. 15:19
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The network path was not found
+    - InnerEcp: System.ComponentModel.Win32Exception (0x80004005): The network path was not found
+    - MessageEcp: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 27
+   at POT.QueryCommands.SetWorkingDBUser(String Uname, String Pass) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 115
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\StartForm.cs:line 78
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    ***  *** 
+
+
+- 05.10.19. 15:20
+    - LOGED change: POT.SetDBConnection - button2_Click
+     - Used: DB connection address and name save.
+     - Data: cphr.ddns.net, test
+     - Result: Saved, no msgToUser
+    ***  *** 
+
+
+- 05.10.19. 15:20
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The network path was not found
+    - InnerEcp: System.ComponentModel.Win32Exception (0x80004005): The network path was not found
+    - MessageEcp: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    ***  *** 
+
+
+- 05.10.19. 15:20
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The network path was not found
+    - InnerEcp: System.ComponentModel.Win32Exception (0x80004005): The network path was not found
+    - MessageEcp: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 27
+   at POT.QueryCommands.SetWorkingDBUser(String Uname, String Pass) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 115
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\StartForm.cs:line 78
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    ***  *** 
+
+
+- 05.10.19. 15:22 - App started
+    *** BrunoBrckovic *** 
+
+- 05.10.19. 15:23 - App started
+    *** BrunoBrckovic *** 
+
+- 05.10.19. 15:23 - App turned off
+    *** BrunoBrckovic *** 
+
+- 05.10.19. 15:24 - App started
+    *** BrunoBrckovic *** 
+
+- 05.10.19. 15:24
+    - LOGED change: POT.Documents.ISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., CES-POS d.o.o., Sifrarnik arr cnt 654, 707013002000, listIssParts cnt 0, 190003, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 15:24 - App turned off
+    *** BrunoBrckovic *** 
+
+- 05.10.19. 17:12 - App started
+    *** BrunoBrckovic *** 
+
+- 05.10.19. 17:13
+    - LOGED change: POT.CompanyInfo - button2_Click
+     - Used: Saving MainCmp info
+     - Data: Exception d.o.o., Dunavska 31, Zagreb, 10000, HR, 0.00, 0.00, PBZGHR2X, 02647369817, 080182296, HR8323400091100157894, 4, 1, www.ces-pos.hr, +38512307973, Bruno Brckovic, info@exception.hr, support@ces-pos.hr, 2
+     - Result: Saved.
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 17:13
+    - LOGED change: POT.BuildingClasses.SettingsForm - SaveBT_Click
+     - Used: Print
+     - Data: 0; 0; 15; VAT is not calculated according to Article 17. of the Law on PDV; The taxpayer is not in the VAT system, according to Article 90. of the Law on PDV; Thank you for your trust; Temeljem članka 9., st.3., Zakona o računovodstvu, račun je pravovaljan bez potpisa i pečata; Porezni obveznik nije u sustavu PDV-a, temeljem zakona o PDV-u čl. 90; Hvala na ukazanom povjerenju; Bruno Brcković; E:\Dropbox (VsiTe Team)\POT DOKUMENTI; Save_to_PDF => True
+     - Result: 
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 17:13
+    - LOGED change: POT.MainCmpSelector - button1_Click
+     - Used: Main cmp select
+     - Data: Exception d.o.o.
+     - Result: Main cmp selected, please relog to see changes.
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 17:13 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 05.10.19. 17:13 - App started
+    *** BrunoBrckovic *** 
+
+- 05.10.19. 17:13 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 05.10.19. 17:13
+    - LOGED change: POT.SetDBConnection - button2_Click
+     - Used: DB connection address and name save.
+     - Data: cphr.ddns.net, exe
+     - Result: Saved, no msgToUser
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 17:13 - App started
+    *** BrunoBrckovic *** 
+
+- 05.10.19. 17:13
+    - LOGED change: POT.MainCmpSelector - button1_Click
+     - Used: Main cmp select
+     - Data: Exception
+     - Result: Main cmp selected, please relog to see changes.
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 17:13
+    - LOGED change: POT.CompanyInfo - button2_Click
+     - Used: Saving MainCmp info
+     - Data: Exception, Dunavska 31, Zagreb, 10040, HR, 0.00, 0.00, 76737454770, PBZGHR2X, 97768138, HR9323400091160480462, 4, 1, www.exception.hr, +38515814315, Bruno Brckovic, info@exception.hr, support@exception.hr, 2
+     - Result: Saved.
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 17:13 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 05.10.19. 17:14 - App started
+    *** BrunoBrckovic *** 
+
+- 05.10.19. 17:14
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: ID
+     - Data: 19070
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 17:14
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 19070
+     - Result: Selected PRIM (19070) does not exist or do not have parts.
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 17:14
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: ID
+     - Data: 19072
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 17:14
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 19072
+     - Result: Selected PRIM (19072) does not exist or do not have parts.
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 17:14
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: NAME
+     - Data: 159
+     - Result: Selected PRIM does not exist.
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 17:14
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: NAME
+     - Data: 129
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 17:14
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 19071
+     - Result: Selected PRIM (19071) does not exist or do not have parts.
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 17:14
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 19070
+     - Result: Selected PRIM (19070) does not exist or do not have parts.
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 17:14
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 19069
+     - Result: Selected PRIM (19069) does not exist or do not have parts.
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 17:14
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 707013002000, 12X0141, 1013688
+             707013002000, 1270249, 1013774
+             707013002000, 13Y0325, 1013746
+             707013002000, 12X0203, 1013636
+             707013002000, 12X0056, 1013789
+             707013002000, 13Y0255, 1013614
+             707013002000, 13Y0315, 1013631
+             707013002000, 13Y0281, 1013694
+             707013002000, 12X0076, 1013770
+             707013002000, 12X0192, 1013812
+             707013002000, 12X0105, 1013859
+             707013002000, 12X0074, 1013786
+             707013002000, 12X0197, 1013834
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 17:14
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 707013002000, 12X0141, 1013688
+             707013002000, 1270249, 1013774
+             707013002000, 13Y0325, 1013746
+             707013002000, 12X0203, 1013636
+             707013002000, 12X0056, 1013789
+             707013002000, 13Y0255, 1013614
+             707013002000, 13Y0315, 1013631
+             707013002000, 13Y0281, 1013694
+             707013002000, 12X0076, 1013770
+             707013002000, 12X0192, 1013812
+             707013002000, 12X0105, 1013859
+             707013002000, 12X0074, 1013786
+             707013002000, 12X0197, 1013834
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 17:14
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 707013002000, 12X0141, 1013688
+             707013002000, 1270249, 1013774
+             707013002000, 13Y0325, 1013746
+             707013002000, 12X0203, 1013636
+             707013002000, 12X0056, 1013789
+             707013002000, 13Y0255, 1013614
+             707013002000, 13Y0315, 1013631
+             707013002000, 13Y0281, 1013694
+             707013002000, 12X0076, 1013770
+             707013002000, 12X0192, 1013812
+             707013002000, 12X0105, 1013859
+             707013002000, 12X0074, 1013786
+             707013002000, 12X0197, 1013834
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 17:14
+    - LOGED change: POT.CopyPrintForms.cPRIM - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/011, , OTPREMNICA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 17:14
+    - LOGED change: POT.CopyPrintForms.cPRIM - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/011, , OTPREMNICA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 17:15
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 707013002000, 1810152, 1025075
+             707013002000, 1280146, 1013790
+             707013002000, 1690253, 1021889
+             707013002000, 13Y0283, 1013873
+             707013002000, 1390184, 1013677
+             707013002000, 1810256, 1025789
+             707013002000, 12X0175, 1013748
+             707013002000, 12X0144, 1013646
+             707013002000, 12X0052, 1013628
+             707013002000, 12X0138, 1013798
+             707013002000, 12X0171, 1013707
+             707013002000, 12X0151, 1013818
+             707013002000, 12X0037, 1013724
+             707013002000, 12X0066, 1013775
+             707013002000, 12X0035, 1013829
+             707013002000, 12X0209, 1013642
+             707013002000, 1851286, 
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 17:15
+    - LOGED change: POT.CopyPrintForms.cPRIM - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/010, , OTPREMNICA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 17:15
+    - LOGED change: POT.CopyPrintForms.cPRIM - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/010, , OTPREMNICA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 17:15
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 707013002000, 12X0107, 1013756
+             707013002000, 1690262, 1013865
+             707013002000, 12X0200, 1013828
+             707013002000, 1280148, 1013698
+             707013002000, 12X0087, 1013767
+             707013002000, 12X0042, 1013702
+             707013002000, 12X0205, 1013639
+             707013002000, 12X0103, 1013772
+             707013002000, 12X0169, 1013650
+             707013002000, 12X0212, 1013656
+             707013002000, 1270249, 1013774
+             707013002000, 12X0062, 1013855
+             707013002000, 12X0211, 1013657
+             707013002000, 12X0180, 1013813
+             707013002000, 12X0213, 1013611
+             707013002000, 12X0057, 1013794
+             707013002000, 1690255, 1021929
+             707013002000, 1690212, 1022487
+             707013002000, 1270248, 1013846
+             707013002000, 1690283, 1021255
+             707013002000, 12X0143, 1021263
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 17:15
+    - LOGED change: POT.CopyPrintForms.cPRIM - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/005, , OTPREMNICA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 17:15
+    - LOGED change: POT.CopyPrintForms.cPRIM - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/005, , OTPREMNICA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 17:16
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 4, 190056, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190056
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 17:17 - App started
+    *** BrunoBrckovic *** 
+
+- 05.10.19. 17:17
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 6, 190054, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190054
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 17:20
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 6, 190054, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 17:22
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 6, 190054, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 17:23
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 6, 190054, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 17:24
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 6, 190054, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 17:24
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 6, 190054, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 17:28
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 6, 190054, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 17:29
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: NAME
+     - Data: 159
+     - Result: Selected PRIM does not exist.
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 17:29
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: NAME
+     - Data: 129
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 17:29
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 707013002000, 12X0141, 1013688
+             707013002000, 1270249, 1013774
+             707013002000, 13Y0325, 1013746
+             707013002000, 12X0203, 1013636
+             707013002000, 12X0056, 1013789
+             707013002000, 13Y0255, 1013614
+             707013002000, 13Y0315, 1013631
+             707013002000, 13Y0281, 1013694
+             707013002000, 12X0076, 1013770
+             707013002000, 12X0192, 1013812
+             707013002000, 12X0105, 1013859
+             707013002000, 12X0074, 1013786
+             707013002000, 12X0197, 1013834
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 17:29
+    - LOGED change: POT.CopyPrintForms.cPRIM - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/011, , OTPREMNICA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 17:29
+    - LOGED change: POT.CopyPrintForms.cPRIM - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/011, , OTPREMNICA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 17:30
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 707013002000, 1810152, 1025075
+             707013002000, 1280146, 1013790
+             707013002000, 1690253, 1021889
+             707013002000, 13Y0283, 1013873
+             707013002000, 1390184, 1013677
+             707013002000, 1810256, 1025789
+             707013002000, 12X0175, 1013748
+             707013002000, 12X0144, 1013646
+             707013002000, 12X0052, 1013628
+             707013002000, 12X0138, 1013798
+             707013002000, 12X0171, 1013707
+             707013002000, 12X0151, 1013818
+             707013002000, 12X0037, 1013724
+             707013002000, 12X0066, 1013775
+             707013002000, 12X0035, 1013829
+             707013002000, 12X0209, 1013642
+             707013002000, 1851286, 
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 17:30
+    - LOGED change: POT.CopyPrintForms.cPRIM - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/010, , OTPREMNICA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 17:30
+    - LOGED change: POT.CopyPrintForms.cPRIM - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/010, , OTPREMNICA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 05.10.19. 17:30 - App turned off
+    *** BrunoBrckovic *** 

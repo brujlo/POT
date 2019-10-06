@@ -530,9 +530,10 @@ namespace POT.Documents
 
                 String CNN = NewPartCNTb.Text.Trim().ToUpper();
 
-                DateConverter dt = new DateConverter();
-                String date = dt.ConvertDDMMYY(DateTime.Now.ToString());
-                
+                //DateConverter dt = new DateConverter();
+                //String date = dt.ConvertDDMMYY(DateTime.Now.ToString());
+                String date = DateTime.Now.ToString("dd.MM.yy.");
+
                 if (CodeN.Equals(""))
                 {
                     newSendPartList.Add(new Part());

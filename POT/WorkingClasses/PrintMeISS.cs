@@ -143,14 +143,17 @@ namespace POT.WorkingClasses
                         //KORISNIK - da se ne vidi ime i prezime, odkomentiraj da se vidi
                         //e.Graphics.DrawString(Properties.strings.MadeBy + ": " + WorkingUser.Name + " " + WorkingUser.Surename, new Font("Calibri light", fontSizeS, FontStyle.Regular), Brushes.Black, new Point(margins.Left, margins.Top + (moveBy * 13)));
 
-
-                        //MyCompany Info
                         e.Graphics.DrawImage(img, bounds.Right - imgW - margins.Right, bounds.Top + margins.Top, imgW, imgH);
-                        
-                        String MainCmpPrintAddress = Properties.Settings.Default.CmpAddress + ", " + Properties.Settings.Default.CmpCountry + " - " + Properties.Settings.Default.CmpPB + " " + Properties.Settings.Default.CmpCity;
+
+                        String MainCmpPrintAddress = Properties.Settings.Default.CmpAddress;
                         
                         e.Graphics.DrawString(Properties.Settings.Default.CmpName, new Font("Calibri light", fontSizeR, FontStyle.Bold), Brushes.Black, new Point(bounds.Right - margins.Right - (imgW - imgW / 7), margins.Top + imgH + (moveBy)));
                         e.Graphics.DrawString(MainCmpPrintAddress, new Font("Calibri light", fontSizeR, FontStyle.Regular), Brushes.Black, new Point(bounds.Right - margins.Right - (imgW - imgW / 7), margins.Top + imgH + (moveBy * 2)));
+
+                        String MainCmpCountryAddress = Properties.Settings.Default.CmpCountry + " - " + Properties.Settings.Default.CmpPB + " " + Properties.Settings.Default.CmpCity;
+
+                        e.Graphics.DrawString(Properties.Settings.Default.CmpName, new Font("Calibri light", fontSizeR, FontStyle.Bold), Brushes.Black, new Point(bounds.Right - margins.Right - (imgW - imgW / 7), margins.Top + imgH + (moveBy)));
+                        e.Graphics.DrawString(MainCmpCountryAddress, new Font("Calibri light", fontSizeR, FontStyle.Regular), Brushes.Black, new Point(bounds.Right - margins.Right - (imgW - imgW / 7), margins.Top + imgH + (moveBy * 3)));
 
                         headerpointVer = margins.Top + imgH + (moveBy * 7) + 100;
                         headerpointHor = bounds.Right - margins.Right - imgW;
