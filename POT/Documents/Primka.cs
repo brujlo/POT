@@ -854,6 +854,9 @@ namespace POT
             data = cmpS + ", " + cmpR + ", " + sifrarnikArr + ", " + partListPrint + ", " + PrimkaNumber + ", " + napomenaPRIMPrint + ", " + Properties.strings.RECEIPT + ", " + Properties.strings.customer + ", false";
             Result = "Print page called";
             lw.LogMe(function, usedQC, data, Result);
+
+            Properties.Settings.Default.pageNbr = 1;
+            Properties.Settings.Default.Save();
         }
 
         private void Primka_Enter(object sender, EventArgs e)

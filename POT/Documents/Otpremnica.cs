@@ -725,6 +725,9 @@ namespace POT
 
             Result = "Print page called";
             lw.LogMe(function, usedQC, data, Result);
+
+            Properties.Settings.Default.pageNbr = 1;
+            Properties.Settings.Default.Save();
         }
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)

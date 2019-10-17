@@ -301,7 +301,6 @@ namespace POT.WorkingClasses
                         e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(margins.Left, headerpointVer + moveBy));
                         headerpointVer = headerpointVer + moveBy + 5;
 
-
                         if (listIssParts[partRows].PrtO.PartialCode != 0)
                         {
                             columnName = "PART OLD: ";

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Windows.Forms;
 using POT.WorkingClasses;
 using System.Media;
+using System.Diagnostics;
 
 namespace POT.Documents
 {
@@ -16,6 +17,9 @@ namespace POT.Documents
 
         AddTIDDB at = new AddTIDDB();
         Company cmp = new Company();
+
+        TIDs tids = new TIDs();
+        String tidsListType;
 
         public Tickets()
         {
@@ -317,6 +321,293 @@ namespace POT.Documents
         {
             this.textBox3.AppendText(value + System.Environment.NewLine);
             new LogWriter(value);
+        }
+
+        ///////////////////////////////////////////////////////////
+        //   TAB CONTROL  //
+        ///////////////////////////////////////////////////////////
+
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (this.tabControl1.SelectedTab.Name)
+            {
+                case "tabPage1":
+                    
+                    break;
+                case "tabPage2":
+                    TIDs tmpTids = new TIDs(true);
+                    tids = tmpTids;
+
+                    AllRB.Checked = true;
+
+                    tidsListType = "allTickets";
+
+                    ClearComboboxes();
+                    FillComboboxes(tids.allTickets);
+
+                    OpenCntLB.Text = tmpTids.openedTickets.Count().ToString();
+                    ClosedCntLB.Text = tmpTids.closedTickets.Count().ToString();
+                    WorkingCntLB.Text = tmpTids.workingTickets.Count().ToString();
+                    StornoCntLB.Text = tmpTids.stornoTickets.Count().ToString();
+
+                    break;
+                case "tabPage3":
+                    break;
+                case "tabPage4":
+                    break;
+            }
+        }
+
+
+        ///////////////////////////////////////////////////////////
+        //   TID CHECK  //
+        ///////////////////////////////////////////////////////////
+
+
+        private void AllRB_Click(object sender, EventArgs e)
+        {
+            ClearComboboxes();
+
+            tidsListType = "";
+            tidsListType = "allTickets";
+
+            FillComboboxes(tids.allTickets);
+        }
+
+        private void StornoRB_Click(object sender, EventArgs e)
+        {
+            ClearComboboxes();
+
+            tidsListType = "";
+            tidsListType = "stornoTickets";
+
+            FillComboboxes(tids.stornoTickets);
+        }
+
+        private void WorkingRB_Click(object sender, EventArgs e)
+        {
+            ClearComboboxes();
+
+            tidsListType = "";
+            tidsListType = "workingTickets";
+
+            FillComboboxes(tids.workingTickets);
+        }
+
+        private void ClosedRB_Click(object sender, EventArgs e)
+        {
+            ClearComboboxes();
+
+            tidsListType = "";
+            tidsListType = "closedTickets";
+
+            FillComboboxes(tids.closedTickets);
+        }
+
+        private void OpenRB_Click(object sender, EventArgs e)
+        {
+            ClearComboboxes();
+
+            tidsListType = "";
+            tidsListType = "openedTickets";
+
+            FillComboboxes(tids.openedTickets);
+        }
+
+        private void ClearComboboxes()
+        {
+            TIDidCB.ResetText();
+            TIDccnCB.ResetText();
+            TIDcidCB.ResetText();
+
+            TIDidCB.Items.Clear();
+            TIDccnCB.Items.Clear();
+            TIDcidCB .Items.Clear();
+
+            TIDidTB.Text = "";
+            TvrtkaIDTB.Text = "";
+            PrioTB.Text = "";
+            FilijalaTB.Text = "";
+            CCNTB.Text = "";
+            CIDTB.Text = "";
+            DatPrijaveTB.Text = "";
+            VriPrijaveTB.Text = "";
+            DatSLATB.Text = "";
+            VriSLATB.Text = "";
+            DriveTB.Text = "";
+            NazivUredajaTB.Text = "";
+            OpisKvaraTB.Text = "";
+            PrijavioTB.Text = "";
+            UserIDPreuzeoTB.Text = "";
+            DatPreuzetoTB.Text = "";
+            VriPreuzetoTB.Text = "";
+            UserIDDriveTB.Text = "";
+            DatDriveTB.Text = "";
+            VriDriveTB.Text = "";
+            UserIDPoceoTB.Text = "";
+            DatPoceoTB.Text = "";
+            VriPoceoTB.Text = "";
+            UserIDZavrsioTB.Text = "";
+            DatZavrsioTB.Text = "";
+            VriZavrsioTB.Text = "";
+            UserIDUnioTB.Text = "";
+            DatReportTB.Text = "";
+            VriReportTB.Text = "";
+            RNIDTB.Text = "";
+            UserIDSastavioTB.Text = "";
+        }
+
+        private void FillComboboxes(List<TIDs> tidLst)
+        {
+            foreach(TIDs item in tidLst)
+            {
+                TIDidCB.Items.Add(item.TicketID.ToString());
+                TIDccnCB.Items.Add(item.CCN);
+                TIDcidCB.Items.Add(item.CID);
+            }
+        }
+
+        private void TIDidCB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SendList(TIDidCB.SelectedIndex);
+        }
+
+        private void TIDccnCB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SendList(TIDccnCB.SelectedIndex);
+        }
+
+        private void TIDcidCB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SendList(TIDcidCB.SelectedIndex);
+        }
+
+        private void SendList(int index)
+        {
+            switch (tidsListType)
+            {
+                case "allTickets":
+                    FillTIDFields(index, tids.allTickets);
+                    break;
+                case "stornoTickets":
+                    FillTIDFields(index, tids.stornoTickets);
+                    break;
+                case "workingTickets":
+                    FillTIDFields(index, tids.workingTickets);
+                    break;
+                case "closedTickets":
+                    FillTIDFields(index, tids.closedTickets);
+                    break;
+                case "openedTickets":
+                    FillTIDFields(index, tids.openedTickets);
+                    break;
+
+            }
+        }
+
+        private void FillTIDFields(int index, List<TIDs> tidLst)
+        {
+            TIDidTB.Text = tidLst[index].TicketID.ToString();
+            TvrtkaIDTB.Text = tidLst[index].TvrtkeID.ToString();
+            PrioTB.Text = tidLst[index].Prio.ToString();
+            FilijalaTB.Text = tidLst[index].Filijala.ToString();
+            CCNTB.Text = tidLst[index].CCN.ToString();
+            CIDTB.Text = tidLst[index].CID.ToString();
+            DatPrijaveTB.Text = tidLst[index].DatPrijave.ToString();
+            VriPrijaveTB.Text = tidLst[index].VriPrijave.ToString();
+            DatSLATB.Text = tidLst[index].DatSLA.ToString();
+            VriSLATB.Text = tidLst[index].VriSLA.ToString();
+            DriveTB.Text = tidLst[index].Drive.ToString();
+            NazivUredajaTB.Text = tidLst[index].NazivUredaja.ToString();
+            OpisKvaraTB.Text = tidLst[index].OpisKvara.ToString();
+            PrijavioTB.Text = tidLst[index].Prijavio.ToString();
+            UserIDPreuzeoTB.Text = tidLst[index].UserIDPreuzeo.ToString();
+            DatPreuzetoTB.Text = tidLst[index].DatPreuzeto.ToString();
+            VriPreuzetoTB.Text = tidLst[index].VriPreuzeto.ToString();
+            UserIDDriveTB.Text = tidLst[index].UserIDDrive.ToString();
+            DatDriveTB.Text = tidLst[index].DatDrive.ToString();
+            VriDriveTB.Text = tidLst[index].VriDrive.ToString();
+            UserIDPoceoTB.Text = tidLst[index].UserIDPoceo.ToString();
+            DatPoceoTB.Text = tidLst[index].DatPoceo.ToString();
+            VriPoceoTB.Text = tidLst[index].VriPoceo.ToString();
+            UserIDZavrsioTB.Text = tidLst[index].UserIDZavrsio.ToString();
+            DatZavrsioTB.Text = tidLst[index].DatZavrsio.ToString();
+            VriZavrsioTB.Text = tidLst[index].VriZavrsio.ToString();
+            UserIDUnioTB.Text = tidLst[index].UserIDUnio.ToString();
+            DatReportTB.Text = tidLst[index].DatReport.ToString();
+            VriReportTB.Text = tidLst[index].VriReport.ToString();
+            RNIDTB.Text = tidLst[index].RNID.ToString();
+            UserIDSastavioTB.Text = tidLst[index].UserIDSastavio.ToString();
+        }
+
+        private void PrintRNBT_Click(object sender, EventArgs e)
+        {
+            //String printerName = printDialog1.PrinterSettings.PrinterName;
+
+            //try
+            //{
+            //    PrintDialog printDialog1 = new PrintDialog();
+            //    printDialog1.Document = printDocumentOtp;
+
+            //    printDialog1.PrinterSettings.PrinterName = "Microsoft Print to PDF";
+
+            //    if (!printDialog1.PrinterSettings.IsValid) return;
+
+            //    if (!Directory.Exists(Properties.Settings.Default.DefaultFolder + "\\OTP"))
+            //        return;
+
+            //    string fileName = "\\OTP " + OTPNumber.ToString().Replace("/", "") + ".pdf";
+            //    string directory = Properties.Settings.Default.DefaultFolder + "\\OTP";
+
+            //    printDialog1.PrinterSettings.PrintToFile = true;
+            //    printDocumentOtp.PrinterSettings.PrintFileName = directory + fileName;
+            //    printDocumentOtp.PrinterSettings.PrintToFile = true;
+            //    printDocumentOtp.Print();
+
+            //    printDialog1.PrinterSettings.PrintToFile = false;
+            //    printDocumentOtp.PrinterSettings.PrintToFile = false;
+            //    printDialog1.PrinterSettings.PrinterName = printerName;
+            //    printDocumentOtp.PrinterSettings.PrinterName = printerName;
+            //}
+            //catch (Exception e1)
+            //{
+            //    new LogWriter(e1);
+            //    MessageBox.Show(e1.Message + Environment.NewLine + "PDF file not saved.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
+        }
+
+        private void OpenRNBT_Click(object sender, EventArgs e)
+        {
+            long id = 0;
+
+            if (!RNIDTB.Text.Equals(""))
+                id = long.Parse(RNIDTB.Text);
+            else
+                return;
+
+            String filePath = Properties.Settings.Default.DefaultFolder + "\\RAC\\EXE " + id + ".pdf";
+
+            try
+            {
+                Process.Start(filePath);
+
+                /*
+                Process myProcess = new Process();
+                myProcess.StartInfo.FileName = "acroRd32.exe"; //not the full application path
+                myProcess.StartInfo.Arguments = "/A \"page=2=OpenActions\" " + filePath;
+                myProcess.Start();
+                */
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
+                MessageBox.Show(e1.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+         }
+
+        private void StornoBT_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

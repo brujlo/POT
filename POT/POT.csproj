@@ -25,7 +25,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ProductName>POT</ProductName>
     <PublisherName>Exception</PublisherName>
-    <ApplicationRevision>87</ApplicationRevision>
+    <ApplicationRevision>88</ApplicationRevision>
     <ApplicationVersion>1.3.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -166,6 +166,7 @@
     <Compile Include="MyTypes\MainCmp.cs" />
     <Compile Include="MyTypes\Offer.cs" />
     <Compile Include="MyTypes\OfferParts.cs" />
+    <Compile Include="MyTypes\TIDs.cs" />
     <Compile Include="Saving.cs">
       <SubType>Form</SubType>
     </Compile>

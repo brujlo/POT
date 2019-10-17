@@ -764,6 +764,9 @@ namespace POT.Documents
             //data = cmpS + ", " + cmpR + ", " + sifrarnikArr + ", " + partListPrint + ", " + IISNumber + ", " + napomenaIISPrint + ", IIS, customer, false";
             Result = "Print page called";
             lw.LogMe(function, usedQC, data, Result);
+
+            Properties.Settings.Default.pageNbr = 1;
+            Properties.Settings.Default.Save();
         }
 
         private void PrintPrewBT_Click(object sender, EventArgs e)

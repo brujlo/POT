@@ -649,6 +649,9 @@ namespace POT
             data = cmpS + ", " + cmpR + ", " + sifrarnikArr + ", " + partListPrint + ", " + IUSNumber + ", " + napomenaIUSPrint + ", IUS, customer, false";
             Result = "Print page called";
             lw.LogMe(function, usedQC, data, Result);
+
+            Properties.Settings.Default.pageNbr = 1;
+            Properties.Settings.Default.Save();
         }
 
         private void printPrewBT_Click(object sender, EventArgs e)

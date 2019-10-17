@@ -2589,7 +2589,7 @@ namespace POT
                         command.CommandText = "INSERT INTO OTPparts (otpID, partID) VALUES (" + otpCnt + ", " + ListOfParts[i].PartID + ")";
                         command.ExecuteNonQuery();
 
-                        command.CommandText = "UPDATE Parts SET StorageID = 3, DateSend = '" + DateTime.Now.ToString("dd.MM.yy.") + "' WHERE PartID = " + ListOfParts[i].PartID;
+                        command.CommandText = "UPDATE Parts SET StorageID = 3, DateOut = '" + DateTime.Now.ToString("dd.MM.yy.") + "' WHERE PartID = " + ListOfParts[i].PartID;
                         command.ExecuteNonQuery();
 
                         command.CommandText = "DELETE FROM Parts WHERE partID = " + ListOfParts[i].PartID;
@@ -2744,6 +2744,9 @@ namespace POT
                     command.CommandText = "UPDATE Parts SET State = 'sng' WHERE PartID = " + ListOfParts[i].PartID;
                     command.ExecuteNonQuery();
 
+                    command.CommandText = "UPDATE Parts SET DateSend = " + DateTime.Now.ToString("dd.MM.yy.") + " WHERE PartID = " + ListOfParts[i].PartID;
+                    command.ExecuteNonQuery();
+
                     command.CommandText = "INSERT INTO IUSparts (iusID, partID, date, rb, customerID, napomena) VALUES (" + IUSCntFull + ", " + ListOfParts[i].PartID
                         + ", '" + DateTime.Now.ToString("dd.MM.yy.") + "', " + IUSCnt + ", " + CustomerID + ", '" + mNapomenaIUS + "')";
 
@@ -2858,6 +2861,9 @@ namespace POT
                     command.CommandText = "UPDATE Parts SET State = 'g' WHERE PartID = " + ListOfParts[i].PartID;
                     command.ExecuteNonQuery();
 
+                    command.CommandText = "UPDATE Parts SET DateSend = " + DateTime.Now.ToString("dd.MM.yy.") + " where PartID = " + ListOfParts[i].PartID;
+                    command.ExecuteNonQuery();
+
                     command.CommandText = "INSERT INTO IISparts (iisID, partID, date, rb, customerID, napomena) VALUES (" + IISCntFull + ", " + ListOfParts[i].PartID
                         + ", '" + DateTime.Now.ToString("dd.MM.yy.") + "', " + IISCnt + ", " + CustomerID + ", '" + mNapomenaIUS + "')";
 
@@ -2939,6 +2945,81 @@ namespace POT
             }
 
             dataReader.Close();
+            cnn.Close();
+            return arr;
+        }
+
+        public List<TIDs> getAllTickets()
+        {
+            List<TIDs> arr = new List<TIDs>();
+
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "SELECT * FROM Ticket Order By TicketID desc";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                try
+                {
+                    do
+                    {
+                        TIDs tc = new TIDs(
+                            dataReader["TicketID"] == DBNull.Value ? 0 : long.Parse(dataReader["TicketID"].ToString()),
+                            dataReader["TvrtkeID"] == DBNull.Value ? 0 : long.Parse(dataReader["TvrtkeID"].ToString()),
+                            dataReader["Prio"] == DBNull.Value ? 0 : long.Parse(dataReader["Prio"].ToString()),
+                            dataReader["Filijala"].ToString(),
+                            dataReader["CCN"].ToString(),
+                            dataReader["CID"].ToString(),
+                            dataReader["DatPrijave"].ToString(),
+                            dataReader["VriPrijave"].ToString(),
+                            dataReader["DatSLA"].ToString(),
+                            dataReader["VriSLA"].ToString(),
+                            dataReader["Drive"] == DBNull.Value ? 0 : long.Parse(dataReader["Drive"].ToString()),
+                            dataReader["NazivUredaja"].ToString(),
+                            dataReader["OpisKvara"].ToString(),
+                            dataReader["Prijavio"].ToString(),
+                            dataReader["UserIDPreuzeo"] == DBNull.Value ? 0 : long.Parse(dataReader["UserIDPreuzeo"].ToString()),
+                            dataReader["DatPreuzeto"].ToString(),
+                            dataReader["VriPreuzeto"].ToString(),
+                            dataReader["UserIDDrive"] == DBNull.Value ? 0 : long.Parse(dataReader["UserIDDrive"].ToString()),
+                            dataReader["DatDrive"].ToString(),
+                            dataReader["VriDrive"].ToString(),
+                            dataReader["UserIDPoceo"] == DBNull.Value ? 0 : long.Parse(dataReader["UserIDPoceo"].ToString()),
+                            dataReader["DatPoceo"].ToString(),
+                            dataReader["VriPoceo"].ToString(),
+                            dataReader["UserIDZavrsio"] == DBNull.Value ? 0 : long.Parse(dataReader["UserIDZavrsio"].ToString()),
+                            dataReader["DatZavrsio"].ToString(),
+                            dataReader["VriZavrsio"].ToString(),
+                            dataReader["UserIDUnio"] == DBNull.Value ? 0 : long.Parse(dataReader["UserIDUnio"].ToString()),
+                            dataReader["DatReport"].ToString(),
+                            dataReader["VriReport"].ToString(),
+                            dataReader["RNID"].ToString(),
+                            dataReader["UserIDSastavio"] == DBNull.Value ? 0 : long.Parse(dataReader["UserIDSastavio"].ToString())
+                            );
+
+                        arr.Add(tc);
+
+
+                    } while (dataReader.Read());
+
+                    cnn.Close();
+                    return arr;
+                }
+                catch (Exception e2)
+                {
+                    new LogWriter(e2);
+                    return arr;
+                }
+                finally
+                {
+                    if (cnn.State.ToString().Equals("Open"))
+                        cnn.Close();
+                }
+            }
+
             cnn.Close();
             return arr;
         }
@@ -4333,10 +4414,13 @@ namespace POT
                     command.ExecuteNonQuery();
 
                 }
-
+                
                 if (mAllDone)
                 {
                     command.CommandText = "UPDATE Parts SET State = 'sg' where PartID = " + mMainPart.PartID; 
+                    command.ExecuteNonQuery();
+
+                    command.CommandText = "UPDATE Parts SET DateSend = " + DateTime.Now.ToString("dd.MM.yy.") + " where PartID = " + mMainPart.PartID;
                     command.ExecuteNonQuery();
                 }
 

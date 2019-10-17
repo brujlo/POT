@@ -239,7 +239,7 @@ namespace POT.WorkingClasses
                         e.Graphics.DrawString(Properties.Settings.Default.CmpName, new Font("Calibri light", fontSizeR, FontStyle.Bold), Brushes.Black, new Point(bounds.Right - margins.Right - (imgW - imgW / 7), margins.Top + imgH + (moveBy)));
                         e.Graphics.DrawString(MainCmpPrintAddress, new Font("Calibri light", fontSizeR, FontStyle.Regular), Brushes.Black, new Point(bounds.Right - margins.Right - (imgW - imgW / 7), margins.Top + imgH + (moveBy * 2)));
                         e.Graphics.DrawString("MB: " + Properties.Settings.Default.CmpMB, new Font("Calibri light", fontSizeR, FontStyle.Regular), Brushes.Black, new Point(bounds.Right - margins.Right - (imgW - imgW / 7), margins.Top + imgH + (moveBy * 3)));
-                        if(konverzija)
+                        if(!konverzija)
                             e.Graphics.DrawString(Properties.strings.VAT + ": " + Properties.Settings.Default.CmpVAT, new Font("Calibri light", fontSizeR, FontStyle.Regular), Brushes.Black, new Point(bounds.Right - margins.Right - (imgW - imgW / 7), margins.Top + imgH + (moveBy * 4)));
                         else
                             e.Graphics.DrawString(Properties.strings.VAT + ": HR" + Properties.Settings.Default.CmpVAT, new Font("Calibri light", fontSizeR, FontStyle.Regular), Brushes.Black, new Point(bounds.Right - margins.Right - (imgW - imgW / 7), margins.Top + imgH + (moveBy * 4)));
@@ -624,7 +624,7 @@ namespace POT.WorkingClasses
                             e.Graphics.DrawString(workingStr, new Font("Calibri light", ft.Size, FontStyle.Regular), Brushes.Black, new Point(rb + (int)measureStr + 25, headerpointVer + moveBy));
 
                             headerpointVer = headerpointVer + (moveBy * 4);
-                            if (hrv && konverzija)
+                            if (hrv && !konverzija)
                                 workingStr = Properties.Settings.Default.extraLine1HRTB;
                             else
                                 workingStr = Properties.Settings.Default.extraLine1ENGTB;
@@ -632,7 +632,7 @@ namespace POT.WorkingClasses
                             e.Graphics.DrawString(workingStr, new Font("Calibri light", ft.Size - 2, FontStyle.Regular), Brushes.Black, new Point(rb, headerpointVer + moveBy));
 
                             headerpointVer = headerpointVer + moveBy +4;
-                            if (hrv && konverzija)
+                            if (hrv && !konverzija)
                                 workingStr = Properties.Settings.Default.extraLine2HRTB;
                             else
                                 workingStr = Properties.Settings.Default.extraLine2ENGTB;

@@ -1191,6 +1191,9 @@ namespace POT.Documents
 
                 onlyOneTime = false;
             }
+
+            Properties.Settings.Default.pageNbr = 1;
+            Properties.Settings.Default.Save();
         }
 
         private void button1_Click_1(object sender, EventArgs e)

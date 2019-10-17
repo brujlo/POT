@@ -22122,3 +22122,2154 @@ Parameter name: index
 
 - 05.10.19. 17:30 - App turned off
     *** BrunoBrckovic *** 
+
+- 08.10.19. 22:10
+    - LOGED change: POT.SetDBConnection - button2_Click
+     - Used: DB connection address and name save.
+     - Data: cphr.ddns.net, exe
+     - Result: Saved, no msgToUser
+    ***  *** 
+
+
+- 08.10.19. 22:10 - App started
+    *** BrunoBrckovic *** 
+
+- 08.10.19. 22:15
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 5, 190039, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190039
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:15
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 6, 190038, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190038
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:16
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 4, 190037, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190037
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:16
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 4, 190036, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190036
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:17
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 5, 190035, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190035
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:17
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 4, 190034, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190034
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:17
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 7, 190033, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190033
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:18
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 7, 190033, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:18
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 6, 190032, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190032
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:18
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 6, 190032, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:18
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 4, 190031, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190031
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:18
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 4, 190031, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:19
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 9, 190030, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190030
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:19
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 5, 190029, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190029
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:19
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 5, 190029, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:19
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 6, 190028, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190028
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:19
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 6, 190028, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:20
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 6, 190027, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190027
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:20
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 6, 190027, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:21
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 5, 190026, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190026
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:21
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 5, 190026, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:21
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 4, 190025, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190025
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:21
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 4, 190025, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:21
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 5, 190024, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190024
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:21
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 5, 190024, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:21
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 5, 190023, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190023
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:22
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 5, 190023, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:22
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 6, 190022, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190022
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:23
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 1:15, 0, 7, 210,0000, 1470,0000, 1470,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:24
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 1:30, 0, 6, 252,000, 1512,000, 2982,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:24
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 1:45, 0, 2, 294,0000, 588,0000, 3570,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:24
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 Auto Cutter ACS-541-1N, 13002001, 390,00, 00:00, 0, 4, 677,48, 2709,92, 6279,9200
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:25
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 5, 190020, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190020
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:25
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 6, 190021, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190021
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:25
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 6, 190022, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190022
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:25
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 5, 190023, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190023
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:25
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 5, 190023, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:26
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 5, 190024, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190024
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:26
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 5, 190024, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:26
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 4, 190025, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190025
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:26
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 5, 190026, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190026
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:26
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 5, 190026, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:26
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 6, 190027, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190027
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:26
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 6, 190027, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:27
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 6, 190028, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190028
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:27
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 6, 190028, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:27
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 5, 190029, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190029
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:27
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 5, 190029, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:27
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 9, 190030, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190030
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:27
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 9, 190030, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:28
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 4, 190031, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190031
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:28
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 6, 190032, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190032
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:28
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 6, 190032, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:28
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 7, 190033, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190033
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:28
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 7, 190033, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:29
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 4, 190034, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190034
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:29
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 5, 190035, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190035
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:29
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 5, 190035, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:29
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 4, 190036, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190036
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:30
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 4, 190037, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190037
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:30
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 6, 190038, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190038
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:30
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 6, 190038, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:30
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 5, 190039, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190039
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:30
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 5, 190039, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:30
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 3, 190040, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190040
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:30
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 4, 190041, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190041
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:31
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 3, 190040, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190040
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:31
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 5, 190039, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190039
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:31
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 5, 190039, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:32
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+    - InnerEcp: System.ComponentModel.Win32Exception (0x80004005): The specified network name is no longer available
+    - MessageEcp: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:32
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 6, 190038, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190038
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:32
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 6, 190038, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:34
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 4, 190037, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190037
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:34 - App turned off
+    *** BrunoBrckovic *** 
+
+- 08.10.19. 22:35
+    - LOGED change: POT.SetDBConnection - button2_Click
+     - Used: DB connection address and name save.
+     - Data: 192.168.100.101, exe
+     - Result: Saved, no msgToUser
+    ***  *** 
+
+
+- 08.10.19. 22:35 - App started
+    *** BrunoBrckovic *** 
+
+- 08.10.19. 22:35
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 4, 190037, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190037
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:35
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 4, 190036, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190036
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:35
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 5, 190035, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190035
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:35
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 5, 190035, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:36
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 4, 190034, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190034
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:36
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 7, 190033, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190033
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:36
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 7, 190033, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:36
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 6, 190032, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190032
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:36
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 6, 190032, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:36
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 4, 190031, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190031
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:36
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 9, 190030, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190030
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:36
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 9, 190030, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:37
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 5, 190029, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190029
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:37
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 5, 190029, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:37
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 6, 190028, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190028
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:37
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 6, 190028, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:37
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 6, 190027, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190027
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:37
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 6, 190027, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:38
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 5, 190026, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190026
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:38
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 5, 190026, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:38
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 4, 190025, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190025
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:38
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 5, 190024, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190024
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:38
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 5, 190024, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:38
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 5, 190023, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190023
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:38
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 5, 190023, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:38
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 6, 190022, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190022
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:38
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 6, 190022, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:39
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 6, 190021, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190021
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:39
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 5, 190020, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190020
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:39
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 6, 190019, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190019
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:39
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 5, 190018, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190018
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:39
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 5, 190017, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190017
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:39
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 5, 190016, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190016
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:39
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: 190015
+
+     - Result: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:40
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 1:15, 0, 7, 210,0000, 1470,0000, 1470,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:40
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 01:30, 0, 6, 252,000, 1512,000, 2982,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:40
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 01:45, 0, 2, 294,0000, 588,0000, 3570,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:40
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 Auto Cutter ACS-541-1N, 13002001, 390,00, 00:00, 0, 5, 677,48, 3387,40, 6957,4000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:40
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 Bushing, Platen, 13002003, 0,00, 00:00, 0, 8, 41,425813, 331,406504, 7288,806504
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:41
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 Holder, Platen, 13002030, 0,00, 00:00, 0, 3, 67,363263, 202,089789, 7490,896293
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:41
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:41
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:43
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:46
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:47
+    - LOGED change: POT.Documents.Racun - button1_Click
+     - Used: SaveInvoice
+     - Data: 400402119
+
+     - Result: Invoice is already saved in DB, please make new one.
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:50
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 01:15, 0, 7, 210,0000, 1470,0000, 1470,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:50
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 01:30, 0, 6, 252,000, 1512,000, 2982,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:50
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 01:45, 0, 2, 294,0000, 588,0000, 3570,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:50
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 Auto Cutter ACS-541-1N, 13002001, 390,00, 00:00, 0, 5, 677,48, 3387,40, 6957,4000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:50
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 Holder, Platen, 13002030, 0,00, 00:00, 0, 3, 67,363263, 202,089789, 7159,489789
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:50
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 Bushing, Platen, 13002003, 0,00, 00:00, 0, 8, 41,425813, 331,406504, 7490,896293
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:51
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:52
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 01:15, 0, 7, 210,0000, 1470,0000, 1470,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:52
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 01:30, 0, 6, 252,000, 1512,000, 2982,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:52
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 01:45, 0, 2, 294,0000, 588,0000, 3570,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:52
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 Auto Cutter ACS-541-1N, 13002001, 390,00, 00:00, 0, 5, 677,48, 3387,40, 6957,4000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:52
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 Bushing, Platen, 13002003, 0,00, 00:00, 0, 8, 41,425813, 331,406504, 7288,806504
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:53
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 Holder, Platen, 13002030, 0,00, 00:00, 0, 3, 67,363263, 202,089789, 7490,896293
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 22:53
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 23:01 - App started
+    *** BrunoBrckovic *** 
+
+- 08.10.19. 23:02
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 01:15, 0, 7, 210,0000, 1470,0000, 1470,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 23:02
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 01:30, 0, 6, 252,000, 1512,000, 2982,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 23:02
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 01:45, 0, 2, 294,0000, 588,0000, 3570,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 23:02
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 Auto Cutter ACS-541-1N, 13002001, 390,00, 00:00, 0, 5, 677,48, 3387,40, 6957,4000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 23:02
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 Bushing, Platen, 13002003, 0,00, 00:00, 0, 8, 41,425813, 331,406504, 7288,806504
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 23:02
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 Holder, Platen, 13002030, 0,00, 00:00, 0, 3, 67,363263, 202,089789, 7490,896293
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 23:02
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 23:03
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 23:04
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 23:04
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 23:06
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 23:06 - App turned off
+    *** BrunoBrckovic *** 
+
+- 08.10.19. 23:15 - App started
+    *** BrunoBrckovic *** 
+
+- 08.10.19. 23:15
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002000, 12X0144, 1013646, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 23:15
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002000, 12X0151, 1013818, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 23:15
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002000, 12X0141, 1013688, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 23:15
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002000, 1270249, 1013774, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 23:15
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002000, 12X0203, 1013636, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 23:15
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002000, 13Y0325, 1013746, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 23:15
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002000, 12X0056, 1013789, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 23:15
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002000, 13Y0255, 1013614, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 23:15
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002000, 13Y0315, 1013631, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 23:15
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002000, 13Y0281, 1013694, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 23:15
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002000, 12X0076, 1013770, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 23:15
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002000, 12X0192, 1013812, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 23:15
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002000, 12X0105, 1013859, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 23:15
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002000, 12X0074, 1013786, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 23:15
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002000, 12X0197, 1013834, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 23:16
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): Access is denied
+   at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Documents.IIS.saveToPDF() in F:\PROJEKTI\VS\POT\POT\POT\Documents\IIS.cs:line 741
+    - InnerEcp: 
+    - MessageEcp: Access is denied
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Documents.IIS.saveToPDF() in F:\PROJEKTI\VS\POT\POT\POT\Documents\IIS.cs:line 741
+    - TypeNameEcp: System.ComponentModel.Win32Exception
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 23:16
+    - LOGED change: POT.Documents.IIS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. IIS '19/004/004'.
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 23:18 - App turned off
+    *** BrunoBrckovic *** 
+
+- 08.10.19. 23:40 - App started
+    *** BrunoBrckovic *** 
+
+- 08.10.19. 23:40
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 4, 190031, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190031
+    *** BrunoBrckovic *** 
+
+
+- 08.10.19. 23:40
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 922, 707013002000, listIssParts cnt 4, 190031, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 09.10.19. 00:30
+    - LOGED change: POT.SetDBConnection - button2_Click
+     - Used: DB connection address and name save.
+     - Data: 192.168.100.101, test
+     - Result: Saved, no msgToUser
+    ***  *** 
+
+
+- 09.10.19. 00:30 - App started
+    *** BrunoBrckovic *** 
+
+- 09.10.19. 00:30
+    - LOGED change: POT.CompanyInfo - button2_Click
+     - Used: Saving MainCmp info
+     - Data: CES-POS d.o.o., 2.Poljanice 6, Zagreb, 10000, HR, 0.00, 0.00, PBZGHR2X, 02647369817, 080182296, HR8323400091100157894, 4, 1, www.ces-pos.hr, +38512307973, Bruno Brckovic, info@ces-pos.hr, support@ces-pos.hr, 2
+     - Result: Saved.
+    *** BrunoBrckovic *** 
+
+
+- 09.10.19. 00:30
+    - LOGED change: POT.MainCmpSelector - button1_Click
+     - Used: Main cmp select
+     - Data: CES-POS d.o.o.
+     - Result: Main cmp selected, please relog to see changes.
+    *** BrunoBrckovic *** 
+
+
+- 09.10.19. 00:30 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 09.10.19. 00:30 - App started
+    *** BrunoBrckovic *** 
+
+- 09.10.19. 00:31 - App turned off
+    *** BrunoBrckovic *** 
+
+- 09.10.19. 00:33 - App started
+    *** BrunoBrckovic *** 
+
+- 09.10.19. 00:33
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 781
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 781
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 09.10.19. 00:33
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 781
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 781
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 09.10.19. 00:33
+    - LOGED change: POT.Otpremnica - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: There is no items in list, nothing done.
+    *** BrunoBrckovic *** 
+
+
+- 09.10.19. 00:33
+    - LOGED change: POT.Otpremnica - button1_Click
+     - Used: Add to list
+     - Data: 0101001001000, 1, 1, ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 09.10.19. 00:33
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 781
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 781
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 09.10.19. 00:33
+    - LOGED change: POT.Otpremnica - button2_Click
+     - Used: Save to db
+     - Data: 0101001001000, 1, 1, g, 0, 1
+     - Result: You do not have enough patrs in you storage:
+
+ Code: 0101001001000
+ SN:  1
+ CN:  1
+ State: g
+
+You have: 0
+You want: 1
+
+Nothing Done.
+    *** BrunoBrckovic *** 
+
+
+- 09.10.19. 00:34
+    - LOGED change: POT.Otpremnica - button2_Click
+     - Used: Save to db
+     - Data: 0101001001000, 1, 1, g, 0, 1
+     - Result: You do not have enough patrs in you storage:
+
+ Code: 0101001001000
+ SN:  1
+ CN:  1
+ State: g
+
+You have: 0
+You want: 1
+
+Nothing Done.
+    *** BrunoBrckovic *** 
+
+
+- 09.10.19. 00:34
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 781
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 781
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 09.10.19. 00:34
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 781
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 781
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 09.10.19. 00:34
+    - LOGED change: POT.Otpremnica - button1_Click
+     - Used: Add to list
+     - Data: 0101001001000, 1, 1, ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 09.10.19. 00:34
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 781
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 781
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 09.10.19. 00:34
+    - LOGED change: POT.Otpremnica - button2_Click
+     - Used: Save to db
+     - Data: 0101001001000, 1, 1, g, 0, 1
+     - Result: You do not have enough patrs in you storage:
+
+ Code: 0101001001000
+ SN:  1
+ CN:  1
+ State: g
+
+You have: 0
+You want: 1
+
+Nothing Done.
+    *** BrunoBrckovic *** 
+
+
+- 09.10.19. 00:36
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 781
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 781
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 09.10.19. 00:36
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 781
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 781
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 09.10.19. 00:37
+    - LOGED change: POT.Otpremnica - button1_Click
+     - Used: Add to list
+     - Data: 0101010001000, 1, 1, ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 09.10.19. 00:37
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 781
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 781
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 09.10.19. 00:37
+    - LOGED change: POT.Otpremnica - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/006, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 09.10.19. 00:37
+    - LOGED change: POT.Otpremnica - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. OTP '19/006'.
+    *** BrunoBrckovic *** 
+
+
+- 09.10.19. 00:53 - App started
+    *** BrunoBrckovic *** 
+
+- 09.10.19. 00:53
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 784
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 784
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 09.10.19. 00:53
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 784
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 784
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 09.10.19. 00:53
+    - LOGED change: POT.Otpremnica - button1_Click
+     - Used: Add to list
+     - Data: 0101010001000, 2, 2, ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 09.10.19. 00:53
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 784
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 784
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 09.10.19. 00:53
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): Access is denied
+   at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Otpremnica.saveToPDF() in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 815
+    - InnerEcp: 
+    - MessageEcp: Access is denied
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Printing.StandardPrintController.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(PrintDocument document, PrintEventArgs e)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Otpremnica.saveToPDF() in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 815
+    - TypeNameEcp: System.ComponentModel.Win32Exception
+    *** BrunoBrckovic *** 
+
+
+- 09.10.19. 00:53
+    - LOGED change: POT.Otpremnica - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. OTP '19/007'.
+    *** BrunoBrckovic *** 
+
+
+- 09.10.19. 00:53
+    - LOGED change: POT.Otpremnica - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: There is no items in list, nothing done.
+    *** BrunoBrckovic *** 
+
+
+- 09.10.19. 00:53
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 784
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 784
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 09.10.19. 00:54
+    - LOGED change: POT.Otpremnica - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], , , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 09.10.19. 00:54
+    - LOGED change: POT.Otpremnica - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], , , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 09.10.19. 00:54
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 784
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 784
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 09.10.19. 00:54
+    - LOGED change: POT.Otpremnica - button1_Click
+     - Used: Add to list
+     - Data: 0101010001000, 3, 3, ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 09.10.19. 00:54
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 784
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 784
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 09.10.19. 00:54
+    - LOGED change: POT.Otpremnica - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/008, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 09.10.19. 00:54
+    - LOGED change: POT.Otpremnica - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/008, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 09.10.19. 00:54
+    - LOGED change: POT.Otpremnica - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. OTP '19/008'.
+    *** BrunoBrckovic *** 
+
+
+- 09.10.19. 00:55
+    - LOGED change: POT.Otpremnica - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/008, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 09.10.19. 00:55
+    - LOGED change: POT.Otpremnica - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/008, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 09.10.19. 00:55
+    - LOGED change: POT.SetDBConnection - button2_Click
+     - Used: DB connection address and name save.
+     - Data: 192.168.100.101, exe
+     - Result: Saved, no msgToUser
+    ***  *** 
+
+
+- 09.10.19. 00:55 - App started
+    *** BrunoBrckovic *** 
+
+- 09.10.19. 00:55
+    - LOGED change: POT.CompanyInfo - button2_Click
+     - Used: Saving MainCmp info
+     - Data: Exception, Dunavska 31, Zagreb, 10040, HR, 0.00, 0.00, 76737454770, PBZGHR2X, 97768138, HR9323400091160480462, 4, 1, www.exception.hr, +38515814315, Bruno Brckovic, info@exception.hr, support@exception.hr, 2
+     - Result: Saved.
+    *** BrunoBrckovic *** 
+
+
+- 09.10.19. 00:55
+    - LOGED change: POT.MainCmpSelector - button1_Click
+     - Used: Main cmp select
+     - Data: Exception
+     - Result: Main cmp selected, please relog to see changes.
+    *** BrunoBrckovic *** 
+
+
+- 09.10.19. 00:56 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 09.10.19. 00:56 - App started
+    *** BrunoBrckovic *** 
+
+- 09.10.19. 00:56 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 03:50 - App started
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 03:58 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 12:08 - App started
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 12:08 - Waiting
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 12:09 - App started
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 12:09 - Waiting
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 12:09 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 12:13 - App started
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 12:13 - Waiting
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 12:19 - App started
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 12:19 - Waiting
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 13:15 - App started
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 13:15 - Waiting
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 13:23 - App started
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 13:23 - Waiting
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 13:25
+    - BaseEcp: System.IndexOutOfRangeException: UserIDInio
+   at System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   at System.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at System.Data.SqlClient.SqlDataReader.get_Item(String name)
+   at POT.QueryCommands.getAllTickets()
+    - InnerEcp: 
+    - MessageEcp: UserIDInio
+    - SourceEcp: System.Data
+    - StackTrqceEcp:    at System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   at System.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   at System.Data.SqlClient.SqlDataReader.get_Item(String name)
+   at POT.QueryCommands.getAllTickets()
+    - TypeNameEcp: System.IndexOutOfRangeException
+    *** BrunoBrckovic *** 
+
+
+- 13.10.19. 13:43 - App started
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 13:43 - Waiting
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 14:02 - App started
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 14:02 - Waiting
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 14:03 - App started
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 14:03 - Waiting
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 14:04 - App started
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 14:04 - Waiting
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 14:05 - App started
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 14:05 - Waiting
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 14:10 - App started
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 14:10 - Waiting
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 14:10 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 14:26 - App started
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 14:26 - Waiting
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 14:29 - App started
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 14:29 - Waiting
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 14:33 - App started
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 14:33 - Waiting
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 14:36 - App started
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 14:36 - Waiting
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 14:38 - App started
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 14:38 - Waiting
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 15:06 - App started
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 15:06 - Waiting
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 15:09 - App started
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 15:09 - Waiting
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 15:11 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 16:34 - App started
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 16:34 - Waiting
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 16:35 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 16:57 - App started
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 16:57 - Waiting
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 17:04 - App started
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 17:04 - Waiting
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 17:09 - App started
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 17:09 - Waiting
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 17:10 - App started
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 17:10 - Waiting
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 17:12 - App started
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 17:12 - Waiting
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 17:13 - App started
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 17:13 - Waiting
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 17:16 - App started
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 17:16 - Waiting
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 17:19 - App started
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 17:19 - Waiting
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 17:20 - App started
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 17:20 - Waiting
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 17:21 - App started
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 17:21 - Waiting
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 17:55 - App started
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 17:55 - Waiting
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 17:55 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 17:56 - App started
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 17:56 - Waiting
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 17:58 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 18:00 - App started
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 18:00 - Waiting
+    *** BrunoBrckovic *** 
+
+- 13.10.19. 19:19 - App turned off
+    *** BrunoBrckovic *** 
