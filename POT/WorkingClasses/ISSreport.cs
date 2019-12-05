@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace POT.WorkingClasses
 {
-    class ISSreport
+    public class ISSreport
     {
         private long issID;
         private String date;
@@ -13,6 +13,7 @@ namespace POT.WorkingClasses
         private long partID;
         private long closed;
         private String totalTIme;
+        private long level;
 
         private Part mainPart;
 
@@ -27,12 +28,13 @@ namespace POT.WorkingClasses
         public string TotalTIme { get => totalTIme; set => totalTIme = value; }
         public Part MainPart { get => mainPart; set => mainPart = value; }
         internal List<ISSparts> ListIssParts { get => listIssParts; set => listIssParts = value; }
+        public long Level { get => level; set => level = value; }
 
-        public List<ISSreport> GetAllIIS()
+        public List<ISSreport> GetAllISS(int openClose)
         {
             QueryCommands qc = new QueryCommands();
 
-            List<ISSreport> tmparr = qc.GetAllISSInfoOpenClose(0);
+            List<ISSreport> tmparr = qc.GetAllISSInfoOpenClose(openClose);
 
             foreach(ISSreport iss in tmparr)
             {

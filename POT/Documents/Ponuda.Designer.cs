@@ -83,6 +83,10 @@
             this.PriceTB = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.PriceOUTEURTB = new System.Windows.Forms.TextBox();
+            this.PriceOUTKNTB = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -96,10 +100,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.PriceOUTEURTB = new System.Windows.Forms.TextBox();
-            this.PriceOUTKNTB = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -422,6 +422,7 @@
             this.listView1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.listView1.ForeColor = System.Drawing.Color.White;
             this.listView1.FullRowSelect = true;
+            this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(5, 277);
             this.listView1.MultiSelect = false;
             this.listView1.Name = "listView1";
@@ -746,6 +747,46 @@
             this.tabPage1.Text = "Make";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(370, 175);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(110, 20);
+            this.label26.TabIndex = 191;
+            this.label26.Text = "Price out EUR";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(260, 174);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(96, 20);
+            this.label27.TabIndex = 190;
+            this.label27.Text = "Price out KN";
+            // 
+            // PriceOUTEURTB
+            // 
+            this.PriceOUTEURTB.BackColor = System.Drawing.Color.Moccasin;
+            this.PriceOUTEURTB.Location = new System.Drawing.Point(374, 188);
+            this.PriceOUTEURTB.Name = "PriceOUTEURTB";
+            this.PriceOUTEURTB.ReadOnly = true;
+            this.PriceOUTEURTB.Size = new System.Drawing.Size(90, 26);
+            this.PriceOUTEURTB.TabIndex = 189;
+            this.PriceOUTEURTB.TabStop = false;
+            this.PriceOUTEURTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // PriceOUTKNTB
+            // 
+            this.PriceOUTKNTB.BackColor = System.Drawing.Color.Moccasin;
+            this.PriceOUTKNTB.Location = new System.Drawing.Point(265, 188);
+            this.PriceOUTKNTB.Name = "PriceOUTKNTB";
+            this.PriceOUTKNTB.ReadOnly = true;
+            this.PriceOUTKNTB.Size = new System.Drawing.Size(90, 26);
+            this.PriceOUTKNTB.TabIndex = 188;
+            this.PriceOUTKNTB.TabStop = false;
+            this.PriceOUTKNTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -871,46 +912,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 168;
             this.pictureBox1.TabStop = false;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(370, 175);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(110, 20);
-            this.label26.TabIndex = 191;
-            this.label26.Text = "Price out EUR";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(260, 174);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(96, 20);
-            this.label27.TabIndex = 190;
-            this.label27.Text = "Price out KN";
-            // 
-            // PriceOUTEURTB
-            // 
-            this.PriceOUTEURTB.BackColor = System.Drawing.Color.Moccasin;
-            this.PriceOUTEURTB.Location = new System.Drawing.Point(374, 188);
-            this.PriceOUTEURTB.Name = "PriceOUTEURTB";
-            this.PriceOUTEURTB.ReadOnly = true;
-            this.PriceOUTEURTB.Size = new System.Drawing.Size(90, 26);
-            this.PriceOUTEURTB.TabIndex = 189;
-            this.PriceOUTEURTB.TabStop = false;
-            this.PriceOUTEURTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // PriceOUTKNTB
-            // 
-            this.PriceOUTKNTB.BackColor = System.Drawing.Color.Moccasin;
-            this.PriceOUTKNTB.Location = new System.Drawing.Point(265, 188);
-            this.PriceOUTKNTB.Name = "PriceOUTKNTB";
-            this.PriceOUTKNTB.ReadOnly = true;
-            this.PriceOUTKNTB.Size = new System.Drawing.Size(90, 26);
-            this.PriceOUTKNTB.TabIndex = 188;
-            this.PriceOUTKNTB.TabStop = false;
-            this.PriceOUTKNTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Ponuda
             // 

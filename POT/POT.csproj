@@ -200,6 +200,12 @@
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="WorkingClasses\DateConverter.cs" />
+    <Compile Include="WorkingClasses\ISSLevelSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingClasses\ISSLevelSelector.Designer.cs">
+      <DependentUpon>ISSLevelSelector.cs</DependentUpon>
+    </Compile>
     <Compile Include="WorkingClasses\ISSreport.cs" />
     <Compile Include="WorkingClasses\ISSSelector.cs">
       <SubType>Form</SubType>
@@ -355,6 +361,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TestForm.resx">
       <DependentUpon>TestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingClasses\ISSLevelSelector.resx">
+      <DependentUpon>ISSLevelSelector.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WorkingClasses\ISSSelector.resx">
       <DependentUpon>ISSSelector.cs</DependentUpon>

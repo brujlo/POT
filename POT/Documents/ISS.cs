@@ -21,7 +21,7 @@ namespace POT.Documents
         int rb = 0;
         int doNotRepeatMsg = 0;
 
-        static long IISIDforThread = 0;
+        //static long IISIDforThread = 0;
 
         DateTime startDate = DateTime.Now;
 
@@ -57,6 +57,7 @@ namespace POT.Documents
 
         int obrJed = Properties.Settings.Default.ObracunskaJedinica;
         String totalTime;
+        long Level;
 
         int partIndex = -1; //sluzi za grupiranu listu podataka da izvucem podpodatak za po SN da dobijem cn
 
@@ -72,7 +73,7 @@ namespace POT.Documents
             {
                 ISSreport tmp = new ISSreport();
 
-                ISSall = tmp.GetAllIIS();
+                ISSall = tmp.GetAllISS(0);
 
                 MainCmp mmtmp = new MainCmp();
                 mmtmp.GetMainCmpInfoByID(Properties.Settings.Default.CmpID);
@@ -367,9 +368,8 @@ namespace POT.Documents
                 else
                     btnYN = false;
             }
-            if (btnYN || checkBox1.Checked == true)
+            if (btnYN)
             {
-                checkBox1.Checked = false;
                 listView1.Clear();
                 
                 listView1.View = View.Details;
@@ -400,6 +400,7 @@ namespace POT.Documents
                 DateSentTb.ResetText();
                 IDTb.ResetText();
                 ISSIDlb.Text = "0";
+                LevelLB.Text = "0";
                 PartSelectorCb.ResetText();
             }
 
@@ -707,25 +708,28 @@ namespace POT.Documents
             ////////////////////////////////////////////////
             ///
 
-            Boolean allDone = checkBox1.Checked;
+            Boolean allDone = false;
 
-            if (!checkBox1.Checked)
-            {
-                DialogResult result = MessageBox.Show("Close ISS?", "ISS", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            ISSLevelSelector lvSl = new ISSLevelSelector();
+            lvSl.setCBTekst(tmpISS.Level);
+            lvSl.ShowDialog();
 
-                if (result == DialogResult.Yes)
-                {
-                    checkBox1.Checked = true;
-                    allDone = true;
-                }
-                else
-                {
-                    checkBox1.Checked = false;
-                    allDone = false;
-                }
-            }
+            int result = lvSl.getRes();
+            allDone = false;
+
+            if (result == 0)
+                allDone = true;
+
+            lvSl.Dispose();
 
             this.Refresh();
+
+            if (result != 9999)
+                tmpISS.Level = result;
+            else
+                return;
+
+            Level = tmpISS.Level;
 
             //DateConverter dt = new DateConverter();
             //String _date = dt.ConvertDDMMYY(DateTime.Now.ToString());
@@ -780,7 +784,7 @@ namespace POT.Documents
 
                 tmpISS.TotalTIme = totalTime = calculateTime(tmpISS.ListIssParts).Substring(0, 5);
 
-                if (checkBox1.Checked)
+                if (allDone)
                 {
                     long th = 0;
                     long tm = 0;
@@ -811,7 +815,7 @@ namespace POT.Documents
 
                 allDonePrint = allDone;
 
-                if (qc.ISSUnesiISS(issExist, allDone, tmpISS.ISSid, _date, cmpCust, mainPart, tmpISS.ListIssParts, WorkingUser.UserID, totalTime))
+                if (qc.ISSUnesiISS(issExist, allDone, tmpISS.ISSid, _date, cmpCust, mainPart, tmpISS.ListIssParts, WorkingUser.UserID, totalTime, Level))
                 {
                     isSaved = true;
 
@@ -854,6 +858,7 @@ namespace POT.Documents
                     }
 
                     ISSIDlb.Text = tmpISS.ISSid.ToString();
+                    LevelLB.Text = tmpISS.Level.ToString();
 
                     Result = "ISS saved with ID " + tmpISS.ISSid;
                     lw.LogMe(function, usedQC, data, Result);
@@ -878,7 +883,7 @@ namespace POT.Documents
                     ISSSelectorCb.SelectedIndex = ISSSelectorCb.FindStringExact(tmpISS.ISSid.ToString());
                     ISSSelectorCb.Text = tmpISS.ISSid.ToString();
 
-                    if (checkBox1.Checked)
+                    if (allDone)
                         CleanMe(null);
                 }
                 else
@@ -943,6 +948,7 @@ namespace POT.Documents
                 tmpISS = ISSall.Find(x => x.ISSid == issID);
 
                 ISSIDlb.Text = issID.ToString();
+                LevelLB.Text = tmpISS.Level.ToString();
 
                 totalTime = tmpISS.TotalTIme + ":00";
 
@@ -1405,6 +1411,7 @@ namespace POT.Documents
                     else
                     {
                         ISSIDlb.Text = "0";
+                        LevelLB.Text = "0";
 
                         NameTb.Text = Decoder.ConnectCodeName(sifrarnikArr, tmpISS.MainPart.PartialCode);
 
@@ -1418,6 +1425,7 @@ namespace POT.Documents
                 }
 
                 ISSIDlb.Text = issID.ToString();
+                LevelLB.Text = tmpISS.Level.ToString();
 
                 if (tmpISS == null)
                 {
@@ -1429,6 +1437,7 @@ namespace POT.Documents
                 }
 
                 totalTime = tmpISS.TotalTIme + ":00";
+                Level = tmpISS.Level;
 
                 mainPart = tmpISS.MainPart;
 
@@ -1572,10 +1581,11 @@ namespace POT.Documents
                 PartSelectorCb.Items.Clear();
                 listView1.Items.Clear();
 
+                //allDone = false;
 
-                Boolean allDone = checkBox1.Checked;
+                Level = tmpISS.Level = 1;
 
-                if (qc.ISSUnesiISS(false, allDone, tmpISS.ISSid, tmpISS.Date, cmpCust, mainPart, tmpISS.ListIssParts, WorkingUser.UserID, totalTime))
+                if (qc.ISSUnesiISS(false, false, tmpISS.ISSid, tmpISS.Date, cmpCust, mainPart, tmpISS.ListIssParts, WorkingUser.UserID, totalTime, Level))
                 {
                     if (Program.SaveDocumentsPDF) saveToPDF();
                 }
@@ -1615,7 +1625,7 @@ namespace POT.Documents
 
             cmpCust.GetCompanyInfoByCode(Decoder.GetCustomerCode(mainPart.CodePartFull));
             tmpISS.CustomerID = cmpCust.ID;
-            tmpISS.Date = DateTime.Now.ToString("dd.mm.yy.");
+            tmpISS.Date = DateTime.Now.ToString("dd.MM.yy.");
             tmpISS.MainPart = mainPart;
             tmpISS.PartID = mainPart.PartID;
             tmpISS.UserIDmaked = WorkingUser.UserID;

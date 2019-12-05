@@ -490,16 +490,16 @@ namespace POT.CopyPrintForms
             switch (tipe)
             {
                 case ("ID"):
-                    arr = qc1.GetAllInfoISSBy("ID", value);
+                    arr = qc1.GetAllInfoISSByClosed("ID", value);
                     break;
                 case ("CMP"):
-                    arr = qc1.GetAllInfoISSBy("CustomerID", value);
+                    arr = qc1.GetAllInfoISSByClosed("CustomerID", value);
                     break;
                 case ("DATE"):
-                    arr = qc1.GetAllInfoISSBy("Date", value);
+                    arr = qc1.GetAllInfoISSByClosed("Date", value);
                     break;
                 case ("NAME"):
-                    arr = qc1.GetAllInfoISSBy("CustomerID", value); //Name
+                    arr = qc1.GetAllInfoISSByClosed("CustomerID", value); //Name
                     break;
 
             }

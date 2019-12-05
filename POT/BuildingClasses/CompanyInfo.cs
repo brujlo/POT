@@ -94,7 +94,7 @@ namespace POT
             this.Focus();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void UpdateBT_Click(object sender, EventArgs e)
         {
             ///////////////// LogMe ////////////////////////
             String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
@@ -143,9 +143,9 @@ namespace POT
                 {
                     usedQC = "Saving MainCmp info";
 
-                    if (qc.AddMainCmp(mID, comboBox1.Text.Trim(), CmpAddressTB.Text.Trim(), CmpCityTB.Text.Trim(), CmpPBTB.Text.Trim(), CmpOIBTB.Text.Trim(),CmpContactTB.Text.Trim(), CmpSwift.Text.Trim(), 
+                    if (qc.AddMainCmp(mID, comboBox1.Text.Trim(), CmpAddressTB.Text.Trim(), CmpCityTB.Text.Trim(), CmpPBTB.Text.Trim(), CmpOIBTB.Text.Trim(), CmpContactTB.Text.Trim(), CmpSwift.Text.Trim(),
                         decimal.Parse(CmpKNTB.Text.Trim()), decimal.Parse(CmpEURTB.Text.Trim()),
-                        cmpCode.Text.Trim(), CmpCountryTB.Text.Trim(), comboBox2.Text.Trim(),CmpEmail.Text.Trim(), CmpPhoneTB.Text.Trim(), CmpWWWTB.Text.Trim(), CmpMB.Text.Trim(), CmpIBAN.Text.Trim(), SupportEmail.Text.Trim()))
+                        cmpCode.Text.Trim(), CmpCountryTB.Text.Trim(), comboBox2.Text.Trim(), CmpEmail.Text.Trim(), CmpPhoneTB.Text.Trim(), CmpWWWTB.Text.Trim(), CmpMB.Text.Trim(), CmpIBAN.Text.Trim(), SupportEmail.Text.Trim(), true))
                     {
                         Properties.Settings.Default.Remember = true;
                         Properties.Settings.Default.CmpName = this.comboBox1.Text.Trim();
@@ -175,7 +175,120 @@ namespace POT
 
                         Properties.Settings.Default.Save();
 
-                        Result = "Saved.";
+                        Result = "Updated.";
+                        lw.LogMe(function, usedQC, data, Result);
+                        MessageBox.Show(Result);
+
+                        //this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Company info not updated.");
+                        return;
+                    }
+
+                }
+                catch (Exception e1)
+                {
+                    Result = "Cmp not updated." + Environment.NewLine + e1.ToString();
+                    lw.LogMe(function, usedQC, data, Result);
+                    new LogWriter(e1);
+                    MessageBox.Show(Result);
+                    return;
+                }
+            }
+            else
+            {
+                Result = "Not updated, new Company Code must be bigger then last Code.";
+                lw.LogMe(function, usedQC, data, Result);
+                MessageBox.Show(Result);
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ///////////////// LogMe ////////////////////////
+            String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
+            String usedQC = "resx.AddResource(\"LogoPicture\", pictureBox1.Image)";
+            String data = comboBox1.Text.Trim() + ", " +
+                CmpAddressTB.Text.Trim() + ", " +
+                CmpCityTB.Text.Trim() + ", " +
+                CmpPBTB.Text.Trim() + ", " +
+                CmpCountryTB.Text.Trim() + ", " +
+                CmpKNTB.Text.Trim() + ", " +
+                CmpEURTB.Text.Trim() + ", " +
+                CmpOIBTB.Text.Trim() + ", " +
+                CmpSwift.Text.Trim() + ", " +
+                CmpMB.Text.Trim() + ", " +
+                CmpIBAN.Text.Trim() + ", " +
+                comboBox2.Text.Trim() + ", " +
+                cmpCode.Text.Trim() + ", " +
+                CmpWWWTB.Text.Trim() + ", " +
+                CmpPhoneTB.Text.Trim() + ", " +
+                CmpContactTB.Text.Trim() + ", " +
+                CmpEmail.Text.Trim() + ", " +
+                SupportEmail.Text.Trim() + ", " +
+                int.Parse(LogoSize.Value.ToString());
+            String Result = "";
+            LogWriter lw = new LogWriter();
+            ////////////////////////////////////////////////
+            ///
+            long mID = 0;
+            String smID = "";
+            try
+            {
+                List<String> arr = new List<String>();
+                arr = qc.MainCmpInfoByName(comboBox1.Text);
+                smID = arr[0];
+
+                if (arr[0].Equals("nok"))
+                    mID = 0;
+                else
+                    mID = long.Parse(smID);
+            }
+            catch { }
+
+            if (!this.cmpCode.Text.Equals(""))
+            {
+                try
+                {
+                    usedQC = "Changing MainCmp info";
+
+                    /*if (qc.AddMainCmp(mID, comboBox1.Text.Trim(), CmpAddressTB.Text.Trim(), CmpCityTB.Text.Trim(), CmpPBTB.Text.Trim(), CmpOIBTB.Text.Trim(),CmpContactTB.Text.Trim(), CmpSwift.Text.Trim(), 
+                        decimal.Parse(CmpKNTB.Text.Trim()), decimal.Parse(CmpEURTB.Text.Trim()),
+                        cmpCode.Text.Trim(), CmpCountryTB.Text.Trim(), comboBox2.Text.Trim(),CmpEmail.Text.Trim(), CmpPhoneTB.Text.Trim(), CmpWWWTB.Text.Trim(), CmpMB.Text.Trim(), CmpIBAN.Text.Trim(), SupportEmail.Text.Trim(), false))
+                    {*/
+                    if (!qc.MainCmpInfoByID(mID).Equals("nok"))
+                    { 
+                        Properties.Settings.Default.Remember = true;
+                        Properties.Settings.Default.CmpName = this.comboBox1.Text.Trim();
+                        Properties.Settings.Default.CmpAddress = this.CmpAddressTB.Text.Trim();
+                        Properties.Settings.Default.CmpVAT = this.CmpOIBTB.Text.Trim();
+                        Properties.Settings.Default.CmpWWW = this.CmpWWWTB.Text.Trim();
+                        Properties.Settings.Default.CmpPhone = this.CmpPhoneTB.Text.Trim();
+                        Properties.Settings.Default.CmpEmail = this.CmpEmail.Text.Trim();
+                        Properties.Settings.Default.CmpIBAN = this.CmpIBAN.Text.Trim();
+                        Properties.Settings.Default.CmpSWIFT = this.CmpSwift.Text.Trim();
+                        Properties.Settings.Default.CmpMB = this.CmpMB.Text.Trim();
+                        Properties.Settings.Default.CmpCity = this.CmpCityTB.Text.Trim();
+                        Properties.Settings.Default.CmpPB = this.CmpPBTB.Text.Trim();
+                        Properties.Settings.Default.CmpContact = this.CmpContactTB.Text.Trim();
+                        Properties.Settings.Default.CmpKN = decimal.Parse(CmpKNTB.Text.Trim());
+                        Properties.Settings.Default.CmpEUR = decimal.Parse(CmpEURTB.Text.Trim());
+                        Properties.Settings.Default.CmpCode = this.cmpCode.Text.Trim();
+                        Properties.Settings.Default.CmpCountry = this.CmpCountryTB.Text.Trim();
+                        Properties.Settings.Default.CmpRegionID = long.Parse(comboBox2.Text.Trim());
+                        Properties.Settings.Default.LogoSize = int.Parse(this.LogoSize.Value.ToString());
+                        Properties.Settings.Default.SupportEmail = SupportEmail.Text;
+
+                        using (ResXResourceWriter resx = new ResXResourceWriter(@".\Logo.resx"))
+                        {
+                            resx.AddResource("LogoPicture", pictureBox1.Image);
+                        }
+
+                        Properties.Settings.Default.Save();
+
+                        Result = "Company (" + this.comboBox1.Text.Trim() + ") data is now selected.";
                         lw.LogMe(function, usedQC, data, Result);
                         MessageBox.Show(Result);
 
@@ -183,7 +296,7 @@ namespace POT
                     }
                     else
                     {
-                        MessageBox.Show("Company info not saved.");
+                        MessageBox.Show("Company do not exist." + Environment.NewLine + "Company info not saved.");
                         return;
                     }
 

@@ -73,7 +73,6 @@
             this.ISSSelectorCb = new System.Windows.Forms.ComboBox();
             this.SAVEbt = new System.Windows.Forms.Button();
             this.CANCELBt = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.button2 = new System.Windows.Forms.Button();
             this.TIMERtb = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
@@ -89,6 +88,8 @@
             this.label20 = new System.Windows.Forms.Label();
             this.ISSIDlb = new System.Windows.Forms.Label();
             this.NewISSBT = new System.Windows.Forms.Button();
+            this.LevelLB = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -587,18 +588,6 @@
             this.CANCELBt.UseVisualStyleBackColor = false;
             this.CANCELBt.Click += new System.EventHandler(this.CANCELBt_Click);
             // 
-            // checkBox1
-            // 
-            this.checkBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(679, 254);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(278, 24);
-            this.checkBox1.TabIndex = 163;
-            this.checkBox1.TabStop = false;
-            this.checkBox1.Text = "Check this if you want to close ISS";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
             // button2
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -733,7 +722,7 @@
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label20.ForeColor = System.Drawing.Color.DarkRed;
-            this.label20.Location = new System.Drawing.Point(535, 6);
+            this.label20.Location = new System.Drawing.Point(719, 204);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(57, 37);
             this.label20.TabIndex = 170;
@@ -744,7 +733,7 @@
             this.ISSIDlb.AutoSize = true;
             this.ISSIDlb.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ISSIDlb.ForeColor = System.Drawing.Color.DarkRed;
-            this.ISSIDlb.Location = new System.Drawing.Point(567, 6);
+            this.ISSIDlb.Location = new System.Drawing.Point(751, 204);
             this.ISSIDlb.Name = "ISSIDlb";
             this.ISSIDlb.Size = new System.Drawing.Size(35, 37);
             this.ISSIDlb.TabIndex = 171;
@@ -761,11 +750,35 @@
             this.NewISSBT.UseVisualStyleBackColor = false;
             this.NewISSBT.Click += new System.EventHandler(this.NewISSBT_Click);
             // 
+            // LevelLB
+            // 
+            this.LevelLB.AutoSize = true;
+            this.LevelLB.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LevelLB.ForeColor = System.Drawing.Color.DarkRed;
+            this.LevelLB.Location = new System.Drawing.Point(791, 241);
+            this.LevelLB.Name = "LevelLB";
+            this.LevelLB.Size = new System.Drawing.Size(35, 37);
+            this.LevelLB.TabIndex = 174;
+            this.LevelLB.Text = "0";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label21.ForeColor = System.Drawing.Color.DarkRed;
+            this.label21.Location = new System.Drawing.Point(719, 241);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(91, 37);
+            this.label21.TabIndex = 173;
+            this.label21.Text = "Level";
+            // 
             // ISS
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(978, 662);
+            this.Controls.Add(this.LevelLB);
+            this.Controls.Add(this.label21);
             this.Controls.Add(this.NewISSBT);
             this.Controls.Add(this.ISSIDlb);
             this.Controls.Add(this.label20);
@@ -777,7 +790,6 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.TIMERtb);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.CANCELBt);
             this.Controls.Add(this.SAVEbt);
             this.Controls.Add(this.label18);
@@ -878,7 +890,6 @@
         private System.Windows.Forms.ComboBox ISSSelectorCb;
         private System.Windows.Forms.Button SAVEbt;
         private System.Windows.Forms.Button CANCELBt;
-        private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox TIMERtb;
         private System.Windows.Forms.Button button3;
@@ -894,5 +905,7 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label ISSIDlb;
         private System.Windows.Forms.Button NewISSBT;
+        private System.Windows.Forms.Label LevelLB;
+        private System.Windows.Forms.Label label21;
     }
 }

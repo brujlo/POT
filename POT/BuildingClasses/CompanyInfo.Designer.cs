@@ -72,6 +72,7 @@
             this.label21 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.UpdateBT = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogoSize)).BeginInit();
             this.SuspendLayout();
@@ -476,10 +477,22 @@
             this.textBox1.TabIndex = 44;
             this.textBox1.TabStop = false;
             // 
+            // UpdateBT
+            // 
+            this.UpdateBT.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.UpdateBT.Location = new System.Drawing.Point(538, 549);
+            this.UpdateBT.Name = "UpdateBT";
+            this.UpdateBT.Size = new System.Drawing.Size(123, 41);
+            this.UpdateBT.TabIndex = 45;
+            this.UpdateBT.Text = "Update";
+            this.UpdateBT.UseVisualStyleBackColor = true;
+            this.UpdateBT.Click += new System.EventHandler(this.UpdateBT_Click);
+            // 
             // CompanyInfo
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(880, 618);
+            this.Controls.Add(this.UpdateBT);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.comboBox2);
@@ -583,5 +596,6 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button UpdateBT;
     }
 }

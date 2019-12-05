@@ -1129,6 +1129,10 @@ namespace POT
                     arr.Add(tempPart);
                 } while (dataReader.Read());
             }
+            else
+            {
+                arr.Add(new Part());
+            }
 
             dataReader.Close();
             cnn.Close();
@@ -4207,7 +4211,8 @@ namespace POT
             return arr;
         }
 
-        public Boolean AddMainCmp(long mID, String mCmpName, String mAddress, String mCity, String mPB, String mVAT, String mContact,String mBIC, decimal mKN, decimal mEUR, String mCode, String mCountry, String mRegionID, String mEmail, String mPhone, String mWWW, String mMB, String mIBAN, String mSupportEmail)
+
+        public Boolean AddMainCmp(long mID, String mCmpName, String mAddress, String mCity, String mPB, String mVAT, String mContact,String mBIC, decimal mKN, decimal mEUR, String mCode, String mCountry, String mRegionID, String mEmail, String mPhone, String mWWW, String mMB, String mIBAN, String mSupportEmail, Boolean mSaveToDB)
         {
 
             Boolean executed = false;
@@ -4241,7 +4246,7 @@ namespace POT
 
             try
             {
-                if (mID != 0)
+                if (mID != 0 && mSaveToDB)
                 {
                     command.CommandText = "UPDATE MainCmp SET CmpName = '" + mCmpName + "', Address = '" + mAddress + "', City = '" + mCity + "', PB = '" + mPB + "', OIB = '" + mVAT + "', " +
                         "Contact = '" + mContact + "', BIC = '" + mBIC + "', KN = " + mKN + ", EUR = " + mEUR + ", Code = '" + mCode + "', Country = '" + mCountry + "', RegionID = " + mRegionID
@@ -4286,7 +4291,7 @@ namespace POT
             cnn.Close();
             return executed;
         }
-
+        
         public List<long> ISSExistReturnPartsIDs(long mISSid)
         {
             List<long> listOfIDs = new List<long>();
@@ -4391,7 +4396,7 @@ namespace POT
             return arr;
         }
 
-        public Boolean ISSUnesiISS(Boolean mISSExist, Boolean mAllDone, long mISSid, String mDate, Company mCmpCustomer, Part mMainPart, List<ISSparts> listIssParts, long mUserID, String mTotalTIme)
+        public Boolean ISSUnesiISS(Boolean mISSExist, Boolean mAllDone, long mISSid, String mDate, Company mCmpCustomer, Part mMainPart, List<ISSparts> listIssParts, long mUserID, String mTotalTIme, long mLevel)
         {
             Boolean isExecuted = false;
             int AllDone = mAllDone ? 1 : 0;
@@ -4407,10 +4412,13 @@ namespace POT
                 {
                     command.CommandText = "UPDATE ISS SET TotalTime = '" + mTotalTIme + "' where ID = " + mISSid;
                     command.ExecuteNonQuery();
+
+                    command.CommandText = "UPDATE ISS SET Level = '" + mLevel + "' where ID = " + mISSid;
+                    command.ExecuteNonQuery();
                 }
                 else
                 {
-                    command.CommandText = "INSERT INTO ISS (ID, Date, UserID, CustomerID, PartID, Closed, TotalTime) VALUES (" + mISSid + ", '" + mDate + "', " + WorkingUser.UserID + ", " + mCmpCustomer.ID + ", " + mMainPart.PartID + ", " + AllDone + ", '" + mTotalTIme + "')";
+                    command.CommandText = "INSERT INTO ISS (ID, Date, UserID, CustomerID, PartID, Closed, TotalTime, Level) VALUES (" + mISSid + ", '" + mDate + "', " + WorkingUser.UserID + ", " + mCmpCustomer.ID + ", " + mMainPart.PartID + ", " + AllDone + ", '" + mTotalTIme + "', " + mLevel + ")";
                     command.ExecuteNonQuery();
 
                 }
@@ -4420,13 +4428,13 @@ namespace POT
                     command.CommandText = "UPDATE Parts SET State = 'sg' where PartID = " + mMainPart.PartID; 
                     command.ExecuteNonQuery();
 
-                    command.CommandText = "UPDATE Parts SET DateSend = " + DateTime.Now.ToString("dd.MM.yy.") + " where PartID = " + mMainPart.PartID;
+                    command.CommandText = "UPDATE Parts SET DateSend = '" + DateTime.Now.ToString("dd.MM.yy.") + "' where PartID = " + mMainPart.PartID;
                     command.ExecuteNonQuery();
                 }
 
                 if (mISSExist && mAllDone)
                 {
-                    command.CommandText = "UPDATE ISS SET Closed = 1 where ID = " + mISSid;
+                    command.CommandText = "UPDATE ISS SET Closed = 1, Level = 0 where ID = " + mISSid;
                     command.ExecuteNonQuery();
                 }
 
@@ -4544,6 +4552,7 @@ namespace POT
                     tmpissr.PartID = long.Parse(dataReader["PartID"].ToString());
                     tmpissr.Closed = long.Parse(dataReader["Closed"].ToString());
                     tmpissr.TotalTIme = dataReader["TotalTIme"].ToString();
+                    tmpissr.Level = long.Parse(dataReader["Level"].ToString());
 
                     arr.Add(tmpissr);
 
@@ -4705,6 +4714,7 @@ namespace POT
                 arr.Add(dataReader["PartID"].ToString());
                 arr.Add(dataReader["Closed"].ToString());
                 arr.Add(dataReader["TotalTime"].ToString());
+                arr.Add(dataReader["Level"].ToString());
             }
             else
             {
@@ -4760,22 +4770,21 @@ namespace POT
 
         public List<String> GetAllFromWorkHR()
         {
-            List<String> arr = new List<string>();
+            List<String> arr = new List<String>();
             //SqlConnection cnn = cn.Connect(Uname, Pass);
             cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
             query = "Select Odradeno from Work order by Value";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
             SqlDataReader dataReader = command.ExecuteReader();
-            dataReader.Read();
+            //dataReader.Read();
 
             if (dataReader.HasRows)
             {
-                do
+                while (dataReader.Read())
                 {
                     arr.Add(dataReader["Odradeno"].ToString());
-
-                } while (dataReader.Read());
+                }
             }
             else
             {
@@ -4814,7 +4823,45 @@ namespace POT
             return arr;
         }
 
-        public List<String> GetAllInfoISSBy(String what, String value)
+        public List<String> GetAllInfoISSBy(String what, String value, String orderBy)
+        {
+            List<String> arr = new List<string>();
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            if (what.Equals("Date"))
+                query = "Select * from ISS where " + what + " = '" + value + "' order by " + orderBy;
+            else
+                query = "Select * from ISS where " + what + " = " + value + "' order by " + orderBy;
+
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                do
+                {
+                    arr.Add(dataReader["ID"].ToString());
+                    arr.Add(dataReader["Date"].ToString());
+                    arr.Add(dataReader["UserID"].ToString());
+                    arr.Add(dataReader["CustomerID"].ToString());
+                    arr.Add(dataReader["PartID"].ToString());
+                    arr.Add(dataReader["Closed"].ToString());
+                    arr.Add(dataReader["TotalTime"].ToString());
+                    arr.Add(dataReader["Level"].ToString());
+                } while (dataReader.Read());
+            }
+            else
+            {
+                arr.Add("nok");
+            }
+            dataReader.Close();
+            cnn.Close();
+            return arr;
+        }
+
+        public List<String> GetAllInfoISSByClosed(String what, String value)
         {
             List<String> arr = new List<string>();
             //SqlConnection cnn = cn.Connect(Uname, Pass);
@@ -4840,6 +4887,7 @@ namespace POT
                     arr.Add(dataReader["PartID"].ToString());
                     arr.Add(dataReader["Closed"].ToString());
                     arr.Add(dataReader["TotalTime"].ToString());
+                    arr.Add(dataReader["Level"].ToString());
                 } while (dataReader.Read());
             }
             else
