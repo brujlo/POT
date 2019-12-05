@@ -8,7 +8,6 @@ using System.Threading;
 using System.Windows.Forms;
 using POT.WorkingClasses;
 using System.Media;
-using System.Drawing;
 using System.IO;
 
 namespace POT
@@ -302,14 +301,16 @@ namespace POT
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
-            textBox1.SelectAll();
-            textBox1.Focus();
+            textBox6.Text = resultArrC.ElementAt(comboBox3.SelectedIndex).Name.Trim();
+            //textBox1.SelectAll();
+            //textBox1.Focus();
         }
 
         private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
         {
-            textBox1.SelectAll();
-            textBox1.Focus();
+            textBox5.Text = resultArrC.ElementAt(comboBox4.SelectedIndex).Name.Trim();
+            //textBox1.SelectAll();
+            //textBox1.Focus();
         }
 
         private void button3_Click(object sender, EventArgs e)

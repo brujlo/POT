@@ -113,7 +113,7 @@ namespace POT.MyTypes
                         stornoTickets.Add(tid);
                     }
 
-                    if (tid.UserIDPreuzeo != 0 && tid.UserIDZavrsio == 0 && tid.UserIDUnio != 2)
+                    if (tid.UserIDPreuzeo != 0 && tid.UserIDZavrsio == 0 && tid.UserIDUnio != 2 && tid.userIDPoceo != 0)
                     {
                         workingTickets.Add(tid);
                     }

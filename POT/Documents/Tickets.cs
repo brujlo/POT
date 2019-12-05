@@ -467,6 +467,40 @@ namespace POT.Documents
             }
         }
 
+        private Boolean TIDstatus(TIDs tid)
+        {
+            ///////////////// LogMe ////////////////////////
+            String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
+            String usedQC = "TIDstatus";
+            String data = "";
+            String Result = "";
+            LogWriter lw = new LogWriter();
+            ////////////////////////////////////////////////
+            ///
+
+            Boolean finished = false;
+            CloseRNBT.Enabled = false;
+
+            try
+            {
+                if (tid.UserIDZavrsio != 0 && (tid.UserIDUnio != 2 || tid.UserIDUnio == 0))
+                    finished = true;
+
+                CloseRNBT.Enabled = finished;
+                return finished;
+            }
+            catch (Exception e1)
+            {
+                data = tid.TicketID.ToString() + Environment.NewLine;
+                Result = e1.Message;
+                lw.LogMe(function, usedQC, data, Result);
+                //MessageBox.Show(Result, "NOT SAVED", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                CloseRNBT.Enabled = false;
+                return finished;
+            }
+        }
+
         private void TIDidCB_SelectedIndexChanged(object sender, EventArgs e)
         {
             SendList(TIDidCB.SelectedIndex);
@@ -501,7 +535,6 @@ namespace POT.Documents
                 case "openedTickets":
                     FillTIDFields(index, tids.openedTickets);
                     break;
-
             }
         }
 
@@ -538,6 +571,8 @@ namespace POT.Documents
             VriReportTB.Text = tidLst[index].VriReport.ToString();
             RNIDTB.Text = tidLst[index].RNID.ToString();
             UserIDSastavioTB.Text = tidLst[index].UserIDSastavio.ToString();
+
+            TIDstatus(tidLst[index]);
         }
 
         private void PrintRNBT_Click(object sender, EventArgs e)
@@ -585,7 +620,7 @@ namespace POT.Documents
             else
                 return;
 
-            String filePath = Properties.Settings.Default.DefaultFolder + "\\RAC\\EXE " + id + ".pdf";
+            String filePath = Properties.Settings.Default.DefaultFolder + "\\TIC\\EXE " + id + ".pdf";
 
             try
             {
@@ -608,6 +643,11 @@ namespace POT.Documents
         private void StornoBT_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void CloseRNBT_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(new NotImplementedException().ToString());
         }
     }
 }

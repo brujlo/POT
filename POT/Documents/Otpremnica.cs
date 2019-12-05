@@ -321,13 +321,15 @@ namespace POT
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
-            textBox1.SelectAll();
-            textBox1.Focus();
+            textBox6.Text = resultArrC.ElementAt(comboBox3.SelectedIndex).Name.Trim();
+            //textBox1.SelectAll();
+            //textBox1.Focus();
         }
         private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
         {
-            textBox1.SelectAll();
-            textBox1.Focus();
+            textBox5.Text = resultArrC.ElementAt(comboBox4.SelectedIndex).Name.Trim();
+            //textBox1.SelectAll();
+            //textBox1.Focus();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -775,6 +777,7 @@ namespace POT
         {
             int index = comboBox5.SelectedIndex;
             br = brList[index];
+            textBox7.Text = br.City + ", " + br.Address;
         }
 
         private void textBox1_Leave(object sender, EventArgs e)

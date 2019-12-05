@@ -107,6 +107,7 @@ namespace POT.BuildingClasses
                 if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.SelectedPath))
                 {
                     DefaultFolder.Text = fbd.SelectedPath;
+                    Properties.Settings.Default.DefaultFolder = DefaultFolder.Text;
                     //string[] files = Directory.GetFiles(fbd.SelectedPath);
 
                     //MessageBox.Show("Files found: " + files.Length.ToString(), "Message");
