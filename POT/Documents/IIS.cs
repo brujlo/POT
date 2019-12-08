@@ -569,7 +569,7 @@ namespace POT.Documents
                                         }
                                     }
 
-                                    if (Program.SaveDocumentsPDF) saveToPDF();
+                                    if (Program.SaveDocumentsPDF) saveToPDF(partList);
 
                                     if (saved)
                                     {
@@ -578,7 +578,7 @@ namespace POT.Documents
                                         MessageBox.Show(Result);
 
                                         partListPrint.Clear();
-                                        partListPrint = partList;
+                                        partListPrint.AddRange(partList);
 
                                         isIISSaved = true;
                                         listView1.Clear();
@@ -600,7 +600,7 @@ namespace POT.Documents
                                         MessageBox.Show(Result);
 
                                         partListPrint.Clear();
-                                        partListPrint = partList;
+                                        partListPrint.AddRange(partList);
 
                                         isIISSaved = true;
                                         listView1.Clear();
@@ -719,7 +719,7 @@ namespace POT.Documents
             }
         }
 
-        private void saveToPDF()
+        private void saveToPDF(List<Part> partList)
         {
             String printerName = printDialog1.PrinterSettings.PrinterName;
 
@@ -737,6 +737,9 @@ namespace POT.Documents
 
                 string fileName = "\\IIS " + IISNumber.ToString().Replace("/", "") + ".pdf";
                 string directory = Properties.Settings.Default.DefaultFolder + "\\IIS";
+
+                partListPrint.Clear();
+                partListPrint.AddRange(partList);
 
                 printDialog1.PrinterSettings.PrintToFile = true;
                 printDocumentIIS.PrinterSettings.PrintFileName = directory + fileName;

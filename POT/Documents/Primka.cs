@@ -639,7 +639,7 @@ namespace POT
                                             listView1.View = View.Details;
 
                                             partListPrint.Clear();
-                                            partListPrint = listOfOtpPartsFromOTP;
+                                            partListPrint.AddRange(listOfOtpPartsFromOTP);
                                             //partListPrint = listOfOtpPartsPrimka;
 
                                             listView1.Columns.Add("RB");
@@ -663,7 +663,7 @@ namespace POT
                                             listView1.View = View.Details;
 
                                             partListPrint.Clear();
-                                            partListPrint = listOfOtpPartsFromOTP;
+                                            partListPrint.AddRange(listOfOtpPartsFromOTP);
                                             //partListPrint = listOfOtpPartsPrimka;
 
                                             listView1.Columns.Add("RB");
@@ -735,7 +735,7 @@ namespace POT
                                             }
                                         }
 
-                                        if (Program.SaveDocumentsPDF) saveToPDF();
+                                        if (Program.SaveDocumentsPDF) saveToPDF(partList);
 
                                         if (saved)
                                         {
@@ -747,7 +747,7 @@ namespace POT
                                             MessageBox.Show(Result);
 
                                             partListPrint.Clear();
-                                            partListPrint = partList;
+                                            partListPrint.AddRange(partList);
 
                                             isPrimkaSaved = true;
                                             listView1.Clear();
@@ -772,7 +772,7 @@ namespace POT
                                             MessageBox.Show(Result);
 
                                             partListPrint.Clear();
-                                            partListPrint = partList;
+                                            partListPrint.AddRange(partList);
 
                                             isPrimkaSaved = true;
                                             listView1.Clear();
@@ -920,7 +920,7 @@ namespace POT
             }
         }
 
-        private void saveToPDF()
+        private void saveToPDF(List<Part> partList)
         {
             String printerName = printDialog1.PrinterSettings.PrinterName;
 
@@ -938,6 +938,9 @@ namespace POT
 
                 string fileName = "\\PRIM " + PrimkaNumber.ToString().Replace("/", "") + ".pdf";
                 string directory = Properties.Settings.Default.DefaultFolder + "\\PRIM";
+
+                partListPrint.Clear();
+                partListPrint.AddRange(partList);
 
                 printDialog1.PrinterSettings.PrintToFile = true;
                 printDocumentPrim.PrinterSettings.PrintFileName = directory + fileName;

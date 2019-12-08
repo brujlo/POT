@@ -554,7 +554,7 @@ namespace POT.CopyPrintForms
             }
 
             PRIMNumber = string.Format("{0:00/000}", primID);
-            partListPrint = parts;
+            partListPrint.AddRange(parts);
             napomenaPRIMPrint = item[0].SubItems[4].Text;
 
             ////////////////// TODO ODKOMENTIRAJ AKO BUDES NA PRIMCI IMAO ISPIS FILIJALE///////////////////

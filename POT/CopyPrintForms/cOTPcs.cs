@@ -550,7 +550,7 @@ namespace POT.CopyPrintForms
             }
 
             OTPNumber = string.Format("{0:00/000}", otpID); 
-            partListPrint = parts;
+            partListPrint.AddRange(parts);
             napomenaOTPPrint = item[0].SubItems[4].Text;
             if (!item[0].SubItems[7].Text.Equals(""))
                 br.GetFilByID(long.Parse(item[0].SubItems[7].Text));

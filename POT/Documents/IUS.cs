@@ -556,7 +556,7 @@ namespace POT
 
                                     PovijestLog pl = new PovijestLog();
 
-                                    if (Program.SaveDocumentsPDF) saveToPDF();
+                                    if (Program.SaveDocumentsPDF) saveToPDF(partList);
 
                                     if (pl.SaveToPovijestLog(partList, DateTime.Now.ToString("dd.MM.yy."), napomenaIUS, cmpS.Name, "", "", "IUS " + Properties.Settings.Default.ShareDocumentName, "sng"))
                                     {
@@ -567,7 +567,7 @@ namespace POT
                                         MessageBox.Show(Result);
 
                                         partListPrint.Clear();
-                                        partListPrint = partList;
+                                        partListPrint.AddRange(partList);
 
                                         isIUSSaved = true;
                                         listView1.Clear();
@@ -589,7 +589,7 @@ namespace POT
                                         MessageBox.Show(Result);
 
                                         partListPrint.Clear();
-                                        partListPrint = partList;
+                                        partListPrint.AddRange(partList);
 
                                         isIUSSaved = true;
                                         listView1.Clear();
@@ -708,7 +708,7 @@ namespace POT
             }
         }
 
-        private void saveToPDF()
+        private void saveToPDF(List<Part> partList)
         {
             String printerName = printDialog1.PrinterSettings.PrinterName;
 
@@ -726,6 +726,9 @@ namespace POT
 
                 string fileName = "\\IUS " + IUSNumber.ToString().Replace("/", "") + ".pdf";
                 string directory = Properties.Settings.Default.DefaultFolder + "\\IUS";
+
+                partListPrint.Clear();
+                partListPrint.AddRange(partList);
 
                 printDialog1.PrinterSettings.PrintToFile = true;
                 printDocumentIUS.PrinterSettings.PrintFileName = directory + fileName;

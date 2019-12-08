@@ -27340,3 +27340,932 @@ Error Number:102,State:1,Class:15
 
 - 05.12.19. 21:23 - App turned off
     *** BrunoBrckovic *** 
+
+- 06.12.19. 23:14 - App started
+    *** BrunoBrckovic *** 
+
+- 06.12.19. 23:15
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.12.19. 23:15 - App turned off
+    *** BrunoBrckovic *** 
+
+- 08.12.19. 12:52 - App started
+    *** BrunoBrckovic *** 
+
+- 08.12.19. 12:52
+    - LOGED change: POT.CompanyInfo - button2_Click
+     - Used: Changing MainCmp info
+     - Data: CES-POS d.o.o., 2.Poljanice 6, Zagreb, 10000, HR, 0.00, 0.00, 02647369817, ZABAHR2X, 04472047, HR2823600001102514864, 4, 1, www.ces-pos.hr, +38515814315, Bruno Brckovic, info@ces-pos.hr, support@ces-pos.hr, 2
+     - Result: Company (CES-POS d.o.o.) data is now selected.
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 12:52
+    - LOGED change: POT.MainCmpSelector - button1_Click
+     - Used: Main cmp select
+     - Data: CES-POS d.o.o.
+     - Result: Main cmp selected, please relog to see changes.
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:08
+    - LOGED change: POT.BuildingClasses.SettingsForm - SaveBT_Click
+     - Used: Print
+     - Data: 0; 0; 15; VAT is not calculated according to Article 17. of the Law on PDV; The taxpayer is not in the VAT system, according to Article 90. of the Law on PDV; Thank you for your trust; Temeljem članka 9., st.3., Zakona o računovodstvu, račun je pravovaljan bez potpisa i pečata; Porezni obveznik nije u sustavu PDV-a, temeljem zakona o PDV-u čl. 90; Hvala na ukazanom povjerenju; Bruno Brcković; D:\Dropbox (Personal)\EXCEPTION\CP\POTdoc; Save_to_PDF => True
+     - Result: 
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:08 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 08.12.19. 13:08
+    - LOGED change: POT.SetDBConnection - button2_Click
+     - Used: DB connection address and name save.
+     - Data: 192.168.100.101, cp
+     - Result: Saved, no msgToUser
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:08 - App started
+    *** BrunoBrckovic *** 
+
+- 08.12.19. 13:09
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:09
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:10
+    - LOGED change: POT.Otpremnica - button1_Click
+     - Used: Add to list
+     - Data: 1511015006000, yc4nf, 155886, ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:11
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:11
+    - LOGED change: POT.Otpremnica - button2_Click
+     - Used: Save to db
+     - Data: 1511015006000, yc4nf, 155886, g, 0, 1
+     - Result: You do not have enough patrs in you storage:
+
+ Code: 1511015006000
+ SN:  yc4nf
+ CN:  155886
+ State: g
+
+You have: 0
+You want: 1
+
+Nothing Done.
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:11 - App turned off
+    *** BrunoBrckovic *** 
+
+- 08.12.19. 13:11 - App started
+    *** BrunoBrckovic *** 
+
+- 08.12.19. 13:12 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 08.12.19. 13:12
+    - LOGED change: POT.SetDBConnection - button2_Click
+     - Used: DB connection address and name save.
+     - Data: 192.168.100.101, test
+     - Result: Saved, no msgToUser
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:12 - App started
+    *** BrunoBrckovic *** 
+
+- 08.12.19. 13:12
+    - LOGED change: POT.Otpremnica - button1_Click
+     - Used: Add to list
+     - Data: 0101001004000, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:12
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:12
+    - LOGED change: POT.Otpremnica - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/009, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:12
+    - LOGED change: POT.Otpremnica - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. OTP '19/009'.
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:14
+    - LOGED change: POT.Otpremnica - button1_Click
+     - Used: Add to list
+     - Data: 0101001004000, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:15
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:17
+    - LOGED change: POT.Otpremnica - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/010, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:17
+    - LOGED change: POT.Otpremnica - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/010, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:18
+    - LOGED change: POT.Otpremnica - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. OTP '19/010'.
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:18 - App turned off
+    *** BrunoBrckovic *** 
+
+- 08.12.19. 13:18 - App started
+    *** BrunoBrckovic *** 
+
+- 08.12.19. 13:18
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:19
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:19
+    - LOGED change: POT.Otpremnica - button1_Click
+     - Used: Add to list
+     - Data: 0101001004000, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:19
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:20
+    - LOGED change: POT.Otpremnica - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/011, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:20
+    - LOGED change: POT.Otpremnica - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. OTP '19/011'.
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:20 - App turned off
+    *** BrunoBrckovic *** 
+
+- 08.12.19. 13:20 - App started
+    *** BrunoBrckovic *** 
+
+- 08.12.19. 13:21 - App started
+    *** BrunoBrckovic *** 
+
+- 08.12.19. 13:21
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:21
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:21
+    - LOGED change: POT.Otpremnica - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: There is no items in list, nothing done.
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:21
+    - LOGED change: POT.Otpremnica - button1_Click
+     - Used: Add to list
+     - Data: 0101001004000, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:21
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:22
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+    - InnerEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+    - MessageEcp: Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=4298; handshake=33; 
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:27
+    - LOGED change: POT.Otpremnica - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/012, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:27
+    - LOGED change: POT.Otpremnica - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. OTP '19/012'.
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:27 - App turned off
+    *** BrunoBrckovic *** 
+
+- 08.12.19. 13:27 - App started
+    *** BrunoBrckovic *** 
+
+- 08.12.19. 13:28
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:28
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:28
+    - LOGED change: POT.Otpremnica - button1_Click
+     - Used: Add to list
+     - Data: 0101001004000, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:28
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:29
+    - LOGED change: POT.Otpremnica - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/013, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:29
+    - LOGED change: POT.Otpremnica - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. OTP '19/013'.
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:37 - App started
+    *** BrunoBrckovic *** 
+
+- 08.12.19. 13:39 - App started
+    *** BrunoBrckovic *** 
+
+- 08.12.19. 13:39
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:40
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:40
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:40
+    - BaseEcp: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at System.Linq.Enumerable.ElementAt[TSource](IEnumerable`1 source, Int32 index)
+   at POT.Otpremnica.comboBox2_SelectedIndexChanged(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 311
+    - InnerEcp: 
+    - MessageEcp: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at System.Linq.Enumerable.ElementAt[TSource](IEnumerable`1 source, Int32 index)
+   at POT.Otpremnica.comboBox2_SelectedIndexChanged(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 311
+    - TypeNameEcp: System.ArgumentOutOfRangeException
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:40
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:41
+    - LOGED change: POT.Otpremnica - button1_Click
+     - Used: Add to list
+     - Data: 0101001004000, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:41
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:50 - App started
+    *** BrunoBrckovic *** 
+
+- 08.12.19. 13:50
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:50
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:50
+    - LOGED change: POT.Otpremnica - button1_Click
+     - Used: Add to list
+     - Data: 0101001004000, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:50
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:50
+    - LOGED change: POT.Otpremnica - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/015, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:50
+    - LOGED change: POT.Otpremnica - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/015, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:50
+    - LOGED change: POT.Otpremnica - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. OTP '19/015'.
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:52
+    - LOGED change: POT.Otpremnica - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/015, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:53
+    - LOGED change: POT.Otpremnica - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/015, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 13:54
+    - LOGED change: POT.Otpremnica - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/015, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 19:37 - App started
+    *** BrunoBrckovic *** 
+
+- 08.12.19. 19:37
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 19:37
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 19:37
+    - LOGED change: POT.Otpremnica - button1_Click
+     - Used: Add to list
+     - Data: 0101001004000, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 19:37
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 19:38
+    - LOGED change: POT.Otpremnica - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/016, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 19:39
+    - LOGED change: POT.Otpremnica - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/016, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 19:39
+    - LOGED change: POT.Otpremnica - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. OTP '19/016'.
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 19:40
+    - LOGED change: POT.Otpremnica - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/016, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 19:40
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 19:40
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 19:40
+    - LOGED change: POT.Otpremnica - button1_Click
+     - Used: Add to list
+     - Data: 0101001004000, , , ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 19:40
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 787
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 19:41
+    - LOGED change: POT.Otpremnica - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/017, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 19:41
+    - LOGED change: POT.Otpremnica - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/017, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 19:42
+    - LOGED change: POT.Otpremnica - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. OTP '19/017'.
+    *** BrunoBrckovic *** 
+
+
+- 08.12.19. 19:43 - App started
+    *** BrunoBrckovic *** 
