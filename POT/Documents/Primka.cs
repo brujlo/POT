@@ -883,12 +883,13 @@ namespace POT
 
                 if (printDialog1.PrinterSettings.PrinterName == "Microsoft Print to PDF")
                 {   // force a reasonable filename
-                    string basename = Path.GetFileNameWithoutExtension("PRIM " + PrimkaNumber.ToString());
-                    string directory = Path.GetDirectoryName("PRIM " + PrimkaNumber.ToString());
+                    string basename = Path.GetFileNameWithoutExtension("PRIM " + PrimkaNumber.Replace("/", ""));
+                    string directory = Path.GetDirectoryName("PRIM " + PrimkaNumber.Replace("/", ""));
                     printDocumentPrim.PrinterSettings.PrintToFile = true;
                     // confirm the user wants to use that name
                     pdfSaveDialog.InitialDirectory = directory;
-                    pdfSaveDialog.FileName = directory + ".pdf";
+                    //pdfSaveDialog.FileName = directory + ".pdf"; //271219
+                    pdfSaveDialog.FileName = basename + ".pdf";
                     pdfSaveDialog.Filter = "PDF File|*.pdf";
                     result = pdfSaveDialog.ShowDialog();
                     if (result != DialogResult.Cancel)

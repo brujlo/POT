@@ -25,7 +25,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ProductName>POT</ProductName>
     <PublisherName>Exception</PublisherName>
-    <ApplicationRevision>89</ApplicationRevision>
+    <ApplicationRevision>90</ApplicationRevision>
     <ApplicationVersion>1.3.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -69,6 +69,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -166,6 +167,7 @@
     <Compile Include="MyTypes\MainCmp.cs" />
     <Compile Include="MyTypes\Offer.cs" />
     <Compile Include="MyTypes\OfferParts.cs" />
+    <Compile Include="MyTypes\RadniNalog.cs" />
     <Compile Include="MyTypes\TIDs.cs" />
     <Compile Include="Saving.cs">
       <SubType>Form</SubType>
@@ -263,6 +265,7 @@
     <Compile Include="WorkingClasses\PrintMeISS.cs" />
     <Compile Include="WorkingClasses\PrintMeOffer.cs" />
     <Compile Include="WorkingClasses\PrintMeRac.cs" />
+    <Compile Include="WorkingClasses\PrintMeRN.cs" />
     <Compile Include="WorkingClasses\Selector.cs">
       <SubType>Form</SubType>
     </Compile>

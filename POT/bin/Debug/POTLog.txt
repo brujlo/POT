@@ -28269,3 +28269,612 @@ Parameter name: index
 
 - 08.12.19. 19:43 - App started
     *** BrunoBrckovic *** 
+
+- 08.12.19. 19:57 - App started
+    *** BrunoBrckovic *** 
+
+- 08.12.19. 19:58 - App started
+    *** BrunoBrckovic *** 
+
+- 08.12.19. 19:59 - App started
+    *** BrunoBrckovic *** 
+
+- 08.12.19. 20:00 - App started
+    *** BrunoBrckovic *** 
+
+- 08.12.19. 20:00 - App started
+    *** BrunoBrckovic *** 
+
+- 08.12.19. 20:13 - App started
+    *** BrunoBrckovic *** 
+
+- 08.12.19. 20:14 - App turned off
+    *** BrunoBrckovic *** 
+
+- 16.12.19. 00:07 - App started
+    *** BrunoBrckovic *** 
+
+- 16.12.19. 00:08 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 16.12.19. 00:08
+    - LOGED change: POT.SetDBConnection - button2_Click
+     - Used: DB connection address and name save.
+     - Data: 192.168.100.101, exe
+     - Result: Saved, no msgToUser
+    *** BrunoBrckovic *** 
+
+
+- 16.12.19. 00:08 - App started
+    *** BrunoBrckovic *** 
+
+- 16.12.19. 00:08 - App turned off
+    *** BrunoBrckovic *** 
+
+- 16.12.19. 00:08 - App started
+    *** BrunoBrckovic *** 
+
+- 16.12.19. 00:08
+    - LOGED change: POT.CompanyInfo - button2_Click
+     - Used: Changing MainCmp info
+     - Data: Exception, Dunavska 31, Zagreb, 10040, HR, 0.00, 0.00, 76737454770, PBZGHR2X, 97768138, HR9323400091160480462, 4, 1, www.exception.hr, +38515814315, Bruno Brckovic, info@exception.hr, support@exception.hr, 2
+     - Result: Company (Exception) data is now selected.
+    *** BrunoBrckovic *** 
+
+
+- 16.12.19. 00:09
+    - LOGED change: POT.MainCmpSelector - button1_Click
+     - Used: Main cmp select
+     - Data: Exception
+     - Result: Main cmp selected, please relog to see changes.
+    *** BrunoBrckovic *** 
+
+
+- 16.12.19. 00:09
+    - LOGED change: POT.BuildingClasses.SettingsForm - SaveBT_Click
+     - Used: Print
+     - Data: 0; 0; 15; VAT is not calculated according to Article 17. of the Law on PDV; The taxpayer is not in the VAT system, according to Article 90. of the Law on PDV; Thank you for your trust; Temeljem članka 9., st.3., Zakona o računovodstvu, račun je pravovaljan bez potpisa i pečata; Porezni obveznik nije u sustavu PDV-a, temeljem zakona o PDV-u čl. 90; Hvala na ukazanom povjerenju; Bruno Brcković; E:\Dropbox (EXCEPTION)\POT DOKUMENTI; Save_to_PDF => True
+     - Result: 
+    *** BrunoBrckovic *** 
+
+
+- 16.12.19. 00:24
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE izrada aplikacije, 20004009, 450,00, 35:00, 4,75, 2, 15001,875000, 30003,750000, 30003,750000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 16.12.19. 00:25
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 16.12.19. 00:27 - App turned off
+    *** BrunoBrckovic *** 
+
+- 16.12.19. 08:25 - App started
+    *** BrunoBrckovic *** 
+
+- 16.12.19. 08:26
+    - LOGED change: POT.Documents.ISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 924, 707013002000, listIssParts cnt 0, 190057, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190057
+    *** BrunoBrckovic *** 
+
+
+- 16.12.19. 08:26
+    - LOGED change: POT.Documents.ISS - PartSelectorCb_SelectedIndexChanged
+     - Used: ISS part loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 924, 707013002000, listIssParts cnt 1, 190058, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS part selected 430 
+    *** BrunoBrckovic *** 
+
+
+- 16.12.19. 08:26 - App turned off
+    *** BrunoBrckovic *** 
+
+- 16.12.19. 08:32 - App started
+    *** BrunoBrckovic *** 
+
+- 16.12.19. 08:41 - App started
+    *** BrunoBrckovic *** 
+
+- 16.12.19. 08:43 - App started
+    *** BrunoBrckovic *** 
+
+- 16.12.19. 08:45 - App started
+    *** BrunoBrckovic *** 
+
+- 16.12.19. 08:50 - App turned off
+    *** BrunoBrckovic *** 
+
+- 16.12.19. 08:51 - App started
+    *** BrunoBrckovic *** 
+
+- 16.12.19. 08:52 - App turned off
+    *** BrunoBrckovic *** 
+
+- 16.12.19. 09:01 - App started
+    *** BrunoBrckovic *** 
+
+- 16.12.19. 09:04 - App turned off
+    *** BrunoBrckovic *** 
+
+- 27.12.19. 12:34 - App started
+    *** BrunoBrckovic *** 
+
+- 27.12.19. 12:34 - App turned off
+    *** BrunoBrckovic *** 
+
+- 27.12.19. 12:35 - App started
+    *** BrunoBrckovic *** 
+
+- 27.12.19. 12:35 - App turned off
+    *** BrunoBrckovic *** 
+
+- 27.12.19. 12:35 - App started
+    *** BrunoBrckovic *** 
+
+- 27.12.19. 12:37 - App started
+    *** BrunoBrckovic *** 
+
+- 27.12.19. 12:38 - App started
+    *** BrunoBrckovic *** 
+
+- 27.12.19. 12:42 - App started
+    *** BrunoBrckovic *** 
+
+- 27.12.19. 12:42 - App started
+    *** BrunoBrckovic *** 
+
+- 27.12.19. 12:43 - App started
+    *** BrunoBrckovic *** 
+
+- 27.12.19. 12:45 - App started
+    *** BrunoBrckovic *** 
+
+- 27.12.19. 12:57 - App started
+    *** BrunoBrckovic *** 
+
+- 27.12.19. 13:12 - App started
+    *** BrunoBrckovic *** 
+
+- 27.12.19. 13:22 - App started
+    *** BrunoBrckovic *** 
+
+- 27.12.19. 13:56 - App started
+    *** BrunoBrckovic *** 
+
+- 27.12.19. 14:00 - App started
+    *** BrunoBrckovic *** 
+
+- 27.12.19. 14:29 - App started
+    *** BrunoBrckovic *** 
+
+- 27.12.19. 15:10 - App started
+    *** BrunoBrckovic *** 
+
+- 27.12.19. 15:21 - App started
+    *** BrunoBrckovic *** 
+
+- 27.12.19. 15:22 - App started
+    *** BrunoBrckovic *** 
+
+- 27.12.19. 17:22 - Waiting
+    *** BrunoBrckovic *** 
+
+- 27.12.19. 17:53 - App started
+    *** BrunoBrckovic *** 
+
+- 27.12.19. 17:53
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: ID
+     - Data: 19072
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.12.19. 17:53
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 19072
+     - Result: Selected PRIM (19072) does not exist or do not have parts.
+    *** BrunoBrckovic *** 
+
+
+- 27.12.19. 17:53
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: DATE
+     - Data: 09.12.19.
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.12.19. 17:53
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 707013002000, 12X0084, 1013620
+             707013002000, 12X0133, 1013708
+             707013002000, 12X0221, 1013778
+             707013002000, 12X0166, 1013653
+             707013002000, 1690287, 1021606
+             707013002000, 12X0149, 1013700
+             707013002000, 1690286, 1021745
+             707013002000, 1280098, 1013644
+             707013002000, 12X0129, 1013690
+             707013002000, 12X0168, 1013658
+             707013002000, 12X0124, 1013759
+             707013002000, 1851063, 1013796
+             707013002000, 12X0147, 1013809
+             707013002000, 1390185, 1013672
+             707013002000, 12X0218, 1013776
+             707013002000, 1270233, 1013840
+             707013002000, 12X0158, 1013730
+             707013002000, 12X0062, 1013855
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 27.12.19. 17:54
+    - LOGED change: POT.CopyPrintForms.cPRIM - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/014, , OTPREMNICA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 27.12.19. 17:54
+    - LOGED change: POT.CopyPrintForms.cPRIM - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/014, , OTPREMNICA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 27.12.19. 17:54 - App turned off
+    *** BrunoBrckovic *** 
+
+- 27.12.19. 18:42 - App started
+    *** BrunoBrckovic *** 
+
+- 27.12.19. 18:48 - App started
+    *** BrunoBrckovic *** 
+
+- 27.12.19. 18:50 - App turned off
+    *** BrunoBrckovic *** 
+
+- 27.12.19. 18:50 - App started
+    *** BrunoBrckovic *** 
+
+- 27.12.19. 18:54 - App started
+    *** BrunoBrckovic *** 
+
+- 27.12.19. 18:54 - App started
+    *** BrunoBrckovic *** 
+
+- 27.12.19. 19:00 - App started
+    *** BrunoBrckovic *** 
+
+- 27.12.19. 19:15 - App started
+    *** BrunoBrckovic *** 
+
+- 27.12.19. 19:50 - App started
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 01:42 - App started
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 01:43 - App started
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 01:48 - App started
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 01:48 - App started
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 01:49 - App started
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 01:51 - App started
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 01:51 - App turned off
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 01:53 - App started
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 01:53 - App turned off
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 01:56 - App started
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 01:57 - App started
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 01:58 - App turned off
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 02:02 - App started
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 02:02 - App turned off
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 02:03 - App started
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 02:03 - App turned off
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 02:03 - App started
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 02:03 - App turned off
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 02:04 - App started
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 02:05 - App started
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 02:05 - App started
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 02:06 - App started
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 02:07 - App started
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 02:07 - App turned off
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 02:07 - App started
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 02:08 - App turned off
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 02:19 - App started
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 02:20 - App turned off
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 02:24 - App started
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 02:24 - App turned off
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 02:25 - App started
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 02:30 - App started
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 02:30 - Waiting
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 02:38 - App started
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 02:38 - Waiting
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 02:39 - Waiting
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 02:41 - App turned off
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 02:43 - App started
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 02:53 - Waiting
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 02:57 - App started
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 02:57
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: DATE
+     - Data: 09.12.19.
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.12.19. 02:57
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 707013002000, 12X0084, 1013620
+             707013002000, 12X0133, 1013708
+             707013002000, 12X0221, 1013778
+             707013002000, 12X0166, 1013653
+             707013002000, 1690287, 1021606
+             707013002000, 12X0149, 1013700
+             707013002000, 1690286, 1021745
+             707013002000, 1280098, 1013644
+             707013002000, 12X0129, 1013690
+             707013002000, 12X0168, 1013658
+             707013002000, 12X0124, 1013759
+             707013002000, 1851063, 1013796
+             707013002000, 12X0147, 1013809
+             707013002000, 1390185, 1013672
+             707013002000, 12X0218, 1013776
+             707013002000, 1270233, 1013840
+             707013002000, 12X0158, 1013730
+             707013002000, 12X0062, 1013855
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.12.19. 02:58
+    - LOGED change: POT.CopyPrintForms.cPRIM - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/014, , OTPREMNICA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 28.12.19. 02:58
+    - LOGED change: POT.CopyPrintForms.cPRIM - printDocumentPrim_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 19/014, , OTPREMNICA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 28.12.19. 02:59 - App started
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 02:59
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: ID
+     - Data: 18014
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.12.19. 02:59
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 18014
+     - Result: Selected PRIM (18014) does not exist or do not have parts.
+    *** BrunoBrckovic *** 
+
+
+- 28.12.19. 02:59
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: ID
+     - Data: 19014
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.12.19. 02:59
+    - LOGED change: POT.CopyPrintForms.cPRIM - listView1_DoubleClick
+     - Used: PRIM Selected
+     - Data: 707013002000, 12X0084, 1013620
+             707013002000, 12X0133, 1013708
+             707013002000, 12X0221, 1013778
+             707013002000, 12X0166, 1013653
+             707013002000, 1690287, 1021606
+             707013002000, 12X0149, 1013700
+             707013002000, 1690286, 1021745
+             707013002000, 1280098, 1013644
+             707013002000, 12X0129, 1013690
+             707013002000, 12X0168, 1013658
+             707013002000, 12X0124, 1013759
+             707013002000, 1851063, 1013796
+             707013002000, 12X0147, 1013809
+             707013002000, 1390185, 1013672
+             707013002000, 12X0218, 1013776
+             707013002000, 1270233, 1013840
+             707013002000, 12X0158, 1013730
+             707013002000, 12X0062, 1013855
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.12.19. 03:12 - App started
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 03:12 - App turned off
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 03:13 - App started
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 03:21 - App started
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 03:21 - App turned off
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 03:24 - App started
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 03:27 - App started
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 03:28 - App turned off
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 03:33 - App started
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 03:34 - App started
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 03:37 - App started
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 03:37 - App started
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 03:38
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: DATE
+     - Data: 09.12.19.
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.12.19. 03:38
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: DATE
+     - Data: 05.12.19.
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.12.19. 03:38
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: DATE
+     - Data: 28.09.19.
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.12.19. 03:38
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: DATE
+     - Data: 07.09.19.
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.12.19. 03:38
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: DATE
+     - Data: 10.07.19.
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.12.19. 03:38
+    - LOGED change: POT.CopyPrintForms.cPRIM - getPRIMList
+     - Used: DATE
+     - Data: 01.07.19.
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.12.19. 03:44 - Waiting
+    *** BrunoBrckovic *** 
+
+- 28.12.19. 03:44 - App turned off
+    *** BrunoBrckovic *** 

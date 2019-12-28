@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Check" xml:space="preserve">
-    <value>Provjeri</value>
+    <value>Pregledaj</value>
   </data>
   <data name="CODE" xml:space="preserve">
     <value>ŠIFRA</value>
@@ -139,7 +139,7 @@
     <value>Obriši DB korisnika</value>
   </data>
   <data name="Do" xml:space="preserve">
-    <value>Uradi</value>
+    <value>Izradi</value>
   </data>
   <data name="Document" xml:space="preserve">
     <value>Dokument</value>
@@ -192,7 +192,7 @@
     <comment>PrintME</comment>
   </data>
   <data name="Set" xml:space="preserve">
-    <value>Postavi</value>
+    <value>Postavke</value>
   </data>
   <data name="SetDBUser" xml:space="preserve">
     <value>Dodaj DB korisnika</value>
@@ -327,5 +327,11 @@
   </data>
   <data name="Closed" xml:space="preserve">
     <value>Zatvoren</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Uredi</value>
+  </data>
+  <data name="Service" xml:space="preserve">
+    <value>Servis</value>
   </data>
 </root>

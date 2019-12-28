@@ -8,6 +8,7 @@ using System.ComponentModel;
 using System.Deployment.Application;
 using System.Diagnostics;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.Resources;
 using System.Text;
 using System.Threading;
@@ -506,7 +507,7 @@ namespace POT
         {
             try
             {
-                Program.LoadStart();
+                //Program.LoadStart();
 
                 MainCmpSelector mfs = new MainCmpSelector();
                 mfs.ShowDialog();
@@ -619,6 +620,8 @@ namespace POT
             this.label21.Text = Properties.strings.Set;
             this.label22.Text = Properties.strings.Check;
             this.label23.Text = Properties.strings.Do;
+            this.label33.Text = Properties.strings.Service;
+            this.label37.Text = Properties.strings.Edit;
 
             this.linkLabel1.Text = Properties.strings.SetDBUser;
             this.linkLabel2.Text = Properties.strings.DeleteDBUser;
@@ -968,6 +971,32 @@ namespace POT
         {
             TestForm tf = new TestForm();
             tf.Show();
+        }
+
+        private void linkLabel26_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Properties.Settings.Default.pageNbr = 1;
+            Properties.Settings.Default.partRows = 0;
+            Properties.Settings.Default.printingSN = false;
+
+            int screenWidth = Screen.PrimaryScreen.Bounds.Width;
+            int screenHeight = Screen.PrimaryScreen.Bounds.Height;
+
+            printPreviewDialogPrim.Document = printDocumentPrim;
+            printPreviewDialogPrim.Size = new System.Drawing.Size(screenWidth - ((screenWidth / 100) * 60), screenHeight - (screenHeight / 100) * 10);
+            printPreviewDialogPrim.ShowDialog();
+
+        }
+
+        private void printDocumentPrim_PrintPage(object sender, PrintPageEventArgs e)
+        {
+
+            PrintMeRN pr = new PrintMeRN(18);
+            //PrintMe pr = new PrintMe(cmpS, cmpR, sifrarnikArr, partListPrint, PrimkaNumber);
+            pr.Print(e);
+            
+            Properties.Settings.Default.pageNbr = 1;
+            Properties.Settings.Default.Save();
         }
     }
 }

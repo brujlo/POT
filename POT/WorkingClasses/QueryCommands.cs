@@ -320,6 +320,52 @@ namespace POT
             return arr;
         }
 
+        public List<String> RegionInfoByUserID(long mUserID)
+        {
+            List<String> arr = new List<string>();
+
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "Select RegionID from Users where UserID = " + mUserID;
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+            long id = 0;
+
+            if (dataReader.HasRows)
+            {
+                id = long.Parse(dataReader["RegionID"].ToString());
+                dataReader.Close();
+
+                query = "Select * from Regija where RegionID = " + id;
+                command = new SqlCommand(query, cnn);
+                command.ExecuteNonQuery();
+                dataReader = command.ExecuteReader();
+                dataReader.Read();
+
+                if (dataReader.HasRows)
+                {
+                    do
+                    {
+                        arr.Add(dataReader["RegionID"].ToString());
+                        arr.Add(dataReader["Region"].ToString());
+                        arr.Add(dataReader["FullRegion"].ToString());
+                    } while (dataReader.Read());
+                }
+                else
+                {
+                    arr.Add("nok");
+                }
+            }
+            else
+            {
+                arr.Add("nok");
+            }
+            dataReader.Close();
+            cnn.Close();
+            return arr;
+        }
+
         public List<String> UsersInfo(String Uname, String Pass)
         {
             List<String> arr = new List<string>();
@@ -2141,12 +2187,17 @@ namespace POT
             return arr;
         }
 
-        public List<long> GetAllPRIMID()
+        public List<long> GetAllPRIMID(Boolean desc)
         {
             List<long> arr = new List<long>();
             //SqlConnection cnn = cn.Connect(Uname, Pass);
             cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
-            query = "Select Distinct primID from PRIM order by primID asc";
+
+            if (desc)
+                query = "Select Distinct primID from PRIM order by primID desc";
+            else
+                query = "Select Distinct primID from PRIM order by primID asc";
+
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
             SqlDataReader dataReader = command.ExecuteReader();
@@ -2195,12 +2246,14 @@ namespace POT
             return arr;
         }
 
-        public List<String> GetAllPRIMdateCreated()
+        public List<String> GetAllPRIMdateCreated(Boolean desc)
         {
             List<String> arr = new List<string>();
+            List<DateTime> arrSort = new List<DateTime>();
             //SqlConnection cnn = cn.Connect(Uname, Pass);
             cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
             query = "Select Distinct dateCreated from PRIM";
+
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
             SqlDataReader dataReader = command.ExecuteReader();
@@ -2210,8 +2263,19 @@ namespace POT
             {
                 do
                 {
-                    arr.Add(dataReader["dateCreated"].ToString());
+                    arrSort.Add(Convert.ToDateTime(dataReader["dateCreated"].ToString()));
+                    
+                    if(desc)
+                        arrSort.Sort((x, y) => y.CompareTo(x));
+                    else
+                        arrSort.Sort((x, y) => x.CompareTo(y));
+
                 } while (dataReader.Read());
+
+                foreach(DateTime dt in arrSort)
+                {
+                    arr.Add(dt.ToString("dd.MM.yy."));
+                }
             }
             else
             {
@@ -3026,6 +3090,78 @@ namespace POT
 
             cnn.Close();
             return arr;
+        }
+
+        public TIDs getTicketByID(double mID)
+        {
+            List<TIDs> arr = new List<TIDs>();
+
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "SELECT * FROM Ticket where TicketID = " + mID;
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            TIDs tmp = new TIDs();
+
+            if (dataReader.HasRows)
+            {
+                try
+                {
+                    TIDs tc = new TIDs(
+                        dataReader["TicketID"] == DBNull.Value ? 0 : long.Parse(dataReader["TicketID"].ToString()),
+                        dataReader["TvrtkeID"] == DBNull.Value ? 0 : long.Parse(dataReader["TvrtkeID"].ToString()),
+                        dataReader["Prio"] == DBNull.Value ? 0 : long.Parse(dataReader["Prio"].ToString()),
+                        dataReader["Filijala"].ToString(),
+                        dataReader["CCN"].ToString(),
+                        dataReader["CID"].ToString(),
+                        dataReader["DatPrijave"].ToString(),
+                        dataReader["VriPrijave"].ToString(),
+                        dataReader["DatSLA"].ToString(),
+                        dataReader["VriSLA"].ToString(),
+                        dataReader["Drive"] == DBNull.Value ? 0 : long.Parse(dataReader["Drive"].ToString()),
+                        dataReader["NazivUredaja"].ToString(),
+                        dataReader["OpisKvara"].ToString(),
+                        dataReader["Prijavio"].ToString(),
+                        dataReader["UserIDPreuzeo"] == DBNull.Value ? 0 : long.Parse(dataReader["UserIDPreuzeo"].ToString()),
+                        dataReader["DatPreuzeto"].ToString(),
+                        dataReader["VriPreuzeto"].ToString(),
+                        dataReader["UserIDDrive"] == DBNull.Value ? 0 : long.Parse(dataReader["UserIDDrive"].ToString()),
+                        dataReader["DatDrive"].ToString(),
+                        dataReader["VriDrive"].ToString(),
+                        dataReader["UserIDPoceo"] == DBNull.Value ? 0 : long.Parse(dataReader["UserIDPoceo"].ToString()),
+                        dataReader["DatPoceo"].ToString(),
+                        dataReader["VriPoceo"].ToString(),
+                        dataReader["UserIDZavrsio"] == DBNull.Value ? 0 : long.Parse(dataReader["UserIDZavrsio"].ToString()),
+                        dataReader["DatZavrsio"].ToString(),
+                        dataReader["VriZavrsio"].ToString(),
+                        dataReader["UserIDUnio"] == DBNull.Value ? 0 : long.Parse(dataReader["UserIDUnio"].ToString()),
+                        dataReader["DatReport"].ToString(),
+                        dataReader["VriReport"].ToString(),
+                        dataReader["RNID"].ToString(),
+                        dataReader["UserIDSastavio"] == DBNull.Value ? 0 : long.Parse(dataReader["UserIDSastavio"].ToString())
+                        );
+
+                    tc.CopyTo(tmp);
+
+                    cnn.Close();
+                    return tc;
+                }
+                catch (Exception e2)
+                {
+                    new LogWriter(e2);
+                    return tmp;
+                }
+                finally
+                {
+                    if (cnn.State.ToString().Equals("Open"))
+                        cnn.Close();
+                }
+            }
+
+            cnn.Close();
+            return tmp;
         }
 
         public List<String> openedTicketsList(String Uname, String Pass)
@@ -5523,6 +5659,82 @@ namespace POT
                     tempList.Add(tmpInvoiceParts);
 
                 } while (dataReader.Read());
+            }
+
+            dataReader.Close();
+            cnn.Close();
+            return tempList;
+        }
+
+        public List<long> GetAllNewPartsIdByTidIDFromRN(long _tidID)
+        {
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "select PartIDNew from RN where PartIDNew <> 0 and TicketIDRN = " + _tidID;
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            List<long> tempList = new List<long>();
+
+            if (dataReader.HasRows)
+            {
+                do
+                {
+                    tempList.Add(long.Parse(dataReader["PartIDNew"].ToString()));
+                } while (dataReader.Read());
+            }
+
+            dataReader.Close();
+            cnn.Close();
+            return tempList;
+        }
+
+        public List<long> GetAllOldPartsIdByTidIDFromRN(long _tidID)
+        {
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "select PartIDOld from RN where PartIDOld <> 0 and TicketIDRN = " + _tidID;
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            List<long> tempList = new List<long>();
+
+            if (dataReader.HasRows)
+            {
+                do
+                {
+                    tempList.Add(long.Parse(dataReader["PartIDOld"].ToString()));
+                } while (dataReader.Read());
+            }
+
+            dataReader.Close();
+            cnn.Close();
+            return tempList;
+        }
+
+        public List<String> GetAllInfoByTidIDFromRN(long _tidID)
+        {
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "select * from RN where TicketIDRN = " + _tidID;
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            List<String> tempList = new List<String>();
+
+            if (dataReader.HasRows)
+            {
+                tempList.Add(dataReader["TicketIDRN"].ToString());
+                tempList.Add(dataReader["ErrorCode"].ToString());
+                tempList.Add(dataReader["Description"].ToString());
+                tempList.Add(dataReader["RB"].ToString());
+            }
+            else
+            {
+                tempList.Add("nok");
             }
 
             dataReader.Close();

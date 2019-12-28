@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using POT.WorkingClasses;
 using System.Media;
 using System.Diagnostics;
+using System.IO;
 
 namespace POT.Documents
 {
@@ -575,42 +576,6 @@ namespace POT.Documents
             TIDstatus(tidLst[index]);
         }
 
-        private void PrintRNBT_Click(object sender, EventArgs e)
-        {
-            //String printerName = printDialog1.PrinterSettings.PrinterName;
-
-            //try
-            //{
-            //    PrintDialog printDialog1 = new PrintDialog();
-            //    printDialog1.Document = printDocumentOtp;
-
-            //    printDialog1.PrinterSettings.PrinterName = "Microsoft Print to PDF";
-
-            //    if (!printDialog1.PrinterSettings.IsValid) return;
-
-            //    if (!Directory.Exists(Properties.Settings.Default.DefaultFolder + "\\OTP"))
-            //        return;
-
-            //    string fileName = "\\OTP " + OTPNumber.ToString().Replace("/", "") + ".pdf";
-            //    string directory = Properties.Settings.Default.DefaultFolder + "\\OTP";
-
-            //    printDialog1.PrinterSettings.PrintToFile = true;
-            //    printDocumentOtp.PrinterSettings.PrintFileName = directory + fileName;
-            //    printDocumentOtp.PrinterSettings.PrintToFile = true;
-            //    printDocumentOtp.Print();
-
-            //    printDialog1.PrinterSettings.PrintToFile = false;
-            //    printDocumentOtp.PrinterSettings.PrintToFile = false;
-            //    printDialog1.PrinterSettings.PrinterName = printerName;
-            //    printDocumentOtp.PrinterSettings.PrinterName = printerName;
-            //}
-            //catch (Exception e1)
-            //{
-            //    new LogWriter(e1);
-            //    MessageBox.Show(e1.Message + Environment.NewLine + "PDF file not saved.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
-        }
-
         private void OpenRNBT_Click(object sender, EventArgs e)
         {
             long id = 0;
@@ -648,6 +613,59 @@ namespace POT.Documents
         private void CloseRNBT_Click(object sender, EventArgs e)
         {
             MessageBox.Show(new NotImplementedException().ToString());
+        }
+
+        private void PrintRNBT_Click(object sender, EventArgs e)
+        {
+            int screenWidth = Screen.PrimaryScreen.Bounds.Width;
+            int screenHeight = Screen.PrimaryScreen.Bounds.Height;
+
+            printPreviewDialogPrim.Document = printDocumentPrim;
+            printPreviewDialogPrim.Size = new System.Drawing.Size(screenWidth - ((screenWidth / 100) * 60), screenHeight - (screenHeight / 100) * 10);
+            printPreviewDialogPrim.ShowDialog();
+        }
+
+        private void printDocumentPrim_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            PrintMeRN pr = new PrintMeRN(long.Parse(TIDidTB.Text));
+            pr.Print(e);
+        }
+
+        private void PrintRNBTSelect_Click(object sender, EventArgs e)
+        {
+            PrintDialog printDialog1 = new PrintDialog();
+            printDialog1.Document = printDocumentPrim;
+            DialogResult result = printDialog1.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                SaveFileDialog pdfSaveDialog = new SaveFileDialog();
+
+                String tidName = TIDidTB.Text + "_" + CCNTB.Text + "_" + CIDTB.Text;
+
+                if (printDialog1.PrinterSettings.PrinterName == "Microsoft Print to PDF")
+                {   // force a reasonable filename
+                    string basename = Path.GetFileNameWithoutExtension("RN_" + tidName);
+                    string directory = Path.GetDirectoryName("RN_" + tidName);
+                    printDocumentPrim.PrinterSettings.PrintToFile = true;
+                    // confirm the user wants to use that name
+                    pdfSaveDialog.InitialDirectory = directory;
+                    pdfSaveDialog.FileName = basename + ".pdf";
+                    pdfSaveDialog.Filter = "PDF File|*.pdf";
+                    result = pdfSaveDialog.ShowDialog();
+                    if (result != DialogResult.Cancel)
+                        printDocumentPrim.PrinterSettings.PrintFileName = pdfSaveDialog.FileName;
+                }
+
+                if (result != DialogResult.Cancel)  // in case they canceled the save as dialog
+                {
+                    printDocumentPrim.Print();
+                    MessageBox.Show("Saved to location: " + Environment.NewLine + pdfSaveDialog.FileName, "SAVED", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    PrintRNBT_Click(sender, e);
+                }
+            }
         }
     }
 }

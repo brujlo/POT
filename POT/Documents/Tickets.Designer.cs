@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tickets));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label30 = new System.Windows.Forms.Label();
@@ -66,6 +67,7 @@
             this.cmpID = new System.Windows.Forms.TextBox();
             this.companyCB = new System.Windows.Forms.ComboBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.CloseRNBT = new System.Windows.Forms.Button();
             this.StornoBT = new System.Windows.Forms.Button();
             this.PrintRNBT = new System.Windows.Forms.Button();
             this.OpenRNBT = new System.Windows.Forms.Button();
@@ -152,7 +154,10 @@
             this.TIDcidCB = new System.Windows.Forms.ComboBox();
             this.TIDccnCB = new System.Windows.Forms.ComboBox();
             this.TIDidCB = new System.Windows.Forms.ComboBox();
-            this.CloseRNBT = new System.Windows.Forms.Button();
+            this.printPreviewDialogPrim = new System.Windows.Forms.PrintPreviewDialog();
+            this.printDocumentPrim = new System.Drawing.Printing.PrintDocument();
+            this.printDialog1 = new System.Windows.Forms.PrintDialog();
+            this.PrintRNBTSelect = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -597,6 +602,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.PrintRNBTSelect);
             this.tabPage2.Controls.Add(this.CloseRNBT);
             this.tabPage2.Controls.Add(this.StornoBT);
             this.tabPage2.Controls.Add(this.PrintRNBT);
@@ -645,6 +651,19 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "TID info";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // CloseRNBT
+            // 
+            this.CloseRNBT.BackColor = System.Drawing.Color.YellowGreen;
+            this.CloseRNBT.Enabled = false;
+            this.CloseRNBT.ForeColor = System.Drawing.Color.Black;
+            this.CloseRNBT.Location = new System.Drawing.Point(759, 420);
+            this.CloseRNBT.Name = "CloseRNBT";
+            this.CloseRNBT.Size = new System.Drawing.Size(113, 54);
+            this.CloseRNBT.TabIndex = 129;
+            this.CloseRNBT.Text = "Close RN";
+            this.CloseRNBT.UseVisualStyleBackColor = false;
+            this.CloseRNBT.Click += new System.EventHandler(this.CloseRNBT_Click);
             // 
             // StornoBT
             // 
@@ -1610,18 +1629,38 @@
             this.TIDidCB.TabIndex = 0;
             this.TIDidCB.SelectedIndexChanged += new System.EventHandler(this.TIDidCB_SelectedIndexChanged);
             // 
-            // CloseRNBT
+            // printPreviewDialogPrim
             // 
-            this.CloseRNBT.BackColor = System.Drawing.Color.YellowGreen;
-            this.CloseRNBT.Enabled = false;
-            this.CloseRNBT.ForeColor = System.Drawing.Color.Black;
-            this.CloseRNBT.Location = new System.Drawing.Point(759, 420);
-            this.CloseRNBT.Name = "CloseRNBT";
-            this.CloseRNBT.Size = new System.Drawing.Size(113, 54);
-            this.CloseRNBT.TabIndex = 129;
-            this.CloseRNBT.Text = "Close RN";
-            this.CloseRNBT.UseVisualStyleBackColor = false;
-            this.CloseRNBT.Click += new System.EventHandler(this.CloseRNBT_Click);
+            this.printPreviewDialogPrim.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialogPrim.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialogPrim.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialogPrim.Enabled = true;
+            this.printPreviewDialogPrim.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialogPrim.Icon")));
+            this.printPreviewDialogPrim.Name = "printPreviewDialogPrim";
+            this.printPreviewDialogPrim.Visible = false;
+            // 
+            // printDocumentPrim
+            // 
+            this.printDocumentPrim.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocumentPrim_PrintPage);
+            // 
+            // printDialog1
+            // 
+            this.printDialog1.AllowSomePages = true;
+            this.printDialog1.Document = this.printDocumentPrim;
+            this.printDialog1.PrintToFile = true;
+            this.printDialog1.UseEXDialog = true;
+            // 
+            // PrintRNBTSelect
+            // 
+            this.PrintRNBTSelect.BackColor = System.Drawing.Color.Khaki;
+            this.PrintRNBTSelect.ForeColor = System.Drawing.Color.Black;
+            this.PrintRNBTSelect.Location = new System.Drawing.Point(503, 489);
+            this.PrintRNBTSelect.Name = "PrintRNBTSelect";
+            this.PrintRNBTSelect.Size = new System.Drawing.Size(113, 54);
+            this.PrintRNBTSelect.TabIndex = 130;
+            this.PrintRNBTSelect.Text = "Select printer";
+            this.PrintRNBTSelect.UseVisualStyleBackColor = false;
+            this.PrintRNBTSelect.Click += new System.EventHandler(this.PrintRNBTSelect_Click);
             // 
             // Tickets
             // 
@@ -1776,5 +1815,9 @@
         private System.Windows.Forms.Button OpenRNBT;
         private System.Windows.Forms.Button StornoBT;
         private System.Windows.Forms.Button CloseRNBT;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialogPrim;
+        private System.Drawing.Printing.PrintDocument printDocumentPrim;
+        private System.Windows.Forms.PrintDialog printDialog1;
+        private System.Windows.Forms.Button PrintRNBTSelect;
     }
 }

@@ -82,6 +82,7 @@ namespace POT
                 }
             }
             Program.LoadStop();
+            this.BringToFront();
             this.Focus();
         }
     }

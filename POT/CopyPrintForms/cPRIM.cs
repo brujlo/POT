@@ -62,7 +62,7 @@ namespace POT.CopyPrintForms
             //Thread myThread = new Thread(fillSifrarnik);
             //myThread.Start();
 
-            primID = qc.GetAllPRIMID();
+            primID = qc.GetAllPRIMID(true);
             if (primID[0] != -1)
             {
                 for (int i = 0; i < primID.Count(); i++)
@@ -81,7 +81,7 @@ namespace POT.CopyPrintForms
 
             }
 
-            dateCreated = qc.GetAllPRIMdateCreated();
+            dateCreated = qc.GetAllPRIMdateCreated(true);
             if (!dateCreated[0].Equals("nok"))
             {
                 for (int i = 0; i < dateCreated.Count(); i++)
@@ -269,8 +269,8 @@ namespace POT.CopyPrintForms
 
                 if (printDialog1.PrinterSettings.PrinterName == "Microsoft Print to PDF")
                 {   // force a reasonable filename
-                    string basename = System.IO.Path.GetFileNameWithoutExtension("PRIM " + PRIMNumber.ToString());
-                    string directory = System.IO.Path.GetDirectoryName("PRIM " + PRIMNumber.ToString());
+                    string basename = System.IO.Path.GetFileNameWithoutExtension("PRIM " + PRIMNumber.Replace("/", ""));
+                    string directory = System.IO.Path.GetDirectoryName("PRIM " + PRIMNumber.Replace("/", ""));
                     printDocumentPrim.PrinterSettings.PrintToFile = true;
                     // confirm the user wants to use that name
                     pdfSaveDialog.InitialDirectory = directory;

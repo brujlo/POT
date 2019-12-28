@@ -232,6 +232,15 @@ namespace POT.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Edit.
+        /// </summary>
+        internal static string Edit {
+            get {
+                return ResourceManager.GetString("Edit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Company/Region.
         /// </summary>
         internal static string EditRegion {
@@ -480,6 +489,15 @@ namespace POT.Properties {
         internal static string SERIALNBR {
             get {
                 return ResourceManager.GetString("SERIALNBR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Service.
+        /// </summary>
+        internal static string Service {
+            get {
+                return ResourceManager.GetString("Service", resourceCulture);
             }
         }
         
