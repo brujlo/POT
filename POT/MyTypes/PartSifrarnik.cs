@@ -185,7 +185,7 @@ namespace POT.MyTypes
             }
             set
             {
-                if (value.Equals("kom") || value.Equals("pak") || value.Equals("kut"))
+                if (value.Equals("kom") || value.Equals("pak") || value.Equals("kut") || value.Equals("sat") || value.Equals("dan") || value.Equals("mje") || value.Equals("god"))
                 {
                     packing = value;
                 }

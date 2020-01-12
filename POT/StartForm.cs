@@ -47,7 +47,8 @@ namespace POT
             if (Properties.Settings.Default.AutoLogin == true)
             {
                 checkBox2.Checked = true;
-                OkBT_Click_1(sender, e);
+                //OkBT_Click_1(sender, e);
+                OkBT.PerformClick();
             }
         }
 

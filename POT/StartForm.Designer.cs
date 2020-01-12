@@ -49,9 +49,10 @@
             // OkBT
             // 
             this.OkBT.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.OkBT.Location = new System.Drawing.Point(329, 340);
+            this.OkBT.Location = new System.Drawing.Point(292, 272);
+            this.OkBT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.OkBT.Name = "OkBT";
-            this.OkBT.Size = new System.Drawing.Size(160, 56);
+            this.OkBT.Size = new System.Drawing.Size(142, 45);
             this.OkBT.TabIndex = 5;
             this.OkBT.Text = "OK";
             this.OkBT.UseVisualStyleBackColor = true;
@@ -60,44 +61,47 @@
             // UsernameBX
             // 
             this.UsernameBX.AcceptsTab = true;
-            this.UsernameBX.Location = new System.Drawing.Point(127, 156);
+            this.UsernameBX.Location = new System.Drawing.Point(113, 125);
+            this.UsernameBX.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UsernameBX.Name = "UsernameBX";
-            this.UsernameBX.Size = new System.Drawing.Size(263, 26);
+            this.UsernameBX.Size = new System.Drawing.Size(234, 22);
             this.UsernameBX.TabIndex = 1;
             // 
             // UserenameLB
             // 
             this.UserenameLB.AutoSize = true;
-            this.UserenameLB.Location = new System.Drawing.Point(38, 162);
+            this.UserenameLB.Location = new System.Drawing.Point(34, 130);
             this.UserenameLB.Name = "UserenameLB";
-            this.UserenameLB.Size = new System.Drawing.Size(83, 20);
+            this.UserenameLB.Size = new System.Drawing.Size(73, 17);
             this.UserenameLB.TabIndex = 5;
             this.UserenameLB.Text = "Username";
             // 
             // PasswordLB
             // 
             this.PasswordLB.AutoSize = true;
-            this.PasswordLB.Location = new System.Drawing.Point(38, 201);
+            this.PasswordLB.Location = new System.Drawing.Point(34, 161);
             this.PasswordLB.Name = "PasswordLB";
-            this.PasswordLB.Size = new System.Drawing.Size(78, 20);
+            this.PasswordLB.Size = new System.Drawing.Size(69, 17);
             this.PasswordLB.TabIndex = 0;
             this.PasswordLB.Text = "Password";
             // 
             // PasswordBX
             // 
             this.PasswordBX.AcceptsTab = true;
-            this.PasswordBX.Location = new System.Drawing.Point(127, 195);
+            this.PasswordBX.Location = new System.Drawing.Point(113, 156);
+            this.PasswordBX.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PasswordBX.Name = "PasswordBX";
             this.PasswordBX.PasswordChar = '*';
-            this.PasswordBX.Size = new System.Drawing.Size(263, 26);
+            this.PasswordBX.Size = new System.Drawing.Size(234, 22);
             this.PasswordBX.TabIndex = 2;
             // 
             // CancelBT
             // 
             this.CancelBT.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.CancelBT.Location = new System.Drawing.Point(12, 340);
+            this.CancelBT.Location = new System.Drawing.Point(11, 272);
+            this.CancelBT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CancelBT.Name = "CancelBT";
-            this.CancelBT.Size = new System.Drawing.Size(160, 56);
+            this.CancelBT.Size = new System.Drawing.Size(142, 45);
             this.CancelBT.TabIndex = 6;
             this.CancelBT.Text = "Cancel";
             this.CancelBT.UseVisualStyleBackColor = true;
@@ -106,9 +110,10 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(127, 228);
+            this.checkBox1.Location = new System.Drawing.Point(113, 182);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(114, 24);
+            this.checkBox1.Size = new System.Drawing.Size(99, 21);
             this.checkBox1.TabIndex = 3;
             this.checkBox1.Text = "Remember";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -117,9 +122,9 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(319, 228);
+            this.linkLabel1.Location = new System.Drawing.Point(284, 182);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(146, 20);
+            this.linkLabel1.Size = new System.Drawing.Size(127, 17);
             this.linkLabel1.TabIndex = 9;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Set DB Connection";
@@ -130,9 +135,10 @@
             this.rbHrv.AutoSize = true;
             this.rbHrv.Checked = true;
             this.rbHrv.ForeColor = System.Drawing.Color.Red;
-            this.rbHrv.Location = new System.Drawing.Point(439, 156);
+            this.rbHrv.Location = new System.Drawing.Point(390, 125);
+            this.rbHrv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rbHrv.Name = "rbHrv";
-            this.rbHrv.Size = new System.Drawing.Size(58, 24);
+            this.rbHrv.Size = new System.Drawing.Size(51, 21);
             this.rbHrv.TabIndex = 7;
             this.rbHrv.TabStop = true;
             this.rbHrv.Text = "Hrv";
@@ -142,9 +148,10 @@
             // 
             this.rbEng.AutoSize = true;
             this.rbEng.ForeColor = System.Drawing.Color.Red;
-            this.rbEng.Location = new System.Drawing.Point(439, 195);
+            this.rbEng.Location = new System.Drawing.Point(390, 156);
+            this.rbEng.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rbEng.Name = "rbEng";
-            this.rbEng.Size = new System.Drawing.Size(63, 24);
+            this.rbEng.Size = new System.Drawing.Size(54, 21);
             this.rbEng.TabIndex = 8;
             this.rbEng.Text = "Eng";
             this.rbEng.UseVisualStyleBackColor = true;
@@ -152,9 +159,10 @@
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(127, 258);
+            this.checkBox2.Location = new System.Drawing.Point(113, 206);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(174, 24);
+            this.checkBox2.Size = new System.Drawing.Size(153, 21);
             this.checkBox2.TabIndex = 4;
             this.checkBox2.Text = "Auto login next time";
             this.checkBox2.UseVisualStyleBackColor = true;
@@ -163,9 +171,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-7, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(-6, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(535, 144);
+            this.pictureBox1.Size = new System.Drawing.Size(476, 115);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
@@ -175,9 +184,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Nirmala UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(148, 309);
+            this.label1.Location = new System.Drawing.Point(132, 247);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(208, 28);
+            this.label1.Size = new System.Drawing.Size(184, 23);
             this.label1.TabIndex = 10;
             this.label1.Text = "Credentials checking ...";
             this.label1.Visible = false;
@@ -185,11 +194,11 @@
             // LoginFR
             // 
             this.AcceptButton = this.OkBT;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.CancelBT;
-            this.ClientSize = new System.Drawing.Size(521, 408);
+            this.ClientSize = new System.Drawing.Size(463, 326);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.rbEng);
@@ -204,6 +213,7 @@
             this.Controls.Add(this.OkBT);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "LoginFR";

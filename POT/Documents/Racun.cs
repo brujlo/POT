@@ -697,6 +697,12 @@ namespace POT.Documents
             }
             try
             {
+                //invoice.Id = 400401419; //treba i u queryu promjeniti newID
+                //invoice.DatumIzdano = "30.12.19";
+                //invoice.VrijemeIzdano = "12:34";
+                //invoice.Eur = (decimal)7.4391;
+                //invoice.DanTecaja = "30.12.19";
+
                 if (qc.SaveInvoice(invoicePartsList, invoice, invoice.Storno))
                 {
                     if (Program.SaveDocumentsPDF) saveToPDF();

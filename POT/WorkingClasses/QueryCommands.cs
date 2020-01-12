@@ -665,10 +665,10 @@ namespace POT
                     }
                 }
             }
-            catch (Exception)
+            catch (Exception e1)
             {
-                //new LogWriter(e1);
-                throw;
+                new LogWriter(e1);
+                //throw;
             }
             finally
             {
@@ -698,7 +698,8 @@ namespace POT
                     {
                         do
                         {
-                            prs.Add(long.Parse(dataReader["PartCode"].ToString()), dataReader["PartName"].ToString());
+                            if (!prs.ContainsKey(long.Parse(dataReader["PartCode"].ToString())))
+                                prs.Add(long.Parse(dataReader["PartCode"].ToString()), dataReader["PartName"].ToString());
                         } while (dataReader.Read());
                     }
                 }
@@ -736,7 +737,8 @@ namespace POT
                     {
                         do
                         {
-                            prs.Add(long.Parse(dataReader["SubPartCode"].ToString()), dataReader["SubPartName"].ToString());
+                            if (!prs.ContainsKey(long.Parse(dataReader["SubPartCode"].ToString())))
+                                prs.Add(long.Parse(dataReader["SubPartCode"].ToString()), dataReader["SubPartName"].ToString());
                         } while (dataReader.Read());
                     }
                 }
@@ -2259,46 +2261,46 @@ namespace POT
             SqlDataReader dataReader = command.ExecuteReader();
             dataReader.Read();
 
-            if (dataReader.HasRows)
-            {
-                do
-                {
-                    arrSort.Add(Convert.ToDateTime(dataReader["dateCreated"].ToString()));
-                    
-                    if(desc)
-                        arrSort.Sort((x, y) => y.CompareTo(x));
-                    else
-                        arrSort.Sort((x, y) => x.CompareTo(y));
-
-                } while (dataReader.Read());
-
-                foreach(DateTime dt in arrSort)
-                {
-                    arr.Add(dt.ToString("dd.MM.yy."));
-                }
-            }
-            else
-            {
-                arr.Add("nok");
-            }
-
             try
             {
-                List<DateTime> dates = new List<DateTime>();
-
-                foreach (String a in arr)
+                if (dataReader.HasRows)
                 {
-                    dates.Add(DateTime.Parse(a));
+                    do
+                    {
+                        arrSort.Add(Convert.ToDateTime(dataReader["dateCreated"].ToString()));
+                    
+                        if(desc)
+                            arrSort.Sort((x, y) => y.CompareTo(x));
+                        else
+                            arrSort.Sort((x, y) => x.CompareTo(y));
+
+                    } while (dataReader.Read());
+
+                    foreach(DateTime dt in arrSort)
+                    {
+                        arr.Add(dt.ToString("dd.MM.yy."));
+                    }
+                }
+                else
+                {
+                    arr.Add("nok");
                 }
 
-                dates.Sort();
-                arr.Clear();
-                DateConverter dc = new DateConverter();
+                //List<DateTime> dates = new List<DateTime>();
 
-                foreach (DateTime a in dates)
-                {
-                    arr.Add(dc.ConvertDDMMYY(a.ToShortDateString()));
-                }
+                //foreach (String a in arr)
+                //{
+                //    dates.Add(DateTime.Parse(a));
+                //}
+
+                //dates.Sort();
+                //arr.Clear();
+                //DateConverter dc = new DateConverter();
+
+                //foreach (DateTime a in dates)
+                //{
+                //    arr.Add(dc.ConvertDDMMYY(a.ToShortDateString()));
+                //}
             }
             catch (Exception)
             {
@@ -5164,6 +5166,7 @@ namespace POT
         {
             Boolean isExecuted = false;
             long newInvId = mInvoice.GetNewInvoiceNumber();
+            //long newInvId = mInvoice.Id;
 
             cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
             command = cnn.CreateCommand();
@@ -5179,6 +5182,7 @@ namespace POT
                     + newInvId + ", " + mInvoice.PonudaID + ", '" + mInvoice.DatumIzdano + "', '" + iznos + "', '" + mInvoice.DatumNaplaceno + "', " 
                     + mInvoice.Naplaceno + ", " + mInvoice.CustomerID + ", '" + eur + "', '" + mInvoice.Napomena + "', '" + mInvoice.VrijemeIzdano + "', " 
                     + mInvoice.Valuta + ", '" + mInvoice.Operater + "', '" + mInvoice.DanTecaja + "', '" + mInvoice.NacinPlacanja + "', " + mStorno + ", " + mInvoice.Konverzija + ")";
+
                 command.ExecuteNonQuery();
 
                 foreach (InvoiceParts prt in mInvoiceList)
@@ -5740,6 +5744,132 @@ namespace POT
             dataReader.Close();
             cnn.Close();
             return tempList;
+        }
+
+        public Boolean AddPartToSifrarnik(long mCategoryCode, String mCategoryName, long mPartCode, String mPartName, long mSubPartCode, String mSubPartName, String mPartNumber, double mPriceInKn, double mPriceOutKn, double mPriceInEur, double mPriceOutEur, String mPacking)
+        {
+            Boolean executed = false;
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "select Count(FullName) from Sifrarnik s where s.CategoryCode = " + mCategoryCode + " and PartCode = " + mPartCode + " and SubPartCode = " + mSubPartCode;
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows && !dataReader.GetValue(0).Equals(0))
+            {
+                executed = false;
+                dataReader.Close();
+            }
+            else
+            {
+                dataReader.Close();
+                command = cnn.CreateCommand();
+                SqlTransaction transaction = cnn.BeginTransaction();
+                command.Connection = cnn;
+                command.Transaction = transaction;
+
+                try
+                {
+                    command.CommandText = "INSERT INTO Sifrarnik (CategoryCode, CategoryName, PartCode, PartName, SubPartCode, SubPartName, PartNumber, PriceInKn, PriceOutKn, PriceInEur, PriceOutEur, Packing) " +
+                        "values (" + mCategoryCode + ", '" + mCategoryName + "', " + mPartCode + ", '" + mPartName + "', " + mSubPartCode + ", '" + mSubPartName + "', '" + mPartNumber + "', " + mPriceInKn + ", " + mPriceOutKn + ", " + mPriceInEur + ", " + mPriceOutEur + ", '" + mPacking + "')";
+                    command.ExecuteNonQuery();
+
+                    transaction.Commit();
+
+                    executed = true;
+                }
+                catch (Exception)
+                {
+                    //new LogWriter(e1);
+                    try
+                    {
+                        transaction.Rollback();
+                        executed = false;
+                        throw;
+                    }
+                    catch (Exception)
+                    {
+                        //new LogWriter(e2);
+                        throw;
+                    }
+                }
+                finally
+                {
+                    if (cnn.State.ToString().Equals("Open"))
+                        cnn.Close();
+                }
+            }
+            dataReader.Close();
+            cnn.Close();
+            return executed;
+        }
+
+        public Boolean UpdatePartSifrarnik(long mCategoryCode, String mCategoryName, long mPartCode, String mPartName, long mSubPartCode, String mSubPartName, String mPartNumber, double mPriceInKn, double mPriceOutKn, double mPriceInEur, double mPriceOutEur, String mPacking)
+        {
+            Boolean executed = false;
+
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "select Count(CategoryCode) from Sifrarnik";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            if (dataReader.HasRows)
+            {
+                dataReader.Close();
+                command = cnn.CreateCommand();
+                SqlTransaction transaction = cnn.BeginTransaction();
+                command.Connection = cnn;
+                command.Transaction = transaction;
+
+                try
+                {
+                    command.CommandText = "UPDATE Sifrarnik SET " +
+                        "CategoryCode = " + mCategoryCode +
+                        ", CategoryName = '" + mCategoryName +
+                        "', PartCode = " + mPartCode +
+                        ", PartName = '" + mPartName +
+                        "', SubPartCode = " + mSubPartCode +
+                        ", SubPartName = '" + mSubPartName +
+                        "', PartNumber = '" + mPartNumber +
+                        "', PriceInKn = " + mPriceInKn +
+                        ", PriceOutKn = " + mPriceOutKn +
+                        ", PriceInEur = " + mPriceInEur +
+                        ", PriceOutEur = " + mPriceOutEur +
+                        ", Packing = '" + mPacking + "' where FullCode = " + (mCategoryCode + mPartCode + mSubPartCode);
+
+                    command.ExecuteNonQuery();
+
+                    transaction.Commit();
+                    executed = true;
+                }
+                catch (Exception)
+                {
+                    //new LogWriter(e1);
+                    try
+                    {
+                        transaction.Rollback();
+                        executed = false;
+                        throw;
+                    }
+                    catch (Exception)
+                    {
+                        //new LogWriter(e2);
+                        throw;
+                    }
+                }
+                finally
+                {
+                    if (cnn.State.ToString().Equals("Open"))
+                        cnn.Close();
+                }
+            }
+            dataReader.Close();
+            cnn.Close();
+            return executed;
         }
     }
 }

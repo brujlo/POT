@@ -81,7 +81,7 @@ namespace POT.WorkingClasses
                 sCategory.Items.Add(key.Value);
 
                 if (bigest < (key.Key / 1000000))
-                    if ((key.Key / 1000000) != 999 )
+                    if ((key.Key / 1000000) != 999 && (key.Key / 1000000) != 998)
                         bigest = key.Key / 1000000;
             }
             lastIDCategory.Text = bigest.ToString();
@@ -521,7 +521,8 @@ namespace POT.WorkingClasses
                 sCategoryCodeNew.Enabled = true;
                 sCategoryNew.Enabled = true;
 
-                button1_Click(sender, e);
+                //button1_Click(sender, e);
+                button1.PerformClick();
 
                 foreach (KeyValuePair<long, String> item in categorySifrarnik)
                 {
@@ -570,6 +571,14 @@ namespace POT.WorkingClasses
                 {
                     sPartNameCodeNew.Items.Add(i);
                 }
+
+                PackingCB.Items.Add("kom");
+                PackingCB.Items.Add("pak");
+                PackingCB.Items.Add("sat");
+                PackingCB.Items.Add("dan");
+                PackingCB.Items.Add("mje");
+                PackingCB.Items.Add("god");
+                PackingCB.Items.Add("kut");
             }
             catch (Exception e1)
             {
@@ -641,7 +650,8 @@ namespace POT.WorkingClasses
             catch (Exception e1)
             {
                 Program.LoadStop();
-                //MessageBox.Show(e1.Message);
+                new LogWriter(e1);
+                MessageBox.Show(e1.Message);
             }
             finally
             {
@@ -679,6 +689,13 @@ namespace POT.WorkingClasses
                         sSubPartNameNew.Items.Add(item.Value);
                         sSubPartNameNew.SelectedIndex = 0;
                         sSubPartNameNew.Enabled = false;
+
+                        PriceINKNTB.Text = prtSif.PriceInKn.ToString();
+                        PriceOUTKNTB.Text = prtSif.PriceOutKn.ToString();
+                        PriceINEURTB.Text = prtSif.PriceInEur.ToString();
+                        PriceOUTEURTB.Text = prtSif.PriceOutEur.ToString();
+                        PackingCB.Text = prtSif.Packing;
+                        PartNumberTB.Text = prtSif.PartNumber;
 
                         break;
                     }
@@ -743,6 +760,13 @@ namespace POT.WorkingClasses
             sSubPartNameCodeNew.ResetText();
             sSubPartNameNew.ResetText();
 
+            PriceINKNTB.ResetText();
+            PriceOUTKNTB.ResetText();
+            PriceINEURTB.ResetText();
+            PriceOUTEURTB.ResetText();
+            PackingCB.ResetText();
+            PartNumberTB.ResetText();
+
             sCategoryCodeNew.Enabled = true;
             sCategoryNew.Enabled = true;
             sPartNameCodeNew.Enabled = true;
@@ -752,6 +776,163 @@ namespace POT.WorkingClasses
 
             prtSif = null;
             PostaviFullCode();
+        }
+
+        private void AddNewPart_Click(object sender, EventArgs e)
+        {
+            String CategoryName;
+            String PartName;
+            String SubPartName;
+            String Packing;
+            String PartNumber;
+
+            long CategoryCode;
+            long PartCode;
+            long SubPartCode;
+
+            double PriceInKn;
+            double PriceOutKn;
+            double PriceInEur;
+            double PriceOutEur;
+
+            if (!CheckFields(true))
+            {
+                MessageBox.Show("Please fill in all required fields." + Environment.NewLine + "Nothing done!");
+                return;
+            }
+
+            try
+            {
+                PriceInKn = double.Parse(PriceINKNTB.Text.Replace(',', '.'));
+                PriceOutKn = double.Parse(PriceOUTKNTB.Text.Replace(',', '.'));
+                PriceInEur = double.Parse(PriceINEURTB.Text.Replace(',', '.'));
+                PriceOutEur = double.Parse(PriceOUTEURTB.Text.Replace(',', '.'));
+
+                CategoryCode = long.Parse(sCategoryCodeNew.Text) * 1000000;
+                PartCode = long.Parse(sPartNameCodeNew.Text) * 1000;
+                SubPartCode = long.Parse(sSubPartNameCodeNew.Text);
+
+                Packing = PackingCB.Text;
+
+                CategoryName = sCategoryNew.Text;
+                PartName = sPartNameNew.Text;
+                SubPartName = sSubPartNameNew.Text;
+
+                PartNumber = PartNumberTB.Text;
+
+                if (qc.AddPartToSifrarnik(CategoryCode, CategoryName, PartCode, PartName, SubPartCode, SubPartName, PartNumber, PriceInKn, PriceOutKn, PriceInEur, PriceOutEur, Packing))
+                {
+                    MessageBox.Show("Part added.");
+                    button1.PerformClick();
+                }
+                else
+                {
+                    MessageBox.Show("Part already exist." + Environment.NewLine + "Nothing done!");
+                }
+            }
+            catch(Exception e1)
+            {
+                new LogWriter(e1);
+                MessageBox.Show(e1.Message + Environment.NewLine + "Nothing done!");
+            }
+        }
+
+        private Boolean CheckFields(Boolean insert)
+        {
+            try
+            {
+                if (insert)
+                {
+                    if (sCategoryNew.Text.Equals("")) return false;
+                    if (sCategoryCodeNew.Text.Equals("")) return false;
+
+                    if (sPartNameNew.Text.Equals("")) return false;
+                    if (sPartNameCodeNew.Text.Equals("")) return false;
+
+                    if (sSubPartNameNew.Text.Equals("")) return false;
+                    if (sSubPartNameCodeNew.Text.Equals("")) return false;
+                }
+                else //update
+                {
+                    if (sCategory.Text.Equals("")) return false;
+
+                    if (sPartName.Text.Equals("")) return false;
+
+                    if (sSubPartName.Text.Equals("")) return false;
+                }
+
+                if (PriceINKNTB.Text.Equals("")) return false;
+                if (PriceOUTKNTB.Text.Equals("")) return false;
+                if (PriceINEURTB.Text.Equals("")) return false;
+                if (PriceOUTEURTB.Text.Equals("")) return false;
+                if (PackingCB.Text.Equals("")) return false;
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
+                return false;
+            }
+
+            return true;
+        }
+
+        private void UpdatePart_Click(object sender, EventArgs e)
+        {
+            String CategoryName;
+            String PartName;
+            String SubPartName;
+            String Packing;
+            String PartNumber;
+
+            long CategoryCode;
+            long PartCode;
+            long SubPartCode;
+
+            double PriceInKn;
+            double PriceOutKn;
+            double PriceInEur;
+            double PriceOutEur;
+
+            if (!CheckFields(false))
+            {
+                MessageBox.Show("Please fill in all required fields." + Environment.NewLine + "Nothing done!");
+                return;
+            }
+
+            try
+            {
+                PriceInKn = double.Parse(PriceINKNTB.Text.Replace(',', '.'));
+                PriceOutKn = double.Parse(PriceOUTKNTB.Text.Replace(',', '.'));
+                PriceInEur = double.Parse(PriceINEURTB.Text.Replace(',', '.'));
+                PriceOutEur = double.Parse(PriceOUTEURTB.Text.Replace(',', '.'));
+
+                CategoryCode = long.Parse(sCategoryCodeNew.Text) * 1000000;
+                PartCode = long.Parse(sPartNameCodeNew.Text) * 1000;
+                SubPartCode = long.Parse(sSubPartNameCodeNew.Text);
+
+                Packing = PackingCB.Text;
+
+                CategoryName = sCategoryNew.Text;
+                PartName = sPartNameNew.Text;
+                SubPartName = sSubPartNameNew.Text;
+
+                PartNumber = PartNumberTB.Text;
+
+                if (qc.UpdatePartSifrarnik(CategoryCode, CategoryName, PartCode, PartName, SubPartCode, SubPartName, PartNumber, PriceInKn, PriceOutKn, PriceInEur, PriceOutEur, Packing))
+                {
+                    MessageBox.Show("Part updated.");
+                    button1.PerformClick();
+                }
+                else
+                {
+                    MessageBox.Show("Part does not exist." + Environment.NewLine + "Nothing done!");
+                }
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
+                MessageBox.Show(e1.Message + Environment.NewLine + "Nothing done!");
+            }
         }
     }
 }

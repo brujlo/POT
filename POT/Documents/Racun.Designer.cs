@@ -274,7 +274,7 @@
             // 
             this.FullPriceInfoLB.AutoSize = true;
             this.FullPriceInfoLB.ForeColor = System.Drawing.Color.Crimson;
-            this.FullPriceInfoLB.Location = new System.Drawing.Point(61, 41);
+            this.FullPriceInfoLB.Location = new System.Drawing.Point(8, 41);
             this.FullPriceInfoLB.Name = "FullPriceInfoLB";
             this.FullPriceInfoLB.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.FullPriceInfoLB.Size = new System.Drawing.Size(40, 17);
@@ -286,7 +286,7 @@
             // 
             this.PriceInfoLB.AutoSize = true;
             this.PriceInfoLB.ForeColor = System.Drawing.Color.Crimson;
-            this.PriceInfoLB.Location = new System.Drawing.Point(60, 19);
+            this.PriceInfoLB.Location = new System.Drawing.Point(7, 19);
             this.PriceInfoLB.Name = "PriceInfoLB";
             this.PriceInfoLB.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.PriceInfoLB.Size = new System.Drawing.Size(40, 17);
@@ -651,6 +651,7 @@
             this.CancelBT.Name = "CancelBT";
             this.CancelBT.Size = new System.Drawing.Size(139, 29);
             this.CancelBT.TabIndex = 24;
+            this.CancelBT.TabStop = false;
             this.CancelBT.Text = "&Cancel";
             this.CancelBT.UseVisualStyleBackColor = true;
             this.CancelBT.Click += new System.EventHandler(this.CancelBT_Click);
@@ -661,6 +662,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(131, 29);
             this.button3.TabIndex = 23;
+            this.button3.TabStop = false;
             this.button3.Text = "Selec&t Printer";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -671,6 +673,7 @@
             this.PrintPrewBT.Name = "PrintPrewBT";
             this.PrintPrewBT.Size = new System.Drawing.Size(131, 29);
             this.PrintPrewBT.TabIndex = 22;
+            this.PrintPrewBT.TabStop = false;
             this.PrintPrewBT.Text = "&Print";
             this.PrintPrewBT.UseVisualStyleBackColor = true;
             this.PrintPrewBT.Click += new System.EventHandler(this.PrintPrewBT_Click);
@@ -681,6 +684,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(131, 29);
             this.button1.TabIndex = 21;
+            this.button1.TabStop = false;
             this.button1.Text = "&Save";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
