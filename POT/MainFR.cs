@@ -994,9 +994,12 @@ namespace POT
             PrintMeRN pr = new PrintMeRN(18);
             //PrintMe pr = new PrintMe(cmpS, cmpR, sifrarnikArr, partListPrint, PrimkaNumber);
             pr.Print(e);
-            
-            Properties.Settings.Default.pageNbr = 1;
-            Properties.Settings.Default.Save();
+
+            if (!e.HasMorePages)
+            {
+                Properties.Settings.Default.pageNbr = 1;
+                Properties.Settings.Default.Save();
+            }
         }
     }
 }

@@ -660,7 +660,7 @@
             this.WorkTimeTB.Name = "WorkTimeTB";
             this.WorkTimeTB.Size = new System.Drawing.Size(128, 26);
             this.WorkTimeTB.TabIndex = 6;
-            this.WorkTimeTB.Text = "01:00";
+            this.WorkTimeTB.Text = "00:00";
             this.WorkTimeTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.WorkTimeTB.MouseClick += new System.Windows.Forms.MouseEventHandler(this.WorkTimeTB_MouseClick);
             this.WorkTimeTB.TextChanged += new System.EventHandler(this.WorkTimeTB_TextChanged);

@@ -964,3 +964,2490 @@ The statement has been terminated.
 
 - 12.01.20. 14:19 - App turned off
     *** BrunoBrckovic *** 
+
+- 12.01.20. 22:03 - App started
+    *** BrunoBrckovic *** 
+
+- 12.01.20. 22:03
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 Auto Cutter ACS-541-1N, 13002001, 390,00, 01:00, 0, 4, 677,48, 2709,92, 2709,92
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 12.01.20. 22:03
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.01.20. 22:04
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 12.01.20. 22:05 - App turned off
+    *** BrunoBrckovic *** 
+
+- 15.01.20. 11:19 - App started
+    *** BrunoBrckovic *** 
+
+- 15.01.20. 11:35 - App started
+    *** BrunoBrckovic *** 
+
+- 15.01.20. 12:01 - App started
+    *** BrunoBrckovic *** 
+
+- 15.01.20. 12:02
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near '8'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.UpdatePartSifrarnik(Int64 mCategoryCode, String mCategoryName, Int64 mPartCode, String mPartName, Int64 mSubPartCode, String mSubPartName, String mPartNumber, Double mPriceInKn, Double mPriceOutKn, Double mPriceInEur, Double mPriceOutEur, String mPacking) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 5861
+   at POT.WorkingClasses.PartEditor.UpdatePart_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 923
+ClientConnectionId:12ac2f69-13fd-4861-9573-88a2872bd52e
+Error Number:102,State:1,Class:15
+    - InnerEcp: 
+    - MessageEcp: Incorrect syntax near '8'.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.UpdatePartSifrarnik(Int64 mCategoryCode, String mCategoryName, Int64 mPartCode, String mPartName, Int64 mSubPartCode, String mSubPartName, String mPartNumber, Double mPriceInKn, Double mPriceOutKn, Double mPriceInEur, Double mPriceOutEur, String mPacking) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 5861
+   at POT.WorkingClasses.PartEditor.UpdatePart_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 923
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 15.01.20. 12:09
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near '8'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.UpdatePartSifrarnik(Int64 mCategoryCode, String mCategoryName, Int64 mPartCode, String mPartName, Int64 mSubPartCode, String mSubPartName, String mPartNumber, Double mPriceInKn, Double mPriceOutKn, Double mPriceInEur, Double mPriceOutEur, String mPacking) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 5861
+   at POT.WorkingClasses.PartEditor.UpdatePart_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 923
+ClientConnectionId:12ac2f69-13fd-4861-9573-88a2872bd52e
+Error Number:102,State:1,Class:15
+    - InnerEcp: 
+    - MessageEcp: Incorrect syntax near '8'.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.UpdatePartSifrarnik(Int64 mCategoryCode, String mCategoryName, Int64 mPartCode, String mPartName, Int64 mSubPartCode, String mSubPartName, String mPartNumber, Double mPriceInKn, Double mPriceOutKn, Double mPriceInEur, Double mPriceOutEur, String mPacking) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 5861
+   at POT.WorkingClasses.PartEditor.UpdatePart_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 923
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 15.01.20. 12:09
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near '8'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.UpdatePartSifrarnik(Int64 mCategoryCode, String mCategoryName, Int64 mPartCode, String mPartName, Int64 mSubPartCode, String mSubPartName, String mPartNumber, Double mPriceInKn, Double mPriceOutKn, Double mPriceInEur, Double mPriceOutEur, String mPacking) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 5861
+   at POT.WorkingClasses.PartEditor.UpdatePart_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 923
+ClientConnectionId:12ac2f69-13fd-4861-9573-88a2872bd52e
+Error Number:102,State:1,Class:15
+    - InnerEcp: 
+    - MessageEcp: Incorrect syntax near '8'.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.UpdatePartSifrarnik(Int64 mCategoryCode, String mCategoryName, Int64 mPartCode, String mPartName, Int64 mSubPartCode, String mSubPartName, String mPartNumber, Double mPriceInKn, Double mPriceOutKn, Double mPriceInEur, Double mPriceOutEur, String mPacking) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 5861
+   at POT.WorkingClasses.PartEditor.UpdatePart_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PartEditor.cs:line 923
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 15.01.20. 12:10
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near '8'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.UpdatePartSifrarnik(Int64 mCategoryCode, String mCategoryName, Int64 mPartCode, String mPartName, Int64 mSubPartCode, String mSubPartName, String mPartNumber, Double mPriceInKn, Double mPriceOutKn, Double mPriceInEur, Double mPriceOutEur, String mPacking)
+   at POT.WorkingClasses.PartEditor.UpdatePart_Click(Object sender, EventArgs e)
+ClientConnectionId:12ac2f69-13fd-4861-9573-88a2872bd52e
+Error Number:102,State:1,Class:15
+    - InnerEcp: 
+    - MessageEcp: Incorrect syntax near '8'.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.UpdatePartSifrarnik(Int64 mCategoryCode, String mCategoryName, Int64 mPartCode, String mPartName, Int64 mSubPartCode, String mSubPartName, String mPartNumber, Double mPriceInKn, Double mPriceOutKn, Double mPriceInEur, Double mPriceOutEur, String mPacking)
+   at POT.WorkingClasses.PartEditor.UpdatePart_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 15.01.20. 12:12
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near '8'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.UpdatePartSifrarnik(Int64 mCategoryCode, String mCategoryName, Int64 mPartCode, String mPartName, Int64 mSubPartCode, String mSubPartName, String mPartNumber, Double mPriceInKn, Double mPriceOutKn, Double mPriceInEur, Double mPriceOutEur, String mPacking)
+   at POT.WorkingClasses.PartEditor.UpdatePart_Click(Object sender, EventArgs e)
+ClientConnectionId:3d82d470-b07d-450d-9da3-605b2f08c6c1
+Error Number:102,State:1,Class:15
+    - InnerEcp: 
+    - MessageEcp: Incorrect syntax near '8'.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.UpdatePartSifrarnik(Int64 mCategoryCode, String mCategoryName, Int64 mPartCode, String mPartName, Int64 mSubPartCode, String mSubPartName, String mPartNumber, Double mPriceInKn, Double mPriceOutKn, Double mPriceInEur, Double mPriceOutEur, String mPacking)
+   at POT.WorkingClasses.PartEditor.UpdatePart_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 15.01.20. 12:13
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near '8'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.UpdatePartSifrarnik(Int64 mCategoryCode, String mCategoryName, Int64 mPartCode, String mPartName, Int64 mSubPartCode, String mSubPartName, String mPartNumber, Double mPriceInKn, Double mPriceOutKn, Double mPriceInEur, Double mPriceOutEur, String mPacking)
+   at POT.WorkingClasses.PartEditor.UpdatePart_Click(Object sender, EventArgs e)
+ClientConnectionId:3d82d470-b07d-450d-9da3-605b2f08c6c1
+Error Number:102,State:1,Class:15
+    - InnerEcp: 
+    - MessageEcp: Incorrect syntax near '8'.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.UpdatePartSifrarnik(Int64 mCategoryCode, String mCategoryName, Int64 mPartCode, String mPartName, Int64 mSubPartCode, String mSubPartName, String mPartNumber, Double mPriceInKn, Double mPriceOutKn, Double mPriceInEur, Double mPriceOutEur, String mPacking)
+   at POT.WorkingClasses.PartEditor.UpdatePart_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 15.01.20. 12:14
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near '8'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.UpdatePartSifrarnik(Int64 mCategoryCode, String mCategoryName, Int64 mPartCode, String mPartName, Int64 mSubPartCode, String mSubPartName, String mPartNumber, Double mPriceInKn, Double mPriceOutKn, Double mPriceInEur, Double mPriceOutEur, String mPacking)
+   at POT.WorkingClasses.PartEditor.UpdatePart_Click(Object sender, EventArgs e)
+ClientConnectionId:3d82d470-b07d-450d-9da3-605b2f08c6c1
+Error Number:102,State:1,Class:15
+    - InnerEcp: 
+    - MessageEcp: Incorrect syntax near '8'.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.UpdatePartSifrarnik(Int64 mCategoryCode, String mCategoryName, Int64 mPartCode, String mPartName, Int64 mSubPartCode, String mSubPartName, String mPartNumber, Double mPriceInKn, Double mPriceOutKn, Double mPriceInEur, Double mPriceOutEur, String mPacking)
+   at POT.WorkingClasses.PartEditor.UpdatePart_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 19:43 - App started
+    *** BrunoBrckovic *** 
+
+- 19.01.20. 19:44
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002000, 12X0084, 1013620, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 19:44
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002000, 12X0133, 1013708, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 19:44
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002000, 12X0221, 1013778, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 19:44
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002000, 12X0166, 1013653, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 19:44
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002000, 1690287, 1021606, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 19:44
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002000, 12X0149, 1013700, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 19:44
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002000, 1690286, 1021745, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 19:44
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002000, 1280098, 1013644, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 19:44
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002000, 12X0129, 1013690, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 19:44
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002000, 12X0124, 1013759, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 19:44
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002000, 1851063, 1013796, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 19:44
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002000, 12X0168, 1013658, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 19:44
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002000, 12X0147, 1013809, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 19:44
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002000, 12X0218, 1013776, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 19:44
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002000, 1270233, 1013840, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 19:44
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002000, 1390185, 1013672, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 19:44
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002000, 12X0158, 1013730, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 19:44
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002000, 12X0062, 1013855, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 19:46
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near '.20'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.IISPrebaciIzServisa(String Uname, String Pass, List`1 ListOfParts, Int64 RegionIDSender, Int64 CustomerID, String mNapomenaIUS)
+   at POT.Documents.IIS.button2_Click(Object sender, EventArgs e)
+ClientConnectionId:0eba2426-de90-4884-9173-ef7e0460a2b4
+Error Number:102,State:1,Class:15
+    - InnerEcp: 
+    - MessageEcp: Incorrect syntax near '.20'.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.IISPrebaciIzServisa(String Uname, String Pass, List`1 ListOfParts, Int64 RegionIDSender, Int64 CustomerID, String mNapomenaIUS)
+   at POT.Documents.IIS.button2_Click(Object sender, EventArgs e)
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 19:47
+    - LOGED change: POT.Documents.IIS - printDocumentIIS_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/004/001, , IIS, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 19:47
+    - LOGED change: POT.Documents.IIS - printDocumentIIS_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/004/001, , IIS, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 19:47
+    - LOGED change: POT.Documents.IIS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. IIS '20/004/001'.
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 19:47
+    - LOGED change: POT.Documents.IIS - printDocumentIIS_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/004/001, , IIS, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 19:47
+    - LOGED change: POT.Documents.IIS - printDocumentIIS_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/004/001, , IIS, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 19:48
+    - LOGED change: POT.Documents.IIS - printDocumentIIS_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/004/001, , IIS, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 19:48
+    - LOGED change: POT.Documents.IIS - printDocumentIIS_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/004/001, , IIS, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 19:51
+    - LOGED change: POT.Documents.IIS - printDocumentIIS_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/004/001, , IIS, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 19:51
+    - LOGED change: POT.Documents.IIS - printDocumentIIS_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/004/001, , IIS, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 19:52
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 940, 707013002000, listIssParts cnt 5, 200016, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200016
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 19:52
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 940, 707013002000, listIssParts cnt 5, 200016, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 19:52
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 940, 707013002000, listIssParts cnt 4, 190058, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190058
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 19:52
+    - LOGED change: POT.CopyPrintForms.cISS - printDocument1_PrintPage
+     - Used: Print
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 940, 707013002000, listIssParts cnt 4, 190058, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 19:52 - App turned off
+    *** BrunoBrckovic *** 
+
+- 19.01.20. 19:56 - App started
+    *** BrunoBrckovic *** 
+
+- 19.01.20. 19:56
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 789
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 789
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 19:56
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 789
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 789
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 19:59
+    - LOGED change: POT.Otpremnica - button1_Click
+     - Used: Add to list
+     - Data: 0707013002000, 12X0084, 1013620, ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 19:59
+    - LOGED change: POT.Otpremnica - button1_Click
+     - Used: Add to list
+     - Data: 0707013002000, 12X0133, 1013708, ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 19:59
+    - LOGED change: POT.Otpremnica - button1_Click
+     - Used: Add to list
+     - Data: 0707013002000, 12X0221, 1013778, ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 19:59
+    - LOGED change: POT.Otpremnica - button1_Click
+     - Used: Add to list
+     - Data: 0707013002000, 12X0166, 1013653, ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:00
+    - LOGED change: POT.Otpremnica - button1_Click
+     - Used: Add to list
+     - Data: 0707013002000, 1690287, 1021606, ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:00
+    - LOGED change: POT.Otpremnica - button1_Click
+     - Used: Add to list
+     - Data: 0707013002000, 12X0149, 1013700, ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:00
+    - LOGED change: POT.Otpremnica - button1_Click
+     - Used: Add to list
+     - Data: 0707013002000, 1690286, 1021745, ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:00
+    - LOGED change: POT.Otpremnica - button1_Click
+     - Used: Add to list
+     - Data: 0707013002000, 1280098, 1013644, ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:00
+    - LOGED change: POT.Otpremnica - button1_Click
+     - Used: Add to list
+     - Data: 0707013002000, 12X0129, 1013690, ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:00
+    - LOGED change: POT.Otpremnica - button1_Click
+     - Used: Add to list
+     - Data: 0707013002000, 12X0124, 1013759, ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:00
+    - LOGED change: POT.Otpremnica - button1_Click
+     - Used: Add to list
+     - Data: 0707013002000, 1851063, 1013796, ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:00
+    - LOGED change: POT.Otpremnica - button1_Click
+     - Used: Add to list
+     - Data: 0707013002000, 12X0168, 1013658, ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:00
+    - LOGED change: POT.Otpremnica - button1_Click
+     - Used: Add to list
+     - Data: 0707013002000, 12X0147, 1013809, ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:00
+    - LOGED change: POT.Otpremnica - button1_Click
+     - Used: Add to list
+     - Data: 0707013002000, 12X0218, 1013776, ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:00
+    - LOGED change: POT.Otpremnica - button1_Click
+     - Used: Add to list
+     - Data: 0707013002000, 1270233, 1013840, ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:00
+    - LOGED change: POT.Otpremnica - button1_Click
+     - Used: Add to list
+     - Data: 0707013002000, 1390185, 1013672, ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:00
+    - LOGED change: POT.Otpremnica - button1_Click
+     - Used: Add to list
+     - Data: 0707013002000, 12X0158, 1013730, ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:00
+    - LOGED change: POT.Otpremnica - button1_Click
+     - Used: Add to list
+     - Data: 0707013002000, 12X0062, 1013855, ng
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:00
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 789
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.Otpremnica.textBox1_Leave(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\Documents\Otpremnica.cs:line 789
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:00
+    - LOGED change: POT.Otpremnica - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/001, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:01
+    - LOGED change: POT.Otpremnica - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/001, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:01
+    - LOGED change: POT.Otpremnica - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. OTP '20/001'.
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:01
+    - LOGED change: POT.Otpremnica - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/001, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:01
+    - LOGED change: POT.Otpremnica - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/001, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:01
+    - LOGED change: POT.Otpremnica - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/001, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:01
+    - LOGED change: POT.Otpremnica - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/001, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:01
+    - LOGED change: POT.Otpremnica - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/001, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:01
+    - LOGED change: POT.Otpremnica - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/001, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:01
+    - LOGED change: POT.Otpremnica - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/001, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:01
+    - LOGED change: POT.Otpremnica - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/001, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:03 - App turned off
+    *** BrunoBrckovic *** 
+
+- 19.01.20. 20:04 - App started
+    *** BrunoBrckovic *** 
+
+- 19.01.20. 20:05 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 19.01.20. 20:05
+    - LOGED change: POT.SetDBConnection - button2_Click
+     - Used: DB connection address and name save.
+     - Data: 192.168.100.101, test
+     - Result: Saved, no msgToUser
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:05 - App started
+    *** BrunoBrckovic *** 
+
+- 19.01.20. 20:05
+    - LOGED change: POT.CompanyInfo - button2_Click
+     - Used: Changing MainCmp info
+     - Data: CES-POS d.o.o., 2.Poljanice 6, Zagreb, 10000, HR, 0.00, 0.00, PBZGHR2X, 02647369817, 080182296, HR8323400091100157894, 4, 1, www.ces-pos.hr, +38512307973, Bruno Brckovic, info@ces-pos.hr, support@ces-pos.hr, 2
+     - Result: Company (CES-POS d.o.o.) data is now selected.
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:05
+    - LOGED change: POT.MainCmpSelector - button1_Click
+     - Used: Main cmp select
+     - Data: CES-POS d.o.o.
+     - Result: Main cmp selected, please relog to see changes.
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:05 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 19.01.20. 20:05 - App started
+    *** BrunoBrckovic *** 
+
+- 19.01.20. 20:06
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002000, 12X0200, 1013828, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:06
+    - LOGED change: POT.Documents.IIS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. IIS '20/004/001'.
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:07
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002000, 12X0212, 1013656, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:10
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002013, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:10
+    - LOGED change: POT.Documents.IIS - printDocumentIIS_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/004/002, , IIS, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:10
+    - LOGED change: POT.Documents.IIS - printDocumentIIS_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/004/002, , IIS, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:10
+    - LOGED change: POT.Documents.IIS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. IIS '20/004/002'.
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:11
+    - LOGED change: POT.Documents.IIS - printDocumentIIS_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/004/002, , IIS, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:11
+    - LOGED change: POT.Documents.IIS - printDocumentIIS_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/004/002, , IIS, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:11
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002010, JJJJ, KKKKK, g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:11
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002013, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:11
+    - LOGED change: POT.Documents.IIS - button3_Click
+     - Used: Remove selected
+     - Data: ListViewSubItem: {1}, ListViewSubItem: {PRINTER Citizen CTS4000 Cover Cable L (Compatibility Parts:TB54101 -00F)}, ListViewSubItem: {707013002010}, ListViewSubItem: {JJJJ}, ListViewSubItem: {KKKKK}, ListViewSubItem: {sg}
+     - Result: Removed
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:11
+    - LOGED change: POT.Documents.IIS - button3_Click
+     - Used: Remove selected
+     - Data: ListViewSubItem: {1}, ListViewSubItem: {PRINTER Citizen CTS4000 Cover, Cutter Paper ( With Caution, Edge)}, ListViewSubItem: {707013002013}, ListViewSubItem: {}, ListViewSubItem: {}, ListViewSubItem: {sg}
+     - Result: Removed
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:11
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002013, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:13 - App started
+    *** BrunoBrckovic *** 
+
+- 19.01.20. 20:13
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002013, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:16
+    - LOGED change: POT.Documents.IIS - printDocumentIIS_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/004/004, , IIS, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:16
+    - LOGED change: POT.Documents.IIS - printDocumentIIS_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/004/004, , IIS, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:16
+    - LOGED change: POT.Documents.IIS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. IIS '20/004/004'.
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:17
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002013, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:17
+    - LOGED change: POT.Documents.IIS - printDocumentIIS_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/004/005, , IIS, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:17
+    - LOGED change: POT.Documents.IIS - printDocumentIIS_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/004/005, , IIS, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:17
+    - LOGED change: POT.Documents.IIS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. IIS '20/004/005'.
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:17
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002013, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:17
+    - LOGED change: POT.Documents.IIS - printDocumentIIS_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/004/006, , IIS, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:17
+    - LOGED change: POT.Documents.IIS - printDocumentIIS_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/004/006, , IIS, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:17
+    - LOGED change: POT.Documents.IIS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. IIS '20/004/006'.
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:18
+    - LOGED change: POT.Documents.IIS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: There is no items in list, nothing done.
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:18
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002013, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:18
+    - LOGED change: POT.Documents.IIS - printDocumentIIS_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/004/007, , IIS, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:18
+    - LOGED change: POT.Documents.IIS - printDocumentIIS_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/004/007, , IIS, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:18
+    - LOGED change: POT.Documents.IIS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. IIS '20/004/007'.
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:18
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002013, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:21
+    - LOGED change: POT.Documents.IIS - printDocumentIIS_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/004/008, , IIS, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:21
+    - LOGED change: POT.Documents.IIS - printDocumentIIS_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/004/008, , IIS, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:21
+    - LOGED change: POT.Documents.IIS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. IIS '20/004/008'.
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:21
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002013, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:23
+    - LOGED change: POT.Documents.IIS - printDocumentIIS_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/004/009, , IIS, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:23
+    - LOGED change: POT.Documents.IIS - printDocumentIIS_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/004/009, , IIS, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:23
+    - LOGED change: POT.Documents.IIS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. IIS '20/004/009'.
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:24
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002013, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:24
+    - LOGED change: POT.Documents.IIS - printDocumentIIS_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/004/010, , IIS, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:24
+    - LOGED change: POT.Documents.IIS - printDocumentIIS_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/004/010, , IIS, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:24
+    - LOGED change: POT.Documents.IIS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. IIS '20/004/010'.
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:25
+    - LOGED change: POT.Documents.IIS - addToList
+     - Used: Add to list
+     - Data: 707013002013, , , g
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:26
+    - LOGED change: POT.Documents.IIS - printDocumentIIS_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/004/011, , IIS, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:26
+    - LOGED change: POT.Documents.IIS - printDocumentIIS_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/004/011, , IIS, customer, false
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:26
+    - LOGED change: POT.Documents.IIS - button2_Click
+     - Used: Save to db
+     - Data: 
+     - Result: DONE, document nbr. IIS '20/004/011'.
+    *** BrunoBrckovic *** 
+
+
+- 19.01.20. 20:27 - App turned off
+    *** BrunoBrckovic *** 
+
+- 21.01.20. 08:33 - App started
+    *** BrunoBrckovic *** 
+
+- 21.01.20. 08:33 - App turned off
+    *** BrunoBrckovic *** 
+
+- 21.01.20. 08:45 - App started
+    *** BrunoBrckovic *** 
+
+- 21.01.20. 08:45 - App turned off
+    *** BrunoBrckovic *** 
+
+- 28.01.20. 13:39 - App started
+    *** BrunoBrckovic *** 
+
+- 28.01.20. 13:48 - App started
+    *** BrunoBrckovic *** 
+
+- 28.01.20. 13:49
+    - LOGED change: POT.CompanyInfo - button1_Click
+     - Used: dlg.ShowDialog()
+     - Data: Change logo
+     - Result: D:\Dropbox (Personal)\EXCEPTION\LOGO\DMD\Brand Assets Download (6ea3ee26-8661-498a-929f-3fca180d51f6)\OdrezanJPEG.jpg
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 13:49
+    - LOGED change: POT.CompanyInfo - button2_Click
+     - Used: Changing MainCmp info
+     - Data: DMD TRADE doo, Bačka 1, Zagreb, 10000, HR, 0.00, 0.00, 02647369817, PBZGHR2X, 080182296, HR8323400091100157894, 4, 1, www.dmdtrade.hr, +38512307973, Bruno Brckovic, info@exception.hr, support@exception.hr, 1
+     - Result: Company (DMD TRADE doo) data is now selected.
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 13:49 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 28.01.20. 13:49
+    - LOGED change: POT.SetDBConnection - button2_Click
+     - Used: DB connection address and name save.
+     - Data: 192.168.100.101, dmd
+     - Result: Saved, no msgToUser
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 13:49 - App started
+    *** BrunoBrckovic *** 
+
+- 28.01.20. 13:49
+    - LOGED change: POT.MainCmpSelector - button1_Click
+     - Used: Main cmp select
+     - Data: DMD TRADE doo
+     - Result: Main cmp selected, please relog to see changes.
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 13:49 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 28.01.20. 13:49 - App started
+    *** BrunoBrckovic *** 
+
+- 28.01.20. 13:50
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: MONITOR DELL SE2417HG, 24", TN, Full HD, 2 ms, VGA, 2x HDMI, 8014001, 709,00, 00:00, 0, 15, 832,77, 12491,55, 12491,55
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 13:50
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: WEB KAMERA Logitech HD C615, Full HD 1080p, USB, 26001002, 437,22, 00:00, 0, 1, 513,55, 513,55, 13005,10
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 13:50
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: TABLET Samsung SM-T720NZKASEE, 24001003, 2656,56, 00:00, 0, 1, 3120,32, 3120,32, 16125,42
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 13:50
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: HDD Eksterni tvrdi disk WESTERN DIGITAL My Passport 1T, 2.5", USB 3.0 crni, 27001001, 320,82, 00:00, 0, 1, 376,83, 376,83, 16502,25
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 13:50
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: PROJEKTOR LG PH30JG LED, 1280x720, 250 ANSI, 100.000:1, 28001001, 2726,22, 00:00, 0, 1, 3202,15, 3202,15, 19704,40
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 13:50
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: HDD SSD disk 1 TB SAMSUNG 860 EVO, 2.5", SATA III, V-NAND, MZ-76E1T0B/EU, 27002001, 959,65, 00:00, 0, 7, 1127,18, 7890,26, 27594,66
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 13:51
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: GRAFIČKA KARTICA GIGABYTE nVidia GeForce RTX2070 Super Gaming OC, 8 GB GDDR6 (GV-N207SGAMING OC-8GD), 29001001, 3899,21, 00:00, 0, 3, 4579,91, 13739,73, 41334,39
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 13:51
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: PROCESOR AMD  Ryzen 9 3900X, 3800/4600 MHz, Socket AM4, 30001001, 3990,00, 00:00, 0, 2, 4686,55, 9373,10, 50707,49
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 13:51
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: PROCESOR AMD Ryzen 7 3700X, 3600/4400 MHz, Socket AM4, 30001002, 2418,04, 00:00, 0, 5, 2840,16, 14200,80, 64908,29
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 13:51
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: MATIČNA PLOČA GIGABYTE X570 Aorus Pro, socket AM4, DDR4, HDMI, ATX, 31001001, 1787,18, 00:00, 0, 7, 2099,18, 14694,26, 79602,55
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 13:51
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: GRAFIČKA KARTICA ASUS nVidia GeForce ROG-STRIX-RTX2080S O8G-GAMIN G, 8 GB GDDR6, 29002001, 6113,63, 00:00, 0, 2, 7180,90, 14361,80, 93964,35
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 13:51
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: GRAFIČKA KARTICA GIGABYTE nVidia GeForce GTX1660 Ti Aorus 6 GB GDDR6, 29003001, 2418,59, 00:00, 0, 2, 2840,81, 5681,62, 99645,97
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 13:51
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: NAPAJANJE SEASONIC FOCUS Plus 750 Gold, 750W, modularno, 80+ Gold, 32001001, 691,57, 00:00, 0, 7, 812,30, 5686,10, 105332,07
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 13:51
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: KUĆIŠTE FRACTAL DESIGN Meshify C, bez napajanja, crno, 33001001, 588,33, 00:00, 0, 7, 691,04, 4837,28, 110169,35
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 13:52
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: MIS Logitech MX Master 2S, laserski, bežični, USB, crni (910-005139), 7002001, 517,99, 00:00, 0, 7, 608,42, 4258,94, 114428,29
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 13:52
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: TIPKOVNICA Logitech K740, Illuminated, žična, USB, crno/srebrna, 18006001, 357,18, 00:00, 0, 7, 419,53, 2936,71, 117365,00
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 13:52
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: MEMORIJA CRUCIAL 32GB (2x16 GB) DDR4, 3000 MHz, DIMM, Ballistix Sport LT Gray, CL15, 34001001, 1017,82, 00:00, 0, 9, 1195,51, 10759,59, 128124,59
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 13:52
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: LAPTOP Asus  G531GV-AL112 ROG Strix G Black 15.6", i7-9750H/16GB/256GB SSD/RTX2060 6GB/15.6"FHD/FreeDOS, 35001001, 9112,91, 00:00, 0, 1, 10703,77, 10703,77, 138828,36
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 13:52
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: NAS SYNOLOGY DS418j DiskStation 4-bay NAS server, 2.5"/3.5" HDD/SSD podrška, 1GB, 1×G-LAN, Wake on LAN/WAN, 36001001, 2098,76, 00:00, 0, 1, 2465,15, 2465,15, 141293,51
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 13:54
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 13:54
+    - BaseEcp: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at POT.WorkingClasses.PrintMeOffer.printParts(PrintPageEventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PrintMeOffer.cs:line 160
+    - InnerEcp: 
+    - MessageEcp: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at POT.WorkingClasses.PrintMeOffer.printParts(PrintPageEventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PrintMeOffer.cs:line 160
+    - TypeNameEcp: System.ArgumentOutOfRangeException
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 13:54
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 13:54
+    - LOGED change: POT.Documents.Ponuda - button1_Click
+     - Used: Saveoffer
+     - Data: 400400220
+
+     - Result: offer is already saved in DB, please make new one.
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 13:56
+    - BaseEcp: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at POT.WorkingClasses.PrintMeOffer.printParts(PrintPageEventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PrintMeOffer.cs:line 160
+    - InnerEcp: 
+    - MessageEcp: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at POT.WorkingClasses.PrintMeOffer.printParts(PrintPageEventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PrintMeOffer.cs:line 160
+    - TypeNameEcp: System.ArgumentOutOfRangeException
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 13:56
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 13:57
+    - BaseEcp: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at POT.WorkingClasses.PrintMeOffer.printParts(PrintPageEventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PrintMeOffer.cs:line 160
+    - InnerEcp: 
+    - MessageEcp: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at POT.WorkingClasses.PrintMeOffer.printParts(PrintPageEventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PrintMeOffer.cs:line 160
+    - TypeNameEcp: System.ArgumentOutOfRangeException
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 13:58
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 14:02Error writing log error message in LogWriter method
+    - ErrorMSg:The process cannot access the file 'F:\PROJEKTI\VS\POT\POT\POT\bin\Debug\POTLog.txt' because it is being used by another process.
+    **** BrunoBrckovic **** 
+
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 14:04
+    - BaseEcp: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at POT.WorkingClasses.PrintMeOffer.printParts(PrintPageEventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at POT.WorkingClasses.PrintMeOffer.printParts(PrintPageEventArgs e)
+    - TypeNameEcp: System.ArgumentOutOfRangeException
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 14:04
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 14:08
+    - BaseEcp: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at POT.WorkingClasses.PrintMeOffer.Print(PrintPageEventArgs e)
+   at POT.Documents.Ponuda.printDocumentOffer_PrintPage(Object sender, PrintPageEventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.WorkingClasses.PrintMeOffer.Print(PrintPageEventArgs e)
+   at POT.Documents.Ponuda.printDocumentOffer_PrintPage(Object sender, PrintPageEventArgs e)
+    - TypeNameEcp: System.ArgumentOutOfRangeException
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 14:08
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 14:10
+    - BaseEcp: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at POT.Documents.Ponuda.printDocumentOffer_PrintPage(Object sender, PrintPageEventArgs e)
+   at System.Drawing.Printing.PrintDocument.OnPrintPage(PrintPageEventArgs e)
+   at System.Drawing.Printing.PrintDocument._OnPrintPage(PrintPageEventArgs e)
+   at System.Drawing.Printing.PrintController.PrintLoop(PrintDocument document)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Documents.Ponuda.saveToPDF()
+    - InnerEcp: 
+    - MessageEcp: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.Documents.Ponuda.printDocumentOffer_PrintPage(Object sender, PrintPageEventArgs e)
+   at System.Drawing.Printing.PrintDocument.OnPrintPage(PrintPageEventArgs e)
+   at System.Drawing.Printing.PrintDocument._OnPrintPage(PrintPageEventArgs e)
+   at System.Drawing.Printing.PrintController.PrintLoop(PrintDocument document)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Documents.Ponuda.saveToPDF()
+    - TypeNameEcp: System.ArgumentOutOfRangeException
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 14:18
+    - LOGED change: POT.Documents.Ponuda - button1_Click
+     - Used: Saveoffer
+     - Data: 400400220
+
+     - Result: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 14:23
+    - BaseEcp: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at POT.Documents.Ponuda.printDocumentOffer_PrintPage(Object sender, PrintPageEventArgs e)
+   at System.Drawing.Printing.PrintDocument.OnPrintPage(PrintPageEventArgs e)
+   at System.Drawing.Printing.PrintDocument._OnPrintPage(PrintPageEventArgs e)
+   at System.Drawing.Printing.PrintController.PrintLoop(PrintDocument document)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Documents.Ponuda.saveToPDF()
+    - InnerEcp: 
+    - MessageEcp: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.Documents.Ponuda.printDocumentOffer_PrintPage(Object sender, PrintPageEventArgs e)
+   at System.Drawing.Printing.PrintDocument.OnPrintPage(PrintPageEventArgs e)
+   at System.Drawing.Printing.PrintDocument._OnPrintPage(PrintPageEventArgs e)
+   at System.Drawing.Printing.PrintController.PrintLoop(PrintDocument document)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at POT.Documents.Ponuda.saveToPDF()
+    - TypeNameEcp: System.ArgumentOutOfRangeException
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 14:27
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 14:27
+    - BaseEcp: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at POT.Documents.Ponuda.printDocumentOffer_PrintPage(Object sender, PrintPageEventArgs e)
+   at System.Drawing.Printing.PrintDocument.OnPrintPage(PrintPageEventArgs e)
+   at System.Drawing.Printing.PrintDocument._OnPrintPage(PrintPageEventArgs e)
+   at System.Drawing.Printing.PrintController.PrintLoop(PrintDocument document)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at System.Windows.Forms.PrintPreviewControl.ComputePreview()
+   at System.Windows.Forms.PrintPreviewControl.CalculatePageInfo()
+   at System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   at System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   at System.Windows.Forms.Control.InvokeMarshaledCallbacks()
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.PrintPreviewControl.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.Documents.Ponuda.PrintPrewBT_Click(Object sender, EventArgs e)
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.MainFR.linkLabel4_LinkClicked(Object sender, LinkLabelLinkClickedEventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.Documents.Ponuda.printDocumentOffer_PrintPage(Object sender, PrintPageEventArgs e)
+   at System.Drawing.Printing.PrintDocument.OnPrintPage(PrintPageEventArgs e)
+   at System.Drawing.Printing.PrintDocument._OnPrintPage(PrintPageEventArgs e)
+   at System.Drawing.Printing.PrintController.PrintLoop(PrintDocument document)
+   at System.Drawing.Printing.PrintController.Print(PrintDocument document)
+   at System.Drawing.Printing.PrintDocument.Print()
+   at System.Windows.Forms.PrintPreviewControl.ComputePreview()
+   at System.Windows.Forms.PrintPreviewControl.CalculatePageInfo()
+   at System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   at System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   at System.Windows.Forms.Control.InvokeMarshaledCallbacks()
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.PrintPreviewControl.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.Documents.Ponuda.PrintPrewBT_Click(Object sender, EventArgs e)
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.MainFR.linkLabel4_LinkClicked(Object sender, LinkLabelLinkClickedEventArgs e)
+    - TypeNameEcp: System.ArgumentOutOfRangeException
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 14:32 - App started
+    *** BrunoBrckovic *** 
+
+- 28.01.20. 14:32
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: MONITOR DELL SE2417HG, 24", TN, Full HD, 2 ms, VGA, 2x HDMI, 8014001, 709,00, 00:00, 0, 15, 832,77, 12491,55, 12491,55
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 14:32
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: TIPKOVNICA Logitech K740, Illuminated, žična, USB, crno/srebrna, 18006001, 357,18, 00:00, 0, 7, 419,53, 2936,71, 15428,26
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 14:35
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 14:37
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: MONITOR DELL SE2417HG, 24", TN, Full HD, 2 ms, VGA, 2x HDMI, 8014001, 709,00, 00:00, 0, 15, 832,77, 12491,55, 12491,55
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 14:37
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: WEB KAMERA Logitech HD C615, Full HD 1080p, USB, 26001002, 437,22, 00:00, 0, 1, 513,55, 513,55, 13005,10
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 14:38
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: TABLET Samsung SM-T720NZKASEE, 24001003, 2656,56, 00:00, 0, 1, 3120,32, 3120,32, 16125,42
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 14:38
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: HDD Eksterni tvrdi disk WESTERN DIGITAL My Passport 1T, 2.5", USB 3.0 crni, 27001001, 320,82, 00:00, 0, 1, 376,83, 376,83, 16502,25
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 14:38
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: PROJEKTOR LG PH30JG LED, 1280x720, 250 ANSI, 100.000:1, 28001001, 2726,22, 00:00, 0, 1, 3202,15, 3202,15, 19704,40
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 14:38
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: HDD SSD disk 1 TB SAMSUNG 860 EVO, 2.5", SATA III, V-NAND, MZ-76E1T0B/EU, 27002001, 959,65, 00:00, 0, 1, 1127,18, 1127,18, 20831,58
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 14:38
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: GRAFIČKA KARTICA GIGABYTE nVidia GeForce RTX2070 Super Gaming OC, 8 GB GDDR6 (GV-N207SGAMING OC-8GD), 29001001, 3899,21, 00:00, 0, 3, 4579,91, 13739,73, 34571,31
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 14:38
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: PROCESOR AMD  Ryzen 9 3900X, 3800/4600 MHz, Socket AM4, 30001001, 3990,00, 00:00, 0, 2, 4686,55, 9373,10, 43944,41
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 14:39
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: PROCESOR AMD Ryzen 7 3700X, 3600/4400 MHz, Socket AM4, 30001002, 2418,04, 00:00, 0, 5, 2840,16, 14200,80, 58145,21
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 14:39
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: MATIČNA PLOČA GIGABYTE X570 Aorus Pro, socket AM4, DDR4, HDMI, ATX, 31001001, 1787,18, 00:00, 0, 7, 2099,18, 14694,26, 72839,47
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 14:39
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: GRAFIČKA KARTICA ASUS nVidia GeForce ROG-STRIX-RTX2080S O8G-GAMIN G, 8 GB GDDR6, 29002001, 6113,63, 00:00, 0, 2, 7180,90, 14361,80, 87201,27
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 14:39
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: GRAFIČKA KARTICA GIGABYTE nVidia GeForce GTX1660 Ti Aorus 6 GB GDDR6, 29003001, 2418,59, 00:00, 0, 2, 2840,81, 5681,62, 92882,89
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 14:39
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: NAPAJANJE SEASONIC FOCUS Plus 750 Gold, 750W, modularno, 80+ Gold, 32001001, 691,57, 00:00, 0, 7, 812,30, 5686,10, 98568,99
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 14:39
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: KUĆIŠTE FRACTAL DESIGN Meshify C, bez napajanja, crno, 33001001, 588,33, 00:00, 0, 7, 691,04, 4837,28, 103406,27
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 14:40
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: MIS Logitech MX Master 2S, laserski, bežični, USB, crni (910-005139), 7002001, 517,99, 00:00, 0, 7, 608,42, 4258,94, 107665,21
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 14:40
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: TIPKOVNICA Logitech K740, Illuminated, žična, USB, crno/srebrna, 18006001, 357,18, 00:00, 0, 7, 419,53, 2936,71, 110601,92
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 14:40
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: MEMORIJA CRUCIAL 32GB (2x16 GB) DDR4, 3000 MHz, DIMM, Ballistix Sport LT Gray, CL15, 34001001, 1017,82, 00:00, 0, 9, 1195,51, 10759,59, 121361,51
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 14:40
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: LAPTOP Asus  G531GV-AL112 ROG Strix G Black 15.6", i7-9750H/16GB/256GB SSD/RTX2060 6GB/15.6"FHD/FreeDOS, 35001001, 9112,91, 00:00, 0, 1, 10703,77, 10703,77, 132065,28
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 14:40
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: NAS SYNOLOGY DS418j DiskStation 4-bay NAS server, 2.5"/3.5" HDD/SSD podrška, 1GB, 1×G-LAN, Wake on LAN/WAN, 36001001, 2098,76, 00:00, 0, 1, 2465,15, 2465,15, 134530,43
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 14:41
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+    - InnerEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+    - MessageEcp: A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.)
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password)
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 14:45
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 14:52
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 14:58
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+    - InnerEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+    - MessageEcp: A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.)
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password)
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 14:58
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 14:58
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 14:58 - App turned off
+    *** BrunoBrckovic *** 
+
+- 28.01.20. 15:29 - App started
+    *** BrunoBrckovic *** 
+
+- 28.01.20. 15:29
+    - LOGED change: POT.CompanyInfo - button2_Click
+     - Used: Changing MainCmp info
+     - Data: CES-POS d.o.o., 2.Poljanice 6, Zagreb, 10000, HR, 0.00, 0.00, 02647369817, ZABAHR2X, 04472047, HR2823600001102514864, 4, 1, www.ces-pos.hr, +38512307973, Bruno Brckovic, info@ces-pos.hr, support@ces-pos.hr, 1
+     - Result: Company (CES-POS d.o.o.) data is now selected.
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 15:29
+    - LOGED change: POT.MainCmpSelector - button1_Click
+     - Used: Main cmp select
+     - Data: CES-POS d.o.o.
+     - Result: Main cmp selected, please relog to see changes.
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 15:29 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 28.01.20. 15:29
+    - LOGED change: POT.SetDBConnection - button2_Click
+     - Used: DB connection address and name save.
+     - Data: 192.168.100.101, test
+     - Result: Saved, no msgToUser
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 15:29 - App started
+    *** BrunoBrckovic *** 
+
+- 28.01.20. 15:29
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE PRC 950 , 1004000, 845,22, 00:00, 0, 1, 1672,86, 1672,86, 1672,86
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 15:33 - App started
+    *** BrunoBrckovic *** 
+
+- 28.01.20. 15:35
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE PRC 950 nesto netko s necim Super Gaming OC, 8 GB GDDR6 (GV-N207SGAMING OC-8GD), 1004000, 845,22, 00:00, 0, 1, 1672,86, 1672,86, 1672,86
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 15:36
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 15:37
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE PRC 950 nesto netko s necim Super Gaming OC, 8 GB GDDR6 (GV-N207SGAMING OC-8GD), 1004000, 845,22, 00:00, 0, 1, 1672,86, 1672,86, 1672,86
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 15:41
+    - BaseEcp: System.ArgumentException: Value of '0' is not valid for 'emSize'. 'emSize' should be greater than 0 and less than or equal to System.Single.MaxValue.
+Parameter name: emSize
+   at System.Drawing.Font.Initialize(FontFamily family, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font.Initialize(String familyName, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font..ctor(String familyName, Single emSize, FontStyle style)
+   at POT.WorkingClasses.PrintMeInvoice.fitFontSize(PrintPageEventArgs e, String _WorkingStr, Int32 _FontSize, Single _FieldWith)
+   at POT.WorkingClasses.PrintMeInvoice.printParts(PrintPageEventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Value of '0' is not valid for 'emSize'. 'emSize' should be greater than 0 and less than or equal to System.Single.MaxValue.
+Parameter name: emSize
+    - SourceEcp: System.Drawing
+    - StackTrqceEcp:    at System.Drawing.Font.Initialize(FontFamily family, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font.Initialize(String familyName, Single emSize, FontStyle style, GraphicsUnit unit, Byte gdiCharSet, Boolean gdiVerticalFont)
+   at System.Drawing.Font..ctor(String familyName, Single emSize, FontStyle style)
+   at POT.WorkingClasses.PrintMeInvoice.fitFontSize(PrintPageEventArgs e, String _WorkingStr, Int32 _FontSize, Single _FieldWith)
+   at POT.WorkingClasses.PrintMeInvoice.printParts(PrintPageEventArgs e)
+    - TypeNameEcp: System.ArgumentException
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 15:41
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 15:41
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE PRC 950 nesto netko s necim Super Gaming OC, 8 GB GDDR6 (GV-N207SGAMING OC-8GD), 1004000, 845,22, 00:00, 0, 1, 1672,86, 1672,86, 1672,86
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 15:46
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 15:46
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 15:47
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 15:48
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 15:49
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 15:49
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 15:51
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 15:51
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 15:52
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE PRC 950 nesto netko s necim Super Gaming OC, 8 GB GDDR6 (GV-N207SGAMING OC-8GD), 1004000, 845,22, 00:00, 10, 2, 1505,574, 3011,148, 3011,148
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 15:52
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE PRC 950 nesto netko s necim Super Gaming OC, 8 GB GDDR6 (GV-N207SGAMING OC-8GD), 1004000, 845,22, 00:00, 5, 5, 1589,2170, 7946,0850, 10957,2330
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 15:52
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE PRC 950 nesto netko s necim Super Gaming OC, 8 GB GDDR6 (GV-N207SGAMING OC-8GD), 1004000, 845,22, 00:00, 15, 1, 1421,9310, 1421,9310, 12379,1640
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 15:52
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 15:52
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 15:55 - App started
+    *** BrunoBrckovic *** 
+
+- 28.01.20. 15:56
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE PRC 950 nesto netko s necim Super Gaming OC, 8 GB GDDR6 (GV-N207SGAMING OC-8GD), 1004000, 845,22, 00:00, 10, 15, 1505,574, 22583,610, 22583,610
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 15:56
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 , 1002000, 2662,25, 00:00, 10, 15, 3138,750, 47081,250, 69664,860
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 15:56
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 , 1002000, 2662,25, 00:00, 5, 15, 3313,1250, 49696,8750, 119361,7350
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 15:56
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 , 1002000, 2662,25, 00:00, 25, 15, 2615,6250, 39234,3750, 158596,1100
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 15:56
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 , 1002000, 2662,25, 00:00, 17, 15, 2894,6250, 43419,3750, 202015,4850
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 15:56
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE PRC 950 nesto netko s necim Super Gaming OC, 8 GB GDDR6 (GV-N207SGAMING OC-8GD), 1004000, 845,22, 00:00, 5, 15, 1589,2170, 23838,2550, 225853,7400
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 15:56
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE PRC 950 nesto netko s necim Super Gaming OC, 8 GB GDDR6 (GV-N207SGAMING OC-8GD), 1004000, 845,22, 00:00, 12, 15, 1472,1168, 22081,7520, 247935,4920
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 15:56
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-R1000 Univerzalna Salica, 1001005, 0,00, 00:00, 12, 15, 228,64996000, 3429,74940000, 251365,24140000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 15:56
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-R1000 Univerzalna Salica, 1001005, 0,00, 00:00, 5, 15, 246,83802500, 3702,57037500, 255067,81177500
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 15:57
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 15:57
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 15:59
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 16:03
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 16:05
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 16:07
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 16:11
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 16:11
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 16:12
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 16:12
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 16:13
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 16:13
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 16:15 - App started
+    *** BrunoBrckovic *** 
+
+- 28.01.20. 16:16
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE PRC 950 nesto netko s necim Super Gaming OC, 8 GB GDDR6 (GV-N207SGAMING OC-8GD), 1004000, 845,22, 00:00, 5, 5, 1589,2170, 7946,0850, 7946,0850
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 16:16
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 , 1002000, 2662,25, 00:00, 5, 5, 3313,1250, 16565,6250, 24511,7100
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 16:16
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 , 1002000, 2662,25, 00:00, 10, 5, 3138,750, 15693,750, 40205,4600
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 16:16
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE PRC 950 nesto netko s necim Super Gaming OC, 8 GB GDDR6 (GV-N207SGAMING OC-8GD), 1004000, 845,22, 00:00, 10, 5, 1505,574, 7527,870, 47733,3300
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 16:16
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE PRC 950 nesto netko s necim Super Gaming OC, 8 GB GDDR6 (GV-N207SGAMING OC-8GD), 1004000, 845,22, 00:00, 15, 5, 1421,9310, 7109,6550, 54842,9850
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 16:16
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 , 1002000, 2662,25, 00:00, 20, 5, 2790,000, 13950,000, 68792,9850
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 16:17
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 , 1002000, 2662,25, 00:00, 25, 5, 2615,6250, 13078,1250, 81871,1100
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 16:17
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 28.01.20. 16:17
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+

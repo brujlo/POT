@@ -326,8 +326,11 @@ namespace POT.CopyPrintForms
             Result = "Print page called";
             lw.LogMe(function, usedQC, data, Result);
 
-            Properties.Settings.Default.pageNbr = 1;
-            Properties.Settings.Default.Save();
+            if (!e.HasMorePages)
+            {
+                Properties.Settings.Default.pageNbr = 1;
+                Properties.Settings.Default.Save();
+            }
         }
 
         private void fillSifrarnik()

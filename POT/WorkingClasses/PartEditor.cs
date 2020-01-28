@@ -115,6 +115,15 @@ namespace POT.WorkingClasses
             listView1.Columns.Add("Naziv stari");
             listView1.Columns.Add("GNG");
 
+            PackingCB.Items.Clear();
+            PackingCB.Items.Add("kom");
+            PackingCB.Items.Add("pak");
+            PackingCB.Items.Add("sat");
+            PackingCB.Items.Add("dan");
+            PackingCB.Items.Add("mje");
+            PackingCB.Items.Add("god");
+            PackingCB.Items.Add("kut");
+
             Program.LoadStop();
         }
 
@@ -571,14 +580,6 @@ namespace POT.WorkingClasses
                 {
                     sPartNameCodeNew.Items.Add(i);
                 }
-
-                PackingCB.Items.Add("kom");
-                PackingCB.Items.Add("pak");
-                PackingCB.Items.Add("sat");
-                PackingCB.Items.Add("dan");
-                PackingCB.Items.Add("mje");
-                PackingCB.Items.Add("god");
-                PackingCB.Items.Add("kut");
             }
             catch (Exception e1)
             {
@@ -610,6 +611,7 @@ namespace POT.WorkingClasses
                     {
                         sPartNameCode.Text = item.Key.ToString();
                         prtSif = partListSifrarnik.Find(x => x.CategoryCode == long.Parse(sCategoryCode.Text) && x.PartCode == item.Key && x.SubPartCode == 0);
+                        //prtSif = partListSifrarnik.Find(x => x.CategoryCode == long.Parse(sCategoryCode.Text) && x.PartCode == item.Key);
 
                         sPartNameCodeNew.Items.Clear();
                         sPartNameCodeNew.ResetText();
@@ -628,7 +630,7 @@ namespace POT.WorkingClasses
                 }
 
                 subpartSifrarnik.Clear();
-                subpartSifrarnik = qc.GetSubPartNamesAllSifrarnikSortByName(sPartName.SelectedItem.ToString()); 
+                subpartSifrarnik = qc.GetSubPartNamesAllSifrarnikSortByName(sCategory.SelectedItem.ToString(), sPartName.SelectedItem.ToString()); 
 
                 sSubPartName.ResetText();
                 sSubPartName.Items.Clear();
@@ -803,10 +805,10 @@ namespace POT.WorkingClasses
 
             try
             {
-                PriceInKn = double.Parse(PriceINKNTB.Text.Replace(',', '.'));
-                PriceOutKn = double.Parse(PriceOUTKNTB.Text.Replace(',', '.'));
-                PriceInEur = double.Parse(PriceINEURTB.Text.Replace(',', '.'));
-                PriceOutEur = double.Parse(PriceOUTEURTB.Text.Replace(',', '.'));
+                PriceInKn = double.Parse(PriceINKNTB.Text);
+                PriceOutKn = double.Parse(PriceOUTKNTB.Text);
+                PriceInEur = double.Parse(PriceINEURTB.Text);
+                PriceOutEur = double.Parse(PriceOUTEURTB.Text);
 
                 CategoryCode = long.Parse(sCategoryCodeNew.Text) * 1000000;
                 PartCode = long.Parse(sPartNameCodeNew.Text) * 1000;
@@ -901,10 +903,10 @@ namespace POT.WorkingClasses
 
             try
             {
-                PriceInKn = double.Parse(PriceINKNTB.Text.Replace(',', '.'));
-                PriceOutKn = double.Parse(PriceOUTKNTB.Text.Replace(',', '.'));
-                PriceInEur = double.Parse(PriceINEURTB.Text.Replace(',', '.'));
-                PriceOutEur = double.Parse(PriceOUTEURTB.Text.Replace(',', '.'));
+                PriceInKn = double.Parse(PriceINKNTB.Text);
+                PriceOutKn = double.Parse(PriceOUTKNTB.Text);
+                PriceInEur = double.Parse(PriceINEURTB.Text);
+                PriceOutEur = double.Parse(PriceOUTEURTB.Text);
 
                 CategoryCode = long.Parse(sCategoryCodeNew.Text) * 1000000;
                 PartCode = long.Parse(sPartNameCodeNew.Text) * 1000;

@@ -717,7 +717,7 @@ namespace POT
             return prs;
         }
 
-        public Dictionary<long, String> GetSubPartNamesAllSifrarnikSortByName(String mNaziv)
+        public Dictionary<long, String> GetSubPartNamesAllSifrarnikSortByName(String mCategoryNaziv, String mPartNaziv)
         {
             Dictionary<long, String> prs = new Dictionary<long, String>();
 
@@ -725,7 +725,7 @@ namespace POT
             {
                 //SqlConnection cnn = cn.Connect(Uname, Pass);
                 cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
-                query = "Select DISTINCT SubPartName, SubPartCode from Sifrarnik where PartName = '" + mNaziv + "' ORDER BY SubPartName asc";
+                query = "Select DISTINCT SubPartName, SubPartCode from Sifrarnik where CategoryName = '" + mCategoryNaziv + "' and PartName = '" + mPartNaziv + "' ORDER BY SubPartName asc";
                 command = new SqlCommand(query, cnn);
                 command.ExecuteNonQuery();
 
@@ -2931,7 +2931,7 @@ namespace POT
                     command.CommandText = "UPDATE Parts SET State = 'g' WHERE PartID = " + ListOfParts[i].PartID;
                     command.ExecuteNonQuery();
 
-                    command.CommandText = "UPDATE Parts SET DateSend = " + DateTime.Now.ToString("dd.MM.yy.") + " where PartID = " + ListOfParts[i].PartID;
+                    command.CommandText = "UPDATE Parts SET DateSend = '" + DateTime.Now.ToString("dd.MM.yy.") + "' where PartID = " + ListOfParts[i].PartID;
                     command.ExecuteNonQuery();
 
                     command.CommandText = "INSERT INTO IISparts (iisID, partID, date, rb, customerID, napomena) VALUES (" + IISCntFull + ", " + ListOfParts[i].PartID
@@ -5773,7 +5773,19 @@ namespace POT
                 try
                 {
                     command.CommandText = "INSERT INTO Sifrarnik (CategoryCode, CategoryName, PartCode, PartName, SubPartCode, SubPartName, PartNumber, PriceInKn, PriceOutKn, PriceInEur, PriceOutEur, Packing) " +
-                        "values (" + mCategoryCode + ", '" + mCategoryName + "', " + mPartCode + ", '" + mPartName + "', " + mSubPartCode + ", '" + mSubPartName + "', '" + mPartNumber + "', " + mPriceInKn + ", " + mPriceOutKn + ", " + mPriceInEur + ", " + mPriceOutEur + ", '" + mPacking + "')";
+                        "values (" 
+                        + mCategoryCode + ", '" 
+                        + mCategoryName + "', " 
+                        + mPartCode + ", '" 
+                        + mPartName + "', " 
+                        + mSubPartCode + ", '" 
+                        + mSubPartName + "', '" 
+                        + mPartNumber + "', " 
+                        + mPriceInKn.ToString().Replace(',', '.') + ", " 
+                        + mPriceOutKn.ToString().Replace(',', '.') + ", " 
+                        + mPriceInEur.ToString().Replace(',', '.') + ", " 
+                        + mPriceOutEur.ToString().Replace(',', '.') + ", '" 
+                        + mPacking + "')";
                     command.ExecuteNonQuery();
 
                     transaction.Commit();
@@ -5835,10 +5847,10 @@ namespace POT
                         "', SubPartCode = " + mSubPartCode +
                         ", SubPartName = '" + mSubPartName +
                         "', PartNumber = '" + mPartNumber +
-                        "', PriceInKn = " + mPriceInKn +
-                        ", PriceOutKn = " + mPriceOutKn +
-                        ", PriceInEur = " + mPriceInEur +
-                        ", PriceOutEur = " + mPriceOutEur +
+                        "', PriceInKn = " + mPriceInKn.ToString().Replace(',','.') +
+                        ", PriceOutKn = " + mPriceOutKn.ToString().Replace(',', '.') +
+                        ", PriceInEur = " + mPriceInEur.ToString().Replace(',', '.') +
+                        ", PriceOutEur = " + mPriceOutEur.ToString().Replace(',', '.') +
                         ", Packing = '" + mPacking + "' where FullCode = " + (mCategoryCode + mPartCode + mSubPartCode);
 
                     command.ExecuteNonQuery();

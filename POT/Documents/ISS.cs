@@ -86,7 +86,7 @@ namespace POT.Documents
 
                 allParts = qc.GetPartsAllSifrarnik();
 
-                if (ISSall.Count > 0) //(partList.Count > 0)
+                /*if (ISSall.Count > 0) //(partList.Count > 0)
                 {
                     foreach(ISSreport iss in ISSall)
                     {
@@ -94,7 +94,8 @@ namespace POT.Documents
 
                         PartSelectorCb.Items.Add(iss.MainPart.PartID.ToString() + " # " + iss.MainPart.SN.ToUpper().ToString() + " # " + iss.MainPart.CN.ToUpper().ToString() + " # " + iss.MainPart.CodePartFull.ToString());
                     }
-                }
+                }*/
+                loadParts();
 
                 fillSifrarnik();
 
@@ -151,7 +152,9 @@ namespace POT.Documents
                     listView1.AutoResizeColumn(i, ColumnHeaderAutoResizeStyle.HeaderSize);
                 }
 
-                STARTbt_Click(sender, e);
+                //STARTbt_Click(sender, e);
+                STARTbt.PerformClick();
+
             }catch(Exception e1)
             {
                 Program.LoadStop();
@@ -163,6 +166,39 @@ namespace POT.Documents
             }
 
             this.Focus();
+        }
+
+        private void loadParts()
+        {
+            ///////////////// LogMe ////////////////////////
+            String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
+            String usedQC = "Adding parts to PartSelectorCb";
+            String data = "";
+            String Result = "";
+            LogWriter lw = new LogWriter();
+            ////////////////////////////////////////////////
+            ///
+
+            try
+            {
+                PartSelectorCb.Items.Clear();
+
+                if (ISSall.Count > 0) //(partList.Count > 0)
+                {
+                    foreach (ISSreport iss in ISSall)
+                    {
+                        ISSSelectorCb.Items.Add(iss.ISSid);
+
+                        data = iss.MainPart.PartID.ToString() + " / " + iss.MainPart.SN.ToUpper().ToString() + " / " + iss.MainPart.CN.ToUpper().ToString() + " / " + iss.MainPart.CodePartFull.ToString();
+                        PartSelectorCb.Items.Add(iss.MainPart.PartID.ToString() + " # " + iss.MainPart.SN.ToUpper().ToString() + " # " + iss.MainPart.CN.ToUpper().ToString() + " # " + iss.MainPart.CodePartFull.ToString());
+                    }
+                }
+            }catch(Exception e1)
+            {
+                Result = "There is a error with adding parts to PartSelectorCb." + Environment.NewLine + "Please contact your administrator.";
+                lw.LogMe(function, usedQC, data, Result);
+                new LogWriter(e1);
+            }
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -870,6 +906,9 @@ namespace POT.Documents
                     ISSSelectorCb.Items.Clear();
                     PartSelectorCb.Items.Clear();
 
+                    loadParts();
+
+                    /*
                     if (ISSall.Count > 0) //(partList.Count > 0)
                     {
                         foreach (ISSreport iss in ISSall)
@@ -879,6 +918,7 @@ namespace POT.Documents
                             PartSelectorCb.Items.Add(iss.MainPart.PartID.ToString() + " # " + iss.MainPart.SN.ToUpper().ToString() + " # " + iss.MainPart.CN.ToUpper().ToString());
                         }
                     }
+                    */
 
                     ISSSelectorCb.SelectedIndex = ISSSelectorCb.FindStringExact(tmpISS.ISSid.ToString());
                     ISSSelectorCb.Text = tmpISS.ISSid.ToString();
@@ -1198,8 +1238,11 @@ namespace POT.Documents
                 onlyOneTime = false;
             }
 
-            Properties.Settings.Default.pageNbr = 1;
-            Properties.Settings.Default.Save();
+            if (!e.HasMorePages)
+            {
+                Properties.Settings.Default.pageNbr = 1;
+                Properties.Settings.Default.Save();
+            }
         }
 
         private void button1_Click_1(object sender, EventArgs e)

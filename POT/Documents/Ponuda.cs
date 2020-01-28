@@ -642,7 +642,6 @@ namespace POT.Documents
 
             Program.SaveStart();
 
-
             offer.VrijemeIzdano = DateTime.Now.ToString("HH:mm");
             offer.Napomena = textBox4.Text;
 
@@ -699,15 +698,26 @@ namespace POT.Documents
             ////////////////////////////////////////////////
             ///
 
-            PrintMeOffer pr = new PrintMeOffer(offerPartsList, offer, 0, radioButtonENG.Checked, TOTALTAXBASE, TOTALTAX);
-            pr.Print(e);
-
+            try
+            {
+                PrintMeOffer pr = new PrintMeOffer(offerPartsList, offer, 0, radioButtonENG.Checked, TOTALTAXBASE, TOTALTAX);
+                pr.Print(e);
+            }catch(Exception e1)
+            {
+                throw e1;
+                //new LogWriter(e1);
+                //MessageBox.Show(e1.Message);
+            }
+            
             //data = cmpS + ", " + cmpR + ", " + sifrarnikArr + ", " + partListPrint + ", " + IISNumber + ", " + napomenaIISPrint + ", IIS, customer, false";
             Result = "Print page called";
             lw.LogMe(function, usedQC, data, Result);
 
-            Properties.Settings.Default.pageNbr = 1;
-            Properties.Settings.Default.Save();
+            if (!e.HasMorePages)
+            {
+                Properties.Settings.Default.pageNbr = 1;
+                Properties.Settings.Default.Save();
+            }
         }
 
         private void PrintPrewBT_Click(object sender, EventArgs e)
@@ -847,7 +857,7 @@ namespace POT.Documents
                 PrintDialog printDialog1 = new PrintDialog();
                 printDialog1.Document = printDocumentOffer;
                 printDialog1.PrinterSettings.PrinterName = "Microsoft Print to PDF";
-
+                
                 if (!printDialog1.PrinterSettings.IsValid) return;
 
                 if (!Directory.Exists(Properties.Settings.Default.DefaultFolder + "\\PON"))

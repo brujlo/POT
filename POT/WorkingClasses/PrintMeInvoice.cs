@@ -158,7 +158,8 @@ namespace POT.WorkingClasses
                     int amount = margins.Left + (polje * 23); //2
                     int rebatePrice = margins.Left + (polje * 27); //3
 
-                    Boolean konverzija = invPrtList[partRows].Konverzija.ToString().Equals("0") ? false : true;
+                    int indexStavke = invPrtList.Count == 0 ? 0 : invPrtList.Count - 1;
+                    Boolean konverzija = invPrtList[indexStavke].Konverzija.ToString().Equals("0") ? false : true;
 
                     if (pageNbr == 1)
                     {
@@ -397,7 +398,10 @@ namespace POT.WorkingClasses
                         measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
                         e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(pocetak + (((int)measureField - (int)measureStr) / 2), headerpointVer + moveBy));
 
-                        if( storno == 1 )
+
+                        ///////////////////////////////////////////////////////
+
+                        if ( storno == 1 )
                             workingStr = tmpPart.FullName + String.Format("{0:00000000000}", long.Parse(Properties.Settings.Default.StornoInvoiceNumber));//tu partRows
                         else
                             workingStr = tmpPart.FullName;//tu partRows
@@ -406,14 +410,25 @@ namespace POT.WorkingClasses
 
                         measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
                         measureField = name - rb;
-                        fnt = fitFontSize(e, workingStr, fontSizeR, measureField);
-                        e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(rb, headerpointVer + moveBy));
+
+                        List<String> naziv = wordWrraper(e, measureField, workingStr, fontSizeR);
+
+                        int pamtiHeadPointVer = headerpointVer;
+
+                        foreach (String n in naziv)
+                        {
+                            fnt = fitFontSize(e, n, fontSizeR, measureField);
+                            e.Graphics.DrawString(n, fnt, Brushes.Black, new Point(rb, headerpointVer + moveBy));
+                            headerpointVer += moveBy;
+                        }
+                        
+                        ///////////////////////////////////////////////////////
 
                         workingStr = partCode;//tu partRows
                         measureField = code - name;
                         fnt = fitFontSize(e, workingStr, fontSizeR, measureField);
                         measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
-                        e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(name + (((int)measureField - (int)measureStr) / 2), headerpointVer + moveBy));
+                        e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(name + (((int)measureField - (int)measureStr) / 2), pamtiHeadPointVer + moveBy));
 
                         if (konverzija)
                             workingStr = String.Format("{0:N2}", decimal.Parse(invPrtList[partRows].IznosPart) / eurDjelitelj) + " " + oznakaValute;
@@ -422,25 +437,25 @@ namespace POT.WorkingClasses
                         measureField = price - code;
                         fnt = fitFontSize(e, workingStr, fontSizeR, measureField);
                         measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
-                        e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(price - (int)measureStr, headerpointVer + moveBy));
+                        e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(price - (int)measureStr, pamtiHeadPointVer + moveBy));
 
                         workingStr = invPrtList[partRows].VrijemeRada;
                         measureField = workTime - price;
                         fnt = fitFontSize(e, workingStr, fontSizeR, measureField);
                         measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
-                        e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(price + (((int)measureField - (int)measureStr) / 2), headerpointVer + moveBy));
+                        e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(price + (((int)measureField - (int)measureStr) / 2), pamtiHeadPointVer + moveBy));
 
                         workingStr = String.Format("{0:N2}", invPrtList[partRows].Rabat) + " %";
                         measureField = rebate - workTime;
                         fnt = fitFontSize(e, workingStr, fontSizeR, measureField);
                         measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
-                        e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(workTime + ((int)measureField - (int)measureStr), headerpointVer + moveBy));
+                        e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(workTime + ((int)measureField - (int)measureStr), pamtiHeadPointVer + moveBy));
 
                         workingStr = invPrtList[partRows].Kolicina.ToString();
                         measureField = amount - rebate;
                         fnt = fitFontSize(e, workingStr, fontSizeR, measureField);
                         measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
-                        e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(rebate + (((int)measureField - (int)measureStr) / 2), headerpointVer + moveBy));
+                        e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(rebate + (((int)measureField - (int)measureStr) / 2), pamtiHeadPointVer + moveBy));
 
                         if (konverzija)
                         {
@@ -460,7 +475,7 @@ namespace POT.WorkingClasses
                         measureField = rebatePrice - amount;
                         fnt = fitFontSize(e, workingStr, fontSizeR, measureField);
                         measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
-                        e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(rebatePrice - (int)measureStr, headerpointVer + moveBy));
+                        e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(rebatePrice - (int)measureStr, pamtiHeadPointVer + moveBy));
 
                         if (konverzija)
                             workingStr = String.Format("{0:N2}", decimal.Parse(invPrtList[partRows].IznosTotal) / eurDjelitelj) + " " + oznakaValute;
@@ -469,7 +484,7 @@ namespace POT.WorkingClasses
                         measureField = kraj - rebatePrice;
                         fnt = fitFontSize(e, workingStr, fontSizeR, measureField); ; //tu
                         measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
-                        e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(kraj - (int)measureStr, headerpointVer + moveBy));
+                        e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(kraj - (int)measureStr, pamtiHeadPointVer + moveBy));
 
                         if(partRows >= invPrtList.Count - 1)
                         {
@@ -777,6 +792,44 @@ namespace POT.WorkingClasses
                 _FonthWith = e.Graphics.MeasureString(_WorkingStr, fnt).Width;
             }
             return new Font("IDAutomationHC39M", _FontSize, FontStyle.Regular);
+        }
+
+        private List<String> wordWrraper(PrintPageEventArgs e, float _FieldWith, String _WorkingStr, int _FontSize)
+        {
+            Boolean tekstAdded = false;
+
+            List<String> ret = new List<String>();
+
+            var radni = _WorkingStr.Split(' ');
+
+            float _FonthWith = e.Graphics.MeasureString(_WorkingStr, getFont(_FontSize)).Width;
+            int velFont = _FontSize;
+
+            String tekst = "";
+            foreach (String r in radni)
+            {
+                if (e.Graphics.MeasureString(tekst + r, getFont(_FontSize)).Width < _FieldWith)
+                {
+                    tekstAdded = false;
+
+                    if (tekst.Equals(""))
+                        tekst = r;
+                    else
+                        tekst = tekst + " " + r;
+                }
+                else
+                {
+                    ret.Add(tekst);
+                    tekstAdded = true;
+                    tekst = r;
+                }
+
+            }
+
+            if (!tekstAdded)
+                ret.Add(tekst);
+
+            return ret;
         }
     }
 }
