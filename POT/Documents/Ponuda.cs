@@ -582,6 +582,7 @@ namespace POT.Documents
 
             DateTime dt = DateTime.Today.AddDays(valuta);
             ValutaLB.Text = valuta.ToString() + " (" + dt.ToString("dd.MM.yy.") + ")";
+            offer.Valuta = valuta;
         }
 
         private void WorkTimeTB_Enter(object sender, EventArgs e)

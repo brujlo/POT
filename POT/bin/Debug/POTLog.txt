@@ -3451,3 +3451,524 @@ Parameter name: emSize
      - Result: Print page called
     *** BrunoBrckovic *** 
 
+
+- 05.02.20. 11:19 - App started
+    *** BrunoBrckovic *** 
+
+- 05.02.20. 11:20 - App started
+    *** BrunoBrckovic *** 
+
+- 05.02.20. 11:22
+    - LOGED change: POT.BuildingClasses.SettingsForm - SaveBT_Click
+     - Used: Print
+     - Data: 25; 0; 15; VAT is not calculated according to Article 17. of the Law on PDV; The taxpayer is not in the VAT system, according to Article 90. of the Law on PDV; Thank you for your trust; Temeljem članka 9., st.3., Zakona o računovodstvu, račun je pravovaljan bez potpisa i pečata; Porezni obveznik nije u sustavu PDV-a, temeljem zakona o PDV-u čl. 90; Hvala na ukazanom povjerenju; Bruno Brcković; D:\Dropbox (Personal)\EXCEPTION\DMD\DOKUMENTIpot; Save_to_PDF => True
+     - Result: 
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:22
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: MONITOR DELL SE2417HG, 24", TN, Full HD, 2 ms, VGA, 2x HDMI, 8014001, 709,00, 00:00, 0, 15, 832,77, 12491,55, 15614,4375
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:22
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: SOFTWARE Microsoft Office 2019, 37001001, 16,29, 00:00, 0, 7, 571,43, 4000,01, 20614,4500
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:22
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: LAPTOP Asus  G531GV-AL112 ROG Strix G Black 15.6", i7-9750H/16GB/256GB SSD/RTX2060 6GB/15.6"FHD/FreeDOS, 35001001, 9112,91, 00:00, 0, 1, 10703,77, 10703,77, 33994,1625
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:23
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: PROJEKTOR LG PH30JG LED, 1280x720, 250 ANSI, 100.000:1, 28001001, 2726,22, 00:00, 0, 1, 3202,15, 3202,15, 37996,8500
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:23
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: NAS SYNOLOGY DS418j DiskStation 4-bay NAS server, 2.5"/3.5" HDD/SSD podrška, 1GB, 1×G-LAN, Wake on LAN/WAN, 36001001, 2098,76, 00:00, 0, 1, 2465,15, 2465,15, 41078,2875
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:23
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: PC Ryzen 7 3700x + tipkovnica + miš GPU nVidia RTX2070, SDD 1T Samsung, RAM 32, 10017001, 14373,22, 00:00, 0, 3, 14373,22, 43119,66, 94977,8625
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:23
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: PC Ryzen 7 3700x + tipkovnica + miš GPU nVidia GTX1660 Ti, SDD 1T Samsung, RAM 32, 10017002, 12634,12, 00:00, 0, 2, 12634,12, 25268,24, 126563,1625
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:23
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: PC Ryzen 9 3900x + tipkovnica + miš GPU nVidia RTX2080S, SDD 1T Samsung, RAM 64, 10016001, 20016,11, 00:00, 0, 2, 20016,11, 40032,22, 176603,4375
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:23
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: TABLET Samsung SM-T720NZKASEE, 24001003, 2656,56, 00:00, 0, 1, 3120,32, 3120,32, 180503,8375
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:24
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: HDD Eksterni tvrdi disk WESTERN DIGITAL My Passport 1T, 2.5", USB 3.0 crni, 27001001, 320,82, 00:00, 0, 1, 376,83, 376,83, 180974,8750
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:24
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: WEB KAMERA Logitech HD C615, Full HD 1080p, USB, 26001002, 437,22, 00:00, 0, 1, 513,55, 513,55, 181616,8125
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:25
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:25
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:25
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:25
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:30
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: MONITOR DELL SE2417HG, 24", TN, Full HD, 2 ms, VGA, 2x HDMI, 8014001, 709,00, 00:00, 0, 15, 832,77, 12491,55, 15614,4375
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:30
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: SOFTWARE Microsoft Office 2019, 37001001, 16,29, 00:00, 0, 7, 571,43, 4000,01, 20614,4500
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:30
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: LAPTOP Asus  G531GV-AL112 ROG Strix G Black 15.6", i7-9750H/16GB/256GB SSD/RTX2060 6GB/15.6"FHD/FreeDOS, 35001001, 9112,91, 00:00, 0, 1, 10703,77, 10703,77, 33994,1625
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:30
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: PROJEKTOR LG PH30JG LED, 1280x720, 250 ANSI, 100.000:1, 28001001, 2726,22, 00:00, 0, 1, 3202,15, 3202,15, 37996,8500
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:30
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: PROJEKTOR LG PH30JG LED, 1280x720, 250 ANSI, 100.000:1, 28001001, 2726,22, 00:00, 0, 1, 3202,15, 3202,15, 41999,5375
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:30
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: PROJEKTOR LG PH30JG LED, 1280x720, 250 ANSI, 100.000:1, 28001001, 2726,22, 00:00, 0, 1, 3202,15, 3202,15, 46002,2250
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:31
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: MONITOR DELL SE2417HG, 24", TN, Full HD, 2 ms, VGA, 2x HDMI, 8014001, 709,00, 00:00, 0, 15, 832,77, 12491,55, 15614,4375
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:31
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: SOFTWARE Microsoft Office 2019, 37001001, 16,29, 00:00, 0, 7, 571,43, 4000,01, 20614,4500
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:31
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: LAPTOP Asus  G531GV-AL112 ROG Strix G Black 15.6", i7-9750H/16GB/256GB SSD/RTX2060 6GB/15.6"FHD/FreeDOS, 35001001, 9112,91, 00:00, 0, 1, 10703,77, 10703,77, 33994,1625
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:31
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: PROJEKTOR LG PH30JG LED, 1280x720, 250 ANSI, 100.000:1, 28001001, 2726,22, 00:00, 0, 1, 3202,15, 3202,15, 37996,8500
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:31
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: NAS SYNOLOGY DS418j DiskStation 4-bay NAS server, 2.5"/3.5" HDD/SSD podrška, 1GB, 1×G-LAN, Wake on LAN/WAN, 36001001, 2098,76, 00:00, 0, 1, 2465,15, 2465,15, 41078,2875
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:32
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: PC Ryzen 7 3700x + tipkovnica + miš GPU nVidia RTX2070, SDD 1T Samsung, RAM 32, 10017001, 14373,22, 00:00, 0, 3, 14373,22, 43119,66, 94977,8625
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:32
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: PC Ryzen 7 3700x + tipkovnica + miš GPU nVidia GTX1660 Ti, SDD 1T Samsung, RAM 32, 10017002, 12634,12, 00:00, 0, 2, 12634,12, 25268,24, 126563,1625
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:32
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: PC Ryzen 9 3900x + tipkovnica + miš GPU nVidia RTX2080S, SDD 1T Samsung, RAM 64, 10016001, 20016,11, 00:00, 0, 2, 20016,11, 40032,22, 176603,4375
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:32
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: TABLET Samsung SM-T720NZKASEE, 24001003, 2656,56, 00:00, 0, 1, 3120,32, 3120,32, 180503,8375
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:32
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: HDD Eksterni tvrdi disk WESTERN DIGITAL My Passport 1T, 2.5", USB 3.0 crni, 27001001, 320,82, 00:00, 0, 1, 376,83, 376,83, 180974,8750
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:32
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: WEB KAMERA Logitech HD C615, Full HD 1080p, USB, 26001002, 437,22, 00:00, 0, 1, 513,55, 513,55, 181616,8125
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:32
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:38
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:38
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:38
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:39
+    - LOGED change: POT.Documents.Ponuda - button1_Click
+     - Used: Saveoffer
+     - Data: 400400920
+
+     - Result: offer is already saved in DB, please make new one.
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:40
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: MONITOR DELL SE2417HG, 24", TN, Full HD, 2 ms, VGA, 2x HDMI, 8014001, 709,00, 00:00, 0, 15, 832,77, 12491,55, 15614,4375
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:40
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: SOFTWARE Microsoft Office 2019, 37001001, 16,29, 00:00, 0, 7, 571,43, 4000,01, 20614,4500
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:40
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: LAPTOP Asus  G531GV-AL112 ROG Strix G Black 15.6", i7-9750H/16GB/256GB SSD/RTX2060 6GB/15.6"FHD/FreeDOS, 35001001, 9112,91, 00:00, 0, 1, 10703,77, 10703,77, 33994,1625
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:40
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: PROJEKTOR LG PH30JG LED, 1280x720, 250 ANSI, 100.000:1, 28001001, 2726,22, 00:00, 0, 1, 3202,15, 3202,15, 37996,8500
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:40
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: NAS SYNOLOGY DS418j DiskStation 4-bay NAS server, 2.5"/3.5" HDD/SSD podrška, 1GB, 1×G-LAN, Wake on LAN/WAN, 36001001, 2098,76, 00:00, 0, 1, 2465,15, 2465,15, 41078,2875
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:40
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: PC Ryzen 7 3700x + tipkovnica + miš GPU nVidia RTX2070, SDD 1T Samsung, RAM 32, 10017001, 14373,22, 00:00, 0, 3, 14373,22, 43119,66, 94977,8625
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:41
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: PC Ryzen 7 3700x + tipkovnica + miš GPU nVidia GTX1660 Ti, SDD 1T Samsung, RAM 32, 10017002, 12634,12, 00:00, 0, 2, 12634,12, 25268,24, 126563,1625
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:41
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: PC Ryzen 9 3900x + tipkovnica + miš GPU nVidia RTX2080S, SDD 1T Samsung, RAM 64, 10016001, 20016,11, 00:00, 0, 2, 20016,11, 40032,22, 176603,4375
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:41
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: TABLET Samsung SM-T720NZKASEE, 24001003, 2656,56, 00:00, 0, 1, 3120,32, 3120,32, 180503,8375
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:41
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: HDD Eksterni tvrdi disk WESTERN DIGITAL My Passport 1T, 2.5", USB 3.0 crni, 27001001, 320,82, 00:00, 0, 1, 376,83, 376,83, 180974,8750
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:41
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: WEB KAMERA Logitech HD C615, Full HD 1080p, USB, 26001002, 437,22, 00:00, 0, 1, 513,55, 513,55, 181616,8125
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:41
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:42
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:42
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:42
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:43
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:44
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:49 - App started
+    *** BrunoBrckovic *** 
+
+- 05.02.20. 11:49
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: PC Ryzen 7 3700x + tipkovnica + miš GPU nVidia RTX2070, SDD 1T Samsung, RAM 32, 10017001, 14373,22, 00:00, 0, 1, 14373,22, 14373,22, 17966,5250
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:51
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+    - InnerEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+    - MessageEcp: A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.)
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:54
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:54
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:55
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: PC Ryzen 7 3700x + tipkovnica + miš GPU nVidia GTX1660 Ti, SDD 1T Samsung, RAM 32, 10017002, 12634,12, 00:00, 0, 1, 12634,12, 12634,12, 15792,6500
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:55
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 11:55
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+

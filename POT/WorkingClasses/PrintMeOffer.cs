@@ -583,7 +583,7 @@ namespace POT.WorkingClasses
                             workingStr = Properties.strings.DateTime + ":";
                             measureStr = e.Graphics.MeasureString(workingStr, ft).Width;
                             e.Graphics.DrawString(workingStr, new Font("Calibri light", ft.Size, FontStyle.Bold), Brushes.Black, new Point(rb, headerpointVer + moveBy));
-
+                            
                             workingStr = off.DatumIzdano + " " + off.VrijemeIzdano;
                             e.Graphics.DrawString(workingStr, new Font("Calibri light", ft.Size, FontStyle.Regular), Brushes.Black, new Point(rb + (int)measureStr + 25, headerpointVer + moveBy));
 
@@ -599,15 +599,15 @@ namespace POT.WorkingClasses
                             headerpointVer = headerpointVer + moveBy + 4;
                             workingStr = Properties.strings.OfferValid + ":";
                             e.Graphics.DrawString(workingStr, new Font("Calibri light", ft.Size, FontStyle.Bold), Brushes.Black, new Point(rb, headerpointVer + moveBy));
-
+                            
                             workingStr = off.Valuta.ToString() + " " + Properties.strings.Days;
                             e.Graphics.DrawString(workingStr, new Font("Calibri light", ft.Size, FontStyle.Regular), Brushes.Black, new Point(rb + (int)measureStr + 25, headerpointVer + moveBy));
 
-
+                            
                             headerpointVer = headerpointVer + moveBy + 4;
                             workingStr = Properties.strings.ExcRate + ":";
                             e.Graphics.DrawString(workingStr, new Font("Calibri light", ft.Size, FontStyle.Bold), Brushes.Black, new Point(rb, headerpointVer + moveBy));
-
+                            
                             workingStr = off.Eur.ToString() + " kn " + Properties.strings.OnDay + " " + off.DanTecaja;
                             e.Graphics.DrawString(workingStr, new Font("Calibri light", ft.Size, FontStyle.Regular), Brushes.Black, new Point(rb + (int)measureStr + 25, headerpointVer + moveBy));
 
