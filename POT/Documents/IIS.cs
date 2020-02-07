@@ -3,6 +3,7 @@ using POT.WorkingClasses;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Drawing.Printing;
 using System.IO;
 using System.Linq;
 using System.Media;
@@ -696,22 +697,35 @@ namespace POT.Documents
             {
                 SaveFileDialog pdfSaveDialog = new SaveFileDialog();
 
-                if (printDialog1.PrinterSettings.PrinterName == "Microsoft Print to PDF")
-                {   // force a reasonable filename
-                    string basename = Path.GetFileNameWithoutExtension("IIS " + IISNumber.ToString());
-                    string directory = Path.GetDirectoryName("IIS " + IISNumber.ToString());
-                    printDocumentIIS.PrinterSettings.PrintToFile = true;
-                    // confirm the user wants to use that name
-                    pdfSaveDialog.InitialDirectory = directory;
-                    pdfSaveDialog.FileName = basename + ".pdf";
-                    pdfSaveDialog.Filter = "PDF File|*.pdf";
-                    result = pdfSaveDialog.ShowDialog();
-                    if (result != DialogResult.Cancel)
-                        printDocumentIIS.PrinterSettings.PrintFileName = pdfSaveDialog.FileName;
+                // force a reasonable filename
+                string basename = Path.GetFileNameWithoutExtension("IIS " + IISNumber.ToString());
+                string directory = Path.GetDirectoryName("IIS " + IISNumber.ToString());
+                printDocumentIIS.PrinterSettings.PrintToFile = true;
+                // confirm the user wants to use that name
+                pdfSaveDialog.InitialDirectory = directory;
+
+                Boolean nasaoPrinter = true;
+
+                switch (printDialog1.PrinterSettings.PrinterName)
+                {
+                    case "Microsoft Print to PDF":
+                        pdfSaveDialog.FileName = basename + ".pdf";
+                        pdfSaveDialog.Filter = "PDF File|*.pdf";
+                        break;
+                    case "Microsoft XPS Document Writer":
+                        pdfSaveDialog.FileName = basename + ".xps";
+                        pdfSaveDialog.Filter = "PDF File|*.xps";
+                        break;
+                    default:
+                        nasaoPrinter = false;
+                        break;
                 }
 
-                if (result != DialogResult.Cancel)  // in case they canceled the save as dialog
+                result = pdfSaveDialog.ShowDialog();
+
+                if (result != DialogResult.Cancel && nasaoPrinter)  // in case they canceled the save as dialog
                 {
+                    printDocumentIIS.PrinterSettings.PrintFileName = pdfSaveDialog.FileName;
                     printDocumentIIS.Print();
                     MessageBox.Show("Saved to location: " + Environment.NewLine + pdfSaveDialog.FileName, "SAVED", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
@@ -725,39 +739,61 @@ namespace POT.Documents
         private void saveToPDF(List<Part> partList)
         {
             String printerName = printDialog1.PrinterSettings.PrinterName;
+            String extenzija;
 
             try
             {
-                PrintDialog printDialog1 = new PrintDialog();
-                printDialog1.Document = printDocumentIIS;
+                string fileName = "";
+                Printers prt = new Printers();
 
-                printDialog1.PrinterSettings.PrinterName = "Microsoft Print to PDF";
 
-                if (!printDialog1.PrinterSettings.IsValid) return;
+                printDocumentIIS.PrinterSettings.PrinterName = "Microsoft Print to PDF";
 
-                if (!Directory.Exists(Properties.Settings.Default.DefaultFolder + "\\IIS"))
+                if (prt.PrinterExist(printDocumentIIS.PrinterSettings.PrinterName))
+                    extenzija = ".pdf";
+                else
+                {
+                    printDocumentIIS.PrinterSettings.PrinterName = "Microsoft XPS Document Writer";
+
+                    if (prt.PrinterExist(printDocumentIIS.PrinterSettings.PrinterName))
+                        extenzija = ".xps";
+                    else
+                    {
+                        MessageBox.Show("PDF or XPS printer can't be found!");
+                        return;
+                    }
+                }
+
+                fileName = "\\IIS " + IISNumber.ToString().Replace("/", "") + extenzija;
+
+                if (!Directory.Exists(Properties.Settings.Default.DefaultFolder + "\\ISS"))
                     return;
 
-                string fileName = "\\IIS " + IISNumber.ToString().Replace("/", "") + ".pdf";
                 string directory = Properties.Settings.Default.DefaultFolder + "\\IIS";
 
-                partListPrint.Clear();
-                partListPrint.AddRange(partList);
-
-                printDialog1.PrinterSettings.PrintToFile = true;
                 printDocumentIIS.PrinterSettings.PrintFileName = directory + fileName;
                 printDocumentIIS.PrinterSettings.PrintToFile = true;
+
+                IEnumerable<PaperSize> paperSizes = printDocumentIIS.PrinterSettings.PaperSizes.Cast<PaperSize>();
+                PaperSize sizeA4 = paperSizes.First<PaperSize>(size => size.Kind == PaperKind.A4); // setting paper size to A4 size
+
+                printDocumentIIS.DefaultPageSettings.PaperSize = sizeA4;
+                printDocumentIIS.DefaultPageSettings.Margins.Top = 0;
+                printDocumentIIS.DefaultPageSettings.Margins.Bottom = 0;
+
                 printDocumentIIS.Print();
 
-                printDialog1.PrinterSettings.PrintToFile = false;
                 printDocumentIIS.PrinterSettings.PrintToFile = false;
-                printDialog1.PrinterSettings.PrinterName = printerName;
                 printDocumentIIS.PrinterSettings.PrinterName = printerName;
             }
             catch (Exception e1)
             {
                 new LogWriter(e1);
                 MessageBox.Show(e1.Message + Environment.NewLine + "PDF file not saved.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Program.LoadStop();
             }
         }
     }

@@ -31,6 +31,8 @@ namespace POT.WorkingClasses
         public String izradioUser = "";
         public String izradioRegija = "";
 
+        Brush exeBrush;
+
         int headerpointVer;
         int headerpointHor;
         int imgH = 0;  //75
@@ -46,6 +48,9 @@ namespace POT.WorkingClasses
 
         public PrintMe(Company _cmpS, Company _cmpR, List<String> _sifrarnikArr, List<Part> _partListPrint, String _PrimkaNumber, String _napomenaPRIMPrint, String _DocumentName, String _recipientSender, Boolean _Signature)
         {
+            Color exeColor = Color.FromArgb(1, 116, 170);
+            exeBrush = new SolidBrush(exeColor);
+
             cmpR = _cmpR;
             cmpS = _cmpS;
             sifrarnikArr = _sifrarnikArr;
@@ -66,6 +71,9 @@ namespace POT.WorkingClasses
 
         public PrintMe(Company _cmpS, Company _cmpR, List<String> _sifrarnikArr, List<Part> _partListPrint, String _PrimkaNumber, String _napomenaPRIMPrint, String _DocumentName, String _recipientSender, Boolean _Signature, Branch _Branch)
         {
+            Color exeColor = Color.FromArgb(1, 116, 170);
+            exeBrush = new SolidBrush(exeColor);
+
             cmpR = _cmpR;
             cmpS = _cmpS;
             sifrarnikArr = _sifrarnikArr;
@@ -206,7 +214,7 @@ namespace POT.WorkingClasses
                     }
 
                     e.Graphics.DrawRectangle(new Pen(Brushes.Black), margins.Left, headerpointVer, bounds.Right - margins.Right - margins.Left, 20);
-                    e.Graphics.FillRectangle(new SolidBrush(Color.AliceBlue), margins.Left + 1, headerpointVer + 1, bounds.Right - margins.Right - margins.Left - 2, 18);
+                    e.Graphics.FillRectangle(exeBrush, margins.Left + 1, headerpointVer + 1, bounds.Right - margins.Right - margins.Left - 2, 18);
 
                     int total = bounds.Right - margins.Left - margins.Right;
                     int rb = margins.Left + total / 17;
@@ -223,35 +231,37 @@ namespace POT.WorkingClasses
 
                     Font fnt = getFont(fontSizeR);
 
+                    Brush tmpBrush = Brushes.White;
+
                     workingStr = "RB";
                     fnt = fitFontSizeBold(e, workingStr, fontSizeR, code - rb);
                     measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
                     measureField = rb - margins.Left;
-                    e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, code - rb), Brushes.Black, new Point(margins.Left + (((int)measureField - (int)measureStr) / 2), headerpointVer + rowHeight / 4));
+                    e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, code - rb), tmpBrush, new Point(margins.Left + (((int)measureField - (int)measureStr) / 2), headerpointVer + rowHeight / 4));
                     
                     workingStr = Properties.strings.CODE ;
                     fnt = fitFontSizeBold(e, workingStr, fontSizeR, code - rb);
                     measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
                     measureField = code - rb;
-                    e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, code - rb), Brushes.Black, new Point(rb + (((int)measureField - (int)measureStr) / 2), headerpointVer + rowHeight / 4));
+                    e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, code - rb), tmpBrush, new Point(rb + (((int)measureField - (int)measureStr) / 2), headerpointVer + rowHeight / 4));
 
                     workingStr = Properties.strings.NAME;
                     fnt = fitFontSizeBold(e, workingStr, fontSizeR, code - rb);
                     measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
                     measureField = name - code;
-                    e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, code - rb), Brushes.Black, new Point(code + (((int)measureField - (int)measureStr) / 2), headerpointVer + rowHeight / 4));
+                    e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, code - rb), tmpBrush, new Point(code + (((int)measureField - (int)measureStr) / 2), headerpointVer + rowHeight / 4));
 
                     workingStr = Properties.strings.PACK + ".";
                     fnt = fitFontSizeBold(e, workingStr, fontSizeR, code - rb);
                     measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
                     measureField = mes - name;
-                    e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, code - rb), Brushes.Black, new Point(name + (((int)measureField - (int)measureStr) / 2), headerpointVer + rowHeight / 4));
+                    e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, code - rb), tmpBrush, new Point(name + (((int)measureField - (int)measureStr) / 2), headerpointVer + rowHeight / 4));
 
                     workingStr = Properties.strings.QUA + ".";
                     fnt = fitFontSizeBold(e, workingStr, fontSizeR, code - rb);
                     measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
                     measureField = bounds.Right - margins.Right - mes;
-                    e.Graphics.DrawString(workingStr, getFont(8), Brushes.Black, new Point(mes + (((int)measureField - (int)measureStr) / 2), headerpointVer + rowHeight / 4));
+                    e.Graphics.DrawString(workingStr, getFont(8), tmpBrush, new Point(mes + (((int)measureField - (int)measureStr) / 2), headerpointVer + rowHeight / 4));
 
                     var groupedPartsList = partListPrint.GroupBy(c => c.PartialCode).Select(grp => grp.ToList()).ToList();
                     //for (; partRows < 35; partRows++)
@@ -425,7 +435,7 @@ namespace POT.WorkingClasses
 
 
                             e.Graphics.DrawRectangle(new Pen(Brushes.Black), margins.Left, headerpointVer, bounds.Right - margins.Right - margins.Left, 20);
-                            e.Graphics.FillRectangle(new SolidBrush(Color.AliceBlue), margins.Left + 1, headerpointVer + 1, bounds.Right - margins.Right - margins.Left - 2, 18);
+                            e.Graphics.FillRectangle(exeBrush, margins.Left + 1, headerpointVer + 1, bounds.Right - margins.Right - margins.Left - 2, 18);
                         }
                         int total = bounds.Right - margins.Left - margins.Right;
                         int rbSN = margins.Left + total / 17;
@@ -446,29 +456,31 @@ namespace POT.WorkingClasses
                             e.Graphics.DrawLine(new Pen(Brushes.Black), new Point(codeSN, headerpointVer), new Point(codeSN, headerpointVer + rowHeight));
                             e.Graphics.DrawLine(new Pen(Brushes.Black), new Point(snSN, headerpointVer), new Point(snSN, headerpointVer + rowHeight));
 
+                            Brush tmpBrush = Brushes.White;
+
                             workingStr = "RB";
                             fnt = fitFontSizeBold(e, workingStr, fontSizeR, rbSN - margins.Left);
                             measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
                             measureField = rbSN - margins.Left;
-                            e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, rbSN - margins.Left), Brushes.Black, new Point(margins.Left + (((int)measureField - (int)measureStr) / 2), headerpointVer + rowHeight / 4));
+                            e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, rbSN - margins.Left), tmpBrush, new Point(margins.Left + (((int)measureField - (int)measureStr) / 2), headerpointVer + rowHeight / 4));
 
                             workingStr = Properties.strings.CODE;
                             fnt = fitFontSizeBold(e, workingStr, fontSizeR, codeSN - rbSN);
                             measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
                             measureField = codeSN - rbSN;
-                            e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, codeSN - rbSN), Brushes.Black, new Point(rbSN + (((int)measureField - (int)measureStr) / 2), headerpointVer + rowHeight / 4));
+                            e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, codeSN - rbSN), tmpBrush, new Point(rbSN + (((int)measureField - (int)measureStr) / 2), headerpointVer + rowHeight / 4));
 
                             workingStr = Properties.strings.SERIALNBR + ".";
                             fnt = fitFontSizeBold(e, workingStr, fontSizeR, snSN - codeSN);
                             measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
                             measureField = snSN - codeSN;
-                            e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, snSN - codeSN), Brushes.Black, new Point(codeSN + (((int)measureField - (int)measureStr) / 2), headerpointVer + rowHeight / 4));
+                            e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, snSN - codeSN), tmpBrush, new Point(codeSN + (((int)measureField - (int)measureStr) / 2), headerpointVer + rowHeight / 4));
 
                             workingStr = Properties.strings.CUSTOMERNBR + ".";
                             fnt = fitFontSizeBold(e, workingStr, fontSizeR, bounds.Right - margins.Right - snSN);
                             measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
                             measureField = bounds.Right - margins.Right - snSN;
-                            e.Graphics.DrawString(workingStr, getFont(8), Brushes.Black, new Point(snSN + (((int)measureField - (int)measureStr) / 2), headerpointVer + rowHeight / 4));
+                            e.Graphics.DrawString(workingStr, getFont(8), tmpBrush, new Point(snSN + (((int)measureField - (int)measureStr) / 2), headerpointVer + rowHeight / 4));
 
                         }
 

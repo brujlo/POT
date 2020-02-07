@@ -116,8 +116,9 @@ namespace POT.WorkingClasses
                 string workingStr = "";
                 float measureStr = 0;
                 float measureField = 0;
-
-                Color cl = ColorTranslator.FromHtml("#1B75BC");
+                
+                //Color cl = ColorTranslator.FromHtml("#1B75BC");
+                Color cl = ColorTranslator.FromHtml("#0174AA");
 
                 Brush brushBlue = new SolidBrush(cl);
                 Brush brushBlack = Brushes.Black;

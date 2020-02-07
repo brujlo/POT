@@ -3972,3 +3972,1614 @@ Parameter name: emSize
      - Result: Print page called
     *** BrunoBrckovic *** 
 
+
+- 05.02.20. 12:04 - App started
+    *** BrunoBrckovic *** 
+
+- 05.02.20. 12:04 - App turned off
+    *** BrunoBrckovic *** 
+
+- 05.02.20. 12:13 - App started
+    *** BrunoBrckovic *** 
+
+- 05.02.20. 12:13
+    - LOGED change: POT.CompanyInfo - button2_Click
+     - Used: Changing MainCmp info
+     - Data: DMD TRADE doo, Backa 1, Zagreb, 10000, HR, 0.00, 0.00, 86701139150, PBZGHR2X, 00226327, HR8323400091100157894, 4, 1, www.dmdtrade.hr, +38512307973, Bruno Brckovic, info@exception.hr, support@exception.hr, 1
+     - Result: Company (DMD TRADE doo) data is now selected.
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 12:15
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: MONITOR DELL SE2417HG, 24", TN, Full HD, 2 ms, VGA, 2x HDMI, 8014001, 709,00, 00:00, 0, 15, 832,77, 12491,55, 15614,4375
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 12:15
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: SOFTWARE Microsoft Office 2019, 37001001, 16,29, 00:00, 0, 7, 571,43, 4000,01, 20614,4500
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 12:15
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: LAPTOP Asus  G531GV-AL112 ROG Strix G Black 15.6", i7-9750H/16GB/256GB SSD/RTX2060 6GB/15.6"FHD/FreeDOS, 35001001, 9112,91, 00:00, 0, 1, 10703,77, 10703,77, 33994,1625
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 12:16
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: PROJEKTOR LG PH30JG LED, 1280x720, 250 ANSI, 100.000:1, 28001001, 2726,22, 00:00, 0, 1, 3202,15, 3202,15, 37996,8500
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 12:16
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: NAS SYNOLOGY DS418j DiskStation 4-bay NAS server, 2.5"/3.5" HDD/SSD podrška, 1GB, 1×G-LAN, Wake on LAN/WAN, 36001001, 2098,76, 00:00, 0, 1, 2465,15, 2465,15, 41078,2875
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 12:16
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: PC Ryzen 7 3700x + tipkovnica + miš GPU nVidia RTX2070, SDD 1T Samsung, RAM 32, 10017001, 14373,22, 00:00, 0, 3, 14373,22, 43119,66, 94977,8625
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 12:16
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: PC Ryzen 7 3700x + tipkovnica + miš GPU nVidia GTX1660 Ti, SDD 1T Samsung, RAM 32, 10017002, 12634,12, 00:00, 0, 2, 12634,12, 25268,24, 126563,1625
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 12:16
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: PC Ryzen 9 3900x + tipkovnica + miš GPU nVidia RTX2080S, SDD 1T Samsung, RAM 64, 10016001, 20016,11, 00:00, 0, 2, 20016,11, 40032,22, 176603,4375
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 12:16
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: TABLET Samsung SM-T720NZKASEE, 24001003, 2656,56, 00:00, 0, 1, 3120,32, 3120,32, 180503,8375
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 12:16
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: HDD Eksterni tvrdi disk WESTERN DIGITAL My Passport 1T, 2.5", USB 3.0 crni, 27001001, 320,82, 00:00, 0, 1, 376,83, 376,83, 180974,8750
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 12:16
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: WEB KAMERA Logitech HD C615, Full HD 1080p, USB, 26001002, 437,22, 00:00, 0, 1, 513,55, 513,55, 181616,8125
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 12:17
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 12:20
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 12:20
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 12:20
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 05.02.20. 12:25 - App turned off
+    *** BrunoBrckovic *** 
+
+- 07.02.20. 10:05 - App started
+    *** BrunoBrckovic *** 
+
+- 07.02.20. 10:06
+    - LOGED change: POT.CompanyInfo - button1_Click
+     - Used: dlg.ShowDialog()
+     - Data: Change logo
+     - Result: D:\Dropbox (Personal)\EXCEPTION\LOGO\Exeption_logo - Odrezan.jpg
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:06
+    - LOGED change: POT.CompanyInfo - button1_Click
+     - Used: dlg.ShowDialog()
+     - Data: Change logo
+     - Result: D:\Dropbox (Personal)\EXCEPTION\LOGO\Exeption_logo - Odrezan05.jpg
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:06
+    - LOGED change: POT.CompanyInfo - button1_Click
+     - Used: dlg.ShowDialog()
+     - Data: Change logo
+     - Result: D:\Dropbox (Personal)\EXCEPTION\LOGO\Exeption_logo - Odrezan.jpg
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:06
+    - LOGED change: POT.CompanyInfo - button2_Click
+     - Used: Changing MainCmp info
+     - Data: DMD TRADE doo, Backa 1, Zagreb, 10000, HR, 0.00, 0.00, 86701139150, PBZGHR2X, 00226327, HR8323400091100157894, 4, 1, www.dmdtrade.hr, +38512307973, Bruno Brckovic, info@exception.hr, support@exception.hr, 2
+     - Result: Company (DMD TRADE doo) data is now selected.
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:06 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 07.02.20. 10:06
+    - LOGED change: POT.SetDBConnection - button2_Click
+     - Used: DB connection address and name save.
+     - Data: 192.168.100.101, exe
+     - Result: Saved, no msgToUser
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:06 - App started
+    *** BrunoBrckovic *** 
+
+- 07.02.20. 10:06
+    - LOGED change: POT.CompanyInfo - button2_Click
+     - Used: Changing MainCmp info
+     - Data: Exception, Dunavska 31, Zagreb, 10040, HR, 0.00, 0.00, 76737454770, PBZGHR2X, 97768138, HR9323400091160480462, 4, 1, www.exception.hr, +38515814315, Bruno Brckovic, info@exception.hr, support@exception.hr, 2
+     - Result: Company (Exception) data is now selected.
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:07
+    - LOGED change: POT.BuildingClasses.SettingsForm - SaveBT_Click
+     - Used: Print
+     - Data: 0; 0; 15; VAT is not calculated according to Article 17. of the Law on PDV; The taxpayer is not in the VAT system, according to Article 90. of the Law on PDV; Thank you for your trust; Temeljem članka 9., st.3., Zakona o računovodstvu, račun je pravovaljan bez potpisa i pečata; Porezni obveznik nije u sustavu PDV-a, temeljem zakona o PDV-u čl. 90; Hvala na ukazanom povjerenju; Bruno Brcković; E:\Dropbox (EXCEPTION)\POT DOKUMENTI; Save_to_PDF => True
+     - Result: 
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:07
+    - LOGED change: POT.MainCmpSelector - button1_Click
+     - Used: Main cmp select
+     - Data: CES-POS d.o.o.
+     - Result: Main cmp selected, please relog to see changes.
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:07 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 07.02.20. 10:07 - App started
+    *** BrunoBrckovic *** 
+
+- 07.02.20. 10:07
+    - LOGED change: POT.MainCmpSelector - button1_Click
+     - Used: Main cmp select
+     - Data: Exception
+     - Result: Main cmp selected, please relog to see changes.
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:07 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 07.02.20. 10:07 - App started
+    *** BrunoBrckovic *** 
+
+- 07.02.20. 10:11
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE odrzavanje IT opreme, 20004006, 220,00, 06:00, 0, 4, 1320,00, 5280,00, 5280,00
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:11
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE odrzavanje IT opreme, 20004006, 220,00, 08:00, 0, 4, 1760,00, 7040,00, 12320,00
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:12
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE servis opreme, 20004007, 220,00, 05:00, 0, 5, 1100,00, 5500,00, 17820,00
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:12
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE izrada i odrzavanje Facebook aplikacije, 20004010, 0,00, 03:00, 0, 6, 750,00, 4500,00, 22320,00
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:13
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE izrada/odrzavanje internet stranica, 20004001, 250,00, 03:00, 0, 5, 750,00, 3750,00, 26070,00
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:14
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE izrada/odrzavanje internet stranica, 20004001, 250,00, 03:00, 0, 5, 0, 0, 22320,00
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:14
+    - LOGED change: POT.Documents.Racun - button5_Click
+     - Used: Remove selected
+     - Data: ListViewSubItem: {5}, ListViewSubItem: {Radni sat EXE izrada/odrzavanje internet stranica}, ListViewSubItem: {0124020004001}, ListViewSubItem: {250,00}, ListViewSubItem: {03:00}, ListViewSubItem: {0,00}, ListViewSubItem: {5}, ListViewSubItem: {750,00}, ListViewSubItem: {3750,00}
+     - Result: Removed
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:14
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE izrada/odrzavanje internet stranica, 20004001, 250,00, 02:45, 0, 5, 687,5000, 3437,5000, 25757,5000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:14
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE izrada/odrzavanje internet stranica, 20004001, 250,00, 02:45, 0, 5, 0, 0, 22320,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:14
+    - LOGED change: POT.Documents.Racun - button5_Click
+     - Used: Remove selected
+     - Data: ListViewSubItem: {5}, ListViewSubItem: {Radni sat EXE izrada/odrzavanje internet stranica}, ListViewSubItem: {0124020004001}, ListViewSubItem: {250,00}, ListViewSubItem: {02:45}, ListViewSubItem: {0,00}, ListViewSubItem: {5}, ListViewSubItem: {687,50}, ListViewSubItem: {3437,50}
+     - Result: Removed
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:14
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE izrada/odrzavanje internet stranica, 20004001, 250,00, 02:30, 0, 5, 625,000, 3125,000, 25445,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:14
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE izrada/odrzavanje internet stranica, 20004001, 250,00, 02:30, 0, 5, 0, 0, 22320,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:14
+    - LOGED change: POT.Documents.Racun - button5_Click
+     - Used: Remove selected
+     - Data: ListViewSubItem: {5}, ListViewSubItem: {Radni sat EXE izrada/odrzavanje internet stranica}, ListViewSubItem: {0124020004001}, ListViewSubItem: {250,00}, ListViewSubItem: {02:30}, ListViewSubItem: {0,00}, ListViewSubItem: {5}, ListViewSubItem: {625,00}, ListViewSubItem: {3125,00}
+     - Result: Removed
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:14
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE izrada/odrzavanje internet stranica, 20004001, 250,00, 02:15, 0, 5, 562,5000, 2812,5000, 25132,5000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:14
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE izrada/odrzavanje internet stranica, 20004001, 250,00, 02:30, 0, 5, 625,000, 3125,000, 28257,5000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:14
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE izrada/odrzavanje internet stranica, 20004001, 250,00, 02:15, 0, 5, 0, 0, 25445,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:14
+    - LOGED change: POT.Documents.Racun - button5_Click
+     - Used: Remove selected
+     - Data: ListViewSubItem: {5}, ListViewSubItem: {Radni sat EXE izrada/odrzavanje internet stranica}, ListViewSubItem: {0124020004001}, ListViewSubItem: {250,00}, ListViewSubItem: {02:15}, ListViewSubItem: {0,00}, ListViewSubItem: {5}, ListViewSubItem: {562,50}, ListViewSubItem: {2812,50}
+     - Result: Removed
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:15
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE izrada i odrzavanje Facebook aplikacije, 20004010, 0,00, 02:45, 0, 6, 687,5000, 4125,0000, 29570,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:15
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE izrada i odrzavanje Facebook aplikacije, 20004010, 0,00, 03:00, 0, 6, 0, 0, 25070,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:15
+    - LOGED change: POT.Documents.Racun - button5_Click
+     - Used: Remove selected
+     - Data: ListViewSubItem: {4}, ListViewSubItem: {Radni sat EXE izrada i odrzavanje Facebook aplikacije}, ListViewSubItem: {0124020004010}, ListViewSubItem: {250,00}, ListViewSubItem: {03:00}, ListViewSubItem: {0,00}, ListViewSubItem: {6}, ListViewSubItem: {750,00}, ListViewSubItem: {4500,00}
+     - Result: Removed
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:18
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE izrada i odrzavanje Facebook aplikacije, 20004010, 0,00, 02:45, 0, 6, 0, 0, 20945,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:18
+    - LOGED change: POT.Documents.Racun - button5_Click
+     - Used: Remove selected
+     - Data: ListViewSubItem: {5}, ListViewSubItem: {Radni sat EXE izrada i odrzavanje Facebook aplikacije}, ListViewSubItem: {0124020004010}, ListViewSubItem: {250,00}, ListViewSubItem: {02:45}, ListViewSubItem: {0,00}, ListViewSubItem: {6}, ListViewSubItem: {687,50}, ListViewSubItem: {4125,00}
+     - Result: Removed
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:18
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE izrada i odrzavanje Facebook aplikacije, 20004010, 0,00, 02:45, 0, 7, 687,5000, 4812,5000, 25757,5000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:18
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE izrada i odrzavanje Facebook aplikacije, 20004010, 0,00, 02:45, 5, 7, 653,125000, 4571,875000, 30329,375000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:18
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE izrada i odrzavanje Facebook aplikacije, 20004010, 0,00, 02:45, 0, 7, 0, 0, 25516,875000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:18
+    - LOGED change: POT.Documents.Racun - button5_Click
+     - Used: Remove selected
+     - Data: ListViewSubItem: {5}, ListViewSubItem: {Radni sat EXE izrada i odrzavanje Facebook aplikacije}, ListViewSubItem: {0124020004010}, ListViewSubItem: {250,00}, ListViewSubItem: {02:45}, ListViewSubItem: {0,00}, ListViewSubItem: {7}, ListViewSubItem: {687,50}, ListViewSubItem: {4812,50}
+     - Result: Removed
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:18
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE izrada i odrzavanje Facebook aplikacije, 20004010, 0,00, 02:45, 7, 7, 639,375000, 4475,625000, 29992,500000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:18
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE izrada i odrzavanje Facebook aplikacije, 20004010, 0,00, 02:45, 5, 7, 0, 0, 25420,620000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:18
+    - LOGED change: POT.Documents.Racun - button5_Click
+     - Used: Remove selected
+     - Data: ListViewSubItem: {5}, ListViewSubItem: {Radni sat EXE izrada i odrzavanje Facebook aplikacije}, ListViewSubItem: {0124020004010}, ListViewSubItem: {250,00}, ListViewSubItem: {02:45}, ListViewSubItem: {5,00}, ListViewSubItem: {7}, ListViewSubItem: {653,13}, ListViewSubItem: {4571,88}
+     - Result: Removed
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:18
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE izrada i odrzavanje Facebook aplikacije, 20004010, 0,00, 02:45, 8, 7, 632,500000, 4427,500000, 29848,120000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:18
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE izrada i odrzavanje Facebook aplikacije, 20004010, 0,00, 02:45, 7, 7, 0, 0, 25372,490000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:18
+    - LOGED change: POT.Documents.Racun - button5_Click
+     - Used: Remove selected
+     - Data: ListViewSubItem: {5}, ListViewSubItem: {Radni sat EXE izrada i odrzavanje Facebook aplikacije}, ListViewSubItem: {0124020004010}, ListViewSubItem: {250,00}, ListViewSubItem: {02:45}, ListViewSubItem: {7,00}, ListViewSubItem: {7}, ListViewSubItem: {639,38}, ListViewSubItem: {4475,63}
+     - Result: Removed
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:18
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE izrada i odrzavanje Facebook aplikacije, 20004010, 0,00, 02:45, 9, 7, 625,625000, 4379,375000, 29751,865000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:19
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE izrada i odrzavanje Facebook aplikacije, 20004010, 0,00, 02:45, 8, 7, 0, 0, 25324,365000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:19
+    - LOGED change: POT.Documents.Racun - button5_Click
+     - Used: Remove selected
+     - Data: ListViewSubItem: {5}, ListViewSubItem: {Radni sat EXE izrada i odrzavanje Facebook aplikacije}, ListViewSubItem: {0124020004010}, ListViewSubItem: {250,00}, ListViewSubItem: {02:45}, ListViewSubItem: {8,00}, ListViewSubItem: {7}, ListViewSubItem: {632,50}, ListViewSubItem: {4427,50}
+     - Result: Removed
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:20
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:20
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:24
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE odrzavanje IT opreme, 20004006, 220,00, 06:00, 0, 4, 1320,00, 5280,00, 5280,00
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:24
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE odrzavanje IT opreme, 20004006, 220,00, 08:00, 0, 4, 1760,00, 7040,00, 12320,00
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:24
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE servis opreme, 20004007, 220,00, 05:00, 0, 5, 1100,00, 5500,00, 17820,00
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:25
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE izrada/odrzavanje internet stranica, 20004001, 250,00, 02:30, 0, 5, 625,000, 3125,000, 20945,000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:25
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE izrada i odrzavanje Facebook aplikacije, 20004010, 0,00, 02:45, 9, 7, 625,625000, 4379,375000, 25324,375000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:29
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+    - InnerEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+    - MessageEcp: Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=638; handshake=1377; 
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:38 - App started
+    *** BrunoBrckovic *** 
+
+- 07.02.20. 10:38
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE odrzavanje IT opreme, 20004006, 220,00, 06:00, 0, 4, 1320,00, 5280,00, 5280,00
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:38
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE odrzavanje IT opreme, 20004006, 220,00, 08:00, 0, 4, 1760,00, 7040,00, 12320,00
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:38
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE servis opreme, 20004007, 220,00, 05:00, 0, 5, 1100,00, 5500,00, 17820,00
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:39
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE izrada/odrzavanje internet stranica, 20004001, 250,00, 02:30, 0, 5, 625,000, 3125,000, 20945,000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:39
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat EXE izrada i odrzavanje Facebook aplikacije, 20004010, 0,00, 02:45, 9, 7, 625,625000, 4379,375000, 25324,375000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:40
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+    - InnerEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+    - MessageEcp: Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=407; handshake=26782; 
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password)
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:40
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:41
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:48
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:49
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:50
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:51
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:54
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:56
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:57
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 10:59
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 11:00
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 11:02
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 11:04 - App turned off
+    *** BrunoBrckovic *** 
+
+- 07.02.20. 11:30 - App started
+    *** BrunoBrckovic *** 
+
+- 07.02.20. 11:30
+    - LOGED change: POT.CompanyInfo - button2_Click
+     - Used: Changing MainCmp info
+     - Data: CES-POS d.o.o., 2.Poljanice 6, Zagreb, 10000, HR, 0.00, 0.00, 02647369817, ZABAHR2X, 04472047, HR2823600001102514864, 4, 1, www.ces-pos.hr, +38515814315, Bruno Brckovic, info@ces-pos.hr, support@ces-pos.hr, 2
+     - Result: Company (CES-POS d.o.o.) data is now selected.
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 11:31
+    - LOGED change: POT.BuildingClasses.SettingsForm - SaveBT_Click
+     - Used: Print
+     - Data: 0; 0; 15; VAT is not calculated according to Article 17. of the Law on PDV; The taxpayer is not in the VAT system, according to Article 90. of the Law on PDV; Thank you for your trust; Temeljem članka 9., st.3., Zakona o računovodstvu, račun je pravovaljan bez potpisa i pečata; Porezni obveznik nije u sustavu PDV-a, temeljem zakona o PDV-u čl. 90; Hvala na ukazanom povjerenju; Bruno Brcković; D:\Dropbox (Personal)\EXCEPTION\CP\POTdoc; Save_to_PDF => True
+     - Result: 
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 11:31
+    - LOGED change: POT.MainCmpSelector - button1_Click
+     - Used: Main cmp select
+     - Data: CES-POS d.o.o.
+     - Result: Main cmp selected, please relog to see changes.
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 11:31 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 07.02.20. 11:31
+    - LOGED change: POT.SetDBConnection - button2_Click
+     - Used: DB connection address and name save.
+     - Data: 192.168.100.101, test
+     - Result: Saved, no msgToUser
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 11:31 - App started
+    *** BrunoBrckovic *** 
+
+- 07.02.20. 11:31
+    - LOGED change: POT.CompanyInfo - button2_Click
+     - Used: Changing MainCmp info
+     - Data: CES-POS d.o.o., 2.Poljanice 6, Zagreb, 10000, HR, 0.00, 0.00, PBZGHR2X, 02647369817, 080182296, HR8323400091100157894, 4, 1, www.ces-pos.hr, +38512307973, Bruno Brckovic, info@ces-pos.hr, support@ces-pos.hr, 2
+     - Result: Company (CES-POS d.o.o.) data is now selected.
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 11:31
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE PRC 950 nesto netko s necim Super Gaming OC, 8 GB GDDR6 (GV-N207SGAMING OC-8GD), 1004000, 845,22, 00:00, 0, 5, 1672,86, 8364,30, 8364,30
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 11:32
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: PC HP ProDesk 600 G2 SFF , 10012000, 1472,00, 00:00, 0, 5, 2913,38, 14566,90, 22931,20
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 11:32
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE PRC 950 nesto netko s necim Super Gaming OC, 8 GB GDDR6 (GV-N207SGAMING OC-8GD), 1004000, 845,22, 00:00, 15, 25, 1421,9310, 35548,2750, 58479,4750
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 11:32
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 , 1002000, 2662,25, 00:00, 15, 25, 2964,3750, 74109,3750, 132588,8500
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 11:32
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 Platforma za novac, 1002002, 0,00, 00:00, 15, 25, 0,00000000, 0,00000000, 132588,85000000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 11:32
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 11:32
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 11:33
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 11:35
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 11:37
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 11:40 - App started
+    *** BrunoBrckovic *** 
+
+- 07.02.20. 11:40
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE PRC 950 nesto netko s necim Super Gaming OC, 8 GB GDDR6 (GV-N207SGAMING OC-8GD), 1004000, 845,22, 00:00, 0, 1, 1672,86, 1672,86, 1672,86
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 11:40
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE STP-103 , 1003000, 0,00, 00:00, 0, 1, 1403,079300, 1403,079300, 3075,939300
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 11:40
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 PS, 1002003, 0,00, 00:00, 0, 1, 0,000000, 0,000000, 3075,939300
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 11:40
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE PRC 950 nesto netko s necim Super Gaming OC, 8 GB GDDR6 (GV-N207SGAMING OC-8GD), 1004000, 845,22, 00:00, 10, 15, 1505,574, 22583,610, 25659,549300
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 11:40
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-R1000 Baterija, 1001001, 0,00, 00:00, 10, 15, 267,2532000, 4008,7980000, 29668,3473000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 11:40
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: CIJENA PRIJEVOZA Prijevoz , 2001000, 0,00, 00:00, 10, 15, 0,0000000, 0,0000000, 29668,3473000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 11:41
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 11:41
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 11:43
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 11:44
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE STP-103 , 1003000, 0,00, 00:00, 0, 1, 1403,079300, 1403,079300, 1403,079300
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 11:45
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 11:45
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 11:47
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE STP-103 PS, 1003001, 0,00, 00:00, 0, 1, 334,066500, 334,066500, 334,066500
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 11:51
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 11:51
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 11:52
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 11:52
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 11:55
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: KABEL Kabel strujni  J-Y(St)Y 2x2x0,8 100m, 4008003, 308,70, 00:00, 0, 1, 610,98, 610,98, 610,98
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 11:59
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 12:11
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE PRC 950 nesto netko s necim Super Gaming OC, 8 GB GDDR6 (GV-N207SGAMING OC-8GD), 1004000, 845,22, 00:00, 0, 1, 1672,86, 1672,86, 1672,86
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 12:14
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 12:15
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 12:15
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 12:21 - App started
+    *** BrunoBrckovic *** 
+
+- 07.02.20. 12:21
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE STP-103 PS, 1003001, 0,00, 00:00, 0, 1, 334,066500, 334,066500, 334,066500
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 12:21
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 12:23
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE PRC 950 nesto netko s necim Super Gaming OC, 8 GB GDDR6 (GV-N207SGAMING OC-8GD), 1004000, 845,22, 00:00, 0, 1, 1672,86, 1672,86, 1672,86
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 12:29 - App started
+    *** BrunoBrckovic *** 
+
+- 07.02.20. 12:29
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE STP-103 PS, 1003001, 0,00, 00:00, 0, 1, 334,066500, 334,066500, 334,066500
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 12:29
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 12:31
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 12:47 - App started
+    *** BrunoBrckovic *** 
+
+- 07.02.20. 12:47
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE STP-103 , 1003000, 0,00, 00:00, 0, 1, 1403,079300, 1403,079300, 1403,079300
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 12:47
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 12:48
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE PRC 950 nesto netko s necim Super Gaming OC, 8 GB GDDR6 (GV-N207SGAMING OC-8GD), 1004000, 845,22, 00:00, 0, 1, 1672,86, 1672,86, 1672,86
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 13:07 - App started
+    *** BrunoBrckovic *** 
+
+- 07.02.20. 13:07
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 , 1002000, 2662,25, 00:00, 0, 1, 3487,50, 3487,50, 3487,50
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 13:07
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 13:08 - App turned off
+    *** BrunoBrckovic *** 
+
+- 07.02.20. 13:09 - App started
+    *** BrunoBrckovic *** 
+
+- 07.02.20. 13:10
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE STP-103 , 1003000, 0,00, 00:00, 0, 1, 1403,079300, 1403,079300, 1403,079300
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 13:13 - App started
+    *** BrunoBrckovic *** 
+
+- 07.02.20. 13:13
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE PRC 950 nesto netko s necim Super Gaming OC, 8 GB GDDR6 (GV-N207SGAMING OC-8GD), 1004000, 845,22, 00:00, 0, 1, 1672,86, 1672,86, 1672,86
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 13:14 - App started
+    *** BrunoBrckovic *** 
+
+- 07.02.20. 13:14
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE STP-103 , 1003000, 0,00, 00:00, 0, 1, 1403,079300, 1403,079300, 1403,079300
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 13:15
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 13:15 - App turned off
+    *** BrunoBrckovic *** 
+
+- 07.02.20. 13:16 - App started
+    *** BrunoBrckovic *** 
+
+- 07.02.20. 13:16
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE PRC 950 nesto netko s necim Super Gaming OC, 8 GB GDDR6 (GV-N207SGAMING OC-8GD), 1004000, 845,22, 00:00, 0, 1, 1672,86, 1672,86, 1672,86
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 13:17 - App started
+    *** BrunoBrckovic *** 
+
+- 07.02.20. 13:18
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE PRC 950 nesto netko s necim Super Gaming OC, 8 GB GDDR6 (GV-N207SGAMING OC-8GD), 1004000, 845,22, 00:00, 0, 1, 1672,86, 1672,86, 1672,86
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 13:19
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 13:19
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 , 1002000, 2662,25, 00:00, 0, 1, 3487,50, 3487,50, 3487,50
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 13:21 - App started
+    *** BrunoBrckovic *** 
+
+- 07.02.20. 13:21
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 Baterija, 1002004, 0,00, 00:00, 0, 1, 0,000000, 0,000000, 0,000000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 13:21
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 13:22 - App started
+    *** BrunoBrckovic *** 
+
+- 07.02.20. 13:22
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE STP-103 PS, 1003001, 0,00, 00:00, 0, 1, 334,066500, 334,066500, 334,066500
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 13:22
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 13:25 - App started
+    *** BrunoBrckovic *** 
+
+- 07.02.20. 13:25
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 Baterija, 1002004, 0,00, 00:00, 0, 1, 0,000000, 0,000000, 0,000000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 13:25
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 13:26
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 13:26
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 13:31 - App started
+    *** BrunoBrckovic *** 
+
+- 07.02.20. 13:31
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 Baterija, 1002004, 0,00, 00:00, 0, 1, 0,000000, 0,000000, 0,000000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 13:31
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 13:33 - App started
+    *** BrunoBrckovic *** 
+
+- 07.02.20. 13:33
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 Casice, 1002001, 162,00, 00:00, 0, 1, 300,00, 300,00, 300,00
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 13:34
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 13:36
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+    - InnerEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+    - MessageEcp: A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.)
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password)
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 13:40
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 14:15 - App started
+    *** BrunoBrckovic *** 
+
+- 07.02.20. 14:16 - App started
+    *** BrunoBrckovic *** 
+
+- 07.02.20. 14:16
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 Baterija, 1002004, 0,00, 00:00, 0, 1, 0,000000, 0,000000, 0,000000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 14:16
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 Baterija, 1002004, 0,00, 00:00, 0, 1, 0, 0, 0,000000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 14:16
+    - LOGED change: POT.Documents.Racun - button5_Click
+     - Used: Remove selected
+     - Data: ListViewSubItem: {1}, ListViewSubItem: {BROJAC ZA NOVCE T-ix-3000 Baterija}, ListViewSubItem: {0111001002004}, ListViewSubItem: {0,00}, ListViewSubItem: {00:00}, ListViewSubItem: {0,00}, ListViewSubItem: {1}, ListViewSubItem: {0,00}, ListViewSubItem: {0,00}
+     - Result: Removed
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 14:16
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-R1000 Baterija, 1001001, 0,00, 00:00, 0, 1, 296,948000, 296,948000, 296,948000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 14:16
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 14:17 - App turned off
+    *** BrunoBrckovic *** 
+
+- 07.02.20. 14:17 - App started
+    *** BrunoBrckovic *** 
+
+- 07.02.20. 14:17
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-R1000 PS, 1001004, 0,00, 00:00, 0, 1, 334,066500, 334,066500, 334,066500
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 14:17
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 15:10 - App started
+    *** BrunoBrckovic *** 
+
+- 07.02.20. 15:10
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE PRC 950 nesto netko s necim Super Gaming OC, 8 GB GDDR6 (GV-N207SGAMING OC-8GD), 1004000, 845,22, 00:00, 0, 1, 1672,86, 1672,86, 1672,86
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 15:10
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 15:12
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 15:12 - App turned off
+    *** BrunoBrckovic *** 
+
+- 07.02.20. 15:12 - App started
+    *** BrunoBrckovic *** 
+
+- 07.02.20. 15:12
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE PRC 950 nesto netko s necim Super Gaming OC, 8 GB GDDR6 (GV-N207SGAMING OC-8GD), 1004000, 845,22, 00:00, 0, 1, 1672,86, 1672,86, 1672,86
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 15:13
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 15:13
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-3000 Casice, 1002001, 162,00, 00:00, 0, 1, 300,00, 300,00, 300,00
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 15:16 - App started
+    *** BrunoBrckovic *** 
+
+- 07.02.20. 15:17
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE T-ix-R1000 , 1001000, 1462,50, 00:00, 0, 1, 2212,50, 2212,50, 2212,50
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 15:17
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 15:18
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE PRC 950 nesto netko s necim Super Gaming OC, 8 GB GDDR6 (GV-N207SGAMING OC-8GD), 1004000, 845,22, 00:00, 0, 1, 1672,86, 1672,86, 1672,86
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 15:31 - App started
+    *** BrunoBrckovic *** 
+
+- 07.02.20. 15:31
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE PRC 950 nesto netko s necim Super Gaming OC, 8 GB GDDR6 (GV-N207SGAMING OC-8GD), 1004000, 845,22, 00:00, 0, 1, 1672,86, 1672,86, 1672,86
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 15:32
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE PRC 950 nesto netko s necim Super Gaming OC, 8 GB GDDR6 (GV-N207SGAMING OC-8GD), 1004000, 845,22, 00:00, 0, 1, 1672,86, 1672,86, 1672,86
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 15:33 - App started
+    *** BrunoBrckovic *** 
+
+- 07.02.20. 15:33
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE PRC 950 nesto netko s necim Super Gaming OC, 8 GB GDDR6 (GV-N207SGAMING OC-8GD), 1004000, 845,22, 00:00, 0, 1, 1672,86, 1672,86, 1672,86
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 15:34 - App started
+    *** BrunoBrckovic *** 
+
+- 07.02.20. 15:34
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: BROJAC ZA NOVCE PRC 950 nesto netko s necim Super Gaming OC, 8 GB GDDR6 (GV-N207SGAMING OC-8GD), 1004000, 845,22, 00:00, 0, 1, 1672,86, 1672,86, 1672,86
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 15:34
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 07.02.20. 16:18 - App started
+    *** BrunoBrckovic *** 
+
+- 07.02.20. 16:19 - Waiting
+    *** BrunoBrckovic *** 

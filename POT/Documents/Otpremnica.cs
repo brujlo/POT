@@ -749,28 +749,42 @@ namespace POT
             {
                 SaveFileDialog pdfSaveDialog = new SaveFileDialog();
 
-                if (printDialog1.PrinterSettings.PrinterName == "Microsoft Print to PDF")
-                {   // force a reasonable filename
-                    string basename = Path.GetFileNameWithoutExtension("OTP " + OTPNumber.ToString());
-                    string directory = Path.GetDirectoryName("OTP " + OTPNumber.ToString());
-                    printDocumentOtp.PrinterSettings.PrintToFile = true;
-                    // confirm the user wants to use that name
-                    pdfSaveDialog.InitialDirectory = directory;
-                    pdfSaveDialog.FileName = basename + ".pdf";
-                    pdfSaveDialog.Filter = "PDF File|*.pdf";
-                    result = pdfSaveDialog.ShowDialog();
-                    if (result != DialogResult.Cancel)
-                        printDocumentOtp.PrinterSettings.PrintFileName = pdfSaveDialog.FileName;
+                // force a reasonable filename
+                string basename = Path.GetFileNameWithoutExtension("OTP " + OTPNumber.ToString());
+                string directory = Path.GetDirectoryName("OTP " + OTPNumber.ToString());
+                printDocumentOtp.PrinterSettings.PrintToFile = true;
+                // confirm the user wants to use that name
+                pdfSaveDialog.InitialDirectory = directory;
+
+                Boolean nasaoPrinter = true;
+
+                switch (printDialog1.PrinterSettings.PrinterName)
+                {
+                    case "Microsoft Print to PDF":
+                        pdfSaveDialog.FileName = basename + ".pdf";
+                        pdfSaveDialog.Filter = "PDF File|*.pdf";
+                        break;
+                    case "Microsoft XPS Document Writer":
+                        pdfSaveDialog.FileName = basename + ".xps";
+                        pdfSaveDialog.Filter = "PDF File|*.xps";
+                        break;
+                    default:
+                        nasaoPrinter = false;
+                        break;
                 }
 
-                if (result != DialogResult.Cancel)  // in case they canceled the save as dialog
+                result = pdfSaveDialog.ShowDialog();
+
+                if (result != DialogResult.Cancel && nasaoPrinter)  // in case they canceled the save as dialog
                 {
+                    printDocumentOtp.PrinterSettings.PrintFileName = pdfSaveDialog.FileName;
                     printDocumentOtp.Print();
                     MessageBox.Show("Saved to location: " + Environment.NewLine + pdfSaveDialog.FileName, "SAVED", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    printPrewBT_Click(sender, e);
+                    printPrewBT.PerformClick();
+                    //printPrewBT_Click(sender, e);
                 }
             }
         }
@@ -798,39 +812,61 @@ namespace POT
         private void saveToPDF(List<Part> partList)
         {
             String printerName = printDialog1.PrinterSettings.PrinterName;
+            String extenzija;
 
             try
             {
-                PrintDialog printDialog1 = new PrintDialog();
-                printDialog1.Document = printDocumentOtp;
+                string fileName = "";
+                Printers prt = new Printers();
 
-                printDialog1.PrinterSettings.PrinterName = "Microsoft Print to PDF";
 
-                if (!printDialog1.PrinterSettings.IsValid) return;
+                printDocumentOtp.PrinterSettings.PrinterName = "Microsoft Print to PDF";
+
+                if (prt.PrinterExist(printDocumentOtp.PrinterSettings.PrinterName))
+                    extenzija = ".pdf";
+                else
+                {
+                    printDocumentOtp.PrinterSettings.PrinterName = "Microsoft XPS Document Writer";
+
+                    if (prt.PrinterExist(printDocumentOtp.PrinterSettings.PrinterName))
+                        extenzija = ".xps";
+                    else
+                    {
+                        MessageBox.Show("PDF or XPS printer can't be found!");
+                        return;
+                    }
+                }
+
+                fileName = "\\OTP " + OTPNumber.ToString().Replace("/", "") + extenzija;
 
                 if (!Directory.Exists(Properties.Settings.Default.DefaultFolder + "\\OTP"))
                     return;
 
-                string fileName = "\\OTP " + OTPNumber.ToString().Replace("/", "") + ".pdf";
                 string directory = Properties.Settings.Default.DefaultFolder + "\\OTP";
 
-                partListPrint.Clear();
-                partListPrint.AddRange(partList);
-
-                printDialog1.PrinterSettings.PrintToFile = true;
                 printDocumentOtp.PrinterSettings.PrintFileName = directory + fileName;
                 printDocumentOtp.PrinterSettings.PrintToFile = true;
+
+                IEnumerable<PaperSize> paperSizes = printDocumentOtp.PrinterSettings.PaperSizes.Cast<PaperSize>();
+                PaperSize sizeA4 = paperSizes.First<PaperSize>(size => size.Kind == PaperKind.A4); // setting paper size to A4 size
+
+                printDocumentOtp.DefaultPageSettings.PaperSize = sizeA4;
+                printDocumentOtp.DefaultPageSettings.Margins.Top = 0;
+                printDocumentOtp.DefaultPageSettings.Margins.Bottom = 0;
+
                 printDocumentOtp.Print();
 
-                printDialog1.PrinterSettings.PrintToFile = false;
                 printDocumentOtp.PrinterSettings.PrintToFile = false;
-                printDialog1.PrinterSettings.PrinterName = printerName;
                 printDocumentOtp.PrinterSettings.PrinterName = printerName;
             }
             catch (Exception e1)
             {
                 new LogWriter(e1);
                 MessageBox.Show(e1.Message + Environment.NewLine + "PDF file not saved.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                Program.LoadStop();
             }
         }
     }

@@ -25,7 +25,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ProductName>POT</ProductName>
     <PublisherName>Exception</PublisherName>
-    <ApplicationRevision>101</ApplicationRevision>
+    <ApplicationRevision>106</ApplicationRevision>
     <ApplicationVersion>1.3.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -261,10 +261,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>strings.resx</DependentUpon>
     </Compile>
+    <Compile Include="WorkingClasses\Printers.cs" />
     <Compile Include="WorkingClasses\PrintMeInvoice.cs" />
     <Compile Include="WorkingClasses\PrintMeISS.cs" />
     <Compile Include="WorkingClasses\PrintMeOffer.cs" />
-    <Compile Include="WorkingClasses\PrintMeRac.cs" />
     <Compile Include="WorkingClasses\PrintMeRN.cs" />
     <Compile Include="WorkingClasses\Selector.cs">
       <SubType>Form</SubType>
