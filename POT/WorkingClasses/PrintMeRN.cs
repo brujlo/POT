@@ -94,6 +94,8 @@ namespace POT.WorkingClasses
             int pozicija2 = 0;
             int pozicija3 = 0;
 
+            long userIDinfo = 0;
+
             int moveBy = 5;
 
             PageSettings page = GetPrinterPageInfo();
@@ -165,7 +167,21 @@ namespace POT.WorkingClasses
                     ///////////////////////////////////////
                     workingStr = "Tech.:";
                     e.Graphics.DrawString(workingStr, fntA10b, brushBlack, kursorHor, kursorVer);
-                    workingStr = tidRN.UserIDUnio.ToString();
+
+                    if (tidRN.UserIDUnio != 0)
+                        userIDinfo = tidRN.UserIDUnio;
+                    else if (tidRN.UserIDZavrsio != 0)
+                        userIDinfo = tidRN.UserIDZavrsio;
+                    else if (tidRN.UserIDPoceo != 0)
+                        userIDinfo = tidRN.UserIDPoceo;
+                    else if (tidRN.UserIDDrive != 0)
+                        userIDinfo = tidRN.UserIDDrive;
+                    else if (tidRN.UserIDPreuzeo != 0)
+                        userIDinfo = tidRN.UserIDPreuzeo;
+                    else
+                        userIDinfo = tidRN.UserIDSastavio;
+
+                    workingStr = userIDinfo.ToString();
                     e.Graphics.DrawString(workingStr, fntA10, brushBlack, kursorHorPodaci, kursorVer);
 
                     workingStr = "CONTACT DATA";
@@ -176,7 +192,12 @@ namespace POT.WorkingClasses
                     ///////////////////////////////////////
                     workingStr = "Date:";
                     e.Graphics.DrawString(workingStr, fntA10b, brushBlack, kursorHor, kursorVer);
-                    workingStr = tidRN.DatReport;
+
+                    if(tidRN.DatReport.Equals(""))
+                        workingStr = DateTime.Now.ToString("dd.MM.yy."); 
+                    else
+                        workingStr = tidRN.DatReport;
+
                     e.Graphics.DrawString(workingStr, fntA10, brushBlack, kursorHorPodaci, kursorVer);
 
                     workingStr = "Phone:";
@@ -189,7 +210,12 @@ namespace POT.WorkingClasses
                     ///////////////////////////////////////
                     workingStr = "Time:";
                     e.Graphics.DrawString(workingStr, fntA10b, brushBlack, kursorHor, kursorVer);
-                    workingStr = tidRN.VriReport;
+
+                    if (tidRN.VriReport.Equals(""))
+                        workingStr = DateTime.Now.ToString("HH:mm");
+                    else
+                        workingStr = tidRN.VriReport;
+
                     e.Graphics.DrawString(workingStr, fntA10, brushBlack, kursorHorPodaci, kursorVer);
 
                     workingStr = "Support:";
@@ -202,7 +228,15 @@ namespace POT.WorkingClasses
                     ///////////////////////////////////////
                     workingStr = "Region:";
                     e.Graphics.DrawString(workingStr, fntA10b, brushBlack, kursorHor, kursorVer);
-                    workingStr = qc.RegionInfoByUserID(tidRN.UserIDUnio)[2];
+
+                    if (tidRN.UserIDUnio != 0)
+                        userIDinfo = tidRN.UserIDUnio;
+                    else if(tidRN.UserIDPreuzeo != 0)
+                        userIDinfo = tidRN.UserIDPreuzeo;
+                    else
+                        userIDinfo = tidRN.UserIDSastavio;
+
+                    workingStr = qc.RegionInfoByUserID(userIDinfo)[2];
                     e.Graphics.DrawString(workingStr, fntA10, brushBlack, kursorHorPodaci, kursorVer);
 
                     workingStr = "Info:";
@@ -582,6 +616,8 @@ namespace POT.WorkingClasses
                     ///////////////////////////////////////
 
 
+                    //FOOTER
+                    ///////////////////////////////////////
                     kursorVer = bounds.Bottom - (margins.Bottom + 25);
 
                     e.Graphics.DrawLine(new Pen(Brushes.Black, 1.5f), new Point(bounds.Right - margins.Right - 250, kursorVer), new Point(bounds.Right - margins.Right, kursorVer));
@@ -600,7 +636,7 @@ namespace POT.WorkingClasses
                     measureStr = (float)Math.Ceiling(e.Graphics.MeasureString(workingStr, fntA10).Width);
                     e.Graphics.DrawString(workingStr, fntA10, brushGrey, sredina - (measureStr / 2), kursorVer);
 
-                    workingStr = DateTime.Now.ToString("hh:mm dd.MM.yy.");
+                    workingStr = DateTime.Now.ToString("HH:mm dd.MM.yy.");
                     measureStr = (float)Math.Ceiling(e.Graphics.MeasureString(workingStr, fntA10).Width);
                     e.Graphics.DrawString(workingStr, fntA10, brushGrey, bounds.Right - margins.Right - measureStr, kursorVer);
 

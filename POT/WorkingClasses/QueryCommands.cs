@@ -5883,5 +5883,54 @@ namespace POT
             cnn.Close();
             return executed;
         }
+        //KORISTIO ZA NOGOMET
+
+        //public void NewUser(String Uname, String Pass)
+        //{
+        //    //SqlConnection cnn = cn.Connect(Uname, Pass);
+        //    cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+        //    command = cnn.CreateCommand();
+        //    SqlTransaction transaction = cnn.BeginTransaction();
+        //    command.Connection = cnn;
+        //    command.Transaction = transaction;
+
+        //    try
+        //    {
+        //        //CriptMe cm = new CriptMe();
+        //        //String hashPswd = cm.Cript(value[3]);
+
+        //        //command.CommandText = "CREATE LOGIN " + value[2] + " WITH PASSWORD = '" + value[3] + "'";
+        //        //command.ExecuteNonQuery();
+        //        //command.CommandText = "CREATE USER " + value[2] + " FOR LOGIN " + value[2];
+        //        //command.ExecuteNonQuery();
+        //        //command.CommandText = "GRANT INSERT,UPDATE,DELETE,SELECT,EXECUTE ON SCHEMA :: dbo TO " + value[2];
+        //        //command.ExecuteNonQuery();
+        //        command.CommandText = "Insert into Users(Name, Pass, Joined) values('" + Uname + "', '" + Pass + "','" + DateTime.Now.ToString("dd.MM.yy. hh:mm") + "')";
+        //        command.ExecuteNonQuery();
+        //        transaction.Commit();
+        //    }
+        //    catch (Exception)
+        //    {
+        //        //new LogWriter(e1);
+        //        try
+        //        {
+        //            transaction.Rollback();
+        //            cnn.Close();
+        //            throw;
+        //        }
+        //        catch (Exception)
+        //        {
+        //            //new LogWriter(e2);
+        //            throw;
+        //        }
+        //    }
+        //    finally
+        //    {
+        //        if (cnn.State.ToString().Equals("Open"))
+        //            cnn.Close();
+        //    }
+
+        //    cnn.Close();
+        //}
     }
 }
