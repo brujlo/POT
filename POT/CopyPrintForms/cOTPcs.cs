@@ -7,6 +7,7 @@ using System.Linq;
 using System.Threading;
 using System.Windows.Forms;
 using Decoder = POT.WorkingClasses.Decoder;
+using POT.Documents;
 
 namespace POT.CopyPrintForms
 {
@@ -27,6 +28,7 @@ namespace POT.CopyPrintForms
 
         String OTPNumber;
         List<Part> partListPrint = new List<Part>();
+        List<Part> partSendRacList = new List<Part>();
         String napomenaOTPPrint;
         Branch br = new Branch();
 
@@ -111,6 +113,8 @@ namespace POT.CopyPrintForms
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            btMakeInvoice.Visible = false;
+
             getOTPList(comboBox1.Text, "ID");
 
             comboBox2.ResetText();
@@ -120,6 +124,8 @@ namespace POT.CopyPrintForms
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
+            btMakeInvoice.Visible = false;
+
             getOTPList(comboBox2.Text, "CMP");
 
             comboBox1.ResetText();
@@ -129,6 +135,8 @@ namespace POT.CopyPrintForms
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
+            btMakeInvoice.Visible = false;
+
             getOTPList(comboBox3.Text, "DATE");
 
             comboBox1.ResetText();
@@ -138,6 +146,8 @@ namespace POT.CopyPrintForms
 
         private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
         {
+            btMakeInvoice.Visible = false;
+
             List<String> arr = new List<string>();
             arr = qc.CompanyInfoByName(comboBox4.Text);
             getOTPList(arr[0], "NAME");
@@ -432,8 +442,12 @@ namespace POT.CopyPrintForms
             }
         }
 
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
         private void listView1_DoubleClick(object sender, EventArgs e)
         {
+            btMakeInvoice.Visible = true;
+
             ///////////////// LogMe ////////////////////////
             String function = this.GetType().FullName + " - " + System.Reflection.MethodBase.GetCurrentMethod().Name;
             String usedQC = "OTP Selected";
@@ -514,6 +528,8 @@ namespace POT.CopyPrintForms
                 var groupedPartsListSN = parts.GroupBy(c => c.CodePartFull).Select(grp => grp.ToList()).ToList();
 
                 int i = 0;
+                partSendRacList.Clear();
+
                 for (int k = 0; k < groupedPartsListSN.Count; k++)
                 {
                     String name = (sifrarnikArr[sifrarnikArr.IndexOf(Decoder.GetFullPartCodeStr(parts[i].PartialCode.ToString())) - 1]);
@@ -537,6 +553,8 @@ namespace POT.CopyPrintForms
                             data = groupedPartsListSN[k][i].CodePartFull.ToString() + ", " + groupedPartsListSN[k][i].SN + ", " + groupedPartsListSN[k][i].CN;
                         else
                             data = data + Environment.NewLine + "             " + groupedPartsListSN[k][i].CodePartFull.ToString() + ", " + groupedPartsListSN[k][i].SN + ", " + groupedPartsListSN[k][i].CN;
+
+                        partSendRacList.Add(groupedPartsListSN[k][i]);
                     }
                 }
             }
@@ -552,7 +570,10 @@ namespace POT.CopyPrintForms
                 listView2.AutoResizeColumn(i, ColumnHeaderAutoResizeStyle.HeaderSize);
             }
 
-            OTPNumber = string.Format("{0:00/000}", otpID); 
+            OTPNumber = string.Format("{0:00/000}", otpID);
+
+            partListPrint.Clear();
+
             partListPrint.AddRange(parts);
             napomenaOTPPrint = item[0].SubItems[4].Text;
             if (!item[0].SubItems[7].Text.Equals(""))
@@ -579,6 +600,37 @@ namespace POT.CopyPrintForms
             SystemSounds.Hand.Play();
 
             this.label7.ResetText();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Program.LoadStart();
+
+                Racun rac = new Racun();
+
+                ISSreport ir = new ISSreport();
+                List<ISSreport> irLst = ir.GetAllISS(1);
+
+                List<ISSreport> issRepLst = new List<ISSreport>();
+
+                foreach (Part pr in partSendRacList)
+                {
+                    issRepLst.Add(irLst.Find(x => x.PartID == pr.PartID));
+                }
+
+                rac.CreateFromOTP(sender, e, partSendRacList, issRepLst);
+            }
+            catch(Exception e1)
+            {
+                new LogWriter(e1);
+                MessageBox.Show(e1.Message);
+            }
+            finally
+            {
+                Program.LoadStop();
+            }
         }
     }
 }

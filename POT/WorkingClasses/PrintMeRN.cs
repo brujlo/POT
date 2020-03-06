@@ -320,10 +320,15 @@ namespace POT.WorkingClasses
                     workingStr = tidRN.Filijala;
                     e.Graphics.DrawString(workingStr, fntA10, brushBlack, pozicija1 + 70, kursorVer);
 
-                    workingStr = "Name:";
+                    workingStr = "Cst.ID:";
                     e.Graphics.DrawString(workingStr, fntA10b, brushBlack, pozicija2, kursorVer);
-                    workingStr = qc.CompanyInfoByID(WorkingUser.Username, WorkingUser.Password, tidRN.TvrtkeID)[1];
+                    workingStr = tidRN.TvrtkeID.ToString();
                     e.Graphics.DrawString(workingStr, fntA10, brushBlack, pozicija2 + 70, kursorVer);
+
+                    workingStr = "Cst.Name:";
+                    e.Graphics.DrawString(workingStr, fntA10b, brushBlack, pozicija3, kursorVer);
+                    workingStr = qc.CompanyInfoByID(WorkingUser.Username, WorkingUser.Password, tidRN.TvrtkeID)[1];
+                    e.Graphics.DrawString(workingStr, fntA10, brushBlack, pozicija3 + 70, kursorVer);
 
                     kursorVer += (moveBy * 2);
                     ///////////////////////////////////////
@@ -398,7 +403,7 @@ namespace POT.WorkingClasses
                     ///////////////////////////////////////
                     workingStr = "Start time:";
                     e.Graphics.DrawString(workingStr, fntA10b, brushBlack, pozicija1, kursorVer);
-                    workingStr = tidRN.VriPoceo;
+                    workingStr = tidRN.VriDrive;
                     e.Graphics.DrawString(workingStr, fntA10, brushBlack, pozicija1 + 70, kursorVer);
 
                     workingStr = "Work end:";
@@ -450,7 +455,7 @@ namespace POT.WorkingClasses
                     kursorHor = margins.Left + 5;
                     kursorHorPodaci = margins.Left + 80;
 
-                    if (tidRN.Rn.PartListNew.Count > 1 || tidRN.Rn.PartListOld.Count > 1)
+                    if (tidRN.Rn.PartListNew.Count > 1 || tidRN.Rn.PartListOld.Count > 1) //TODO vjerovatno treba druga provjera, odnosno pamtiti na kojem smo jer ovako ide u beskonacnost
                     {
                         e.HasMorePages = true;
                     }
@@ -507,9 +512,14 @@ namespace POT.WorkingClasses
                     ///////////////////////////////////////
                     workingStr = "Name new:";
                     e.Graphics.DrawString(workingStr, fntA10b, brushBlack, pozicija1, kursorVer);
+
+                    String fullNameNew = "";
+
                     if (tidRN.Rn.PartListNew.Count > 0)
                     {
-                        workingStr = tidRN.Rn.PartListNew[partsCount].State;
+                        PartSifrarnik prNew = qc.PartInfoByFullCodeSifrarnik(tidRN.Rn.PartListNew[partsCount].PartialCode);
+                        workingStr = prNew.SubPartName;
+                        fullNameNew = prNew.CategoryName + " " + prNew.PartName;
                         e.Graphics.DrawString(workingStr, fntA10, brushBlack, pozicija1 + 70, kursorVer);
                     }
 
@@ -517,7 +527,8 @@ namespace POT.WorkingClasses
                     e.Graphics.DrawString(workingStr, fntA10b, brushBlack, pozicija2, kursorVer);
                     if (tidRN.Rn.PartListOld.Count > 0)
                     {
-                        workingStr = workingStr = tidRN.Rn.PartListOld[partsCount].State;
+                        PartSifrarnik prOld = qc.PartInfoByFullCodeSifrarnik(tidRN.Rn.PartListOld[partsCount].PartialCode);
+                        workingStr = prOld.SubPartName;
                         e.Graphics.DrawString(workingStr, fntA10, brushBlack, pozicija2 + 70, kursorVer);
                     }
 
@@ -528,21 +539,21 @@ namespace POT.WorkingClasses
                     workingStr = "CCN:";
                     e.Graphics.DrawString(workingStr, fntA10b, brushBlack, pozicija1, kursorVer);
                     workingStr = tidRN.CCN;
-                    e.Graphics.DrawString(workingStr, fntA10, brushBlack, pozicija1 + 80, kursorVer);
+                    e.Graphics.DrawString(workingStr, fntA10, brushBlack, pozicija1 + 70, kursorVer);
 
                     workingStr = "CID:";
                     e.Graphics.DrawString(workingStr, fntA10b, brushBlack, pozicija2, kursorVer);
                     workingStr = tidRN.CID;
-                    e.Graphics.DrawString(workingStr, fntA10, brushBlack, pozicija2 + 80, kursorVer);
+                    e.Graphics.DrawString(workingStr, fntA10, brushBlack, pozicija2 + 70, kursorVer);
 
                     kursorVer += (moveBy);
                     ///////////////////////////////////////
                         
                     ///////////////////////////////////////
-                    workingStr = "Customer:";
+                    workingStr = "Part name:";
                     e.Graphics.DrawString(workingStr, fntA10b, brushBlack, pozicija1, kursorVer);
-                    workingStr = tidRN.TvrtkeID.ToString();
-                    e.Graphics.DrawString(workingStr, fntA10, brushBlack, pozicija1 + 80, kursorVer);
+                    workingStr = fullNameNew;
+                    e.Graphics.DrawString(workingStr, fntA10, brushBlack, pozicija1 + 70, kursorVer);
 
                     kursorVer += (moveBy * 2);
                     ///////////////////////////////////////

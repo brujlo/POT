@@ -156,6 +156,7 @@
             this.listView2.BackColor = System.Drawing.Color.SkyBlue;
             this.listView2.FullRowSelect = true;
             this.listView2.GridLines = true;
+            this.listView2.HideSelection = false;
             this.listView2.ImeMode = System.Windows.Forms.ImeMode.On;
             this.listView2.Location = new System.Drawing.Point(13, 338);
             this.listView2.Margin = new System.Windows.Forms.Padding(4);
@@ -411,6 +412,7 @@
             this.listView1.BackColor = System.Drawing.Color.OldLace;
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
+            this.listView1.HideSelection = false;
             this.listView1.ImeMode = System.Windows.Forms.ImeMode.On;
             this.listView1.Location = new System.Drawing.Point(365, 114);
             this.listView1.Margin = new System.Windows.Forms.Padding(4);

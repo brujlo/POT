@@ -52,6 +52,7 @@
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.printPreviewDialogOtp = new System.Windows.Forms.PrintPreviewDialog();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btMakeInvoice = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -115,7 +116,7 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.SkyBlue;
-            this.button3.Location = new System.Drawing.Point(809, 304);
+            this.button3.Location = new System.Drawing.Point(809, 277);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(137, 44);
             this.button3.TabIndex = 97;
@@ -139,6 +140,7 @@
             this.listView2.BackColor = System.Drawing.Color.SkyBlue;
             this.listView2.FullRowSelect = true;
             this.listView2.GridLines = true;
+            this.listView2.HideSelection = false;
             this.listView2.ImeMode = System.Windows.Forms.ImeMode.On;
             this.listView2.Location = new System.Drawing.Point(13, 304);
             this.listView2.Margin = new System.Windows.Forms.Padding(4);
@@ -168,6 +170,7 @@
             this.listView1.BackColor = System.Drawing.Color.OldLace;
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
+            this.listView1.HideSelection = false;
             this.listView1.ImeMode = System.Windows.Forms.ImeMode.On;
             this.listView1.Location = new System.Drawing.Point(13, 96);
             this.listView1.Margin = new System.Windows.Forms.Padding(4);
@@ -285,11 +288,24 @@
             this.pictureBox1.TabIndex = 127;
             this.pictureBox1.TabStop = false;
             // 
+            // btMakeInvoice
+            // 
+            this.btMakeInvoice.BackColor = System.Drawing.Color.GreenYellow;
+            this.btMakeInvoice.Location = new System.Drawing.Point(809, 326);
+            this.btMakeInvoice.Name = "btMakeInvoice";
+            this.btMakeInvoice.Size = new System.Drawing.Size(137, 44);
+            this.btMakeInvoice.TabIndex = 128;
+            this.btMakeInvoice.Text = "Make invoice";
+            this.btMakeInvoice.UseVisualStyleBackColor = false;
+            this.btMakeInvoice.Visible = false;
+            this.btMakeInvoice.Click += new System.EventHandler(this.button1_Click);
+            // 
             // cOTPcs
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(958, 644);
+            this.Controls.Add(this.btMakeInvoice);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -347,5 +363,6 @@
         private System.Windows.Forms.PrintDialog printDialog1;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialogOtp;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btMakeInvoice;
     }
 }

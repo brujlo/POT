@@ -2037,6 +2037,9 @@ namespace POT
             {
                 arr.Add(-1);
             }
+
+            SortLong(ref arr, "desc");
+
             dataReader.Close();
             cnn.Close();
             return arr;
@@ -2071,7 +2074,7 @@ namespace POT
 
         public List<String> GetAllOTPdateCreated()
         {
-            List<String> arr = new List<string>();
+            List<String> arr = new List<String>();
             //SqlConnection cnn = cn.Connect(Uname, Pass);
             cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
             query = "Select Distinct dateCreated from OTP";
@@ -2094,25 +2097,7 @@ namespace POT
 
             try
             {
-                List<DateTime> dates = new List<DateTime>();
-
-                if (!arr[0].Equals("nok"))
-                {
-                    foreach (String a in arr)
-                    {
-                        dates.Add(DateTime.Parse(a));
-                    }
-
-                    dates.Sort();
-                    arr.Clear();
-                    DateConverter dc = new DateConverter();
-
-                    foreach (DateTime a in dates)
-                    {
-                        arr.Add(dc.ConvertDDMMYY(a.ToShortDateString()));
-                    }
-                }
-                
+                SortArrStringDatesDesc(ref arr);
             }
             catch(Exception)
             {
@@ -5294,6 +5279,8 @@ namespace POT
                 } while (dataReader.Read());
             }
 
+            SortInvoiceByDateIzdano(ref tempList, "desc");
+
             dataReader.Close();
             cnn.Close();
             return tempList;
@@ -5885,6 +5872,109 @@ namespace POT
             cnn.Close();
             return executed;
         }
+
+
+        ////////////////////////////////  FUNCTIONS  //////////////////////////////////////////////////
+
+
+        private void SortArrStringDatesAsc(ref List<String> arr)
+        {
+            try
+            {
+                List<DateTime> dates = new List<DateTime>();
+
+                if (!arr[0].Equals("nok"))
+                {
+                    foreach (String a in arr)
+                    {
+                        dates.Add(DateTime.Parse(a));
+                    }
+
+                    dates.Sort();
+                    arr.Clear();
+                    DateConverter dc = new DateConverter();
+
+                    foreach (DateTime a in dates)
+                    {
+                        arr.Add(dc.ConvertDDMMYY(a.ToShortDateString()));
+                    }
+                }
+
+            }
+            catch (Exception)
+            {
+                //new LogWriter(e1);
+                throw;
+            }
+        }
+
+        private void SortArrStringDatesDesc(ref List<String> arr)
+        {
+            try
+            {
+                List<DateTime> dates = new List<DateTime>();
+
+                if (!arr[0].Equals("nok"))
+                {
+                    foreach (String a in arr)
+                    {
+                        dates.Add(DateTime.Parse(a));
+                    }
+
+                    dates.Sort((a, b) => b.CompareTo(a));
+                    arr.Clear();
+                    DateConverter dc = new DateConverter();
+
+                    foreach (DateTime a in dates)
+                    {
+                        arr.Add(dc.ConvertDDMMYY(a.ToShortDateString()));
+                    }
+                }
+
+            }
+            catch (Exception)
+            {
+                //new LogWriter(e1);
+                throw;
+            }
+        }
+        
+        private void SortInvoiceByDateIzdano(ref List<Invoice> t, String AscDesc)
+        {
+            try
+            {
+                if (t.Count > 0)
+                    if(AscDesc.ToUpper().Equals("ASC"))
+                        t.Sort((a, b) => DateTime.Parse(a.DatumIzdano).CompareTo(DateTime.Parse(b.DatumIzdano)));
+                    else
+                        t.Sort((a, b) => DateTime.Parse(b.DatumIzdano).CompareTo(DateTime.Parse(a.DatumIzdano)));
+
+            }
+            catch (Exception)
+            {
+                //new LogWriter(e1);
+                throw;
+            }
+        }
+
+        private void SortLong(ref List<long> t, String AscDesc)
+        {
+            try
+            {
+                if (t.Count > 0)
+                    if (AscDesc.ToUpper().Equals("ASC"))
+                        t.Sort((a, b) => a.CompareTo(b));
+                    else
+                        t.Sort((a, b) => b.CompareTo(a));
+
+            }
+            catch (Exception)
+            {
+                //new LogWriter(e1);
+                throw;
+            }
+        }
+
         //KORISTIO ZA NOGOMET
 
         //public void NewUser(String Uname, String Pass)

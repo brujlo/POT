@@ -57,7 +57,7 @@ namespace POT.MyTypes
 
             foreach (long id in idListOld)
             {
-                PartListNew.Add(pr.GetPartFromPartsPartsPoslanoPartsZamijenjenoByID(id));
+                PartListOld.Add(pr.GetPartFromPartsPartsPoslanoPartsZamijenjenoByID(id));
                 pr = new Part();
 
             }

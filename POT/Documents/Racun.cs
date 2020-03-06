@@ -32,6 +32,8 @@ namespace POT.Documents
         decimal TOTALTAXBASE = 0;
         decimal TOTALTAX = 0;
 
+        Boolean calledFromCOTP = false;
+
         QueryCommands qc = new QueryCommands();
         ConnectionHelper cn = new ConnectionHelper();
 
@@ -59,7 +61,13 @@ namespace POT.Documents
         }
         
         private void Racun_Load(object sender, EventArgs e)
-        {  
+        {
+            if (calledFromCOTP)
+            {
+                calledFromCOTP = false;
+                return;
+            }
+
             invoice.Naplaceno = 0;
             invoice.Operater = WorkingUser.UserID.ToString();
             invoice.PonudaID = 0;
@@ -409,6 +417,116 @@ namespace POT.Documents
 
                     recalculateInvPart = invoicePart;
                 }
+
+                PartNameCB.Focus();
+            }
+            catch (Exception e1)
+            {
+                new LogWriter(e1);
+                MessageBox.Show(e1.Message);
+            }
+        }
+
+        public void CreateFromOTP(object sender, EventArgs e, List<Part> partList, List<ISSreport> issRepLst)
+        {
+            Racun_Load(sender, e);
+            calledFromCOTP = true;
+            //FillMe();
+
+            Company cmpCust = new Company();
+            cmpCust.GetCompanyInfoByID(issRepLst[0].CustomerID);
+
+            CustomerCB.Text = cmpCust.Name;
+
+            radioButtonENG.Enabled = false;
+            radioButtonHRV.Enabled = false;
+
+            long fullCodeCmp;
+
+            switch (cmpCust.ID)
+            {
+                case 129: //GS
+                    {
+                        fullCodeCmp = 20002001;
+                        break;
+                    }
+                case 7: //GS
+                    {
+                        fullCodeCmp = 20001003;
+                        break;
+                    }
+                case 195: //GS
+                    {
+                        fullCodeCmp = 20005001;
+                        break;
+                    }
+                default:
+                    {
+                        fullCodeCmp = 20004007;
+                        break;
+                    }
+            }
+
+            try
+            {
+                invoice.Id = racunID = invoice.GetNewInvoiceNumber();
+
+                foreach (ISSreport rep in issRepLst)
+                {
+                    tempSifPart = null;
+                    tempSifPart = sifrarnikList.Find(x => x.FullCode == fullCodeCmp);
+
+                    InvoiceParts invoicePart = new InvoiceParts(racunID, tempSifPart.FullCode, rep.TotalTIme, 0, 1);
+                    //InvoiceParts invoicePart = new InvoiceParts(racunID, tempSifPart.FullCode, vrijemeRada, rabat, kolicina);
+
+                    int indx = invoicePart.Compare(invoicePartsList, invoicePart);
+                    if (indx >= 0)
+                    {
+                        listView1.Items[indx].SubItems[6].Text = (invoicePartsList.ElementAt(indx).Kolicina += invoicePart.Kolicina).ToString();
+                        invoicePartsList[indx].IznosTotal = String.Format("{0:N2}", decimal.Parse(invoicePartsList[indx].IznosTotal) + invoicePart.Kolicina * decimal.Parse(invoicePartsList[indx].IznosRabat));
+                        listView1.Items[indx].SubItems[8].Text = invoicePartsList.ElementAt(indx).IznosTotal;
+                        addToList(false, true, invoicePart);
+                    }
+                    else
+                    {
+                        invoicePartsList.Add(invoicePart);
+
+                        addToList(false, false, invoicePart);
+
+                        recalculateInvPart = invoicePart;
+                    }
+
+                    foreach(ISSparts prt in rep.ListIssParts)
+                    {
+                        if(prt.PrtN.PartID != 0)
+                        {
+                            tempSifPart = null;
+                            tempSifPart = sifrarnikList.Find(x => x.FullCode == prt.PrtN.PartialCode);
+
+                            InvoiceParts invoiceChangedPart = new InvoiceParts(racunID, tempSifPart.FullCode, "00:00", 0, 1);
+                            //InvoiceParts invoicePart = new InvoiceParts(racunID, tempSifPart.FullCode, vrijemeRada, rabat, kolicina);
+
+                            int indx1 = invoicePart.Compare(invoicePartsList, invoiceChangedPart);
+                            if (indx1 >= 0)
+                            {
+                                listView1.Items[indx1].SubItems[6].Text = (invoicePartsList.ElementAt(indx1).Kolicina += invoiceChangedPart.Kolicina).ToString();
+                                invoicePartsList[indx1].IznosTotal = String.Format("{0:N2}", decimal.Parse(invoicePartsList[indx1].IznosTotal) + invoiceChangedPart.Kolicina * decimal.Parse(invoicePartsList[indx1].IznosRabat));
+                                listView1.Items[indx1].SubItems[8].Text = invoicePartsList.ElementAt(indx1).IznosTotal;
+                                addToList(false, true, invoiceChangedPart);
+                            }
+                            else
+                            {
+                                invoicePartsList.Add(invoiceChangedPart);
+
+                                addToList(false, false, invoiceChangedPart);
+
+                                recalculateInvPart = invoiceChangedPart;
+                            }
+                        }
+                    }
+                }
+
+                this.Show();
 
                 PartNameCB.Focus();
             }
@@ -1231,6 +1349,141 @@ namespace POT.Documents
                 Program.SaveStop();
             }
             
+        }
+
+        public void FillMe()
+        {
+            invoice.Naplaceno = 0;
+            invoice.Operater = WorkingUser.UserID.ToString();
+            invoice.PonudaID = 0;
+            invoice.Storno = 0;
+            invoice.Konverzija = 1;
+
+            if (radioButtonENG.Checked)
+            {
+                invoice.NacinPlacanja = Properties.Settings.Default.PaymentForm;
+                vat = Properties.Settings.Default.TAX2 / 100;
+            }
+            else
+            {
+                invoice.NacinPlacanja = Properties.Settings.Default.NacinPlacanja;
+                vat = Properties.Settings.Default.TAX1 / 100;
+            }
+
+
+            invoice.Id = racunID = invoice.GetNewInvoiceNumber();
+            InvNbrLB.Text = invoice.IDLongtoString(racunID);
+            obrJedLB.Text = Properties.Settings.Default.ObracunskaJedinica.ToString();
+            QuantityTB.Text = "1";
+
+            backgroundWorker1.WorkerReportsProgress = true;
+            backgroundWorker1.WorkerSupportsCancellation = true;
+
+            mainCmp.GetMainCmpInfoByID(Properties.Settings.Default.CmpID);
+
+            exchng = qc.CurrentExchangeRate();
+
+            ech = double.Parse(exchng[3]);
+            invoice.Eur = (decimal)ech;
+            echDate = exchng[1];
+
+
+            ExchangeLB.Text = String.Format("{0,000:N3}", ech);
+            invoice.DanTecaja = EchDateLB.Text = echDate;
+            invoice.DatumIzdano = DateTime.Now.ToString("dd.MM.yy.");
+            invoice.DatumNaplaceno = "01.01.01.";
+
+            DateTime dt = DateTime.Today.AddDays(valuta);
+            ValutaLB.Text = valuta.ToString() + " (" + dt.ToString("dd.MM.yy.") + ")";
+            invoice.Valuta = valuta;
+
+            if (backgroundWorker1.IsBusy != true)
+            {
+                backgroundWorker1.RunWorkerAsync();
+            }
+
+            listView1.View = View.Details;
+
+            listView1.Columns.Add("RB");
+            listView1.Columns.Add("PART NAME");
+            listView1.Columns.Add("PART CODE");
+            listView1.Columns.Add("PRICE");
+            listView1.Columns.Add("WORK TIME");
+            listView1.Columns.Add("REBATE");
+            listView1.Columns.Add("AMOUNT");
+            listView1.Columns.Add("REBATE PRICE");
+            listView1.Columns.Add("TOTAL");
+
+            listView2.View = View.Details;
+
+            listView2.Columns.Add("RB");
+            listView2.Columns.Add("ID");
+            listView2.Columns.Add("PonudaID");
+            listView2.Columns.Add("DatumIzdano");
+            listView2.Columns.Add("Iznos");
+            listView2.Columns.Add("DatumNaplaceno");
+            listView2.Columns.Add("Naplaceno");
+            listView2.Columns.Add("CustomerID");
+            listView2.Columns.Add("EUR");
+            listView2.Columns.Add("Napomena");
+            listView2.Columns.Add("VrijemeIzdano");
+            listView2.Columns.Add("Valuta");
+            listView2.Columns.Add("Operater");
+            listView2.Columns.Add("DanTecaja");
+            listView2.Columns.Add("NacinPlacanja");
+            listView2.Columns.Add("Storno");
+
+            for (int i = 0; i < listView1.Columns.Count; i++)
+            {
+                listView1.AutoResizeColumn(i, ColumnHeaderAutoResizeStyle.ColumnContent);
+                listView1.AutoResizeColumn(i, ColumnHeaderAutoResizeStyle.HeaderSize);
+            }
+
+            try
+            {
+                Company tempCmp = new Company();
+                cmpList = tempCmp.GetAllCompanyInfoSortByName();
+
+                if (cmpList.Count > 0)
+                {
+                    foreach (Company cmp in cmpList)
+                    {
+                        CustomerCB.Items.Add(cmp.Name);
+                    }
+                }
+
+                PartSifrarnik tempSifPart = new PartSifrarnik();
+                sifrarnikList = tempSifPart.GetPartsAllSifrarnikSortByFullName();
+
+                if (sifrarnikList.Count > 0)
+                {
+                    foreach (PartSifrarnik sif in sifrarnikList)
+                    {
+                        PartNameCB.Items.Add(sif.FullName);
+                    }
+                }
+
+
+                ponudeList = qc.GetAllOffers();
+
+                if (ponudeList.Count > 0)
+                {
+                    foreach (Offer off in ponudeList)
+                    {
+                        OfferCB.Items.Add(off.Id);
+                    }
+                }
+            }
+            catch (Exception e1)
+            {
+                Program.LoadStop();
+                new LogWriter(e1);
+            }
+            finally
+            {
+                Program.LoadStop();
+                this.Focus();
+            }
         }
     }
 }
