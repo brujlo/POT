@@ -6418,3 +6418,1789 @@ Login failed for user 'bruno'.
 
 - 02.03.20. 14:30 - App turned off
     *** BrunoBrckovic *** 
+
+- 02.03.20. 22:29 - App started
+    *** BrunoBrckovic *** 
+
+- 02.03.20. 22:29 - Waiting
+    *** BrunoBrckovic *** 
+
+- 02.03.20. 22:30 - App turned off
+    *** BrunoBrckovic *** 
+
+- 03.03.20. 16:23 - App started
+    *** BrunoBrckovic *** 
+
+- 03.03.20. 16:24 - Waiting
+    *** BrunoBrckovic *** 
+
+- 03.03.20. 16:29 - Waiting
+    *** BrunoBrckovic *** 
+
+- 03.03.20. 16:33 - App turned off
+    *** BrunoBrckovic *** 
+
+- 03.03.20. 16:34 - App started
+    *** BrunoBrckovic *** 
+
+- 03.03.20. 16:34 - Waiting
+    *** BrunoBrckovic *** 
+
+- 03.03.20. 16:35 - App turned off
+    *** BrunoBrckovic *** 
+
+- 03.03.20. 16:36 - App started
+    *** BrunoBrckovic *** 
+
+- 03.03.20. 16:36 - Waiting
+    *** BrunoBrckovic *** 
+
+- 03.03.20. 16:36 - App turned off
+    *** BrunoBrckovic *** 
+
+- 03.03.20. 16:44 - App started
+    *** BrunoBrckovic *** 
+
+- 03.03.20. 16:44 - App turned off
+    *** BrunoBrckovic *** 
+
+- 03.03.20. 16:44 - App started
+    *** BrunoBrckovic *** 
+
+- 03.03.20. 16:44 - App turned off
+    *** BrunoBrckovic *** 
+
+- 03.03.20. 16:44 - App started
+    *** BrunoBrckovic *** 
+
+- 03.03.20. 16:47 - App turned off
+    *** BrunoBrckovic *** 
+
+- 05.03.20. 20:06 - App started
+    *** BrunoBrckovic *** 
+
+- 05.03.20. 20:06 - Waiting
+    *** BrunoBrckovic *** 
+
+- 05.03.20. 20:10 - App turned off
+    *** BrunoBrckovic *** 
+
+- 06.03.20. 11:12 - App started
+    *** BrunoBrckovic *** 
+
+- 06.03.20. 11:13
+    - LOGED change: POT.CopyPrintForms.cOTPcs - getOTPList
+     - Used: ID
+     - Data: 20001
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:13
+    - LOGED change: POT.CopyPrintForms.cOTPcs - listView1_DoubleClick
+     - Used: OTP Selected
+     - Data: 707013002000, 12X0084, 1013620
+             707013002000, 12X0133, 1013708
+             707013002000, 12X0221, 1013778
+             707013002000, 12X0166, 1013653
+             707013002000, 1690287, 1021606
+             707013002000, 12X0149, 1013700
+             707013002000, 1690286, 1021745
+             707013002000, 1280098, 1013644
+             707013002000, 12X0129, 1013690
+             707013002000, 12X0168, 1013658
+             707013002000, 12X0124, 1013759
+             707013002000, 1851063, 1013796
+             707013002000, 12X0147, 1013809
+             707013002000, 1390185, 1013672
+             707013002000, 12X0218, 1013776
+             707013002000, 1270233, 1013840
+             707013002000, 12X0158, 1013730
+             707013002000, 12X0062, 1013855
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:13
+    - BaseEcp: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at POT.CopyPrintForms.cISS.getISSList(String value, String tipe) in F:\PROJEKTI\VS\POT\POT\POT\CopyPrintForms\cISS.cs:line 528
+    - InnerEcp: 
+    - MessageEcp: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at POT.CopyPrintForms.cISS.getISSList(String value, String tipe) in F:\PROJEKTI\VS\POT\POT\POT\CopyPrintForms\cISS.cs:line 528
+    - TypeNameEcp: System.ArgumentOutOfRangeException
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:13
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: NAME
+     - Data: 129
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:13 - App turned off
+    *** BrunoBrckovic *** 
+
+- 06.03.20. 11:14 - App started
+    *** BrunoBrckovic *** 
+
+- 06.03.20. 11:14
+    - BaseEcp: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at POT.CopyPrintForms.cISS.getISSList(String value, String tipe) in F:\PROJEKTI\VS\POT\POT\POT\CopyPrintForms\cISS.cs:line 528
+    - InnerEcp: 
+    - MessageEcp: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at POT.CopyPrintForms.cISS.getISSList(String value, String tipe) in F:\PROJEKTI\VS\POT\POT\POT\CopyPrintForms\cISS.cs:line 528
+    - TypeNameEcp: System.ArgumentOutOfRangeException
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:14
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: NAME
+     - Data: 129
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:14
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: NAME
+     - Data: 178
+     - Result: Selected ISS does not exist.
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:15
+    - BaseEcp: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at POT.CopyPrintForms.cISS.getISSList(String value, String tipe) in F:\PROJEKTI\VS\POT\POT\POT\CopyPrintForms\cISS.cs:line 528
+    - InnerEcp: 
+    - MessageEcp: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at POT.CopyPrintForms.cISS.getISSList(String value, String tipe) in F:\PROJEKTI\VS\POT\POT\POT\CopyPrintForms\cISS.cs:line 528
+    - TypeNameEcp: System.ArgumentOutOfRangeException
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:15
+    - BaseEcp: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at POT.CopyPrintForms.cISS.getISSList(String value, String tipe) in F:\PROJEKTI\VS\POT\POT\POT\CopyPrintForms\cISS.cs:line 528
+    - InnerEcp: 
+    - MessageEcp: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at POT.CopyPrintForms.cISS.getISSList(String value, String tipe) in F:\PROJEKTI\VS\POT\POT\POT\CopyPrintForms\cISS.cs:line 528
+    - TypeNameEcp: System.ArgumentOutOfRangeException
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:15
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: NAME
+     - Data: 129
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:15
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: NAME
+     - Data: 129
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:15
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: NAME
+     - Data: 178
+     - Result: Selected ISS does not exist.
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:16
+    - BaseEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+    - InnerEcp: System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+    - MessageEcp: A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 0 - The wait operation timed out.)
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:18
+    - BaseEcp: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at POT.CopyPrintForms.cISS.getISSList(String value, String tipe) in F:\PROJEKTI\VS\POT\POT\POT\CopyPrintForms\cISS.cs:line 528
+    - InnerEcp: 
+    - MessageEcp: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at POT.CopyPrintForms.cISS.getISSList(String value, String tipe) in F:\PROJEKTI\VS\POT\POT\POT\CopyPrintForms\cISS.cs:line 528
+    - TypeNameEcp: System.ArgumentOutOfRangeException
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:19
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: NAME
+     - Data: 129
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:27 - App started
+    *** BrunoBrckovic *** 
+
+- 06.03.20. 11:28
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: NAME
+     - Data: 129
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:28 - App started
+    *** BrunoBrckovic *** 
+
+- 06.03.20. 11:29
+    - LOGED change: POT.CopyPrintForms.cOTPcs - getOTPList
+     - Used: NAME
+     - Data: 129
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:29
+    - LOGED change: POT.CopyPrintForms.cOTPcs - listView1_DoubleClick
+     - Used: OTP Selected
+     - Data: 707013002000, 12X0084, 1013620
+             707013002000, 12X0133, 1013708
+             707013002000, 12X0221, 1013778
+             707013002000, 12X0166, 1013653
+             707013002000, 1690287, 1021606
+             707013002000, 12X0149, 1013700
+             707013002000, 1690286, 1021745
+             707013002000, 1280098, 1013644
+             707013002000, 12X0129, 1013690
+             707013002000, 12X0168, 1013658
+             707013002000, 12X0124, 1013759
+             707013002000, 1851063, 1013796
+             707013002000, 12X0147, 1013809
+             707013002000, 1390185, 1013672
+             707013002000, 12X0218, 1013776
+             707013002000, 1270233, 1013840
+             707013002000, 12X0158, 1013730
+             707013002000, 12X0062, 1013855
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:29
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 5, 200016, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200016
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:30
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200015, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200015
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:30
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200014, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200014
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:30
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200013, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200013
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:31
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200012, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200012
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:31
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 5, 200011, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200011
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:32
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200010, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200010
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:32
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200009, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200009
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:32
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 5, 200008, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200008
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:33
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200007, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200007
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:33
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 5, 200006, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200006
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:33
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 5, 200005, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200005
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:33
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200004, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200004
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:33
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200003, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200003
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:34
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200002, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200002
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:34
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200001, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200001
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:34
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200002, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200002
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:34 - App turned off
+    *** BrunoBrckovic *** 
+
+- 06.03.20. 11:37 - App started
+    *** BrunoBrckovic *** 
+
+- 06.03.20. 11:37
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200002
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:37
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200002, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200002
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200001
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200001, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200001
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200002
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200002, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200002
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200001
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200001, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200001
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 190058
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 190058, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190058
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200001
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200001, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200001
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200002
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200002, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200002
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200003
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200003, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200003
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200004
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200004, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200004
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200003
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200003, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200003
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200002
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200002, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200002
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200001
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200001, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200001
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 190058
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 190058, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190058
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 190057
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 5, 190057, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190057
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 190056
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 190056, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190056
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 190055
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 190055, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190055
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 190056
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 190056, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190056
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 190057
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 5, 190057, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190057
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 190058
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 190058, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190058
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200001
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200001, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200001
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200002
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200002, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200002
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200003
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200003, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200003
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200004
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200004, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200004
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200005
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 5, 200005, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200005
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200004
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200004, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200004
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200003
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200003, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200003
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200002
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200002, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200002
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200001
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200001, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200001
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200002
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200002, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200002
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200001
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:38
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200001, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200001
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:39 - App started
+    *** BrunoBrckovic *** 
+
+- 06.03.20. 11:39
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200002
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:39
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200002, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200002
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:39
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200003
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:39
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200003, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200003
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:39
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200002
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:39
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200002, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200002
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:39
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200001
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:39
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200001, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200001
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:39
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 190058
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:39
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 190058, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190058
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:39
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 190057
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:39
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 5, 190057, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190057
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:39
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 190058
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:39
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 190058, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190058
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:39
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200001
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:39
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200001, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200001
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:39
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200002
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:39
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200002, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200002
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:39
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200003
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:39
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200003, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200003
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:39
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200004
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:39
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200004, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200004
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:39
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200005
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:39
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 5, 200005, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200005
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:40
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200004
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:40
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200004, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200004
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:40
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200003
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:40
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200003, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200003
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:40
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200002
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:40
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200002, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200002
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:40
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200001
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:40
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200001, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200001
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:40
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 190058
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:40
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 190058, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190058
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:40
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200001
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:40
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200001, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200001
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:40
+    - LOGED change: POT.CopyPrintForms.cOTPcs - getOTPList
+     - Used: ID
+     - Data: 20001
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:40
+    - LOGED change: POT.CopyPrintForms.cOTPcs - listView1_DoubleClick
+     - Used: OTP Selected
+     - Data: 707013002000, 12X0084, 1013620
+             707013002000, 12X0133, 1013708
+             707013002000, 12X0221, 1013778
+             707013002000, 12X0166, 1013653
+             707013002000, 1690287, 1021606
+             707013002000, 12X0149, 1013700
+             707013002000, 1690286, 1021745
+             707013002000, 1280098, 1013644
+             707013002000, 12X0129, 1013690
+             707013002000, 12X0168, 1013658
+             707013002000, 12X0124, 1013759
+             707013002000, 1851063, 1013796
+             707013002000, 12X0147, 1013809
+             707013002000, 1390185, 1013672
+             707013002000, 12X0218, 1013776
+             707013002000, 1270233, 1013840
+             707013002000, 12X0158, 1013730
+             707013002000, 12X0062, 1013855
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:40
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 190058
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:40
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 190058, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190058
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:40
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 190057
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:40
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 5, 190057, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190057
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:40
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 190056
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:40
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 190056, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190056
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:40
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 190057
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:40
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 5, 190057, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190057
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:45
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 190058
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:45
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 190058, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190058
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:45
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 190057
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:45
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 5, 190057, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190057
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:47
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 190058
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:47
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 190058, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190058
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:47
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 190057
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:47
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 5, 190057, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190057
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:47
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 190058
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:47
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 190058, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 190058
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:47
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200001
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:47
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200001, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200001
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:47
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200002
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:47
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200002, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200002
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:47
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200003
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:47
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200003, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200003
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:47
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200004
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:47
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200004, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200004
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:48
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200005
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:48
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 5, 200005, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200005
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:48
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200006
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:48
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 5, 200006, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200006
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:48
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200007
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:48
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200007, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200007
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:48
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200008
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:48
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 5, 200008, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200008
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:48
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200009
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:48
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200009, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200009
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:48
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200010
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:48
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200010, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200010
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:48
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200011
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:48
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 5, 200011, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200011
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:48
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200012
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:48
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200012, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200012
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:48
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200013
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:48
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200013, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200013
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:49
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200014
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:49
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200014, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200014
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:49
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200015
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:49
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 4, 200015, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200015
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:49
+    - LOGED change: POT.CopyPrintForms.cISS - getISSList
+     - Used: ID
+     - Data: 200016
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:49
+    - LOGED change: POT.CopyPrintForms.cISS - ISSSelectorCb_SelectedIndexChanged
+     - Used: ISS loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 5, 200016, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS selected 200016
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:51
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 01:15, 0, 9, 210,0000, 1890,0000, 1890,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:51
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 01:30, 0, 9, 252,000, 2268,000, 4158,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:51
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 Auto Cutter ACS-541-1N, 13002001, 390,00, 00:00, 0, 4, 677,48, 2709,92, 6867,9200
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:52
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 Bushing, Platen, 13002003, 0,00, 00:00, 2, 4, 40,97912728, 163,91650912, 7031,83650912
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:52
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 Bushing, Platen, 13002003, 0,00, 00:00, 2, 4, 0, 0, 6867,91650912
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:52
+    - LOGED change: POT.Documents.Racun - button5_Click
+     - Used: Remove selected
+     - Data: ListViewSubItem: {4}, ListViewSubItem: {PRINTER Citizen CTS4000 Bushing, Platen}, ListViewSubItem: {0107013002003}, ListViewSubItem: {41,82}, ListViewSubItem: {00:00}, ListViewSubItem: {2,00}, ListViewSubItem: {4}, ListViewSubItem: {40,98}, ListViewSubItem: {163,92}
+     - Result: Removed
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:52
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 Bushing, Platen, 13002003, 0,00, 00:00, 0, 2, 41,815436, 83,630872, 6951,54738112
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:52
+    - LOGED change: POT.CopyPrintForms.cOTPcs - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/001, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:52
+    - LOGED change: POT.CopyPrintForms.cOTPcs - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/001, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:53
+    - LOGED change: POT.CopyPrintForms.cOTPcs - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/001, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:53
+    - LOGED change: POT.CopyPrintForms.cOTPcs - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/001, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:53
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:54
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:56 - App turned off
+    *** BrunoBrckovic *** 
+
+- 06.03.20. 11:59 - App started
+    *** BrunoBrckovic *** 
+
+- 06.03.20. 11:59
+    - LOGED change: POT.BuildingClasses.SettingsForm - SaveBT_Click
+     - Used: Print
+     - Data: 0; 0; 15; VAT is not calculated according to Article 17. of the Law on PDV; The taxpayer is not in the VAT system, according to Article 90. of the Law on PDV; Thank you for your trust; Temeljem članka 9., st.3., Zakona o računovodstvu, račun je pravovaljan bez potpisa i pečata; Porezni obveznik nije u sustavu PDV-a, temeljem zakona o PDV-u čl. 90; Hvala na ukazanom povjerenju; Bruno Brcković; E:\Dropbox (EXCEPTION)\POT DOKUMENTI; Save_to_PDF => True
+     - Result: 
+    *** BrunoBrckovic *** 
+
+
+- 06.03.20. 11:59 - App turned off
+    *** BrunoBrckovic *** 

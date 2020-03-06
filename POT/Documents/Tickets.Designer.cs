@@ -67,6 +67,7 @@
             this.cmpID = new System.Windows.Forms.TextBox();
             this.companyCB = new System.Windows.Forms.ComboBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.PrintRNBTSelect = new System.Windows.Forms.Button();
             this.CloseRNBT = new System.Windows.Forms.Button();
             this.StornoBT = new System.Windows.Forms.Button();
             this.PrintRNBT = new System.Windows.Forms.Button();
@@ -157,7 +158,8 @@
             this.printPreviewDialogPrim = new System.Windows.Forms.PrintPreviewDialog();
             this.printDocumentPrim = new System.Drawing.Printing.PrintDocument();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
-            this.PrintRNBTSelect = new System.Windows.Forms.Button();
+            this.label39 = new System.Windows.Forms.Label();
+            this.DoneTB = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -214,10 +216,10 @@
             this.tabPage1.Controls.Add(this.cmpID);
             this.tabPage1.Controls.Add(this.companyCB);
             this.tabPage1.ForeColor = System.Drawing.Color.White;
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(907, 570);
+            this.tabPage1.Size = new System.Drawing.Size(907, 566);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Create TID";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -228,7 +230,7 @@
             this.label30.ForeColor = System.Drawing.Color.DarkGray;
             this.label30.Location = new System.Drawing.Point(404, 142);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(61, 17);
+            this.label30.Size = new System.Drawing.Size(70, 20);
             this.label30.TabIndex = 151;
             this.label30.Text = "Inq User";
             // 
@@ -237,7 +239,7 @@
             this.InqUser.Font = new System.Drawing.Font("Franklin Gothic Book", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.InqUser.Location = new System.Drawing.Point(408, 161);
             this.InqUser.Name = "InqUser";
-            this.InqUser.Size = new System.Drawing.Size(112, 26);
+            this.InqUser.Size = new System.Drawing.Size(112, 30);
             this.InqUser.TabIndex = 125;
             this.InqUser.Leave += new System.EventHandler(this.InqUser_Leave);
             // 
@@ -271,7 +273,7 @@
             this.label16.ForeColor = System.Drawing.Color.DarkGray;
             this.label16.Location = new System.Drawing.Point(22, 416);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(79, 17);
+            this.label16.Size = new System.Drawing.Size(89, 20);
             this.label16.TabIndex = 147;
             this.label16.Text = "Description";
             // 
@@ -281,7 +283,7 @@
             this.label15.ForeColor = System.Drawing.Color.DarkGray;
             this.label15.Location = new System.Drawing.Point(22, 268);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(40, 17);
+            this.label15.Size = new System.Drawing.Size(44, 20);
             this.label15.TabIndex = 146;
             this.label15.Text = "Error";
             // 
@@ -291,7 +293,7 @@
             this.label14.ForeColor = System.Drawing.Color.DarkGray;
             this.label14.Location = new System.Drawing.Point(256, 142);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(53, 17);
+            this.label14.Size = new System.Drawing.Size(60, 20);
             this.label14.TabIndex = 145;
             this.label14.Text = "Branch";
             // 
@@ -301,7 +303,7 @@
             this.label13.ForeColor = System.Drawing.Color.DarkGray;
             this.label13.Location = new System.Drawing.Point(302, 205);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(30, 17);
+            this.label13.Size = new System.Drawing.Size(37, 20);
             this.label13.TabIndex = 144;
             this.label13.Text = "CID";
             // 
@@ -310,7 +312,7 @@
             this.cid.Font = new System.Drawing.Font("Franklin Gothic Book", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.cid.Location = new System.Drawing.Point(306, 224);
             this.cid.Name = "cid";
-            this.cid.Size = new System.Drawing.Size(214, 26);
+            this.cid.Size = new System.Drawing.Size(214, 30);
             this.cid.TabIndex = 127;
             this.cid.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.cid.Leave += new System.EventHandler(this.cid_Leave);
@@ -320,7 +322,7 @@
             this.ccn.Font = new System.Drawing.Font("Franklin Gothic Book", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ccn.Location = new System.Drawing.Point(23, 224);
             this.ccn.Name = "ccn";
-            this.ccn.Size = new System.Drawing.Size(214, 26);
+            this.ccn.Size = new System.Drawing.Size(214, 30);
             this.ccn.TabIndex = 126;
             this.ccn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.ccn.Leave += new System.EventHandler(this.ccn_Leave);
@@ -331,7 +333,7 @@
             this.label12.ForeColor = System.Drawing.Color.DarkGray;
             this.label12.Location = new System.Drawing.Point(548, 7);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(107, 17);
+            this.label12.Size = new System.Drawing.Size(122, 20);
             this.label12.TabIndex = 143;
             this.label12.Text = "Next ID Number";
             // 
@@ -341,7 +343,7 @@
             this.label11.ForeColor = System.Drawing.Color.Firebrick;
             this.label11.Location = new System.Drawing.Point(404, 416);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(107, 17);
+            this.label11.Size = new System.Drawing.Size(120, 20);
             this.label11.TabIndex = 141;
             this.label11.Text = "Letters left  400";
             // 
@@ -351,7 +353,7 @@
             this.label10.ForeColor = System.Drawing.Color.Firebrick;
             this.label10.Location = new System.Drawing.Point(404, 268);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(103, 17);
+            this.label10.Size = new System.Drawing.Size(116, 20);
             this.label10.TabIndex = 140;
             this.label10.Text = "Letters left 400";
             // 
@@ -361,7 +363,7 @@
             this.label9.ForeColor = System.Drawing.Color.DarkGray;
             this.label9.Location = new System.Drawing.Point(19, 205);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(36, 17);
+            this.label9.Size = new System.Drawing.Size(42, 20);
             this.label9.TabIndex = 139;
             this.label9.Text = "CCN";
             // 
@@ -371,7 +373,7 @@
             this.label8.ForeColor = System.Drawing.Color.DarkGray;
             this.label8.Location = new System.Drawing.Point(145, 142);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(69, 17);
+            this.label8.Size = new System.Drawing.Size(78, 20);
             this.label8.TabIndex = 138;
             this.label8.Text = "SLA Time";
             // 
@@ -381,7 +383,7 @@
             this.label7.ForeColor = System.Drawing.Color.DarkGray;
             this.label7.Location = new System.Drawing.Point(19, 142);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(68, 17);
+            this.label7.Size = new System.Drawing.Size(79, 20);
             this.label7.TabIndex = 137;
             this.label7.Text = "SLA Date";
             // 
@@ -391,7 +393,7 @@
             this.label6.ForeColor = System.Drawing.Color.DarkGray;
             this.label6.Location = new System.Drawing.Point(450, 76);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(33, 17);
+            this.label6.Size = new System.Drawing.Size(36, 20);
             this.label6.TabIndex = 136;
             this.label6.Text = "Prio";
             // 
@@ -401,7 +403,7 @@
             this.label5.ForeColor = System.Drawing.Color.DarkGray;
             this.label5.Location = new System.Drawing.Point(364, 76);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(41, 17);
+            this.label5.Size = new System.Drawing.Size(45, 20);
             this.label5.TabIndex = 135;
             this.label5.Text = "Drive";
             // 
@@ -411,7 +413,7 @@
             this.label4.ForeColor = System.Drawing.Color.DarkGray;
             this.label4.Location = new System.Drawing.Point(256, 76);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 17);
+            this.label4.Size = new System.Drawing.Size(70, 20);
             this.label4.TabIndex = 134;
             this.label4.Text = "Inq Time";
             // 
@@ -421,7 +423,7 @@
             this.label3.ForeColor = System.Drawing.Color.DarkGray;
             this.label3.Location = new System.Drawing.Point(115, 76);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 17);
+            this.label3.Size = new System.Drawing.Size(71, 20);
             this.label3.TabIndex = 133;
             this.label3.Text = "Inq Date";
             // 
@@ -431,7 +433,7 @@
             this.label2.ForeColor = System.Drawing.Color.DarkGray;
             this.label2.Location = new System.Drawing.Point(22, 76);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 17);
+            this.label2.Size = new System.Drawing.Size(63, 20);
             this.label2.TabIndex = 132;
             this.label2.Text = "Cmp ID";
             // 
@@ -441,7 +443,7 @@
             this.label1.ForeColor = System.Drawing.Color.DarkGray;
             this.label1.Location = new System.Drawing.Point(22, 7);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 17);
+            this.label1.Size = new System.Drawing.Size(84, 20);
             this.label1.TabIndex = 131;
             this.label1.Text = "CmpName";
             // 
@@ -460,7 +462,7 @@
             "6"});
             this.prio.Location = new System.Drawing.Point(454, 95);
             this.prio.Name = "prio";
-            this.prio.Size = new System.Drawing.Size(70, 29);
+            this.prio.Size = new System.Drawing.Size(70, 33);
             this.prio.TabIndex = 121;
             this.prio.Text = "2";
             // 
@@ -504,7 +506,7 @@
             this.nextID.Location = new System.Drawing.Point(552, 26);
             this.nextID.Name = "nextID";
             this.nextID.ReadOnly = true;
-            this.nextID.Size = new System.Drawing.Size(133, 26);
+            this.nextID.Size = new System.Drawing.Size(133, 30);
             this.nextID.TabIndex = 142;
             this.nextID.TabStop = false;
             this.nextID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -514,7 +516,7 @@
             this.filijala.Font = new System.Drawing.Font("Franklin Gothic Book", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.filijala.Location = new System.Drawing.Point(260, 161);
             this.filijala.Name = "filijala";
-            this.filijala.Size = new System.Drawing.Size(133, 26);
+            this.filijala.Size = new System.Drawing.Size(133, 30);
             this.filijala.TabIndex = 124;
             this.filijala.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.filijala.Leave += new System.EventHandler(this.filijala_Leave);
@@ -524,7 +526,7 @@
             this.SLAvri.Font = new System.Drawing.Font("Franklin Gothic Book", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.SLAvri.Location = new System.Drawing.Point(149, 161);
             this.SLAvri.Name = "SLAvri";
-            this.SLAvri.Size = new System.Drawing.Size(88, 26);
+            this.SLAvri.Size = new System.Drawing.Size(88, 30);
             this.SLAvri.TabIndex = 123;
             this.SLAvri.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.SLAvri.Enter += new System.EventHandler(this.SLAvri_Enter);
@@ -535,7 +537,7 @@
             this.SLAdat.Font = new System.Drawing.Font("Franklin Gothic Book", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.SLAdat.Location = new System.Drawing.Point(23, 161);
             this.SLAdat.Name = "SLAdat";
-            this.SLAdat.Size = new System.Drawing.Size(108, 26);
+            this.SLAdat.Size = new System.Drawing.Size(108, 30);
             this.SLAdat.TabIndex = 122;
             this.SLAdat.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.SLAdat.Enter += new System.EventHandler(this.SLAdat_Enter);
@@ -546,7 +548,7 @@
             this.drive.Font = new System.Drawing.Font("Franklin Gothic Book", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.drive.Location = new System.Drawing.Point(368, 95);
             this.drive.Name = "drive";
-            this.drive.Size = new System.Drawing.Size(64, 26);
+            this.drive.Size = new System.Drawing.Size(64, 30);
             this.drive.TabIndex = 120;
             this.drive.Text = "1";
             this.drive.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -557,7 +559,7 @@
             this.vriPrijave.Font = new System.Drawing.Font("Franklin Gothic Book", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.vriPrijave.Location = new System.Drawing.Point(260, 95);
             this.vriPrijave.Name = "vriPrijave";
-            this.vriPrijave.Size = new System.Drawing.Size(88, 26);
+            this.vriPrijave.Size = new System.Drawing.Size(88, 30);
             this.vriPrijave.TabIndex = 119;
             this.vriPrijave.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.vriPrijave.Enter += new System.EventHandler(this.vriPrijave_Enter);
@@ -568,7 +570,7 @@
             this.datPrijave.Font = new System.Drawing.Font("Franklin Gothic Book", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.datPrijave.Location = new System.Drawing.Point(119, 95);
             this.datPrijave.Name = "datPrijave";
-            this.datPrijave.Size = new System.Drawing.Size(108, 26);
+            this.datPrijave.Size = new System.Drawing.Size(108, 30);
             this.datPrijave.TabIndex = 118;
             this.datPrijave.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.datPrijave.Enter += new System.EventHandler(this.datPrijave_Enter);
@@ -582,7 +584,7 @@
             this.cmpID.Location = new System.Drawing.Point(23, 95);
             this.cmpID.Name = "cmpID";
             this.cmpID.ReadOnly = true;
-            this.cmpID.Size = new System.Drawing.Size(62, 26);
+            this.cmpID.Size = new System.Drawing.Size(62, 30);
             this.cmpID.TabIndex = 130;
             this.cmpID.TabStop = false;
             this.cmpID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -595,14 +597,16 @@
             this.companyCB.FormattingEnabled = true;
             this.companyCB.Location = new System.Drawing.Point(23, 23);
             this.companyCB.Name = "companyCB";
-            this.companyCB.Size = new System.Drawing.Size(497, 29);
+            this.companyCB.Size = new System.Drawing.Size(497, 33);
             this.companyCB.TabIndex = 117;
             this.companyCB.Text = "Search by company name";
             this.companyCB.SelectedIndexChanged += new System.EventHandler(this.companyCB_SelectedIndexChanged);
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.label39);
             this.tabPage2.Controls.Add(this.PrintRNBTSelect);
+            this.tabPage2.Controls.Add(this.DoneTB);
             this.tabPage2.Controls.Add(this.CloseRNBT);
             this.tabPage2.Controls.Add(this.StornoBT);
             this.tabPage2.Controls.Add(this.PrintRNBT);
@@ -644,13 +648,25 @@
             this.tabPage2.Controls.Add(this.TIDcidCB);
             this.tabPage2.Controls.Add(this.TIDccnCB);
             this.tabPage2.Controls.Add(this.TIDidCB);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(907, 570);
+            this.tabPage2.Size = new System.Drawing.Size(907, 566);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "TID info";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // PrintRNBTSelect
+            // 
+            this.PrintRNBTSelect.BackColor = System.Drawing.Color.Khaki;
+            this.PrintRNBTSelect.ForeColor = System.Drawing.Color.Black;
+            this.PrintRNBTSelect.Location = new System.Drawing.Point(503, 489);
+            this.PrintRNBTSelect.Name = "PrintRNBTSelect";
+            this.PrintRNBTSelect.Size = new System.Drawing.Size(113, 54);
+            this.PrintRNBTSelect.TabIndex = 130;
+            this.PrintRNBTSelect.Text = "Select printer";
+            this.PrintRNBTSelect.UseVisualStyleBackColor = false;
+            this.PrintRNBTSelect.Click += new System.EventHandler(this.PrintRNBTSelect_Click);
             // 
             // CloseRNBT
             // 
@@ -745,7 +761,7 @@
             this.label56.ForeColor = System.Drawing.Color.Gray;
             this.label56.Location = new System.Drawing.Point(83, 43);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(21, 17);
+            this.label56.Size = new System.Drawing.Size(26, 20);
             this.label56.TabIndex = 111;
             this.label56.Text = "ID";
             // 
@@ -756,7 +772,7 @@
             this.VriReportTB.Location = new System.Drawing.Point(246, 247);
             this.VriReportTB.Name = "VriReportTB";
             this.VriReportTB.ReadOnly = true;
-            this.VriReportTB.Size = new System.Drawing.Size(69, 15);
+            this.VriReportTB.Size = new System.Drawing.Size(69, 19);
             this.VriReportTB.TabIndex = 47;
             this.VriReportTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -767,7 +783,7 @@
             this.UserIDDriveTB.Location = new System.Drawing.Point(65, 113);
             this.UserIDDriveTB.Name = "UserIDDriveTB";
             this.UserIDDriveTB.ReadOnly = true;
-            this.UserIDDriveTB.Size = new System.Drawing.Size(59, 15);
+            this.UserIDDriveTB.Size = new System.Drawing.Size(59, 19);
             this.UserIDDriveTB.TabIndex = 23;
             this.UserIDDriveTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -778,7 +794,7 @@
             this.DatDriveTB.Location = new System.Drawing.Point(147, 113);
             this.DatDriveTB.Name = "DatDriveTB";
             this.DatDriveTB.ReadOnly = true;
-            this.DatDriveTB.Size = new System.Drawing.Size(77, 15);
+            this.DatDriveTB.Size = new System.Drawing.Size(77, 19);
             this.DatDriveTB.TabIndex = 25;
             this.DatDriveTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -788,7 +804,7 @@
             this.label27.ForeColor = System.Drawing.Color.Gray;
             this.label27.Location = new System.Drawing.Point(8, 203);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(33, 17);
+            this.label27.Size = new System.Drawing.Size(38, 20);
             this.label27.TabIndex = 95;
             this.label27.Text = "End";
             // 
@@ -799,7 +815,7 @@
             this.VriDriveTB.Location = new System.Drawing.Point(246, 113);
             this.VriDriveTB.Name = "VriDriveTB";
             this.VriDriveTB.ReadOnly = true;
-            this.VriDriveTB.Size = new System.Drawing.Size(69, 15);
+            this.VriDriveTB.Size = new System.Drawing.Size(69, 19);
             this.VriDriveTB.TabIndex = 27;
             this.VriDriveTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -809,7 +825,7 @@
             this.label32.ForeColor = System.Drawing.Color.Gray;
             this.label32.Location = new System.Drawing.Point(8, 158);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(38, 17);
+            this.label32.Size = new System.Drawing.Size(44, 20);
             this.label32.TabIndex = 99;
             this.label32.Text = "Start";
             // 
@@ -819,7 +835,7 @@
             this.label45.ForeColor = System.Drawing.Color.Gray;
             this.label45.Location = new System.Drawing.Point(8, 69);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(40, 17);
+            this.label45.Size = new System.Drawing.Size(44, 20);
             this.label45.TabIndex = 110;
             this.label45.Text = "Take";
             // 
@@ -830,7 +846,7 @@
             this.UserIDPreuzeoTB.Location = new System.Drawing.Point(65, 68);
             this.UserIDPreuzeoTB.Name = "UserIDPreuzeoTB";
             this.UserIDPreuzeoTB.ReadOnly = true;
-            this.UserIDPreuzeoTB.Size = new System.Drawing.Size(59, 15);
+            this.UserIDPreuzeoTB.Size = new System.Drawing.Size(59, 19);
             this.UserIDPreuzeoTB.TabIndex = 55;
             this.UserIDPreuzeoTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -841,7 +857,7 @@
             this.UserIDPoceoTB.Location = new System.Drawing.Point(65, 157);
             this.UserIDPoceoTB.Name = "UserIDPoceoTB";
             this.UserIDPoceoTB.ReadOnly = true;
-            this.UserIDPoceoTB.Size = new System.Drawing.Size(59, 15);
+            this.UserIDPoceoTB.Size = new System.Drawing.Size(59, 19);
             this.UserIDPoceoTB.TabIndex = 29;
             this.UserIDPoceoTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -851,7 +867,7 @@
             this.label44.ForeColor = System.Drawing.Color.Gray;
             this.label44.Location = new System.Drawing.Point(167, 43);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(38, 17);
+            this.label44.Size = new System.Drawing.Size(44, 20);
             this.label44.TabIndex = 109;
             this.label44.Text = "Date";
             // 
@@ -862,7 +878,7 @@
             this.DatPreuzetoTB.Location = new System.Drawing.Point(147, 68);
             this.DatPreuzetoTB.Name = "DatPreuzetoTB";
             this.DatPreuzetoTB.ReadOnly = true;
-            this.DatPreuzetoTB.Size = new System.Drawing.Size(77, 15);
+            this.DatPreuzetoTB.Size = new System.Drawing.Size(77, 19);
             this.DatPreuzetoTB.TabIndex = 53;
             this.DatPreuzetoTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -873,7 +889,7 @@
             this.DatPoceoTB.Location = new System.Drawing.Point(147, 158);
             this.DatPoceoTB.Name = "DatPoceoTB";
             this.DatPoceoTB.ReadOnly = true;
-            this.DatPoceoTB.Size = new System.Drawing.Size(77, 15);
+            this.DatPoceoTB.Size = new System.Drawing.Size(77, 19);
             this.DatPoceoTB.TabIndex = 31;
             this.DatPoceoTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -883,7 +899,7 @@
             this.label43.ForeColor = System.Drawing.Color.Gray;
             this.label43.Location = new System.Drawing.Point(263, 43);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(39, 17);
+            this.label43.Size = new System.Drawing.Size(43, 20);
             this.label43.TabIndex = 108;
             this.label43.Text = "Time";
             // 
@@ -894,7 +910,7 @@
             this.VriPreuzetoTB.Location = new System.Drawing.Point(246, 68);
             this.VriPreuzetoTB.Name = "VriPreuzetoTB";
             this.VriPreuzetoTB.ReadOnly = true;
-            this.VriPreuzetoTB.Size = new System.Drawing.Size(69, 15);
+            this.VriPreuzetoTB.Size = new System.Drawing.Size(69, 19);
             this.VriPreuzetoTB.TabIndex = 51;
             this.VriPreuzetoTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -905,7 +921,7 @@
             this.VriPoceoTB.Location = new System.Drawing.Point(246, 157);
             this.VriPoceoTB.Name = "VriPoceoTB";
             this.VriPoceoTB.ReadOnly = true;
-            this.VriPoceoTB.Size = new System.Drawing.Size(69, 15);
+            this.VriPoceoTB.Size = new System.Drawing.Size(69, 19);
             this.VriPoceoTB.TabIndex = 33;
             this.VriPoceoTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -915,7 +931,7 @@
             this.label37.ForeColor = System.Drawing.Color.Gray;
             this.label37.Location = new System.Drawing.Point(8, 248);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(51, 17);
+            this.label37.Size = new System.Drawing.Size(58, 20);
             this.label37.TabIndex = 102;
             this.label37.Text = "Report";
             // 
@@ -926,7 +942,7 @@
             this.DatReportTB.Location = new System.Drawing.Point(147, 247);
             this.DatReportTB.Name = "DatReportTB";
             this.DatReportTB.ReadOnly = true;
-            this.DatReportTB.Size = new System.Drawing.Size(77, 15);
+            this.DatReportTB.Size = new System.Drawing.Size(77, 19);
             this.DatReportTB.TabIndex = 45;
             this.DatReportTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -937,7 +953,7 @@
             this.UserIDZavrsioTB.Location = new System.Drawing.Point(65, 202);
             this.UserIDZavrsioTB.Name = "UserIDZavrsioTB";
             this.UserIDZavrsioTB.ReadOnly = true;
-            this.UserIDZavrsioTB.Size = new System.Drawing.Size(59, 15);
+            this.UserIDZavrsioTB.Size = new System.Drawing.Size(59, 19);
             this.UserIDZavrsioTB.TabIndex = 35;
             this.UserIDZavrsioTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -947,7 +963,7 @@
             this.label41.ForeColor = System.Drawing.Color.Gray;
             this.label41.Location = new System.Drawing.Point(7, 114);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(41, 17);
+            this.label41.Size = new System.Drawing.Size(45, 20);
             this.label41.TabIndex = 106;
             this.label41.Text = "Drive";
             // 
@@ -958,7 +974,7 @@
             this.UserIDUnioTB.Location = new System.Drawing.Point(65, 247);
             this.UserIDUnioTB.Name = "UserIDUnioTB";
             this.UserIDUnioTB.ReadOnly = true;
-            this.UserIDUnioTB.Size = new System.Drawing.Size(59, 15);
+            this.UserIDUnioTB.Size = new System.Drawing.Size(59, 19);
             this.UserIDUnioTB.TabIndex = 43;
             this.UserIDUnioTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -969,7 +985,7 @@
             this.DatZavrsioTB.Location = new System.Drawing.Point(147, 202);
             this.DatZavrsioTB.Name = "DatZavrsioTB";
             this.DatZavrsioTB.ReadOnly = true;
-            this.DatZavrsioTB.Size = new System.Drawing.Size(77, 15);
+            this.DatZavrsioTB.Size = new System.Drawing.Size(77, 19);
             this.DatZavrsioTB.TabIndex = 37;
             this.DatZavrsioTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -980,7 +996,7 @@
             this.VriZavrsioTB.Location = new System.Drawing.Point(246, 202);
             this.VriZavrsioTB.Name = "VriZavrsioTB";
             this.VriZavrsioTB.ReadOnly = true;
-            this.VriZavrsioTB.Size = new System.Drawing.Size(69, 15);
+            this.VriZavrsioTB.Size = new System.Drawing.Size(69, 19);
             this.VriZavrsioTB.TabIndex = 39;
             this.VriZavrsioTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -990,7 +1006,7 @@
             this.label28.ForeColor = System.Drawing.Color.Gray;
             this.label28.Location = new System.Drawing.Point(8, 70);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(400, 17);
+            this.label28.Size = new System.Drawing.Size(450, 20);
             this.label28.TabIndex = 125;
             this.label28.Text = "_________________________________________________";
             // 
@@ -1000,7 +1016,7 @@
             this.label29.ForeColor = System.Drawing.Color.Gray;
             this.label29.Location = new System.Drawing.Point(8, 115);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(400, 17);
+            this.label29.Size = new System.Drawing.Size(450, 20);
             this.label29.TabIndex = 126;
             this.label29.Text = "_________________________________________________";
             // 
@@ -1010,7 +1026,7 @@
             this.label33.ForeColor = System.Drawing.Color.Gray;
             this.label33.Location = new System.Drawing.Point(8, 159);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(400, 17);
+            this.label33.Size = new System.Drawing.Size(450, 20);
             this.label33.TabIndex = 127;
             this.label33.Text = "_________________________________________________";
             // 
@@ -1020,7 +1036,7 @@
             this.label36.ForeColor = System.Drawing.Color.Gray;
             this.label36.Location = new System.Drawing.Point(8, 204);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(400, 17);
+            this.label36.Size = new System.Drawing.Size(450, 20);
             this.label36.TabIndex = 128;
             this.label36.Text = "_________________________________________________";
             // 
@@ -1030,7 +1046,7 @@
             this.label38.ForeColor = System.Drawing.Color.Gray;
             this.label38.Location = new System.Drawing.Point(8, 249);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(400, 17);
+            this.label38.Size = new System.Drawing.Size(450, 20);
             this.label38.TabIndex = 129;
             this.label38.Text = "_________________________________________________";
             // 
@@ -1067,7 +1083,7 @@
             this.label53.ForeColor = System.Drawing.Color.Gray;
             this.label53.Location = new System.Drawing.Point(18, 79);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(38, 17);
+            this.label53.Size = new System.Drawing.Size(44, 20);
             this.label53.TabIndex = 118;
             this.label53.Text = "Date";
             // 
@@ -1077,7 +1093,7 @@
             this.label52.ForeColor = System.Drawing.Color.Gray;
             this.label52.Location = new System.Drawing.Point(21, 129);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(39, 17);
+            this.label52.Size = new System.Drawing.Size(43, 20);
             this.label52.TabIndex = 117;
             this.label52.Text = "Time";
             // 
@@ -1088,7 +1104,7 @@
             this.DatPrijaveTB.Location = new System.Drawing.Point(24, 94);
             this.DatPrijaveTB.Name = "DatPrijaveTB";
             this.DatPrijaveTB.ReadOnly = true;
-            this.DatPrijaveTB.Size = new System.Drawing.Size(100, 22);
+            this.DatPrijaveTB.Size = new System.Drawing.Size(100, 26);
             this.DatPrijaveTB.TabIndex = 71;
             this.DatPrijaveTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1098,7 +1114,7 @@
             this.label47.ForeColor = System.Drawing.Color.Gray;
             this.label47.Location = new System.Drawing.Point(2, 282);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(40, 17);
+            this.label47.Size = new System.Drawing.Size(44, 20);
             this.label47.TabIndex = 112;
             this.label47.Text = "Error";
             // 
@@ -1108,7 +1124,7 @@
             this.label48.ForeColor = System.Drawing.Color.Gray;
             this.label48.Location = new System.Drawing.Point(2, 195);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(51, 17);
+            this.label48.Size = new System.Drawing.Size(57, 20);
             this.label48.TabIndex = 113;
             this.label48.Text = "Device";
             // 
@@ -1118,7 +1134,7 @@
             this.label51.ForeColor = System.Drawing.Color.Gray;
             this.label51.Location = new System.Drawing.Point(165, 82);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(68, 17);
+            this.label51.Size = new System.Drawing.Size(79, 20);
             this.label51.TabIndex = 116;
             this.label51.Text = "Date SLA";
             // 
@@ -1128,7 +1144,7 @@
             this.label46.ForeColor = System.Drawing.Color.Gray;
             this.label46.Location = new System.Drawing.Point(142, 26);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(40, 17);
+            this.label46.Size = new System.Drawing.Size(44, 20);
             this.label46.TabIndex = 111;
             this.label46.Text = "Tech";
             // 
@@ -1138,7 +1154,7 @@
             this.label50.ForeColor = System.Drawing.Color.Gray;
             this.label50.Location = new System.Drawing.Point(166, 127);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(69, 17);
+            this.label50.Size = new System.Drawing.Size(78, 20);
             this.label50.TabIndex = 115;
             this.label50.Text = "Time SLA";
             // 
@@ -1149,7 +1165,7 @@
             this.VriPrijaveTB.Location = new System.Drawing.Point(24, 142);
             this.VriPrijaveTB.Name = "VriPrijaveTB";
             this.VriPrijaveTB.ReadOnly = true;
-            this.VriPrijaveTB.Size = new System.Drawing.Size(100, 22);
+            this.VriPrijaveTB.Size = new System.Drawing.Size(100, 26);
             this.VriPrijaveTB.TabIndex = 69;
             this.VriPrijaveTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1159,7 +1175,7 @@
             this.label49.ForeColor = System.Drawing.Color.Gray;
             this.label49.Location = new System.Drawing.Point(85, 26);
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(41, 17);
+            this.label49.Size = new System.Drawing.Size(45, 20);
             this.label49.TabIndex = 114;
             this.label49.Text = "Drive";
             // 
@@ -1169,7 +1185,7 @@
             this.label26.ForeColor = System.Drawing.Color.Gray;
             this.label26.Location = new System.Drawing.Point(12, 26);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(38, 17);
+            this.label26.Size = new System.Drawing.Size(43, 20);
             this.label26.TabIndex = 94;
             this.label26.Text = "User";
             // 
@@ -1180,7 +1196,7 @@
             this.DriveTB.Location = new System.Drawing.Point(90, 39);
             this.DriveTB.Name = "DriveTB";
             this.DriveTB.ReadOnly = true;
-            this.DriveTB.Size = new System.Drawing.Size(46, 22);
+            this.DriveTB.Size = new System.Drawing.Size(46, 26);
             this.DriveTB.TabIndex = 63;
             this.DriveTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1213,7 +1229,7 @@
             this.PrijavioTB.Location = new System.Drawing.Point(146, 39);
             this.PrijavioTB.Name = "PrijavioTB";
             this.PrijavioTB.ReadOnly = true;
-            this.PrijavioTB.Size = new System.Drawing.Size(135, 22);
+            this.PrijavioTB.Size = new System.Drawing.Size(135, 26);
             this.PrijavioTB.TabIndex = 57;
             this.PrijavioTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1224,7 +1240,7 @@
             this.UserIDSastavioTB.Location = new System.Drawing.Point(16, 39);
             this.UserIDSastavioTB.Name = "UserIDSastavioTB";
             this.UserIDSastavioTB.ReadOnly = true;
-            this.UserIDSastavioTB.Size = new System.Drawing.Size(45, 22);
+            this.UserIDSastavioTB.Size = new System.Drawing.Size(45, 26);
             this.UserIDSastavioTB.TabIndex = 84;
             this.UserIDSastavioTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1235,7 +1251,7 @@
             this.VriSLATB.Location = new System.Drawing.Point(169, 142);
             this.VriSLATB.Name = "VriSLATB";
             this.VriSLATB.ReadOnly = true;
-            this.VriSLATB.Size = new System.Drawing.Size(100, 22);
+            this.VriSLATB.Size = new System.Drawing.Size(100, 26);
             this.VriSLATB.TabIndex = 65;
             this.VriSLATB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1246,7 +1262,7 @@
             this.DatSLATB.Location = new System.Drawing.Point(169, 97);
             this.DatSLATB.Name = "DatSLATB";
             this.DatSLATB.ReadOnly = true;
-            this.DatSLATB.Size = new System.Drawing.Size(100, 22);
+            this.DatSLATB.Size = new System.Drawing.Size(100, 26);
             this.DatSLATB.TabIndex = 67;
             this.DatSLATB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1256,7 +1272,7 @@
             this.label57.ForeColor = System.Drawing.Color.Gray;
             this.label57.Location = new System.Drawing.Point(223, 109);
             this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(33, 17);
+            this.label57.Size = new System.Drawing.Size(36, 20);
             this.label57.TabIndex = 122;
             this.label57.Text = "Prio";
             // 
@@ -1266,7 +1282,7 @@
             this.Branch.ForeColor = System.Drawing.Color.Gray;
             this.Branch.Location = new System.Drawing.Point(113, 109);
             this.Branch.Name = "Branch";
-            this.Branch.Size = new System.Drawing.Size(53, 17);
+            this.Branch.Size = new System.Drawing.Size(60, 20);
             this.Branch.TabIndex = 121;
             this.Branch.Text = "Branch";
             // 
@@ -1276,7 +1292,7 @@
             this.label55.ForeColor = System.Drawing.Color.Gray;
             this.label55.Location = new System.Drawing.Point(491, 109);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(36, 17);
+            this.label55.Size = new System.Drawing.Size(42, 20);
             this.label55.TabIndex = 120;
             this.label55.Text = "CCN";
             // 
@@ -1286,7 +1302,7 @@
             this.label54.ForeColor = System.Drawing.Color.Gray;
             this.label54.Location = new System.Drawing.Point(697, 109);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(30, 17);
+            this.label54.Size = new System.Drawing.Size(37, 20);
             this.label54.TabIndex = 119;
             this.label54.Text = "CID";
             // 
@@ -1296,7 +1312,7 @@
             this.label31.ForeColor = System.Drawing.Color.Gray;
             this.label31.Location = new System.Drawing.Point(697, 178);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(41, 17);
+            this.label31.Size = new System.Drawing.Size(49, 20);
             this.label31.TabIndex = 98;
             this.label31.Text = "RNID";
             // 
@@ -1306,7 +1322,7 @@
             this.label35.ForeColor = System.Drawing.Color.Gray;
             this.label35.Location = new System.Drawing.Point(369, 109);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(21, 17);
+            this.label35.Size = new System.Drawing.Size(26, 20);
             this.label35.TabIndex = 93;
             this.label35.Text = "ID";
             // 
@@ -1316,7 +1332,7 @@
             this.label34.ForeColor = System.Drawing.Color.Gray;
             this.label34.Location = new System.Drawing.Point(2, 109);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(36, 17);
+            this.label34.Size = new System.Drawing.Size(42, 20);
             this.label34.TabIndex = 92;
             this.label34.Text = "Cmp";
             // 
@@ -1326,7 +1342,7 @@
             this.TIDidTB.Location = new System.Drawing.Point(373, 122);
             this.TIDidTB.Name = "TIDidTB";
             this.TIDidTB.ReadOnly = true;
-            this.TIDidTB.Size = new System.Drawing.Size(112, 22);
+            this.TIDidTB.Size = new System.Drawing.Size(112, 26);
             this.TIDidTB.TabIndex = 83;
             this.TIDidTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1336,7 +1352,7 @@
             this.TvrtkaIDTB.Location = new System.Drawing.Point(6, 122);
             this.TvrtkaIDTB.Name = "TvrtkaIDTB";
             this.TvrtkaIDTB.ReadOnly = true;
-            this.TvrtkaIDTB.Size = new System.Drawing.Size(100, 22);
+            this.TvrtkaIDTB.Size = new System.Drawing.Size(100, 26);
             this.TvrtkaIDTB.TabIndex = 81;
             this.TvrtkaIDTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1346,7 +1362,7 @@
             this.PrioTB.Location = new System.Drawing.Point(227, 122);
             this.PrioTB.Name = "PrioTB";
             this.PrioTB.ReadOnly = true;
-            this.PrioTB.Size = new System.Drawing.Size(59, 22);
+            this.PrioTB.Size = new System.Drawing.Size(59, 26);
             this.PrioTB.TabIndex = 79;
             this.PrioTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1356,7 +1372,7 @@
             this.FilijalaTB.Location = new System.Drawing.Point(117, 122);
             this.FilijalaTB.Name = "FilijalaTB";
             this.FilijalaTB.ReadOnly = true;
-            this.FilijalaTB.Size = new System.Drawing.Size(100, 22);
+            this.FilijalaTB.Size = new System.Drawing.Size(100, 26);
             this.FilijalaTB.TabIndex = 77;
             this.FilijalaTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1366,7 +1382,7 @@
             this.CCNTB.Location = new System.Drawing.Point(495, 122);
             this.CCNTB.Name = "CCNTB";
             this.CCNTB.ReadOnly = true;
-            this.CCNTB.Size = new System.Drawing.Size(196, 22);
+            this.CCNTB.Size = new System.Drawing.Size(196, 26);
             this.CCNTB.TabIndex = 75;
             this.CCNTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1376,7 +1392,7 @@
             this.CIDTB.Location = new System.Drawing.Point(701, 122);
             this.CIDTB.Name = "CIDTB";
             this.CIDTB.ReadOnly = true;
-            this.CIDTB.Size = new System.Drawing.Size(191, 22);
+            this.CIDTB.Size = new System.Drawing.Size(191, 26);
             this.CIDTB.TabIndex = 73;
             this.CIDTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1386,7 +1402,7 @@
             this.RNIDTB.Location = new System.Drawing.Point(701, 191);
             this.RNIDTB.Name = "RNIDTB";
             this.RNIDTB.ReadOnly = true;
-            this.RNIDTB.Size = new System.Drawing.Size(191, 22);
+            this.RNIDTB.Size = new System.Drawing.Size(191, 26);
             this.RNIDTB.TabIndex = 49;
             this.RNIDTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1396,7 +1412,7 @@
             this.label25.ForeColor = System.Drawing.Color.Gray;
             this.label25.Location = new System.Drawing.Point(303, 46);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(36, 17);
+            this.label25.Size = new System.Drawing.Size(42, 20);
             this.label25.TabIndex = 20;
             this.label25.Text = "CCN";
             // 
@@ -1406,7 +1422,7 @@
             this.label24.ForeColor = System.Drawing.Color.Gray;
             this.label24.Location = new System.Drawing.Point(618, 46);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(30, 17);
+            this.label24.Size = new System.Drawing.Size(37, 20);
             this.label24.TabIndex = 19;
             this.label24.Text = "CID";
             // 
@@ -1416,7 +1432,7 @@
             this.label23.ForeColor = System.Drawing.Color.Gray;
             this.label23.Location = new System.Drawing.Point(9, 44);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(21, 17);
+            this.label23.Size = new System.Drawing.Size(26, 20);
             this.label23.TabIndex = 18;
             this.label23.Text = "ID";
             // 
@@ -1426,7 +1442,7 @@
             this.label22.ForeColor = System.Drawing.Color.Gray;
             this.label22.Location = new System.Drawing.Point(13, 75);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(104, 17);
+            this.label22.Size = new System.Drawing.Size(118, 20);
             this.label22.TabIndex = 17;
             this.label22.Text = "Select TID type";
             // 
@@ -1437,7 +1453,7 @@
             this.AllRB.ForeColor = System.Drawing.Color.Black;
             this.AllRB.Location = new System.Drawing.Point(496, 69);
             this.AllRB.Name = "AllRB";
-            this.AllRB.Size = new System.Drawing.Size(44, 21);
+            this.AllRB.Size = new System.Drawing.Size(51, 24);
             this.AllRB.TabIndex = 8;
             this.AllRB.TabStop = true;
             this.AllRB.Text = "All";
@@ -1450,7 +1466,7 @@
             this.ClosedRB.ForeColor = System.Drawing.Color.Black;
             this.ClosedRB.Location = new System.Drawing.Point(221, 69);
             this.ClosedRB.Name = "ClosedRB";
-            this.ClosedRB.Size = new System.Drawing.Size(72, 21);
+            this.ClosedRB.Size = new System.Drawing.Size(83, 24);
             this.ClosedRB.TabIndex = 5;
             this.ClosedRB.Text = "Closed";
             this.ClosedRB.UseVisualStyleBackColor = true;
@@ -1462,7 +1478,7 @@
             this.WorkingRB.ForeColor = System.Drawing.Color.Black;
             this.WorkingRB.Location = new System.Drawing.Point(310, 69);
             this.WorkingRB.Name = "WorkingRB";
-            this.WorkingRB.Size = new System.Drawing.Size(81, 21);
+            this.WorkingRB.Size = new System.Drawing.Size(92, 24);
             this.WorkingRB.TabIndex = 6;
             this.WorkingRB.Text = "Working";
             this.WorkingRB.UseVisualStyleBackColor = true;
@@ -1474,7 +1490,7 @@
             this.StornoRB.ForeColor = System.Drawing.Color.Black;
             this.StornoRB.Location = new System.Drawing.Point(408, 69);
             this.StornoRB.Name = "StornoRB";
-            this.StornoRB.Size = new System.Drawing.Size(71, 21);
+            this.StornoRB.Size = new System.Drawing.Size(82, 24);
             this.StornoRB.TabIndex = 7;
             this.StornoRB.Text = "Storno";
             this.StornoRB.UseVisualStyleBackColor = true;
@@ -1486,7 +1502,7 @@
             this.OpenRB.ForeColor = System.Drawing.Color.Black;
             this.OpenRB.Location = new System.Drawing.Point(142, 70);
             this.OpenRB.Name = "OpenRB";
-            this.OpenRB.Size = new System.Drawing.Size(64, 21);
+            this.OpenRB.Size = new System.Drawing.Size(73, 24);
             this.OpenRB.TabIndex = 4;
             this.OpenRB.Text = "Open";
             this.OpenRB.UseVisualStyleBackColor = true;
@@ -1499,7 +1515,7 @@
             this.StornoCntLB.ForeColor = System.Drawing.Color.Red;
             this.StornoCntLB.Location = new System.Drawing.Point(756, 284);
             this.StornoCntLB.Name = "StornoCntLB";
-            this.StornoCntLB.Size = new System.Drawing.Size(14, 15);
+            this.StornoCntLB.Size = new System.Drawing.Size(16, 17);
             this.StornoCntLB.TabIndex = 11;
             this.StornoCntLB.Text = "0";
             // 
@@ -1510,7 +1526,7 @@
             this.WorkingCntLB.ForeColor = System.Drawing.Color.Red;
             this.WorkingCntLB.Location = new System.Drawing.Point(756, 265);
             this.WorkingCntLB.Name = "WorkingCntLB";
-            this.WorkingCntLB.Size = new System.Drawing.Size(14, 15);
+            this.WorkingCntLB.Size = new System.Drawing.Size(16, 17);
             this.WorkingCntLB.TabIndex = 10;
             this.WorkingCntLB.Text = "0";
             // 
@@ -1521,7 +1537,7 @@
             this.ClosedCntLB.ForeColor = System.Drawing.Color.Red;
             this.ClosedCntLB.Location = new System.Drawing.Point(756, 245);
             this.ClosedCntLB.Name = "ClosedCntLB";
-            this.ClosedCntLB.Size = new System.Drawing.Size(14, 15);
+            this.ClosedCntLB.Size = new System.Drawing.Size(16, 17);
             this.ClosedCntLB.TabIndex = 9;
             this.ClosedCntLB.Text = "0";
             // 
@@ -1532,7 +1548,7 @@
             this.OpenCntLB.ForeColor = System.Drawing.Color.Red;
             this.OpenCntLB.Location = new System.Drawing.Point(756, 223);
             this.OpenCntLB.Name = "OpenCntLB";
-            this.OpenCntLB.Size = new System.Drawing.Size(14, 15);
+            this.OpenCntLB.Size = new System.Drawing.Size(16, 17);
             this.OpenCntLB.TabIndex = 8;
             this.OpenCntLB.Text = "0";
             // 
@@ -1543,7 +1559,7 @@
             this.label21.ForeColor = System.Drawing.Color.Red;
             this.label21.Location = new System.Drawing.Point(714, 284);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(46, 15);
+            this.label21.Size = new System.Drawing.Size(54, 17);
             this.label21.TabIndex = 7;
             this.label21.Text = "Storno:";
             // 
@@ -1554,7 +1570,7 @@
             this.label20.ForeColor = System.Drawing.Color.Red;
             this.label20.Location = new System.Drawing.Point(708, 265);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(55, 15);
+            this.label20.Size = new System.Drawing.Size(64, 17);
             this.label20.TabIndex = 6;
             this.label20.Text = "Working:";
             // 
@@ -1565,7 +1581,7 @@
             this.label19.ForeColor = System.Drawing.Color.Red;
             this.label19.Location = new System.Drawing.Point(713, 245);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(48, 15);
+            this.label19.Size = new System.Drawing.Size(55, 17);
             this.label19.TabIndex = 5;
             this.label19.Text = "Closed:";
             // 
@@ -1576,7 +1592,7 @@
             this.label18.ForeColor = System.Drawing.Color.Red;
             this.label18.Location = new System.Drawing.Point(720, 223);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(40, 15);
+            this.label18.Size = new System.Drawing.Size(47, 17);
             this.label18.TabIndex = 4;
             this.label18.Text = "Open:";
             // 
@@ -1586,7 +1602,7 @@
             this.label17.ForeColor = System.Drawing.Color.Gray;
             this.label17.Location = new System.Drawing.Point(14, 7);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(92, 17);
+            this.label17.Size = new System.Drawing.Size(104, 20);
             this.label17.TabIndex = 3;
             this.label17.Text = "Select TID by";
             // 
@@ -1599,7 +1615,7 @@
             this.TIDcidCB.FormattingEnabled = true;
             this.TIDcidCB.Location = new System.Drawing.Point(650, 36);
             this.TIDcidCB.Name = "TIDcidCB";
-            this.TIDcidCB.Size = new System.Drawing.Size(245, 24);
+            this.TIDcidCB.Size = new System.Drawing.Size(245, 28);
             this.TIDcidCB.TabIndex = 2;
             this.TIDcidCB.SelectedIndexChanged += new System.EventHandler(this.TIDcidCB_SelectedIndexChanged);
             // 
@@ -1612,7 +1628,7 @@
             this.TIDccnCB.FormattingEnabled = true;
             this.TIDccnCB.Location = new System.Drawing.Point(340, 36);
             this.TIDccnCB.Name = "TIDccnCB";
-            this.TIDccnCB.Size = new System.Drawing.Size(245, 24);
+            this.TIDccnCB.Size = new System.Drawing.Size(245, 28);
             this.TIDccnCB.TabIndex = 1;
             this.TIDccnCB.SelectedIndexChanged += new System.EventHandler(this.TIDccnCB_SelectedIndexChanged);
             // 
@@ -1625,7 +1641,7 @@
             this.TIDidCB.FormattingEnabled = true;
             this.TIDidCB.Location = new System.Drawing.Point(30, 36);
             this.TIDidCB.Name = "TIDidCB";
-            this.TIDidCB.Size = new System.Drawing.Size(245, 24);
+            this.TIDidCB.Size = new System.Drawing.Size(245, 28);
             this.TIDidCB.TabIndex = 0;
             this.TIDidCB.SelectedIndexChanged += new System.EventHandler(this.TIDidCB_SelectedIndexChanged);
             // 
@@ -1650,17 +1666,26 @@
             this.printDialog1.PrintToFile = true;
             this.printDialog1.UseEXDialog = true;
             // 
-            // PrintRNBTSelect
+            // label39
             // 
-            this.PrintRNBTSelect.BackColor = System.Drawing.Color.Khaki;
-            this.PrintRNBTSelect.ForeColor = System.Drawing.Color.Black;
-            this.PrintRNBTSelect.Location = new System.Drawing.Point(503, 489);
-            this.PrintRNBTSelect.Name = "PrintRNBTSelect";
-            this.PrintRNBTSelect.Size = new System.Drawing.Size(113, 54);
-            this.PrintRNBTSelect.TabIndex = 130;
-            this.PrintRNBTSelect.Text = "Select printer";
-            this.PrintRNBTSelect.UseVisualStyleBackColor = false;
-            this.PrintRNBTSelect.Click += new System.EventHandler(this.PrintRNBTSelect_Click);
+            this.label39.AutoSize = true;
+            this.label39.ForeColor = System.Drawing.Color.Gray;
+            this.label39.Location = new System.Drawing.Point(695, 299);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(48, 20);
+            this.label39.TabIndex = 120;
+            this.label39.Text = "Done";
+            // 
+            // DoneTB
+            // 
+            this.DoneTB.BackColor = System.Drawing.SystemColors.Info;
+            this.DoneTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DoneTB.Location = new System.Drawing.Point(701, 313);
+            this.DoneTB.Multiline = true;
+            this.DoneTB.Name = "DoneTB";
+            this.DoneTB.ReadOnly = true;
+            this.DoneTB.Size = new System.Drawing.Size(191, 101);
+            this.DoneTB.TabIndex = 119;
             // 
             // Tickets
             // 
@@ -1819,5 +1844,7 @@
         private System.Drawing.Printing.PrintDocument printDocumentPrim;
         private System.Windows.Forms.PrintDialog printDialog1;
         private System.Windows.Forms.Button PrintRNBTSelect;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.TextBox DoneTB;
     }
 }

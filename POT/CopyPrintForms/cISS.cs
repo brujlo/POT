@@ -228,6 +228,8 @@ namespace POT.CopyPrintForms
                     Part mainPr = new Part();
                     //List<String> allISSInfo = new List<String>();
 
+                    getISSList(issID.ToString(), "ID");
+
                     ISSid = issID;
 
                     allISSInfo = qc.GetAllISSInfoById(issID);
@@ -483,7 +485,7 @@ namespace POT.CopyPrintForms
             listView1.Items.Clear();
             listView2.Items.Clear();
 
-            List<String> arr = new List<string>();
+            List<ISSreport> arr = new List<ISSreport>();
             int rb;
             QueryCommands qc1 = new QueryCommands();
 
@@ -508,7 +510,7 @@ namespace POT.CopyPrintForms
             {
                 rb = listView1.Items.Count + 1;
 
-                if (arr[0].Equals("nok"))
+                if (arr.Count < 1)
                 {
                     data = value;
                     Result = "Selected ISS does not exist.";
@@ -517,17 +519,17 @@ namespace POT.CopyPrintForms
                     return;
                 }
 
-                for (int i = 0; i < arr.Count; i = i + 7)
+                for (int i = 0; i < arr.Count; i++)
                 {
                     ListViewItem lvi1 = new ListViewItem(rb.ToString());
 
-                    lvi1.SubItems.Add(arr[i]);
-                    lvi1.SubItems.Add(arr[i + 1]);
-                    lvi1.SubItems.Add(arr[i + 2]);
-                    lvi1.SubItems.Add(arr[i + 3]);
-                    lvi1.SubItems.Add(arr[i + 4]);
-                    lvi1.SubItems.Add(arr[i + 5]);
-                    lvi1.SubItems.Add(arr[i + 6]);
+                    lvi1.SubItems.Add(arr[i].ISSid.ToString());
+                    lvi1.SubItems.Add(arr[i].Date);
+                    lvi1.SubItems.Add(arr[i].UserIDmaked .ToString());
+                    lvi1.SubItems.Add(arr[i].CustomerID .ToString());
+                    lvi1.SubItems.Add(arr[i].PartID .ToString());
+                    lvi1.SubItems.Add(arr[i].Closed.ToString());
+                    lvi1.SubItems.Add(arr[i].TotalTIme);
 
                     listView1.Items.Add(lvi1);
 

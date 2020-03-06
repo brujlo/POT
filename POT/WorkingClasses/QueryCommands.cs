@@ -4999,9 +4999,9 @@ namespace POT
             return arr;
         }
 
-        public List<String> GetAllInfoISSByClosed(String what, String value)
+        public List<ISSreport> GetAllInfoISSByClosed(String what, String value)
         {
-            List<String> arr = new List<string>();
+            List<ISSreport> arr = new List<ISSreport>();
             //SqlConnection cnn = cn.Connect(Uname, Pass);
             cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
             if (what.Equals("Date"))
@@ -5018,20 +5018,22 @@ namespace POT
             {
                 do
                 {
-                    arr.Add(dataReader["ID"].ToString());
-                    arr.Add(dataReader["Date"].ToString());
-                    arr.Add(dataReader["UserID"].ToString());
-                    arr.Add(dataReader["CustomerID"].ToString());
-                    arr.Add(dataReader["PartID"].ToString());
-                    arr.Add(dataReader["Closed"].ToString());
-                    arr.Add(dataReader["TotalTime"].ToString());
-                    arr.Add(dataReader["Level"].ToString());
+                    ISSreport rpt = new ISSreport();
+
+                    rpt.ISSid = long.Parse(dataReader["ID"].ToString());
+                    rpt.Date = dataReader["Date"].ToString();
+                    rpt.UserIDmaked = long.Parse(dataReader["UserID"].ToString());
+                    rpt.CustomerID = long.Parse(dataReader["CustomerID"].ToString());
+                    rpt.PartID = long.Parse(dataReader["PartID"].ToString());
+                    rpt.Closed = long.Parse(dataReader["Closed"].ToString());
+                    rpt.TotalTIme = dataReader["TotalTime"].ToString();
+                    rpt.Level = long.Parse(dataReader["Level"].ToString());
+
+                    arr.Add(rpt);
+                    
                 } while (dataReader.Read());
             }
-            else
-            {
-                arr.Add("nok");
-            }
+
             dataReader.Close();
             cnn.Close();
             return arr;
