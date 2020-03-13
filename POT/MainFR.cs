@@ -918,10 +918,10 @@ namespace POT
 
         private void linkLabel20_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            //Program.LoadStart();
+            Program.LoadStart();
 
-            //TODO
-            MessageBox.Show("Za uredivanje work liste za ISS");
+            WorkListISS wli = new WorkListISS();
+            wli.ShowDialog();
         }
 
         private void linkLabel22_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

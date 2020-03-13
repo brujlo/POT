@@ -4946,6 +4946,92 @@ namespace POT
             return arr;
         }
 
+        public List<WorksISS> GetAllFromWork()
+        {
+            List<String> arr = new List<string>();
+            //SqlConnection cnn = cn.Connect(Uname, Pass);
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            query = "Select * from Work order by Value";
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            List<WorksISS> tmpLst = new List<WorksISS>();
+
+            if (dataReader.HasRows)
+            {
+                do
+                {
+                    WorksISS tmp = new WorksISS();
+                    
+                    tmp.Hrv = dataReader["Odradeno"].ToString();
+                    tmp.Eng = dataReader["WorkDone"].ToString();
+                    tmp.Id = dataReader["Value"].ToString();
+
+                    tmpLst.Add(tmp);
+
+                } while (dataReader.Read());
+            }
+            else
+            {
+                arr.Add("nok");
+            }
+            dataReader.Close();
+            cnn.Close();
+            return tmpLst;
+        }
+
+        public Boolean SaveToWork(List<WorksISS> _lst)
+        {
+            Boolean isExecuted = false;
+
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+            command = cnn.CreateCommand();
+            SqlTransaction transaction = cnn.BeginTransaction();
+            command.Connection = cnn;
+            command.Transaction = transaction;
+
+            try
+            {
+                command.CommandText = "DELETE FROM Work";
+
+                command.ExecuteNonQuery();
+
+                foreach (WorksISS work in _lst)
+                {
+                    command.CommandText = "INSERT INTO Work (Odradeno, WorkDone, Value) VALUES ('" + work.Hrv + "', '" + work.Eng + "', '" + work.Id + "')";
+                    command.ExecuteNonQuery();
+                }
+
+                transaction.Commit();
+                isExecuted = true;
+            }
+            catch (Exception)
+            {
+                //new LogWriter(e1);
+                try
+                {
+                    transaction.Rollback();
+                    isExecuted = false;
+                    throw;
+                }
+                catch (Exception)
+                {
+                    //new LogWriter(e2);
+                    throw;
+                }
+            }
+            finally
+            {
+                if (cnn.State.ToString().Equals("Open"))
+                    cnn.Close();
+            }
+
+            cnn.Close();
+            return isExecuted;
+        }
+
         public List<String> GetAllInfoISSBy(String what, String value, String orderBy)
         {
             List<String> arr = new List<string>();

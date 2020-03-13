@@ -82,6 +82,8 @@ namespace POT
                 }
 
                 comboBox2.Text = Properties.Settings.Default.CmpRegionID.ToString();
+
+                this.Focus();
             }
             catch (Exception e1)
             {

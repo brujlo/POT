@@ -15543,3 +15543,953 @@ Parameter name: index
 
 - 06.03.20. 18:20 - Waiting
     *** BrunoBrckovic *** 
+
+- 13.03.20. 09:39
+    - LOGED change: POT.SetDBConnection - button2_Click
+     - Used: DB connection address and name save.
+     - Data: cphr.ddns.net, exe
+     - Result: Saved, no msgToUser
+    ***  *** 
+
+
+- 13.03.20. 09:39 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 09:40
+    - LOGED change: POT.CompanyInfo - button2_Click
+     - Used: Changing MainCmp info
+     - Data: Exception, Dunavska 31, Zagreb, 10040, HR, 0.00, 0.00, 76737454770, PBZGHR2X, 97768138, HR9323400091160480462, 4, 1, www.exception.hr, +38515814315, Bruno Brckovic, info@exception.hr, support@exception.hr, 2
+     - Result: Company (Exception) data is now selected.
+    *** BrunoBrckovic *** 
+
+
+- 13.03.20. 09:40
+    - LOGED change: POT.MainCmpSelector - button1_Click
+     - Used: Main cmp select
+     - Data: Exception
+     - Result: Main cmp selected, please relog to see changes.
+    *** BrunoBrckovic *** 
+
+
+- 13.03.20. 09:41
+    - LOGED change: POT.BuildingClasses.SettingsForm - SaveBT_Click
+     - Used: Print
+     - Data: 0; 0; 15; VAT is not calculated according to Article 17. of the Law on PDV; The taxpayer is not in the VAT system, according to Article 90. of the Law on PDV; Thank you for your trust; Temeljem članka 9., st.3., Zakona o računovodstvu, račun je pravovaljan bez potpisa i pečata; Porezni obveznik nije u sustavu PDV-a, temeljem zakona o PDV-u čl. 90; Hvala na ukazanom povjerenju; Bruno Brcković; C:\PROJEKTI\MY\POT\DOKUMENTI; Save_to_PDF => True
+     - Result: 
+    *** BrunoBrckovic *** 
+
+
+- 13.03.20. 09:41 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 09:41 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 09:41 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 09:42 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 09:43 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 09:45 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 09:48 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 09:53 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 09:58 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 09:59 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 10:03 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 10:04 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 10:04 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 10:04 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 10:38 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 10:39 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 10:40 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 10:41 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 10:41 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 10:42 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 10:42 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 11:07 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 11:09 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 11:09 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 11:51 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 11:51
+    - BaseEcp: System.NullReferenceException: Object reference not set to an instance of an object.
+   at POT.Documents.WorkListAdder.SendValues(WorksISS _wss, WorkListISS form) in C:\PROJEKTI\MY\POT\POT\POT\Documents\WorkListAdder.cs:line 29
+   at POT.Documents.WorkListISS.editBT_Click(Object sender, EventArgs e) in C:\PROJEKTI\MY\POT\POT\POT\Documents\WorkListISS.cs:line 143
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.MainFR.linkLabel20_LinkClicked(Object sender, LinkLabelLinkClickedEventArgs e) in C:\PROJEKTI\MY\POT\POT\POT\MainFR.cs:line 924
+   at System.Windows.Forms.LinkLabel.OnLinkClicked(LinkLabelLinkClickedEventArgs e)
+   at System.Windows.Forms.LinkLabel.OnMouseUp(MouseEventArgs e)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.Label.WndProc(Message& m)
+   at System.Windows.Forms.LinkLabel.WndProc(Message& msg)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e) in C:\PROJEKTI\MY\POT\POT\POT\StartForm.cs:line 140
+    - InnerEcp: 
+    - MessageEcp: Object reference not set to an instance of an object.
+    - SourceEcp: POT
+    - StackTrqceEcp:    at POT.Documents.WorkListAdder.SendValues(WorksISS _wss, WorkListISS form) in C:\PROJEKTI\MY\POT\POT\POT\Documents\WorkListAdder.cs:line 29
+   at POT.Documents.WorkListISS.editBT_Click(Object sender, EventArgs e) in C:\PROJEKTI\MY\POT\POT\POT\Documents\WorkListISS.cs:line 143
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.MainFR.linkLabel20_LinkClicked(Object sender, LinkLabelLinkClickedEventArgs e) in C:\PROJEKTI\MY\POT\POT\POT\MainFR.cs:line 924
+   at System.Windows.Forms.LinkLabel.OnLinkClicked(LinkLabelLinkClickedEventArgs e)
+   at System.Windows.Forms.LinkLabel.OnMouseUp(MouseEventArgs e)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.Label.WndProc(Message& m)
+   at System.Windows.Forms.LinkLabel.WndProc(Message& msg)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e) in C:\PROJEKTI\MY\POT\POT\POT\StartForm.cs:line 140
+    - TypeNameEcp: System.NullReferenceException
+    *** BrunoBrckovic *** 
+
+
+- 13.03.20. 11:52 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 11:53 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 11:53 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 11:54 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 11:54 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 12:06 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 12:06 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 12:07 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 12:10 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 12:10
+    - BaseEcp: System.ArgumentOutOfRangeException: InvalidArgument=Value of '0' is not valid for 'index'.
+Parameter name: index
+   at System.Windows.Forms.ListView.SelectedIndexCollection.get_Item(Int32 index)
+   at POT.Documents.WorkListISS.listView1_SelectedIndexChanged(Object sender, EventArgs e)
+   at System.Windows.Forms.ListView.OnSelectedIndexChanged(EventArgs e)
+   at System.Windows.Forms.ListView.WmReflectNotify(Message& m)
+   at System.Windows.Forms.ListView.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.SendMessage(HandleRef hWnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   at System.Windows.Forms.Control.SendMessage(Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.Control.ReflectMessageInternal(IntPtr hWnd, Message& m)
+   at System.Windows.Forms.Control.WmNotify(Message& m)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.Form.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.CallWindowProc(IntPtr wndProc, IntPtr hWnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   at System.Windows.Forms.NativeWindow.DefWndProc(Message& m)
+   at System.Windows.Forms.Control.DefWndProc(Message& m)
+   at System.Windows.Forms.ListView.WmMouseDown(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.ListView.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.MainFR.linkLabel20_LinkClicked(Object sender, LinkLabelLinkClickedEventArgs e)
+   at System.Windows.Forms.LinkLabel.OnLinkClicked(LinkLabelLinkClickedEventArgs e)
+   at System.Windows.Forms.LinkLabel.OnMouseUp(MouseEventArgs e)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.Label.WndProc(Message& m)
+   at System.Windows.Forms.LinkLabel.WndProc(Message& msg)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: InvalidArgument=Value of '0' is not valid for 'index'.
+Parameter name: index
+    - SourceEcp: System.Windows.Forms
+    - StackTrqceEcp:    at System.Windows.Forms.ListView.SelectedIndexCollection.get_Item(Int32 index)
+   at POT.Documents.WorkListISS.listView1_SelectedIndexChanged(Object sender, EventArgs e)
+   at System.Windows.Forms.ListView.OnSelectedIndexChanged(EventArgs e)
+   at System.Windows.Forms.ListView.WmReflectNotify(Message& m)
+   at System.Windows.Forms.ListView.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.SendMessage(HandleRef hWnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   at System.Windows.Forms.Control.SendMessage(Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.Control.ReflectMessageInternal(IntPtr hWnd, Message& m)
+   at System.Windows.Forms.Control.WmNotify(Message& m)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.Form.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.CallWindowProc(IntPtr wndProc, IntPtr hWnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   at System.Windows.Forms.NativeWindow.DefWndProc(Message& m)
+   at System.Windows.Forms.Control.DefWndProc(Message& m)
+   at System.Windows.Forms.ListView.WmMouseDown(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.ListView.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.MainFR.linkLabel20_LinkClicked(Object sender, LinkLabelLinkClickedEventArgs e)
+   at System.Windows.Forms.LinkLabel.OnLinkClicked(LinkLabelLinkClickedEventArgs e)
+   at System.Windows.Forms.LinkLabel.OnMouseUp(MouseEventArgs e)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.Label.WndProc(Message& m)
+   at System.Windows.Forms.LinkLabel.WndProc(Message& msg)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e)
+    - TypeNameEcp: System.ArgumentOutOfRangeException
+    *** BrunoBrckovic *** 
+
+
+- 13.03.20. 12:11 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 12:11
+    - BaseEcp: System.ArgumentOutOfRangeException: InvalidArgument=Value of '0' is not valid for 'index'.
+Parameter name: index
+   at System.Windows.Forms.ListView.SelectedIndexCollection.get_Item(Int32 index)
+   at POT.Documents.WorkListISS.listView1_SelectedIndexChanged(Object sender, EventArgs e) in C:\PROJEKTI\MY\POT\POT\POT\Documents\WorkListISS.cs:line 168
+   at System.Windows.Forms.ListView.OnSelectedIndexChanged(EventArgs e)
+   at System.Windows.Forms.ListView.WmReflectNotify(Message& m)
+   at System.Windows.Forms.ListView.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.SendMessage(HandleRef hWnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   at System.Windows.Forms.Control.SendMessage(Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.Control.ReflectMessageInternal(IntPtr hWnd, Message& m)
+   at System.Windows.Forms.Control.WmNotify(Message& m)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.Form.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.CallWindowProc(IntPtr wndProc, IntPtr hWnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   at System.Windows.Forms.NativeWindow.DefWndProc(Message& m)
+   at System.Windows.Forms.Control.DefWndProc(Message& m)
+   at System.Windows.Forms.ListView.WmMouseDown(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.ListView.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.MainFR.linkLabel20_LinkClicked(Object sender, LinkLabelLinkClickedEventArgs e) in C:\PROJEKTI\MY\POT\POT\POT\MainFR.cs:line 924
+   at System.Windows.Forms.LinkLabel.OnLinkClicked(LinkLabelLinkClickedEventArgs e)
+   at System.Windows.Forms.LinkLabel.OnMouseUp(MouseEventArgs e)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.Label.WndProc(Message& m)
+   at System.Windows.Forms.LinkLabel.WndProc(Message& msg)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e) in C:\PROJEKTI\MY\POT\POT\POT\StartForm.cs:line 140
+    - InnerEcp: 
+    - MessageEcp: InvalidArgument=Value of '0' is not valid for 'index'.
+Parameter name: index
+    - SourceEcp: System.Windows.Forms
+    - StackTrqceEcp:    at System.Windows.Forms.ListView.SelectedIndexCollection.get_Item(Int32 index)
+   at POT.Documents.WorkListISS.listView1_SelectedIndexChanged(Object sender, EventArgs e) in C:\PROJEKTI\MY\POT\POT\POT\Documents\WorkListISS.cs:line 168
+   at System.Windows.Forms.ListView.OnSelectedIndexChanged(EventArgs e)
+   at System.Windows.Forms.ListView.WmReflectNotify(Message& m)
+   at System.Windows.Forms.ListView.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.SendMessage(HandleRef hWnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   at System.Windows.Forms.Control.SendMessage(Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.Control.ReflectMessageInternal(IntPtr hWnd, Message& m)
+   at System.Windows.Forms.Control.WmNotify(Message& m)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.Form.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.CallWindowProc(IntPtr wndProc, IntPtr hWnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   at System.Windows.Forms.NativeWindow.DefWndProc(Message& m)
+   at System.Windows.Forms.Control.DefWndProc(Message& m)
+   at System.Windows.Forms.ListView.WmMouseDown(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.ListView.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.MainFR.linkLabel20_LinkClicked(Object sender, LinkLabelLinkClickedEventArgs e) in C:\PROJEKTI\MY\POT\POT\POT\MainFR.cs:line 924
+   at System.Windows.Forms.LinkLabel.OnLinkClicked(LinkLabelLinkClickedEventArgs e)
+   at System.Windows.Forms.LinkLabel.OnMouseUp(MouseEventArgs e)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.Label.WndProc(Message& m)
+   at System.Windows.Forms.LinkLabel.WndProc(Message& msg)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e) in C:\PROJEKTI\MY\POT\POT\POT\StartForm.cs:line 140
+    - TypeNameEcp: System.ArgumentOutOfRangeException
+    *** BrunoBrckovic *** 
+
+
+- 13.03.20. 12:11 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 12:12
+    - BaseEcp: System.ArgumentOutOfRangeException: InvalidArgument=Value of '0' is not valid for 'index'.
+Parameter name: index
+   at System.Windows.Forms.ListView.SelectedIndexCollection.get_Item(Int32 index)
+   at POT.Documents.WorkListISS.listView1_SelectedIndexChanged(Object sender, EventArgs e) in C:\PROJEKTI\MY\POT\POT\POT\Documents\WorkListISS.cs:line 168
+   at System.Windows.Forms.ListView.OnSelectedIndexChanged(EventArgs e)
+   at System.Windows.Forms.ListView.WmReflectNotify(Message& m)
+   at System.Windows.Forms.ListView.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.SendMessage(HandleRef hWnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   at System.Windows.Forms.Control.SendMessage(Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.Control.ReflectMessageInternal(IntPtr hWnd, Message& m)
+   at System.Windows.Forms.Control.WmNotify(Message& m)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.Form.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.CallWindowProc(IntPtr wndProc, IntPtr hWnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   at System.Windows.Forms.NativeWindow.DefWndProc(Message& m)
+   at System.Windows.Forms.Control.DefWndProc(Message& m)
+   at System.Windows.Forms.ListView.WmMouseDown(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.ListView.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.MainFR.linkLabel20_LinkClicked(Object sender, LinkLabelLinkClickedEventArgs e) in C:\PROJEKTI\MY\POT\POT\POT\MainFR.cs:line 924
+   at System.Windows.Forms.LinkLabel.OnLinkClicked(LinkLabelLinkClickedEventArgs e)
+   at System.Windows.Forms.LinkLabel.OnMouseUp(MouseEventArgs e)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.Label.WndProc(Message& m)
+   at System.Windows.Forms.LinkLabel.WndProc(Message& msg)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e) in C:\PROJEKTI\MY\POT\POT\POT\StartForm.cs:line 140
+    - InnerEcp: 
+    - MessageEcp: InvalidArgument=Value of '0' is not valid for 'index'.
+Parameter name: index
+    - SourceEcp: System.Windows.Forms
+    - StackTrqceEcp:    at System.Windows.Forms.ListView.SelectedIndexCollection.get_Item(Int32 index)
+   at POT.Documents.WorkListISS.listView1_SelectedIndexChanged(Object sender, EventArgs e) in C:\PROJEKTI\MY\POT\POT\POT\Documents\WorkListISS.cs:line 168
+   at System.Windows.Forms.ListView.OnSelectedIndexChanged(EventArgs e)
+   at System.Windows.Forms.ListView.WmReflectNotify(Message& m)
+   at System.Windows.Forms.ListView.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.SendMessage(HandleRef hWnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   at System.Windows.Forms.Control.SendMessage(Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.Control.ReflectMessageInternal(IntPtr hWnd, Message& m)
+   at System.Windows.Forms.Control.WmNotify(Message& m)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.Form.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.CallWindowProc(IntPtr wndProc, IntPtr hWnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   at System.Windows.Forms.NativeWindow.DefWndProc(Message& m)
+   at System.Windows.Forms.Control.DefWndProc(Message& m)
+   at System.Windows.Forms.ListView.WmMouseDown(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.ListView.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.MainFR.linkLabel20_LinkClicked(Object sender, LinkLabelLinkClickedEventArgs e) in C:\PROJEKTI\MY\POT\POT\POT\MainFR.cs:line 924
+   at System.Windows.Forms.LinkLabel.OnLinkClicked(LinkLabelLinkClickedEventArgs e)
+   at System.Windows.Forms.LinkLabel.OnMouseUp(MouseEventArgs e)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.Label.WndProc(Message& m)
+   at System.Windows.Forms.LinkLabel.WndProc(Message& msg)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e) in C:\PROJEKTI\MY\POT\POT\POT\StartForm.cs:line 140
+    - TypeNameEcp: System.ArgumentOutOfRangeException
+    *** BrunoBrckovic *** 
+
+
+- 13.03.20. 12:13 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 12:14 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 12:15 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 12:16 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 12:17 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 12:19
+    - BaseEcp: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.set_Item(Int32 index, T value)
+   at POT.Documents.WorkListISS.GetValues(WorksISS _wss)
+   at POT.Documents.WorkListAdder.okBT_Click(Object sender, EventArgs e)
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.Documents.WorkListISS.editBT_Click(Object sender, EventArgs e)
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.MainFR.linkLabel20_LinkClicked(Object sender, LinkLabelLinkClickedEventArgs e)
+   at System.Windows.Forms.LinkLabel.OnLinkClicked(LinkLabelLinkClickedEventArgs e)
+   at System.Windows.Forms.LinkLabel.OnMouseUp(MouseEventArgs e)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.Label.WndProc(Message& m)
+   at System.Windows.Forms.LinkLabel.WndProc(Message& msg)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e)
+    - InnerEcp: 
+    - MessageEcp: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.set_Item(Int32 index, T value)
+   at POT.Documents.WorkListISS.GetValues(WorksISS _wss)
+   at POT.Documents.WorkListAdder.okBT_Click(Object sender, EventArgs e)
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.Documents.WorkListISS.editBT_Click(Object sender, EventArgs e)
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.MainFR.linkLabel20_LinkClicked(Object sender, LinkLabelLinkClickedEventArgs e)
+   at System.Windows.Forms.LinkLabel.OnLinkClicked(LinkLabelLinkClickedEventArgs e)
+   at System.Windows.Forms.LinkLabel.OnMouseUp(MouseEventArgs e)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.Label.WndProc(Message& m)
+   at System.Windows.Forms.LinkLabel.WndProc(Message& msg)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e)
+    - TypeNameEcp: System.ArgumentOutOfRangeException
+    *** BrunoBrckovic *** 
+
+
+- 13.03.20. 12:19 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 12:19
+    - BaseEcp: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.set_Item(Int32 index, T value)
+   at POT.Documents.WorkListISS.GetValues(WorksISS _wss) in C:\PROJEKTI\MY\POT\POT\POT\Documents\WorkListISS.cs:line 162
+   at POT.Documents.WorkListAdder.okBT_Click(Object sender, EventArgs e) in C:\PROJEKTI\MY\POT\POT\POT\Documents\WorkListAdder.cs:line 41
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.Documents.WorkListISS.editBT_Click(Object sender, EventArgs e) in C:\PROJEKTI\MY\POT\POT\POT\Documents\WorkListISS.cs:line 143
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.MainFR.linkLabel20_LinkClicked(Object sender, LinkLabelLinkClickedEventArgs e) in C:\PROJEKTI\MY\POT\POT\POT\MainFR.cs:line 924
+   at System.Windows.Forms.LinkLabel.OnLinkClicked(LinkLabelLinkClickedEventArgs e)
+   at System.Windows.Forms.LinkLabel.OnMouseUp(MouseEventArgs e)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.Label.WndProc(Message& m)
+   at System.Windows.Forms.LinkLabel.WndProc(Message& msg)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e) in C:\PROJEKTI\MY\POT\POT\POT\StartForm.cs:line 140
+    - InnerEcp: 
+    - MessageEcp: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at System.Collections.Generic.List`1.set_Item(Int32 index, T value)
+   at POT.Documents.WorkListISS.GetValues(WorksISS _wss) in C:\PROJEKTI\MY\POT\POT\POT\Documents\WorkListISS.cs:line 162
+   at POT.Documents.WorkListAdder.okBT_Click(Object sender, EventArgs e) in C:\PROJEKTI\MY\POT\POT\POT\Documents\WorkListAdder.cs:line 41
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.Documents.WorkListISS.editBT_Click(Object sender, EventArgs e) in C:\PROJEKTI\MY\POT\POT\POT\Documents\WorkListISS.cs:line 143
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.MainFR.linkLabel20_LinkClicked(Object sender, LinkLabelLinkClickedEventArgs e) in C:\PROJEKTI\MY\POT\POT\POT\MainFR.cs:line 924
+   at System.Windows.Forms.LinkLabel.OnLinkClicked(LinkLabelLinkClickedEventArgs e)
+   at System.Windows.Forms.LinkLabel.OnMouseUp(MouseEventArgs e)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.Label.WndProc(Message& m)
+   at System.Windows.Forms.LinkLabel.WndProc(Message& msg)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at POT.LoginFR.OkBT_Click_1(Object sender, EventArgs e) in C:\PROJEKTI\MY\POT\POT\POT\StartForm.cs:line 140
+    - TypeNameEcp: System.ArgumentOutOfRangeException
+    *** BrunoBrckovic *** 
+
+
+- 13.03.20. 12:19 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 12:21 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 12:31 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 12:31 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 12:32 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 12:33 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 12:35 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 12:36 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 12:37 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 12:37 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 12:39 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 12:39 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 12:40 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 12:40 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 12:42 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 12:46 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 12:47 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 12:57 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 12:58 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 13:05 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 13:07 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 13:10 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 13:11 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 13:26 - App started
+    *** BrunoBrckovic *** 
+Input string was not in a correct format.
+    *** BrunoBrckovic *** 
+
+Input string was not in a correct format.
+    *** BrunoBrckovic *** 
+
+
+- 13.03.20. 13:27 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 13:32 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 13:32 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 13:32 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 13:33 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 13:33 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 13:33 - App turned off
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 14:48 - App started
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 14:50
+    - LOGED change: POT.WorkingClasses.PartEditor - PretraziBT_Click_1
+     - Used: PovijsetLog search
+     - Data: SNNovi; SNStari; ; 1851066; 1851066; 
+     - Result: Query data
+    *** BrunoBrckovic *** 
+
+
+- 13.03.20. 14:50 - Waiting
+    *** BrunoBrckovic *** 
+
+- 13.03.20. 15:03 - App turned off
+    *** BrunoBrckovic *** 

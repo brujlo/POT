@@ -154,6 +154,18 @@
     <Compile Include="Documents\Tickets.Designer.cs">
       <DependentUpon>Tickets.cs</DependentUpon>
     </Compile>
+    <Compile Include="Documents\WorkListAdder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Documents\WorkListAdder.Designer.cs">
+      <DependentUpon>WorkListAdder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\WorkListISS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Documents\WorkListISS.Designer.cs">
+      <DependentUpon>WorkListISS.cs</DependentUpon>
+    </Compile>
     <Compile Include="Loading.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -310,6 +322,7 @@
     <Compile Include="WorkingClasses\Decoder.cs" />
     <Compile Include="WorkingClasses\PrintMe.cs" />
     <Compile Include="BuildingClasses\WorkingUser.cs" />
+    <Compile Include="WorkingClasses\WorksISS.cs" />
     <EmbeddedResource Include="AboutBox.resx">
       <DependentUpon>AboutBox.cs</DependentUpon>
     </EmbeddedResource>
@@ -351,6 +364,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Documents\Tickets.resx">
       <DependentUpon>Tickets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documents\WorkListAdder.resx">
+      <DependentUpon>WorkListAdder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documents\WorkListISS.resx">
+      <DependentUpon>WorkListISS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Loading.resx">
       <DependentUpon>Loading.cs</DependentUpon>
