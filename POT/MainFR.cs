@@ -213,6 +213,14 @@ namespace POT
             this.label26.Text = Properties.Settings.Default.MainCompanyCode;
             this.label28.Text = Properties.Settings.Default.CmpName;
 
+            String wrkStr = Properties.Settings.Default.DataSource;
+            StringBuilder bld = new StringBuilder(wrkStr);
+
+
+            bld.Remove(4, wrkStr.Length - 4 < 0 ? 0 : wrkStr.Length - 4);
+            bld.Insert(4, ".", 3);
+            this.label38.Text = bld.ToString();
+
             //version.Text = "Version: " + Application.ProductVersion;
             if (Debugger.IsAttached)
                 version.Text = "Debug Mode";

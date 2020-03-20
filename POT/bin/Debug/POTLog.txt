@@ -16493,3 +16493,94 @@ Input string was not in a correct format.
 
 - 13.03.20. 15:03 - App turned off
     *** BrunoBrckovic *** 
+
+- 20.03.20. 14:51 - App started
+    *** BrunoBrckovic *** 
+
+- 20.03.20. 14:52 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 20.03.20. 14:52 - App started
+    *** BrunoBrckovic *** 
+
+- 20.03.20. 14:54 - App started
+    *** BrunoBrckovic *** 
+
+- 20.03.20. 14:54 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.03.20. 14:59 - App started
+    *** BrunoBrckovic *** 
+
+- 20.03.20. 14:59 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.03.20. 14:59 - App started
+    *** BrunoBrckovic *** 
+
+- 20.03.20. 14:59 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.03.20. 15:00 - App started
+    *** BrunoBrckovic *** 
+
+- 20.03.20. 15:00 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.03.20. 15:00 - App started
+    *** BrunoBrckovic *** 
+
+- 20.03.20. 15:00 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.03.20. 15:00 - App started
+    *** BrunoBrckovic *** 
+
+- 20.03.20. 15:01 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.03.20. 15:09 - App started
+    *** BrunoBrckovic *** 
+
+- 20.03.20. 15:09 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.03.20. 15:10 - App started
+    *** BrunoBrckovic *** 
+
+- 20.03.20. 15:10 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.03.20. 15:13 - App started
+    *** BrunoBrckovic *** 
+
+- 20.03.20. 15:14 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.03.20. 15:15 - App started
+    *** BrunoBrckovic *** 
+
+- 20.03.20. 15:16 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.03.20. 15:26 - App started
+    *** BrunoBrckovic *** 
+
+- 20.03.20. 15:26 - App turned off
+    *** BrunoBrckovic *** 
+
+- 20.03.20. 15:53 - App started
+    *** BrunoBrckovic *** 
+
+- 20.03.20. 15:55 - App started
+    *** BrunoBrckovic *** 
+
+- 20.03.20. 15:55 - App started
+    *** BrunoBrckovic *** 
+
+- 20.03.20. 15:58 - App started
+    *** BrunoBrckovic *** 
+
+- 20.03.20. 15:59 - App started
+    *** BrunoBrckovic *** 

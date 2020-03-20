@@ -47,6 +47,8 @@ namespace POT.WorkingClasses
 
             CntLbl.Text = "Cnt: 0";
 
+            MessageBox.Show(qc.GetFullCount("Parts").ToString());
+
             partList = qc.GetAllParts();
             partListSifrarnik = qc.GetPartsAllSifrarnikSortByFullCode();
             categorySifrarnik = qc.GetCategoryNamesAllSifrarnikSortByName();

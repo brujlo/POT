@@ -6061,6 +6061,56 @@ namespace POT
             }
         }
 
+        public long GetFullCount(String tableName)
+        {
+            long value = 0;
+
+            cnn = cn.Connect(WorkingUser.Username, WorkingUser.Password);
+
+            query = "DECLARE @TableName sysname " +
+                "SET @TableName = '" + tableName + "' " +
+                "SELECT OBJECT_NAME(object_id), " +
+                "SUM(row_count) AS rows " +
+                "FROM sys.dm_db_partition_stats " +
+                "WHERE object_id = OBJECT_ID(@TableName) AND index_id< 2 " +
+                "GROUP BY OBJECT_NAME(object_id);";
+
+                //"DECLARE @TableName sysname " +
+                //"SET @TableName = '" + tableName + "' " +
+            command = new SqlCommand(query, cnn);
+            command.ExecuteNonQuery();
+            SqlDataReader dataReader = command.ExecuteReader();
+            dataReader.Read();
+
+            try
+            {
+                if (dataReader.HasRows)
+                {
+                    var cnt = dataReader.GetValue(0);
+                    value = (int)cnt;
+                }
+            }
+            catch (Exception e1)
+            {
+                //new LogWriter(e2);
+                MessageBox.Show(e1.Message);
+                throw;
+            }
+            finally
+            {
+                if (cnn.State.ToString().Equals("Open"))
+                    cnn.Close();
+            }
+
+            dataReader.Close();
+            cnn.Close();
+        
+
+            return value;
+            //String query = "SELECT COUNT(" + column_name + ") FROM " + table_name;
+        }
+
+
         //KORISTIO ZA NOGOMET
 
         //public void NewUser(String Uname, String Pass)
