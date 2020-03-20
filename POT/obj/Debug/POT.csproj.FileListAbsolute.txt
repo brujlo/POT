@@ -116,7 +116,6 @@ F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.application
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.exe
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.pdb
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.WorkingClasses.ISSLevelSelector.resources
-F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.csprojAssemblyReference.cache
 C:\PROJEKTI\MY\POT\POT\POT\bin\Debug\POT.exe.config
 C:\PROJEKTI\MY\POT\POT\POT\bin\Debug\POT.exe.manifest
 C:\PROJEKTI\MY\POT\POT\POT\bin\Debug\POT.application
@@ -167,3 +166,6 @@ C:\PROJEKTI\MY\POT\POT\POT\obj\Debug\POT.exe
 C:\PROJEKTI\MY\POT\POT\POT\obj\Debug\POT.pdb
 C:\PROJEKTI\MY\POT\POT\POT\obj\Debug\POT.Documents.WorkListISS.resources
 C:\PROJEKTI\MY\POT\POT\POT\obj\Debug\POT.Documents.WorkListAdder.resources
+F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.Documents.WorkListAdder.resources
+F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.Documents.WorkListISS.resources
+F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.csprojAssemblyReference.cache
