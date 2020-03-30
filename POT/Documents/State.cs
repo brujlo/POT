@@ -442,6 +442,5 @@ namespace POT
                 this.Focus();
             }
         }
-
     }
 }

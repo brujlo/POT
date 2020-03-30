@@ -824,9 +824,9 @@ namespace POT
             else
             {
                 if (mStorageID == 1 || mStorageID == 2)
-                    query = "Select * from Parts where CodePartFull = " + mCodePartFull + " and State = '" + mState + "'";
+                    query = "Select Distinct * from Parts where CodePartFull = " + mCodePartFull + " and (State = '" + mState + "' or State = 'wng' or State = 'wg')";
                 else
-                    query = "Select * from Parts where CodePartFull = " + mCodePartFull + " and StorageID = " + mStorageID + " and State = '" + mState + "'";
+                    query = "Select Distinct * from Parts where CodePartFull = " + mCodePartFull + " and StorageID = " + mStorageID + " and State = '" + mState + "'";
             }
 
             command = new SqlCommand(query, cnn);
@@ -1837,7 +1837,7 @@ namespace POT
             List<String> arr = new List<string>();
             //SqlConnection cnn = cn.Connect(Uname, Pass);
             cnn = cn.Connect(Uname, Pass);
-            query = "select Count(CodePartFull) from Parts p where p.CodePartFull = " + mCodePartFull + " and p.State = 'sng'";
+            query = "select Count(CodePartFull) from Parts p where p.CodePartFull = " + mCodePartFull + " and (p.State = 'sng' or p.State = 'wng' or p.State = 'wg')";
             command = new SqlCommand(query, cnn);
             command.ExecuteNonQuery();
             SqlDataReader dataReader = command.ExecuteReader();

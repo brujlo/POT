@@ -16644,3 +16644,53 @@ Input string was not in a correct format.
 
 - 20.03.20. 19:58 - App turned off
     *** BrunoBrckovic *** 
+
+- 30.03.20. 22:26 - App started
+    *** BrunoBrckovic *** 
+
+- 30.03.20. 22:28 - App turned off
+    *** BrunoBrckovic *** 
+
+- 30.03.20. 22:31 - App started
+    *** BrunoBrckovic *** 
+
+- 30.03.20. 22:33 - App turned off
+    *** BrunoBrckovic *** 
+
+- 30.03.20. 22:34 - App started
+    *** BrunoBrckovic *** 
+
+- 30.03.20. 22:37
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near 'wg'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.PartsCntNGS(String Uname, String Pass, Int64 mCodePartFull)
+   at POT.State.FindPart()
+ClientConnectionId:a1978a28-eea4-4c53-bc16-2377c48033ab
+Error Number:102,State:1,Class:15
+    - InnerEcp: 
+    - MessageEcp: Incorrect syntax near 'wg'.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at POT.QueryCommands.PartsCntNGS(String Uname, String Pass, Int64 mCodePartFull)
+   at POT.State.FindPart()
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 30.03.20. 22:45 - App started
+    *** BrunoBrckovic *** 
+
+- 30.03.20. 22:45 - App turned off
+    *** BrunoBrckovic *** 
