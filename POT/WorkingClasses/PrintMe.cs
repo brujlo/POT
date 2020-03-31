@@ -118,10 +118,14 @@ namespace POT.WorkingClasses
             partRows = Properties.Settings.Default.partRows;
             pageNbr = Properties.Settings.Default.pageNbr;
 
-            if (datumIzrade.Equals(""))
+            datumIzrade = DateTime.Now.ToString("10.02.20.");
+            datumIspisa = DateTime.Now.ToString("10.02.20.");
+
+            /*if (datumIzrade.Equals(""))
                 datumIzrade = DateTime.Now.ToString("dd.MM.yy.");
             if (datumIspisa.Equals(""))
                 datumIspisa = DateTime.Now.ToString("dd.MM.yy.");
+            */
             if (izradioUser.Equals(""))
                 izradioUser = WorkingUser.UserID.ToString();
             if (izradioRegija.Equals(""))
@@ -282,41 +286,64 @@ namespace POT.WorkingClasses
                         headerpointVer = headerpointVer + (moveBy * 2);
                         //e.Graphics.DrawRectangle(new Pen(Brushes.Black), margins.Left, headerpointVer, bounds.Right - margins.Right - margins.Left, 20);
                         //e.Graphics.DrawLine(new Pen(Brushes.Black), margins.Left, headerpointVer + (moveBy * 2), bounds.Right - margins.Right, headerpointVer + (moveBy * 2));
-                        float[] dashValues = { 2, 2, 2, 2 };
-                        Pen blackPen = new Pen(Color.Black, 1);
-                        blackPen.DashPattern = dashValues;
-                        e.Graphics.DrawLine(blackPen, margins.Left, headerpointVer + (moveBy * 2), bounds.Right - margins.Right, headerpointVer + (moveBy * 2));
 
-                        workingStr = string.Format("{0:000}", groupedPartsList[partRows][0].CompanyO) + string.Format("{0:00}", groupedPartsList[partRows][0].CompanyC) + " " + string.Format("{0:000 000 000}", groupedPartsList[partRows][0].PartialCode);//tu partRows
-                        fnt = fitFontSize(e, workingStr, fontSizeR, code - rb);
-                        measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
-                        measureField = code - rb;
-                        e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, code - rb), Brushes.Black, new Point(rb + (((int)measureField - (int)measureStr) / 2), headerpointVer + moveBy));
-
+                        //NAZIV
                         workingStr = sifrarnikArr[(sifrarnikArr.IndexOf((groupedPartsList[partRows][0].PartialCode).ToString())) - 1];//tu
                         fnt = fitFontSize(e, workingStr, fontSizeR, code - rb);
                         measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
                         measureField = name - code;
-                        e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, code - rb), Brushes.Black, new Point(code + 3, headerpointVer + moveBy));
+                        //e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, code - rb), Brushes.Black, new Point(code + 3, headerpointVer + moveBy));
 
+                        List<String> naziv = wordWrraper(e, measureField, workingStr, fontSizeR);
+
+                        int pamtiHeadPointVer = headerpointVer;
+
+                        foreach (String n in naziv)
+                        {
+                            fnt = fitFontSize(e, n, fontSizeR, measureField);
+
+                            //e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, code - rb), tmpBrush, new Point(code + (((int)measureField - (int)measureStr) / 2), headerpointVer + rowHeight / 4));
+                            e.Graphics.DrawString(n, fnt, Brushes.Black, new Point(code + 3, headerpointVer + moveBy));
+
+                            headerpointVer += moveBy;
+                        }
+
+                        pamtiHeadPointVer = headerpointVer;
+
+                        //SIFRA
+                        workingStr = string.Format("{0:000}", groupedPartsList[partRows][0].CompanyO) + string.Format("{0:00}", groupedPartsList[partRows][0].CompanyC) + " " + string.Format("{0:000 000 000}", groupedPartsList[partRows][0].PartialCode);//tu partRows
+                        fnt = fitFontSize(e, workingStr, fontSizeR, code - rb);
+                        measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
+                        measureField = code - rb;
+                        e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, code - rb), Brushes.Black, new Point(rb + (((int)measureField - (int)measureStr) / 2), headerpointVer));// + moveBy));
+
+                        //LINIJA
+                        float[] dashValues = { 2, 2, 2, 2 };
+                        Pen blackPen = new Pen(Color.Black, 1);
+                        blackPen.DashPattern = dashValues;
+                        e.Graphics.DrawLine(blackPen, margins.Left, headerpointVer + (moveBy * 1), bounds.Right - margins.Right, headerpointVer + (moveBy * 1));
+
+                        //KOM
                         QueryCommands qc = new QueryCommands();
                         workingStr = qc.PartInfoByFullCodeSifrarnik(groupedPartsList[partRows][0].PartialCode).Packing;
                         fnt = fitFontSize(e, workingStr, fontSizeR, code - rb);
                         measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
                         measureField = mes - name;
-                        e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, code - rb), Brushes.Black, new Point(name + (((int)measureField - (int)measureStr) / 2), headerpointVer + moveBy));
+                        //e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, code - rb), Brushes.Black, new Point(name + (((int)measureField - (int)measureStr) / 2), pamtiHeadPointVer + moveBy));
 
+                        //KOLICINA
                         workingStr = groupedPartsList[partRows].Count.ToString();//tu
                         fnt = fitFontSize(e, workingStr, fontSizeR, code - rb);
                         measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
                         measureField = bounds.Right - margins.Right - mes;
-                        e.Graphics.DrawString(workingStr, getFont(8), Brushes.Black, new Point(mes + (((int)measureField - (int)measureStr) / 2), headerpointVer + moveBy));
+                        e.Graphics.DrawString(workingStr, getFont(8), Brushes.Black, new Point(mes + (((int)measureField - (int)measureStr) / 2), pamtiHeadPointVer));// + moveBy));
 
+                        //RB
                         fnt = fitFontSize(e, (partRows + 1).ToString(), fontSizeR, code - rb); //tu
                         workingStr = (partRows + 1).ToString();//tu
                         measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
                         measureField = rb - margins.Left;
-                        e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(margins.Left + (((int)measureField - (int)measureStr) / 2), headerpointVer + moveBy));
+                        e.Graphics.DrawString(workingStr, fnt, Brushes.Black, new Point(margins.Left + (((int)measureField - (int)measureStr) / 2), pamtiHeadPointVer));// + moveBy));
                     }
 
                     Properties.Settings.Default.partRows = partRows;
@@ -705,6 +732,37 @@ namespace POT.WorkingClasses
                 _FonthWith = e.Graphics.MeasureString(_WorkingStr, fnt).Width;
             }
             return new Font("IDAutomationHC39M", _FontSize, FontStyle.Regular);
+        }
+
+        private List<String> wordWrraper(PrintPageEventArgs e, float _FieldWith, String _WorkingStr, int _FontSize)
+        {
+            List<String> ret = new List<String>();
+
+            var radni = _WorkingStr.Split(' ');
+
+            float _FonthWith = e.Graphics.MeasureString(_WorkingStr, getFont(_FontSize)).Width;
+            int velFont = _FontSize;
+
+            String tekst = "";
+            foreach (String r in radni)
+            {
+                if (e.Graphics.MeasureString(tekst + r, getFont(_FontSize)).Width < _FieldWith)
+                {
+                    if (tekst.Equals(""))
+                        tekst = r;
+                    else
+                        tekst = tekst + " " + r;
+                }
+                else
+                {
+                    ret.Add(tekst);
+                    tekst = r;
+                }
+            }
+
+            ret.Add(tekst);
+
+            return ret;
         }
     }
 }
