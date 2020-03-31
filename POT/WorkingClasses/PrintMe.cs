@@ -118,14 +118,14 @@ namespace POT.WorkingClasses
             partRows = Properties.Settings.Default.partRows;
             pageNbr = Properties.Settings.Default.pageNbr;
 
-            datumIzrade = DateTime.Now.ToString("10.02.20.");
-            datumIspisa = DateTime.Now.ToString("10.02.20.");
+            //datumIzrade = DateTime.Now.ToString("10.02.20.");
+            //datumIspisa = DateTime.Now.ToString("10.02.20.");
 
-            /*if (datumIzrade.Equals(""))
+            if (datumIzrade.Equals(""))
                 datumIzrade = DateTime.Now.ToString("dd.MM.yy.");
             if (datumIspisa.Equals(""))
                 datumIspisa = DateTime.Now.ToString("dd.MM.yy.");
-            */
+            
             if (izradioUser.Equals(""))
                 izradioUser = WorkingUser.UserID.ToString();
             if (izradioRegija.Equals(""))
