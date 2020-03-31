@@ -18544,3 +18544,346 @@ The statement has been terminated.
 
 - 31.03.20. 13:11 - App turned off
     *** BrunoBrckovic *** 
+
+- 31.03.20. 13:13 - App started
+    *** BrunoBrckovic *** 
+
+- 31.03.20. 13:14 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 31.03.20. 13:14
+    - LOGED change: POT.SetDBConnection - button2_Click
+     - Used: DB connection address and name save.
+     - Data: 192.168.100.101, dmd
+     - Result: Saved, no msgToUser
+    *** BrunoBrckovic *** 
+
+
+- 31.03.20. 13:14
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'bruno'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+ClientConnectionId:5eda7e19-9e44-4b54-889c-0f13842f1773
+Error Number:18456,State:1,Class:14
+    - InnerEcp: 
+    - MessageEcp: Login failed for user 'bruno'.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 20
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 31.03.20. 13:14
+    - BaseEcp: System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'bruno'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 27
+   at POT.QueryCommands.SetWorkingDBUser(String Uname, String Pass) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 116
+   at POT.LoginForm.OkBT_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\LoginForm.cs:line 28
+ClientConnectionId:5eda7e19-9e44-4b54-889c-0f13842f1773
+Error Number:18456,State:1,Class:14
+    - InnerEcp: 
+    - MessageEcp: Login failed for user 'bruno'.
+    - SourceEcp: .Net SqlClient Data Provider
+    - StackTrqceEcp:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at POT.ConnectionHelper.Connect(String Username, String Password) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\ConnectionHelper.cs:line 27
+   at POT.QueryCommands.SetWorkingDBUser(String Uname, String Pass) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\QueryCommands.cs:line 116
+   at POT.LoginForm.OkBT_Click(Object sender, EventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\LoginForm.cs:line 28
+    - TypeNameEcp: System.Data.SqlClient.SqlException
+    *** BrunoBrckovic *** 
+
+
+- 31.03.20. 13:14 - App started
+    *** BrunoBrckovic *** 
+
+- 31.03.20. 13:14 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 31.03.20. 13:14
+    - LOGED change: POT.SetDBConnection - button2_Click
+     - Used: DB connection address and name save.
+     - Data: 192.168.100.101, dmd
+     - Result: Saved, no msgToUser
+    *** BrunoBrckovic *** 
+
+
+- 31.03.20. 13:14 - App started
+    *** BrunoBrckovic *** 
+
+- 31.03.20. 13:14
+    - LOGED change: POT.CompanyInfo - button1_Click
+     - Used: dlg.ShowDialog()
+     - Data: Change logo
+     - Result: E:\Dropbox (EXCEPTION)\EXCEPTION Team Folder\IconsPictures\DMD\Brand Assets Download (6ea3ee26-8661-498a-929f-3fca180d51f6)\500.jpg
+    *** BrunoBrckovic *** 
+
+
+- 31.03.20. 13:14
+    - LOGED change: POT.CompanyInfo - button2_Click
+     - Used: Changing MainCmp info
+     - Data: DMD TRADE doo, Backa 1, Zagreb, 10000, HR, 0.00, 0.00, 86701139150, PBZGHR2X, 00226327, HR8323400091100157894, 4, 1, www.dmdtrade.hr, +38512307973, Bruno Brckovic, info@exception.hr, support@exception.hr, 2
+     - Result: Company (DMD TRADE doo) data is now selected.
+    *** BrunoBrckovic *** 
+
+
+- 31.03.20. 13:14
+    - LOGED change: POT.MainCmpSelector - button1_Click
+     - Used: Main cmp select
+     - Data: DMD TRADE doo
+     - Result: Main cmp selected, please relog to see changes.
+    *** BrunoBrckovic *** 
+
+
+- 31.03.20. 13:14 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 31.03.20. 13:14 - App started
+    *** BrunoBrckovic *** 
+
+- 31.03.20. 13:15
+    - LOGED change: POT.CopyPrintForms.cOTPcs - getOTPList
+     - Used: ID
+     - Data: 20001
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 31.03.20. 13:15
+    - LOGED change: POT.CopyPrintForms.cOTPcs - listView1_DoubleClick
+     - Used: OTP Selected
+     - Data: 101008014001, , 
+             101008014001, , 
+             101008014001, , 
+             101008014001, , 
+             101008014001, , 
+             101008014001, , 
+             101008014001, , 
+             101008014001, , 
+             101008014001, , 
+             101008014001, , 
+             101008014001, , 
+             101008014001, , 
+             101008014001, , 
+             101008014001, , 
+             101008014001, , 
+             101026001002, , 
+             101024001003, , 
+             101027001001, , 
+             101028001001, , 
+             101010016001, , 
+             101010016001, , 
+             101010017002, , 
+             101010017002, , 
+             101010017001, , 
+             101010017001, , 
+             101010017001, , 
+             101035001001, , 
+             101036001001, , 
+             101037001001, , 
+             101037001001, , 
+             101037001001, , 
+             101037001001, , 
+             101037001001, , 
+             101037001001, , 
+             101037001001, , 
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 31.03.20. 13:15
+    - LOGED change: POT.CopyPrintForms.cOTPcs - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/001, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 31.03.20. 13:15
+    - LOGED change: POT.CopyPrintForms.cOTPcs - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/001, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 31.03.20. 13:15
+    - LOGED change: POT.CopyPrintForms.cOTPcs - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/001, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 31.03.20. 13:15
+    - LOGED change: POT.CopyPrintForms.cOTPcs - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/001, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 31.03.20. 13:15
+    - LOGED change: POT.CopyPrintForms.cOTPcs - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/001, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 31.03.20. 13:15
+    - LOGED change: POT.CopyPrintForms.cOTPcs - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/001, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 31.03.20. 13:15
+    - LOGED change: POT.CopyPrintForms.cOTPcs - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/001, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 31.03.20. 13:15
+    - LOGED change: POT.CopyPrintForms.cOTPcs - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/001, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 31.03.20. 13:15
+    - LOGED change: POT.CopyPrintForms.cOTPcs - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/001, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 31.03.20. 13:16
+    - LOGED change: POT.CopyPrintForms.cOTPcs - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/001, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 31.03.20. 13:16
+    - LOGED change: POT.CopyPrintForms.cOTPcs - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/001, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 31.03.20. 13:16
+    - LOGED change: POT.CopyPrintForms.cOTPcs - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/001, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 31.03.20. 13:16
+    - LOGED change: POT.CopyPrintForms.cOTPcs - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/001, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 31.03.20. 13:16
+    - LOGED change: POT.CopyPrintForms.cOTPcs - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/001, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 31.03.20. 13:16
+    - LOGED change: POT.CopyPrintForms.cOTPcs - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/001, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 31.03.20. 13:16
+    - LOGED change: POT.CopyPrintForms.cOTPcs - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/001, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 31.03.20. 13:16
+    - LOGED change: POT.CopyPrintForms.cOTPcs - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/001, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 31.03.20. 13:16
+    - LOGED change: POT.CopyPrintForms.cOTPcs - printDocumentOtp_PrintPage
+     - Used: Print
+     - Data: POT.MyTypes.Company, POT.MyTypes.Company, System.Collections.Generic.List`1[System.String], System.Collections.Generic.List`1[POT.MyTypes.Part], 20/001, , OTPREMNICA, klijent, true
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 31.03.20. 13:17 - App turned off
+    *** BrunoBrckovic *** 

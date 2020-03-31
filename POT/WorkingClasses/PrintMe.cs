@@ -321,7 +321,7 @@ namespace POT.WorkingClasses
                         float[] dashValues = { 2, 2, 2, 2 };
                         Pen blackPen = new Pen(Color.Black, 1);
                         blackPen.DashPattern = dashValues;
-                        e.Graphics.DrawLine(blackPen, margins.Left, headerpointVer + (moveBy * 1), bounds.Right - margins.Right, headerpointVer + (moveBy * 1));
+                        e.Graphics.DrawLine(blackPen, margins.Left, headerpointVer + (moveBy * 1), bounds.Right - margins.Right, pamtiHeadPointVer + (moveBy * 1));
 
                         //KOM
                         QueryCommands qc = new QueryCommands();
@@ -329,7 +329,7 @@ namespace POT.WorkingClasses
                         fnt = fitFontSize(e, workingStr, fontSizeR, code - rb);
                         measureStr = e.Graphics.MeasureString(workingStr, fnt).Width;
                         measureField = mes - name;
-                        //e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, code - rb), Brushes.Black, new Point(name + (((int)measureField - (int)measureStr) / 2), pamtiHeadPointVer + moveBy));
+                        e.Graphics.DrawString(workingStr, fitFontSize(e, workingStr, fontSizeR, code - rb), Brushes.Black, new Point(name + (((int)measureField - (int)measureStr) / 2), pamtiHeadPointVer));// + moveBy));
 
                         //KOLICINA
                         workingStr = groupedPartsList[partRows].Count.ToString();//tu
