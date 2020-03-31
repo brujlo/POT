@@ -18887,3 +18887,88 @@ Error Number:18456,State:1,Class:14
 
 - 31.03.20. 13:17 - App turned off
     *** BrunoBrckovic *** 
+
+- 31.03.20. 21:41 - App started
+    *** BrunoBrckovic *** 
+
+- 31.03.20. 21:41 - App turned off
+    *** BrunoBrckovic *** 
+
+- 31.03.20. 21:42 - App started
+    *** BrunoBrckovic *** 
+
+- 31.03.20. 21:42 - App turned off
+    *** BrunoBrckovic *** 
+
+- 31.03.20. 21:46 - App started
+    *** BrunoBrckovic *** 
+
+- 31.03.20. 21:46 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 31.03.20. 21:46
+    - LOGED change: POT.SetDBConnection - button2_Click
+     - Used: DB connection address and name save.
+     - Data: 192.168.100.101, exe
+     - Result: Saved, no msgToUser
+    *** BrunoBrckovic *** 
+
+
+- 31.03.20. 21:46 - App started
+    *** BrunoBrckovic *** 
+
+- 31.03.20. 21:47
+    - LOGED change: POT.CompanyInfo - button1_Click
+     - Used: dlg.ShowDialog()
+     - Data: Change logo
+     - Result: E:\Dropbox (EXCEPTION)\EXCEPTION Team Folder\IconsPictures\Exeption_logo - Odrezan.jpg
+    *** BrunoBrckovic *** 
+
+
+- 31.03.20. 21:47
+    - LOGED change: POT.CompanyInfo - button2_Click
+     - Used: Changing MainCmp info
+     - Data: Exception, Dunavska 31, Zagreb, 10040, HR, 0.00, 0.00, 76737454770, PBZGHR2X, 97768138, HR9323400091160480462, 4, 1, www.exception.hr, +38515814315, Bruno Brckovic, info@exception.hr, support@exception.hr, 2
+     - Result: Company (Exception) data is now selected.
+    *** BrunoBrckovic *** 
+
+
+- 31.03.20. 21:47
+    - LOGED change: POT.MainCmpSelector - button1_Click
+     - Used: Main cmp select
+     - Data: Exception
+     - Result: Main cmp selected, please relog to see changes.
+    *** BrunoBrckovic *** 
+
+
+- 31.03.20. 21:47
+    - LOGED change: POT.BuildingClasses.SettingsForm - SaveBT_Click
+     - Used: Print
+     - Data: 0; 0; 15; VAT is not calculated according to Article 17. of the Law on PDV; The taxpayer is not in the VAT system, according to Article 90. of the Law on PDV; Thank you for your trust; Temeljem članka 9., st.3., Zakona o računovodstvu, račun je pravovaljan bez potpisa i pečata; Porezni obveznik nije u sustavu PDV-a, temeljem zakona o PDV-u čl. 90; Hvala na ukazanom povjerenju; Bruno Brckovic; E:\Dropbox (EXCEPTION)\POT DOKUMENTI; Save_to_PDF => True
+     - Result: 
+    *** BrunoBrckovic *** 
+
+
+- 31.03.20. 21:47 - LogOut clicked
+
+    *** BrunoBrckovic *** 
+
+- 31.03.20. 21:47 - App started
+    *** BrunoBrckovic *** 
+
+- 31.03.20. 21:47
+    - LOGED change: POT.Documents.ISS - PartSelectorCb_SelectedIndexChanged
+     - Used: ISS part loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 3, 200028, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS part selected 458 
+    *** BrunoBrckovic *** 
+
+
+- 31.03.20. 21:47
+    - LOGED change: POT.Documents.ISS - PartSelectorCb_SelectedIndexChanged
+     - Used: ISS part loaded
+     - Data: GERMANIA SPORT d.o.o., Exception, Sifrarnik arr cnt 942, 707013002000, listIssParts cnt 3, 200031, IZVJEŠTAJ SERVISA, klijent, false
+     - Result: ISS part selected 461 
+    *** BrunoBrckovic *** 
+

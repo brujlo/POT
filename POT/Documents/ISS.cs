@@ -179,6 +179,9 @@ namespace POT.Documents
             ////////////////////////////////////////////////
             ///
 
+            ISSSelectorCb.Items.Clear();
+            PartSelectorCb.Items.Clear();
+
             try
             {
                 PartSelectorCb.Items.Clear();
@@ -193,7 +196,8 @@ namespace POT.Documents
                         PartSelectorCb.Items.Add(iss.MainPart.PartID.ToString() + " # " + iss.MainPart.SN.ToUpper().ToString() + " # " + iss.MainPart.CN.ToUpper().ToString() + " # " + iss.MainPart.CodePartFull.ToString());
                     }
                 }
-            }catch(Exception e1)
+            }
+            catch (Exception e1)
             {
                 Result = "There is a error with adding parts to PartSelectorCb." + Environment.NewLine + "Please contact your administrator.";
                 lw.LogMe(function, usedQC, data, Result);
@@ -939,6 +943,11 @@ namespace POT.Documents
             }
             catch (Exception e1)
             {
+                ISSSelectorCb.Items.Clear();
+                PartSelectorCb.Items.Clear();
+
+                loadParts();
+
                 new LogWriter(e1);
                 MessageBox.Show("Error" + Environment.NewLine + Environment.NewLine + e1.ToString(), "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 isSaved = false;
