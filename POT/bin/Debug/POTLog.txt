@@ -18972,3 +18972,434 @@ Error Number:18456,State:1,Class:14
      - Result: ISS part selected 461 
     *** BrunoBrckovic *** 
 
+
+- 16.04.20. 20:03 - App started
+    *** BrunoBrckovic *** 
+
+- 16.04.20. 20:03
+    - LOGED change: POT.CopyPrintForms.cOTPcs - getOTPList
+     - Used: ID
+     - Data: 20002
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:03
+    - LOGED change: POT.CopyPrintForms.cOTPcs - listView1_DoubleClick
+     - Used: OTP Selected
+     - Data: 707013002000, 13Y0328, 1013878
+             707013002000, 12X0162, 1013803
+             707013002000, 1390191, 1013693
+             707013002000, 12X0225, 1013629
+             707013002000, 1810150, 1025105
+             707013002000, 12X0077, 1013765
+             707013002000, 12X0164, 1013799
+             707013002000, 12X0203, 1013636
+             707013002000, 12X0118, 1013754
+             707013002000, 12X0098, 1013612
+             707013002000, 1851066, 1013769
+             707013002000, 12X0071, 1013674
+             707013002000, 1280094, 1013768
+             707013002000, 1690211, 1022701
+             707013002000, 12X0123, 1013757
+             707013002000, 12X0079, 1013741
+             707013002000, 1851327, 
+             707013002000, 13Y0253, 1013866
+             707013002000, 1840108, 1013707
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:04
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 02:30, 0, 1, 420,000, 420,000, 420,000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:04
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 02:30, 0, 1, 420,000, 420,000, 840,000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:04
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 02:30, 0, 1, 420,000, 420,000, 1260,000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:04
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 02:30, 0, 1, 420,000, 420,000, 1680,000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:04
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 02:30, 0, 1, 420,000, 420,000, 2100,000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:04
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 02:30, 0, 1, 420,000, 420,000, 2520,000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:04
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 02:45, 0, 1, 462,0000, 462,0000, 2982,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:04
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 02:45, 0, 1, 462,0000, 462,0000, 3444,0000
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:04
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 Holder, Platen, 13002030, 0,00, 00:00, 0, 1, 69,200352, 69,200352, 3513,200352
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:04
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 Bushing, Platen, 13002003, 0,00, 00:00, 0, 1, 42,555552, 42,555552, 3555,755904
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:04
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 02:30, 0, 1, 420,000, 420,000, 3975,755904
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:04
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 02:45, 0, 1, 462,0000, 462,0000, 4437,755904
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:04
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 03:00, 0, 1, 504,00, 504,00, 4941,755904
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:04
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 Bushing, Platen, 13002003, 0,00, 00:00, 0, 1, 42,555552, 42,555552, 4984,311456
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:04
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 Auto Cutter ACS-541-1N, 13002001, 390,00, 00:00, 0, 1, 677,48, 677,48, 5661,791456
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:04
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 02:30, 0, 1, 420,000, 420,000, 6081,791456
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:04
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 02:30, 0, 1, 420,000, 420,000, 6501,791456
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:04
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 02:30, 0, 1, 420,000, 420,000, 6921,791456
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:04
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 02:30, 0, 1, 420,000, 420,000, 7341,791456
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:04
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 02:30, 0, 1, 420,000, 420,000, 7761,791456
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:04
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 01:45, 0, 1, 294,0000, 294,0000, 8055,791456
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:04
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: PRINTER Citizen CTS4000 Holder, Platen, 13002030, 0,00, 00:00, 0, 1, 69,200352, 69,200352, 8124,991808
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:04
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 02:15, 0, 1, 378,0000, 378,0000, 8502,991808
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:04
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat GS servis IT opreme, 20002001, 168,00, 03:00, 0, 1, 504,00, 504,00, 9006,991808
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:05
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:13
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: Radni sat KAUFLAND Vrijeme provedno na putu za servis, 20005002, 34,00, 01:00, 0, 1, 34,00, 34,00, 34,00
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:14
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: Radni sat KAUFLAND Vrijeme provedno na putu za servis, 20005002, 34,00, 01:00, 0, 1, 0, 0, 0,00
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:14
+    - LOGED change: POT.Documents.Ponuda - button5_Click
+     - Used: Remove selected
+     - Data: ListViewSubItem: {1}, ListViewSubItem: {Radni sat KAUFLAND Vrijeme provedno na putu za servis}, ListViewSubItem: {0168020005002}, ListViewSubItem: {34,00}, ListViewSubItem: {01:00}, ListViewSubItem: {0,00}, ListViewSubItem: {1}, ListViewSubItem: {34,00}, ListViewSubItem: {34,00}
+     - Result: Removed
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:14
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: Radni sat KAUFLAND Vrijeme provedno na putu za servis, 20005002, 34,00, 01:00, 0, 7, 34,00, 238,00, 238,00
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:14
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: Radni sat KAUFLAND odrzavanje IT opreme, 20005001, 178,00, 01:00, 0, 1, 178,00, 178,00, 416,00
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:16
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: Dostava Kaufland Usluga prijevoza – dolazak na lokaciju, 28001002, 1,67, 00:00, 0, 540, 1,67, 901,80, 1317,80
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:21
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat KAUFLAND odrzavanje IT opreme, 20005001, 178,00, 01:00, 0, 1, 178,00, 178,00, 178,00
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:22
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Radni sat KAUFLAND Vrijeme provedno na putu za servis, 20005002, 34,00, 01:00, 0, 7, 34,00, 238,00, 416,00
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:22
+    - LOGED change: POT.Documents.Racun - addToList
+     - Used: Add to list
+     - Data: Prijevoz KAUFLAND dolazak na lokaciju, 29001001, 1,67, 00:00, 0, 540, 1,67, 901,80, 1317,80
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:22
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:22
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:22
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:25
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: Radni sat KAUFLAND odrzavanje IT opreme, 20005001, 178,00, 01:00, 0, 1, 178,00, 178,00, 178,00
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:25
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: Radni sat KAUFLAND Vrijeme provedno na putu za servis, 20005002, 34,00, 01:00, 0, 2, 34,00, 68,00, 246,00
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:25
+    - LOGED change: POT.Documents.Ponuda - addToList
+     - Used: Add to list
+     - Data: Prijevoz KAUFLAND dolazak na lokaciju, 29001001, 1,67, 00:00, 0, 90, 1,67, 150,30, 396,30
+     - Result: Added
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:25
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:25
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:25
+    - LOGED change: POT.Documents.Ponuda - printDocumentOffer_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:26
+    - BaseEcp: System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.WorkingClasses.PrintMeInvoice.printParts(PrintPageEventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PrintMeInvoice.cs:line 413
+    - InnerEcp: 
+    - MessageEcp: Input string was not in a correct format.
+    - SourceEcp: mscorlib
+    - StackTrqceEcp:    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at POT.WorkingClasses.PrintMeInvoice.printParts(PrintPageEventArgs e) in F:\PROJEKTI\VS\POT\POT\POT\WorkingClasses\PrintMeInvoice.cs:line 413
+    - TypeNameEcp: System.FormatException
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:26
+    - LOGED change: POT.Documents.Racun - printDocumentInvoice_PrintPage
+     - Used: Print
+     - Data: 
+     - Result: Print page called
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:28
+    - LOGED change: POT.Documents.Racun - listView2_DoubleClick
+     - Used: Chage payed - selected
+     - Data: ListViewSubItem: {4}, ListViewSubItem: {400400120}, ListViewSubItem: {0}, ListViewSubItem: {07.02.20.}, ListViewSubItem: {25324,38}, ListViewSubItem: {16.04.20.}, ListViewSubItem: {25324,38}, ListViewSubItem: {150}, ListViewSubItem: {7,4486}
+     - Result: Changed
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:28
+    - LOGED change: POT.Documents.Racun - listView2_DoubleClick
+     - Used: Chage payed - selected
+     - Data: ListViewSubItem: {2}, ListViewSubItem: {400400320}, ListViewSubItem: {0}, ListViewSubItem: {17.03.20.}, ListViewSubItem: {2850,00}, ListViewSubItem: {16.04.20.}, ListViewSubItem: {2850,00}, ListViewSubItem: {150}, ListViewSubItem: {7,5670}
+     - Result: Changed
+    *** BrunoBrckovic *** 
+
+
+- 16.04.20. 20:28 - App turned off
+    *** BrunoBrckovic *** 
+
+- 05.06.20. 02:00 - App started
+    *** BrunoBrckovic *** 
+
+- 05.06.20. 02:01 - App turned off
+    *** BrunoBrckovic *** 
