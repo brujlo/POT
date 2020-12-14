@@ -689,7 +689,7 @@ namespace POT
                                 else if (resultArrC[index].RegionID == Properties.Settings.Default.OstaliIDRegion)
                                 {
                                     List<Part> partList = new List<Part>();
-                                    String napomenaPRIM = textBox4.Text;
+                                    String napomenaPRIM = napomenaPRIMPrint = textBox4.Text;
 
                                     for (int i = 0; i < listView1.Items.Count; i++)
                                     {

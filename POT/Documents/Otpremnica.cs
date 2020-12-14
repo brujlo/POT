@@ -521,7 +521,7 @@ namespace POT
 
                                     //Provjera da li se dijelovi nalaze u mom skladistu i dohvacanje dijelova
                                     List<Part> partList = new List<Part>();
-                                    String napomenaOTP = textBox4.Text;
+                                    String napomenaOTP = napomenaOTPPrint = textBox4.Text;
 
                                     for (int i = 0; i < groupArr.Count(); i++)
                                     {
@@ -843,6 +843,9 @@ namespace POT
                     return;
 
                 string directory = Properties.Settings.Default.DefaultFolder + "\\OTP";
+
+                partListPrint.Clear();
+                partListPrint.AddRange(partList);
 
                 printDocumentOtp.PrinterSettings.PrintFileName = directory + fileName;
                 printDocumentOtp.PrinterSettings.PrintToFile = true;
