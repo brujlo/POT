@@ -250,6 +250,12 @@
     <Compile Include="Documents\Otpremnica.Designer.cs">
       <DependentUpon>Otpremnica.cs</DependentUpon>
     </Compile>
+    <Compile Include="Documents\Narudzbe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Documents\Narudzbe.Designer.cs">
+      <DependentUpon>Narudzbe.cs</DependentUpon>
+    </Compile>
     <Compile Include="WorkingClasses\PartEditor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -398,6 +404,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Documents\Otpremnica.resx">
       <DependentUpon>Otpremnica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Documents\Narudzbe.resx">
+      <DependentUpon>Narudzbe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WorkingClasses\PartEditor.resx">
       <DependentUpon>PartEditor.cs</DependentUpon>

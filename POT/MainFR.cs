@@ -73,6 +73,7 @@ namespace POT
                 this.linkLabel16.Enabled = true;
                 this.linkLabel20.Enabled = true;
                 this.linkLabel23.Enabled = true;
+                this.llNarudzbe.Enabled = true;
             }
             else
             {
@@ -86,6 +87,7 @@ namespace POT
                 this.linkLabel16.Enabled = false;
                 this.linkLabel20.Enabled = false;
                 this.linkLabel23.Enabled = false;
+                this.llNarudzbe.Enabled = false;
             }
 
             if (WorkingUser.AdminRights.ToString().Contains("2") || WorkingUser.AdminRights.ToString().Contains("1"))
@@ -640,6 +642,7 @@ namespace POT
             this.linkLabel16.Text = Properties.strings.EditRegion;
             this.linkLabel17.Text = Properties.strings.DeliveryMain;
             this.linkLabel18.Text = Properties.strings.ReceiptMain;
+            this.llNarudzbe.Text = Properties.strings.OrdersMain;
 
         }
 
@@ -1010,5 +1013,15 @@ namespace POT
             }
         }
 
+        private void llNarudzbe_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Program.LoadStart();
+
+            Narudzbe nr = new Narudzbe();
+            nr.Show();
+
+            
+
+        }
     }
 }

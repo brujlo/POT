@@ -169,3 +169,5 @@ C:\PROJEKTI\MY\POT\POT\POT\obj\Debug\POT.Documents.WorkListAdder.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.Documents.WorkListAdder.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.Documents.WorkListISS.resources
 F:\PROJEKTI\VS\POT\POT\POT\obj\Debug\POT.csprojAssemblyReference.cache
+C:\PROJEKTI\MY\POT\POT\POT\obj\Debug\POT.csproj.CoreCompileInputs.cache
+C:\PROJEKTI\MY\POT\POT\POT\obj\Debug\POT.WorkingClasses.Narudzbe.resources

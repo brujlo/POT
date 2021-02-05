@@ -334,4 +334,7 @@
   <data name="Service" xml:space="preserve">
     <value>Servis</value>
   </data>
+  <data name="OrdersMain" xml:space="preserve">
+    <value>Narudzbe</value>
+  </data>
 </root>
